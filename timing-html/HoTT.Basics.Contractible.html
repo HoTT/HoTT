@@ -39,7 +39,7 @@ Time: 0s">
 </div>
 <div class="code" title="File: Contractible.v
 Line: 3
-Time: 0.023s">
+Time: 0.025s">
 <div class="time" style="width: 100%"></div>
 <pre>Require Import Overture PathGroupoids.</pre>
 </div>
@@ -76,8 +76,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Contractible.v
 Line: 10
-Time: 0.001s">
-<div class="time" style="width: 4.3478260869565%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>Definition path_contr `{Contr A} (x y : A) : x = y
   := (contr x)^ @ (contr y).</pre>
 </div>
@@ -119,7 +119,7 @@ Time: 0s">
 <div class="code" title="File: Contractible.v
 Line: 16
 Time: 0.001s">
-<div class="time" style="width: 4.3478260869565%"></div>
+<div class="time" style="width: 4%"></div>
 <pre> intro r; destruct r; symmetry; now apply concat_Vp.</pre>
 </div>
 <div class="code" title="File: Contractible.v
@@ -131,8 +131,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Contractible.v
 Line: 17
-Time: 0.002s">
-<div class="time" style="width: 8.695652173913%"></div>
+Time: 0.001s">
+<div class="time" style="width: 4%"></div>
 <pre> transitivity (path_contr x y);auto with path_hints.</pre>
 </div>
 <div class="code" title="File: Contractible.v
@@ -167,8 +167,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: Contractible.v
 Line: 22
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 4%"></div>
 <pre>
   exists ((contr x)^ @ contr y).</pre>
 </div>
@@ -369,8 +369,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Contractible.v
 Line: 60
-Time: 0.002s">
-<div class="time" style="width: 8.695652173913%"></div>
+Time: 0.001s">
+<div class="time" style="width: 4%"></div>
 <pre>Definition ap_pr1_path_contr_basedpaths {X : Type}
            {x y z : X} (p : x = y) (q : x = z)
 : ap pr1 (path_contr ((y;p):{y':X &amp; x = y'}) (z;q)) = p^ @ q.</pre>
@@ -385,21 +385,21 @@ Proof.</pre>
 <div class="code" title="File: Contractible.v
 Line: 63
 Time: 0.001s">
-<div class="time" style="width: 4.3478260869565%"></div>
+<div class="time" style="width: 4%"></div>
 <pre>
   destruct p,q; reflexivity.</pre>
 </div>
 <div class="code" title="File: Contractible.v
 Line: 64
 Time: 0.001s">
-<div class="time" style="width: 4.3478260869565%"></div>
+<div class="time" style="width: 4%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: Contractible.v
 Line: 65
 Time: 0.001s">
-<div class="time" style="width: 4.3478260869565%"></div>
+<div class="time" style="width: 4%"></div>
 <pre>
 
 Definition ap_pr1_path_contr_basedpaths' {X : Type}
@@ -416,21 +416,21 @@ Proof.</pre>
 <div class="code" title="File: Contractible.v
 Line: 70
 Time: 0.002s">
-<div class="time" style="width: 8.695652173913%"></div>
+<div class="time" style="width: 8%"></div>
 <pre>
   destruct p,q; reflexivity.</pre>
 </div>
 <div class="code" title="File: Contractible.v
 Line: 71
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 4%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: Contractible.v
 Line: 72
-Time: 0.001s">
-<div class="time" style="width: 4.3478260869565%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
 Definition ap_pr1_path_basedpaths {X : Type}
@@ -447,7 +447,7 @@ Proof.</pre>
 <div class="code" title="File: Contractible.v
 Line: 77
 Time: 0.001s">
-<div class="time" style="width: 4.3478260869565%"></div>
+<div class="time" style="width: 4%"></div>
 <pre>
   destruct p; reflexivity.</pre>
 </div>
@@ -461,7 +461,7 @@ Defined.</pre>
 <div class="code" title="File: Contractible.v
 Line: 79
 Time: 0.001s">
-<div class="time" style="width: 4.3478260869565%"></div>
+<div class="time" style="width: 4%"></div>
 <pre>
 
 Definition ap_pr1_path_basedpaths' {X : Type}
@@ -477,8 +477,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: Contractible.v
 Line: 84
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 4%"></div>
 <pre>
   destruct p; reflexivity.</pre>
 </div>
@@ -500,7 +500,7 @@ Time: 0s">
 <div class="code" title="File: Contractible.v
 Line: 88
 Time: 0.001s">
-<div class="time" style="width: 4.3478260869565%"></div>
+<div class="time" style="width: 4%"></div>
 <pre>Definition contr_dom_equiv {A B} (f : A -&gt; B) `{Contr A} : forall x y : A, f x = f y
   := fun x y =&gt; ap f ((contr x)^ @ contr y).</pre>
 </div>
@@ -514,8 +514,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Contractible.v
 Line: 91
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 4%"></div>
 <pre>Definition contr_retract {X Y : Type} `{Contr X} 
            (r : X -&gt; Y) (s : Y -&gt; X) (h : forall y, r (s y) = y)
   : Contr Y

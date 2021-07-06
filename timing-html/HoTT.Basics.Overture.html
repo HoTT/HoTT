@@ -39,14 +39,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: Overture.v
 Line: 4
-Time: 0.012s">
+Time: 0.013s">
 <div class="time" style="width: 100%"></div>
 <pre>Require Export Basics.Notations Basics.Datatypes Basics.Logic.</pre>
 </div>
 <div class="code" title="File: Overture.v
 Line: 4
 Time: 0.001s">
-<div class="time" style="width: 8.3333333333333%"></div>
+<div class="time" style="width: 7.6923076923077%"></div>
 <pre>
 
 Declare ML Module "number_string_notation_plugin".</pre>
@@ -882,7 +882,7 @@ Time: 0s">
 <div class="code" title="File: Overture.v
 Line: 183
 Time: 0.001s">
-<div class="time" style="width: 8.3333333333333%"></div>
+<div class="time" style="width: 7.6923076923077%"></div>
 <pre>Global Instance iff_compose : Transitive iff | 1
   := fun A B C f g =&gt; (fst g o fst f , snd f o snd g).</pre>
 </div>
@@ -1348,8 +1348,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Overture.v
 Line: 270
-Time: 0.001s">
-<div class="time" style="width: 8.3333333333333%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>Definition paths_rect_r (A : Type) (x : A) (P : A -&gt; Type) (p : P x) (y : A) (e : paths y x) : P y :=
   paths_rect A x (fun y e =&gt; P y) p y (inverse e).</pre>
 </div>
@@ -1601,8 +1601,8 @@ Definition pointwise_paths A (P : A -&gt; Type) (f g : forall x, P x)
 </div>
 <div class="code" title="File: Overture.v
 Line: 345
-Time: 0.001s">
-<div class="time" style="width: 8.3333333333333%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
 Definition pointwise_paths_concat {A} {P : A -&gt; Type} {f g h : forall x, P x}
@@ -1754,8 +1754,8 @@ Notation "f == g" := (pointwise_paths f g) : type_scope.</pre>
 </div>
 <div class="code" title="File: Overture.v
 Line: 378
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 7.6923076923077%"></div>
 <pre>
 
 Definition apD10 {A} {B:A-&gt;Type} {f g : forall x, B x} (h:f=g)
@@ -1818,8 +1818,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: Overture.v
 Line: 394
-Time: 0.001s">
-<div class="time" style="width: 8.3333333333333%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   case h, p; reflexivity.</pre>
 </div>
@@ -1866,8 +1866,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Overture.v
 Line: 405
-Time: 0.001s">
-<div class="time" style="width: 8.3333333333333%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>Definition apD {A:Type} {B:A-&gt;Type} (f:forall a:A, B a) {x y:A} (p:x=y):
   p # (f x) = f y
   :=
@@ -1914,7 +1914,7 @@ Time: 0s">
 <div class="code" title="File: Overture.v
 Line: 428
 Time: 0.002s">
-<div class="time" style="width: 16.666666666667%"></div>
+<div class="time" style="width: 15.384615384615%"></div>
 <pre>Cumulative Class IsEquiv {A B : Type} (f : A -&gt; B) := {
   equiv_inv : B -&gt; A ;
   eisretr : f o equiv_inv == idmap ;
@@ -2058,7 +2058,7 @@ Time: 0s">
 <div class="code" title="File: Overture.v
 Line: 462
 Time: 0.001s">
-<div class="time" style="width: 8.3333333333333%"></div>
+<div class="time" style="width: 7.6923076923077%"></div>
 <pre>Definition ap10_equiv {A B : Type} {f g : A &lt;~&gt; B} (h : f = g) : f == g
   := ap10 (ap equiv_fun h).</pre>
 </div>
@@ -2492,8 +2492,8 @@ Global Existing Instance isequiv_apD10.</pre>
 </div>
 <div class="code" title="File: Overture.v
 Line: 589
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 7.6923076923077%"></div>
 <pre>
 
 Definition path_forall `{Funext} {A : Type} {P : A -&gt; Type} (f g : forall x : A, P x) :
@@ -2575,8 +2575,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Overture.v
 Line: 617
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 7.6923076923077%"></div>
 <pre>Inductive nat : Type :=
 | O : nat
 | S : nat -&gt; nat.</pre>

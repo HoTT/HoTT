@@ -38,7 +38,7 @@ Time: 0s">
 </div>
 <div class="code" title="File: BiInv.v
 Line: 2
-Time: 0.039s">
+Time: 0.041s">
 <div class="time" style="width: 100%"></div>
 <pre>Require Import HoTT.Basics HoTT.Types.</pre>
 </div>
@@ -72,7 +72,7 @@ Time: 0s">
 <div class="code" title="File: BiInv.v
 Line: 10
 Time: 0.001s">
-<div class="time" style="width: 2.5641025641026%"></div>
+<div class="time" style="width: 2.4390243902439%"></div>
 <pre>Definition BiInv `(f : A -&gt; B) : Type
   := {g : B -&gt; A &amp; g o f == idmap} * {h : B -&gt; A &amp; f o h == idmap}.</pre>
 </div>
@@ -102,15 +102,15 @@ Proof.</pre>
 </div>
 <div class="code" title="File: BiInv.v
 Line: 16
-Time: 0.001s">
-<div class="time" style="width: 2.5641025641026%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   intros [[g s] [h r]].</pre>
 </div>
 <div class="code" title="File: BiInv.v
 Line: 17
 Time: 0.001s">
-<div class="time" style="width: 2.5641025641026%"></div>
+<div class="time" style="width: 2.4390243902439%"></div>
 <pre>
   exact (isequiv_adjointify f g
     (fun x =&gt; ap f (ap g (r x)^ @ s (h x))  @ r x)
@@ -218,7 +218,7 @@ Proof.</pre>
 <div class="code" title="File: BiInv.v
 Line: 35
 Time: 0.001s">
-<div class="time" style="width: 2.5641025641026%"></div>
+<div class="time" style="width: 2.4390243902439%"></div>
 <pre>
   apply equiv_iff_hprop.</pre>
 </div>

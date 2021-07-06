@@ -30,7 +30,7 @@ pre {
 
 <div class="code" title="File: ring_tac.v
 Line: 1
-Time: 0.13s">
+Time: 0.12s">
 <div class="time" style="width: 100%"></div>
 <pre>Require Import
   HoTT.Classes.interfaces.abstract_algebra
@@ -56,8 +56,8 @@ Generalizable Variables R.</pre>
 </div>
 <div class="code" title="File: ring_tac.v
 Line: 9
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.83333333333333%"></div>
 <pre>
 
 Lemma test1 `{IsSemiRing R}
@@ -79,15 +79,15 @@ intros.</pre>
 </div>
 <div class="code" title="File: ring_tac.v
 Line: 14
-Time: 0.028s">
-<div class="time" style="width: 21.538461538462%"></div>
+Time: 0.025s">
+<div class="time" style="width: 20.833333333333%"></div>
 <pre>
 ring_with_nat.</pre>
 </div>
 <div class="code" title="File: ring_tac.v
 Line: 15
-Time: 0.008s">
-<div class="time" style="width: 6.1538461538462%"></div>
+Time: 0.007s">
+<div class="time" style="width: 5.8333333333333%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -102,8 +102,8 @@ Require Import
 </div>
 <div class="code" title="File: ring_tac.v
 Line: 19
-Time: 0.001s">
-<div class="time" style="width: 0.76923076923077%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
 Lemma test2 `{IsSemiRing R}
@@ -125,15 +125,15 @@ intros.</pre>
 </div>
 <div class="code" title="File: ring_tac.v
 Line: 24
-Time: 0.022s">
-<div class="time" style="width: 16.923076923077%"></div>
+Time: 0.021s">
+<div class="time" style="width: 17.5%"></div>
 <pre>
 apply (by_quoting (naturals_to_semiring nat R)).</pre>
 </div>
 <div class="code" title="File: ring_tac.v
 Line: 25
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.83333333333333%"></div>
 <pre>
 compute.</pre>
 </div>
@@ -146,14 +146,14 @@ Time: 0s">
 <div class="code" title="File: ring_tac.v
 Line: 26
 Time: 0.008s">
-<div class="time" style="width: 6.1538461538462%"></div>
+<div class="time" style="width: 6.6666666666667%"></div>
 <pre>
 Qed.</pre>
 </div>
 <div class="code" title="File: ring_tac.v
 Line: 27
-Time: 0.001s">
-<div class="time" style="width: 0.76923076923077%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
 Lemma test3 `{IsSemiRing R}
@@ -177,15 +177,15 @@ intros.</pre>
 </div>
 <div class="code" title="File: ring_tac.v
 Line: 34
-Time: 0.027s">
-<div class="time" style="width: 20.769230769231%"></div>
+Time: 0.024s">
+<div class="time" style="width: 20%"></div>
 <pre>
 apply (by_quoting (naturals_to_semiring nat R)).</pre>
 </div>
 <div class="code" title="File: ring_tac.v
 Line: 35
-Time: 0.001s">
-<div class="time" style="width: 0.76923076923077%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.6666666666667%"></div>
 <pre> compute.</pre>
 </div>
 <div class="code" title="File: ring_tac.v
@@ -197,8 +197,8 @@ reflexivity.</pre>
 </div>
 <div class="code" title="File: ring_tac.v
 Line: 36
-Time: 0.009s">
-<div class="time" style="width: 6.9230769230769%"></div>
+Time: 0.008s">
+<div class="time" style="width: 6.6666666666667%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -222,14 +222,14 @@ Proof.</pre>
 <div class="code" title="File: ring_tac.v
 Line: 42
 Time: 0.008s">
-<div class="time" style="width: 6.1538461538462%"></div>
+<div class="time" style="width: 6.6666666666667%"></div>
 <pre>
 apply (ring_quote.Quoting.eval_eqquote R).</pre>
 </div>
 <div class="code" title="File: ring_tac.v
 Line: 43
-Time: 0.036s">
-<div class="time" style="width: 27.692307692308%"></div>
+Time: 0.033s">
+<div class="time" style="width: 27.5%"></div>
 <pre>
 apply (prove_prequoted (naturals_to_semiring nat R)).</pre>
 </div>
@@ -243,7 +243,7 @@ reflexivity.</pre>
 <div class="code" title="File: ring_tac.v
 Line: 45
 Time: 0.002s">
-<div class="time" style="width: 1.5384615384615%"></div>
+<div class="time" style="width: 1.6666666666667%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -264,15 +264,15 @@ Proof.</pre>
 </div>
 <div class="code" title="File: ring_tac.v
 Line: 49
-Time: 0.016s">
-<div class="time" style="width: 12.307692307692%"></div>
+Time: 0.014s">
+<div class="time" style="width: 11.666666666667%"></div>
 <pre>
 intros;ring_with_nat.</pre>
 </div>
 <div class="code" title="File: ring_tac.v
 Line: 50
-Time: 0.007s">
-<div class="time" style="width: 5.3846153846154%"></div>
+Time: 0.006s">
+<div class="time" style="width: 5%"></div>
 <pre>
 Qed.</pre>
 </div>

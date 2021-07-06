@@ -36,21 +36,21 @@ Time: 0s">
 </div>
 <div class="code" title="File: Cantor.v
 Line: 1
-Time: 0.039s">
-<div class="time" style="width: 68.421052631579%"></div>
+Time: 0.038s">
+<div class="time" style="width: 70.37037037037%"></div>
 <pre>Require Import HoTT.Basics HoTT.Types.</pre>
 </div>
 <div class="code" title="File: Cantor.v
 Line: 1
-Time: 0.057s">
+Time: 0.054s">
 <div class="time" style="width: 100%"></div>
 <pre>
 Require Import Idempotents.</pre>
 </div>
 <div class="code" title="File: Cantor.v
 Line: 2
-Time: 0.032s">
-<div class="time" style="width: 56.140350877193%"></div>
+Time: 0.031s">
+<div class="time" style="width: 57.407407407407%"></div>
 <pre>
 Require Import HoTT.Truncations Spaces.BAut Spaces.Cantor.</pre>
 </div>
@@ -155,8 +155,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Cantor.v
 Line: 23
-Time: 0.015s">
-<div class="time" style="width: 26.315789473684%"></div>
+Time: 0.014s">
+<div class="time" style="width: 25.925925925926%"></div>
 <pre>
     strip_truncations.</pre>
 </div>
@@ -254,8 +254,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Cantor.v
 Line: 38
-Time: 0.006s">
-<div class="time" style="width: 10.526315789474%"></div>
+Time: 0.005s">
+<div class="time" style="width: 9.2592592592593%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -271,7 +271,7 @@ Time: 0s">
 <div class="code" title="File: Cantor.v
 Line: 42
 Time: 0.002s">
-<div class="time" style="width: 3.5087719298246%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>Definition ap_f {Z Z' : BAut Cantor} (p : Z = Z')
   : equiv_path _ _ (ap f p)..1
     = equiv_path Z Z' p..1 +E 1.</pre>
@@ -292,28 +292,28 @@ Time: 0s">
 </div>
 <div class="code" title="File: Cantor.v
 Line: 46
-Time: 0.003s">
-<div class="time" style="width: 5.2631578947368%"></div>
+Time: 0.002s">
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre> apply path_equiv, path_arrow.</pre>
 </div>
 <div class="code" title="File: Cantor.v
 Line: 46
 Time: 0.001s">
-<div class="time" style="width: 1.7543859649123%"></div>
+<div class="time" style="width: 1.8518518518519%"></div>
 <pre>
     intros [z|a]; reflexivity.</pre>
 </div>
 <div class="code" title="File: Cantor.v
 Line: 47
 Time: 0.002s">
-<div class="time" style="width: 3.5087719298246%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
   Defined.</pre>
 </div>
 <div class="code" title="File: Cantor.v
 Line: 48
 Time: 0.003s">
-<div class="time" style="width: 5.2631578947368%"></div>
+<div class="time" style="width: 5.5555555555556%"></div>
 <pre>
 
   Definition ap_ff {Z Z' : BAut Cantor} (p : Z = Z')
@@ -330,7 +330,7 @@ Time: 0s">
 <div class="code" title="File: Cantor.v
 Line: 53
 Time: 0.001s">
-<div class="time" style="width: 1.7543859649123%"></div>
+<div class="time" style="width: 1.8518518518519%"></div>
 <pre>
     destruct p.</pre>
 </div>
@@ -343,14 +343,14 @@ Time: 0s">
 <div class="code" title="File: Cantor.v
 Line: 54
 Time: 0.003s">
-<div class="time" style="width: 5.2631578947368%"></div>
+<div class="time" style="width: 5.5555555555556%"></div>
 <pre>
     intros [[z|a]|a]; reflexivity.</pre>
 </div>
 <div class="code" title="File: Cantor.v
 Line: 55
 Time: 0.004s">
-<div class="time" style="width: 7.0175438596491%"></div>
+<div class="time" style="width: 7.4074074074074%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -382,7 +382,7 @@ Time: 0s">
 <div class="code" title="File: Cantor.v
 Line: 63
 Time: 0.001s">
-<div class="time" style="width: 1.7543859649123%"></div>
+<div class="time" style="width: 1.8518518518519%"></div>
 <pre>
 
   Definition I0
@@ -401,7 +401,7 @@ Time: 0s">
 <div class="code" title="File: Cantor.v
 Line: 70
 Time: 0.002s">
-<div class="time" style="width: 3.5087719298246%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>Definition Inat (Z Z' : BAut Cantor) (e : Z &lt;~&gt; Z')
   : I Z' oE (e +E 1 +E 1)
     = (e +E 1) oE I Z.</pre>
@@ -416,28 +416,28 @@ Time: 0s">
 <div class="code" title="File: Cantor.v
 Line: 73
 Time: 0.003s">
-<div class="time" style="width: 5.2631578947368%"></div>
+<div class="time" style="width: 5.5555555555556%"></div>
 <pre>
     revert e; equiv_intro (equiv_path Z Z') q.</pre>
 </div>
 <div class="code" title="File: Cantor.v
 Line: 74
-Time: 0.016s">
-<div class="time" style="width: 28.070175438596%"></div>
+Time: 0.015s">
+<div class="time" style="width: 27.777777777778%"></div>
 <pre>
     revert q; equiv_intro ((equiv_path_sigma_hprop Z Z')^-1) p.</pre>
 </div>
 <div class="code" title="File: Cantor.v
 Line: 75
 Time: 0.002s">
-<div class="time" style="width: 3.5087719298246%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
     simpl.</pre>
 </div>
 <div class="code" title="File: Cantor.v
 Line: 76
-Time: 0.005s">
-<div class="time" style="width: 8.7719298245614%"></div>
+Time: 0.004s">
+<div class="time" style="width: 7.4074074074074%"></div>
 <pre> rewrite &lt;- ap_ff, &lt;- ap_f.</pre>
 </div>
 <div class="code" title="File: Cantor.v
@@ -450,7 +450,7 @@ Time: 0s">
 <div class="code" title="File: Cantor.v
 Line: 77
 Time: 0.001s">
-<div class="time" style="width: 1.7543859649123%"></div>
+<div class="time" style="width: 1.8518518518519%"></div>
 <pre> refine ((equiv_path_pp _ _)^ @ _ @ (equiv_path_pp _ _)).</pre>
 </div>
 <div class="code" title="File: Cantor.v
@@ -463,7 +463,7 @@ Time: 0s">
 <div class="code" title="File: Cantor.v
 Line: 78
 Time: 0.002s">
-<div class="time" style="width: 3.5087719298246%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
     refine ((pr1_path_pp (ap (f o f) p) (Ip Z'))^ @ _ @ pr1_path_pp _ _).</pre>
 </div>
@@ -482,8 +482,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Cantor.v
 Line: 80
-Time: 0.017s">
-<div class="time" style="width: 29.824561403509%"></div>
+Time: 0.016s">
+<div class="time" style="width: 29.62962962963%"></div>
 <pre>
   Qed.</pre>
 </div>
@@ -523,7 +523,7 @@ Time: 0s">
 <div class="code" title="File: Cantor.v
 Line: 90
 Time: 0.005s">
-<div class="time" style="width: 8.7719298245614%"></div>
+<div class="time" style="width: 9.2592592592593%"></div>
 <pre>Definition I0nat_flip
         (x : ((Cantor + Cantor) + Cantor) + Cantor)
   : I0 (ff_flip x) = f_flip (I0 x)
@@ -543,8 +543,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Cantor.v
 Line: 99
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.8518518518519%"></div>
 <pre>Definition f_flip_fixed_iff_inr (x : Cantor + Cantor + Cantor)
   : (f_flip x = x) &lt;-&gt; is_inr x.</pre>
 </div>
@@ -558,7 +558,7 @@ Time: 0s">
 <div class="code" title="File: Cantor.v
 Line: 101
 Time: 0.002s">
-<div class="time" style="width: 3.5087719298246%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
     split; intros p; destruct x as [[c|c]|c]; simpl in p.</pre>
 </div>
@@ -657,14 +657,14 @@ Time: 0s">
 <div class="code" title="File: Cantor.v
 Line: 110
 Time: 0.001s">
-<div class="time" style="width: 1.7543859649123%"></div>
+<div class="time" style="width: 1.8518518518519%"></div>
 <pre>
   Defined.</pre>
 </div>
 <div class="code" title="File: Cantor.v
 Line: 111
 Time: 0.001s">
-<div class="time" style="width: 1.7543859649123%"></div>
+<div class="time" style="width: 1.8518518518519%"></div>
 <pre>
 
   Definition ff_flip_fixed_iff_inr
@@ -681,7 +681,7 @@ Time: 0s">
 <div class="code" title="File: Cantor.v
 Line: 116
 Time: 0.004s">
-<div class="time" style="width: 7.0175438596491%"></div>
+<div class="time" style="width: 7.4074074074074%"></div>
 <pre>
     split; intros p; destruct x as [[[c|c]|c]|c]; simpl in p.</pre>
 </div>
@@ -761,7 +761,7 @@ Time: 0s">
 <div class="code" title="File: Cantor.v
 Line: 124
 Time: 0.001s">
-<div class="time" style="width: 1.7543859649123%"></div>
+<div class="time" style="width: 1.8518518518519%"></div>
 <pre> destruct p as [e|e]; elim e.</pre>
 </div>
 <div class="code" title="File: Cantor.v
@@ -774,7 +774,7 @@ Time: 0s">
 <div class="code" title="File: Cantor.v
 Line: 125
 Time: 0.001s">
-<div class="time" style="width: 1.7543859649123%"></div>
+<div class="time" style="width: 1.8518518518519%"></div>
 <pre> destruct p as [e|e]; elim e.</pre>
 </div>
 <div class="code" title="File: Cantor.v
@@ -799,14 +799,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: Cantor.v
 Line: 127
-Time: 0.034s">
-<div class="time" style="width: 59.649122807018%"></div>
+Time: 0.028s">
+<div class="time" style="width: 51.851851851852%"></div>
 <pre> destruct p as [_|e]; [ reflexivity | elim e ].</pre>
 </div>
 <div class="code" title="File: Cantor.v
 Line: 127
-Time: 0.003s">
-<div class="time" style="width: 5.2631578947368%"></div>
+Time: 0.002s">
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -822,7 +822,7 @@ Time: 0s">
 <div class="code" title="File: Cantor.v
 Line: 131
 Time: 0.001s">
-<div class="time" style="width: 1.7543859649123%"></div>
+<div class="time" style="width: 1.8518518518519%"></div>
 <pre>Definition I0_fixed_iff_fixed
         (x : Cantor + Cantor + Cantor + Cantor)
   : (ff_flip x = x) &lt;-&gt; (f_flip (I0 x) = I0 x).</pre>
@@ -836,8 +836,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Cantor.v
 Line: 134
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.8518518518519%"></div>
 <pre>
     split; intros p.</pre>
 </div>
@@ -863,8 +863,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Cantor.v
 Line: 137
-Time: 0.001s">
-<div class="time" style="width: 1.7543859649123%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> apply (equiv_inj I0).</pre>
 </div>
 <div class="code" title="File: Cantor.v
@@ -987,8 +987,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Cantor.v
 Line: 159
-Time: 0.002s">
-<div class="time" style="width: 3.5087719298246%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.8518518518519%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -1065,8 +1065,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Cantor.v
 Line: 171
-Time: 0.015s">
-<div class="time" style="width: 26.315789473684%"></div>
+Time: 0.012s">
+<div class="time" style="width: 22.222222222222%"></div>
 <pre>
 
 End Assumptions.</pre>
@@ -1109,7 +1109,7 @@ Definition preidem_baut_cantor_idem `{Univalence}
 <div class="code" title="File: Cantor.v
 Line: 183
 Time: 0.001s">
-<div class="time" style="width: 1.7543859649123%"></div>
+<div class="time" style="width: 1.8518518518519%"></div>
 <pre>
 
 Definition not_qidem_baut_cantor_idem `{Univalence}

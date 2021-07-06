@@ -30,7 +30,7 @@ pre {
 
 <div class="code" title="File: CommutativeSquares.v
 Line: 1
-Time: 0.028s">
+Time: 0.027s">
 <div class="time" style="width: 100%"></div>
 <pre>Require Import Basics.</pre>
 </div>
@@ -59,8 +59,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: CommutativeSquares.v
 Line: 18
-Time: 0.004s">
-<div class="time" style="width: 14.285714285714%"></div>
+Time: 0.003s">
+<div class="time" style="width: 11.111111111111%"></div>
 <pre>Lemma comm_square_comp {A B C D E F}
   {f : A -&gt; B} {f': C -&gt; D} {h : A -&gt; C} {g : B -&gt; D} (comm : f' o h == g o f)
   {f'': E -&gt; F} {h' : C -&gt; E} {g' : D -&gt; F} (comm' : f'' o h' == g' o f')
@@ -82,8 +82,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: CommutativeSquares.v
 Line: 23
-Time: 0.002s">
-<div class="time" style="width: 7.1428571428571%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
   path_via (g' (f' (h x))).</pre>
 </div>
@@ -122,7 +122,7 @@ Time: 0s">
 <div class="code" title="File: CommutativeSquares.v
 Line: 37
 Time: 0.003s">
-<div class="time" style="width: 10.714285714286%"></div>
+<div class="time" style="width: 11.111111111111%"></div>
 <pre>Lemma comm_square_comp' {A B C X Y Z : Type}
     {k : A -&gt; B} {l : B -&gt; C}
     {f : A -&gt; X} {g : B -&gt; Y} {h : C -&gt; Z}
@@ -147,7 +147,7 @@ Time: 0s">
 <div class="code" title="File: CommutativeSquares.v
 Line: 44
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
   path_via (j (g (k x))).</pre>
 </div>
@@ -176,8 +176,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: CommutativeSquares.v
 Line: 50
-Time: 0.003s">
-<div class="time" style="width: 10.714285714286%"></div>
+Time: 0.002s">
+<div class="time" style="width: 7.4074074074074%"></div>
 <pre>Lemma comm_square_inverse
   {A B : Type} {f : A -&gt; B}
   {A' B' : Type} {f' : A' -&gt; B'}
@@ -202,7 +202,7 @@ Time: 0s">
 <div class="code" title="File: CommutativeSquares.v
 Line: 57
 Time: 0.003s">
-<div class="time" style="width: 10.714285714286%"></div>
+<div class="time" style="width: 11.111111111111%"></div>
 <pre>
   path_via (wB ^-1 (wB (f (wA ^-1 a')))).</pre>
 </div>
@@ -241,8 +241,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: CommutativeSquares.v
 Line: 61
-Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -258,7 +258,7 @@ retraction (aka left inverse); *)</pre>
 <div class="code" title="File: CommutativeSquares.v
 Line: 65
 Time: 0.003s">
-<div class="time" style="width: 10.714285714286%"></div>
+<div class="time" style="width: 11.111111111111%"></div>
 <pre>Lemma comm_square_inverse_is_sect
   {A B : Type} {f : A -&gt; B}
   {A' B' : Type} {f' : A' -&gt; B'}
@@ -276,69 +276,69 @@ Proof.</pre>
 </div>
 <div class="code" title="File: CommutativeSquares.v
 Line: 72
-Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   unfold comm_square_inverse, comm_square_comp; simpl.</pre>
 </div>
 <div class="code" title="File: CommutativeSquares.v
 Line: 73
 Time: 0.002s">
-<div class="time" style="width: 7.1428571428571%"></div>
+<div class="time" style="width: 7.4074074074074%"></div>
 <pre>
   repeat apply (concat (concat_pp_p _ _ _)).</pre>
 </div>
 <div class="code" title="File: CommutativeSquares.v
 Line: 74
-Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> apply moveR_Vp.</pre>
 </div>
 <div class="code" title="File: CommutativeSquares.v
 Line: 74
 Time: 0.003s">
-<div class="time" style="width: 10.714285714286%"></div>
+<div class="time" style="width: 11.111111111111%"></div>
 <pre>
   transitivity (ap (wB ^-1 o wB) (ap f (eissect wA a)) @ eissect wB (f a)).</pre>
 </div>
 <div class="code" title="File: CommutativeSquares.v
 Line: 75
-Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   2: apply (concat (concat_Ap (eissect wB) _)).</pre>
 </div>
 <div class="code" title="File: CommutativeSquares.v
 Line: 76
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre> 2: apply ap, ap_idmap.</pre>
 </div>
 <div class="code" title="File: CommutativeSquares.v
 Line: 76
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
   apply (concat (concat_p_pp _ _ _)), whiskerR.</pre>
 </div>
 <div class="code" title="File: CommutativeSquares.v
 Line: 77
 Time: 0.003s">
-<div class="time" style="width: 10.714285714286%"></div>
+<div class="time" style="width: 11.111111111111%"></div>
 <pre>
   apply (concat (ap_pp (wB ^-1) _ _)^), (concatR (ap_compose wB _ _)^).</pre>
 </div>
 <div class="code" title="File: CommutativeSquares.v
 Line: 78
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
   apply ap, (concat (concat_pp_p _ _ _)), moveR_Vp.</pre>
 </div>
 <div class="code" title="File: CommutativeSquares.v
 Line: 79
 Time: 0.009s">
-<div class="time" style="width: 32.142857142857%"></div>
+<div class="time" style="width: 33.333333333333%"></div>
 <pre>
   path_via (ap (f' o wA) (eissect wA a) @ wf a).</pre>
 </div>
@@ -358,13 +358,13 @@ Time: 0s">
 <div class="code" title="File: CommutativeSquares.v
 Line: 81
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>  apply (concatR (ap_compose wA f' _)^).</pre>
 </div>
 <div class="code" title="File: CommutativeSquares.v
 Line: 81
-Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     apply ap, eisadj.</pre>
 </div>
@@ -377,21 +377,21 @@ Time: 0s">
 </div>
 <div class="code" title="File: CommutativeSquares.v
 Line: 83
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre> apply (concat (concat_Ap wf _)).</pre>
 </div>
 <div class="code" title="File: CommutativeSquares.v
 Line: 83
-Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     apply whiskerL, (ap_compose f wB).</pre>
 </div>
 <div class="code" title="File: CommutativeSquares.v
 Line: 84
-Time: 0.015s">
-<div class="time" style="width: 53.571428571429%"></div>
+Time: 0.014s">
+<div class="time" style="width: 51.851851851852%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -405,8 +405,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: CommutativeSquares.v
 Line: 87
-Time: 0.005s">
-<div class="time" style="width: 17.857142857143%"></div>
+Time: 0.004s">
+<div class="time" style="width: 14.814814814815%"></div>
 <pre>Lemma comm_square_inverse_is_retr
   {A B : Type} {f : A -&gt; B}
   {A' B' : Type} {f' : A' -&gt; B'}
@@ -432,36 +432,36 @@ Time: 0s">
 <div class="code" title="File: CommutativeSquares.v
 Line: 95
 Time: 0.009s">
-<div class="time" style="width: 32.142857142857%"></div>
+<div class="time" style="width: 33.333333333333%"></div>
 <pre>
   rewrite !ap_pp.</pre>
 </div>
 <div class="code" title="File: CommutativeSquares.v
 Line: 96
-Time: 0.009s">
-<div class="time" style="width: 32.142857142857%"></div>
+Time: 0.008s">
+<div class="time" style="width: 29.62962962963%"></div>
 <pre>
   rewrite &lt;- !concat_pp_p.</pre>
 </div>
 <div class="code" title="File: CommutativeSquares.v
 Line: 97
-Time: 0.003s">
-<div class="time" style="width: 10.714285714286%"></div>
+Time: 0.002s">
+<div class="time" style="width: 7.4074074074074%"></div>
 <pre>
   rewrite concat_pp_p.</pre>
 </div>
 <div class="code" title="File: CommutativeSquares.v
 Line: 98
 Time: 0.006s">
-<div class="time" style="width: 21.428571428571%"></div>
+<div class="time" style="width: 22.222222222222%"></div>
 <pre>
   set (p := (ap wB (ap (wB ^-1) (ap f' (eisretr wA a)))
             @ eisretr wB (f' a))).</pre>
 </div>
 <div class="code" title="File: CommutativeSquares.v
 Line: 100
-Time: 0.012s">
-<div class="time" style="width: 42.857142857143%"></div>
+Time: 0.009s">
+<div class="time" style="width: 33.333333333333%"></div>
 <pre>
   path_via ((eisretr wB _)^ @ p).</pre>
 </div>
@@ -474,21 +474,21 @@ Time: 0s">
 </div>
 <div class="code" title="File: CommutativeSquares.v
 Line: 102
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre> apply whiskerR.</pre>
 </div>
 <div class="code" title="File: CommutativeSquares.v
 Line: 102
-Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     apply moveR_pM.</pre>
 </div>
 <div class="code" title="File: CommutativeSquares.v
 Line: 103
 Time: 0.013s">
-<div class="time" style="width: 46.428571428571%"></div>
+<div class="time" style="width: 48.148148148148%"></div>
 <pre>
     path_via ((eisretr wB (f' (wA (wA ^-1 a))))^ @
       ap (wB o wB ^-1) (wf ((wA ^-1) a))).</pre>
@@ -503,13 +503,13 @@ Time: 0s">
 <div class="code" title="File: CommutativeSquares.v
 Line: 106
 Time: 0.003s">
-<div class="time" style="width: 10.714285714286%"></div>
+<div class="time" style="width: 11.111111111111%"></div>
 <pre> rewrite ap_V, &lt;- eisadj.</pre>
 </div>
 <div class="code" title="File: CommutativeSquares.v
 Line: 106
 Time: 0.003s">
-<div class="time" style="width: 10.714285714286%"></div>
+<div class="time" style="width: 11.111111111111%"></div>
 <pre>
       transitivity (ap idmap (wf ((wA ^-1) a))
                        @ (eisretr wB (wB (f ((wA ^-1) a))))^).</pre>
@@ -524,7 +524,7 @@ Time: 0s">
 <div class="code" title="File: CommutativeSquares.v
 Line: 109
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre> apply whiskerR, inverse, ap_idmap.</pre>
 </div>
 <div class="code" title="File: CommutativeSquares.v
@@ -536,8 +536,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: CommutativeSquares.v
 Line: 110
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre> apply (concat_Ap (fun b' =&gt; (eisretr wB b')^) _).</pre>
 </div>
 <div class="code" title="File: CommutativeSquares.v
@@ -549,21 +549,21 @@ Time: 0s">
 </div>
 <div class="code" title="File: CommutativeSquares.v
 Line: 111
-Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> apply ap.</pre>
 </div>
 <div class="code" title="File: CommutativeSquares.v
 Line: 111
 Time: 0.007s">
-<div class="time" style="width: 25%"></div>
+<div class="time" style="width: 25.925925925926%"></div>
 <pre>
       rewrite ap_compose, !ap_V.</pre>
 </div>
 <div class="code" title="File: CommutativeSquares.v
 Line: 112
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
       apply inverse, inv_V.</pre>
 </div>
@@ -590,14 +590,14 @@ Time: 0s">
 <div class="code" title="File: CommutativeSquares.v
 Line: 115
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
     rewrite &lt;- ap_compose.</pre>
 </div>
 <div class="code" title="File: CommutativeSquares.v
 Line: 116
-Time: 0.011s">
-<div class="time" style="width: 39.285714285714%"></div>
+Time: 0.01s">
+<div class="time" style="width: 37.037037037037%"></div>
 <pre>
     path_via (eisretr wB _ @ ap idmap (ap f' (eisretr wA a))).</pre>
 </div>
@@ -629,8 +629,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: CommutativeSquares.v
 Line: 119
-Time: 0.02s">
-<div class="time" style="width: 71.428571428571%"></div>
+Time: 0.017s">
+<div class="time" style="width: 62.962962962963%"></div>
 <pre>
 Defined.</pre>
 </div>

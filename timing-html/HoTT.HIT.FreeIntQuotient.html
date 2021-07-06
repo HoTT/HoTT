@@ -36,28 +36,28 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeIntQuotient.v
 Line: 1
-Time: 0.04s">
-<div class="time" style="width: 14.492753623188%"></div>
+Time: 0.038s">
+<div class="time" style="width: 14.55938697318%"></div>
 <pre>Require Import HoTT.Basics HoTT.Types.</pre>
 </div>
 <div class="code" title="File: FreeIntQuotient.v
 Line: 1
 Time: 0.005s">
-<div class="time" style="width: 1.8115942028986%"></div>
+<div class="time" style="width: 1.9157088122605%"></div>
 <pre>
 Require Import TruncType HProp HSet.</pre>
 </div>
 <div class="code" title="File: FreeIntQuotient.v
 Line: 2
-Time: 0.053s">
-<div class="time" style="width: 19.202898550725%"></div>
+Time: 0.052s">
+<div class="time" style="width: 19.92337164751%"></div>
 <pre>
 Require Import Spaces.Int Spaces.Circle.</pre>
 </div>
 <div class="code" title="File: FreeIntQuotient.v
 Line: 3
 Time: 0.002s">
-<div class="time" style="width: 0.72463768115942%"></div>
+<div class="time" style="width: 0.76628352490421%"></div>
 <pre>
 Require Import HIT.Coeq HIT.Flattening Truncations.</pre>
 </div>
@@ -114,7 +114,7 @@ Time: 0s">
 <div class="code" title="File: FreeIntQuotient.v
 Line: 17
 Time: 0.002s">
-<div class="time" style="width: 0.72463768115942%"></div>
+<div class="time" style="width: 0.76628352490421%"></div>
 <pre>Context (f : R &lt;~&gt; R)
           (f_free : forall (r : R) (n m : Int),
                       (int_iter f n r = int_iter f m r) -&gt; (n = m)).</pre>
@@ -158,8 +158,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeIntQuotient.v
 Line: 26
-Time: 0.265s">
-<div class="time" style="width: 96.014492753623%"></div>
+Time: 0.246s">
+<div class="time" style="width: 94.252873563218%"></div>
 <pre>
     refine (istrunc_equiv_istrunc
               { z : Circle &amp; Circle_rec Type R (path_universe f) z}
@@ -275,34 +275,34 @@ Time: 0s">
 <div class="code" title="File: FreeIntQuotient.v
 Line: 40
 Time: 0.001s">
-<div class="time" style="width: 0.36231884057971%"></div>
+<div class="time" style="width: 0.38314176245211%"></div>
 <pre> refine (Coeq_ind _ (fun a =&gt; 1) _); cbn; intros b.</pre>
 </div>
 <div class="code" title="File: FreeIntQuotient.v
 Line: 40
-Time: 0.012s">
-<div class="time" style="width: 4.3478260869565%"></div>
+Time: 0.01s">
+<div class="time" style="width: 3.8314176245211%"></div>
 <pre>
         rewrite transport_paths_FlFr, concat_p1, ap_idmap.</pre>
 </div>
 <div class="code" title="File: FreeIntQuotient.v
 Line: 41
-Time: 0.002s">
-<div class="time" style="width: 0.72463768115942%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.38314176245211%"></div>
 <pre>
         apply moveR_Vp; rewrite concat_p1.</pre>
 </div>
 <div class="code" title="File: FreeIntQuotient.v
 Line: 42
 Time: 0.002s">
-<div class="time" style="width: 0.72463768115942%"></div>
+<div class="time" style="width: 0.76628352490421%"></div>
 <pre>
         rewrite ap_compose.</pre>
 </div>
 <div class="code" title="File: FreeIntQuotient.v
 Line: 43
-Time: 0.006s">
-<div class="time" style="width: 2.1739130434783%"></div>
+Time: 0.005s">
+<div class="time" style="width: 1.9157088122605%"></div>
 <pre>
         rewrite (Coeq_rec_beta_cglue
                    (Wtil Unit Unit idmap idmap (unit_name R) (unit_name f))
@@ -311,14 +311,14 @@ Time: 0.006s">
 <div class="code" title="File: FreeIntQuotient.v
 Line: 46
 Time: 0.004s">
-<div class="time" style="width: 1.4492753623188%"></div>
+<div class="time" style="width: 1.5325670498084%"></div>
 <pre>
         rewrite ap_V; symmetry.</pre>
 </div>
 <div class="code" title="File: FreeIntQuotient.v
 Line: 47
 Time: 0.002s">
-<div class="time" style="width: 0.72463768115942%"></div>
+<div class="time" style="width: 0.76628352490421%"></div>
 <pre>
         refine (inverse2
                   (Wtil_rec_beta_ppt
@@ -360,35 +360,35 @@ Time: 0s">
 <div class="code" title="File: FreeIntQuotient.v
 Line: 53
 Time: 0.001s">
-<div class="time" style="width: 0.36231884057971%"></div>
+<div class="time" style="width: 0.38314176245211%"></div>
 <pre>
         intros [] r; cbn.</pre>
 </div>
 <div class="code" title="File: FreeIntQuotient.v
 Line: 54
-Time: 0.013s">
-<div class="time" style="width: 4.7101449275362%"></div>
+Time: 0.011s">
+<div class="time" style="width: 4.2145593869732%"></div>
 <pre>
         rewrite transport_paths_FlFr, concat_p1, ap_idmap.</pre>
 </div>
 <div class="code" title="File: FreeIntQuotient.v
 Line: 55
 Time: 0.002s">
-<div class="time" style="width: 0.72463768115942%"></div>
+<div class="time" style="width: 0.76628352490421%"></div>
 <pre>
         apply moveR_Vp; rewrite concat_p1.</pre>
 </div>
 <div class="code" title="File: FreeIntQuotient.v
 Line: 56
 Time: 0.002s">
-<div class="time" style="width: 0.72463768115942%"></div>
+<div class="time" style="width: 0.76628352490421%"></div>
 <pre>
         rewrite ap_compose.</pre>
 </div>
 <div class="code" title="File: FreeIntQuotient.v
 Line: 57
-Time: 0.003s">
-<div class="time" style="width: 1.0869565217391%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.76628352490421%"></div>
 <pre>
         refine (_ @ ap (ap _) (Wtil_rec_beta_ppt
                    RmodZ (unit_name (fun r =&gt; coeq r))
@@ -396,15 +396,15 @@ Time: 0.003s">
 </div>
 <div class="code" title="File: FreeIntQuotient.v
 Line: 60
-Time: 0.003s">
-<div class="time" style="width: 1.0869565217391%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.76628352490421%"></div>
 <pre>
         rewrite ap_V.</pre>
 </div>
 <div class="code" title="File: FreeIntQuotient.v
 Line: 61
-Time: 0.006s">
-<div class="time" style="width: 2.1739130434783%"></div>
+Time: 0.005s">
+<div class="time" style="width: 1.9157088122605%"></div>
 <pre>
         rewrite (Coeq_rec_beta_cglue
                    (Wtil Unit Unit idmap idmap (unit_name R) (unit_name f))
@@ -413,7 +413,7 @@ Time: 0.006s">
 <div class="code" title="File: FreeIntQuotient.v
 Line: 64
 Time: 0.002s">
-<div class="time" style="width: 0.72463768115942%"></div>
+<div class="time" style="width: 0.76628352490421%"></div>
 <pre>
         symmetry; apply inv_V.</pre>
 </div>
@@ -446,22 +446,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeIntQuotient.v
 Line: 68
-Time: 0.004s">
-<div class="time" style="width: 1.4492753623188%"></div>
+Time: 0.003s">
+<div class="time" style="width: 1.1494252873563%"></div>
 <pre>
       rewrite transport_paths_FlFr, concat_p1.</pre>
 </div>
 <div class="code" title="File: FreeIntQuotient.v
 Line: 69
-Time: 0.002s">
-<div class="time" style="width: 0.72463768115942%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.38314176245211%"></div>
 <pre>
       apply moveR_Vp; rewrite concat_p1.</pre>
 </div>
 <div class="code" title="File: FreeIntQuotient.v
 Line: 70
 Time: 0.001s">
-<div class="time" style="width: 0.36231884057971%"></div>
+<div class="time" style="width: 0.38314176245211%"></div>
 <pre>
       rewrite Circle_rec_beta_loop.</pre>
 </div>
@@ -494,7 +494,7 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeIntQuotient.v
 Line: 74
-Time: 0.276s">
+Time: 0.261s">
 <div class="time" style="width: 100%"></div>
 <pre>
       refine (istrunc_equiv_istrunc (n := -1) _ (equiv_path_sigma _ xu yv)).</pre>
@@ -502,7 +502,7 @@ Time: 0.276s">
 <div class="code" title="File: FreeIntQuotient.v
 Line: 75
 Time: 0.001s">
-<div class="time" style="width: 0.36231884057971%"></div>
+<div class="time" style="width: 0.38314176245211%"></div>
 <pre>
       destruct xu as [x u], yv as [y v]; cbn.</pre>
 </div>
@@ -516,14 +516,14 @@ Time: 0s">
 <div class="code" title="File: FreeIntQuotient.v
 Line: 77
 Time: 0.001s">
-<div class="time" style="width: 0.36231884057971%"></div>
+<div class="time" style="width: 0.38314176245211%"></div>
 <pre>
       intros [p r] [q s].</pre>
 </div>
 <div class="code" title="File: FreeIntQuotient.v
 Line: 78
-Time: 0.004s">
-<div class="time" style="width: 1.4492753623188%"></div>
+Time: 0.003s">
+<div class="time" style="width: 1.1494252873563%"></div>
 <pre>
       set (P := Circle_rec Type R (path_universe f)) in *.</pre>
 </div>
@@ -570,7 +570,7 @@ Time: 0s">
 <div class="code" title="File: FreeIntQuotient.v
 Line: 83
 Time: 0.001s">
-<div class="time" style="width: 0.36231884057971%"></div>
+<div class="time" style="width: 0.38314176245211%"></div>
 <pre> apply path_ishprop.</pre>
 </div>
 <div class="code" title="File: FreeIntQuotient.v
@@ -581,8 +581,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeIntQuotient.v
 Line: 83
-Time: 0.006s">
-<div class="time" style="width: 2.1739130434783%"></div>
+Time: 0.005s">
+<div class="time" style="width: 1.9157088122605%"></div>
 <pre>
       apply path_sigma_hprop; cbn.</pre>
 </div>
@@ -596,28 +596,28 @@ Time: 0s">
 <div class="code" title="File: FreeIntQuotient.v
 Line: 85
 Time: 0.002s">
-<div class="time" style="width: 0.72463768115942%"></div>
+<div class="time" style="width: 0.76628352490421%"></div>
 <pre>
       assert (xb := merely_path_is0connected Circle base x).</pre>
 </div>
 <div class="code" title="File: FreeIntQuotient.v
 Line: 86
 Time: 0.002s">
-<div class="time" style="width: 0.72463768115942%"></div>
+<div class="time" style="width: 0.76628352490421%"></div>
 <pre>
       assert (yb := merely_path_is0connected Circle base y).</pre>
 </div>
 <div class="code" title="File: FreeIntQuotient.v
 Line: 87
-Time: 0.113s">
-<div class="time" style="width: 40.942028985507%"></div>
+Time: 0.083s">
+<div class="time" style="width: 31.800766283525%"></div>
 <pre>
       strip_truncations.</pre>
 </div>
 <div class="code" title="File: FreeIntQuotient.v
 Line: 88
 Time: 0.001s">
-<div class="time" style="width: 0.36231884057971%"></div>
+<div class="time" style="width: 0.38314176245211%"></div>
 <pre> destruct xb, yb.</pre>
 </div>
 <div class="code" title="File: FreeIntQuotient.v
@@ -630,14 +630,14 @@ Time: 0s">
 <div class="code" title="File: FreeIntQuotient.v
 Line: 89
 Time: 0.002s">
-<div class="time" style="width: 0.72463768115942%"></div>
+<div class="time" style="width: 0.76628352490421%"></div>
 <pre>
       equiv_intro (equiv_loopCircle_int^-1) n.</pre>
 </div>
 <div class="code" title="File: FreeIntQuotient.v
 Line: 90
 Time: 0.002s">
-<div class="time" style="width: 0.72463768115942%"></div>
+<div class="time" style="width: 0.76628352490421%"></div>
 <pre>
       equiv_intro (equiv_loopCircle_int^-1) m.</pre>
 </div>
@@ -650,8 +650,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeIntQuotient.v
 Line: 92
-Time: 0.005s">
-<div class="time" style="width: 1.8115942028986%"></div>
+Time: 0.004s">
+<div class="time" style="width: 1.5325670498084%"></div>
 <pre>
       rewrite !Circle_action_is_iter.</pre>
 </div>
@@ -677,8 +677,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeIntQuotient.v
 Line: 95
-Time: 0.104s">
-<div class="time" style="width: 37.68115942029%"></div>
+Time: 0.089s">
+<div class="time" style="width: 34.099616858238%"></div>
 <pre>
   Qed.</pre>
 </div>

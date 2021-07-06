@@ -36,21 +36,21 @@ Time: 0s">
 </div>
 <div class="code" title="File: Fracture.v
 Line: 1
-Time: 0.038s">
-<div class="time" style="width: 15.2%"></div>
+Time: 0.037s">
+<div class="time" style="width: 17.703349282297%"></div>
 <pre>Require Import HoTT.Basics HoTT.Types.</pre>
 </div>
 <div class="code" title="File: Fracture.v
 Line: 1
 Time: 0.016s">
-<div class="time" style="width: 6.4%"></div>
+<div class="time" style="width: 7.6555023923445%"></div>
 <pre>
 Require Import Extensions Pullback NullHomotopy.</pre>
 </div>
 <div class="code" title="File: Fracture.v
 Line: 2
-Time: 0.044s">
-<div class="time" style="width: 17.6%"></div>
+Time: 0.042s">
+<div class="time" style="width: 20.095693779904%"></div>
 <pre>
 Require Import Modality Lex Open Closed Nullification.</pre>
 </div>
@@ -107,7 +107,7 @@ Time: 0s">
 <div class="code" title="File: Fracture.v
 Line: 29
 Time: 0.002s">
-<div class="time" style="width: 0.8%"></div>
+<div class="time" style="width: 0.95693779904306%"></div>
 <pre>
 
     Definition fracture_square (A : Type)
@@ -178,35 +178,35 @@ Time: 0s">
 <div class="code" title="File: Fracture.v
 Line: 46
 Time: 0.002s">
-<div class="time" style="width: 0.8%"></div>
+<div class="time" style="width: 0.95693779904306%"></div>
 <pre>
       nrefine (ispullback_connmap_mapino_commsq O2 _).</pre>
 </div>
 <div class="code" title="File: Fracture.v
 Line: 47
-Time: 0.002s">
-<div class="time" style="width: 0.8%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.47846889952153%"></div>
 <pre>
       1-3:exact _.</pre>
 </div>
 <div class="code" title="File: Fracture.v
 Line: 48
-Time: 0.003s">
-<div class="time" style="width: 1.2%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.95693779904306%"></div>
 <pre>
       2:rapply mapinO_between_inO.</pre>
 </div>
 <div class="code" title="File: Fracture.v
 Line: 49
 Time: 0.002s">
-<div class="time" style="width: 0.8%"></div>
+<div class="time" style="width: 0.95693779904306%"></div>
 <pre>
       intros x; refine (ino2_isconnectedo1 _ _).</pre>
 </div>
 <div class="code" title="File: Fracture.v
 Line: 50
 Time: 0.001s">
-<div class="time" style="width: 0.4%"></div>
+<div class="time" style="width: 0.47846889952153%"></div>
 <pre>
     Defined.</pre>
 </div>
@@ -247,7 +247,7 @@ Time: 0s">
 <div class="code" title="File: Fracture.v
 Line: 61
 Time: 0.001s">
-<div class="time" style="width: 0.4%"></div>
+<div class="time" style="width: 0.47846889952153%"></div>
 <pre>Definition fracture_glue_uncurried
     : { B : Type_ O1 &amp; { C : Type_ O2 &amp; C -&gt; O2 B }} -&gt; Type
       := fun BCf =&gt; Pullback BCf.2.2 (to O2 BCf.1).</pre>
@@ -255,7 +255,7 @@ Time: 0.001s">
 <div class="code" title="File: Fracture.v
 Line: 63
 Time: 0.001s">
-<div class="time" style="width: 0.4%"></div>
+<div class="time" style="width: 0.47846889952153%"></div>
 <pre>
 
     Definition fracture_glue
@@ -266,7 +266,7 @@ Time: 0.001s">
 <div class="code" title="File: Fracture.v
 Line: 68
 Time: 0.002s">
-<div class="time" style="width: 0.8%"></div>
+<div class="time" style="width: 0.95693779904306%"></div>
 <pre>
 
     Definition fracture_unglue
@@ -293,7 +293,7 @@ Time: 0s">
 <div class="code" title="File: Fracture.v
 Line: 77
 Time: 0.002s">
-<div class="time" style="width: 0.8%"></div>
+<div class="time" style="width: 0.95693779904306%"></div>
 <pre>
       destruct BCf as [B [C f]]; simpl.</pre>
 </div>
@@ -308,7 +308,7 @@ Time: 0s">
 <div class="code" title="File: Fracture.v
 Line: 80
 Time: 0.001s">
-<div class="time" style="width: 0.4%"></div>
+<div class="time" style="width: 0.47846889952153%"></div>
 <pre>assert (IsEquiv (O_rec ((to O2 B)^*' f))).</pre>
 </div>
 <div class="code" title="File: Fracture.v
@@ -326,15 +326,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Fracture.v
 Line: 81
-Time: 0.001s">
-<div class="time" style="width: 0.4%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
         apply O_inverts_conn_map, conn_map_pullback'.</pre>
 </div>
 <div class="code" title="File: Fracture.v
 Line: 82
-Time: 0.078s">
-<div class="time" style="width: 31.2%"></div>
+Time: 0.074s">
+<div class="time" style="width: 35.406698564593%"></div>
 <pre>
         intros ob; apply isconnectedo1_ino2; exact _.</pre>
 </div>
@@ -347,7 +347,7 @@ Time: 0s">
 <div class="code" title="File: Fracture.v
 Line: 83
 Time: 0.001s">
-<div class="time" style="width: 0.4%"></div>
+<div class="time" style="width: 0.47846889952153%"></div>
 <pre>
       assert (IsEquiv (O_rec (f^* (to O2 B)))).</pre>
 </div>
@@ -367,7 +367,7 @@ Time: 0s">
 <div class="code" title="File: Fracture.v
 Line: 85
 Time: 0.001s">
-<div class="time" style="width: 0.4%"></div>
+<div class="time" style="width: 0.47846889952153%"></div>
 <pre>
         apply O_inverts_conn_map, conn_map_pullback; exact _.</pre>
 </div>
@@ -401,13 +401,13 @@ Time: 0s">
 <div class="code" title="File: Fracture.v
 Line: 89
 Time: 0.001s">
-<div class="time" style="width: 0.4%"></div>
+<div class="time" style="width: 0.47846889952153%"></div>
 <pre> apply path_TypeO; simpl.</pre>
 </div>
 <div class="code" title="File: Fracture.v
 Line: 89
-Time: 0.003s">
-<div class="time" style="width: 1.2%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.95693779904306%"></div>
 <pre>
         refine (path_universe (O_rec ((to O2 B)^*' f))).</pre>
 </div>
@@ -420,7 +420,7 @@ Time: 0s">
 <div class="code" title="File: Fracture.v
 Line: 90
 Time: 0.003s">
-<div class="time" style="width: 1.2%"></div>
+<div class="time" style="width: 1.4354066985646%"></div>
 <pre>
       refine (transport_sigma' _ _ @ _); simpl.</pre>
 </div>
@@ -441,13 +441,13 @@ Time: 0s">
 <div class="code" title="File: Fracture.v
 Line: 93
 Time: 0.001s">
-<div class="time" style="width: 0.4%"></div>
+<div class="time" style="width: 0.47846889952153%"></div>
 <pre> apply path_TypeO; simpl.</pre>
 </div>
 <div class="code" title="File: Fracture.v
 Line: 93
-Time: 0.003s">
-<div class="time" style="width: 1.2%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.95693779904306%"></div>
 <pre>
         refine (path_universe (O_rec (f^* (to O2 B)))).</pre>
 </div>
@@ -468,20 +468,20 @@ Time: 0s">
 <div class="code" title="File: Fracture.v
 Line: 96
 Time: 0.003s">
-<div class="time" style="width: 1.2%"></div>
+<div class="time" style="width: 1.4354066985646%"></div>
 <pre>apply path_arrow; intros c.</pre>
 </div>
 <div class="code" title="File: Fracture.v
 Line: 96
 Time: 0.001s">
-<div class="time" style="width: 0.4%"></div>
+<div class="time" style="width: 0.47846889952153%"></div>
 <pre>
       refine (transport_arrow_toconst _ _ _ @ _).</pre>
 </div>
 <div class="code" title="File: Fracture.v
 Line: 97
-Time: 0.002s">
-<div class="time" style="width: 0.8%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.47846889952153%"></div>
 <pre>
       refine (transport_arrow_fromconst
                 (C := fun X:Type_ O1 =&gt; O2 X) _ _ _ @ _).</pre>
@@ -489,14 +489,14 @@ Time: 0.002s">
 <div class="code" title="File: Fracture.v
 Line: 99
 Time: 0.001s">
-<div class="time" style="width: 0.4%"></div>
+<div class="time" style="width: 0.47846889952153%"></div>
 <pre>
       refine (transport_compose O2 (TypeO_pr1 O1) _ _ @ _).</pre>
 </div>
 <div class="code" title="File: Fracture.v
 Line: 100
 Time: 0.001s">
-<div class="time" style="width: 0.4%"></div>
+<div class="time" style="width: 0.47846889952153%"></div>
 <pre>
       refine (transport_compose idmap O2 _ _ @ _).</pre>
 </div>
@@ -510,8 +510,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Fracture.v
 Line: 103
-Time: 0.05s">
-<div class="time" style="width: 20%"></div>
+Time: 0.046s">
+<div class="time" style="width: 22.00956937799%"></div>
 <pre>transitivity (transport idmap
                      (ap O2 (path_universe (O_rec ((to O2 B)^*' f))))
                      (O_functor O2 (to O1 (Pullback f (to O2 B)))
@@ -531,7 +531,7 @@ Time: 0s">
 <div class="code" title="File: Fracture.v
 Line: 111
 Time: 0.002s">
-<div class="time" style="width: 0.8%"></div>
+<div class="time" style="width: 0.95693779904306%"></div>
 <pre> refine (pr1_path_sigma_uncurried _ @ eisretr pr1 _).</pre>
 </div>
 <div class="code" title="File: Fracture.v
@@ -543,8 +543,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Fracture.v
 Line: 112
-Time: 0.002s">
-<div class="time" style="width: 0.8%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.47846889952153%"></div>
 <pre> refine (transport_compose idmap (TypeO_pr1 O2)
                   (path_TypeO O2 (O2 (Pullback f (to O2 B)); _) C _)^
                   c @ _).</pre>
@@ -552,14 +552,14 @@ Time: 0.002s">
 <div class="code" title="File: Fracture.v
 Line: 114
 Time: 0.001s">
-<div class="time" style="width: 0.4%"></div>
+<div class="time" style="width: 0.47846889952153%"></div>
 <pre>
         refine (ap (fun p =&gt; transport idmap p c) (ap_V _ _) @ _).</pre>
 </div>
 <div class="code" title="File: Fracture.v
 Line: 115
-Time: 0.003s">
-<div class="time" style="width: 1.2%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.95693779904306%"></div>
 <pre>
         refine (ap (fun p =&gt; transport idmap p^ c)
                    (pr1_path_sigma_uncurried _ @ eisretr pr1 _) @ _).</pre>
@@ -567,7 +567,7 @@ Time: 0.003s">
 <div class="code" title="File: Fracture.v
 Line: 117
 Time: 0.001s">
-<div class="time" style="width: 0.4%"></div>
+<div class="time" style="width: 0.47846889952153%"></div>
 <pre>
         refine (transport_path_universe_V _ _).</pre>
 </div>
@@ -580,8 +580,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Fracture.v
 Line: 119
-Time: 0.002s">
-<div class="time" style="width: 0.8%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.47846889952153%"></div>
 <pre> refine (ap (fun p =&gt; transport idmap p _)
                    (ap_O_path_universe O2 _) @ _).</pre>
 </div>
@@ -614,15 +614,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Fracture.v
 Line: 123
-Time: 0.001s">
-<div class="time" style="width: 0.4%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
         refine (O_functor_homotopy O2 _ _ (O_rec_beta _) _ @ _).</pre>
 </div>
 <div class="code" title="File: Fracture.v
 Line: 124
 Time: 0.002s">
-<div class="time" style="width: 0.8%"></div>
+<div class="time" style="width: 0.95693779904306%"></div>
 <pre>
         revert c; equiv_intro (O_rec (f^* (to O2 B))) x.</pre>
 </div>
@@ -635,8 +635,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Fracture.v
 Line: 126
-Time: 0.003s">
-<div class="time" style="width: 1.2%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.95693779904306%"></div>
 <pre>
         revert x; apply O_indpaths; intros x; simpl.</pre>
 </div>
@@ -656,14 +656,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: Fracture.v
 Line: 129
-Time: 0.002s">
-<div class="time" style="width: 0.8%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.47846889952153%"></div>
 <pre>
         destruct x as [a [b q]]; simpl; exact (q^).</pre>
 </div>
 <div class="code" title="File: Fracture.v
 Line: 130
-Time: 0.25s">
+Time: 0.209s">
 <div class="time" style="width: 100%"></div>
 <pre>
     Qed.</pre>
@@ -709,7 +709,7 @@ Time: 0s">
 <div class="code" title="File: Fracture.v
 Line: 139
 Time: 0.001s">
-<div class="time" style="width: 0.4%"></div>
+<div class="time" style="width: 0.47846889952153%"></div>
 <pre>
 
     Definition isequiv_fracture_unglue `{Univalence}
@@ -722,8 +722,8 @@ Time: 0.001s">
 </div>
 <div class="code" title="File: Fracture.v
 Line: 147
-Time: 0.001s">
-<div class="time" style="width: 0.4%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
     Definition equiv_fracture_unglue `{Univalence}
@@ -732,8 +732,8 @@ Time: 0.001s">
 </div>
 <div class="code" title="File: Fracture.v
 Line: 151
-Time: 0.002s">
-<div class="time" style="width: 0.8%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.47846889952153%"></div>
 <pre>
 
   End FractureTheorem.</pre>
@@ -911,8 +911,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Fracture.v
 Line: 184
-Time: 0.005s">
-<div class="time" style="width: 2%"></div>
+Time: 0.004s">
+<div class="time" style="width: 1.9138755980861%"></div>
 <pre> simple refine (contr_equiv (Op' U A) _).</pre>
 </div>
 <div class="code" title="File: Fracture.v
@@ -924,8 +924,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Fracture.v
 Line: 185
-Time: 0.005s">
-<div class="time" style="width: 2%"></div>
+Time: 0.004s">
+<div class="time" style="width: 1.9138755980861%"></div>
 <pre> refine (O_rec idmap).</pre>
 </div>
 <div class="code" title="File: Fracture.v
@@ -984,21 +984,21 @@ Time: 0s">
 </div>
 <div class="code" title="File: Fracture.v
 Line: 191
-Time: 0.007s">
-<div class="time" style="width: 2.8%"></div>
+Time: 0.006s">
+<div class="time" style="width: 2.8708133971292%"></div>
 <pre> intros oa; revert oa; apply O_indpaths; intros a; simpl.</pre>
 </div>
 <div class="code" title="File: Fracture.v
 Line: 191
 Time: 0.001s">
-<div class="time" style="width: 0.4%"></div>
+<div class="time" style="width: 0.47846889952153%"></div>
 <pre>
         apply ap.</pre>
 </div>
 <div class="code" title="File: Fracture.v
 Line: 192
-Time: 0.003s">
-<div class="time" style="width: 1.2%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.95693779904306%"></div>
 <pre> rapply O_rec_beta.</pre>
 </div>
 <div class="code" title="File: Fracture.v
@@ -1016,8 +1016,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Fracture.v
 Line: 193
-Time: 0.011s">
-<div class="time" style="width: 4.4%"></div>
+Time: 0.009s">
+<div class="time" style="width: 4.3062200956938%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -1053,8 +1053,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Fracture.v
 Line: 200
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.47846889952153%"></div>
 <pre>
   simple refine (@local_rec _ C Cn tt _ tt ; _); simpl.</pre>
 </div>
@@ -1094,7 +1094,7 @@ Time: 0s">
 <div class="code" title="File: Fracture.v
 Line: 204
 Time: 0.001s">
-<div class="time" style="width: 0.4%"></div>
+<div class="time" style="width: 0.47846889952153%"></div>
 <pre>
     refine (@local_indpaths _ C Cn tt (fun _ =&gt; f a) _ _ tt);
       intros u; simpl in *.</pre>
@@ -1122,8 +1122,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Fracture.v
 Line: 209
-Time: 0.004s">
-<div class="time" style="width: 1.6%"></div>
+Time: 0.003s">
+<div class="time" style="width: 1.4354066985646%"></div>
 <pre>
 Defined.</pre>
 </div>

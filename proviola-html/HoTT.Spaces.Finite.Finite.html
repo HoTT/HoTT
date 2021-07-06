@@ -1918,12 +1918,12 @@
           
 
             i = 380;
-            data = "";
+            data = "2 goals (ID 506)	  	  H : Funext	  X : Type	  Y : X -> Type	  H0 : Finite X	  H1 : forall x : X, Finite (Y x)	  e : X <~> Fin (fcard X)	  ============================	  forall b : X, (fun x : Fin (fcard X) => Y (e^-1 x)) (e b) <~> Y b		goal 2 (ID 507) is:	 Finite (forall a : Fin (fcard X), (fun x : Fin (fcard X) => Y (e^-1 x)) a)	";
             responses[i]=data;
           
 
             i = 381;
-            data = "2 goals (ID 506)	  	  H : Funext	  X : Type	  Y : X -> Type	  H0 : Finite X	  H1 : forall x : X, Finite (Y x)	  e : X <~> Fin (fcard X)	  ============================	  forall b : X, (fun x : Fin (fcard X) => Y (e^-1 x)) (e b) <~> Y b		goal 2 (ID 507) is:	 Finite (forall a : Fin (fcard X), (fun x : Fin (fcard X) => Y (e^-1 x)) a)	1 goal (ID 506)	  	  H : Funext	  X : Type	  Y : X -> Type	  H0 : Finite X	  H1 : forall x : X, Finite (Y x)	  e : X <~> Fin (fcard X)	  ============================	  forall b : X, (fun x : Fin (fcard X) => Y (e^-1 x)) (e b) <~> Y b	<infomsg>	This subproof is complete, but there are some unfocused goals.	Try unfocusing with \"}\".	</infomsg>	1 goal		goal 1 (ID 507) is:	 Finite (forall a : Fin (fcard X), (fun x : Fin (fcard X) => Y (e^-1 x)) a)	";
+            data = "1 goal (ID 506)	  	  H : Funext	  X : Type	  Y : X -> Type	  H0 : Finite X	  H1 : forall x : X, Finite (Y x)	  e : X <~> Fin (fcard X)	  ============================	  forall b : X, (fun x : Fin (fcard X) => Y (e^-1 x)) (e b) <~> Y b	<infomsg>	This subproof is complete, but there are some unfocused goals.	Try unfocusing with \"}\".	</infomsg>	1 goal		goal 1 (ID 507) is:	 Finite (forall a : Fin (fcard X), (fun x : Fin (fcard X) => Y (e^-1 x)) a)	";
             responses[i]=data;
           
 
@@ -4294,7 +4294,7 @@
 </div>
 <div class="goal" id="goal0_3_3"><pre><span></span></pre></div>
 <div class="doc" scenenumber="5">
-<a id="lab1112"></a><h2 class="section">Definition of general finite sets</h2>
+<a id="lab1122"></a><h2 class="section">Definition of general finite sets</h2>
 </div>
 <div scenenumber="7" class="code">
 <span class="command" onmouseout="
@@ -4397,7 +4397,7 @@ Note that the sigma over cardinalities is not truncated.  Nevertheless, because 
 </div>
 <div class="goal" id="goal0_3_11"><pre><span></span></pre></div>
 <div class="doc" scenenumber="13">
-<a id="lab1113"></a><h2 class="section">Preservation of finiteness by equivalences</h2>
+<a id="lab1123"></a><h2 class="section">Preservation of finiteness by equivalences</h2>
 </div>
 <div scenenumber="15" class="code">
 <span class="command" onmouseout="
@@ -4525,7 +4525,7 @@ Note that the sigma over cardinalities is not truncated.  Nevertheless, because 
 </div>
 <div class="goal" id="goal0_3_15"><pre><span></span></pre></div>
 <div class="doc" scenenumber="17">
-<a id="lab1114"></a><h2 class="section">Simple examples of finite sets</h2>
+<a id="lab1124"></a><h2 class="section">Simple examples of finite sets</h2>
 <div class="doc" scenenumber="4"> </div>
 
  Canonical finite sets are finite 
@@ -4863,7 +4863,7 @@ Finite sets are also closed under successors.
 </div>
 <div class="goal" id="goal0_3_55"><pre><span></span></pre></div>
 <div class="doc" scenenumber="57">
-<a id="lab1115"></a><h2 class="section">Decidability</h2>
+<a id="lab1125"></a><h2 class="section">Decidability</h2>
 <div class="doc" scenenumber="4"> </div>
 
  Like canonical finite sets, finite sets have decidable equality. 
@@ -5047,7 +5047,7 @@ From this, it follows that any finite set is *merely* decidable.
 </div>
 <div class="goal" id="goal0_3_75"><pre><span></span></pre></div>
 <div class="doc" scenenumber="77">
-<a id="lab1116"></a><h2 class="section">Induction over finite sets</h2>
+<a id="lab1126"></a><h2 class="section">Induction over finite sets</h2>
 <div class="doc" scenenumber="4"> </div>
 
  Most concrete applications of this don't actually require univalence, but the general version does.  For this reason the general statement is less useful (and less used in the sequel) than it might be. 
@@ -5124,7 +5124,7 @@ From this, it follows that any finite set is *merely* decidable.
 </div>
 <div class="goal" id="goal0_3_79"><pre><span></span></pre></div>
 <div class="doc" scenenumber="81">
-<a id="lab1117"></a><h2 class="section">The finite axiom of choice, and projectivity</h2>
+<a id="lab1127"></a><h2 class="section">The finite axiom of choice, and projectivity</h2>
 </div>
 <div scenenumber="83" class="code">
 <span class="command" onmouseout="
@@ -5254,12 +5254,12 @@ From this, it follows that any finite set is *merely* decidable.
 </div>
 <div class="goal" id="goal0_3_83"><pre><span></span></pre></div>
 <div class="doc" scenenumber="85">
-<a id="lab1118"></a><h2 class="section">Constructions on finite sets</h2>
+<a id="lab1128"></a><h2 class="section">Constructions on finite sets</h2>
 <div class="doc" scenenumber="4"> </div>
 
  Finite sets are closed under sums, products, function spaces, and equivalence spaces.  There are multiple choices we could make regarding how to prove these facts.  Since we know what the cardinalities ought to be in all cases (since we know how to add, multiply, exponentiate, and take factorials of natural numbers), we could specify those off the bat, and then reduce to the case of canonical finite sets.  However, it's more amusing to instead prove finiteness of these constructions by "finite-set induction", and then *deduce* that their cardinalities are given by the corresponding operations on natural numbers (because they satisfy the same recurrences). 
 <div class="doc" scenenumber="6"> </div>
-<a id="lab1119"></a><h3 class="section">Binary sums</h3>
+<a id="lab1129"></a><h3 class="section">Binary sums</h3>
 </div>
 <div scenenumber="87" class="code">
 <span class="command" onmouseout="
@@ -5419,7 +5419,7 @@ Note that the cardinality function <span class="inlinecode"><a class="idref" hre
 </div>
 <div class="goal" id="goal0_3_91"><pre><span></span></pre></div>
 <div class="doc" scenenumber="93">
-<a id="lab1120"></a><h3 class="section">Binary products</h3>
+<a id="lab1130"></a><h3 class="section">Binary products</h3>
 </div>
 <div scenenumber="95" class="code">
 <span class="command" onmouseout="
@@ -5576,7 +5576,7 @@ Note that the cardinality function <span class="inlinecode"><a class="idref" hre
 </div>
 <div class="goal" id="goal0_3_95"><pre><span></span></pre></div>
 <div class="doc" scenenumber="97">
-<a id="lab1121"></a><h3 class="section">Function types</h3>
+<a id="lab1131"></a><h3 class="section">Function types</h3>
 <div class="doc" scenenumber="4"> </div>
 
  Finite sets are closed under function types, and even dependent function types. 
@@ -5786,7 +5786,7 @@ Note that the cardinality function <span class="inlinecode"><a class="idref" hre
 </div>
 <div class="goal" id="goal0_3_103"><pre><span></span></pre></div>
 <div class="doc" scenenumber="105">
-<a id="lab1122"></a><h3 class="section">Automorphism types (i.e. symmetric groups)</h3>
+<a id="lab1132"></a><h3 class="section">Automorphism types (i.e. symmetric groups)</h3>
 </div>
 <div scenenumber="107" class="code">
 <span class="command" onmouseout="
@@ -5953,7 +5953,7 @@ Note that the cardinality function <span class="inlinecode"><a class="idref" hre
 </div>
 <div class="goal" id="goal0_3_111"><pre><span></span></pre></div>
 <div class="doc" scenenumber="113">
-<a id="lab1123"></a><h2 class="section">Finite sums of natural numbers</h2>
+<a id="lab1133"></a><h2 class="section">Finite sums of natural numbers</h2>
 <div class="doc" scenenumber="4"> </div>
 
  Perhaps slightly less obviously, finite sets are also closed under sigmas. 
@@ -6282,7 +6282,7 @@ In particular, the image of a map between finite sets is finite.
 </div>
 <div class="goal" id="goal0_3_139"><pre><span></span></pre></div>
 <div class="doc" scenenumber="141">
-<a id="lab1124"></a><h2 class="section">Finite products of natural numbers</h2>
+<a id="lab1134"></a><h2 class="section">Finite products of natural numbers</h2>
 <div class="doc" scenenumber="4"> </div>
 
  Similarly, closure of finite sets under <span class="inlinecode"><span class="id" title="keyword">∀</span></span> automatically gives us a way to multiply a family of natural numbers indexed by any finite set.  Of course, if we defined this explicitly, it wouldn't need funext. 
@@ -6387,7 +6387,7 @@ The product of a finite constant family is the exponential by its cardinality.
 </div>
 <div class="goal" id="goal0_3_147"><pre><span></span></pre></div>
 <div class="doc" scenenumber="149">
-<a id="lab1125"></a><h2 class="section">Finite subsets</h2>
+<a id="lab1135"></a><h2 class="section">Finite subsets</h2>
 <div class="doc" scenenumber="4"> </div>
 
  Closure under sigmas implies that a detachable subset of a finite set is finite. 
@@ -6530,7 +6530,7 @@ Why doesn't Coq find this?
 </div>
 <div class="goal" id="goal0_3_159"><pre><span></span></pre></div>
 <div class="doc" scenenumber="161">
-<a id="lab1126"></a><h2 class="section">Quotients</h2>
+<a id="lab1136"></a><h2 class="section">Quotients</h2>
 <div class="doc" scenenumber="4"> </div>
 
  The quotient of a finite set by a detachable equivalence relation is finite. 
@@ -6987,7 +6987,7 @@ Therefore, the cardinality of <span class="inlinecode"><a class="idref" href="Ho
 </div>
 <div class="goal" id="goal0_3_167"><pre><span></span></pre></div>
 <div class="doc" scenenumber="169">
-<a id="lab1127"></a><h2 class="section">Injections</h2>
+<a id="lab1137"></a><h2 class="section">Injections</h2>
 <div class="doc" scenenumber="4"> </div>
 
  An injection between finite sets induces an inequality between their cardinalities. 
@@ -7235,7 +7235,7 @@ Therefore, the cardinality of <span class="inlinecode"><a class="idref" href="Ho
 </div>
 <div class="goal" id="goal0_3_171"><pre><span></span></pre></div>
 <div class="doc" scenenumber="173">
-<a id="lab1128"></a><h2 class="section">Enumerations</h2>
+<a id="lab1138"></a><h2 class="section">Enumerations</h2>
 <div class="doc" scenenumber="4"> </div>
 
  A function from <span class="inlinecode"><a class="idref" href="HoTT.Tests.html#Issue754_1.nat"><span class="id" title="inductive">nat</span></a></span> to a finite set must repeat itself eventually. 

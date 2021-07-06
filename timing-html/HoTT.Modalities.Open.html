@@ -39,20 +39,20 @@ Time: 0s">
 <div class="code" title="File: Open.v
 Line: 2
 Time: 0.039s">
-<div class="time" style="width: 49.367088607595%"></div>
+<div class="time" style="width: 50.649350649351%"></div>
 <pre>Require Import HoTT.Basics HoTT.Types.</pre>
 </div>
 <div class="code" title="File: Open.v
 Line: 2
-Time: 0.014s">
-<div class="time" style="width: 17.721518987342%"></div>
+Time: 0.013s">
+<div class="time" style="width: 16.883116883117%"></div>
 <pre>
 Require Import HProp TruncType Extensions.</pre>
 </div>
 <div class="code" title="File: Open.v
 Line: 3
-Time: 0.045s">
-<div class="time" style="width: 56.962025316456%"></div>
+Time: 0.044s">
+<div class="time" style="width: 57.142857142857%"></div>
 <pre>
 Require Import Modality Accessible Nullification Lex.</pre>
 </div>
@@ -93,7 +93,7 @@ Proof.</pre>
 <div class="code" title="File: Open.v
 Line: 13
 Time: 0.001s">
-<div class="time" style="width: 1.2658227848101%"></div>
+<div class="time" style="width: 1.2987012987013%"></div>
 <pre>
   snrapply easy_modality.</pre>
 </div>
@@ -160,7 +160,7 @@ Time: 0s">
 <div class="code" title="File: Open.v
 Line: 20
 Time: 0.001s">
-<div class="time" style="width: 1.2658227848101%"></div>
+<div class="time" style="width: 1.2987012987013%"></div>
 <pre>
     apply ap; apply path_ishprop.</pre>
 </div>
@@ -187,7 +187,7 @@ Time: 0s">
 <div class="code" title="File: Open.v
 Line: 23
 Time: 0.002s">
-<div class="time" style="width: 2.5316455696203%"></div>
+<div class="time" style="width: 2.5974025974026%"></div>
 <pre>
     transitivity (transport B 1 (f a u));
       auto with path_hints.</pre>
@@ -202,7 +202,7 @@ Time: 0s">
 <div class="code" title="File: Open.v
 Line: 26
 Time: 0.006s">
-<div class="time" style="width: 7.5949367088608%"></div>
+<div class="time" style="width: 7.7922077922078%"></div>
 <pre>
     transitivity (path_arrow (fun _ =&gt; a) (fun _ =&gt; a) (@ap10 U _ _ _ 1));
       auto with path_hints.</pre>
@@ -302,8 +302,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Open.v
 Line: 37
-Time: 0.001s">
-<div class="time" style="width: 1.2658227848101%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
       transitivity (path_arrow z z' (ap10 (f u))).</pre>
 </div>
@@ -337,7 +337,7 @@ Time: 0s">
 <div class="code" title="File: Open.v
 Line: 41
 Time: 0.001s">
-<div class="time" style="width: 1.2658227848101%"></div>
+<div class="time" style="width: 1.2987012987013%"></div>
 <pre>
         apply path_ishprop.</pre>
 </div>
@@ -376,8 +376,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Open.v
 Line: 45
-Time: 0.003s">
-<div class="time" style="width: 3.7974683544304%"></div>
+Time: 0.004s">
+<div class="time" style="width: 5.1948051948052%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -442,14 +442,14 @@ Time: 0s">
 <div class="code" title="File: Open.v
 Line: 56
 Time: 0.001s">
-<div class="time" style="width: 1.2658227848101%"></div>
+<div class="time" style="width: 1.2987012987013%"></div>
 <pre>
     pose (contr_inhabited_hprop U u).</pre>
 </div>
 <div class="code" title="File: Open.v
 Line: 57
 Time: 0.008s">
-<div class="time" style="width: 10.126582278481%"></div>
+<div class="time" style="width: 10.38961038961%"></div>
 <pre>
     refine (contr_equiv (U -&gt; A) (equiv_contr_forall _)).</pre>
 </div>
@@ -483,7 +483,7 @@ Time: 0s">
 <div class="code" title="File: Open.v
 Line: 61
 Time: 0.002s">
-<div class="time" style="width: 2.5316455696203%"></div>
+<div class="time" style="width: 2.5974025974026%"></div>
 <pre> intros u; pose (uc u); exact (center (x=y)).</pre>
 </div>
 <div class="code" title="File: Open.v
@@ -495,21 +495,21 @@ Time: 0s">
 </div>
 <div class="code" title="File: Open.v
 Line: 62
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.2987012987013%"></div>
 <pre> intros f; apply path_arrow; intros u.</pre>
 </div>
 <div class="code" title="File: Open.v
 Line: 62
 Time: 0.002s">
-<div class="time" style="width: 2.5316455696203%"></div>
+<div class="time" style="width: 2.5974025974026%"></div>
 <pre>
     pose proof (uc u); apply path_contr.</pre>
 </div>
 <div class="code" title="File: Open.v
 Line: 63
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.2987012987013%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -592,14 +592,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: Open.v
 Line: 74
-Time: 0.001s">
-<div class="time" style="width: 1.2658227848101%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
       apply (equiv_inverse (equiv_ooextendable_isequiv _ _)).</pre>
 </div>
 <div class="code" title="File: Open.v
 Line: 75
-Time: 0.079s">
+Time: 0.077s">
 <div class="time" style="width: 100%"></div>
 <pre>
       refine (cancelR_isequiv (fun x (u:Unit) =&gt; x)).</pre>
@@ -626,8 +626,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Open.v
 Line: 78
-Time: 0.073s">
-<div class="time" style="width: 92.405063291139%"></div>
+Time: 0.067s">
+<div class="time" style="width: 87.012987012987%"></div>
 <pre>
       refine (isequiv_compose (f := (fun x =&gt; unit_name x))
                               (g := (fun h =&gt; h o (@const U Unit tt)))).</pre>
@@ -642,7 +642,7 @@ Time: 0s">
 <div class="code" title="File: Open.v
 Line: 81
 Time: 0.001s">
-<div class="time" style="width: 1.2658227848101%"></div>
+<div class="time" style="width: 1.2987012987013%"></div>
 <pre>
 Defined.</pre>
 </div>

@@ -30,13 +30,13 @@ pre {
 
 <div class="code" title="File: dec_fields.v
 Line: 1
-Time: 0.018s">
-<div class="time" style="width: 18.367346938776%"></div>
+Time: 0.017s">
+<div class="time" style="width: 18.279569892473%"></div>
 <pre>Require Import HoTT.Basics.Decidable.</pre>
 </div>
 <div class="code" title="File: dec_fields.v
 Line: 1
-Time: 0.098s">
+Time: 0.093s">
 <div class="time" style="width: 100%"></div>
 <pre>
 Require Import
@@ -47,16 +47,16 @@ Require Import
 </div>
 <div class="code" title="File: dec_fields.v
 Line: 6
-Time: 0.006s">
-<div class="time" style="width: 6.1224489795918%"></div>
+Time: 0.005s">
+<div class="time" style="width: 5.3763440860215%"></div>
 <pre>
 Require Export
   HoTT.Classes.orders.rings.</pre>
 </div>
 <div class="code" title="File: dec_fields.v
 Line: 8
-Time: 0.005s">
-<div class="time" style="width: 5.1020408163265%"></div>
+Time: 0.006s">
+<div class="time" style="width: 6.4516129032258%"></div>
 <pre>
 Require Import HoTT.Classes.tactics.ring_tac.</pre>
 </div>
@@ -79,7 +79,7 @@ Section contents.</pre>
 <div class="code" title="File: dec_fields.v
 Line: 13
 Time: 0.001s">
-<div class="time" style="width: 1.0204081632653%"></div>
+<div class="time" style="width: 1.0752688172043%"></div>
 <pre>
 Context `{IsDecField F} `{Apart F} `{!TrivialApart F}
   `{!FullPseudoSemiRingOrder Fle Flt} `{DecidablePaths F}.</pre>
@@ -95,8 +95,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: dec_fields.v
 Line: 17
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.0752688172043%"></div>
 <pre>Instance pos_dec_recip_compat x : PropHolds (0 &lt; x) -&gt; PropHolds (0 &lt; /x).</pre>
 </div>
 <div class="code" title="File: dec_fields.v
@@ -115,29 +115,29 @@ intros E.</pre>
 </div>
 <div class="code" title="File: dec_fields.v
 Line: 19
-Time: 0.007s">
-<div class="time" style="width: 7.1428571428571%"></div>
+Time: 0.006s">
+<div class="time" style="width: 6.4516129032258%"></div>
 <pre>
 apply (strictly_order_reflecting (x *.)).</pre>
 </div>
 <div class="code" title="File: dec_fields.v
 Line: 20
 Time: 0.003s">
-<div class="time" style="width: 3.0612244897959%"></div>
+<div class="time" style="width: 3.2258064516129%"></div>
 <pre>
 rewrite dec_recip_inverse by (apply orders.lt_ne_flip;trivial).</pre>
 </div>
 <div class="code" title="File: dec_fields.v
 Line: 21
 Time: 0.002s">
-<div class="time" style="width: 2.0408163265306%"></div>
+<div class="time" style="width: 2.1505376344086%"></div>
 <pre>
 rewrite mult_0_r.</pre>
 </div>
 <div class="code" title="File: dec_fields.v
 Line: 22
 Time: 0.004s">
-<div class="time" style="width: 4.0816326530612%"></div>
+<div class="time" style="width: 4.3010752688172%"></div>
 <pre> solve_propholds.</pre>
 </div>
 <div class="code" title="File: dec_fields.v
@@ -149,8 +149,8 @@ Qed.</pre>
 </div>
 <div class="code" title="File: dec_fields.v
 Line: 23
-Time: 0.001s">
-<div class="time" style="width: 1.0204081632653%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
 Instance nonneg_dec_recip_compat x : PropHolds (0 ≤ x) -&gt; PropHolds (0 ≤ /x).</pre>
@@ -177,8 +177,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: dec_fields.v
 Line: 27
-Time: 0.017s">
-<div class="time" style="width: 17.34693877551%"></div>
+Time: 0.016s">
+<div class="time" style="width: 17.204301075269%"></div>
 <pre>
 destruct (dec (x = 0)) as [E2 | E2].</pre>
 </div>
@@ -191,8 +191,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: dec_fields.v
 Line: 29
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.0752688172043%"></div>
 <pre> rewrite E2, dec_recip_0.</pre>
 </div>
 <div class="code" title="File: dec_fields.v
@@ -211,7 +211,7 @@ Time: 0s">
 <div class="code" title="File: dec_fields.v
 Line: 30
 Time: 0.001s">
-<div class="time" style="width: 1.0204081632653%"></div>
+<div class="time" style="width: 1.0752688172043%"></div>
 <pre> apply lt_le.</pre>
 </div>
 <div class="code" title="File: dec_fields.v
@@ -223,7 +223,7 @@ Time: 0s">
 <div class="code" title="File: dec_fields.v
 Line: 30
 Time: 0.008s">
-<div class="time" style="width: 8.1632653061224%"></div>
+<div class="time" style="width: 8.6021505376344%"></div>
 <pre>
   apply lt_iff_le_ne.</pre>
 </div>
@@ -250,7 +250,7 @@ Qed.</pre>
 <div class="code" title="File: dec_fields.v
 Line: 33
 Time: 0.001s">
-<div class="time" style="width: 1.0204081632653%"></div>
+<div class="time" style="width: 1.0752688172043%"></div>
 <pre>
 
 Lemma neg_dec_recip_compat x : x &lt; 0 -&gt; /x &lt; 0.</pre>
@@ -271,14 +271,14 @@ intros.</pre>
 </div>
 <div class="code" title="File: dec_fields.v
 Line: 37
-Time: 0.003s">
-<div class="time" style="width: 3.0612244897959%"></div>
+Time: 0.002s">
+<div class="time" style="width: 2.1505376344086%"></div>
 <pre> apply flip_neg_negate.</pre>
 </div>
 <div class="code" title="File: dec_fields.v
 Line: 37
-Time: 0.017s">
-<div class="time" style="width: 17.34693877551%"></div>
+Time: 0.016s">
+<div class="time" style="width: 17.204301075269%"></div>
 <pre>
 rewrite dec_recip_negate.</pre>
 </div>
@@ -292,7 +292,7 @@ apply pos_dec_recip_compat.</pre>
 <div class="code" title="File: dec_fields.v
 Line: 39
 Time: 0.002s">
-<div class="time" style="width: 2.0408163265306%"></div>
+<div class="time" style="width: 2.1505376344086%"></div>
 <pre>
 apply flip_neg_negate.</pre>
 </div>
@@ -312,7 +312,7 @@ Qed.</pre>
 <div class="code" title="File: dec_fields.v
 Line: 41
 Time: 0.001s">
-<div class="time" style="width: 1.0204081632653%"></div>
+<div class="time" style="width: 1.0752688172043%"></div>
 <pre>
 
 Lemma nonpos_dec_recip_compat x : x ≤ 0 -&gt; /x ≤ 0.</pre>
@@ -334,13 +334,13 @@ intros.</pre>
 <div class="code" title="File: dec_fields.v
 Line: 45
 Time: 0.003s">
-<div class="time" style="width: 3.0612244897959%"></div>
+<div class="time" style="width: 3.2258064516129%"></div>
 <pre> apply flip_nonpos_negate.</pre>
 </div>
 <div class="code" title="File: dec_fields.v
 Line: 45
-Time: 0.017s">
-<div class="time" style="width: 17.34693877551%"></div>
+Time: 0.015s">
+<div class="time" style="width: 16.129032258065%"></div>
 <pre>
 rewrite dec_recip_negate.</pre>
 </div>
@@ -354,21 +354,21 @@ apply nonneg_dec_recip_compat.</pre>
 <div class="code" title="File: dec_fields.v
 Line: 47
 Time: 0.002s">
-<div class="time" style="width: 2.0408163265306%"></div>
+<div class="time" style="width: 2.1505376344086%"></div>
 <pre>
 apply flip_nonpos_negate;trivial.</pre>
 </div>
 <div class="code" title="File: dec_fields.v
 Line: 48
-Time: 0.001s">
-<div class="time" style="width: 1.0204081632653%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 Qed.</pre>
 </div>
 <div class="code" title="File: dec_fields.v
 Line: 49
 Time: 0.001s">
-<div class="time" style="width: 1.0204081632653%"></div>
+<div class="time" style="width: 1.0752688172043%"></div>
 <pre>
 
 Lemma flip_le_dec_recip x y : 0 &lt; y -&gt; y ≤ x  -&gt; /x ≤ /y.</pre>
@@ -389,8 +389,8 @@ intros E1 E2.</pre>
 </div>
 <div class="code" title="File: dec_fields.v
 Line: 53
-Time: 0.007s">
-<div class="time" style="width: 7.1428571428571%"></div>
+Time: 0.006s">
+<div class="time" style="width: 6.4516129032258%"></div>
 <pre>
 apply (order_reflecting_pos (.*.) x).</pre>
 </div>
@@ -404,7 +404,7 @@ Time: 0s">
 <div class="code" title="File: dec_fields.v
 Line: 55
 Time: 0.001s">
-<div class="time" style="width: 1.0204081632653%"></div>
+<div class="time" style="width: 1.0752688172043%"></div>
 <pre> apply lt_le_trans with y;trivial.</pre>
 </div>
 <div class="code" title="File: dec_fields.v
@@ -417,7 +417,7 @@ Time: 0s">
 <div class="code" title="File: dec_fields.v
 Line: 56
 Time: 0.001s">
-<div class="time" style="width: 1.0204081632653%"></div>
+<div class="time" style="width: 1.0752688172043%"></div>
 <pre> rewrite dec_recip_inverse.</pre>
 </div>
 <div class="code" title="File: dec_fields.v
@@ -429,14 +429,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: dec_fields.v
 Line: 57
-Time: 0.036s">
-<div class="time" style="width: 36.734693877551%"></div>
+Time: 0.032s">
+<div class="time" style="width: 34.408602150538%"></div>
 <pre> apply (order_reflecting_pos (.*.) y);trivial.</pre>
 </div>
 <div class="code" title="File: dec_fields.v
 Line: 57
-Time: 0.018s">
-<div class="time" style="width: 18.367346938776%"></div>
+Time: 0.015s">
+<div class="time" style="width: 16.129032258065%"></div>
 <pre>
     rewrite (commutativity x), simple_associativity, dec_recip_inverse.</pre>
 </div>
@@ -449,8 +449,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: dec_fields.v
 Line: 59
-Time: 0.004s">
-<div class="time" style="width: 4.0816326530612%"></div>
+Time: 0.003s">
+<div class="time" style="width: 3.2258064516129%"></div>
 <pre> rewrite mult_1_l,mult_1_r.</pre>
 </div>
 <div class="code" title="File: dec_fields.v
@@ -469,7 +469,7 @@ Time: 0s">
 <div class="code" title="File: dec_fields.v
 Line: 60
 Time: 0.001s">
-<div class="time" style="width: 1.0204081632653%"></div>
+<div class="time" style="width: 1.0752688172043%"></div>
 <pre> apply lt_ne_flip;trivial.</pre>
 </div>
 <div class="code" title="File: dec_fields.v
@@ -482,27 +482,27 @@ Time: 0s">
 <div class="code" title="File: dec_fields.v
 Line: 61
 Time: 0.001s">
-<div class="time" style="width: 1.0204081632653%"></div>
+<div class="time" style="width: 1.0752688172043%"></div>
 <pre> apply lt_ne_flip.</pre>
 </div>
 <div class="code" title="File: dec_fields.v
 Line: 61
 Time: 0.001s">
-<div class="time" style="width: 1.0204081632653%"></div>
+<div class="time" style="width: 1.0752688172043%"></div>
 <pre>
     apply lt_le_trans with y;trivial.</pre>
 </div>
 <div class="code" title="File: dec_fields.v
 Line: 62
 Time: 0.001s">
-<div class="time" style="width: 1.0204081632653%"></div>
+<div class="time" style="width: 1.0752688172043%"></div>
 <pre>
 Qed.</pre>
 </div>
 <div class="code" title="File: dec_fields.v
 Line: 63
 Time: 0.001s">
-<div class="time" style="width: 1.0204081632653%"></div>
+<div class="time" style="width: 1.0752688172043%"></div>
 <pre>
 
 Lemma flip_le_dec_recip_l x y : 0 &lt; y -&gt; /y ≤ x  -&gt; /x ≤ y.</pre>
@@ -523,8 +523,8 @@ intros E1 E2.</pre>
 </div>
 <div class="code" title="File: dec_fields.v
 Line: 67
-Time: 0.013s">
-<div class="time" style="width: 13.265306122449%"></div>
+Time: 0.011s">
+<div class="time" style="width: 11.827956989247%"></div>
 <pre>
 rewrite &lt;-(dec_recip_involutive y).</pre>
 </div>
@@ -552,7 +552,7 @@ Qed.</pre>
 <div class="code" title="File: dec_fields.v
 Line: 71
 Time: 0.001s">
-<div class="time" style="width: 1.0204081632653%"></div>
+<div class="time" style="width: 1.0752688172043%"></div>
 <pre>
 
 Lemma flip_le_dec_recip_r x y : 0 &lt; y -&gt; y ≤ /x  -&gt; x ≤ /y.</pre>
@@ -573,8 +573,8 @@ intros E1 E2.</pre>
 </div>
 <div class="code" title="File: dec_fields.v
 Line: 75
-Time: 0.012s">
-<div class="time" style="width: 12.244897959184%"></div>
+Time: 0.011s">
+<div class="time" style="width: 11.827956989247%"></div>
 <pre>
 rewrite &lt;-(dec_recip_involutive x).</pre>
 </div>
@@ -595,7 +595,7 @@ Qed.</pre>
 <div class="code" title="File: dec_fields.v
 Line: 78
 Time: 0.001s">
-<div class="time" style="width: 1.0204081632653%"></div>
+<div class="time" style="width: 1.0752688172043%"></div>
 <pre>
 
 Lemma flip_lt_dec_recip x y : 0 &lt; y -&gt; y &lt; x  -&gt; /x &lt; /y.</pre>
@@ -617,14 +617,14 @@ intros E1 E2.</pre>
 <div class="code" title="File: dec_fields.v
 Line: 82
 Time: 0.002s">
-<div class="time" style="width: 2.0408163265306%"></div>
+<div class="time" style="width: 2.1505376344086%"></div>
 <pre>
 assert (0 &lt; x) by (transitivity y;trivial).</pre>
 </div>
 <div class="code" title="File: dec_fields.v
 Line: 83
-Time: 0.006s">
-<div class="time" style="width: 6.1224489795918%"></div>
+Time: 0.005s">
+<div class="time" style="width: 5.3763440860215%"></div>
 <pre>
 apply (strictly_order_reflecting (x *.)).</pre>
 </div>
@@ -645,13 +645,13 @@ Time: 0s">
 <div class="code" title="File: dec_fields.v
 Line: 86
 Time: 0.005s">
-<div class="time" style="width: 5.1020408163265%"></div>
+<div class="time" style="width: 5.3763440860215%"></div>
 <pre> apply (strictly_order_reflecting (y *.)).</pre>
 </div>
 <div class="code" title="File: dec_fields.v
 Line: 86
-Time: 0.019s">
-<div class="time" style="width: 19.387755102041%"></div>
+Time: 0.017s">
+<div class="time" style="width: 18.279569892473%"></div>
 <pre>
   rewrite (commutativity x), simple_associativity, dec_recip_inverse.</pre>
 </div>
@@ -664,8 +664,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: dec_fields.v
 Line: 88
-Time: 0.004s">
-<div class="time" style="width: 4.0816326530612%"></div>
+Time: 0.003s">
+<div class="time" style="width: 3.2258064516129%"></div>
 <pre> rewrite mult_1_l,mult_1_r.</pre>
 </div>
 <div class="code" title="File: dec_fields.v
@@ -684,7 +684,7 @@ Time: 0s">
 <div class="code" title="File: dec_fields.v
 Line: 89
 Time: 0.001s">
-<div class="time" style="width: 1.0204081632653%"></div>
+<div class="time" style="width: 1.0752688172043%"></div>
 <pre> apply lt_ne_flip.</pre>
 </div>
 <div class="code" title="File: dec_fields.v
@@ -703,7 +703,7 @@ Time: 0s">
 <div class="code" title="File: dec_fields.v
 Line: 90
 Time: 0.001s">
-<div class="time" style="width: 1.0204081632653%"></div>
+<div class="time" style="width: 1.0752688172043%"></div>
 <pre> apply lt_ne_flip;trivial.</pre>
 </div>
 <div class="code" title="File: dec_fields.v
@@ -716,7 +716,7 @@ Qed.</pre>
 <div class="code" title="File: dec_fields.v
 Line: 91
 Time: 0.001s">
-<div class="time" style="width: 1.0204081632653%"></div>
+<div class="time" style="width: 1.0752688172043%"></div>
 <pre>
 
 Lemma flip_lt_dec_recip_l x y : 0 &lt; y -&gt; /y &lt; x  -&gt; /x &lt; y.</pre>
@@ -737,8 +737,8 @@ intros E1 E2.</pre>
 </div>
 <div class="code" title="File: dec_fields.v
 Line: 95
-Time: 0.012s">
-<div class="time" style="width: 12.244897959184%"></div>
+Time: 0.011s">
+<div class="time" style="width: 11.827956989247%"></div>
 <pre>
 rewrite &lt;-(dec_recip_involutive y).</pre>
 </div>
@@ -772,7 +772,7 @@ Qed.</pre>
 <div class="code" title="File: dec_fields.v
 Line: 99
 Time: 0.001s">
-<div class="time" style="width: 1.0204081632653%"></div>
+<div class="time" style="width: 1.0752688172043%"></div>
 <pre>
 
 Lemma flip_lt_dec_recip_r x y : 0 &lt; y -&gt; y &lt; /x  -&gt; x &lt; /y.</pre>
@@ -793,8 +793,8 @@ intros E1 E2.</pre>
 </div>
 <div class="code" title="File: dec_fields.v
 Line: 103
-Time: 0.015s">
-<div class="time" style="width: 15.30612244898%"></div>
+Time: 0.013s">
+<div class="time" style="width: 13.978494623656%"></div>
 <pre>
 rewrite &lt;-(dec_recip_involutive x).</pre>
 </div>
@@ -815,7 +815,7 @@ Qed.</pre>
 <div class="code" title="File: dec_fields.v
 Line: 106
 Time: 0.001s">
-<div class="time" style="width: 1.0204081632653%"></div>
+<div class="time" style="width: 1.0752688172043%"></div>
 <pre>
 End contents.</pre>
 </div>

@@ -36,14 +36,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: WType.v
 Line: 1
-Time: 0.025s">
-<div class="time" style="width: 21.929824561404%"></div>
+Time: 0.023s">
+<div class="time" style="width: 21.296296296296%"></div>
 <pre>Require Import HoTT.Basics.</pre>
 </div>
 <div class="code" title="File: WType.v
 Line: 1
-Time: 0.007s">
-<div class="time" style="width: 6.140350877193%"></div>
+Time: 0.006s">
+<div class="time" style="width: 5.5555555555556%"></div>
 <pre>
 Require Import Types.Forall Types.Sigma.</pre>
 </div>
@@ -59,8 +59,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: WType.v
 Line: 5
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.92592592592593%"></div>
 <pre>Inductive W (A : Type) (B : A -&gt; Type) : Type :=
   w_sup (x : A) : (B x -&gt; W A B) -&gt; W A B.</pre>
 </div>
@@ -77,8 +77,8 @@ Definition w_label {A B} (w : W A B) : A :=
 </div>
 <div class="code" title="File: WType.v
 Line: 11
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.92592592592593%"></div>
 <pre>
 
 Definition w_arg {A B} (w : W A B) : B (w_label w) -&gt; W A B :=
@@ -89,7 +89,7 @@ Definition w_arg {A B} (w : W A B) : B (w_label w) -&gt; W A B :=
 <div class="code" title="File: WType.v
 Line: 16
 Time: 0.01s">
-<div class="time" style="width: 8.7719298245614%"></div>
+<div class="time" style="width: 9.2592592592593%"></div>
 <pre>
 
 Definition issig_W (A : Type) (B : A -&gt; Type)
@@ -108,7 +108,7 @@ Time: 0s">
 <div class="code" title="File: WType.v
 Line: 22
 Time: 0.002s">
-<div class="time" style="width: 1.7543859649123%"></div>
+<div class="time" style="width: 1.8518518518519%"></div>
 <pre>Definition equiv_path_wtype {A B} (z z' : W A B)
   : (w_label z;w_arg z) = (w_label z';w_arg z') :&gt; {a : _ &amp; B a -&gt; W A B} &lt;~&gt; z = z'
   := (equiv_ap' (issig_W A B)^-1%equiv z z')^-1%equiv.</pre>
@@ -116,7 +116,7 @@ Time: 0.002s">
 <div class="code" title="File: WType.v
 Line: 24
 Time: 0.001s">
-<div class="time" style="width: 0.87719298245614%"></div>
+<div class="time" style="width: 0.92592592592593%"></div>
 <pre>
 
 Definition equiv_path_wtype' {A B} (z z' : W A B)
@@ -147,7 +147,7 @@ Time: 0s">
 <div class="code" title="File: WType.v
 Line: 31
 Time: 0.001s">
-<div class="time" style="width: 0.87719298245614%"></div>
+<div class="time" style="width: 0.92592592592593%"></div>
 <pre>
   destruct z as [z1 z2], z' as [z1' z2'].</pre>
 </div>
@@ -175,7 +175,7 @@ Time: 0s">
 <div class="code" title="File: WType.v
 Line: 35
 Time: 0.003s">
-<div class="time" style="width: 2.6315789473684%"></div>
+<div class="time" style="width: 2.7777777777778%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -221,13 +221,13 @@ Time: 0s">
 <div class="code" title="File: WType.v
 Line: 44
 Time: 0.001s">
-<div class="time" style="width: 0.87719298245614%"></div>
+<div class="time" style="width: 0.92592592592593%"></div>
 <pre>
   nrefine (istrunc_equiv_istrunc _ (equiv_path_wtype' _ _)).</pre>
 </div>
 <div class="code" title="File: WType.v
 Line: 45
-Time: 0.114s">
+Time: 0.108s">
 <div class="time" style="width: 100%"></div>
 <pre>
   rapply istrunc_sigma.</pre>
@@ -249,14 +249,14 @@ Time: 0s">
 <div class="code" title="File: WType.v
 Line: 48
 Time: 0.002s">
-<div class="time" style="width: 1.7543859649123%"></div>
+<div class="time" style="width: 1.8518518518519%"></div>
 <pre>
   apply (istrunc_equiv_istrunc _ (equiv_path_forall _ _)).</pre>
 </div>
 <div class="code" title="File: WType.v
 Line: 49
 Time: 0.001s">
-<div class="time" style="width: 0.87719298245614%"></div>
+<div class="time" style="width: 0.92592592592593%"></div>
 <pre>
 Defined.</pre>
 </div>

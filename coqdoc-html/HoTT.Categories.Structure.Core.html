@@ -22,7 +22,7 @@
 </div>
 
 <div class="doc">
-<a id="lab737"></a><h1 class="section">Notions of Structure</h1>
+<a id="lab747"></a><h1 class="section">Notions of Structure</h1>
 
 </div>
 <div class="code">
@@ -43,7 +43,7 @@
 </div>
 
 <div class="doc">
-<a id="lab738"></a><h1 class="section">Structures</h1>
+<a id="lab748"></a><h1 class="section">Structures</h1>
 
 </div>
 <div class="code">
@@ -63,7 +63,7 @@ Quoting the Homotopy Type Theory Book (with slight changes for
     notational consistency): 
 <div class="paragraph"> </div>
 
-<a id="lab739"></a><h2 class="section">9.8 The structure identity principle</h2>
+<a id="lab749"></a><h2 class="section">9.8 The structure identity principle</h2>
 
 
 <div class="paragraph"> </div>
@@ -87,7 +87,7 @@ Quoting the Homotopy Type Theory Book (with slight changes for
     universe. 
 <div class="paragraph"> </div>
 
-<a id="lab740"></a><h3 class="section">Notion of Structure</h3>
+<a id="lab750"></a><h3 class="section">Notion of Structure</h3>
  Definition: A <i>notion of structure</i> <span class="inlinecode">(<a class="idref" href="HoTT.Types.Bool.html#BoolForall.P"><span class="id" title="variable">P</span></a>,<a class="idref" href="HoTT.Modalities.Modality.html#ModalFact.TwoFactorizations.H"><span class="id" title="variable">H</span></a>)</span> over <span class="inlinecode"><a class="idref" href="HoTT.Sets.GCH.html#LEM.X"><span class="id" title="variable">X</span></a></span> consists of
     the following.  We use <span class="inlinecode"><span class="id" title="var">X₀</span></span> to denote the objects of <span class="inlinecode"><a class="idref" href="HoTT.Sets.GCH.html#LEM.X"><span class="id" title="variable">X</span></a></span>, and
     <span class="inlinecode"><span class="id" title="var">hom</span>ₓ(<a class="idref" href="HoTT.Categories.Grothendieck.ToSet.Core.html#x"><span class="id" title="projection">x</span></a>,</span> <span class="inlinecode"><a class="idref" href="HoTT.Categories.Functor.Attributes.html#fully_faithful_helpers.y"><span class="id" title="variable">y</span></a>)</span> to denote the morphisms <span class="inlinecode"><a class="idref" href="HoTT.Categories.Structure.Core.html#PreCategoryOfStructures.morphism"><span class="id" title="record">morphism</span></a></span> <span class="inlinecode"><a class="idref" href="HoTT.Sets.GCH.html#LEM.X"><span class="id" title="variable">X</span></a></span> <span class="inlinecode"><a class="idref" href="HoTT.Categories.Grothendieck.ToSet.Core.html#x"><span class="id" title="projection">x</span></a></span> <span class="inlinecode"><a class="idref" href="HoTT.Categories.Functor.Attributes.html#fully_faithful_helpers.y"><span class="id" title="variable">y</span></a></span> of <span class="inlinecode"><a class="idref" href="HoTT.Sets.GCH.html#LEM.X"><span class="id" title="variable">X</span></a></span>.
@@ -217,7 +217,7 @@ When <span class="inlinecode">(<a class="idref" href="HoTT.Types.Bool.html#BoolF
 By (iii) and (iv), this is a preorder with <span class="inlinecode"><a class="idref" href="HoTT.Types.Bool.html#BoolForall.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode"><a class="idref" href="HoTT.Categories.Grothendieck.ToSet.Core.html#x"><span class="id" title="projection">x</span></a></span> its type of objects. 
 <div class="paragraph"> </div>
 
-<a id="lab741"></a><h3 class="section">Being a structure homomorphism is a preorder</h3>
+<a id="lab751"></a><h3 class="section">Being a structure homomorphism is a preorder</h3>
 
 </div>
 <div class="code">
@@ -234,7 +234,7 @@ By (iii) and (iv), this is a preorder with <span class="inlinecode"><a class="id
 </div>
 
 <div class="doc">
-<a id="lab742"></a><h3 class="section">Standard notion of structure</h3>
+<a id="lab752"></a><h3 class="section">Standard notion of structure</h3>
  We say that <span class="inlinecode">(<a class="idref" href="HoTT.Types.Bool.html#BoolForall.P"><span class="id" title="variable">P</span></a>,</span> <span class="inlinecode"><a class="idref" href="HoTT.Modalities.Modality.html#ModalFact.TwoFactorizations.H"><span class="id" title="variable">H</span></a>)</span> is a <i>standard notion of structure</i> if this
     preorder is in fact a partial order, for all <span class="inlinecode"><a class="idref" href="HoTT.Categories.Grothendieck.ToSet.Core.html#x"><span class="id" title="projection">x</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="HoTT.Sets.GCH.html#LEM.X"><span class="id" title="variable">X</span></a></span>. 
 <div class="paragraph"> </div>
@@ -274,7 +274,7 @@ Note that for a standard notion of structure, each type <span class="inlinecode"
 </div>
 
 <div class="doc">
-<a id="lab743"></a><h3 class="section">Precategory of structures</h3>
+<a id="lab753"></a><h3 class="section">Precategory of structures</h3>
  We now define, for any notion of structure <span class="inlinecode">(<a class="idref" href="HoTT.Types.Bool.html#BoolForall.P"><span class="id" title="variable">P</span></a>,</span> <span class="inlinecode"><a class="idref" href="HoTT.Modalities.Modality.html#ModalFact.TwoFactorizations.H"><span class="id" title="variable">H</span></a>)</span>, a
     <i>precategory of <span class="inlinecode">(<a class="idref" href="HoTT.Types.Bool.html#BoolForall.P"><span class="id" title="variable">P</span></a>,</span> <span class="inlinecode"><a class="idref" href="HoTT.Modalities.Modality.html#ModalFact.TwoFactorizations.H"><span class="id" title="variable">H</span></a>)</span>-structures</i>,
 

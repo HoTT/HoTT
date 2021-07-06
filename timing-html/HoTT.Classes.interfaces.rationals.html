@@ -30,13 +30,13 @@ pre {
 
 <div class="code" title="File: rationals.v
 Line: 1
-Time: 0.031s">
-<div class="time" style="width: 28.440366972477%"></div>
+Time: 0.027s">
+<div class="time" style="width: 25.961538461538%"></div>
 <pre>Require Import HoTT.Types.Universe.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 1
-Time: 0.109s">
+Time: 0.104s">
 <div class="time" style="width: 100%"></div>
 <pre>
 Require Import
@@ -59,8 +59,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 12
-Time: 0.002s">
-<div class="time" style="width: 1.8348623853211%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.96153846153846%"></div>
 <pre>Class RationalsToField@{i j k l} (A : Type@{i}) :=
   rationals_to_field : forall (B : Type@{j}) `{IsField@{j l k} B}
     `{!FieldCharacteristic B 0}, A -&gt; B.</pre>
@@ -86,8 +86,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 20
-Time: 0.018s">
-<div class="time" style="width: 16.51376146789%"></div>
+Time: 0.016s">
+<div class="time" style="width: 15.384615384615%"></div>
 <pre>Class Rationals A {Aap : Apart A} {Aplus Amult Azero Aone Aneg Arecip Ale Alt}
   `{U : !RationalsToField A} :=
   { rationals_field :&gt; @IsDecField A Aplus Amult Azero Aone Aneg Arecip

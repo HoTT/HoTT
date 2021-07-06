@@ -48,14 +48,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 12
-Time: 0.102s">
+Time: 0.097s">
 <div class="time" style="width: 100%"></div>
 <pre>Require Export HoTT.Algebra.Universal.Algebra.</pre>
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 12
-Time: 0.02s">
-<div class="time" style="width: 19.607843137255%"></div>
+Time: 0.019s">
+<div class="time" style="width: 19.587628865979%"></div>
 <pre>
 
 Require Import
@@ -94,8 +94,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 27
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.0309278350515%"></div>
 <pre>Inductive CarriersTermAlgebra {σ} (C : Carriers σ) : Carriers σ :=
   | var_term_algebra : forall s, C s -&gt; CarriersTermAlgebra C s
   | ops_term_algebra : forall (u : Symbol σ),
@@ -104,8 +104,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 31
-Time: 0.001s">
-<div class="time" style="width: 0.98039215686275%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
 Scheme CarriersTermAlgebra_ind := Elimination for CarriersTermAlgebra Sort Type.</pre>
@@ -127,8 +127,8 @@ Definition CarriersTermAlgebra_rect {σ} := @CarriersTermAlgebra_ind σ.</pre>
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 36
-Time: 0.001s">
-<div class="time" style="width: 0.98039215686275%"></div>
+Time: 0.002s">
+<div class="time" style="width: 2.0618556701031%"></div>
 <pre>
 
 Definition CarriersTermAlgebra_rec {σ : Signature} (C : Carriers σ)
@@ -157,8 +157,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 53
-Time: 0.002s">
-<div class="time" style="width: 1.9607843137255%"></div>
+Time: 0.003s">
+<div class="time" style="width: 3.0927835051546%"></div>
 <pre>Fixpoint ExtendDRelTermAlgebra {σ : Signature} {C : Carriers σ}
   (R : forall s, Relation (C s)) {s1 s2 : Sort σ}
   (S : CarriersTermAlgebra C s1) (T : CarriersTermAlgebra C s2)
@@ -176,8 +176,8 @@ Time: 0.002s">
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 66
-Time: 0.001s">
-<div class="time" style="width: 0.98039215686275%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
 Definition ExtendRelTermAlgebra {σ : Signature} {C : Carriers σ}
@@ -212,8 +212,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 77
-Time: 0.001s">
-<div class="time" style="width: 0.98039215686275%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
   Global Instance hprop_extend_drel_term_algebra {s1 s2 : Sort σ}
@@ -236,15 +236,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 83
-Time: 0.044s">
-<div class="time" style="width: 43.137254901961%"></div>
+Time: 0.042s">
+<div class="time" style="width: 43.298969072165%"></div>
 <pre>
     induction S; intros s2 T; destruct T; exact _.</pre>
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 84
-Time: 0.003s">
-<div class="time" style="width: 2.9411764705882%"></div>
+Time: 0.002s">
+<div class="time" style="width: 2.0618556701031%"></div>
 <pre>
   Qed.</pre>
 </div>
@@ -288,7 +288,7 @@ Time: 0s">
 <div class="code" title="File: TermAlgebra.v
 Line: 92
 Time: 0.002s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.0618556701031%"></div>
 <pre> by exists idpath.</pre>
 </div>
 <div class="code" title="File: TermAlgebra.v
@@ -319,14 +319,14 @@ Time: 0s">
 <div class="code" title="File: TermAlgebra.v
 Line: 93
 Time: 0.001s">
-<div class="time" style="width: 0.98039215686275%"></div>
+<div class="time" style="width: 1.0309278350515%"></div>
 <pre>
   Qed.</pre>
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 94
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.0309278350515%"></div>
 <pre>
 
   Lemma symmetric_extend_drel_term_algebra
@@ -351,8 +351,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 102
-Time: 0.002s">
-<div class="time" style="width: 1.9607843137255%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.0309278350515%"></div>
 <pre>
     induction S as [| u c h]; intros s2 [] p.</pre>
 </div>
@@ -365,8 +365,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 104
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.0309278350515%"></div>
 <pre> destruct p as [p1 p2].</pre>
 </div>
 <div class="code" title="File: TermAlgebra.v
@@ -424,13 +424,13 @@ Time: 0s">
 <div class="code" title="File: TermAlgebra.v
 Line: 108
 Time: 0.001s">
-<div class="time" style="width: 0.98039215686275%"></div>
+<div class="time" style="width: 1.0309278350515%"></div>
 <pre> destruct p as [p f].</pre>
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 108
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.0309278350515%"></div>
 <pre>
       induction p.</pre>
 </div>
@@ -460,8 +460,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 109
-Time: 0.003s">
-<div class="time" style="width: 2.9411764705882%"></div>
+Time: 0.002s">
+<div class="time" style="width: 2.0618556701031%"></div>
 <pre>
   Qed.</pre>
 </div>
@@ -505,7 +505,7 @@ Time: 0s">
 <div class="code" title="File: TermAlgebra.v
 Line: 117
 Time: 0.001s">
-<div class="time" style="width: 0.98039215686275%"></div>
+<div class="time" style="width: 1.0309278350515%"></div>
 <pre>
 
   Lemma transitive_extend_drel_term_algebra
@@ -540,8 +540,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 129
-Time: 0.016s">
-<div class="time" style="width: 15.686274509804%"></div>
+Time: 0.015s">
+<div class="time" style="width: 15.463917525773%"></div>
 <pre>
     induction S as [| u c h];
       intros s2 [? d | ? d] h2 s3 [] h3;
@@ -562,22 +562,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 133
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.0309278350515%"></div>
 <pre>
       rewrite transport_pp.</pre>
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 134
 Time: 0.001s">
-<div class="time" style="width: 0.98039215686275%"></div>
+<div class="time" style="width: 1.0309278350515%"></div>
 <pre>
       induction p2, p3.</pre>
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 135
-Time: 0.001s">
-<div class="time" style="width: 0.98039215686275%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
       by transitivity d.</pre>
 </div>
@@ -604,7 +604,7 @@ Time: 0s">
 <div class="code" title="File: TermAlgebra.v
 Line: 138
 Time: 0.001s">
-<div class="time" style="width: 0.98039215686275%"></div>
+<div class="time" style="width: 1.0309278350515%"></div>
 <pre>
       induction p2.</pre>
 </div>
@@ -637,8 +637,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 142
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.0309278350515%"></div>
 <pre> rewrite concat_1p.</pre>
 </div>
 <div class="code" title="File: TermAlgebra.v
@@ -650,7 +650,7 @@ Time: 0s">
 <div class="code" title="File: TermAlgebra.v
 Line: 142
 Time: 0.006s">
-<div class="time" style="width: 5.8823529411765%"></div>
+<div class="time" style="width: 6.1855670103093%"></div>
 <pre>
   Qed.</pre>
 </div>
@@ -711,7 +711,7 @@ Time: 0s">
 <div class="code" title="File: TermAlgebra.v
 Line: 155
 Time: 0.003s">
-<div class="time" style="width: 2.9411764705882%"></div>
+<div class="time" style="width: 3.0927835051546%"></div>
 <pre>
     constructor; exact _.</pre>
 </div>
@@ -725,7 +725,7 @@ Time: 0s">
 <div class="code" title="File: TermAlgebra.v
 Line: 157
 Time: 0.001s">
-<div class="time" style="width: 0.98039215686275%"></div>
+<div class="time" style="width: 1.0309278350515%"></div>
 <pre>
 
 End extend_rel_term_algebra.</pre>
@@ -755,8 +755,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 163
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.0309278350515%"></div>
 <pre>
 
   Definition ExtendPathTermAlgebra {s : Sort σ}
@@ -782,8 +782,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 172
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.0309278350515%"></div>
 <pre>
     by apply reflexive_extend_rel_term_algebra.</pre>
 </div>
@@ -796,8 +796,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 174
-Time: 0.001s">
-<div class="time" style="width: 0.98039215686275%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
   Lemma reflexive_extend_path_term_algebra_path {s : Sort σ}
@@ -970,8 +970,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 204
-Time: 0.039s">
-<div class="time" style="width: 38.235294117647%"></div>
+Time: 0.035s">
+<div class="time" style="width: 36.082474226804%"></div>
 <pre> exact _.</pre>
 </div>
 <div class="code" title="File: TermAlgebra.v
@@ -1008,8 +1008,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 212
-Time: 0.005s">
-<div class="time" style="width: 4.9019607843137%"></div>
+Time: 0.004s">
+<div class="time" style="width: 4.1237113402062%"></div>
 <pre>
     induction S as [| u c h];
         intros s2 [? d | ? d] e;
@@ -1030,8 +1030,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 216
-Time: 0.001s">
-<div class="time" style="width: 0.98039215686275%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> by induction p, e.</pre>
 </div>
 <div class="code" title="File: TermAlgebra.v
@@ -1073,22 +1073,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 217
-Time: 0.001s">
-<div class="time" style="width: 0.98039215686275%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
       destruct (h a _ (d a) (e a)) as [p q].</pre>
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 218
 Time: 0.003s">
-<div class="time" style="width: 2.9411764705882%"></div>
+<div class="time" style="width: 3.0927835051546%"></div>
 <pre>
       by induction (hset_path2 idpath p).</pre>
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 219
 Time: 0.002s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.0618556701031%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -1119,7 +1119,7 @@ Time: 0s">
 <div class="code" title="File: TermAlgebra.v
 Line: 226
 Time: 0.001s">
-<div class="time" style="width: 0.98039215686275%"></div>
+<div class="time" style="width: 1.0309278350515%"></div>
 <pre>
     by induction (hset_path2 idpath p).</pre>
 </div>
@@ -1201,8 +1201,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 237
-Time: 0.003s">
-<div class="time" style="width: 2.9411764705882%"></div>
+Time: 0.002s">
+<div class="time" style="width: 2.0618556701031%"></div>
 <pre>
 
   Definition equiv_path_extend_path_term_algebra {s : Sort σ}
@@ -1215,7 +1215,7 @@ Time: 0.003s">
 <div class="code" title="File: TermAlgebra.v
 Line: 244
 Time: 0.003s">
-<div class="time" style="width: 2.9411764705882%"></div>
+<div class="time" style="width: 3.0927835051546%"></div>
 <pre>
 
 End extend_path_term_algebra.</pre>
@@ -1233,7 +1233,7 @@ Time: 0s">
 <div class="code" title="File: TermAlgebra.v
 Line: 249
 Time: 0.004s">
-<div class="time" style="width: 3.921568627451%"></div>
+<div class="time" style="width: 4.1237113402062%"></div>
 <pre>Definition TermAlgebra `{Funext} {σ : Signature}
   (C : Carriers σ) `{!forall s, IsHSet (C s)}
   : Algebra σ
@@ -1279,7 +1279,7 @@ Time: 0s">
 <div class="code" title="File: TermAlgebra.v
 Line: 259
 Time: 0.001s">
-<div class="time" style="width: 0.98039215686275%"></div>
+<div class="time" style="width: 1.0309278350515%"></div>
 <pre>
   by destruct (hset_path2 p1 idpath)^.</pre>
 </div>
@@ -1292,8 +1292,8 @@ Qed.</pre>
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 261
-Time: 0.001s">
-<div class="time" style="width: 0.98039215686275%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
 Lemma isinj_ops_term_algebra `{Funext} {σ} (C : Carriers σ)
@@ -1330,8 +1330,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 269
-Time: 0.002s">
-<div class="time" style="width: 1.9607843137255%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.0309278350515%"></div>
 <pre>
   destruct (hset_path2 p1 idpath)^.</pre>
 </div>
@@ -1359,7 +1359,7 @@ Time: 0s">
 <div class="code" title="File: TermAlgebra.v
 Line: 273
 Time: 0.001s">
-<div class="time" style="width: 0.98039215686275%"></div>
+<div class="time" style="width: 1.0309278350515%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -1377,7 +1377,7 @@ Time: 0s">
 <div class="code" title="File: TermAlgebra.v
 Line: 278
 Time: 0.001s">
-<div class="time" style="width: 0.98039215686275%"></div>
+<div class="time" style="width: 1.0309278350515%"></div>
 <pre>Global Instance is_congruence_extend_rel_term_algebra
   `{Funext} {σ} (C : Carriers σ) `{!forall s, IsHSet (C s)}
   (R : forall s, Relation (C s)) `{!forall s, EquivRel (R s)}
@@ -1413,8 +1413,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 285
-Time: 0.006s">
-<div class="time" style="width: 5.8823529411765%"></div>
+Time: 0.005s">
+<div class="time" style="width: 5.1546391752577%"></div>
 <pre> exact _.</pre>
 </div>
 <div class="code" title="File: TermAlgebra.v
@@ -1470,7 +1470,7 @@ Time: 0s">
 <div class="code" title="File: TermAlgebra.v
 Line: 287
 Time: 0.001s">
-<div class="time" style="width: 0.98039215686275%"></div>
+<div class="time" style="width: 1.0309278350515%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -1502,7 +1502,7 @@ Time: 0s">
 <div class="code" title="File: TermAlgebra.v
 Line: 294
 Time: 0.001s">
-<div class="time" style="width: 0.98039215686275%"></div>
+<div class="time" style="width: 1.0309278350515%"></div>
 <pre>
 
   Definition map_term_algebra {σ} {C : Carriers σ} (A : Algebra σ)
@@ -1541,15 +1541,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 304
-Time: 0.001s">
-<div class="time" style="width: 0.98039215686275%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   Qed.</pre>
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 305
 Time: 0.001s">
-<div class="time" style="width: 0.98039215686275%"></div>
+<div class="time" style="width: 1.0309278350515%"></div>
 <pre>
 
   Definition hom_term_algebra : TermAlgebra C $-&gt; A
@@ -1618,8 +1618,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: TermAlgebra.v
 Line: 338
-Time: 0.001s">
-<div class="time" style="width: 0.98039215686275%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>Definition precomp_var_term_algebra (f : TermAlgebra C $-&gt; A)
     : forall s, C s -&gt; A s
     := fun s x =&gt; f s (var_term_algebra C s x).</pre>
@@ -1717,7 +1717,7 @@ Time: 0s">
 <div class="code" title="File: TermAlgebra.v
 Line: 352
 Time: 0.001s">
-<div class="time" style="width: 0.98039215686275%"></div>
+<div class="time" style="width: 1.0309278350515%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -1890,7 +1890,7 @@ Time: 0s">
 <div class="code" title="File: TermAlgebra.v
 Line: 381
 Time: 0.001s">
-<div class="time" style="width: 0.98039215686275%"></div>
+<div class="time" style="width: 1.0309278350515%"></div>
 <pre>
 
 End ump_term_algebra.</pre>

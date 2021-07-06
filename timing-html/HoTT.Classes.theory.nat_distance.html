@@ -30,13 +30,13 @@ pre {
 
 <div class="code" title="File: nat_distance.v
 Line: 1
-Time: 0.029s">
-<div class="time" style="width: 32.584269662921%"></div>
+Time: 0.027s">
+<div class="time" style="width: 32.142857142857%"></div>
 <pre>Require Import HoTT.Types.Universe.</pre>
 </div>
 <div class="code" title="File: nat_distance.v
 Line: 1
-Time: 0.089s">
+Time: 0.084s">
 <div class="time" style="width: 100%"></div>
 <pre>
 Require Import
@@ -45,8 +45,8 @@ Require Import
 </div>
 <div class="code" title="File: nat_distance.v
 Line: 4
-Time: 0.014s">
-<div class="time" style="width: 15.730337078652%"></div>
+Time: 0.012s">
+<div class="time" style="width: 14.285714285714%"></div>
 <pre>
 Require Import
   HoTT.Classes.interfaces.abstract_algebra
@@ -81,8 +81,8 @@ Context `{Funext} `{Univalence}.</pre>
 </div>
 <div class="code" title="File: nat_distance.v
 Line: 16
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
 Context `{Naturals N}.</pre>
 </div>
@@ -126,7 +126,7 @@ Time: 0s">
 <div class="code" title="File: nat_distance.v
 Line: 24
 Time: 0.005s">
-<div class="time" style="width: 5.6179775280899%"></div>
+<div class="time" style="width: 5.952380952381%"></div>
 <pre>
 destruct (@nat_distance_sig _ _ a x y) as [[z1 E1]|[z1 E1]],
 (@nat_distance_sig _ _ b x y) as [[z2 E2]|[z2 E2]];simpl.</pre>
@@ -140,14 +140,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: nat_distance.v
 Line: 27
-Time: 0.003s">
-<div class="time" style="width: 3.3707865168539%"></div>
+Time: 0.002s">
+<div class="time" style="width: 2.3809523809524%"></div>
 <pre> apply (left_cancellation plus x).</pre>
 </div>
 <div class="code" title="File: nat_distance.v
 Line: 27
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre> path_via y.</pre>
 </div>
 <div class="code" title="File: nat_distance.v
@@ -160,26 +160,26 @@ Time: 0s">
 <div class="code" title="File: nat_distance.v
 Line: 28
 Time: 0.004s">
-<div class="time" style="width: 4.4943820224719%"></div>
+<div class="time" style="width: 4.7619047619048%"></div>
 <pre> rewrite &lt;-(rings.plus_0_r y),&lt;-E2,&lt;-rings.plus_assoc in E1.</pre>
 </div>
 <div class="code" title="File: nat_distance.v
 Line: 28
-Time: 0.003s">
-<div class="time" style="width: 3.3707865168539%"></div>
+Time: 0.002s">
+<div class="time" style="width: 2.3809523809524%"></div>
 <pre>
   apply (left_cancellation plus y) in E1.</pre>
 </div>
 <div class="code" title="File: nat_distance.v
 Line: 29
 Time: 0.001s">
-<div class="time" style="width: 1.123595505618%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre> apply naturals.zero_sum in E1.</pre>
 </div>
 <div class="code" title="File: nat_distance.v
 Line: 29
 Time: 0.003s">
-<div class="time" style="width: 3.3707865168539%"></div>
+<div class="time" style="width: 3.5714285714286%"></div>
 <pre>
   destruct E1;path_via 0.</pre>
 </div>
@@ -193,26 +193,26 @@ Time: 0s">
 <div class="code" title="File: nat_distance.v
 Line: 31
 Time: 0.004s">
-<div class="time" style="width: 4.4943820224719%"></div>
+<div class="time" style="width: 4.7619047619048%"></div>
 <pre> rewrite &lt;-(rings.plus_0_r x),&lt;-E2,&lt;-rings.plus_assoc in E1.</pre>
 </div>
 <div class="code" title="File: nat_distance.v
 Line: 31
-Time: 0.003s">
-<div class="time" style="width: 3.3707865168539%"></div>
+Time: 0.002s">
+<div class="time" style="width: 2.3809523809524%"></div>
 <pre>
   apply (left_cancellation plus x) in E1.</pre>
 </div>
 <div class="code" title="File: nat_distance.v
 Line: 32
 Time: 0.001s">
-<div class="time" style="width: 1.123595505618%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre> apply naturals.zero_sum in E1.</pre>
 </div>
 <div class="code" title="File: nat_distance.v
 Line: 32
 Time: 0.001s">
-<div class="time" style="width: 1.123595505618%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
   destruct E1;path_via 0.</pre>
 </div>
@@ -226,13 +226,13 @@ Time: 0s">
 <div class="code" title="File: nat_distance.v
 Line: 34
 Time: 0.004s">
-<div class="time" style="width: 4.4943820224719%"></div>
+<div class="time" style="width: 4.7619047619048%"></div>
 <pre> apply (left_cancellation plus y);path_via x.</pre>
 </div>
 <div class="code" title="File: nat_distance.v
 Line: 34
 Time: 0.002s">
-<div class="time" style="width: 2.247191011236%"></div>
+<div class="time" style="width: 2.3809523809524%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -256,7 +256,7 @@ Time: 0s">
 <div class="code" title="File: nat_distance.v
 Line: 40
 Time: 0.002s">
-<div class="time" style="width: 2.247191011236%"></div>
+<div class="time" style="width: 2.3809523809524%"></div>
 <pre>Global Instance natdistance_cut_minus `{Naturals N} `{!TrivialApart N}
    {cm} `{!CutMinusSpec N cm} `{forall x y, Decidable (x ≤ y)} : NatDistance N.</pre>
 </div>
@@ -282,8 +282,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: nat_distance.v
 Line: 43
-Time: 0.002s">
-<div class="time" style="width: 2.247191011236%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre> destruct (decide_rel (&lt;=) x y) as [E|E].</pre>
 </div>
 <div class="code" title="File: nat_distance.v
@@ -308,7 +308,7 @@ Time: 0s">
 <div class="code" title="File: nat_distance.v
 Line: 44
 Time: 0.003s">
-<div class="time" style="width: 3.3707865168539%"></div>
+<div class="time" style="width: 3.5714285714286%"></div>
 <pre>
   rewrite rings.plus_comm;apply cut_minus_le;trivial.</pre>
 </div>
@@ -333,15 +333,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: nat_distance.v
 Line: 46
-Time: 0.017s">
-<div class="time" style="width: 19.101123595506%"></div>
+Time: 0.016s">
+<div class="time" style="width: 19.047619047619%"></div>
 <pre>
   rewrite rings.plus_comm;apply cut_minus_le, orders.le_flip;trivial.</pre>
 </div>
 <div class="code" title="File: nat_distance.v
 Line: 47
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -358,7 +358,7 @@ Time: 0s">
 <div class="code" title="File: nat_distance.v
 Line: 52
 Time: 0.001s">
-<div class="time" style="width: 1.123595505618%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>Global Instance natdistance_default `{Naturals N} : NatDistance N | 10.</pre>
 </div>
 <div class="code" title="File: nat_distance.v
@@ -378,7 +378,7 @@ intros x y.</pre>
 <div class="code" title="File: nat_distance.v
 Line: 54
 Time: 0.01s">
-<div class="time" style="width: 11.23595505618%"></div>
+<div class="time" style="width: 11.904761904762%"></div>
 <pre>
 destruct (nat_distance_sig (naturals_to_semiring N nat x)
   (naturals_to_semiring N nat y)) as [[n E]|[n E]].</pre>
@@ -399,20 +399,20 @@ Time: 0s">
 <div class="code" title="File: nat_distance.v
 Line: 57
 Time: 0.001s">
-<div class="time" style="width: 1.123595505618%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre> exists (naturals_to_semiring nat N n).</pre>
 </div>
 <div class="code" title="File: nat_distance.v
 Line: 57
 Time: 0.005s">
-<div class="time" style="width: 5.6179775280899%"></div>
+<div class="time" style="width: 5.952380952381%"></div>
 <pre>
   rewrite &lt;-(naturals.to_semiring_involutive N nat y), &lt;-E.</pre>
 </div>
 <div class="code" title="File: nat_distance.v
 Line: 58
-Time: 0.005s">
-<div class="time" style="width: 5.6179775280899%"></div>
+Time: 0.004s">
+<div class="time" style="width: 4.7619047619048%"></div>
 <pre>
   rewrite (rings.preserves_plus (A:=nat)), (naturals.to_semiring_involutive _ _).</pre>
 </div>
@@ -439,20 +439,20 @@ Time: 0s">
 <div class="code" title="File: nat_distance.v
 Line: 61
 Time: 0.001s">
-<div class="time" style="width: 1.123595505618%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre> exists (naturals_to_semiring nat N n).</pre>
 </div>
 <div class="code" title="File: nat_distance.v
 Line: 61
-Time: 0.007s">
-<div class="time" style="width: 7.8651685393258%"></div>
+Time: 0.006s">
+<div class="time" style="width: 7.1428571428571%"></div>
 <pre>
   rewrite &lt;-(naturals.to_semiring_involutive N nat x), &lt;-E.</pre>
 </div>
 <div class="code" title="File: nat_distance.v
 Line: 62
-Time: 0.006s">
-<div class="time" style="width: 6.7415730337079%"></div>
+Time: 0.005s">
+<div class="time" style="width: 5.952380952381%"></div>
 <pre>
   rewrite (rings.preserves_plus (A:=nat)), (naturals.to_semiring_involutive _ _).</pre>
 </div>
@@ -465,8 +465,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: nat_distance.v
 Line: 64
-Time: 0.004s">
-<div class="time" style="width: 4.4943820224719%"></div>
+Time: 0.003s">
+<div class="time" style="width: 3.5714285714286%"></div>
 <pre>
 Defined.</pre>
 </div>

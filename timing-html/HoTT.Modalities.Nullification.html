@@ -39,28 +39,28 @@ Time: 0s">
 </div>
 <div class="code" title="File: Nullification.v
 Line: 3
-Time: 0.049s">
+Time: 0.051s">
 <div class="time" style="width: 100%"></div>
 <pre>Require Import HoTT.Basics HoTT.Types HoTT.Cubical.</pre>
 </div>
 <div class="code" title="File: Nullification.v
 Line: 3
 Time: 0.01s">
-<div class="time" style="width: 20.408163265306%"></div>
+<div class="time" style="width: 19.607843137255%"></div>
 <pre>
 Require Import Extensions.</pre>
 </div>
 <div class="code" title="File: Nullification.v
 Line: 4
-Time: 0.011s">
-<div class="time" style="width: 22.448979591837%"></div>
+Time: 0.012s">
+<div class="time" style="width: 23.529411764706%"></div>
 <pre>
 Require Import Modality Accessible.</pre>
 </div>
 <div class="code" title="File: Nullification.v
 Line: 5
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.9607843137255%"></div>
 <pre>
 Require Export Localization.</pre>
 </div>
@@ -72,8 +72,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Nullification.v
 Line: 6
-Time: 0.02s">
-<div class="time" style="width: 40.816326530612%"></div>
+Time: 0.022s">
+<div class="time" style="width: 43.137254901961%"></div>
 <pre>Require Import Homotopy.Suspension.</pre>
 </div>
 <div class="code" title="File: Nullification.v
@@ -98,8 +98,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Nullification.v
 Line: 13
-Time: 0.001s">
-<div class="time" style="width: 2.0408163265306%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>Definition extendable_over_unit (n : nat)
   (A : Type@{a}) (C : Unit -&gt; Type@{i}) (D : forall u, C u -&gt; Type@{j})
   (ext : ExtendableAlong@{a a i k} n (@const A Unit tt) C)
@@ -117,7 +117,7 @@ Proof.</pre>
 <div class="code" title="File: Nullification.v
 Line: 19
 Time: 0.001s">
-<div class="time" style="width: 2.0408163265306%"></div>
+<div class="time" style="width: 1.9607843137255%"></div>
 <pre>
   generalize dependent C; simple_induction n n IH;
     intros C D ext ext'; [exact tt | split].</pre>
@@ -137,8 +137,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Nullification.v
 Line: 22
-Time: 0.001s">
-<div class="time" style="width: 2.0408163265306%"></div>
+Time: 0.002s">
+<div class="time" style="width: 3.921568627451%"></div>
 <pre>
     exists ((fst (ext' (fst ext g).1)
                  (fun a =&gt; ((fst ext g).2 a)^ # (g' a))).1);
@@ -154,7 +154,7 @@ Time: 0s">
 <div class="code" title="File: Nullification.v
 Line: 26
 Time: 0.001s">
-<div class="time" style="width: 2.0408163265306%"></div>
+<div class="time" style="width: 1.9607843137255%"></div>
 <pre>
     exact ((fst (ext' (fst ext g).1)
                 (fun a =&gt; ((fst ext g).2 a)^ # (g' a))).2 a).</pre>
@@ -189,14 +189,14 @@ Time: 0s">
 <div class="code" title="File: Nullification.v
 Line: 31
 Time: 0.003s">
-<div class="time" style="width: 6.1224489795918%"></div>
+<div class="time" style="width: 5.8823529411765%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: Nullification.v
 Line: 32
 Time: 0.001s">
-<div class="time" style="width: 2.0408163265306%"></div>
+<div class="time" style="width: 1.9607843137255%"></div>
 <pre>
 
 Definition ooextendable_over_unit@{i j k l m}
@@ -233,7 +233,7 @@ Time: 0s">
 <div class="code" title="File: Nullification.v
 Line: 45
 Time: 0.002s">
-<div class="time" style="width: 4.0816326530612%"></div>
+<div class="time" style="width: 3.921568627451%"></div>
 <pre>simple refine (Build_Modality' (Loc (null_to_local_generators S)) _ _).</pre>
 </div>
 <div class="code" title="File: Nullification.v
@@ -306,7 +306,7 @@ Time: 0s">
 <div class="code" title="File: Nullification.v
 Line: 52
 Time: 0.007s">
-<div class="time" style="width: 14.285714285714%"></div>
+<div class="time" style="width: 13.725490196078%"></div>
 <pre>
       refine (ooextendable_postcompose@{a a i i i i i i i i}
                 (fun (_:Unit) =&gt; B (c tt)) _ _
@@ -348,7 +348,7 @@ Time: 0s">
 <div class="code" title="File: Nullification.v
 Line: 58
 Time: 0.001s">
-<div class="time" style="width: 2.0408163265306%"></div>
+<div class="time" style="width: 1.9607843137255%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -418,8 +418,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Nullification.v
 Line: 69
-Time: 0.001s">
-<div class="time" style="width: 2.0408163265306%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> intros; reflexivity.</pre>
 </div>
 <div class="code" title="File: Nullification.v
@@ -465,8 +465,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: Nullification.v
 Line: 79
-Time: 0.002s">
-<div class="time" style="width: 4.0816326530612%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.9607843137255%"></div>
 <pre>
   split; intros A; apply inO_iff_isnull.</pre>
 </div>

@@ -36,21 +36,21 @@ Time: 0s">
 </div>
 <div class="code" title="File: Topological.v
 Line: 1
-Time: 0.045s">
-<div class="time" style="width: 26.162790697674%"></div>
+Time: 0.043s">
+<div class="time" style="width: 29.655172413793%"></div>
 <pre>Require Import HoTT.Basics HoTT.Types HProp.</pre>
 </div>
 <div class="code" title="File: Topological.v
 Line: 1
-Time: 0.052s">
-<div class="time" style="width: 30.232558139535%"></div>
+Time: 0.051s">
+<div class="time" style="width: 35.172413793103%"></div>
 <pre>
 Require Import Extensions HoTT.Truncations.</pre>
 </div>
 <div class="code" title="File: Topological.v
 Line: 2
 Time: 0.004s">
-<div class="time" style="width: 2.3255813953488%"></div>
+<div class="time" style="width: 2.7586206896552%"></div>
 <pre>
 Require Import Modality Accessible Lex Nullification.</pre>
 </div>
@@ -95,8 +95,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Topological.v
 Line: 16
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.68965517241379%"></div>
 <pre>Global Instance lex_topological `{Univalence}
        (O : Modality) `{IsAccModality O} `{Topological O}
   : Lex O.</pre>
@@ -111,21 +111,21 @@ Proof.</pre>
 <div class="code" title="File: Topological.v
 Line: 19
 Time: 0.001s">
-<div class="time" style="width: 0.58139534883721%"></div>
+<div class="time" style="width: 0.68965517241379%"></div>
 <pre>
     snrapply lex_from_inO_typeO; [ exact _ | intros i ].</pre>
 </div>
 <div class="code" title="File: Topological.v
 Line: 20
-Time: 0.001s">
-<div class="time" style="width: 0.58139534883721%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     apply ((equiv_ooextendable_isequiv _ _)^-1%equiv).</pre>
 </div>
 <div class="code" title="File: Topological.v
 Line: 21
 Time: 0.001s">
-<div class="time" style="width: 0.58139534883721%"></div>
+<div class="time" style="width: 0.68965517241379%"></div>
 <pre>
     srapply isequiv_adjointify; cbn.</pre>
 </div>
@@ -151,8 +151,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Topological.v
 Line: 24
-Time: 0.024s">
-<div class="time" style="width: 13.953488372093%"></div>
+Time: 0.022s">
+<div class="time" style="width: 15.172413793103%"></div>
 <pre>
       exact _.</pre>
 </div>
@@ -171,8 +171,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Topological.v
 Line: 26
-Time: 0.001s">
-<div class="time" style="width: 0.58139534883721%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
       apply path_arrow; intros a.</pre>
 </div>
@@ -251,7 +251,7 @@ Time: 0s">
 <div class="code" title="File: Topological.v
 Line: 33
 Time: 0.001s">
-<div class="time" style="width: 0.58139534883721%"></div>
+<div class="time" style="width: 0.68965517241379%"></div>
 <pre>
         refine (transport2 B (path_contr _ 1) b).</pre>
 </div>
@@ -297,14 +297,14 @@ Time: 0s">
 <div class="code" title="File: Topological.v
 Line: 37
 Time: 0.001s">
-<div class="time" style="width: 0.58139534883721%"></div>
+<div class="time" style="width: 0.68965517241379%"></div>
 <pre>
       apply path_arrow; intros [].</pre>
 </div>
 <div class="code" title="File: Topological.v
 Line: 38
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.68965517241379%"></div>
 <pre>
       apply path_TypeO, path_universe_uncurried.</pre>
 </div>
@@ -317,16 +317,16 @@ Time: 0s">
 </div>
 <div class="code" title="File: Topological.v
 Line: 40
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.68965517241379%"></div>
 <pre>
       pose (e := isequiv_ooextendable _ _
                                       (fst (inO_iff_isnull O (B tt)) (inO_TypeO (B tt)) i)).</pre>
 </div>
 <div class="code" title="File: Topological.v
 Line: 42
-Time: 0.006s">
-<div class="time" style="width: 3.4883720930233%"></div>
+Time: 0.005s">
+<div class="time" style="width: 3.448275862069%"></div>
 <pre>
       unfold composeD in e; simpl in e.</pre>
 </div>
@@ -339,22 +339,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: Topological.v
 Line: 44
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.68965517241379%"></div>
 <pre>
       exact (equiv_contr_forall _).</pre>
 </div>
 <div class="code" title="File: Topological.v
 Line: 45
-Time: 0.013s">
-<div class="time" style="width: 7.5581395348837%"></div>
+Time: 0.012s">
+<div class="time" style="width: 8.2758620689655%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: Topological.v
 Line: 46
-Time: 0.001s">
-<div class="time" style="width: 0.58139534883721%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
 
@@ -372,7 +372,7 @@ Proof.</pre>
 <div class="code" title="File: Topological.v
 Line: 52
 Time: 0.002s">
-<div class="time" style="width: 1.1627906976744%"></div>
+<div class="time" style="width: 1.3793103448276%"></div>
 <pre>
   rapply lex_topological.</pre>
 </div>
@@ -401,7 +401,7 @@ Time: 0s">
 <div class="code" title="File: Topological.v
 Line: 62
 Time: 0.001s">
-<div class="time" style="width: 0.58139534883721%"></div>
+<div class="time" style="width: 0.68965517241379%"></div>
 <pre>Definition topological_lex_trunc_acc `{Funext}
              (B : NullGenerators) {Olex : Lex (Nul B)}
              (n : trunc_index) (gtr : forall a, IsTrunc n (ngen_type B a))
@@ -438,8 +438,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Topological.v
 Line: 70
-Time: 0.005s">
-<div class="time" style="width: 2.906976744186%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.7586206896552%"></div>
 <pre>
       split; [ exact _ | split; intros X _; [ | intros [] ] ].</pre>
 </div>
@@ -452,8 +452,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Topological.v
 Line: 72
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.68965517241379%"></div>
 <pre>
       apply ooextendable_equiv, isequiv_contr_contr.</pre>
 </div>
@@ -514,8 +514,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Topological.v
 Line: 80
-Time: 0.001s">
-<div class="time" style="width: 0.58139534883721%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> exists B; split; [ assumption | reflexivity ].</pre>
 </div>
 <div class="code" title="File: Topological.v
@@ -566,7 +566,7 @@ Time: 0s">
 <div class="code" title="File: Topological.v
 Line: 89
 Time: 0.007s">
-<div class="time" style="width: 4.0697674418605%"></div>
+<div class="time" style="width: 4.8275862068966%"></div>
 <pre> intros [a | [a [b1 b2]]]; [ cbn | exact _ ].</pre>
 </div>
 <div class="code" title="File: Topological.v
@@ -580,7 +580,7 @@ Time: 0s">
 <div class="code" title="File: Topological.v
 Line: 91
 Time: 0.002s">
-<div class="time" style="width: 1.1627906976744%"></div>
+<div class="time" style="width: 1.3793103448276%"></div>
 <pre>destruct n; exact _.</pre>
 </div>
 <div class="code" title="File: Topological.v
@@ -644,8 +644,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Topological.v
 Line: 96
-Time: 0.026s">
-<div class="time" style="width: 15.116279069767%"></div>
+Time: 0.025s">
+<div class="time" style="width: 17.241379310345%"></div>
 <pre>
           rapply (@isconnected_O_leq O (Nul B)).</pre>
 </div>
@@ -665,7 +665,7 @@ Time: 0s">
 <div class="code" title="File: Topological.v
 Line: 98
 Time: 0.001s">
-<div class="time" style="width: 0.58139534883721%"></div>
+<div class="time" style="width: 0.68965517241379%"></div>
 <pre>
         apply (ooextendable_const_isconnected_inO O);
           [ destruct c as [a | [a [b1 b2]]] | exact X_inO ].</pre>
@@ -686,7 +686,7 @@ Time: 0s">
 <div class="code" title="File: Topological.v
 Line: 101
 Time: 0.006s">
-<div class="time" style="width: 3.4883720930233%"></div>
+<div class="time" style="width: 4.1379310344828%"></div>
 <pre>
           destruct (isconnected_elim O (O (merely (B a)))
                                      (fun b =&gt; to O _ (tr b)))
@@ -701,8 +701,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Topological.v
 Line: 105
-Time: 0.128s">
-<div class="time" style="width: 74.418604651163%"></div>
+Time: 0.126s">
+<div class="time" style="width: 86.896551724138%"></div>
 <pre>
           strip_truncations.</pre>
 </div>
@@ -729,7 +729,7 @@ Time: 0s">
 <div class="code" title="File: Topological.v
 Line: 108
 Time: 0.004s">
-<div class="time" style="width: 2.3255813953488%"></div>
+<div class="time" style="width: 2.7586206896552%"></div>
 <pre> rapply isconnected_paths.</pre>
 </div>
 <div class="code" title="File: Topological.v
@@ -741,8 +741,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Topological.v
 Line: 109
-Time: 0.021s">
-<div class="time" style="width: 12.209302325581%"></div>
+Time: 0.017s">
+<div class="time" style="width: 11.724137931034%"></div>
 <pre> intros Dnull; rapply (@inO_leq (Nul B) O).</pre>
 </div>
 <div class="code" title="File: Topological.v
@@ -754,8 +754,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Topological.v
 Line: 110
-Time: 0.022s">
-<div class="time" style="width: 12.790697674419%"></div>
+Time: 0.019s">
+<div class="time" style="width: 13.103448275862%"></div>
 <pre>
         apply ((equiv_ooextendable_isequiv
                   (unit_name X) (fun _:B a =&gt; tt))^-1).</pre>
@@ -769,8 +769,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Topological.v
 Line: 113
-Time: 0.006s">
-<div class="time" style="width: 3.4883720930233%"></div>
+Time: 0.005s">
+<div class="time" style="width: 3.448275862069%"></div>
 <pre>
         refine (contr_equiv' { x:X &amp; forall u:B a, x = f u } _).</pre>
 </div>
@@ -809,7 +809,7 @@ Time: 0s">
 </div>
 <div class="code" title="File: Topological.v
 Line: 117
-Time: 0.172s">
+Time: 0.145s">
 <div class="time" style="width: 100%"></div>
 <pre>
         refine ((isconnected_elim (Nul D) (A := D (inl a)) _ _).1).</pre>
@@ -823,8 +823,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Topological.v
 Line: 119
-Time: 0.002s">
-<div class="time" style="width: 1.1627906976744%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.68965517241379%"></div>
 <pre> rapply isconnected_acc_ngen.</pre>
 </div>
 <div class="code" title="File: Topological.v
@@ -842,8 +842,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Topological.v
 Line: 120
-Time: 0.077s">
-<div class="time" style="width: 44.767441860465%"></div>
+Time: 0.064s">
+<div class="time" style="width: 44.137931034483%"></div>
 <pre> strip_truncations.</pre>
 </div>
 <div class="code" title="File: Topological.v
@@ -869,15 +869,15 @@ Time: 0s">
 <div class="code" title="File: Topological.v
 Line: 122
 Time: 0.004s">
-<div class="time" style="width: 2.3255813953488%"></div>
+<div class="time" style="width: 2.7586206896552%"></div>
 <pre>
           apply (isconnected_equiv (Nul D) (b = x)
                                    (equiv_contr_sigma _)^-1).</pre>
 </div>
 <div class="code" title="File: Topological.v
 Line: 124
-Time: 0.001s">
-<div class="time" style="width: 0.58139534883721%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
           rapply (isconnected_acc_ngen (Nul D) (inr (a;(b,x)))).</pre>
 </div>
@@ -889,8 +889,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Topological.v
 Line: 125
-Time: 0.016s">
-<div class="time" style="width: 9.3023255813953%"></div>
+Time: 0.014s">
+<div class="time" style="width: 9.6551724137931%"></div>
 <pre>
         pose (p := conn_map_elim (Nul D) (unit_name b)
                                  (fun u =&gt; f b = f u) (fun _ =&gt; 1)).</pre>
@@ -904,29 +904,29 @@ Time: 0s">
 </div>
 <div class="code" title="File: Topological.v
 Line: 128
-Time: 0.001s">
-<div class="time" style="width: 0.58139534883721%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
         refine (path_sigma' _ (q b)^ _); apply path_forall.</pre>
 </div>
 <div class="code" title="File: Topological.v
 Line: 129
-Time: 0.035s">
-<div class="time" style="width: 20.348837209302%"></div>
+Time: 0.031s">
+<div class="time" style="width: 21.379310344828%"></div>
 <pre>
         refine (conn_map_elim (Nul D) (unit_name b) _ _); intros [].</pre>
 </div>
 <div class="code" title="File: Topological.v
 Line: 130
-Time: 0.003s">
-<div class="time" style="width: 1.7441860465116%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.3793103448276%"></div>
 <pre>
         rewrite transport_forall_constant, transport_paths_l, inv_V.</pre>
 </div>
 <div class="code" title="File: Topological.v
 Line: 131
 Time: 0.001s">
-<div class="time" style="width: 0.58139534883721%"></div>
+<div class="time" style="width: 0.68965517241379%"></div>
 <pre>
         rewrite (conn_map_comp (Nul D) (unit_name b)
                                (fun u:B a =&gt; f b = f u)
@@ -947,8 +947,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Topological.v
 Line: 135
-Time: 0.003s">
-<div class="time" style="width: 1.7441860465116%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.3793103448276%"></div>
 <pre>
     destruct (IHn D OeqD _) as [E [HE EeqD]].</pre>
 </div>
@@ -961,29 +961,29 @@ Time: 0s">
 </div>
 <div class="code" title="File: Topological.v
 Line: 137
-Time: 0.007s">
-<div class="time" style="width: 4.0697674418605%"></div>
+Time: 0.006s">
+<div class="time" style="width: 4.1379310344828%"></div>
 <pre>
     refine (transitivity EeqD _).</pre>
 </div>
 <div class="code" title="File: Topological.v
 Line: 138
-Time: 0.029s">
-<div class="time" style="width: 16.860465116279%"></div>
+Time: 0.024s">
+<div class="time" style="width: 16.551724137931%"></div>
 <pre>
     refine (transitivity _ OeqB).</pre>
 </div>
 <div class="code" title="File: Topological.v
 Line: 139
 Time: 0.001s">
-<div class="time" style="width: 0.58139534883721%"></div>
+<div class="time" style="width: 0.68965517241379%"></div>
 <pre>
     symmetry; assumption.</pre>
 </div>
 <div class="code" title="File: Topological.v
 Line: 140
-Time: 0.009s">
-<div class="time" style="width: 5.2325581395349%"></div>
+Time: 0.008s">
+<div class="time" style="width: 5.5172413793103%"></div>
 <pre>
 Defined.</pre>
 </div>

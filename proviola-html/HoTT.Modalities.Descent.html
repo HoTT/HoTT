@@ -3009,7 +3009,7 @@
 </div>
 <div class="goal" id="goal0_3_3"><pre><span></span></pre></div>
 <div class="doc" scenenumber="5">
-<a id="lab948"></a><h1 class="section">Descent between subuniverses</h1>
+<a id="lab958"></a><h1 class="section">Descent between subuniverses</h1>
 <div class="doc" scenenumber="4"> </div>
 
  We study here a strengthening of the relation <span class="inlinecode"><a class="idref" href="HoTT.Tests.html#Issue754_1.O"><span class="id" title="constructor">O</span></a></span> <span class="inlinecode">&lt;&lt;</span> <span class="inlinecode"><span class="id" title="var">O'</span></span> saying that <span class="inlinecode"><a class="idref" href="HoTT.Tests.html#Issue754_1.O"><span class="id" title="constructor">O</span></a></span>-modal type families descend along <span class="inlinecode"><span class="id" title="var">O'</span></span>-equivalences.  Pairs of reflective subuniverses with this relation share nearly all the properties of a reflective subuniverse <span class="inlinecode"><a class="idref" href="HoTT.Tests.html#Issue754_1.O"><span class="id" title="constructor">O</span></a></span> paired with its subuniverse <span class="inlinecode"><a class="idref" href="HoTT.Modalities.ReflectiveSubuniverse.html#Sep"><span class="id" title="definition">Sep</span></a></span> <span class="inlinecode"><a class="idref" href="HoTT.Tests.html#Issue754_1.O"><span class="id" title="constructor">O</span></a></span> of separated types (see <span class="inlinecode"><span class="id" title="var">Separated.v</span></span>) and also many of those of a single left exact modality (see <span class="inlinecode"><span class="id" title="var">Lex.v</span></span>).  Thus, many of the results herein generalize those of RSS for lex modalities and those of CORS for separated subuniverses.
@@ -3018,7 +3018,7 @@
 
 Note that this kind of descent is not the same as the "modal descent" of Cherubini and Rijke.  When we get around to formalizing that, we may need to worry about disambiguating the names. 
 <div class="doc" scenenumber="28"> </div>
-<a id="lab949"></a><h2 class="section">Definitions</h2>
+<a id="lab959"></a><h2 class="section">Definitions</h2>
 <div class="doc" scenenumber="33"> </div>
 
  This definition is an analogue of the statement of Lemma 2.19 of CORS, and of Theorem 3.1(xiii) of RSS.  Note that CORS Lemma 2.19 includes uniqueness of the extension, which we don't assert explicitly.  However, uniqueness follows from the <span class="inlinecode"><a class="idref" href="HoTT.Modalities.Modality.html#ReflectsD"><span class="id" title="record">ReflectsD</span></a></span> parameter -- see <span class="inlinecode"><a class="idref" href="HoTT.Modalities.Descent.html#ooextendable_TypeO_lex_leq"><span class="id" title="definition">ooextendable_TypeO_lex_leq</span></a></span> below. 
@@ -3147,7 +3147,7 @@ Unfortunately, it seems that generalizing binders don't work on notations: writi
 </div>
 <div class="goal" id="goal0_3_11"><pre><span></span></pre></div>
 <div class="doc" scenenumber="13">
-<a id="lab950"></a><h2 class="section">Left exactness properties</h2>
+<a id="lab960"></a><h2 class="section">Left exactness properties</h2>
 <div class="doc" scenenumber="4"> </div>
 
  We prove analogues of the properties in section 2.4 of CORS and Theorem 3.1 of RSS, but in a different order, with different proofs, to increase the generality.  The proofs in CORS use Proposition 2.26 for everything else, but it seems that most of the other results are true in the generality of two reflective subuniverses with <span class="inlinecode"><a class="idref" href="HoTT.Tests.html#Issue754_1.O"><span class="id" title="constructor">O</span></a></span> <span class="inlinecode">&lt;&lt;&lt;</span> <span class="inlinecode"><span class="id" title="var">O'</span></span>, so we give different proofs for some of them.  (To show that this generality is non-spurious, note that a lex modality <span class="inlinecode"><a class="idref" href="HoTT.Tests.html#Issue754_1.O"><span class="id" title="constructor">O</span></a></span> satisfies <span class="inlinecode"><a class="idref" href="HoTT.Tests.html#Issue754_1.O"><span class="id" title="constructor">O</span></a></span> <span class="inlinecode">&lt;&lt;&lt;</span> <span class="inlinecode"><a class="idref" href="HoTT.Tests.html#Issue754_1.O"><span class="id" title="constructor">O</span></a></span>, but does not generally coincide with <span class="inlinecode"><a class="idref" href="HoTT.Modalities.ReflectiveSubuniverse.html#Sep"><span class="id" title="definition">Sep</span></a></span> <span class="inlinecode"><a class="idref" href="HoTT.Tests.html#Issue754_1.O"><span class="id" title="constructor">O</span></a></span>.)

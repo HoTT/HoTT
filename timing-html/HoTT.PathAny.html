@@ -30,7 +30,7 @@ pre {
 
 <div class="code" title="File: PathAny.v
 Line: 1
-Time: 0.044s">
+Time: 0.045s">
 <div class="time" style="width: 100%"></div>
 <pre>Require Import Basics Types.</pre>
 </div>
@@ -71,7 +71,7 @@ Time: 0s">
 <div class="code" title="File: PathAny.v
 Line: 11
 Time: 0.005s">
-<div class="time" style="width: 11.363636363636%"></div>
+<div class="time" style="width: 11.111111111111%"></div>
 <pre>
   srefine (Build_Equiv _ _ _ _).</pre>
 </div>
@@ -112,7 +112,7 @@ Time: 0s">
 <div class="code" title="File: PathAny.v
 Line: 16
 Time: 0.001s">
-<div class="time" style="width: 2.2727272727273%"></div>
+<div class="time" style="width: 2.2222222222222%"></div>
 <pre>refine (@isequiv_contr_contr {x:A &amp; a=x} {x:A &amp; P x} _ _ _).</pre>
 </div>
 <div class="code" title="File: PathAny.v
@@ -149,7 +149,7 @@ Proof.</pre>
 <div class="code" title="File: PathAny.v
 Line: 23
 Time: 0.001s">
-<div class="time" style="width: 2.2727272727273%"></div>
+<div class="time" style="width: 2.2222222222222%"></div>
 <pre>
   equiv_intros e b0 b1.</pre>
 </div>
@@ -216,7 +216,7 @@ Time: 0s">
 <div class="code" title="File: PathAny.v
 Line: 36
 Time: 0.001s">
-<div class="time" style="width: 2.2727272727273%"></div>
+<div class="time" style="width: 2.2222222222222%"></div>
 <pre>
   srapply equiv_path_from_contr.</pre>
 </div>
@@ -277,14 +277,14 @@ Time: 0s">
 <div class="code" title="File: PathAny.v
 Line: 49
 Time: 0.001s">
-<div class="time" style="width: 2.2727272727273%"></div>
+<div class="time" style="width: 2.2222222222222%"></div>
 <pre>
   exists ((a;b);(c;d)).</pre>
 </div>
 <div class="code" title="File: PathAny.v
 Line: 50
 Time: 0.002s">
-<div class="time" style="width: 4.5454545454545%"></div>
+<div class="time" style="width: 4.4444444444444%"></div>
 <pre>
   intros [[a' b'] [c' d']]; cbn in *.</pre>
 </div>
@@ -304,8 +304,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathAny.v
 Line: 53
-Time: 0.002s">
-<div class="time" style="width: 4.5454545454545%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.2222222222222%"></div>
 <pre>
   change (((a;b);(c;d)) = ((ac'.1;bd'.1);(ac'.2;bd'.2))
           :&gt; {ab : {x:A &amp; B x} &amp; {y:C ab.1 &amp; D ab.1 ab.2 y} }).</pre>
@@ -320,14 +320,14 @@ Time: 0s">
 <div class="code" title="File: PathAny.v
 Line: 56
 Time: 0.005s">
-<div class="time" style="width: 11.363636363636%"></div>
+<div class="time" style="width: 11.111111111111%"></div>
 <pre>
   destruct (@path_contr {x:A &amp; C x} _ (a;c) ac').</pre>
 </div>
 <div class="code" title="File: PathAny.v
 Line: 57
-Time: 0.005s">
-<div class="time" style="width: 11.363636363636%"></div>
+Time: 0.006s">
+<div class="time" style="width: 13.333333333333%"></div>
 <pre>
   destruct (@path_contr {y:B a &amp; D a y c} _ (b;d) bd').</pre>
 </div>
@@ -341,7 +341,7 @@ Time: 0s">
 <div class="code" title="File: PathAny.v
 Line: 59
 Time: 0.003s">
-<div class="time" style="width: 6.8181818181818%"></div>
+<div class="time" style="width: 6.6666666666667%"></div>
 <pre>
 Defined.</pre>
 </div>

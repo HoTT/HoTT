@@ -30,7 +30,7 @@ pre {
 
 <div class="code" title="File: lattices.v
 Line: 1
-Time: 0.11s">
+Time: 0.103s">
 <div class="time" style="width: 100%"></div>
 <pre>Require Import
   HoTT.Classes.interfaces.abstract_algebra
@@ -61,8 +61,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: lattices.v
 Line: 8
-Time: 0.006s">
-<div class="time" style="width: 5.4545454545455%"></div>
+Time: 0.007s">
+<div class="time" style="width: 6.7961165048544%"></div>
 <pre>
 repeat (split; try apply _).</pre>
 </div>
@@ -90,8 +90,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: lattices.v
 Line: 13
-Time: 0.004s">
-<div class="time" style="width: 3.6363636363636%"></div>
+Time: 0.003s">
+<div class="time" style="width: 2.9126213592233%"></div>
 <pre>
 repeat (split; try apply _).</pre>
 </div>
@@ -119,8 +119,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: lattices.v
 Line: 18
-Time: 0.004s">
-<div class="time" style="width: 3.6363636363636%"></div>
+Time: 0.003s">
+<div class="time" style="width: 2.9126213592233%"></div>
 <pre>
 repeat (split; try apply _).</pre>
 </div>
@@ -148,8 +148,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: lattices.v
 Line: 23
-Time: 0.024s">
-<div class="time" style="width: 21.818181818182%"></div>
+Time: 0.021s">
+<div class="time" style="width: 20.388349514563%"></div>
 <pre>
 repeat split; apply _.</pre>
 </div>
@@ -163,7 +163,7 @@ Qed.</pre>
 <div class="code" title="File: lattices.v
 Line: 25
 Time: 0.001s">
-<div class="time" style="width: 0.90909090909091%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
 
 Global Instance bounded_sl_mor_is_sl_mor `{H : IsBoundedJoinPreserving A B f}
@@ -179,7 +179,7 @@ Proof.</pre>
 <div class="code" title="File: lattices.v
 Line: 29
 Time: 0.001s">
-<div class="time" style="width: 0.90909090909091%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
 red;apply _.</pre>
 </div>
@@ -193,7 +193,7 @@ Qed.</pre>
 <div class="code" title="File: lattices.v
 Line: 31
 Time: 0.001s">
-<div class="time" style="width: 0.90909090909091%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
 
 Lemma preserves_join `{IsJoinPreserving L K f} x y
@@ -209,7 +209,7 @@ Proof.</pre>
 <div class="code" title="File: lattices.v
 Line: 35
 Time: 0.001s">
-<div class="time" style="width: 0.90909090909091%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre> apply preserves_sg_op.</pre>
 </div>
 <div class="code" title="File: lattices.v
@@ -220,8 +220,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: lattices.v
 Line: 35
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
 
 Lemma preserves_bottom `{IsBoundedJoinPreserving L K f}
@@ -236,8 +236,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: lattices.v
 Line: 39
-Time: 0.001s">
-<div class="time" style="width: 0.90909090909091%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> apply preserves_mon_unit.</pre>
 </div>
 <div class="code" title="File: lattices.v
@@ -249,7 +249,7 @@ Time: 0s">
 <div class="code" title="File: lattices.v
 Line: 39
 Time: 0.001s">
-<div class="time" style="width: 0.90909090909091%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
 
 Lemma preserves_meet `{IsMeetPreserving L K f} x y :
@@ -292,7 +292,7 @@ Time: 0s">
 <div class="code" title="File: lattices.v
 Line: 46
 Time: 0.001s">
-<div class="time" style="width: 0.90909090909091%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
 
   Instance join_bottom_l: LeftIdentity (⊔) ⊥ := _.</pre>
@@ -300,7 +300,7 @@ Time: 0.001s">
 <div class="code" title="File: lattices.v
 Line: 48
 Time: 0.001s">
-<div class="time" style="width: 0.90909090909091%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
   Instance join_bottom_r: RightIdentity (⊔) ⊥ := _.</pre>
 </div>
@@ -329,7 +329,7 @@ Time: 0s">
 <div class="code" title="File: lattices.v
 Line: 53
 Time: 0.001s">
-<div class="time" style="width: 0.90909090909091%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
 
   Definition meet_join_absorption x y : x ⊓ (x ⊔ y) = x := absorption x y.</pre>
@@ -337,7 +337,7 @@ Time: 0.001s">
 <div class="code" title="File: lattices.v
 Line: 55
 Time: 0.001s">
-<div class="time" style="width: 0.90909090909091%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
   Definition join_meet_absorption x y : x ⊔ (x ⊓ y) = x := absorption x y.</pre>
 </div>
@@ -414,8 +414,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: lattices.v
 Line: 67
-Time: 0.01s">
-<div class="time" style="width: 9.0909090909091%"></div>
+Time: 0.009s">
+<div class="time" style="width: 8.7378640776699%"></div>
 <pre> rewrite !(commutativity _ z).</pre>
 </div>
 <div class="code" title="File: lattices.v
@@ -457,35 +457,35 @@ Time: 0s">
 <div class="code" title="File: lattices.v
 Line: 73
 Time: 0.001s">
-<div class="time" style="width: 0.90909090909091%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
   rewrite (simple_distribute_l (f:=join)).</pre>
 </div>
 <div class="code" title="File: lattices.v
 Line: 74
 Time: 0.001s">
-<div class="time" style="width: 0.90909090909091%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
   rewrite (simple_distribute_r (f:=join)).</pre>
 </div>
 <div class="code" title="File: lattices.v
 Line: 75
 Time: 0.002s">
-<div class="time" style="width: 1.8181818181818%"></div>
+<div class="time" style="width: 1.9417475728155%"></div>
 <pre>
   rewrite (idempotency (⊔) x).</pre>
 </div>
 <div class="code" title="File: lattices.v
 Line: 76
-Time: 0.004s">
-<div class="time" style="width: 3.6363636363636%"></div>
+Time: 0.003s">
+<div class="time" style="width: 2.9126213592233%"></div>
 <pre>
   rewrite (commutativity (f:=join) y x), meet_join_absorption.</pre>
 </div>
 <div class="code" title="File: lattices.v
 Line: 77
 Time: 0.002s">
-<div class="time" style="width: 1.8181818181818%"></div>
+<div class="time" style="width: 1.9417475728155%"></div>
 <pre>
   path_via ((x ⊓ (x ⊔ z)) ⊓ (y ⊔ z)).</pre>
 </div>
@@ -499,7 +499,7 @@ Time: 0s">
 <div class="code" title="File: lattices.v
 Line: 79
 Time: 0.001s">
-<div class="time" style="width: 0.90909090909091%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre> rewrite (meet_join_absorption x z).</pre>
 </div>
 <div class="code" title="File: lattices.v
@@ -518,13 +518,13 @@ Time: 0s">
 <div class="code" title="File: lattices.v
 Line: 80
 Time: 0.003s">
-<div class="time" style="width: 2.7272727272727%"></div>
+<div class="time" style="width: 2.9126213592233%"></div>
 <pre> rewrite &lt;-simple_associativity.</pre>
 </div>
 <div class="code" title="File: lattices.v
 Line: 80
-Time: 0.001s">
-<div class="time" style="width: 0.90909090909091%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     rewrite &lt;-distribute_r.</pre>
 </div>
@@ -538,7 +538,7 @@ Time: 0s">
 <div class="code" title="File: lattices.v
 Line: 82
 Time: 0.001s">
-<div class="time" style="width: 0.90909090909091%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
   Qed.</pre>
 </div>
@@ -567,7 +567,7 @@ Time: 0s">
 <div class="code" title="File: lattices.v
 Line: 87
 Time: 0.006s">
-<div class="time" style="width: 5.4545454545455%"></div>
+<div class="time" style="width: 5.8252427184466%"></div>
 <pre> rewrite !(commutativity _ z).</pre>
 </div>
 <div class="code" title="File: lattices.v
@@ -579,15 +579,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: lattices.v
 Line: 88
-Time: 0.001s">
-<div class="time" style="width: 0.90909090909091%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   Qed.</pre>
 </div>
 <div class="code" title="File: lattices.v
 Line: 89
 Time: 0.002s">
-<div class="time" style="width: 1.8181818181818%"></div>
+<div class="time" style="width: 1.9417475728155%"></div>
 <pre>
 
   Lemma distribute_alt x y z
@@ -603,77 +603,77 @@ Time: 0s">
 <div class="code" title="File: lattices.v
 Line: 93
 Time: 0.002s">
-<div class="time" style="width: 1.8181818181818%"></div>
+<div class="time" style="width: 1.9417475728155%"></div>
 <pre>
   rewrite (distribute_r x y (x ⊓ z)), join_meet_absorption.</pre>
 </div>
 <div class="code" title="File: lattices.v
 Line: 94
 Time: 0.001s">
-<div class="time" style="width: 0.90909090909091%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
   rewrite (distribute_r _ _ (y ⊓ z)).</pre>
 </div>
 <div class="code" title="File: lattices.v
 Line: 95
 Time: 0.001s">
-<div class="time" style="width: 0.90909090909091%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
   rewrite (distribute_l x y z).</pre>
 </div>
 <div class="code" title="File: lattices.v
 Line: 96
-Time: 0.007s">
-<div class="time" style="width: 6.3636363636364%"></div>
+Time: 0.006s">
+<div class="time" style="width: 5.8252427184466%"></div>
 <pre>
   rewrite (commutativity y (x ⊓ z)), &lt;-(simple_associativity _ y).</pre>
 </div>
 <div class="code" title="File: lattices.v
 Line: 97
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
   rewrite join_meet_absorption.</pre>
 </div>
 <div class="code" title="File: lattices.v
 Line: 98
-Time: 0.001s">
-<div class="time" style="width: 0.90909090909091%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   rewrite (distribute_r x z y).</pre>
 </div>
 <div class="code" title="File: lattices.v
 Line: 99
 Time: 0.003s">
-<div class="time" style="width: 2.7272727272727%"></div>
+<div class="time" style="width: 2.9126213592233%"></div>
 <pre>
   rewrite (commutativity (f:=join) z y).</pre>
 </div>
 <div class="code" title="File: lattices.v
 Line: 100
 Time: 0.001s">
-<div class="time" style="width: 0.90909090909091%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
   rewrite (commutativity (x ⊔ y) (x ⊔ z)).</pre>
 </div>
 <div class="code" title="File: lattices.v
 Line: 101
 Time: 0.006s">
-<div class="time" style="width: 5.4545454545455%"></div>
+<div class="time" style="width: 5.8252427184466%"></div>
 <pre>
   rewrite simple_associativity, &lt;-(simple_associativity (x ⊔ z)).</pre>
 </div>
 <div class="code" title="File: lattices.v
 Line: 102
-Time: 0.029s">
-<div class="time" style="width: 26.363636363636%"></div>
+Time: 0.026s">
+<div class="time" style="width: 25.242718446602%"></div>
 <pre>
   rewrite (idempotency _ _).</pre>
 </div>
 <div class="code" title="File: lattices.v
 Line: 103
 Time: 0.001s">
-<div class="time" style="width: 0.90909090909091%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
   rewrite (commutativity (x ⊔ z) (x ⊔ y)).</pre>
 </div>
@@ -686,8 +686,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: lattices.v
 Line: 105
-Time: 0.002s">
-<div class="time" style="width: 1.8181818181818%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
   Qed.</pre>
 </div>
@@ -738,7 +738,7 @@ Time: 0s">
 <div class="code" title="File: lattices.v
 Line: 114
 Time: 0.001s">
-<div class="time" style="width: 0.90909090909091%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre> rewrite &lt;-(join_bottom_l x), absorption.</pre>
 </div>
 <div class="code" title="File: lattices.v
@@ -780,7 +780,7 @@ Time: 0s">
 <div class="code" title="File: lattices.v
 Line: 120
 Time: 0.001s">
-<div class="time" style="width: 0.90909090909091%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
   rewrite (commutativity (f:=meet)), left_absorb.</pre>
 </div>
@@ -886,7 +886,7 @@ Time: 0s">
 <div class="code" title="File: lattices.v
 Line: 136
 Time: 0.001s">
-<div class="time" style="width: 0.90909090909091%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre> rewrite !op_correct, (idempotency (+) _).</pre>
 </div>
 <div class="code" title="File: lattices.v
@@ -928,7 +928,7 @@ Time: 0s">
 <div class="code" title="File: lattices.v
 Line: 142
 Time: 0.001s">
-<div class="time" style="width: 0.90909090909091%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
   Context `{IsBoundedSemiLattice A} `{IsHSet B}
    `{Bop : SgOp B} `{Bunit : MonUnit B} (f : B -&gt; A) `{!IsInjective f}
@@ -966,8 +966,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: lattices.v
 Line: 151
-Time: 0.001s">
-<div class="time" style="width: 0.90909090909091%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> apply (projected_com_monoid f);trivial.</pre>
 </div>
 <div class="code" title="File: lattices.v
@@ -986,7 +986,7 @@ Time: 0s">
 <div class="code" title="File: lattices.v
 Line: 152
 Time: 0.003s">
-<div class="time" style="width: 2.7272727272727%"></div>
+<div class="time" style="width: 2.9126213592233%"></div>
 <pre>
     rewrite op_correct, (idempotency (+) _).</pre>
 </div>
@@ -1042,7 +1042,7 @@ Global Instance id_bounded_join_sl_morphism `{IsBoundedJoinSemiLattice A}
 <div class="code" title="File: lattices.v
 Line: 166
 Time: 0.001s">
-<div class="time" style="width: 0.90909090909091%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
 
 Global Instance id_lattice_morphism `{IsLattice A} : IsLatticePreserving (@id A)
@@ -1085,8 +1085,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: lattices.v
 Line: 180
-Time: 0.01s">
-<div class="time" style="width: 9.0909090909091%"></div>
+Time: 0.008s">
+<div class="time" style="width: 7.7669902912621%"></div>
 <pre>
   red; apply _.</pre>
 </div>
@@ -1116,8 +1116,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: lattices.v
 Line: 187
-Time: 0.008s">
-<div class="time" style="width: 7.2727272727273%"></div>
+Time: 0.007s">
+<div class="time" style="width: 6.7961165048544%"></div>
 <pre>
   red;apply _.</pre>
 </div>
@@ -1130,8 +1130,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: lattices.v
 Line: 189
-Time: 0.001s">
-<div class="time" style="width: 0.90909090909091%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
   Instance compose_bounded_join_sl_morphism:
@@ -1148,7 +1148,7 @@ Time: 0s">
 <div class="code" title="File: lattices.v
 Line: 194
 Time: 0.002s">
-<div class="time" style="width: 1.8181818181818%"></div>
+<div class="time" style="width: 1.9417475728155%"></div>
 <pre>
   red; apply _.</pre>
 </div>
@@ -1161,8 +1161,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: lattices.v
 Line: 196
-Time: 0.001s">
-<div class="time" style="width: 0.90909090909091%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
   Instance compose_lattice_morphism:
@@ -1177,8 +1177,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: lattices.v
 Line: 200
-Time: 0.003s">
-<div class="time" style="width: 2.7272727272727%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.9417475728155%"></div>
 <pre>
   split; apply _.</pre>
 </div>
@@ -1192,7 +1192,7 @@ Time: 0s">
 <div class="code" title="File: lattices.v
 Line: 202
 Time: 0.001s">
-<div class="time" style="width: 0.90909090909091%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
 
   Instance invert_join_sl_morphism:
@@ -1208,8 +1208,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: lattices.v
 Line: 207
-Time: 0.008s">
-<div class="time" style="width: 7.2727272727273%"></div>
+Time: 0.007s">
+<div class="time" style="width: 6.7961165048544%"></div>
 <pre>
   red; apply _.</pre>
 </div>
@@ -1239,8 +1239,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: lattices.v
 Line: 214
-Time: 0.008s">
-<div class="time" style="width: 7.2727272727273%"></div>
+Time: 0.007s">
+<div class="time" style="width: 6.7961165048544%"></div>
 <pre>
   red; apply _.</pre>
 </div>
@@ -1253,8 +1253,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: lattices.v
 Line: 216
-Time: 0.001s">
-<div class="time" style="width: 0.90909090909091%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
   Instance invert_bounded_join_sl_morphism:
@@ -1271,7 +1271,7 @@ Time: 0s">
 <div class="code" title="File: lattices.v
 Line: 221
 Time: 0.001s">
-<div class="time" style="width: 0.90909090909091%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
   red; apply _.</pre>
 </div>
@@ -1284,8 +1284,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: lattices.v
 Line: 223
-Time: 0.001s">
-<div class="time" style="width: 0.90909090909091%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
   Instance invert_lattice_morphism:
@@ -1301,7 +1301,7 @@ Time: 0s">
 <div class="code" title="File: lattices.v
 Line: 227
 Time: 0.001s">
-<div class="time" style="width: 0.90909090909091%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
   split; apply _.</pre>
 </div>

@@ -36,21 +36,21 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 1
-Time: 0.041s">
-<div class="time" style="width: 4.4372294372294%"></div>
+Time: 0.038s">
+<div class="time" style="width: 4.6454767726161%"></div>
 <pre>Require Import HoTT.Basics HoTT.Types.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 1
-Time: 0.056s">
-<div class="time" style="width: 6.0606060606061%"></div>
+Time: 0.053s">
+<div class="time" style="width: 6.479217603912%"></div>
 <pre>
 Require Import HFiber Constant.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 2
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
 Require Import HoTT.Truncations.</pre>
 </div>
@@ -102,8 +102,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 18
-Time: 0.002s">
-<div class="time" style="width: 0.21645021645022%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>Record RetractOf {X : Type} :=
   { retract_type : Type ;
     retract_retr : X -&gt; retract_type ;
@@ -187,7 +187,7 @@ Proof.</pre>
 <div class="code" title="File: Idempotents.v
 Line: 36
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
   intros [A r s H]; refine (Build_RetractOf Y A (r o f^-1) (f o s) _); intros x.</pre>
 </div>
@@ -207,8 +207,8 @@ Defined.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 39
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
 
 Definition retractof_equiv' {X Y : Type} (f : X &lt;~&gt; Y)
@@ -235,7 +235,7 @@ Proof.</pre>
 <div class="code" title="File: Idempotents.v
 Line: 48
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
   destruct R as [A r s H]; refine (Build_RetractOf X B (f o r) (s o f^-1) _); intros x.</pre>
 </div>
@@ -255,8 +255,8 @@ Defined.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 51
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
 
 Definition equiv_retractof' {X : Type} (R : RetractOf X)
@@ -274,8 +274,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 58
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>Definition retractof_hfiber {X Y : Type} (R : RetractOf X) (f : X -&gt; Y)
            (g : retract_type R -&gt; Y) (p : g o retract_retr R == f)
            (y : Y)
@@ -290,8 +290,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 62
-Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   destruct R as [A r s H]; simpl in *.</pre>
 </div>
@@ -365,8 +365,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 71
-Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> intros [a q].</pre>
 </div>
 <div class="code" title="File: Idempotents.v
@@ -398,8 +398,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 74
-Time: 0.015s">
-<div class="time" style="width: 1.6233766233766%"></div>
+Time: 0.014s">
+<div class="time" style="width: 1.7114914425428%"></div>
 <pre> abstract (
         rewrite transport_paths_Fl, !concat_p_pp, concat_pp_V, concat_Vp, concat_1p;
         reflexivity).</pre>
@@ -407,7 +407,7 @@ Time: 0.015s">
 <div class="code" title="File: Idempotents.v
 Line: 76
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -437,7 +437,7 @@ Time: 0s">
 <div class="code" title="File: Idempotents.v
 Line: 82
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>Definition issig_retractof (X : Type)
 : { A : Type &amp; {r : X -&gt; A &amp; {s : A -&gt; X &amp; r o s == idmap }}}
   &lt;~&gt; RetractOf X.</pre>
@@ -451,15 +451,15 @@ Proof.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 85
-Time: 0.031s">
-<div class="time" style="width: 3.3549783549784%"></div>
+Time: 0.029s">
+<div class="time" style="width: 3.5452322738386%"></div>
 <pre>
   issig.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 86
 Time: 0.004s">
-<div class="time" style="width: 0.43290043290043%"></div>
+<div class="time" style="width: 0.48899755501222%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -474,7 +474,7 @@ Time: 0s">
 <div class="code" title="File: Idempotents.v
 Line: 89
 Time: 0.009s">
-<div class="time" style="width: 0.97402597402597%"></div>
+<div class="time" style="width: 1.1002444987775%"></div>
 <pre>Definition PathRetractOf (X : Type) (R' R : RetractOf X)
   := { Ap : retract_type R' &lt;~&gt; retract_type R &amp;
      { rp : Ap o retract_retr R' == retract_retr R &amp;
@@ -519,27 +519,27 @@ Time: 0s">
 <div class="code" title="File: Idempotents.v
 Line: 104
 Time: 0.002s">
-<div class="time" style="width: 0.21645021645022%"></div>
+<div class="time" style="width: 0.24449877750611%"></div>
 <pre> intros [A [r [s H]]]; cbn.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 104
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
     exists equiv_idmap.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 105
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
     exists (fun x =&gt; 1%path).</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 106
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
     exists (fun x =&gt; 1%path).</pre>
 </div>
@@ -553,7 +553,7 @@ Time: 0s">
 <div class="code" title="File: Idempotents.v
 Line: 108
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre> exact (fun a =&gt; concat_p1 _ @ ap_idmap (H a) @ (concat_1p _)^).</pre>
 </div>
 <div class="code" title="File: Idempotents.v
@@ -565,7 +565,7 @@ Time: 0s">
 <div class="code" title="File: Idempotents.v
 Line: 108
 Time: 0.002s">
-<div class="time" style="width: 0.21645021645022%"></div>
+<div class="time" style="width: 0.24449877750611%"></div>
 <pre>
   intros [A [r [s H]]]; cbn.</pre>
 </div>
@@ -578,29 +578,29 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 110
-Time: 0.298s">
-<div class="time" style="width: 32.251082251082%"></div>
+Time: 0.261s">
+<div class="time" style="width: 31.907090464548%"></div>
 <pre>
   contr_sigsig A (equiv_idmap A); cbn.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 111
-Time: 0.034s">
-<div class="time" style="width: 3.6796536796537%"></div>
+Time: 0.029s">
+<div class="time" style="width: 3.5452322738386%"></div>
 <pre>
   contr_sigsig r (fun x:X =&gt; idpath (r x)); cbn.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 112
-Time: 0.046s">
-<div class="time" style="width: 4.978354978355%"></div>
+Time: 0.039s">
+<div class="time" style="width: 4.7677261613692%"></div>
 <pre>
   contr_sigsig s (fun x:A =&gt; idpath (s x)); cbn.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 113
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
   refine (contr_equiv' {K : r o s == idmap &amp; H == K} _).</pre>
 </div>
@@ -653,15 +653,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 119
-Time: 0.024s">
-<div class="time" style="width: 2.5974025974026%"></div>
+Time: 0.017s">
+<div class="time" style="width: 2.078239608802%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 120
-Time: 0.005s">
-<div class="time" style="width: 0.54112554112554%"></div>
+Time: 0.004s">
+<div class="time" style="width: 0.48899755501222%"></div>
 <pre>
 
 Definition path_retractof `{ua : Univalence} {X : Type} {R' R : RetractOf X}
@@ -929,8 +929,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 183
-Time: 0.002s">
-<div class="time" style="width: 0.21645021645022%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
     apply path_ishprop.</pre>
 </div>
@@ -956,7 +956,7 @@ Time: 0s">
 <div class="code" title="File: Idempotents.v
 Line: 185
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -1097,8 +1097,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 207
-Time: 0.03s">
-<div class="time" style="width: 3.2467532467532%"></div>
+Time: 0.006s">
+<div class="time" style="width: 0.73349633251834%"></div>
 <pre> intros [x [p q]]; simpl.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
@@ -1111,7 +1111,7 @@ Time: 0s">
 <div class="code" title="File: Idempotents.v
 Line: 208
 Time: 0.002s">
-<div class="time" style="width: 0.21645021645022%"></div>
+<div class="time" style="width: 0.24449877750611%"></div>
 <pre>
     apply path_ishprop.</pre>
 </div>
@@ -1136,8 +1136,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 210
-Time: 0.011s">
-<div class="time" style="width: 1.1904761904762%"></div>
+Time: 0.009s">
+<div class="time" style="width: 1.1002444987775%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -1166,8 +1166,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 216
-Time: 0.055s">
-<div class="time" style="width: 5.952380952381%"></div>
+Time: 0.046s">
+<div class="time" style="width: 5.6234718826406%"></div>
 <pre>
   apply istruncmap_mapinO_tr; exact _.</pre>
 </div>
@@ -1290,7 +1290,7 @@ Time: 0s">
 <div class="code" title="File: Idempotents.v
 Line: 231
 Time: 0.002s">
-<div class="time" style="width: 0.21645021645022%"></div>
+<div class="time" style="width: 0.24449877750611%"></div>
 <pre>
   apply wconst_through_hprop.</pre>
 </div>
@@ -1362,63 +1362,63 @@ Time: 0s">
 <div class="code" title="File: Idempotents.v
 Line: 248
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
   rewrite (concat_Ap (fun x =&gt; (p x)^) (p x)^).</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 249
-Time: 0.014s">
-<div class="time" style="width: 1.5151515151515%"></div>
+Time: 0.011s">
+<div class="time" style="width: 1.3447432762836%"></div>
 <pre>
   rewrite !ap_pp, !concat_pp_p; apply whiskerL.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 250
-Time: 0.004s">
-<div class="time" style="width: 0.43290043290043%"></div>
+Time: 0.003s">
+<div class="time" style="width: 0.36674816625917%"></div>
 <pre>
   rewrite !concat_p_pp; apply moveL_pM.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 251
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
   rewrite (concat_pA_p (fun x =&gt; (p x)^) (p x)).</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 252
-Time: 0.002s">
-<div class="time" style="width: 0.21645021645022%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
   rewrite (concat_pA_p (fun x =&gt; (p x)^) (isidem _ x)).</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 253
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
   rewrite (concat_Ap (fun x =&gt; (p x)^) (ap f (p x)^)).</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 254
 Time: 0.004s">
-<div class="time" style="width: 0.43290043290043%"></div>
+<div class="time" style="width: 0.48899755501222%"></div>
 <pre>
   rewrite !concat_pp_p; apply whiskerL.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 255
-Time: 0.003s">
-<div class="time" style="width: 0.32467532467532%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.24449877750611%"></div>
 <pre>
   rewrite !ap_V; apply moveR_Vp.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 256
-Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   rewrite &lt;- ap_compose.</pre>
 </div>
@@ -1475,8 +1475,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 272
-Time: 0.008s">
-<div class="time" style="width: 0.86580086580087%"></div>
+Time: 0.006s">
+<div class="time" style="width: 0.73349633251834%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -1504,8 +1504,8 @@ Coercion quasiidempotent_pr1 : QuasiIdempotent &gt;-&gt; Funclass.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 277
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.02s">
+<div class="time" style="width: 2.4449877750611%"></div>
 <pre>
 
 Global Instance isqidem_qidem {X : Type} (f : QuasiIdempotent X)
@@ -1684,7 +1684,7 @@ Time: 0s">
 <div class="code" title="File: Idempotents.v
 Line: 317
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -1993,8 +1993,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 385
-Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>Definition path_split_idem {a a' : split_idem}
     (p : a.1 == a'.1)
     (q : forall n, a.2 n @ p n = ap f (p n.+1) @ a'.2 n)
@@ -2049,8 +2049,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 393
-Time: 0.015s">
-<div class="time" style="width: 1.6233766233766%"></div>
+Time: 0.013s">
+<div class="time" style="width: 1.5892420537897%"></div>
 <pre>
       abstract (
           rewrite transport_forall_constant;
@@ -2064,7 +2064,7 @@ Time: 0.015s">
 <div class="code" title="File: Idempotents.v
 Line: 401
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -2080,7 +2080,7 @@ Time: 0s">
 <div class="code" title="File: Idempotents.v
 Line: 405
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>Definition sect_path_split_idem {a a' : split_idem}
     (p : a.1 == a'.1)
     (q : forall n, a.2 n @ p n = ap f (p n.+1) @ a'.2 n)
@@ -2096,21 +2096,21 @@ Time: 0s">
 <div class="code" title="File: Idempotents.v
 Line: 409
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
     change (ap ((fun b =&gt; b 0) o pr1) (path_split_idem p q) = p 0).</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 410
-Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     refine (ap_compose pr1 (fun b =&gt; b 0) _ @ _).</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 411
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
     refine (ap (ap (fun b =&gt; b 0)) (pr1_path_sigma _ _) @ _).</pre>
 </div>
@@ -2130,8 +2130,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 414
-Time: 0.002s">
-<div class="time" style="width: 0.21645021645022%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -2230,7 +2230,7 @@ Time: 0s">
 <div class="code" title="File: Idempotents.v
 Line: 429
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
     transitivity a'; simple refine (path_split_idem _ _); intros n; simpl.</pre>
 </div>
@@ -2257,7 +2257,7 @@ Time: 0s">
 <div class="code" title="File: Idempotents.v
 Line: 432
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre> exact ((ap_compose f f _ @@ 1)^
                @ concat_Ap I (a.2 n.+1)
                @ (J _ @@ 1)^).</pre>
@@ -2291,7 +2291,7 @@ Time: 0s">
 <div class="code" title="File: Idempotents.v
 Line: 436
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -2362,7 +2362,7 @@ Time: 0s">
 <div class="code" title="File: Idempotents.v
 Line: 447
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
 
   Local Definition split_idem_issect_part2 (a : split_idem) (n : nat)
@@ -2378,8 +2378,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 452
-Time: 0.002s">
-<div class="time" style="width: 0.21645021645022%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
     induction n as [|n IH]; simpl.</pre>
 </div>
@@ -2399,8 +2399,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 455
-Time: 0.012s">
-<div class="time" style="width: 1.2987012987013%"></div>
+Time: 0.01s">
+<div class="time" style="width: 1.2224938875306%"></div>
 <pre> rewrite !ap_pp, ap_V, !concat_pp_p.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
@@ -2420,7 +2420,7 @@ Time: 0s">
 <div class="code" title="File: Idempotents.v
 Line: 457
 Time: 0.007s">
-<div class="time" style="width: 0.75757575757576%"></div>
+<div class="time" style="width: 0.85574572127139%"></div>
 <pre>
       rewrite &lt;- ap_compose; symmetry; apply (concat_Ap I).</pre>
 </div>
@@ -2433,42 +2433,42 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 459
-Time: 0.003s">
-<div class="time" style="width: 0.32467532467532%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre> rewrite ap_pp.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 459
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
       refine (_ @ (1 @@ IH) @ concat_p_pp _ _ _).</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 460
-Time: 0.016s">
-<div class="time" style="width: 1.7316017316017%"></div>
+Time: 0.013s">
+<div class="time" style="width: 1.5892420537897%"></div>
 <pre>
       rewrite !ap_pp, !concat_p_pp, ap_V.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 461
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
       rewrite J.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 462
-Time: 0.008s">
-<div class="time" style="width: 0.86580086580087%"></div>
+Time: 0.004s">
+<div class="time" style="width: 0.48899755501222%"></div>
 <pre>
       rewrite &lt;- !ap_compose.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 463
-Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
       refine ((concat_pA_p (fun x =&gt; (I x)^) _ _) @@ 1).</pre>
 </div>
@@ -2510,8 +2510,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 476
-Time: 0.023s">
-<div class="time" style="width: 2.4891774891775%"></div>
+Time: 0.02s">
+<div class="time" style="width: 2.4449877750611%"></div>
 <pre>
   Qed.</pre>
 </div>
@@ -2630,22 +2630,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 500
-Time: 0.052s">
-<div class="time" style="width: 5.6277056277056%"></div>
+Time: 0.045s">
+<div class="time" style="width: 5.5012224938875%"></div>
 <pre>
     repeat (rewrite !ap_pp, ?ap_V, !sect_path_split_idem; simpl).</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 501
-Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     apply moveR_Vp, whiskerR; symmetry; apply J.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 502
-Time: 0.04s">
-<div class="time" style="width: 4.3290043290043%"></div>
+Time: 0.035s">
+<div class="time" style="width: 4.278728606357%"></div>
 <pre>
   Qed.</pre>
 </div>
@@ -2662,13 +2662,13 @@ Time: 0s">
 <div class="code" title="File: Idempotents.v
 Line: 506
 Time: 0.004s">
-<div class="time" style="width: 0.43290043290043%"></div>
+<div class="time" style="width: 0.48899755501222%"></div>
 <pre>End Splitting.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 506
-Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
 Definition split_idem_retract' `{fs : Funext} {X : Type}
@@ -2677,8 +2677,8 @@ Definition split_idem_retract' `{fs : Funext} {X : Type}
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 510
-Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
 Definition split_idem_split' `{fs : Funext} {X : Type}
@@ -2759,7 +2759,7 @@ Time: 0s">
 <div class="code" title="File: Idempotents.v
 Line: 530
 Time: 0.006s">
-<div class="time" style="width: 0.64935064935065%"></div>
+<div class="time" style="width: 0.73349633251834%"></div>
 <pre>Lemma equiv_split_idem_retract_isadj (a : split_idem (s o r))
   : H (r (s (r (split_idem_sect (s o r) a)))) @
       H (r (split_idem_sect (s o r) a)) =
@@ -2780,50 +2780,50 @@ Time: 0s">
 <div class="code" title="File: Idempotents.v
 Line: 539
 Time: 0.002s">
-<div class="time" style="width: 0.21645021645022%"></div>
+<div class="time" style="width: 0.24449877750611%"></div>
 <pre>
     rewrite ap_pp.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 540
-Time: 0.006s">
-<div class="time" style="width: 0.64935064935065%"></div>
+Time: 0.005s">
+<div class="time" style="width: 0.61124694376528%"></div>
 <pre>
     rewrite &lt;- ap_compose; simpl.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 541
-Time: 0.003s">
-<div class="time" style="width: 0.32467532467532%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
     rewrite concat_1p.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 542
-Time: 0.004s">
-<div class="time" style="width: 0.43290043290043%"></div>
+Time: 0.003s">
+<div class="time" style="width: 0.36674816625917%"></div>
 <pre>
     rewrite &lt;- (ap_compose (split_idem_sect (s o r)) (r o s o r)
                            (split_idem_issect (s o r) a)).</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 544
-Time: 0.004s">
-<div class="time" style="width: 0.43290043290043%"></div>
+Time: 0.003s">
+<div class="time" style="width: 0.36674816625917%"></div>
 <pre>
     rewrite (ap_compose _ (r o s o r) (split_idem_issect (s o r) a)).</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 545
 Time: 0.003s">
-<div class="time" style="width: 0.32467532467532%"></div>
+<div class="time" style="width: 0.36674816625917%"></div>
 <pre>
     rewrite (ap_compose _ r (split_idem_issect (s o r) a)).</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 546
-Time: 0.286s">
-<div class="time" style="width: 30.952380952381%"></div>
+Time: 0.251s">
+<div class="time" style="width: 30.684596577017%"></div>
 <pre>
     unfold split_idem_issect, nudge_eq;
       repeat (rewrite !ap_pp, ?ap_V, !sect_path_split_idem; simpl).</pre>
@@ -2831,77 +2831,77 @@ Time: 0.286s">
 <div class="code" title="File: Idempotents.v
 Line: 548
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
     unfold isidem; fold r s H.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 549
-Time: 0.01s">
-<div class="time" style="width: 1.0822510822511%"></div>
+Time: 0.009s">
+<div class="time" style="width: 1.1002444987775%"></div>
 <pre>
     rewrite !concat_pp_p.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 550
-Time: 0.01s">
-<div class="time" style="width: 1.0822510822511%"></div>
+Time: 0.008s">
+<div class="time" style="width: 0.97799511002445%"></div>
 <pre>
     rewrite &lt;- !ap_compose.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 551
 Time: 0.003s">
-<div class="time" style="width: 0.32467532467532%"></div>
+<div class="time" style="width: 0.36674816625917%"></div>
 <pre>
     rewrite &lt;- (ap_compose (s o r) r).</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 552
-Time: 0.007s">
-<div class="time" style="width: 0.75757575757576%"></div>
+Time: 0.006s">
+<div class="time" style="width: 0.73349633251834%"></div>
 <pre>
     rewrite &lt;- (ap_compose (s o r) (r o s o r)).</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 553
-Time: 0.004s">
-<div class="time" style="width: 0.43290043290043%"></div>
+Time: 0.003s">
+<div class="time" style="width: 0.36674816625917%"></div>
 <pre>
     rewrite (concat_p_Vp (ap (r o s o r) (a.2 0))).</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 554
-Time: 0.01s">
-<div class="time" style="width: 1.0822510822511%"></div>
+Time: 0.009s">
+<div class="time" style="width: 1.1002444987775%"></div>
 <pre>
     rewrite_moveL_Vp_p.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 555
 Time: 0.003s">
-<div class="time" style="width: 0.32467532467532%"></div>
+<div class="time" style="width: 0.36674816625917%"></div>
 <pre>
     rewrite (ap_compose (r o s o r) (r o s) (a.2 0)).</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 556
 Time: 0.003s">
-<div class="time" style="width: 0.32467532467532%"></div>
+<div class="time" style="width: 0.36674816625917%"></div>
 <pre>
     rewrite (concat_A1p H (ap (r o s o r) (a.2 0))).</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 557
 Time: 0.002s">
-<div class="time" style="width: 0.21645021645022%"></div>
+<div class="time" style="width: 0.24449877750611%"></div>
 <pre>
     rewrite (ap_compose r (r o s) (a.2 0)).</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 558
-Time: 0.003s">
-<div class="time" style="width: 0.32467532467532%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.24449877750611%"></div>
 <pre>
     rewrite (concat_pA1_p H (ap r (a.2 0))).</pre>
 </div>
@@ -2921,15 +2921,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 561
-Time: 0.003s">
-<div class="time" style="width: 0.32467532467532%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.24449877750611%"></div>
 <pre>
     rewrite (concat_pA1_p H (H (r (a 1%nat)))).</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 562
-Time: 0.008s">
-<div class="time" style="width: 0.86580086580087%"></div>
+Time: 0.006s">
+<div class="time" style="width: 0.73349633251834%"></div>
 <pre>
     rewrite !concat_pp_p; symmetry; refine (_ @ concat_pp_p _ _ _).</pre>
 </div>
@@ -2942,8 +2942,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 564
-Time: 0.257s">
-<div class="time" style="width: 27.813852813853%"></div>
+Time: 0.221s">
+<div class="time" style="width: 27.017114914425%"></div>
 <pre>
   Qed.</pre>
 </div>
@@ -2973,7 +2973,7 @@ Time: 0s">
 <div class="code" title="File: Idempotents.v
 Line: 570
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
     simple refine (Build_Equiv _ _ (r o split_idem_sect (s o r))
               (Build_IsEquiv _ _ _ (split_idem_retr (s o r) o s) _ _ _)).</pre>
@@ -3013,8 +3013,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 575
-Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
       refine (_ @ split_idem_issect (s o r) a).</pre>
 </div>
@@ -3048,14 +3048,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 580
-Time: 0.009s">
-<div class="time" style="width: 0.97402597402597%"></div>
+Time: 0.008s">
+<div class="time" style="width: 0.97799511002445%"></div>
 <pre> intros a; simpl; apply equiv_split_idem_retract_isadj.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 580
-Time: 0.002s">
-<div class="time" style="width: 0.21645021645022%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -3080,7 +3080,7 @@ Time: 0s">
 <div class="code" title="File: Idempotents.v
 Line: 587
 Time: 0.004s">
-<div class="time" style="width: 0.43290043290043%"></div>
+<div class="time" style="width: 0.48899755501222%"></div>
 <pre>
 
   Definition equiv_split_idem_retract_sect (a : A)
@@ -3100,7 +3100,7 @@ Time: 0s">
 <div class="code" title="File: Idempotents.v
 Line: 595
 Time: 0.003s">
-<div class="time" style="width: 0.32467532467532%"></div>
+<div class="time" style="width: 0.36674816625917%"></div>
 <pre>Definition equiv_split_idem_retract_issect (a : A)
   : ap equiv_split_idem_retract
        (split_idem_issect (s o r) (equiv_split_idem_retract^-1 a))
@@ -3119,8 +3119,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 603
-Time: 0.002s">
-<div class="time" style="width: 0.21645021645022%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
     simpl.</pre>
 </div>
@@ -3133,22 +3133,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 605
-Time: 0.002s">
-<div class="time" style="width: 0.21645021645022%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
     rewrite ap_compose.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 606
-Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     unfold split_idem_issect, nudge_eq.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 607
-Time: 0.352s">
-<div class="time" style="width: 38.095238095238%"></div>
+Time: 0.312s">
+<div class="time" style="width: 38.141809290954%"></div>
 <pre>
     repeat (rewrite !ap_pp, ?ap_V, !sect_path_split_idem; simpl).</pre>
 </div>
@@ -3168,15 +3168,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 610
-Time: 0.022s">
-<div class="time" style="width: 2.3809523809524%"></div>
+Time: 0.019s">
+<div class="time" style="width: 2.3227383863081%"></div>
 <pre>
     rewrite !concat_pp_p; apply moveR_Vp; rewrite !concat_p_pp.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 611
-Time: 0.007s">
-<div class="time" style="width: 0.75757575757576%"></div>
+Time: 0.006s">
+<div class="time" style="width: 0.73349633251834%"></div>
 <pre>
     do 4 rewrite &lt;- ap_compose.</pre>
 </div>
@@ -3191,55 +3191,55 @@ Time: 0s">
 <div class="code" title="File: Idempotents.v
 Line: 614
 Time: 0.002s">
-<div class="time" style="width: 0.21645021645022%"></div>
+<div class="time" style="width: 0.24449877750611%"></div>
 <pre>rewrite &lt;- (ap_compose (s o r o s) r (H (r (s a)))).</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 614
-Time: 0.002s">
-<div class="time" style="width: 0.21645021645022%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
     rewrite &lt;- (ap_pp (r o s) _ _).</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 615
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
     rewrite &lt;- (concat_A1p H (H (r (s a)))).</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 616
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
     rewrite ap_pp.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 617
 Time: 0.002s">
-<div class="time" style="width: 0.21645021645022%"></div>
+<div class="time" style="width: 0.24449877750611%"></div>
 <pre>
     rewrite &lt;- (ap_compose (r o s) (r o s) _).</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 618
-Time: 0.015s">
-<div class="time" style="width: 1.6233766233766%"></div>
+Time: 0.013s">
+<div class="time" style="width: 1.5892420537897%"></div>
 <pre>
     rewrite !concat_pp_p; apply whiskerL; rewrite !concat_p_pp.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 619
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
     rewrite (concat_A1p H (H (r (s a)))).</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 620
-Time: 0.005s">
-<div class="time" style="width: 0.54112554112554%"></div>
+Time: 0.004s">
+<div class="time" style="width: 0.48899755501222%"></div>
 <pre>
     rewrite !concat_pp_p; apply whiskerL.</pre>
 </div>
@@ -3290,8 +3290,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 636
-Time: 0.39s">
-<div class="time" style="width: 42.207792207792%"></div>
+Time: 0.307s">
+<div class="time" style="width: 37.530562347188%"></div>
 <pre>
   Qed.</pre>
 </div>
@@ -3307,7 +3307,7 @@ Time: 0s">
 <div class="code" title="File: Idempotents.v
 Line: 640
 Time: 0.003s">
-<div class="time" style="width: 0.32467532467532%"></div>
+<div class="time" style="width: 0.36674816625917%"></div>
 <pre>Definition equiv_split_idem_retract_splits (x : X)
   : split_idem_splits (s o r) x
     = ap (split_idem_sect (s o r))
@@ -3326,8 +3326,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 648
-Time: 0.083s">
-<div class="time" style="width: 8.982683982684%"></div>
+Time: 0.072s">
+<div class="time" style="width: 8.80195599022%"></div>
 <pre>
     simpl.</pre>
 </div>
@@ -3340,8 +3340,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 650
-Time: 0.012s">
-<div class="time" style="width: 1.2987012987013%"></div>
+Time: 0.01s">
+<div class="time" style="width: 1.2224938875306%"></div>
 <pre>
     rewrite concat_1p, concat_pp_p, ap_V; apply moveL_Vp; rewrite concat_p1.</pre>
 </div>
@@ -3355,13 +3355,13 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 653
-Time: 0.002s">
-<div class="time" style="width: 0.21645021645022%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>unfold split_idem_issect, nudge_eq.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 653
-Time: 0.924s">
+Time: 0.818s">
 <div class="time" style="width: 100%"></div>
 <pre>
     repeat (rewrite !ap_pp, ?ap_V, !sect_path_split_idem; simpl).</pre>
@@ -3377,7 +3377,7 @@ Time: 0s">
 <div class="code" title="File: Idempotents.v
 Line: 656
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>unfold isidem; fold A r s H.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
@@ -3389,15 +3389,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 657
-Time: 0.013s">
-<div class="time" style="width: 1.4069264069264%"></div>
+Time: 0.011s">
+<div class="time" style="width: 1.3447432762836%"></div>
 <pre>
     rewrite !concat_p_pp.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 658
-Time: 0.021s">
-<div class="time" style="width: 2.2727272727273%"></div>
+Time: 0.018s">
+<div class="time" style="width: 2.200488997555%"></div>
 <pre>
     rewrite &lt;- !ap_compose; simpl.</pre>
 </div>
@@ -3417,43 +3417,43 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 661
-Time: 0.008s">
-<div class="time" style="width: 0.86580086580087%"></div>
+Time: 0.005s">
+<div class="time" style="width: 0.61124694376528%"></div>
 <pre>
     apply moveR_pV; rewrite concat_1p, concat_pp_p; apply moveR_Vp.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 662
 Time: 0.002s">
-<div class="time" style="width: 0.21645021645022%"></div>
+<div class="time" style="width: 0.24449877750611%"></div>
 <pre>
     rewrite &lt;- (ap_compose (s o r o s) (s o r)).</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 663
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
     rewrite (ap_compose (r o s) s _).</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 664
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
     rewrite (ap_compose (r o s) s _).</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 665
 Time: 0.002s">
-<div class="time" style="width: 0.21645021645022%"></div>
+<div class="time" style="width: 0.24449877750611%"></div>
 <pre>
     rewrite (ap_compose (r o s o r o s) s _).</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 666
-Time: 0.004s">
-<div class="time" style="width: 0.43290043290043%"></div>
+Time: 0.003s">
+<div class="time" style="width: 0.36674816625917%"></div>
 <pre>
     rewrite &lt;- !ap_pp; apply ap.</pre>
 </div>
@@ -3467,14 +3467,14 @@ Time: 0s">
 <div class="code" title="File: Idempotents.v
 Line: 668
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
     rewrite (concat_pA1_p H (H (r x)) _).</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 669
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
     rewrite (concat_pA1_p H (H (r x)) _).</pre>
 </div>
@@ -3487,22 +3487,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 671
-Time: 0.002s">
-<div class="time" style="width: 0.21645021645022%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
     rewrite (ap_compose (r o s) (r o s) _).</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 672
-Time: 0.002s">
-<div class="time" style="width: 0.21645021645022%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
     rewrite (concat_A1p H (ap (r o s) (H (r x)))).</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 673
-Time: 0.005s">
-<div class="time" style="width: 0.54112554112554%"></div>
+Time: 0.004s">
+<div class="time" style="width: 0.48899755501222%"></div>
 <pre>
     rewrite !concat_pp_p; apply whiskerL.</pre>
 </div>
@@ -3559,15 +3559,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 695
-Time: 0.844s">
-<div class="time" style="width: 91.341991341991%"></div>
+Time: 0.735s">
+<div class="time" style="width: 89.853300733496%"></div>
 <pre>
   Qed.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 696
 Time: 0.003s">
-<div class="time" style="width: 0.32467532467532%"></div>
+<div class="time" style="width: 0.36674816625917%"></div>
 <pre>
 
 End AlreadySplit.</pre>
@@ -3629,8 +3629,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 710
-Time: 0.003s">
-<div class="time" style="width: 0.32467532467532%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.24449877750611%"></div>
 <pre>
     exact (@path_retractof _ _
              (split_idem_retract' (qidem_retract R)) R
@@ -3706,7 +3706,7 @@ Time: 0s">
 <div class="code" title="File: Idempotents.v
 Line: 732
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
       refine (equiv_functor_sigma' (equiv_sigma_assoc _ _)^-1 (fun a =&gt; _)); simpl.</pre>
 </div>
@@ -3760,8 +3760,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 739
-Time: 0.002s">
-<div class="time" style="width: 0.21645021645022%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -3777,7 +3777,7 @@ Time: 0s">
 <div class="code" title="File: Idempotents.v
 Line: 743
 Time: 0.002s">
-<div class="time" style="width: 0.21645021645022%"></div>
+<div class="time" style="width: 0.24449877750611%"></div>
 <pre>Definition Splitting_PreIdempotent (f : PreIdempotent X)
   := { S : Splitting f &amp;
        forall x, ap f (S.2 x)^
@@ -3837,21 +3837,21 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 762
-Time: 0.002s">
-<div class="time" style="width: 0.21645021645022%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre> intros [[g I] J]; simpl.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 762
-Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
       refine (path_sigma' _ 1 _); simpl.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 763
 Time: 0.002s">
-<div class="time" style="width: 0.21645021645022%"></div>
+<div class="time" style="width: 0.24449877750611%"></div>
 <pre>
       apply path_forall; intros x; apply split_idem_preidem.</pre>
 </div>
@@ -3878,7 +3878,7 @@ Time: 0s">
 <div class="code" title="File: Idempotents.v
 Line: 766
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
       apply equiv_functor_sigma_id; intros R; simpl.</pre>
 </div>
@@ -3892,21 +3892,21 @@ Time: 0s">
 <div class="code" title="File: Idempotents.v
 Line: 768
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
       refine (equiv_functor_sigma' (equiv_ap10 _ _) _); intros H; simpl.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 769
-Time: 0.002s">
-<div class="time" style="width: 0.21645021645022%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
       destruct f as [f I]; simpl in *.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 770
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
       destruct H; simpl.</pre>
 </div>
@@ -3948,15 +3948,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 777
-Time: 0.017s">
-<div class="time" style="width: 1.8398268398268%"></div>
+Time: 0.013s">
+<div class="time" style="width: 1.5892420537897%"></div>
 <pre>
   Defined.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 778
-Time: 0.01s">
-<div class="time" style="width: 1.0822510822511%"></div>
+Time: 0.009s">
+<div class="time" style="width: 1.1002444987775%"></div>
 <pre>
 
 End RetractOfRetracts.</pre>
@@ -4000,7 +4000,7 @@ Time: 0s">
 <div class="code" title="File: Idempotents.v
 Line: 791
 Time: 0.014s">
-<div class="time" style="width: 1.5151515151515%"></div>
+<div class="time" style="width: 1.7114914425428%"></div>
 <pre>
 
   Definition Build_IsIdempotent {X : Type} (f : X -&gt; X)
@@ -4274,7 +4274,7 @@ Time: 0s">
 <div class="code" title="File: Idempotents.v
 Line: 849
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
 
 End CoherentIdempotents.</pre>
@@ -4317,22 +4317,22 @@ Time: 0s">
 <div class="code" title="File: Idempotents.v
 Line: 861
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
   transitivity { S : Splitting (preidem_idmap X) &amp;
                      forall x : X, (retract_issect S.1) (retract_retr S.1 x) = ap (retract_retr S.1) (S.2 x) }.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 863
-Time: 0.028s">
-<div class="time" style="width: 3.030303030303%"></div>
+Time: 0.023s">
+<div class="time" style="width: 2.8117359413203%"></div>
 <pre>
   1:make_equiv.</pre>
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 864
-Time: 0.005s">
-<div class="time" style="width: 0.54112554112554%"></div>
+Time: 0.004s">
+<div class="time" style="width: 0.48899755501222%"></div>
 <pre>
   apply equiv_functor_sigma_id; intros [[Y r s eta] ep]; cbn in *.</pre>
 </div>
@@ -4352,8 +4352,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 867
-Time: 0.004s">
-<div class="time" style="width: 0.43290043290043%"></div>
+Time: 0.003s">
+<div class="time" style="width: 0.36674816625917%"></div>
 <pre>
   rewrite ap_idmap, !concat_pp_p.</pre>
 </div>
@@ -4367,7 +4367,7 @@ Time: 0s">
 <div class="code" title="File: Idempotents.v
 Line: 869
 Time: 0.001s">
-<div class="time" style="width: 0.10822510822511%"></div>
+<div class="time" style="width: 0.12224938875306%"></div>
 <pre>
   rewrite concat_p1, concat_p_pp.</pre>
 </div>
@@ -4408,8 +4408,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 875
-Time: 0.018s">
-<div class="time" style="width: 1.9480519480519%"></div>
+Time: 0.017s">
+<div class="time" style="width: 2.078239608802%"></div>
 <pre>
   refine (_ oE equiv_ap (ap s) _ _).</pre>
 </div>
@@ -4443,8 +4443,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Idempotents.v
 Line: 880
-Time: 0.025s">
-<div class="time" style="width: 2.7056277056277%"></div>
+Time: 0.021s">
+<div class="time" style="width: 2.5672371638142%"></div>
 <pre>
 Qed.</pre>
 </div>

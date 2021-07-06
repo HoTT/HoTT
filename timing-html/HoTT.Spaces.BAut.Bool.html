@@ -36,28 +36,28 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 1
-Time: 0.039s">
-<div class="time" style="width: 10.512129380054%"></div>
+Time: 0.038s">
+<div class="time" style="width: 11.912225705329%"></div>
 <pre>Require Import HoTT.Basics HoTT.Types.</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 1
-Time: 0.056s">
-<div class="time" style="width: 15.094339622642%"></div>
+Time: 0.053s">
+<div class="time" style="width: 16.614420062696%"></div>
 <pre>
 Require Import Constant Factorization.</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 2
 Time: 0.001s">
-<div class="time" style="width: 0.26954177897574%"></div>
+<div class="time" style="width: 0.31347962382445%"></div>
 <pre>
 Require Import Modalities.Modality HoTT.Truncations.</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 3
 Time: 0.031s">
-<div class="time" style="width: 8.355795148248%"></div>
+<div class="time" style="width: 9.717868338558%"></div>
 <pre>
 Require Import Spaces.BAut.</pre>
 </div>
@@ -128,7 +128,7 @@ Time: 0s">
 <div class="code" title="File: Bool.v
 Line: 19
 Time: 0.003s">
-<div class="time" style="width: 0.80862533692722%"></div>
+<div class="time" style="width: 0.94043887147335%"></div>
 <pre>
     apply center_baut; try exact _.</pre>
 </div>
@@ -178,8 +178,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 28
-Time: 0.268s">
-<div class="time" style="width: 72.237196765499%"></div>
+Time: 0.233s">
+<div class="time" style="width: 73.040752351097%"></div>
 <pre>
     pose (p := ap10_equiv
                  ((ap (center_baut Bool))^-1
@@ -194,8 +194,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 32
-Time: 0.004s">
-<div class="time" style="width: 1.078167115903%"></div>
+Time: 0.003s">
+<div class="time" style="width: 0.94043887147335%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -268,8 +268,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 46
-Time: 0.026s">
-<div class="time" style="width: 7.0080862533693%"></div>
+Time: 0.023s">
+<div class="time" style="width: 7.2100313479624%"></div>
 <pre> strip_truncations.</pre>
 </div>
 <div class="code" title="File: Bool.v
@@ -289,14 +289,14 @@ Time: 0s">
 <div class="code" title="File: Bool.v
 Line: 48
 Time: 0.001s">
-<div class="time" style="width: 0.26954177897574%"></div>
+<div class="time" style="width: 0.31347962382445%"></div>
 <pre>
     apply moveL_equiv_V in oops.</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 49
-Time: 0.003s">
-<div class="time" style="width: 0.80862533692722%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.6269592476489%"></div>
 <pre>
     refine (_ @ ap (equiv_path_sigma_hprop _ _)
                    (oops @ path_universe_1) @ _).</pre>
@@ -316,8 +316,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 52
-Time: 0.041s">
-<div class="time" style="width: 11.051212938005%"></div>
+Time: 0.037s">
+<div class="time" style="width: 11.598746081505%"></div>
 <pre>
       refine (eisretr (equiv_path_sigma_hprop Z Z) _).</pre>
 </div>
@@ -331,13 +331,13 @@ Time: 0s">
 <div class="code" title="File: Bool.v
 Line: 54
 Time: 0.003s">
-<div class="time" style="width: 0.80862533692722%"></div>
+<div class="time" style="width: 0.94043887147335%"></div>
 <pre> apply moveR_equiv_M; reflexivity.</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 54
-Time: 0.005s">
-<div class="time" style="width: 1.3477088948787%"></div>
+Time: 0.004s">
+<div class="time" style="width: 1.2539184952978%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -420,8 +420,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 66
-Time: 0.001s">
-<div class="time" style="width: 0.26954177897574%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
   Definition ap_pr1_negb_baut_bool_bool
@@ -494,8 +494,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 80
-Time: 0.028s">
-<div class="time" style="width: 7.5471698113208%"></div>
+Time: 0.024s">
+<div class="time" style="width: 7.5235109717868%"></div>
 <pre> apply ishprop_sum; try exact _.</pre>
 </div>
 <div class="code" title="File: Bool.v
@@ -514,7 +514,7 @@ Time: 0s">
 <div class="code" title="File: Bool.v
 Line: 81
 Time: 0.003s">
-<div class="time" style="width: 0.80862533692722%"></div>
+<div class="time" style="width: 0.94043887147335%"></div>
 <pre>
     baut_reduce.</pre>
 </div>
@@ -561,7 +561,7 @@ Time: 0s">
 <div class="code" title="File: Bool.v
 Line: 86
 Time: 0.001s">
-<div class="time" style="width: 0.26954177897574%"></div>
+<div class="time" style="width: 0.31347962382445%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -592,7 +592,7 @@ Time: 0s">
 <div class="code" title="File: Bool.v
 Line: 93
 Time: 0.002s">
-<div class="time" style="width: 0.53908355795148%"></div>
+<div class="time" style="width: 0.6269592476489%"></div>
 <pre>
     baut_reduce.</pre>
 </div>
@@ -620,7 +620,7 @@ Time: 0s">
 <div class="code" title="File: Bool.v
 Line: 97
 Time: 0.001s">
-<div class="time" style="width: 0.26954177897574%"></div>
+<div class="time" style="width: 0.31347962382445%"></div>
 <pre>
 
   Definition merely_inhab_baut_bool `{Funext} (Z : BAut Bool)
@@ -696,8 +696,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 126
-Time: 0.036s">
-<div class="time" style="width: 9.7035040431267%"></div>
+Time: 0.031s">
+<div class="time" style="width: 9.717868338558%"></div>
 <pre>
     destruct z', b, t; simpl;
     try reflexivity;
@@ -706,7 +706,7 @@ Time: 0.036s">
 <div class="code" title="File: Bool.v
 Line: 129
 Time: 0.002s">
-<div class="time" style="width: 0.53908355795148%"></div>
+<div class="time" style="width: 0.6269592476489%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -736,22 +736,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 136
-Time: 0.004s">
-<div class="time" style="width: 1.078167115903%"></div>
+Time: 0.003s">
+<div class="time" style="width: 0.94043887147335%"></div>
 <pre>
     baut_reduce.</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 137
-Time: 0.004s">
-<div class="time" style="width: 1.078167115903%"></div>
+Time: 0.003s">
+<div class="time" style="width: 0.94043887147335%"></div>
 <pre>
     refine (transport IsEquiv (ap10 (inhab_baut_bool_from_bool_bool t)^ z) _).</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 138
 Time: 0.001s">
-<div class="time" style="width: 0.26954177897574%"></div>
+<div class="time" style="width: 0.31347962382445%"></div>
 <pre>
     simpl in z; destruct z, t; simpl.</pre>
 </div>
@@ -809,15 +809,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 143
-Time: 0.003s">
-<div class="time" style="width: 0.80862533692722%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.6269592476489%"></div>
 <pre>
   Defined.</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 144
 Time: 0.002s">
-<div class="time" style="width: 0.53908355795148%"></div>
+<div class="time" style="width: 0.6269592476489%"></div>
 <pre>
 
   Definition equiv_inhab_baut_bool_bool (t : Bool)
@@ -880,7 +880,7 @@ Time: 0s">
 <div class="code" title="File: Bool.v
 Line: 159
 Time: 0.001s">
-<div class="time" style="width: 0.26954177897574%"></div>
+<div class="time" style="width: 0.31347962382445%"></div>
 <pre>Definition isequiv_equiv_inhab_baut_bool_bool_lemma
              (t : Bool) (Z : BAut Bool) (m : merely (point _ = Z))
   : IsEquiv (equiv_inhab_baut_bool_bool t Z).</pre>
@@ -894,8 +894,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 162
-Time: 0.012s">
-<div class="time" style="width: 3.2345013477089%"></div>
+Time: 0.01s">
+<div class="time" style="width: 3.1347962382445%"></div>
 <pre>
     strip_truncations.</pre>
 </div>
@@ -935,14 +935,14 @@ Time: 0s">
 <div class="code" title="File: Bool.v
 Line: 166
 Time: 0.001s">
-<div class="time" style="width: 0.26954177897574%"></div>
+<div class="time" style="width: 0.31347962382445%"></div>
 <pre>
       refine (ap10 (inhab_baut_bool_from_bool_bool t) (e t) @ _).</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 167
 Time: 0.001s">
-<div class="time" style="width: 0.26954177897574%"></div>
+<div class="time" style="width: 0.31347962382445%"></div>
 <pre>
       apply path_arrow; intros []; destruct t.</pre>
 </div>
@@ -1014,7 +1014,7 @@ Time: 0s">
 <div class="code" title="File: Bool.v
 Line: 173
 Time: 0.001s">
-<div class="time" style="width: 0.26954177897574%"></div>
+<div class="time" style="width: 0.31347962382445%"></div>
 <pre>
       refine (ap10 (ap10 (inhab_baut_bool_from_bool_bool t) z) t @ _).</pre>
 </div>
@@ -1027,15 +1027,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 175
-Time: 0.004s">
-<div class="time" style="width: 1.078167115903%"></div>
+Time: 0.003s">
+<div class="time" style="width: 0.94043887147335%"></div>
 <pre>
   Defined.</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 176
 Time: 0.001s">
-<div class="time" style="width: 0.26954177897574%"></div>
+<div class="time" style="width: 0.31347962382445%"></div>
 <pre>
 
   Global Instance isequiv_equiv_inhab_baut_bool_bool
@@ -1051,16 +1051,16 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 181
-Time: 0.038s">
-<div class="time" style="width: 10.242587601078%"></div>
+Time: 0.033s">
+<div class="time" style="width: 10.344827586207%"></div>
 <pre>
     exact (isequiv_equiv_inhab_baut_bool_bool_lemma t Z
             (merely_path_baut _ _)).</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 183
-Time: 0.016s">
-<div class="time" style="width: 4.3126684636119%"></div>
+Time: 0.014s">
+<div class="time" style="width: 4.3887147335423%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -1075,8 +1075,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 187
-Time: 0.015s">
-<div class="time" style="width: 4.0431266846361%"></div>
+Time: 0.014s">
+<div class="time" style="width: 4.3887147335423%"></div>
 <pre>Definition equiv_equiv_inhab_baut_bool_bool (t : Bool)
              (Z : BAut Bool)
   : Z &lt;~&gt; (Bool &lt;~&gt; Z)
@@ -1094,7 +1094,7 @@ Time: 0s">
 <div class="code" title="File: Bool.v
 Line: 193
 Time: 0.004s">
-<div class="time" style="width: 1.078167115903%"></div>
+<div class="time" style="width: 1.2539184952978%"></div>
 <pre>Definition equiv_equiv_inhab_baut_bool_bool_bool_inv (t : Bool)
              (e : Bool &lt;~&gt; Bool)
   : equiv_inverse (equiv_equiv_inhab_baut_bool_bool t (point _)) e = e t.</pre>
@@ -1109,7 +1109,7 @@ Time: 0s">
 <div class="code" title="File: Bool.v
 Line: 196
 Time: 0.004s">
-<div class="time" style="width: 1.078167115903%"></div>
+<div class="time" style="width: 1.2539184952978%"></div>
 <pre>
     pose (alt := Build_Equiv _ _ (equiv_inhab_baut_bool_bool t (point _))
                    (isequiv_equiv_inhab_baut_bool_bool_lemma
@@ -1117,8 +1117,8 @@ Time: 0.004s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 199
-Time: 0.004s">
-<div class="time" style="width: 1.078167115903%"></div>
+Time: 0.003s">
+<div class="time" style="width: 0.94043887147335%"></div>
 <pre>
     assert (p : equiv_equiv_inhab_baut_bool_bool t (point _) = alt).</pre>
 </div>
@@ -1131,14 +1131,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 201
-Time: 0.003s">
-<div class="time" style="width: 0.80862533692722%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.6269592476489%"></div>
 <pre> apply (ap (fun i =&gt; Build_Equiv _ _ _ i)).</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 201
 Time: 0.006s">
-<div class="time" style="width: 1.6172506738544%"></div>
+<div class="time" style="width: 1.8808777429467%"></div>
 <pre>
       apply (ap (isequiv_equiv_inhab_baut_bool_bool_lemma t (point _))).</pre>
 </div>
@@ -1158,14 +1158,14 @@ Time: 0s">
 <div class="code" title="File: Bool.v
 Line: 203
 Time: 0.001s">
-<div class="time" style="width: 0.26954177897574%"></div>
+<div class="time" style="width: 0.31347962382445%"></div>
 <pre>
     exact (ap10_equiv (ap equiv_inverse p) e).</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 204
-Time: 0.008s">
-<div class="time" style="width: 2.1563342318059%"></div>
+Time: 0.007s">
+<div class="time" style="width: 2.1943573667712%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -1210,8 +1210,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 214
-Time: 0.006s">
-<div class="time" style="width: 1.6172506738544%"></div>
+Time: 0.005s">
+<div class="time" style="width: 1.5673981191223%"></div>
 <pre>
     baut_reduce; simpl.</pre>
 </div>
@@ -1225,14 +1225,14 @@ Time: 0s">
 <div class="code" title="File: Bool.v
 Line: 216
 Time: 0.003s">
-<div class="time" style="width: 0.80862533692722%"></div>
+<div class="time" style="width: 0.94043887147335%"></div>
 <pre>
     exact (path_universe equiv_bool_aut_bool).</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 217
-Time: 0.001s">
-<div class="time" style="width: 0.26954177897574%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -1291,7 +1291,7 @@ Time: 0s">
 <div class="code" title="File: Bool.v
 Line: 228
 Time: 0.003s">
-<div class="time" style="width: 0.80862533692722%"></div>
+<div class="time" style="width: 0.94043887147335%"></div>
 <pre>
     apply path_baut, equiv_inverse, equiv_equiv_inhab_baut_bool_bool.</pre>
 </div>
@@ -1312,7 +1312,7 @@ Time: 0s">
 <div class="code" title="File: Bool.v
 Line: 231
 Time: 0.001s">
-<div class="time" style="width: 0.26954177897574%"></div>
+<div class="time" style="width: 0.31347962382445%"></div>
 <pre>Defined.</pre>
 </div>
 <div class="code" title="File: Bool.v
@@ -1363,7 +1363,7 @@ Time: 0s">
 <div class="code" title="File: Bool.v
 Line: 240
 Time: 0.007s">
-<div class="time" style="width: 1.8867924528302%"></div>
+<div class="time" style="width: 2.1943573667712%"></div>
 <pre>Definition baut_bool_pairing_Z1 Z : Z ** pt = Z
     := baut_bool_pairing_symm Z pt @ baut_bool_pairing_1Z Z.</pre>
 </div>
@@ -1392,7 +1392,7 @@ Time: 0s">
 <div class="code" title="File: Bool.v
 Line: 245
 Time: 0.001s">
-<div class="time" style="width: 0.26954177897574%"></div>
+<div class="time" style="width: 0.31347962382445%"></div>
 <pre>
     apply symmetry, path_baut_bool_inhab.</pre>
 </div>
@@ -1428,7 +1428,7 @@ Time: 0s">
 <div class="code" title="File: Bool.v
 Line: 251
 Time: 0.001s">
-<div class="time" style="width: 0.26954177897574%"></div>
+<div class="time" style="width: 0.31347962382445%"></div>
 <pre>Definition baut_bool_pairing_ZZ_Z_symm_part1 {Y Z W}
              (e : Y ** (Z ** W)) (z : Z)
   : Y ** W.</pre>
@@ -1476,14 +1476,14 @@ Time: 0s">
 <div class="code" title="File: Bool.v
 Line: 257
 Time: 0.001s">
-<div class="time" style="width: 0.26954177897574%"></div>
+<div class="time" style="width: 0.31347962382445%"></div>
 <pre>
       destruct (path_baut_bool_inhab W w).</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 258
 Time: 0.001s">
-<div class="time" style="width: 0.26954177897574%"></div>
+<div class="time" style="width: 0.31347962382445%"></div>
 <pre>
       destruct (path_baut_bool_inhab Z z).</pre>
 </div>
@@ -1497,8 +1497,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 261
-Time: 0.027s">
-<div class="time" style="width: 7.277628032345%"></div>
+Time: 0.023s">
+<div class="time" style="width: 7.2100313479624%"></div>
 <pre>destruct (dec (z=w)).</pre>
 </div>
 <div class="code" title="File: Bool.v
@@ -1511,7 +1511,7 @@ Time: 0s">
 <div class="code" title="File: Bool.v
 Line: 262
 Time: 0.007s">
-<div class="time" style="width: 1.8867924528302%"></div>
+<div class="time" style="width: 2.1943573667712%"></div>
 <pre> exact (e^-1 (equiv_idmap _)).</pre>
 </div>
 <div class="code" title="File: Bool.v
@@ -1523,8 +1523,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 263
-Time: 0.007s">
-<div class="time" style="width: 1.8867924528302%"></div>
+Time: 0.006s">
+<div class="time" style="width: 1.8808777429467%"></div>
 <pre> exact (e^-1 equiv_negb).</pre>
 </div>
 <div class="code" title="File: Bool.v
@@ -1542,15 +1542,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 264
-Time: 0.005s">
-<div class="time" style="width: 1.3477088948787%"></div>
+Time: 0.004s">
+<div class="time" style="width: 1.2539184952978%"></div>
 <pre>
       destruct (path_baut_bool_inhab W w).</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 265
-Time: 0.005s">
-<div class="time" style="width: 1.3477088948787%"></div>
+Time: 0.004s">
+<div class="time" style="width: 1.2539184952978%"></div>
 <pre>
       destruct (path_baut_bool_inhab Z z).</pre>
 </div>
@@ -1564,7 +1564,7 @@ Time: 0s">
 <div class="code" title="File: Bool.v
 Line: 267
 Time: 0.004s">
-<div class="time" style="width: 1.078167115903%"></div>
+<div class="time" style="width: 1.2539184952978%"></div>
 <pre>
       destruct z,w; simpl; refine (ap10_equiv (eisretr e _) _).</pre>
 </div>
@@ -1583,22 +1583,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 269
-Time: 0.006s">
-<div class="time" style="width: 1.6172506738544%"></div>
+Time: 0.005s">
+<div class="time" style="width: 1.5673981191223%"></div>
 <pre>
       destruct (path_baut_bool_inhab Y y).</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 270
-Time: 0.006s">
-<div class="time" style="width: 1.6172506738544%"></div>
+Time: 0.005s">
+<div class="time" style="width: 1.5673981191223%"></div>
 <pre>
       destruct (path_baut_bool_inhab Z z).</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 271
-Time: 0.005s">
-<div class="time" style="width: 1.3477088948787%"></div>
+Time: 0.004s">
+<div class="time" style="width: 1.2539184952978%"></div>
 <pre>
       destruct (path_baut_bool_inhab W (e y z)).</pre>
 </div>
@@ -1611,8 +1611,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 273
-Time: 0.007s">
-<div class="time" style="width: 1.8867924528302%"></div>
+Time: 0.006s">
+<div class="time" style="width: 1.8808777429467%"></div>
 <pre>
       case (dec (z = e y z)); intros p; apply moveR_equiv_V;
       destruct (aut_bool_idmap_or_negb (e y)) as [q|q].</pre>
@@ -1627,7 +1627,7 @@ Time: 0s">
 <div class="code" title="File: Bool.v
 Line: 276
 Time: 0.001s">
-<div class="time" style="width: 0.26954177897574%"></div>
+<div class="time" style="width: 0.31347962382445%"></div>
 <pre> symmetry; assumption.</pre>
 </div>
 <div class="code" title="File: Bool.v
@@ -1666,20 +1666,20 @@ Time: 0s">
 <div class="code" title="File: Bool.v
 Line: 279
 Time: 0.001s">
-<div class="time" style="width: 0.26954177897574%"></div>
+<div class="time" style="width: 0.31347962382445%"></div>
 <pre> symmetry; assumption.</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 279
-Time: 0.018s">
-<div class="time" style="width: 4.8517520215633%"></div>
+Time: 0.016s">
+<div class="time" style="width: 5.0156739811912%"></div>
 <pre>
   Defined.</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 280
 Time: 0.001s">
-<div class="time" style="width: 0.26954177897574%"></div>
+<div class="time" style="width: 0.31347962382445%"></div>
 <pre>
 
   Definition baut_bool_pairing_ZZ_Z_symm_lemma {Y Z W}
@@ -1695,43 +1695,43 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 285
-Time: 0.008s">
-<div class="time" style="width: 2.1563342318059%"></div>
+Time: 0.006s">
+<div class="time" style="width: 1.8808777429467%"></div>
 <pre>
     pose (k := (fun y =&gt; (e y)^-1 (f y))).</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 286
-Time: 0.017s">
-<div class="time" style="width: 4.5822102425876%"></div>
+Time: 0.015s">
+<div class="time" style="width: 4.7021943573668%"></div>
 <pre>
     refine (merely_rec_hset k); intros y1 y2.</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 287
 Time: 0.001s">
-<div class="time" style="width: 0.26954177897574%"></div>
+<div class="time" style="width: 0.31347962382445%"></div>
 <pre>
     destruct (path_baut_bool_inhab Y y1).</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 288
-Time: 0.002s">
-<div class="time" style="width: 0.53908355795148%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.31347962382445%"></div>
 <pre>
     destruct (path_baut_bool_inhab W (f y1)).</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 289
-Time: 0.002s">
-<div class="time" style="width: 0.53908355795148%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.31347962382445%"></div>
 <pre>
     destruct (path_baut_bool_inhab Z (k y1)).</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 290
-Time: 0.006s">
-<div class="time" style="width: 1.6172506738544%"></div>
+Time: 0.005s">
+<div class="time" style="width: 1.5673981191223%"></div>
 <pre>
     destruct (aut_bool_idmap_or_negb f) as [p|p];
       refine (ap (e y1)^-1 (ap10_equiv p y1) @ _);
@@ -1747,8 +1747,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 295
-Time: 0.029s">
-<div class="time" style="width: 7.8167115902965%"></div>
+Time: 0.025s">
+<div class="time" style="width: 7.8369905956113%"></div>
 <pre> destruct (dec (y1=y2)) as [p|p].</pre>
 </div>
 <div class="code" title="File: Bool.v
@@ -1772,8 +1772,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 296
-Time: 0.006s">
-<div class="time" style="width: 1.6172506738544%"></div>
+Time: 0.005s">
+<div class="time" style="width: 1.5673981191223%"></div>
 <pre>
       destruct (aut_bool_idmap_or_negb (e y1)) as [q1|q1];
         destruct (aut_bool_idmap_or_negb (e y2)) as [q2|q2].</pre>
@@ -1787,8 +1787,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 299
-Time: 0.048s">
-<div class="time" style="width: 12.938005390836%"></div>
+Time: 0.042s">
+<div class="time" style="width: 13.166144200627%"></div>
 <pre> case (p ((ap e)^-1 (q1 @ q2^))).</pre>
 </div>
 <div class="code" title="File: Bool.v
@@ -1844,8 +1844,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 302
-Time: 0.053s">
-<div class="time" style="width: 14.285714285714%"></div>
+Time: 0.046s">
+<div class="time" style="width: 14.420062695925%"></div>
 <pre> case (p ((ap e)^-1 (q1 @ q2^))).</pre>
 </div>
 <div class="code" title="File: Bool.v
@@ -1857,8 +1857,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 303
-Time: 0.029s">
-<div class="time" style="width: 7.8167115902965%"></div>
+Time: 0.025s">
+<div class="time" style="width: 7.8369905956113%"></div>
 <pre> destruct (dec (y1=y2)) as [p|p].</pre>
 </div>
 <div class="code" title="File: Bool.v
@@ -1882,8 +1882,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 304
-Time: 0.006s">
-<div class="time" style="width: 1.6172506738544%"></div>
+Time: 0.005s">
+<div class="time" style="width: 1.5673981191223%"></div>
 <pre>
       destruct (aut_bool_idmap_or_negb (e y1)) as [q1|q1];
         destruct (aut_bool_idmap_or_negb (e y2)) as [q2|q2].</pre>
@@ -1897,8 +1897,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 307
-Time: 0.048s">
-<div class="time" style="width: 12.938005390836%"></div>
+Time: 0.043s">
+<div class="time" style="width: 13.479623824451%"></div>
 <pre> case (p ((ap e)^-1 (q1 @ q2^))).</pre>
 </div>
 <div class="code" title="File: Bool.v
@@ -1916,8 +1916,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 308
-Time: 0.016s">
-<div class="time" style="width: 4.3126684636119%"></div>
+Time: 0.014s">
+<div class="time" style="width: 4.3887147335423%"></div>
 <pre>
         exact (negb_ne (fun r =&gt; p ((ap negb)^-1 r))).</pre>
 </div>
@@ -1942,8 +1942,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 310
-Time: 0.015s">
-<div class="time" style="width: 4.0431266846361%"></div>
+Time: 0.013s">
+<div class="time" style="width: 4.0752351097179%"></div>
 <pre>
         exact (negb_ne (fun r =&gt; p ((ap negb)^-1 r)^)).</pre>
 </div>
@@ -1956,21 +1956,21 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 312
-Time: 0.049s">
-<div class="time" style="width: 13.207547169811%"></div>
+Time: 0.042s">
+<div class="time" style="width: 13.166144200627%"></div>
 <pre> case (p ((ap e)^-1 (q1 @ q2^))).</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 312
-Time: 0.015s">
-<div class="time" style="width: 4.0431266846361%"></div>
+Time: 0.013s">
+<div class="time" style="width: 4.0752351097179%"></div>
 <pre>
   Defined.</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 313
 Time: 0.001s">
-<div class="time" style="width: 0.26954177897574%"></div>
+<div class="time" style="width: 0.31347962382445%"></div>
 <pre>
 
   Definition baut_bool_pairing_ZZ_Z_symm_map Y Z W
@@ -1992,8 +1992,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 318
-Time: 0.005s">
-<div class="time" style="width: 1.3477088948787%"></div>
+Time: 0.004s">
+<div class="time" style="width: 1.2539184952978%"></div>
 <pre>
     simple refine (equiv_adjointify (baut_bool_pairing_ZZ_Z_symm_part1 e)
                              _ _ _).</pre>
@@ -2014,7 +2014,7 @@ Time: 0s">
 <div class="code" title="File: Bool.v
 Line: 321
 Time: 0.005s">
-<div class="time" style="width: 1.3477088948787%"></div>
+<div class="time" style="width: 1.5673981191223%"></div>
 <pre>
       exact (baut_bool_pairing_ZZ_Z_symm_lemma e f
                (merely_inhab_baut_bool Y)).</pre>
@@ -2035,14 +2035,14 @@ Time: 0s">
 <div class="code" title="File: Bool.v
 Line: 324
 Time: 0.001s">
-<div class="time" style="width: 0.26954177897574%"></div>
+<div class="time" style="width: 0.31347962382445%"></div>
 <pre>
       apply path_equiv, path_arrow; intros y.</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 325
 Time: 0.008s">
-<div class="time" style="width: 2.1563342318059%"></div>
+<div class="time" style="width: 2.5078369905956%"></div>
 <pre>
       change ((e y)
                 (baut_bool_pairing_ZZ_Z_symm_lemma e f
@@ -2051,7 +2051,7 @@ Time: 0.008s">
 <div class="code" title="File: Bool.v
 Line: 328
 Time: 0.009s">
-<div class="time" style="width: 2.4258760107817%"></div>
+<div class="time" style="width: 2.8213166144201%"></div>
 <pre>
       refine (ap (e y o baut_bool_pairing_ZZ_Z_symm_lemma e f)
                  (path_ishprop _ (tr y)) @ _).</pre>
@@ -2065,8 +2065,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 331
-Time: 0.004s">
-<div class="time" style="width: 1.078167115903%"></div>
+Time: 0.003s">
+<div class="time" style="width: 0.94043887147335%"></div>
 <pre> apply eisretr.</pre>
 </div>
 <div class="code" title="File: Bool.v
@@ -2084,22 +2084,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 332
-Time: 0.012s">
-<div class="time" style="width: 3.2345013477089%"></div>
+Time: 0.011s">
+<div class="time" style="width: 3.448275862069%"></div>
 <pre>
       assert (IsHSet Z) by exact _.</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 333
-Time: 0.005s">
-<div class="time" style="width: 1.3477088948787%"></div>
+Time: 0.004s">
+<div class="time" style="width: 1.2539184952978%"></div>
 <pre>
       refine (Trunc_rec _ (merely_inhab_baut_bool Y)); intros y.</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 334
 Time: 0.01s">
-<div class="time" style="width: 2.6954177897574%"></div>
+<div class="time" style="width: 3.1347962382445%"></div>
 <pre>
       refine (ap (baut_bool_pairing_ZZ_Z_symm_lemma e _)
                  (path_ishprop _ (tr y)) @ _).</pre>
@@ -2114,20 +2114,20 @@ Time: 0s">
 <div class="code" title="File: Bool.v
 Line: 337
 Time: 0.002s">
-<div class="time" style="width: 0.53908355795148%"></div>
+<div class="time" style="width: 0.6269592476489%"></div>
 <pre> refine (eissect _ _).</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 337
-Time: 0.021s">
-<div class="time" style="width: 5.6603773584906%"></div>
+Time: 0.019s">
+<div class="time" style="width: 5.9561128526646%"></div>
 <pre>
   Defined.</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 338
-Time: 0.034s">
-<div class="time" style="width: 9.1644204851752%"></div>
+Time: 0.032s">
+<div class="time" style="width: 10.031347962382%"></div>
 <pre>
 
   Definition baut_bool_pairing_ZZ_Z_symm_inv Y Z W
@@ -2152,35 +2152,35 @@ Time: 0s">
 <div class="code" title="File: Bool.v
 Line: 345
 Time: 0.001s">
-<div class="time" style="width: 0.26954177897574%"></div>
+<div class="time" style="width: 0.31347962382445%"></div>
 <pre>
     apply path_equiv, path_arrow; intros z.</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 346
 Time: 0.001s">
-<div class="time" style="width: 0.26954177897574%"></div>
+<div class="time" style="width: 0.31347962382445%"></div>
 <pre>
     apply path_equiv, path_arrow; intros y.</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 347
 Time: 0.001s">
-<div class="time" style="width: 0.26954177897574%"></div>
+<div class="time" style="width: 0.31347962382445%"></div>
 <pre>
     reflexivity.</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 348
-Time: 0.025s">
-<div class="time" style="width: 6.7385444743935%"></div>
+Time: 0.022s">
+<div class="time" style="width: 6.8965517241379%"></div>
 <pre>
   Defined.</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 349
 Time: 0.001s">
-<div class="time" style="width: 0.26954177897574%"></div>
+<div class="time" style="width: 0.31347962382445%"></div>
 <pre>
 
   Definition baut_bool_pairing_ZZ_Z_symm Y Z W
@@ -2195,8 +2195,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 353
-Time: 0.078s">
-<div class="time" style="width: 21.024258760108%"></div>
+Time: 0.074s">
+<div class="time" style="width: 23.197492163009%"></div>
 <pre>
     refine (equiv_adjointify
               (baut_bool_pairing_ZZ_Z_symm_map Y Z W)
@@ -2206,8 +2206,8 @@ Time: 0.078s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 358
-Time: 0.019s">
-<div class="time" style="width: 5.1212938005391%"></div>
+Time: 0.016s">
+<div class="time" style="width: 5.0156739811912%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -2223,7 +2223,7 @@ Time: 0s">
 <div class="code" title="File: Bool.v
 Line: 362
 Time: 0.001s">
-<div class="time" style="width: 0.26954177897574%"></div>
+<div class="time" style="width: 0.31347962382445%"></div>
 <pre>Definition baut_bool_pairing_ZZ_Z Z W Y
   : (Z ** W) ** Y = Z ** (W ** Y).</pre>
 </div>
@@ -2243,22 +2243,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 365
-Time: 0.001s">
-<div class="time" style="width: 0.26954177897574%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     refine (_ @ ap (fun X =&gt; Z ** X) (baut_bool_pairing_symm Y W)).</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 366
-Time: 0.016s">
-<div class="time" style="width: 4.3126684636119%"></div>
+Time: 0.014s">
+<div class="time" style="width: 4.3887147335423%"></div>
 <pre>
     apply path_baut, baut_bool_pairing_ZZ_Z_symm.</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 367
-Time: 0.012s">
-<div class="time" style="width: 3.2345013477089%"></div>
+Time: 0.011s">
+<div class="time" style="width: 3.448275862069%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -2280,7 +2280,7 @@ Time: 0s">
 <div class="code" title="File: Bool.v
 Line: 377
 Time: 0.007s">
-<div class="time" style="width: 1.8867924528302%"></div>
+<div class="time" style="width: 2.1943573667712%"></div>
 <pre>Definition aut_baut_bool_moveR_pairing_V
              (e : BAut Bool &lt;~&gt; BAut Bool) (Z W : BAut Bool)
   : (e^-1 Z ** W) = (Z ** e W).</pre>
@@ -2308,8 +2308,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 382
-Time: 0.007s">
-<div class="time" style="width: 1.8867924528302%"></div>
+Time: 0.006s">
+<div class="time" style="width: 1.8808777429467%"></div>
 <pre>
     refine (_ oE (@equiv_moveL_equiv_M _ _ e _ W Z) oE _).</pre>
 </div>
@@ -2323,7 +2323,7 @@ Time: 0s">
 <div class="code" title="File: Bool.v
 Line: 384
 Time: 0.002s">
-<div class="time" style="width: 0.53908355795148%"></div>
+<div class="time" style="width: 0.6269592476489%"></div>
 <pre> apply equiv_inverse, equiv_path_sigma_hprop.</pre>
 </div>
 <div class="code" title="File: Bool.v
@@ -2336,7 +2336,7 @@ Time: 0s">
 <div class="code" title="File: Bool.v
 Line: 385
 Time: 0.002s">
-<div class="time" style="width: 0.53908355795148%"></div>
+<div class="time" style="width: 0.6269592476489%"></div>
 <pre> apply equiv_path_sigma_hprop.</pre>
 </div>
 <div class="code" title="File: Bool.v
@@ -2398,15 +2398,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 394
-Time: 0.014s">
-<div class="time" style="width: 3.7735849056604%"></div>
+Time: 0.013s">
+<div class="time" style="width: 4.0752351097179%"></div>
 <pre>
       refine ((baut_bool_pairing_ZZ_Z Z Z W)^ @ _).</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 395
 Time: 0.009s">
-<div class="time" style="width: 2.4258760107817%"></div>
+<div class="time" style="width: 2.8213166144201%"></div>
 <pre>
       refine (_ @ baut_bool_pairing_1Z W).</pre>
 </div>
@@ -2420,7 +2420,7 @@ Time: 0s">
 <div class="code" title="File: Bool.v
 Line: 397
 Time: 0.001s">
-<div class="time" style="width: 0.26954177897574%"></div>
+<div class="time" style="width: 0.31347962382445%"></div>
 <pre>
       apply baut_bool_pairing_ZZ.</pre>
 </div>
@@ -2439,8 +2439,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 399
-Time: 0.008s">
-<div class="time" style="width: 2.1563342318059%"></div>
+Time: 0.007s">
+<div class="time" style="width: 2.1943573667712%"></div>
 <pre>
       exact (e^-1 pt).</pre>
 </div>
@@ -2460,7 +2460,7 @@ Time: 0s">
 <div class="code" title="File: Bool.v
 Line: 401
 Time: 0.001s">
-<div class="time" style="width: 0.26954177897574%"></div>
+<div class="time" style="width: 0.31347962382445%"></div>
 <pre>
       apply path_equiv, path_arrow; intros Z; simpl.</pre>
 </div>
@@ -2473,8 +2473,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 403
-Time: 0.004s">
-<div class="time" style="width: 1.078167115903%"></div>
+Time: 0.005s">
+<div class="time" style="width: 1.5673981191223%"></div>
 <pre>
       apply baut_bool_pairing_1Z.</pre>
 </div>
@@ -2494,14 +2494,14 @@ Time: 0s">
 <div class="code" title="File: Bool.v
 Line: 405
 Time: 0.005s">
-<div class="time" style="width: 1.3477088948787%"></div>
+<div class="time" style="width: 1.5673981191223%"></div>
 <pre>
       apply baut_bool_pairing_Z1.</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 406
-Time: 0.044s">
-<div class="time" style="width: 11.859838274933%"></div>
+Time: 0.038s">
+<div class="time" style="width: 11.912225705329%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -2534,36 +2534,36 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 416
-Time: 0.042s">
-<div class="time" style="width: 11.320754716981%"></div>
+Time: 0.038s">
+<div class="time" style="width: 11.912225705329%"></div>
 <pre>
     revert g; equiv_intro equiv_baut_bool_aut_baut_bool Z.</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 417
 Time: 0.003s">
-<div class="time" style="width: 0.80862533692722%"></div>
+<div class="time" style="width: 0.94043887147335%"></div>
 <pre>
     simpl.</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 418
-Time: 0.042s">
-<div class="time" style="width: 11.320754716981%"></div>
+Time: 0.037s">
+<div class="time" style="width: 11.598746081505%"></div>
 <pre>
     baut_reduce.</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 419
-Time: 0.014s">
-<div class="time" style="width: 3.7735849056604%"></div>
+Time: 0.012s">
+<div class="time" style="width: 3.7617554858934%"></div>
 <pre>
     refine (_ @ apD negb_center_baut_bool (baut_bool_pairing_1Z pt)^).</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 420
-Time: 0.004s">
-<div class="time" style="width: 1.078167115903%"></div>
+Time: 0.003s">
+<div class="time" style="width: 0.94043887147335%"></div>
 <pre>
     rewrite transport_paths_lr, inv_V.</pre>
 </div>
@@ -2576,15 +2576,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 422
-Time: 0.017s">
-<div class="time" style="width: 4.5822102425876%"></div>
+Time: 0.015s">
+<div class="time" style="width: 4.7021943573668%"></div>
 <pre>
     exact (concat_A1p baut_bool_pairing_1Z (negb_center_baut_bool pt)).</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 423
-Time: 0.067s">
-<div class="time" style="width: 18.059299191375%"></div>
+Time: 0.06s">
+<div class="time" style="width: 18.808777429467%"></div>
 <pre>
   Qed.</pre>
 </div>
@@ -2606,8 +2606,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 428
-Time: 0.008s">
-<div class="time" style="width: 2.1563342318059%"></div>
+Time: 0.007s">
+<div class="time" style="width: 2.1943573667712%"></div>
 <pre>
     refine (center2_baut (BAut Bool) _).</pre>
 </div>
@@ -2657,7 +2657,7 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 437
-Time: 0.371s">
+Time: 0.319s">
 <div class="time" style="width: 100%"></div>
 <pre>
     exact (nontrivial_negb_center_baut_bool
@@ -2666,15 +2666,15 @@ Time: 0.371s">
 </div>
 <div class="code" title="File: Bool.v
 Line: 440
-Time: 0.004s">
-<div class="time" style="width: 1.078167115903%"></div>
+Time: 0.003s">
+<div class="time" style="width: 0.94043887147335%"></div>
 <pre>
   Defined.</pre>
 </div>
 <div class="code" title="File: Bool.v
 Line: 441
-Time: 0.077s">
-<div class="time" style="width: 20.754716981132%"></div>
+Time: 0.07s">
+<div class="time" style="width: 21.943573667712%"></div>
 <pre>
 
 End AssumeUnivalence.</pre>

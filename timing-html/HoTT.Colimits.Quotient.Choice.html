@@ -30,7 +30,7 @@ pre {
 
 <div class="code" title="File: Choice.v
 Line: 1
-Time: 0.095s">
+Time: 0.09s">
 <div class="time" style="width: 100%"></div>
 <pre>Require Import
   HoTT.Basics
@@ -54,7 +54,7 @@ Time: 0s">
 <div class="code" title="File: Choice.v
 Line: 11
 Time: 0.001s">
-<div class="time" style="width: 1.0526315789474%"></div>
+<div class="time" style="width: 1.1111111111111%"></div>
 <pre>Definition HasQuotientChoice (A : Type) :=
   forall (B : A -&gt; Type), (forall x, IsHSet (B x)) -&gt;
   forall (R : forall x, Relation (B x))
@@ -190,7 +190,7 @@ Time: 0s">
 <div class="code" title="File: Choice.v
 Line: 45
 Time: 0.002s">
-<div class="time" style="width: 2.1052631578947%"></div>
+<div class="time" style="width: 2.2222222222222%"></div>
 <pre> apply (equiv_compose q p).</pre>
 </div>
 <div class="code" title="File: Choice.v
@@ -202,8 +202,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Choice.v
 Line: 46
-Time: 0.01s">
-<div class="time" style="width: 10.526315789474%"></div>
+Time: 0.009s">
+<div class="time" style="width: 10%"></div>
 <pre>
 
   Local Instance hprop_choose_cod (a : A)
@@ -219,14 +219,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: Choice.v
 Line: 51
-Time: 0.009s">
-<div class="time" style="width: 9.4736842105263%"></div>
+Time: 0.008s">
+<div class="time" style="width: 8.8888888888889%"></div>
 <pre>
     apply ishprop_sigma_disjoint.</pre>
 </div>
 <div class="code" title="File: Choice.v
 Line: 52
-Time: 0.019s">
+Time: 0.018s">
 <div class="time" style="width: 20%"></div>
 <pre>
     refine (Quotient_ind_hprop _ _ _).</pre>
@@ -240,8 +240,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Choice.v
 Line: 54
-Time: 0.016s">
-<div class="time" style="width: 16.842105263158%"></div>
+Time: 0.015s">
+<div class="time" style="width: 16.666666666667%"></div>
 <pre>
     refine (Quotient_ind_hprop _ _ _).</pre>
 </div>
@@ -262,7 +262,7 @@ Time: 0s">
 <div class="code" title="File: Choice.v
 Line: 57
 Time: 0.003s">
-<div class="time" style="width: 3.1578947368421%"></div>
+<div class="time" style="width: 3.3333333333333%"></div>
 <pre>
     apply (f b2)^-1.</pre>
 </div>
@@ -283,14 +283,14 @@ Time: 0s">
 <div class="code" title="File: Choice.v
 Line: 60
 Time: 0.004s">
-<div class="time" style="width: 4.2105263157895%"></div>
+<div class="time" style="width: 4.4444444444444%"></div>
 <pre>
   Qed.</pre>
 </div>
 <div class="code" title="File: Choice.v
 Line: 61
 Time: 0.011s">
-<div class="time" style="width: 11.578947368421%"></div>
+<div class="time" style="width: 12.222222222222%"></div>
 <pre>
 
   Local Definition prechoose (i : forall x, hexists (P x)) (a : A)
@@ -313,15 +313,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Choice.v
 Line: 67
-Time: 0.029s">
-<div class="time" style="width: 30.526315789474%"></div>
+Time: 0.028s">
+<div class="time" style="width: 31.111111111111%"></div>
 <pre>
     strip_truncations.</pre>
 </div>
 <div class="code" title="File: Choice.v
 Line: 68
 Time: 0.001s">
-<div class="time" style="width: 1.0526315789474%"></div>
+<div class="time" style="width: 1.1111111111111%"></div>
 <pre>
     destruct i as [b1 h].</pre>
 </div>
@@ -341,8 +341,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Choice.v
 Line: 71
-Time: 0.006s">
-<div class="time" style="width: 6.3157894736842%"></div>
+Time: 0.005s">
+<div class="time" style="width: 5.5555555555556%"></div>
 <pre>
     apply equiv_iff_hprop.</pre>
 </div>
@@ -381,13 +381,13 @@ Time: 0s">
 <div class="code" title="File: Choice.v
 Line: 74
 Time: 0.001s">
-<div class="time" style="width: 1.0526315789474%"></div>
+<div class="time" style="width: 1.1111111111111%"></div>
 <pre> by apply equiv_iff_hprop.</pre>
 </div>
 <div class="code" title="File: Choice.v
 Line: 74
 Time: 0.001s">
-<div class="time" style="width: 1.0526315789474%"></div>
+<div class="time" style="width: 1.1111111111111%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -404,7 +404,7 @@ Time: 0s">
 <div class="code" title="File: Choice.v
 Line: 79
 Time: 0.001s">
-<div class="time" style="width: 1.0526315789474%"></div>
+<div class="time" style="width: 1.1111111111111%"></div>
 <pre>
 
 End choose_has_quotient_choice.</pre>
@@ -435,7 +435,7 @@ Time: 0s">
 <div class="code" title="File: Choice.v
 Line: 85
 Time: 0.001s">
-<div class="time" style="width: 1.0526315789474%"></div>
+<div class="time" style="width: 1.1111111111111%"></div>
 <pre>
 
   Local Definition RelUnit (B : A -&gt; Type) (a : A) (b1 b2 : B a) : HProp
@@ -557,7 +557,7 @@ Time: 0s">
 <div class="code" title="File: Choice.v
 Line: 111
 Time: 0.008s">
-<div class="time" style="width: 8.4210526315789%"></div>
+<div class="time" style="width: 8.8888888888889%"></div>
 <pre>
     refine (Quotient_ind_hprop _ _ _).</pre>
 </div>
@@ -571,7 +571,7 @@ Time: 0s">
 <div class="code" title="File: Choice.v
 Line: 113
 Time: 0.004s">
-<div class="time" style="width: 4.2105263157895%"></div>
+<div class="time" style="width: 4.4444444444444%"></div>
 <pre>
     refine (Quotient_ind_hprop _ _ _).</pre>
 </div>
@@ -585,7 +585,7 @@ Time: 0s">
 <div class="code" title="File: Choice.v
 Line: 115
 Time: 0.001s">
-<div class="time" style="width: 1.0526315789474%"></div>
+<div class="time" style="width: 1.1111111111111%"></div>
 <pre>
     by apply qglue.</pre>
 </div>
@@ -620,8 +620,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Choice.v
 Line: 121
-Time: 0.022s">
-<div class="time" style="width: 23.157894736842%"></div>
+Time: 0.02s">
+<div class="time" style="width: 22.222222222222%"></div>
 <pre>
     transparent assert (g : (forall a, B a / RelUnit B a)).</pre>
 </div>
@@ -647,8 +647,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Choice.v
 Line: 124
-Time: 0.019s">
-<div class="time" style="width: 20%"></div>
+Time: 0.017s">
+<div class="time" style="width: 18.888888888889%"></div>
 <pre>
       strip_truncations.</pre>
 </div>
@@ -668,14 +668,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: Choice.v
 Line: 127
-Time: 0.013s">
-<div class="time" style="width: 13.684210526316%"></div>
+Time: 0.012s">
+<div class="time" style="width: 13.333333333333%"></div>
 <pre> specialize (qch B _ (RelUnit B) _ _ _ _ g).</pre>
 </div>
 <div class="code" title="File: Choice.v
 Line: 127
-Time: 0.017s">
-<div class="time" style="width: 17.894736842105%"></div>
+Time: 0.016s">
+<div class="time" style="width: 17.777777777778%"></div>
 <pre>
       strip_truncations.</pre>
 </div>
@@ -696,7 +696,7 @@ Time: 0s">
 <div class="code" title="File: Choice.v
 Line: 130
 Time: 0.001s">
-<div class="time" style="width: 1.0526315789474%"></div>
+<div class="time" style="width: 1.1111111111111%"></div>
 <pre>
   Qed.</pre>
 </div>
@@ -761,7 +761,7 @@ Time: 0s">
 <div class="code" title="File: Choice.v
 Line: 141
 Time: 0.003s">
-<div class="time" style="width: 3.1578947368421%"></div>
+<div class="time" style="width: 3.3333333333333%"></div>
 <pre>
     refine (Quotient_ind_hprop _
               (fun c =&gt; merely {b | class_of (R a) b = c}) _ (f a)).</pre>
@@ -796,14 +796,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: Choice.v
 Line: 147
-Time: 0.022s">
-<div class="time" style="width: 23.157894736842%"></div>
+Time: 0.019s">
+<div class="time" style="width: 21.111111111111%"></div>
 <pre> pose proof (ch (fun a =&gt; {b | P a b}) _ g) as h.</pre>
 </div>
 <div class="code" title="File: Choice.v
 Line: 147
-Time: 0.045s">
-<div class="time" style="width: 47.368421052632%"></div>
+Time: 0.041s">
+<div class="time" style="width: 45.555555555556%"></div>
 <pre>
     strip_truncations.</pre>
 </div>
@@ -838,7 +838,7 @@ Time: 0s">
 <div class="code" title="File: Choice.v
 Line: 152
 Time: 0.001s">
-<div class="time" style="width: 1.0526315789474%"></div>
+<div class="time" style="width: 1.1111111111111%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -861,8 +861,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: Choice.v
 Line: 158
-Time: 0.051s">
-<div class="time" style="width: 53.684210526316%"></div>
+Time: 0.045s">
+<div class="time" style="width: 50%"></div>
 <pre>
   srapply isequiv_iff_hprop.</pre>
 </div>
@@ -875,8 +875,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Choice.v
 Line: 160
-Time: 0.005s">
-<div class="time" style="width: 5.2631578947368%"></div>
+Time: 0.004s">
+<div class="time" style="width: 4.4444444444444%"></div>
 <pre> apply istrunc_forall.</pre>
 </div>
 <div class="code" title="File: Choice.v
@@ -895,14 +895,14 @@ Time: 0s">
 <div class="code" title="File: Choice.v
 Line: 161
 Time: 0.001s">
-<div class="time" style="width: 1.0526315789474%"></div>
+<div class="time" style="width: 1.1111111111111%"></div>
 <pre>
 Qed.</pre>
 </div>
 <div class="code" title="File: Choice.v
 Line: 162
 Time: 0.001s">
-<div class="time" style="width: 1.0526315789474%"></div>
+<div class="time" style="width: 1.1111111111111%"></div>
 <pre>
 
 Definition equiv_has_tr0_choice_has_quotient_choice
@@ -928,8 +928,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Choice.v
 Line: 170
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.1111111111111%"></div>
 <pre>
   Context `{Univalence}
     {I : Type} `{!HasTrChoice 0 I}
@@ -998,8 +998,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Choice.v
 Line: 192
-Time: 0.002s">
-<div class="time" style="width: 2.1052631578947%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.1111111111111%"></div>
 <pre>Local Definition ChooseProp
     (P : (forall i, A i / R i) -&gt; Type) `{!forall g, IsHSet (P g)}
     (a : forall (f : forall i, A i), P (fun i =&gt; class_of (R i) (f i)))
@@ -1033,8 +1033,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Choice.v
 Line: 209
-Time: 0.008s">
-<div class="time" style="width: 8.4210526315789%"></div>
+Time: 0.006s">
+<div class="time" style="width: 6.6666666666667%"></div>
 <pre>
     apply ishprop_sigma_disjoint.</pre>
 </div>
@@ -1047,22 +1047,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: Choice.v
 Line: 211
-Time: 0.074s">
-<div class="time" style="width: 77.894736842105%"></div>
+Time: 0.064s">
+<div class="time" style="width: 71.111111111111%"></div>
 <pre>
     strip_truncations.</pre>
 </div>
 <div class="code" title="File: Choice.v
 Line: 212
 Time: 0.001s">
-<div class="time" style="width: 1.0526315789474%"></div>
+<div class="time" style="width: 1.1111111111111%"></div>
 <pre>
     destruct h1 as [f1 [q1 p1]].</pre>
 </div>
 <div class="code" title="File: Choice.v
 Line: 213
 Time: 0.001s">
-<div class="time" style="width: 1.0526315789474%"></div>
+<div class="time" style="width: 1.1111111111111%"></div>
 <pre>
     destruct h2 as [f2 [q2 p2]].</pre>
 </div>
@@ -1075,8 +1075,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Choice.v
 Line: 215
-Time: 0.002s">
-<div class="time" style="width: 2.1052631578947%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.1111111111111%"></div>
 <pre>
     set (pR := fun i =&gt;
                 related_quotient_paths (R i) _ _ (ap (fun h =&gt; h i) q2^
@@ -1120,14 +1120,14 @@ Time: 0s">
 <div class="code" title="File: Choice.v
 Line: 223
 Time: 0.001s">
-<div class="time" style="width: 1.0526315789474%"></div>
+<div class="time" style="width: 1.1111111111111%"></div>
 <pre>
     rewrite inv_V.</pre>
 </div>
 <div class="code" title="File: Choice.v
 Line: 224
 Time: 0.001s">
-<div class="time" style="width: 1.0526315789474%"></div>
+<div class="time" style="width: 1.1111111111111%"></div>
 <pre>
     rewrite &lt;- transport_pp.</pre>
 </div>
@@ -1141,36 +1141,36 @@ Time: 0s">
 <div class="code" title="File: Choice.v
 Line: 226
 Time: 0.001s">
-<div class="time" style="width: 1.0526315789474%"></div>
+<div class="time" style="width: 1.1111111111111%"></div>
 <pre>
     rewrite inv_V.</pre>
 </div>
 <div class="code" title="File: Choice.v
 Line: 227
 Time: 0.002s">
-<div class="time" style="width: 2.1052631578947%"></div>
+<div class="time" style="width: 2.2222222222222%"></div>
 <pre>
     do 2 rewrite &lt;- transport_pp.</pre>
 </div>
 <div class="code" title="File: Choice.v
 Line: 228
-Time: 0.003s">
-<div class="time" style="width: 3.1578947368421%"></div>
+Time: 0.002s">
+<div class="time" style="width: 2.2222222222222%"></div>
 <pre>
     set (pa := (qglue_forall f2 f1 pR)^
                @ (q2^ @ q1 @ qglue_forall f1 f1 _)).</pre>
 </div>
 <div class="code" title="File: Choice.v
 Line: 230
-Time: 0.022s">
-<div class="time" style="width: 23.157894736842%"></div>
+Time: 0.023s">
+<div class="time" style="width: 25.555555555556%"></div>
 <pre>
     by induction (hset_path2 idpath pa).</pre>
 </div>
 <div class="code" title="File: Choice.v
 Line: 231
-Time: 0.011s">
-<div class="time" style="width: 11.578947368421%"></div>
+Time: 0.009s">
+<div class="time" style="width: 10%"></div>
 <pre>
   Qed.</pre>
 </div>
@@ -1187,7 +1187,7 @@ Time: 0s">
 <div class="code" title="File: Choice.v
 Line: 236
 Time: 0.001s">
-<div class="time" style="width: 1.0526315789474%"></div>
+<div class="time" style="width: 1.1111111111111%"></div>
 <pre>Lemma chooseprop_quotient_ind
     (P : (forall i, A i / R i) -&gt; Type) `{!forall g, IsHSet (P g)}
     (a : forall (f : forall i, A i), P (fun i =&gt; class_of (R i) (f i)))
@@ -1213,8 +1213,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Choice.v
 Line: 245
-Time: 0.058s">
-<div class="time" style="width: 61.052631578947%"></div>
+Time: 0.05s">
+<div class="time" style="width: 55.555555555556%"></div>
 <pre>
     strip_truncations.</pre>
 </div>
@@ -1277,7 +1277,7 @@ Time: 0s">
 <div class="code" title="File: Choice.v
 Line: 254
 Time: 0.001s">
-<div class="time" style="width: 1.0526315789474%"></div>
+<div class="time" style="width: 1.1111111111111%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -1293,8 +1293,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Choice.v
 Line: 259
-Time: 0.001s">
-<div class="time" style="width: 1.0526315789474%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>Lemma choose_quotient_ind
     (P : (forall i, A i / R i) -&gt; Type) `{!forall g, IsHSet (P g)}
     (a : forall (f : forall i, A i), P (fun i =&gt; class_of (R i) (f i)))
@@ -1354,7 +1354,7 @@ Time: 0s">
 <div class="code" title="File: Choice.v
 Line: 277
 Time: 0.001s">
-<div class="time" style="width: 1.0526315789474%"></div>
+<div class="time" style="width: 1.1111111111111%"></div>
 <pre>
     refine (choose_quotient_ind P a _ g).</pre>
 </div>
@@ -1390,7 +1390,7 @@ Time: 0s">
 <div class="code" title="File: Choice.v
 Line: 283
 Time: 0.003s">
-<div class="time" style="width: 3.1578947368421%"></div>
+<div class="time" style="width: 3.3333333333333%"></div>
 <pre>Definition choose_quotient_rec
     {B : Type} `{!IsHSet B} (a : (forall i, A i) -&gt; B)
     (E : forall (f f' : forall i, A i),
@@ -1413,7 +1413,7 @@ Time: 0s">
 <div class="code" title="File: Choice.v
 Line: 294
 Time: 0.001s">
-<div class="time" style="width: 1.0526315789474%"></div>
+<div class="time" style="width: 1.1111111111111%"></div>
 <pre>Lemma choose_quotient_ind_compute
     (P : (forall i, A i / R i) -&gt; Type) `{!forall g, IsHSet (P g)}
     (a : forall (f : forall i, A i), P (fun i =&gt; class_of (R i) (f i)))
@@ -1431,35 +1431,35 @@ Time: 0s">
 </div>
 <div class="code" title="File: Choice.v
 Line: 301
-Time: 0.048s">
-<div class="time" style="width: 50.526315789474%"></div>
+Time: 0.043s">
+<div class="time" style="width: 47.777777777778%"></div>
 <pre>
     refine (Trunc_ind (fun a =&gt; (_ a).1 = _) _ _).</pre>
 </div>
 <div class="code" title="File: Choice.v
 Line: 302
-Time: 0.001s">
-<div class="time" style="width: 1.0526315789474%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> cbn.</pre>
 </div>
 <div class="code" title="File: Choice.v
 Line: 302
 Time: 0.002s">
-<div class="time" style="width: 2.1052631578947%"></div>
+<div class="time" style="width: 2.2222222222222%"></div>
 <pre>
     intros [f' p].</pre>
 </div>
 <div class="code" title="File: Choice.v
 Line: 303
-Time: 0.007s">
-<div class="time" style="width: 7.3684210526316%"></div>
+Time: 0.006s">
+<div class="time" style="width: 6.6666666666667%"></div>
 <pre>
     rewrite transport_sigma.</pre>
 </div>
 <div class="code" title="File: Choice.v
 Line: 304
-Time: 0.022s">
-<div class="time" style="width: 23.157894736842%"></div>
+Time: 0.019s">
+<div class="time" style="width: 21.111111111111%"></div>
 <pre>
     set (p' := fun x =&gt; related_quotient_paths (R x) _ _ (p x)).</pre>
 </div>
@@ -1485,8 +1485,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Choice.v
 Line: 307
-Time: 0.001s">
-<div class="time" style="width: 1.0526315789474%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> apply hset_path2.</pre>
 </div>
 <div class="code" title="File: Choice.v
@@ -1498,8 +1498,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Choice.v
 Line: 308
-Time: 0.01s">
-<div class="time" style="width: 10.526315789474%"></div>
+Time: 0.009s">
+<div class="time" style="width: 10%"></div>
 <pre> rewrite pE.</pre>
 </div>
 <div class="code" title="File: Choice.v
@@ -1510,8 +1510,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Choice.v
 Line: 308
-Time: 0.022s">
-<div class="time" style="width: 23.157894736842%"></div>
+Time: 0.019s">
+<div class="time" style="width: 21.111111111111%"></div>
 <pre>
   Qed.</pre>
 </div>
@@ -1527,8 +1527,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Choice.v
 Line: 313
-Time: 0.001s">
-<div class="time" style="width: 1.0526315789474%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>Lemma choose_quotient_rec_compute
     {B : Type} `{!IsHSet B} (a : (forall i, A i) -&gt; B)
     (E : forall (f f' : forall i, A i),
@@ -1559,8 +1559,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Choice.v
 Line: 321
-Time: 0.003s">
-<div class="time" style="width: 3.1578947368421%"></div>
+Time: 0.002s">
+<div class="time" style="width: 2.2222222222222%"></div>
 <pre>
 End choose_quotient_ind.</pre>
 </div>

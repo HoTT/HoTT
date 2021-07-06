@@ -38,7 +38,7 @@ Time: 0s">
 </div>
 <div class="code" title="File: BinderApply.v
 Line: 3
-Time: 0.021s">
+Time: 0.019s">
 <div class="time" style="width: 100%"></div>
 <pre>Require Import Basics.Overture Basics.Tactics Tactics.EvalIn.</pre>
 </div>
@@ -341,8 +341,8 @@ Abort.
 </div>
 <div class="code" title="File: BinderApply.v
 Line: 93
-Time: 0.001s">
-<div class="time" style="width: 4.7619047619048%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>Example ex_funext `{Funext} {A} f g
         (H' : forall x y z w : A, f x y z w = g x y z w :&gt; A)
 : f = g.</pre>
@@ -372,7 +372,7 @@ Time: 0s">
 <div class="code" title="File: BinderApply.v
 Line: 99
 Time: 0.001s">
-<div class="time" style="width: 4.7619047619048%"></div>
+<div class="time" style="width: 5.2631578947368%"></div>
 <pre>
   binder eapply path_forall in H'.</pre>
 </div>
@@ -398,20 +398,20 @@ Funext . Extended goal with context:
 <div class="code" title="File: BinderApply.v
 Line: 113
 Time: 0.001s">
-<div class="time" style="width: 4.7619047619048%"></div>
+<div class="time" style="width: 5.2631578947368%"></div>
 <pre>binder apply @path_forall in H' using assumption.</pre>
 </div>
 <div class="code" title="File: BinderApply.v
 Line: 113
-Time: 0.002s">
-<div class="time" style="width: 9.5238095238095%"></div>
+Time: 0.001s">
+<div class="time" style="width: 5.2631578947368%"></div>
 <pre>
   binder apply @path_forall in H' using typeclasses eauto.</pre>
 </div>
 <div class="code" title="File: BinderApply.v
 Line: 114
 Time: 0.001s">
-<div class="time" style="width: 4.7619047619048%"></div>
+<div class="time" style="width: 5.2631578947368%"></div>
 <pre>
   binder apply (@path_forall _) in H'.</pre>
 </div>

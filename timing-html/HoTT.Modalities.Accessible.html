@@ -40,21 +40,21 @@ Time: 0s">
 </div>
 <div class="code" title="File: Accessible.v
 Line: 4
-Time: 0.039s">
+Time: 0.037s">
 <div class="time" style="width: 100%"></div>
 <pre>Require Import HoTT.Basics HoTT.Types.</pre>
 </div>
 <div class="code" title="File: Accessible.v
 Line: 4
 Time: 0.013s">
-<div class="time" style="width: 33.333333333333%"></div>
+<div class="time" style="width: 35.135135135135%"></div>
 <pre>
 Require Import Extensions NullHomotopy.</pre>
 </div>
 <div class="code" title="File: Accessible.v
 Line: 5
 Time: 0.012s">
-<div class="time" style="width: 30.769230769231%"></div>
+<div class="time" style="width: 32.432432432432%"></div>
 <pre>
 Require Import ReflectiveSubuniverse Modality.</pre>
 </div>
@@ -138,8 +138,8 @@ End IsLocal_Internal.</pre>
 </div>
 <div class="code" title="File: Accessible.v
 Line: 29
-Time: 0.001s">
-<div class="time" style="width: 2.5641025641026%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
 Class IsAccRSU@{a i} (O : Subuniverse@{i}) :=
@@ -167,8 +167,8 @@ Arguments inO_iff_islocal O {_} X.</pre>
 </div>
 <div class="code" title="File: Accessible.v
 Line: 40
-Time: 0.001s">
-<div class="time" style="width: 2.5641025641026%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
   Global Instance O_inverts_generators {O : ReflectiveSubuniverse} `{IsAccRSU O}
@@ -184,15 +184,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Accessible.v
 Line: 45
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.7027027027027%"></div>
 <pre>
     pose (ext_dom := fst (inO_iff_islocal O (O (lgen_domain (acc_lgen O) i))) _).</pre>
 </div>
 <div class="code" title="File: Accessible.v
 Line: 46
-Time: 0.001s">
-<div class="time" style="width: 2.5641025641026%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     pose (ext_cod := fst (inO_iff_islocal O (O (lgen_codomain (acc_lgen O) i))) _).</pre>
 </div>
@@ -233,7 +233,7 @@ Time: 0s">
 <div class="code" title="File: Accessible.v
 Line: 51
 Time: 0.001s">
-<div class="time" style="width: 2.5641025641026%"></div>
+<div class="time" style="width: 2.7027027027027%"></div>
 <pre> apply O_indpaths; intros x; simpl.</pre>
 </div>
 <div class="code" title="File: Accessible.v
@@ -245,8 +245,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Accessible.v
 Line: 52
-Time: 0.003s">
-<div class="time" style="width: 7.6923076923077%"></div>
+Time: 0.002s">
+<div class="time" style="width: 5.4054054054054%"></div>
 <pre>
       refine ((fst (snd (ext_cod i 2)
                         (fun x =&gt; O_functor O (acc_lgen O i)
@@ -255,8 +255,8 @@ Time: 0.003s">
 </div>
 <div class="code" title="File: Accessible.v
 Line: 56
-Time: 0.002s">
-<div class="time" style="width: 5.1282051282051%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.7027027027027%"></div>
 <pre>
       rewrite ((fst (ext_dom i 1%nat) (to O _)).2 a).</pre>
 </div>
@@ -276,35 +276,35 @@ Time: 0s">
 </div>
 <div class="code" title="File: Accessible.v
 Line: 59
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.7027027027027%"></div>
 <pre> apply O_indpaths; intros x; simpl.</pre>
 </div>
 <div class="code" title="File: Accessible.v
 Line: 59
 Time: 0.001s">
-<div class="time" style="width: 2.5641025641026%"></div>
+<div class="time" style="width: 2.7027027027027%"></div>
 <pre>
       rewrite (to_O_natural O (acc_lgen O i) x).</pre>
 </div>
 <div class="code" title="File: Accessible.v
 Line: 60
-Time: 0.001s">
-<div class="time" style="width: 2.5641025641026%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
       rewrite O_rec_beta.</pre>
 </div>
 <div class="code" title="File: Accessible.v
 Line: 61
 Time: 0.001s">
-<div class="time" style="width: 2.5641025641026%"></div>
+<div class="time" style="width: 2.7027027027027%"></div>
 <pre>
       apply ((fst (ext_dom i 1%nat) (to O _)).2 x).</pre>
 </div>
 <div class="code" title="File: Accessible.v
 Line: 62
 Time: 0.004s">
-<div class="time" style="width: 10.25641025641%"></div>
+<div class="time" style="width: 10.810810810811%"></div>
 <pre>
   Qed.</pre>
 </div>
@@ -325,8 +325,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Accessible.v
 Line: 71
-Time: 0.001s">
-<div class="time" style="width: 2.5641025641026%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>Record NullGenerators :=
   { ngen_indices : Type@{a} ;
     ngen_type : ngen_indices -&gt; Type@{a}
@@ -388,8 +388,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Accessible.v
 Line: 86
-Time: 0.001s">
-<div class="time" style="width: 2.5641025641026%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>Definition extendable_isnull_fibers (n : nat)
            {A B} (f : A -&gt; B) (C : B -&gt; Type)
 : (forall b, ooExtendableAlong (@const (hfiber f b) Unit tt)
@@ -412,8 +412,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Accessible.v
 Line: 92
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.7027027027027%"></div>
 <pre>
   simple_induction n n IHn; intros C null; [exact tt | split].</pre>
 </div>
@@ -433,7 +433,7 @@ Time: 0s">
 <div class="code" title="File: Accessible.v
 Line: 94
 Time: 0.001s">
-<div class="time" style="width: 2.5641025641026%"></div>
+<div class="time" style="width: 2.7027027027027%"></div>
 <pre>
     exists (fun b =&gt; (fst (null b 1%nat) (fun x =&gt; x.2 # g x.1)).1 tt).</pre>
 </div>
@@ -488,14 +488,14 @@ Time: 0s">
 <div class="code" title="File: Accessible.v
 Line: 101
 Time: 0.001s">
-<div class="time" style="width: 2.5641025641026%"></div>
+<div class="time" style="width: 2.7027027027027%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: Accessible.v
 Line: 102
 Time: 0.001s">
-<div class="time" style="width: 2.5641025641026%"></div>
+<div class="time" style="width: 2.7027027027027%"></div>
 <pre>
 
 Definition ooextendable_isnull_fibers {A B} (f : A -&gt; B) (C : B -&gt; Type)
@@ -516,8 +516,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Accessible.v
 Line: 111
-Time: 0.001s">
-<div class="time" style="width: 2.5641025641026%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>Class IsAccModality@{a i} (O : Subuniverse@{i}) :=
 {
   acc_ngen : NullGenerators@{a} ;
@@ -587,7 +587,7 @@ Time: 0s">
 <div class="code" title="File: Accessible.v
 Line: 127
 Time: 0.001s">
-<div class="time" style="width: 2.5641025641026%"></div>
+<div class="time" style="width: 2.7027027027027%"></div>
 <pre>
     pose (H := fst (fst (inO_iff_isnull O (O (acc_ngen O i))) _ i 1%nat)
                    (to O ((acc_ngen O) i))).</pre>
@@ -677,7 +677,7 @@ Time: 0s">
 <div class="code" title="File: Accessible.v
 Line: 145
 Time: 0.001s">
-<div class="time" style="width: 2.5641025641026%"></div>
+<div class="time" style="width: 2.7027027027027%"></div>
 <pre>
       snrapply isequiv_adjointify.</pre>
 </div>
@@ -731,7 +731,7 @@ Time: 0s">
 <div class="code" title="File: Accessible.v
 Line: 151
 Time: 0.001s">
-<div class="time" style="width: 2.5641025641026%"></div>
+<div class="time" style="width: 2.7027027027027%"></div>
 <pre> intros g; apply path_arrow; intros [].</pre>
 </div>
 <div class="code" title="File: Accessible.v
@@ -751,14 +751,14 @@ Time: 0s">
 <div class="code" title="File: Accessible.v
 Line: 153
 Time: 0.001s">
-<div class="time" style="width: 2.5641025641026%"></div>
+<div class="time" style="width: 2.7027027027027%"></div>
 <pre>
         symmetry; apply p, inhab.</pre>
 </div>
 <div class="code" title="File: Accessible.v
 Line: 154
 Time: 0.002s">
-<div class="time" style="width: 5.1282051282051%"></div>
+<div class="time" style="width: 5.4054054054054%"></div>
 <pre>
     Defined.</pre>
 </div>
@@ -824,7 +824,7 @@ Time: 0s">
 <div class="code" title="File: Accessible.v
 Line: 166
 Time: 0.001s">
-<div class="time" style="width: 2.5641025641026%"></div>
+<div class="time" style="width: 2.7027027027027%"></div>
 <pre>
 
 End AccessibleModalities.</pre>
@@ -841,8 +841,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Accessible.v
 Line: 172
-Time: 0.001s">
-<div class="time" style="width: 2.5641025641026%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>Global Instance acc_rsu_modality (O : Modality) `{IsAccModality O}
   : IsAccRSU O
   := Build_IsAccRSU O (null_to_local_generators (acc_ngen O)) (fun X =&gt; inO_iff_isnull O X).</pre>
@@ -889,8 +889,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Accessible.v
 Line: 184
-Time: 0.001s">
-<div class="time" style="width: 2.5641025641026%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> refine (Build_NullGenerators
               (  { i : lgen_indices@{a} (acc_lgen O)
                    &amp; O (lgen_domain@{a} (acc_lgen O) i) }
@@ -901,7 +901,7 @@ Time: 0.001s">
 <div class="code" title="File: Accessible.v
 Line: 189
 Time: 0.001s">
-<div class="time" style="width: 2.5641025641026%"></div>
+<div class="time" style="width: 2.7027027027027%"></div>
 <pre>
     intros [ [i x] | [i x] ]; exact (hfiber (to O _) x).</pre>
 </div>
@@ -940,8 +940,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Accessible.v
 Line: 193
-Time: 0.03s">
-<div class="time" style="width: 76.923076923077%"></div>
+Time: 0.028s">
+<div class="time" style="width: 75.675675675676%"></div>
 <pre> intros X_inO [ [i x] | [i x] ];
         exact (ooextendable_const_isconnected_inO O _ _).</pre>
 </div>
@@ -968,7 +968,7 @@ Time: 0s">
 <div class="code" title="File: Accessible.v
 Line: 196
 Time: 0.001s">
-<div class="time" style="width: 2.5641025641026%"></div>
+<div class="time" style="width: 2.7027027027027%"></div>
 <pre>
       refine (cancelL_ooextendable (fun _ =&gt; X) (acc_lgen O i)
                                    (to O (lgen_codomain (acc_lgen O) i)) _ _).</pre>
@@ -1003,7 +1003,7 @@ Time: 0s">
 <div class="code" title="File: Accessible.v
 Line: 201
 Time: 0.001s">
-<div class="time" style="width: 2.5641025641026%"></div>
+<div class="time" style="width: 2.7027027027027%"></div>
 <pre> refine (ooextendable_homotopic _
                                        (O_functor O (acc_lgen O i)
                                                   o to O (lgen_domain (acc_lgen O) i)) _ _).</pre>
@@ -1031,8 +1031,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Accessible.v
 Line: 206
-Time: 0.001s">
-<div class="time" style="width: 2.5641025641026%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> apply ooextendable_equiv, O_inverts_generators.</pre>
 </div>
 <div class="code" title="File: Accessible.v
@@ -1063,8 +1063,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Accessible.v
 Line: 208
-Time: 0.008s">
-<div class="time" style="width: 20.512820512821%"></div>
+Time: 0.007s">
+<div class="time" style="width: 18.918918918919%"></div>
 <pre>
 Defined.</pre>
 </div>

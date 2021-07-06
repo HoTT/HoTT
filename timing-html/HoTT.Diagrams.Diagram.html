@@ -30,21 +30,21 @@ pre {
 
 <div class="code" title="File: Diagram.v
 Line: 1
-Time: 0.028s">
+Time: 0.027s">
 <div class="time" style="width: 100%"></div>
 <pre>Require Import Basics.</pre>
 </div>
 <div class="code" title="File: Diagram.v
 Line: 1
 Time: 0.014s">
-<div class="time" style="width: 50%"></div>
+<div class="time" style="width: 51.851851851852%"></div>
 <pre>
 Require Import Types.</pre>
 </div>
 <div class="code" title="File: Diagram.v
 Line: 2
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
 Require Import HoTT.Tactics.</pre>
 </div>
@@ -87,7 +87,7 @@ Time: 0s">
 <div class="code" title="File: Diagram.v
 Line: 14
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>Record Diagram (G : Graph) := {
   obj : G -&gt; Type;
   arr {i j : G} : G i j -&gt; obj i -&gt; obj j
@@ -151,7 +151,7 @@ Time: 0s">
 <div class="code" title="File: Diagram.v
 Line: 30
 Time: 0.003s">
-<div class="time" style="width: 10.714285714286%"></div>
+<div class="time" style="width: 11.111111111111%"></div>
 <pre>Definition path_diagram_naive (D1 D2 : Diagram G)
     (P := fun D' =&gt; forall i j, G i j -&gt; (D' i -&gt; D' j))
     (path_obj : obj D1 = obj D2)
@@ -190,7 +190,7 @@ Time: 0s">
 <div class="code" title="File: Diagram.v
 Line: 51
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
     srapply path_diagram_naive; funext i.</pre>
 </div>
@@ -204,21 +204,21 @@ Time: 0s">
 <div class="code" title="File: Diagram.v
 Line: 53
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
     funext j g x.</pre>
 </div>
 <div class="code" title="File: Diagram.v
 Line: 54
-Time: 0.006s">
-<div class="time" style="width: 21.428571428571%"></div>
+Time: 0.005s">
+<div class="time" style="width: 18.518518518519%"></div>
 <pre>
     rewrite 3 transport_forall_constant, transport_arrow.</pre>
 </div>
 <div class="code" title="File: Diagram.v
 Line: 55
-Time: 0.003s">
-<div class="time" style="width: 10.714285714286%"></div>
+Time: 0.004s">
+<div class="time" style="width: 14.814814814815%"></div>
 <pre>
     transport_path_forall_hammer.</pre>
 </div>
@@ -238,14 +238,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: Diagram.v
 Line: 58
-Time: 0.006s">
-<div class="time" style="width: 21.428571428571%"></div>
+Time: 0.005s">
+<div class="time" style="width: 18.518518518519%"></div>
 <pre> do 3 f_ap.</pre>
 </div>
 <div class="code" title="File: Diagram.v
 Line: 58
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
       rewrite &lt;- path_forall_V.</pre>
 </div>
@@ -259,7 +259,7 @@ Time: 0s">
 <div class="code" title="File: Diagram.v
 Line: 60
 Time: 0.004s">
-<div class="time" style="width: 14.285714285714%"></div>
+<div class="time" style="width: 14.814814814815%"></div>
 <pre>
       by transport_path_forall_hammer.</pre>
 </div>
@@ -271,8 +271,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Diagram.v
 Line: 61
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
     f_ap.</pre>
 </div>
@@ -286,7 +286,7 @@ Time: 0s">
 <div class="code" title="File: Diagram.v
 Line: 63
 Time: 0.008s">
-<div class="time" style="width: 28.571428571429%"></div>
+<div class="time" style="width: 29.62962962963%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -304,8 +304,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Diagram.v
 Line: 70
-Time: 0.002s">
-<div class="time" style="width: 7.1428571428571%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>Record DiagramMap (D1 D2 : Diagram G) := {
     DiagramMap_obj  :&gt; forall i, D1 i -&gt; D2 i;
     DiagramMap_comm :  forall i j (g: G i j) x,
@@ -347,7 +347,7 @@ Time: 0s">
 <div class="code" title="File: Diagram.v
 Line: 82
 Time: 0.002s">
-<div class="time" style="width: 7.1428571428571%"></div>
+<div class="time" style="width: 7.4074074074074%"></div>
 <pre>Definition path_DiagramMap {D1 D2 : Diagram G}
     {m1 m2 : DiagramMap D1 D2} (h_obj : forall i, m1 i == m2 i)
     (h_comm : forall i j (g : G i j) x,
@@ -365,14 +365,14 @@ Time: 0s">
 <div class="code" title="File: Diagram.v
 Line: 88
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
     destruct m1 as [m1_obj m1_comm].</pre>
 </div>
 <div class="code" title="File: Diagram.v
 Line: 89
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
     destruct m2 as [m2_obj m2_comm].</pre>
 </div>
@@ -393,7 +393,7 @@ Time: 0s">
 <div class="code" title="File: Diagram.v
 Line: 92
 Time: 0.008s">
-<div class="time" style="width: 28.571428571429%"></div>
+<div class="time" style="width: 29.62962962963%"></div>
 <pre>
     set (E := (@equiv_functor_forall _
        G (fun i =&gt; m1_obj i = m2_obj i)
@@ -405,7 +405,7 @@ Time: 0.008s">
 <div class="code" title="File: Diagram.v
 Line: 98
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
     equiv_intro E h_obj.</pre>
 </div>
@@ -419,14 +419,14 @@ Time: 0s">
 <div class="code" title="File: Diagram.v
 Line: 100
 Time: 0.004s">
-<div class="time" style="width: 14.285714285714%"></div>
+<div class="time" style="width: 14.814814814815%"></div>
 <pre>
     equiv_intro (@apD10 _ _ m1_obj m2_obj) h_obj.</pre>
 </div>
 <div class="code" title="File: Diagram.v
 Line: 101
 Time: 0.002s">
-<div class="time" style="width: 7.1428571428571%"></div>
+<div class="time" style="width: 7.4074074074074%"></div>
 <pre>
     destruct h_obj; simpl.</pre>
 </div>
@@ -439,8 +439,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Diagram.v
 Line: 103
-Time: 0.002s">
-<div class="time" style="width: 7.1428571428571%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
     assert (HH : m1_comm = m2_comm).</pre>
 </div>
@@ -454,7 +454,7 @@ Time: 0s">
 <div class="code" title="File: Diagram.v
 Line: 105
 Time: 0.002s">
-<div class="time" style="width: 7.1428571428571%"></div>
+<div class="time" style="width: 7.4074074074074%"></div>
 <pre> funext i j f x.</pre>
 </div>
 <div class="code" title="File: Diagram.v
@@ -467,14 +467,14 @@ Time: 0s">
 <div class="code" title="File: Diagram.v
 Line: 106
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
       apply (concatR (h_comm _ _ _ _)).</pre>
 </div>
 <div class="code" title="File: Diagram.v
 Line: 107
-Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
       apply inverse, concat_p1.</pre>
 </div>
@@ -487,7 +487,7 @@ Time: 0s">
 <div class="code" title="File: Diagram.v
 Line: 108
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
     destruct HH.</pre>
 </div>
@@ -500,8 +500,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Diagram.v
 Line: 110
-Time: 0.008s">
-<div class="time" style="width: 28.571428571429%"></div>
+Time: 0.007s">
+<div class="time" style="width: 25.925925925926%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -555,7 +555,7 @@ Time: 0s">
 <div class="code" title="File: Diagram.v
 Line: 122
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
     exact (comm_square_comp (DiagramMap_comm m1 f) (DiagramMap_comm m2 f)).</pre>
 </div>
@@ -581,7 +581,7 @@ Time: 0s">
 <div class="code" title="File: Diagram.v
 Line: 130
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>Record diagram_equiv (D1 D2: Diagram G) :=
     { diag_equiv_map :&gt; DiagramMap D1 D2;
       diag_equiv_isequiv : forall i, IsEquiv (diag_equiv_map i) }.</pre>
@@ -634,8 +634,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Diagram.v
 Line: 142
-Time: 0.004s">
-<div class="time" style="width: 14.285714285714%"></div>
+Time: 0.003s">
+<div class="time" style="width: 11.111111111111%"></div>
 <pre>
     apply (Build_DiagramMap
              (fun i =&gt; (Build_Equiv _ _ _ (diag_equiv_isequiv w i))^-1)).</pre>
@@ -650,7 +650,7 @@ Time: 0s">
 <div class="code" title="File: Diagram.v
 Line: 145
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
     apply (@comm_square_inverse _ _ _ _ _ _
                                 (Build_Equiv _ _ _ (diag_equiv_isequiv w i))
@@ -749,21 +749,21 @@ Time: 0s">
 </div>
 <div class="code" title="File: Diagram.v
 Line: 161
-Time: 0.002s">
-<div class="time" style="width: 7.1428571428571%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre> apply (concatR (concat_p1 _)^).</pre>
 </div>
 <div class="code" title="File: Diagram.v
 Line: 161
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
       apply (comm_square_inverse_is_retr (we i) (we j) _ x).</pre>
 </div>
 <div class="code" title="File: Diagram.v
 Line: 162
 Time: 0.002s">
-<div class="time" style="width: 7.1428571428571%"></div>
+<div class="time" style="width: 7.4074074074074%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -787,7 +787,7 @@ Time: 0s">
 <div class="code" title="File: Diagram.v
 Line: 168
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
     destruct w as [[w_obj w_comm] is_eq_w].</pre>
 </div>
@@ -846,8 +846,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Diagram.v
 Line: 174
-Time: 0.002s">
-<div class="time" style="width: 7.1428571428571%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre> apply (concatR (concat_p1 _)^).</pre>
 </div>
 <div class="code" title="File: Diagram.v
@@ -860,7 +860,7 @@ Time: 0s">
 <div class="code" title="File: Diagram.v
 Line: 175
 Time: 0.002s">
-<div class="time" style="width: 7.1428571428571%"></div>
+<div class="time" style="width: 7.4074074074074%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -877,14 +877,14 @@ Time: 0s">
 <div class="code" title="File: Diagram.v
 Line: 180
 Time: 0.007s">
-<div class="time" style="width: 25%"></div>
+<div class="time" style="width: 25.925925925926%"></div>
 <pre>Global Instance reflexive_diagram_equiv : Reflexive diagram_equiv | 1
     := fun D =&gt; Build_diagram_equiv (diagram_idmap D) _.</pre>
 </div>
 <div class="code" title="File: Diagram.v
 Line: 181
 Time: 0.012s">
-<div class="time" style="width: 42.857142857143%"></div>
+<div class="time" style="width: 44.444444444444%"></div>
 <pre>
 
   Global Instance symmetric_diagram_equiv : Symmetric diagram_equiv | 1
@@ -908,7 +908,7 @@ Time: 0s">
 <div class="code" title="File: Diagram.v
 Line: 187
 Time: 0.02s">
-<div class="time" style="width: 71.428571428571%"></div>
+<div class="time" style="width: 74.074074074074%"></div>
 <pre>
   simple refine (fun D1 D2 D3 m1 m2 =&gt;
                    Build_diagram_equiv (diagram_comp m2 m1) _).</pre>
@@ -923,7 +923,7 @@ Time: 0s">
 <div class="code" title="File: Diagram.v
 Line: 190
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre> intros i; apply isequiv_compose';[apply m1 | apply m2].</pre>
 </div>
 <div class="code" title="File: Diagram.v
@@ -935,8 +935,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Diagram.v
 Line: 191
-Time: 0.028s">
-<div class="time" style="width: 100%"></div>
+Time: 0.025s">
+<div class="time" style="width: 92.592592592593%"></div>
 <pre>
 End Diagram.</pre>
 </div>

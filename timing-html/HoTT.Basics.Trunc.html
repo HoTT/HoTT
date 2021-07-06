@@ -817,8 +817,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Trunc.v
 Line: 181
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 5%"></div>
 <pre>
   induction a as [|a IHa] using trunc_index_ind;
   induction c as [|c IHc] using trunc_index_ind.</pre>
@@ -1583,8 +1583,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Trunc.v
 Line: 304
-Time: 0.004s">
-<div class="time" style="width: 20%"></div>
+Time: 0.003s">
+<div class="time" style="width: 15%"></div>
 <pre>
     exact (IH (f^-1 x = f^-1 y) (H (f^-1 x) (f^-1 y))
       (x = y) ((ap (f^-1))^-1) _).</pre>
@@ -1598,8 +1598,8 @@ Defined.</pre>
 </div>
 <div class="code" title="File: Trunc.v
 Line: 307
-Time: 0.001s">
-<div class="time" style="width: 5%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
 Definition istrunc_equiv_istrunc A {B} (f : A &lt;~&gt; B) `{IsTrunc n A}
@@ -1994,8 +1994,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Trunc.v
 Line: 389
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 5%"></div>
 <pre>
   apply (equiv_adjointify (fst fg) (snd fg));
     intros ?; apply path_ishprop.</pre>

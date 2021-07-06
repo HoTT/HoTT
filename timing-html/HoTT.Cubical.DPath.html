@@ -30,14 +30,14 @@ pre {
 
 <div class="code" title="File: DPath.v
 Line: 1
-Time: 0.028s">
+Time: 0.027s">
 <div class="time" style="width: 100%"></div>
 <pre>Require Import Basics.</pre>
 </div>
 <div class="code" title="File: DPath.v
 Line: 1
-Time: 0.014s">
-<div class="time" style="width: 50%"></div>
+Time: 0.013s">
+<div class="time" style="width: 48.148148148148%"></div>
 <pre>
 Require Import Types.</pre>
 </div>
@@ -145,7 +145,7 @@ Proof.</pre>
 <div class="code" title="File: DPath.v
 Line: 25
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
   by destruct p.</pre>
 </div>
@@ -189,8 +189,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: DPath.v
 Line: 34
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
   exact (istrunc_equiv_istrunc _ dp_path_transport).</pre>
 </div>
@@ -271,8 +271,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: DPath.v
 Line: 50
-Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>Definition DPath_ind (A : Type) (P : A -&gt; Type) (P0 : forall (a0 a1 : A)
   (p : a0 = a1) (b0 : P a0) (b1 : P a1), DPath P p b0 b1 -&gt; Type)
   : (forall (x : A) (y : P x), P0 x x 1%path y y 1) -&gt;
@@ -325,7 +325,7 @@ Proof.</pre>
 <div class="code" title="File: DPath.v
 Line: 61
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
   by destruct p.</pre>
 </div>
@@ -347,7 +347,7 @@ Time: 0s">
 <div class="code" title="File: DPath.v
 Line: 65
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>Definition dp_path_transport_apD {A P} (f : forall a, P a) {a0 a1 : A} (p : a0 = a1)
   : dp_path_transport (apD f p) = dp_apD f p.</pre>
 </div>
@@ -397,7 +397,7 @@ Proof.</pre>
 <div class="code" title="File: DPath.v
 Line: 73
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
   by destruct p.</pre>
 </div>
@@ -427,7 +427,7 @@ Time: 0s">
 <div class="code" title="File: DPath.v
 Line: 79
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>Definition dp_apD_const {A B} (f : A -&gt; B) {a0 a1 : A}
   (p : a0 = a1) : dp_apD f p = dp_const (ap f p).</pre>
 </div>
@@ -463,7 +463,7 @@ Time: 0s">
 <div class="code" title="File: DPath.v
 Line: 85
 Time: 0.003s">
-<div class="time" style="width: 10.714285714286%"></div>
+<div class="time" style="width: 11.111111111111%"></div>
 <pre>Definition dp_apD_const' {A B : Type} {f : A -&gt; B} {a0 a1 : A}
   {p : a0 = a1} : dp_const^-1 (dp_apD f p) = ap f p.</pre>
 </div>
@@ -506,7 +506,7 @@ Time: 0s">
 <div class="code" title="File: DPath.v
 Line: 92
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>Definition dp_concat {A} {P : A -&gt; Type} {a0 a1 a2}
   {p : a0 = a1} {q : a1 = a2} {b0 : P a0} {b1 : P a1} {b2 : P a2}
   : DPath P p b0 b1 -&gt; DPath P q b1 b2 -&gt; DPath P (p @ q) b0 b2.</pre>
@@ -520,8 +520,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: DPath.v
 Line: 95
-Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   destruct p, q.</pre>
 </div>
@@ -557,8 +557,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: DPath.v
 Line: 102
-Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>Definition dp_concat_r {A} {P : A -&gt; Type} {a0 a1}
   {p : a0 = a1} {b0 : P a0} {b1 b2 : P a1}
   : DPath P p b0 b1 -&gt; (b1 = b2) -&gt; DPath P p b0 b2.</pre>
@@ -693,7 +693,7 @@ Time: 0s">
 <div class="code" title="File: DPath.v
 Line: 129
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>Definition dp_apD_pp (A : Type) (P : A -&gt; Type) (f : forall a, P a)
   {a0 a1 a2 : A} (p : a0 = a1) (q : a1 = a2)
   : dp_apD f (p @ q) = (dp_apD f p) @Dp (dp_apD f q).</pre>
@@ -708,14 +708,14 @@ Proof.</pre>
 <div class="code" title="File: DPath.v
 Line: 132
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
   by destruct p, q.</pre>
 </div>
 <div class="code" title="File: DPath.v
 Line: 133
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -744,7 +744,7 @@ Proof.</pre>
 <div class="code" title="File: DPath.v
 Line: 138
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
   by destruct p.</pre>
 </div>
@@ -766,7 +766,7 @@ Time: 0s">
 <div class="code" title="File: DPath.v
 Line: 142
 Time: 0.002s">
-<div class="time" style="width: 7.1428571428571%"></div>
+<div class="time" style="width: 7.4074074074074%"></div>
 <pre>Definition dp_const_pp {A B : Type} {a0 a1 a2 : A}
   {p : a0 = a1} {q : a1 = a2} {x y z : B} (r : x = y) (s : y = z)
   : dp_const (p:=p @ q) (r @ s) = (dp_const (p:=p) r) @Dp (dp_const (p:=q) s).</pre>
@@ -781,14 +781,14 @@ Proof.</pre>
 <div class="code" title="File: DPath.v
 Line: 145
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
   by destruct p,q.</pre>
 </div>
 <div class="code" title="File: DPath.v
 Line: 146
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -812,7 +812,7 @@ Time: 0s">
 <div class="code" title="File: DPath.v
 Line: 152
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
 
   Definition dp_concat_p1
@@ -828,7 +828,7 @@ Time: 0s">
 <div class="code" title="File: DPath.v
 Line: 156
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
     destruct p.</pre>
 </div>
@@ -849,7 +849,7 @@ Time: 0s">
 <div class="code" title="File: DPath.v
 Line: 159
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
 
   Definition dp_concat_1p
@@ -865,7 +865,7 @@ Time: 0s">
 <div class="code" title="File: DPath.v
 Line: 163
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
     destruct p.</pre>
 </div>
@@ -885,8 +885,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: DPath.v
 Line: 166
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
 
   Definition dp_concat_Vp
@@ -902,14 +902,14 @@ Time: 0s">
 <div class="code" title="File: DPath.v
 Line: 170
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
     destruct p.</pre>
 </div>
 <div class="code" title="File: DPath.v
 Line: 171
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
     apply concat_Vp.</pre>
 </div>
@@ -923,7 +923,7 @@ Time: 0s">
 <div class="code" title="File: DPath.v
 Line: 173
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
 
   Definition dp_concat_pV
@@ -939,7 +939,7 @@ Time: 0s">
 <div class="code" title="File: DPath.v
 Line: 177
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
     destruct p.</pre>
 </div>
@@ -978,7 +978,7 @@ Time: 0s">
 <div class="code" title="File: DPath.v
 Line: 186
 Time: 0.002s">
-<div class="time" style="width: 7.1428571428571%"></div>
+<div class="time" style="width: 7.4074074074074%"></div>
 <pre>
 
     Definition dp_concat_pp_p
@@ -995,7 +995,7 @@ Time: 0s">
 <div class="code" title="File: DPath.v
 Line: 191
 Time: 0.005s">
-<div class="time" style="width: 17.857142857143%"></div>
+<div class="time" style="width: 18.518518518519%"></div>
 <pre>
       destruct p, q, r.</pre>
 </div>
@@ -1008,15 +1008,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: DPath.v
 Line: 193
-Time: 0.004s">
-<div class="time" style="width: 14.285714285714%"></div>
+Time: 0.002s">
+<div class="time" style="width: 7.4074074074074%"></div>
 <pre>
     Defined.</pre>
 </div>
 <div class="code" title="File: DPath.v
 Line: 194
-Time: 0.002s">
-<div class="time" style="width: 7.1428571428571%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
 
     Definition dp_concat_p_pp
@@ -1032,22 +1032,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: DPath.v
 Line: 199
-Time: 0.006s">
-<div class="time" style="width: 21.428571428571%"></div>
+Time: 0.005s">
+<div class="time" style="width: 18.518518518519%"></div>
 <pre>
       destruct p, q, r.</pre>
 </div>
 <div class="code" title="File: DPath.v
 Line: 200
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
       apply concat_p_pp.</pre>
 </div>
 <div class="code" title="File: DPath.v
 Line: 201
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
     Defined.</pre>
 </div>
@@ -1062,7 +1062,7 @@ Time: 0s">
 <div class="code" title="File: DPath.v
 Line: 204
 Time: 0.002s">
-<div class="time" style="width: 7.1428571428571%"></div>
+<div class="time" style="width: 7.4074074074074%"></div>
 <pre>
 
 End DGroupoid.</pre>
@@ -1081,7 +1081,7 @@ Time: 0s">
 <div class="code" title="File: DPath.v
 Line: 210
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>Definition equiv_dp_paths_l {A : Type} {x1 x2 y : A} (p : x1 = x2) (q : x1 = y) r
   : p^ @ q = r &lt;~&gt; DPath (fun x =&gt; x = y) p q r.</pre>
 </div>
@@ -1094,8 +1094,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: DPath.v
 Line: 212
-Time: 0.004s">
-<div class="time" style="width: 14.285714285714%"></div>
+Time: 0.003s">
+<div class="time" style="width: 11.111111111111%"></div>
 <pre>
   refine (equiv_composeR' _ (Build_Equiv _ _ dp_path_transport _)).</pre>
 </div>
@@ -1140,7 +1140,7 @@ Proof.</pre>
 <div class="code" title="File: DPath.v
 Line: 221
 Time: 0.004s">
-<div class="time" style="width: 14.285714285714%"></div>
+<div class="time" style="width: 14.814814814815%"></div>
 <pre>
   refine (equiv_composeR' _ (Build_Equiv _ _ dp_path_transport _)).</pre>
 </div>
@@ -1184,8 +1184,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: DPath.v
 Line: 230
-Time: 0.004s">
-<div class="time" style="width: 14.285714285714%"></div>
+Time: 0.003s">
+<div class="time" style="width: 11.111111111111%"></div>
 <pre>
   srefine (equiv_composeR' _ (Build_Equiv _ _ dp_path_transport _)).</pre>
 </div>
@@ -1230,14 +1230,14 @@ Proof.</pre>
 <div class="code" title="File: DPath.v
 Line: 239
 Time: 0.004s">
-<div class="time" style="width: 14.285714285714%"></div>
+<div class="time" style="width: 14.814814814815%"></div>
 <pre>
   srefine (equiv_composeR' _ (Build_Equiv _ _ dp_path_transport _)).</pre>
 </div>
 <div class="code" title="File: DPath.v
 Line: 240
-Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   apply equiv_concat_l, transport_paths_Fl.</pre>
 </div>
@@ -1259,7 +1259,7 @@ Notation dp_paths_Fl := equiv_dp_paths_Fl.</pre>
 <div class="code" title="File: DPath.v
 Line: 244
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
 
 Definition equiv_dp_paths_Fr {A B} {g : A -&gt; B} {y1 y2 : A} {x : B} (p : y1 = y2)
@@ -1274,8 +1274,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: DPath.v
 Line: 248
-Time: 0.004s">
-<div class="time" style="width: 14.285714285714%"></div>
+Time: 0.003s">
+<div class="time" style="width: 11.111111111111%"></div>
 <pre>
   srefine (equiv_composeR' _ (Build_Equiv _ _ dp_path_transport _)).</pre>
 </div>
@@ -1304,7 +1304,7 @@ Notation dp_paths_Fr := equiv_dp_paths_Fr.</pre>
 <div class="code" title="File: DPath.v
 Line: 253
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
 
 Definition equiv_dp_paths_FFlr {A B} {f : A -&gt; B} {g : B -&gt; A} {x1 x2 : A}
@@ -1321,7 +1321,7 @@ Proof.</pre>
 <div class="code" title="File: DPath.v
 Line: 258
 Time: 0.004s">
-<div class="time" style="width: 14.285714285714%"></div>
+<div class="time" style="width: 14.814814814815%"></div>
 <pre>
   refine (equiv_composeR' _ (Build_Equiv _ _ dp_path_transport _)).</pre>
 </div>
@@ -1335,7 +1335,7 @@ Time: 0s">
 <div class="code" title="File: DPath.v
 Line: 260
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -1350,7 +1350,7 @@ Notation dp_paths_FFlr := equiv_dp_paths_FFlr.</pre>
 <div class="code" title="File: DPath.v
 Line: 263
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
 
 Definition equiv_dp_paths_FlFr {A B} {f g : A -&gt; B} {x1 x2 : A} (p : x1 = x2)
@@ -1367,7 +1367,7 @@ Proof.</pre>
 <div class="code" title="File: DPath.v
 Line: 268
 Time: 0.004s">
-<div class="time" style="width: 14.285714285714%"></div>
+<div class="time" style="width: 14.814814814815%"></div>
 <pre>
   srefine (equiv_composeR' _ (Build_Equiv _ _ dp_path_transport _)).</pre>
 </div>
@@ -1380,8 +1380,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: DPath.v
 Line: 270
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -1396,7 +1396,7 @@ Notation dp_paths_FlFr := equiv_dp_paths_FlFr.</pre>
 <div class="code" title="File: DPath.v
 Line: 273
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
 
 Definition equiv_dp_paths_lFFr {A B} {f : A -&gt; B} {g : B -&gt; A} {x1 x2 : A} 
@@ -1413,14 +1413,14 @@ Proof.</pre>
 <div class="code" title="File: DPath.v
 Line: 278
 Time: 0.004s">
-<div class="time" style="width: 14.285714285714%"></div>
+<div class="time" style="width: 14.814814814815%"></div>
 <pre>
   srefine (equiv_composeR' _ (Build_Equiv _ _ dp_path_transport _)).</pre>
 </div>
 <div class="code" title="File: DPath.v
 Line: 279
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
   apply equiv_concat_l, transport_paths_lFFr.</pre>
 </div>
@@ -1442,7 +1442,7 @@ Notation dp_paths_lFFr := equiv_dp_paths_lFFr.</pre>
 <div class="code" title="File: DPath.v
 Line: 283
 Time: 0.002s">
-<div class="time" style="width: 7.1428571428571%"></div>
+<div class="time" style="width: 7.4074074074074%"></div>
 <pre>
 
 Definition equiv_dp_paths_FlFr_D {A B} (f g : forall a : A, B a) 
@@ -1460,7 +1460,7 @@ Proof.</pre>
 <div class="code" title="File: DPath.v
 Line: 289
 Time: 0.004s">
-<div class="time" style="width: 14.285714285714%"></div>
+<div class="time" style="width: 14.814814814815%"></div>
 <pre>
   srefine (equiv_composeR' _ (Build_Equiv _ _ dp_path_transport _)).</pre>
 </div>
@@ -1473,8 +1473,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: DPath.v
 Line: 291
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -1489,7 +1489,7 @@ Notation dp_paths_FlFr_D := equiv_dp_paths_FlFr_D.</pre>
 <div class="code" title="File: DPath.v
 Line: 294
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
 
 Definition equiv_dp_compose' {A B} (f : A -&gt; B) (P : B -&gt; Type) {x y : A}
@@ -1506,7 +1506,7 @@ Proof.</pre>
 <div class="code" title="File: DPath.v
 Line: 299
 Time: 0.002s">
-<div class="time" style="width: 7.1428571428571%"></div>
+<div class="time" style="width: 7.4074074074074%"></div>
 <pre>
   by destruct r, p.</pre>
 </div>
@@ -1528,7 +1528,7 @@ Notation dp_compose' := equiv_dp_compose'.</pre>
 <div class="code" title="File: DPath.v
 Line: 303
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
 
 Definition equiv_dp_compose {A B} (f : A -&gt; B) (P : B -&gt; Type) {x y : A}
@@ -1547,7 +1547,7 @@ Notation dp_compose := equiv_dp_compose.</pre>
 <div class="code" title="File: DPath.v
 Line: 310
 Time: 0.007s">
-<div class="time" style="width: 25%"></div>
+<div class="time" style="width: 25.925925925926%"></div>
 <pre>
 
 Definition dp_apD_compose' {A B : Type} (f : A -&gt; B) (P : B -&gt; Type)
@@ -1563,22 +1563,22 @@ Proof.</pre>
 </div>
 <div class="code" title="File: DPath.v
 Line: 315
-Time: 0.002s">
-<div class="time" style="width: 7.1428571428571%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
   by destruct r, p.</pre>
 </div>
 <div class="code" title="File: DPath.v
 Line: 316
-Time: 0.021s">
-<div class="time" style="width: 75%"></div>
+Time: 0.018s">
+<div class="time" style="width: 66.666666666667%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: DPath.v
 Line: 317
-Time: 0.005s">
-<div class="time" style="width: 17.857142857143%"></div>
+Time: 0.004s">
+<div class="time" style="width: 14.814814814815%"></div>
 <pre>
 
 Definition dp_apD_compose {A B : Type} (f : A -&gt; B) (P : B -&gt; Type)
@@ -1669,7 +1669,7 @@ Notation path_sigma_dp := equiv_path_sigma_dp.</pre>
 <div class="code" title="File: DPath.v
 Line: 342
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
 
 Definition ap_pr1_path_sigma_dp {A : Type} {P : A -&gt; Type}
@@ -1686,7 +1686,7 @@ Proof.</pre>
 <div class="code" title="File: DPath.v
 Line: 347
 Time: 0.002s">
-<div class="time" style="width: 7.1428571428571%"></div>
+<div class="time" style="width: 7.4074074074074%"></div>
 <pre>
   apply ap_pr1_path_sigma.</pre>
 </div>
@@ -1708,7 +1708,7 @@ Time: 0s">
 <div class="code" title="File: DPath.v
 Line: 351
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>Definition equiv_dp_forall `{Funext} {A : Type} {B : A -&gt; Type} {C : sig B -&gt; Type}
   {a1 a2 : A} {p : a1 = a2} {f : forall x, C (a1; x)} {g : forall x, C (a2; x)}
   : (forall (x : B a1) (y : B a2) (q : DPath B p x y),
@@ -1800,13 +1800,13 @@ Time: 0s">
 <div class="code" title="File: DPath.v
 Line: 365
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre> repeat (intro; apply path_forall).</pre>
 </div>
 <div class="code" title="File: DPath.v
 Line: 365
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
     by intros [].</pre>
 </div>
@@ -1825,8 +1825,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: DPath.v
 Line: 367
-Time: 0.008s">
-<div class="time" style="width: 28.571428571429%"></div>
+Time: 0.007s">
+<div class="time" style="width: 25.925925925926%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -1946,8 +1946,8 @@ Notation dp_forall_domain := equiv_dp_forall_domain.</pre>
 </div>
 <div class="code" title="File: DPath.v
 Line: 392
-Time: 0.002s">
-<div class="time" style="width: 7.1428571428571%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
 
 Definition equiv_dp_sigma {A : Type} {B : A -&gt; Type}
@@ -1993,8 +1993,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: DPath.v
 Line: 403
-Time: 0.002s">
-<div class="time" style="width: 7.1428571428571%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
   destruct y1 as [y11 y12], y2 as [y21 y22].</pre>
 </div>
@@ -2008,14 +2008,14 @@ Time: 0s">
 <div class="code" title="File: DPath.v
 Line: 405
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
   by destruct q.</pre>
 </div>
 <div class="code" title="File: DPath.v
 Line: 406
 Time: 0.002s">
-<div class="time" style="width: 7.1428571428571%"></div>
+<div class="time" style="width: 7.4074074074074%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -2038,8 +2038,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: DPath.v
 Line: 412
-Time: 0.003s">
-<div class="time" style="width: 10.714285714286%"></div>
+Time: 0.002s">
+<div class="time" style="width: 7.4074074074074%"></div>
 <pre>Definition dp_apD_path_transport {A P} (f : forall a : A, P a)
   {a0 a1 : A} (p : a0 = a1) l
   : apD f p = dp_path_transport^-1 l -&gt; dp_apD f p = l.</pre>

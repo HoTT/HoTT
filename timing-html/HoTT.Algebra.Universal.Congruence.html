@@ -42,14 +42,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: Congruence.v
 Line: 6
-Time: 0.103s">
+Time: 0.098s">
 <div class="time" style="width: 100%"></div>
 <pre>Require Export HoTT.Algebra.Universal.Algebra.</pre>
 </div>
 <div class="code" title="File: Congruence.v
 Line: 6
 Time: 0.018s">
-<div class="time" style="width: 17.47572815534%"></div>
+<div class="time" style="width: 18.367346938776%"></div>
 <pre>
 
 Require Import
@@ -117,7 +117,7 @@ Time: 0s">
 <div class="code" title="File: Congruence.v
 Line: 38
 Time: 0.001s">
-<div class="time" style="width: 0.97087378640777%"></div>
+<div class="time" style="width: 1.0204081632653%"></div>
 <pre>Definition OpCompatible {w : SymbolType σ} (f : Operation A w) : Type
     := forall (a b : DomOperation A w),
        (forall i : Arity w, Φ (sorts_dom w i) (a i) (b i)) -&gt;
@@ -152,7 +152,7 @@ Time: 0s">
 <div class="code" title="File: Congruence.v
 Line: 49
 Time: 0.006s">
-<div class="time" style="width: 5.8252427184466%"></div>
+<div class="time" style="width: 6.1224489795918%"></div>
 <pre>
     apply istrunc_forall.</pre>
 </div>
@@ -177,7 +177,7 @@ Time: 0s">
 <div class="code" title="File: Congruence.v
 Line: 56
 Time: 0.001s">
-<div class="time" style="width: 0.97087378640777%"></div>
+<div class="time" style="width: 1.0204081632653%"></div>
 <pre>Class IsCongruence : Type := Build_IsCongruence
    { is_mere_relation_cong : forall (s : Sort σ), is_mere_relation (A s) (Φ s)
    ; equiv_rel_cong : forall (s : Sort σ), EquivRel (Φ s)
@@ -234,8 +234,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Congruence.v
 Line: 72
-Time: 0.001s">
-<div class="time" style="width: 0.97087378640777%"></div>
+Time: 0.002s">
+<div class="time" style="width: 2.0408163265306%"></div>
 <pre>
     apply (equiv_hprop_allpath _)^-1.</pre>
 </div>
@@ -248,8 +248,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Congruence.v
 Line: 74
-Time: 0.031s">
-<div class="time" style="width: 30.097087378641%"></div>
+Time: 0.03s">
+<div class="time" style="width: 30.612244897959%"></div>
 <pre>
     by destruct (path_ishprop C1 D1),
                 (path_ishprop C2 D2),
@@ -258,14 +258,14 @@ Time: 0.031s">
 <div class="code" title="File: Congruence.v
 Line: 77
 Time: 0.001s">
-<div class="time" style="width: 0.97087378640777%"></div>
+<div class="time" style="width: 1.0204081632653%"></div>
 <pre>
   Defined.</pre>
 </div>
 <div class="code" title="File: Congruence.v
 Line: 78
 Time: 0.003s">
-<div class="time" style="width: 2.9126213592233%"></div>
+<div class="time" style="width: 3.0612244897959%"></div>
 <pre>
 
 End congruence.</pre>
@@ -284,7 +284,7 @@ Time: 0s">
 <div class="code" title="File: Congruence.v
 Line: 84
 Time: 0.001s">
-<div class="time" style="width: 0.97087378640777%"></div>
+<div class="time" style="width: 1.0204081632653%"></div>
 <pre>Definition HomCompatible {σ : Signature} {A B : Algebra σ}
   (Φ : forall s, Relation (A s)) `{!IsCongruence A Φ}
   (f : forall s, A s -&gt; B s) `{!IsHomomorphism f}

@@ -36,14 +36,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1
-Time: 0.041s">
-<div class="time" style="width: 36.283185840708%"></div>
+Time: 0.042s">
+<div class="time" style="width: 39.622641509434%"></div>
 <pre>Require Import HoTT.Basics HoTT.Types.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1
-Time: 0.017s">
-<div class="time" style="width: 15.044247787611%"></div>
+Time: 0.018s">
+<div class="time" style="width: 16.981132075472%"></div>
 <pre>
 Require Import Equiv.BiInv Extensions HProp HFiber NullHomotopy Pullback.</pre>
 </div>
@@ -102,7 +102,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 23
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>Record Subuniverse@{i} :=
 {
   In_internal : Type@{i} -&gt; Type@{i} ;
@@ -154,7 +154,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 39
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>Definition inO_equiv_inO {O : Subuniverse} (T : Type) {U : Type}
            `{T_inO : In O T} (f : T -&gt; U) `{IsEquiv T U f}
   : In O U
@@ -162,8 +162,8 @@ Time: 0.001s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 42
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
 
 Definition inO_equiv_inO' {O : Subuniverse}
@@ -205,7 +205,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 54
 Time: 0.003s">
-<div class="time" style="width: 2.6548672566372%"></div>
+<div class="time" style="width: 2.8301886792453%"></div>
 <pre>Definition path_TypeO@{i j} {fs : Funext} O (T T' : Type_ O) (p : T.1 = T'.1)
   : T = T'
   := path_sigma_hprop@{j i j} T T' p.</pre>
@@ -213,7 +213,7 @@ Time: 0.003s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 56
 Time: 0.003s">
-<div class="time" style="width: 2.6548672566372%"></div>
+<div class="time" style="width: 2.8301886792453%"></div>
 <pre>
 
 Definition equiv_path_TypeO@{i j} {fs : Funext} O (T T' : Type_ O)
@@ -300,8 +300,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 78
-Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+Time: 0.003s">
+<div class="time" style="width: 2.8301886792453%"></div>
 <pre>
     apply istrunc_forall.</pre>
 </div>
@@ -345,8 +345,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 87
-Time: 0.008s">
-<div class="time" style="width: 7.0796460176991%"></div>
+Time: 0.006s">
+<div class="time" style="width: 5.6603773584906%"></div>
 <pre>
     exact (inO_equiv_inO (hfiber f b)
                           (equiv_hfiber_homotopic f g p b)).</pre>
@@ -391,8 +391,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 97
-Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
     exact (inO_equiv_inO (B a) (hfiber_fibration a B)).</pre>
 </div>
@@ -461,14 +461,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 107
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre> rapply functor_forall; intros a x.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 107
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
       exact (inO_equiv_inO (hfiber pr1 a)
                            (hfiber_fibration a B)^-1%equiv).</pre>
@@ -499,7 +499,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 114
 Time: 0.004s">
-<div class="time" style="width: 3.5398230088496%"></div>
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre>
     exact (equiv_iff_hprop_uncurried (iff_forall_inO_mapinO_pr1 B)).</pre>
 </div>
@@ -531,7 +531,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 122
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>Class PreReflects@{i} (O : Subuniverse@{i}) (T : Type@{i}) :=
 {
   O_reflector : Type@{i} ;
@@ -579,7 +579,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 134
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>Class Reflects@{i} (O : Subuniverse@{i}) (T : Type@{i})
       `{PreReflects@{i} O T} :=
 {
@@ -738,7 +738,7 @@ Proof.</pre>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 161
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
   constructor; intros; rapply ooextendable_equiv.</pre>
 </div>
@@ -839,7 +839,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 184
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
 
   Definition O_rec (f : P -&gt; Q)
@@ -849,7 +849,7 @@ Time: 0.001s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 188
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
 
   Definition O_rec_beta (f : P -&gt; Q) (x : P)
@@ -859,7 +859,7 @@ Time: 0.001s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 192
 Time: 0.003s">
-<div class="time" style="width: 2.6548672566372%"></div>
+<div class="time" style="width: 2.8301886792453%"></div>
 <pre>
 
   Definition O_indpaths (g h : O_reflector O P -&gt; Q)
@@ -870,7 +870,7 @@ Time: 0.003s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 197
 Time: 0.003s">
-<div class="time" style="width: 2.6548672566372%"></div>
+<div class="time" style="width: 2.8301886792453%"></div>
 <pre>
 
   Definition O_indpaths_beta (g h : O_reflector O P -&gt; Q)
@@ -881,7 +881,7 @@ Time: 0.003s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 202
 Time: 0.004s">
-<div class="time" style="width: 3.5398230088496%"></div>
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre>
 
   Definition O_ind2paths {g h : O_reflector O P -&gt; Q} (p q : g == h)
@@ -891,8 +891,8 @@ Time: 0.004s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 207
-Time: 0.004s">
-<div class="time" style="width: 3.5398230088496%"></div>
+Time: 0.005s">
+<div class="time" style="width: 4.7169811320755%"></div>
 <pre>
 
   Definition O_ind2paths_beta {g h : O_reflector O P -&gt; Q} (p q : g == h)
@@ -912,8 +912,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 215
-Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>End ORecursion.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
@@ -1000,7 +1000,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 236
 Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>Global Instance isequiv_o_to_O `{Funext}
        (O : ReflectiveSubuniverse) (P Q : Type) `{In O Q}
 : IsEquiv (fun g : O P -&gt; Q =&gt; g o to O P)
@@ -1009,7 +1009,7 @@ Time: 0.002s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 239
 Time: 0.005s">
-<div class="time" style="width: 4.4247787610619%"></div>
+<div class="time" style="width: 4.7169811320755%"></div>
 <pre>
 
 Definition equiv_o_to_O `{Funext}
@@ -1027,8 +1027,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 246
-Time: 0.018s">
-<div class="time" style="width: 15.929203539823%"></div>
+Time: 0.019s">
+<div class="time" style="width: 17.924528301887%"></div>
 <pre>Global Instance isequiv_O_rec_to_O `{Funext}
        (O : ReflectiveSubuniverse) (P Q : Type) `{In O Q}
   : IsEquiv (fun g : P -&gt; Q =&gt; O_rec g)
@@ -1083,7 +1083,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 259
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
     apply O_indpaths; intro x.</pre>
 </div>
@@ -1154,8 +1154,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 265
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre> symmetry; apply O_rec_beta.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
@@ -1222,8 +1222,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 273
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre> refine (O_indpaths (to O T o g) idmap _).</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
@@ -1283,8 +1283,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 280
-Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
 
   Definition equiv_to_O (T : Type) `{In O T} : T &lt;~&gt; O T
@@ -1311,7 +1311,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 289
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>Definition O_functor {A B : Type} (f : A -&gt; B) : O A -&gt; O B
       := O_rec (to O B o f).</pre>
 </div>
@@ -1327,7 +1327,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 293
 Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>Definition to_O_natural {A B : Type} (f : A -&gt; B)
     : (O_functor f) o (to O A) == (to O B) o f
     := (O_rec_beta _).</pre>
@@ -1344,7 +1344,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 298
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>Definition O_functor_compose {A B C : Type} (f : A -&gt; B) (g : B -&gt; C)
     : (O_functor (g o f)) == (O_functor g) o (O_functor f).</pre>
 </div>
@@ -1357,8 +1357,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 300
-Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+Time: 0.003s">
+<div class="time" style="width: 2.8301886792453%"></div>
 <pre>
       srapply O_indpaths; intros x.</pre>
 </div>
@@ -1371,8 +1371,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 302
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
       transitivity (O_functor g (to O B (f x))).</pre>
 </div>
@@ -1405,7 +1405,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 305
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre> apply ap; symmetry.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
@@ -1418,7 +1418,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 306
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
     Defined.</pre>
 </div>
@@ -1507,8 +1507,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 324
-Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
       refine (O_ind2paths _ _ _); intros x.</pre>
 </div>
@@ -1521,8 +1521,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 326
-Time: 0.026s">
-<div class="time" style="width: 23.008849557522%"></div>
+Time: 0.025s">
+<div class="time" style="width: 23.584905660377%"></div>
 <pre>
       rewrite !O_indpaths_beta, !ap_V, !inv_pp, inv_V, !concat_p_pp.</pre>
 </div>
@@ -1536,7 +1536,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 328
 Time: 0.013s">
-<div class="time" style="width: 11.504424778761%"></div>
+<div class="time" style="width: 12.264150943396%"></div>
 <pre>
     Qed.</pre>
 </div>
@@ -1552,7 +1552,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 332
 Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>Definition O_functor_square {A B C X : Type} (pi1 : X -&gt; A) (pi2 : X -&gt; B)
                (f : A -&gt; C) (g : B -&gt; C) (comm : (f o pi1) == (g o pi2))
     : ( (O_functor f) o (O_functor pi1) )
@@ -1574,8 +1574,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 337
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
       transitivity (O_functor (f o pi1) x).</pre>
 </div>
@@ -1589,7 +1589,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 339
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre> symmetry; rapply O_functor_compose.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
@@ -1601,8 +1601,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 340
-Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> transitivity (O_functor (g o pi2) x).</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
@@ -1627,8 +1627,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 342
-Time: 0.019s">
-<div class="time" style="width: 16.814159292035%"></div>
+Time: 0.018s">
+<div class="time" style="width: 16.981132075472%"></div>
 <pre> rapply O_functor_compose.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
@@ -1723,14 +1723,14 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 359
 Time: 0.003s">
-<div class="time" style="width: 2.6548672566372%"></div>
+<div class="time" style="width: 2.8301886792453%"></div>
 <pre>
       do 2 rewrite O_indpaths_beta.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 360
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
       apply whiskerL, whiskerR, ap, r.</pre>
 </div>
@@ -1745,7 +1745,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 363
 Time: 0.004s">
-<div class="time" style="width: 3.5398230088496%"></div>
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre>Qed.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
@@ -1760,7 +1760,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 366
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>Definition O_functor_homotopy_beta
                {A B : Type} (f g : A -&gt; B) (pi : f == g) (x : A)
     : O_functor_homotopy f g pi (to O A x)
@@ -1799,7 +1799,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 375
 Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
     Defined.</pre>
 </div>
@@ -1859,7 +1859,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 387
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>Definition to_O_natural_compose {A B C : Type}
                (f : A -&gt; B) (g : B -&gt; C) (a : A)
     : ap (O_functor g) (to_O_natural f a)
@@ -1884,28 +1884,28 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 394
 Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
       rewrite O_indpaths_beta.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 395
-Time: 0.02s">
-<div class="time" style="width: 17.699115044248%"></div>
+Time: 0.019s">
+<div class="time" style="width: 17.924528301887%"></div>
 <pre>
       rewrite !inv_pp, ap_V, !inv_V, !concat_pp_p.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 396
 Time: 0.003s">
-<div class="time" style="width: 2.6548672566372%"></div>
+<div class="time" style="width: 2.8301886792453%"></div>
 <pre>
       rewrite concat_Vp, concat_p1; reflexivity.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 397
-Time: 0.017s">
-<div class="time" style="width: 15.044247787611%"></div>
+Time: 0.016s">
+<div class="time" style="width: 15.094339622642%"></div>
 <pre>
     Qed.</pre>
 </div>
@@ -1921,7 +1921,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 401
 Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>Definition O_functor_compose_compose
                {A B C D : Type} (f : A -&gt; B) (g : B -&gt; C) (h : C -&gt; D)
                (a : O A)
@@ -1947,7 +1947,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 409
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
       intros a; unfold composeD, O_functor_compose; cbn.</pre>
 </div>
@@ -1960,43 +1960,43 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 411
-Time: 0.077s">
-<div class="time" style="width: 68.141592920354%"></div>
+Time: 0.074s">
+<div class="time" style="width: 69.811320754717%"></div>
 <pre>
       rewrite !O_indpaths_beta, !ap_pp, !ap_V, !concat_p_pp.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 412
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
       refine (whiskerL _ (apD _ (to_O_natural f a)^)^ @ _).</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 413
 Time: 0.004s">
-<div class="time" style="width: 3.5398230088496%"></div>
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre>
       rewrite O_indpaths_beta.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 414
-Time: 0.035s">
-<div class="time" style="width: 30.973451327434%"></div>
+Time: 0.032s">
+<div class="time" style="width: 30.188679245283%"></div>
 <pre>
       rewrite transport_paths_FlFr, !concat_p_pp.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 415
-Time: 0.023s">
-<div class="time" style="width: 20.353982300885%"></div>
+Time: 0.021s">
+<div class="time" style="width: 19.811320754717%"></div>
 <pre>
       rewrite !ap_V, inv_V.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 416
-Time: 0.022s">
-<div class="time" style="width: 19.469026548673%"></div>
+Time: 0.015s">
+<div class="time" style="width: 14.150943396226%"></div>
 <pre>
       rewrite !concat_pV_p.</pre>
 </div>
@@ -2056,8 +2056,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 429
-Time: 0.103s">
-<div class="time" style="width: 91.150442477876%"></div>
+Time: 0.097s">
+<div class="time" style="width: 91.509433962264%"></div>
 <pre>
     Qed.</pre>
 </div>
@@ -2207,7 +2207,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 447
 Time: 0.003s">
-<div class="time" style="width: 2.6548672566372%"></div>
+<div class="time" style="width: 2.8301886792453%"></div>
 <pre>
 
     Definition equiv_O_functor {A B : Type} (f : A &lt;~&gt; B)
@@ -2226,7 +2226,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 454
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>Definition to_O_equiv_natural {A B} (f : A &lt;~&gt; B)
     : (equiv_O_functor f) o (to O A) == (to O B) o f
     := to_O_natural f.</pre>
@@ -2266,7 +2266,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 464
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
       equiv_intro (equiv_path A B) p.</pre>
 </div>
@@ -2294,7 +2294,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 468
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
       apply path_equiv, path_arrow, O_indpaths; intros x.</pre>
 </div>
@@ -2308,14 +2308,14 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 470
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
     Defined.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 471
-Time: 0.004s">
-<div class="time" style="width: 3.5398230088496%"></div>
+Time: 0.003s">
+<div class="time" style="width: 2.8301886792453%"></div>
 <pre>
 
     Definition ap_O_path_universe `{Univalence}
@@ -2335,7 +2335,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 479
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>Definition O_rec_postcompose {A B C : Type@{i}} `{In O B} {C_inO : In O C}
                (f : A -&gt; B) (g : B -&gt; C)
     : g o O_rec (O := O) f == O_rec (O := O) (g o f).</pre>
@@ -2409,7 +2409,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 487
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
 
   End Functor.</pre>
@@ -2434,7 +2434,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 494
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>Definition inO_isequiv_to_O (T:Type)
     : IsEquiv (to O T) -&gt; In O T
     := fun _ =&gt; inO_equiv_inO (O T) (to O T)^-1.</pre>
@@ -2474,7 +2474,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 504
 Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
       split; exact _.</pre>
 </div>
@@ -2618,8 +2618,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 529
-Time: 0.003s">
-<div class="time" style="width: 2.6548672566372%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
       refine (isequiv_homotopic (to O (O A)) _).</pre>
 </div>
@@ -2664,7 +2664,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 538
 Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
       refine (isequiv_commsq' f (O_functor f) (to O A) (to O B) _).</pre>
 </div>
@@ -2729,14 +2729,14 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 555
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
       nrefine (cancelR_isequiv (O_functor (to O A))); [ exact _ | ].</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 556
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
       nrefine (isequiv_homotopic (O_functor (O_rec f o to O A))
                                 (O_functor_compose _ _)).</pre>
@@ -2759,7 +2759,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 561
 Time: 0.004s">
-<div class="time" style="width: 3.5398230088496%"></div>
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre>
 
     Definition equiv_O_rec_O_inverts
@@ -2888,7 +2888,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 588
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
       srapply (equiv_extendable_isequiv 0).</pre>
 </div>
@@ -2962,7 +2962,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 602
 Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre> srapply O_indpaths.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
@@ -3008,7 +3008,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 606
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
         rewrite ((fst (e (O A) (O_inO A)) (to O A)).2 a).</pre>
 </div>
@@ -3029,7 +3029,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 609
 Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre> srapply O_indpaths.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
@@ -3041,7 +3041,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 609
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
         rewrite to_O_natural, O_rec_beta.</pre>
 </div>
@@ -3055,7 +3055,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 611
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
     Defined.</pre>
 </div>
@@ -3100,8 +3100,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 621
-Time: 0.006s">
-<div class="time" style="width: 5.3097345132743%"></div>
+Time: 0.005s">
+<div class="time" style="width: 4.7169811320755%"></div>
 <pre>
       rapply ((equiv_extendable_isequiv 0 _ _)^-1%equiv).</pre>
 </div>
@@ -3209,7 +3209,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 645
 Time: 0.003s">
-<div class="time" style="width: 2.6548672566372%"></div>
+<div class="time" style="width: 2.8301886792453%"></div>
 <pre>
 
     Definition to_O_inv_natural {A B : Type} `{In O A} `{In O B}
@@ -3299,21 +3299,21 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 663
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
       refine (ap f (eissect (to O A) x)^ @ _).</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 664
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
       refine (_ @ ap g (eissect (to O A) x)).</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 665
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
       transitivity ((to O B)^-1 (O_functor f (to O A x))).</pre>
 </div>
@@ -3340,7 +3340,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 668
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre> transitivity ((to O B)^-1 (O_functor g (to O A x))).</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
@@ -3418,7 +3418,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 680
 Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
       intros [OA [Ou [? ?]]].</pre>
 </div>
@@ -3493,7 +3493,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 689
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
           rewrite (O_functor_compose (to O OA) (O_functor Ou)^-1).</pre>
 </div>
@@ -3527,8 +3527,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 694
-Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
           transitivity (O_functor Ou y); [ | apply eisretr].</pre>
 </div>
@@ -3629,14 +3629,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 706
-Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre> rewrite transport_sigma.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 706
-Time: 0.006s">
-<div class="time" style="width: 5.3097345132743%"></div>
+Time: 0.005s">
+<div class="time" style="width: 4.7169811320755%"></div>
 <pre>
         simple refine (path_sigma _ _ _ _ _); cbn; [ | apply path_ishprop].</pre>
 </div>
@@ -3650,7 +3650,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 708
 Time: 0.004s">
-<div class="time" style="width: 3.5398230088496%"></div>
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre>
         rewrite transport_arrow_fromconst.</pre>
 </div>
@@ -3671,14 +3671,14 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 711
 Time: 0.012s">
-<div class="time" style="width: 10.619469026549%"></div>
+<div class="time" style="width: 11.320754716981%"></div>
 <pre>
     Qed.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 712
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
 
   End OInverts.</pre>
@@ -3758,8 +3758,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 727
-Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
       exact (inO_equiv_inO Unit equiv_contr_unit^-1).</pre>
 </div>
@@ -3795,7 +3795,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 733
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
       exact (contr_equiv A (to O A)).</pre>
 </div>
@@ -3963,7 +3963,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 763
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
       apply inO_to_O_retract with
         (mu := fun X =&gt; (@O_rec _ (A * B) A _ _ _ fst X , O_rec snd X)).</pre>
@@ -4059,7 +4059,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 781
 Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
       all:intros; rapply extendable_to_O.</pre>
 </div>
@@ -4096,8 +4096,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 789
-Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
       rapply isequiv_ooextendable.</pre>
 </div>
@@ -4159,7 +4159,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 803
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
       intros; rapply ooextendable_O_prod_unit.</pre>
 </div>
@@ -4172,8 +4172,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 805
-Time: 0.005s">
-<div class="time" style="width: 4.4247787610619%"></div>
+Time: 0.004s">
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre>
 
     Definition O_prod_cmp (A B : Type) : O (A * B) -&gt; O A * O B
@@ -4281,7 +4281,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 829
 Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
         revert op; apply O_indpaths; intros [b [c a]].</pre>
 </div>
@@ -4294,8 +4294,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 831
-Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
         refine (a @ ap g (O_rec_beta _ _)^).</pre>
 </div>
@@ -4308,14 +4308,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 833
-Time: 0.009s">
-<div class="time" style="width: 7.9646017699115%"></div>
+Time: 0.008s">
+<div class="time" style="width: 7.5471698113208%"></div>
 <pre> intros [b [c a]]; cbn.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 833
 Time: 0.004s">
-<div class="time" style="width: 3.5398230088496%"></div>
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre>
         srapply path_sigma'.</pre>
 </div>
@@ -4341,14 +4341,14 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 835
 Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
         refine (transport_sigma' _ _ @ _); cbn.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 836
-Time: 0.024s">
-<div class="time" style="width: 21.238938053097%"></div>
+Time: 0.02s">
+<div class="time" style="width: 18.867924528302%"></div>
 <pre>
         srapply path_sigma'.</pre>
 </div>
@@ -4373,8 +4373,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 838
-Time: 0.06s">
-<div class="time" style="width: 53.097345132743%"></div>
+Time: 0.054s">
+<div class="time" style="width: 50.943396226415%"></div>
 <pre>
         abstract (
           rewrite transport_paths_Fr;
@@ -4386,8 +4386,8 @@ Time: 0.06s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 845
-Time: 0.035s">
-<div class="time" style="width: 30.973451327434%"></div>
+Time: 0.034s">
+<div class="time" style="width: 32.075471698113%"></div>
 <pre>
     Defined.</pre>
 </div>
@@ -4486,7 +4486,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 860
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre> intros [a p]; simple refine (path_sigma' _ _ _).</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
@@ -4512,7 +4512,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 862
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre> refine (ap (transport _ _) (O_indpaths_beta _ _ _ _) @ _); simpl.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
@@ -4532,7 +4532,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 864
 Time: 0.006s">
-<div class="time" style="width: 5.3097345132743%"></div>
+<div class="time" style="width: 5.6603773584906%"></div>
 <pre>
     Defined.</pre>
 </div>
@@ -4555,8 +4555,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 870
-Time: 0.024s">
-<div class="time" style="width: 21.238938053097%"></div>
+Time: 0.021s">
+<div class="time" style="width: 19.811320754717%"></div>
 <pre>
       refine (inO_equiv_inO _ (hfiber_fibration x B)^-1).</pre>
 </div>
@@ -4572,7 +4572,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 874
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>all: refine (inO_hfiber pr1 x); assumption.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
@@ -4616,8 +4616,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 883
-Time: 0.015s">
-<div class="time" style="width: 13.274336283186%"></div>
+Time: 0.014s">
+<div class="time" style="width: 13.207547169811%"></div>
 <pre>
       apply O_rec.</pre>
 </div>
@@ -4658,7 +4658,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 888
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
 
     Definition O_functor_hfiber_natural {A B} (f : A -&gt; B) (b : B)
@@ -4674,7 +4674,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 892
 Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
       intros [a p]; unfold O_functor_hfiber, functor_hfiber, functor_sigma; cbn.</pre>
 </div>
@@ -4695,7 +4695,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 895
 Time: 0.003s">
-<div class="time" style="width: 2.6548672566372%"></div>
+<div class="time" style="width: 2.8301886792453%"></div>
 <pre>
     Defined.</pre>
 </div>
@@ -4740,7 +4740,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 904
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
       nrapply ooextendable_O_inverts; exact _.</pre>
 </div>
@@ -4845,20 +4845,20 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 919
 Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre> unfold O_functor; rapply O_indpaths.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 919
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
         intros [a p]; simpl.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 920
-Time: 0.007s">
-<div class="time" style="width: 6.1946902654867%"></div>
+Time: 0.006s">
+<div class="time" style="width: 5.6603773584906%"></div>
 <pre>
         abstract (repeat (rewrite O_rec_beta); reflexivity).</pre>
 </div>
@@ -4872,27 +4872,27 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 922
 Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre> unfold O_functor; rapply O_indpaths.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 922
 Time: 0.003s">
-<div class="time" style="width: 2.6548672566372%"></div>
+<div class="time" style="width: 2.8301886792453%"></div>
 <pre>
         intros [a op]; revert op; rapply O_indpaths; intros p; simpl.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 923
-Time: 0.006s">
-<div class="time" style="width: 5.3097345132743%"></div>
+Time: 0.005s">
+<div class="time" style="width: 4.7169811320755%"></div>
 <pre>
         abstract (repeat (rewrite O_rec_beta); reflexivity).</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 924
-Time: 0.01s">
-<div class="time" style="width: 8.8495575221239%"></div>
+Time: 0.009s">
+<div class="time" style="width: 8.4905660377358%"></div>
 <pre>
     Defined.</pre>
 </div>
@@ -4924,15 +4924,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 933
-Time: 0.006s">
-<div class="time" style="width: 5.3097345132743%"></div>
+Time: 0.005s">
+<div class="time" style="width: 4.7169811320755%"></div>
 <pre>
       refine (inO_equiv_inO _ (issig_equiv@{i j k} A B)).</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 934
-Time: 0.011s">
-<div class="time" style="width: 9.7345132743363%"></div>
+Time: 0.01s">
+<div class="time" style="width: 9.4339622641509%"></div>
 <pre>
       refine (inO_equiv_inO _ (equiv_functor_sigma equiv_idmap@{k}
                                  (fun f =&gt; equiv_biinv_isequiv@{i j k} f))).</pre>
@@ -4940,7 +4940,7 @@ Time: 0.011s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 936
 Time: 0.005s">
-<div class="time" style="width: 4.4247787610619%"></div>
+<div class="time" style="width: 4.7169811320755%"></div>
 <pre>
       transparent assert (c : (prod@{k k} (A-&gt;B) (prod@{k k} (B-&gt;A) (B-&gt;A)) -&gt; prod@{k k} (A -&gt; A) (B -&gt; B))).</pre>
 </div>
@@ -4972,7 +4972,7 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 939
-Time: 0.113s">
+Time: 0.106s">
 <div class="time" style="width: 100%"></div>
 <pre>
       refine (inO_equiv_inO'@{k k k} U _).</pre>
@@ -5007,7 +5007,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 943
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre> intros [[f [g h]] p].</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
@@ -5048,7 +5048,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 948
 Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre> intros [f [[g p] [h q]]].</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
@@ -5074,14 +5074,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 951
-Time: 0.01s">
-<div class="time" style="width: 8.8495575221239%"></div>
+Time: 0.009s">
+<div class="time" style="width: 8.4905660377358%"></div>
 <pre> intros [f [[g p] [h q]]]; cbn.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 951
-Time: 0.005s">
-<div class="time" style="width: 4.4247787610619%"></div>
+Time: 0.004s">
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre>
         apply (path_sigma' _ 1); apply path_prod; apply (path_sigma' _ 1);
           cbn; rewrite transport_1.</pre>
@@ -5089,21 +5089,21 @@ Time: 0.005s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 953
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
         1:rewrite ap_fst_path_prod.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 954
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
         2:rewrite ap_snd_path_prod.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 955
-Time: 0.003s">
-<div class="time" style="width: 2.6548672566372%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
         all:apply path_forall; intros x; rewrite ap10_path_arrow; reflexivity.</pre>
 </div>
@@ -5116,34 +5116,34 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 957
-Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre> intros fghp.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 957
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre> cbn.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 957
-Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
         apply (path_sigma' _ 1); cbn.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 958
-Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
         refine (_ @ eta_path_prod (pr2 fghp)); apply ap011; apply eta_path_arrow.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 959
-Time: 0.021s">
-<div class="time" style="width: 18.58407079646%"></div>
+Time: 0.018s">
+<div class="time" style="width: 16.981132075472%"></div>
 <pre>
     Defined.</pre>
 </div>
@@ -5239,15 +5239,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 972
-Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
         rewrite O_indpaths_beta; reflexivity.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 973
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
     Qed.</pre>
 </div>
@@ -5284,7 +5284,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 980
 Time: 0.003s">
-<div class="time" style="width: 2.6548672566372%"></div>
+<div class="time" style="width: 2.8301886792453%"></div>
 <pre>
       strip_reflections.</pre>
 </div>
@@ -5328,15 +5328,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 989
-Time: 0.01s">
-<div class="time" style="width: 8.8495575221239%"></div>
+Time: 0.009s">
+<div class="time" style="width: 8.4905660377358%"></div>
 <pre>
       refine ishprop_isequiv_diag.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 990
-Time: 0.013s">
-<div class="time" style="width: 11.504424778761%"></div>
+Time: 0.012s">
+<div class="time" style="width: 11.320754716981%"></div>
 <pre>
       refine (isequiv_homotopic (O_prod_cmp A A
                                o O_functor (fun (a:A) =&gt; (a,a))) _).</pre>
@@ -5344,7 +5344,7 @@ Time: 0.013s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 992
 Time: 0.005s">
-<div class="time" style="width: 4.4247787610619%"></div>
+<div class="time" style="width: 4.7169811320755%"></div>
 <pre>
       apply O_indpaths; intros x; simpl.</pre>
 </div>
@@ -5415,8 +5415,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1004
-Time: 0.032s">
-<div class="time" style="width: 28.318584070796%"></div>
+Time: 0.031s">
+<div class="time" style="width: 29.245283018868%"></div>
 <pre>refine (inO_equiv_inO _ equiv_contr_inhabited_allpath^-1).</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
@@ -5435,7 +5435,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1005
 Time: 0.013s">
-<div class="time" style="width: 11.504424778761%"></div>
+<div class="time" style="width: 12.264150943396%"></div>
 <pre>
         exact _.</pre>
 </div>
@@ -5495,7 +5495,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1017
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
 
     Definition equiv_O_functor_sum {A B A' B'} (f : A -&gt; A') (g : B -&gt; B')
@@ -5506,7 +5506,7 @@ Time: 0.001s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1022
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
 
     Definition equiv_O_sum {A B} :
@@ -5539,7 +5539,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1031
 Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
 
       Definition O_inverts_functor_coeq
@@ -5579,8 +5579,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1042
-Time: 0.005s">
-<div class="time" style="width: 4.4247787610619%"></div>
+Time: 0.004s">
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre>
         all:nrapply ooextendable_O_inverts; assumption.</pre>
 </div>
@@ -5594,7 +5594,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1044
 Time: 0.003s">
-<div class="time" style="width: 2.6548672566372%"></div>
+<div class="time" style="width: 2.8301886792453%"></div>
 <pre>
 
       Definition equiv_O_functor_coeq
@@ -5608,7 +5608,7 @@ Time: 0.003s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1052
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
 
       Definition coeq_cmp : Coeq f g -&gt; Coeq (O_functor f) (O_functor g)
@@ -5634,7 +5634,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1060
 Time: 0.012s">
-<div class="time" style="width: 10.619469026549%"></div>
+<div class="time" style="width: 11.320754716981%"></div>
 <pre>
         rapply O_inverts_functor_coeq.</pre>
 </div>
@@ -5689,7 +5689,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1073
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
 
       Definition inverse_equiv_O_coeq_to_O (a : A)
@@ -5706,7 +5706,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1078
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
         apply moveR_equiv_V; symmetry; apply equiv_O_coeq_to_O.</pre>
 </div>
@@ -5750,8 +5750,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1087
-Time: 0.003s">
-<div class="time" style="width: 2.6548672566372%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
 
       Definition O_inverts_functor_pushout
@@ -5770,8 +5770,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1095
-Time: 0.067s">
-<div class="time" style="width: 59.29203539823%"></div>
+Time: 0.064s">
+<div class="time" style="width: 60.377358490566%"></div>
 <pre>
         rapply O_inverts_functor_coeq; rapply O_inverts_functor_sum.</pre>
 </div>
@@ -5785,7 +5785,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1097
 Time: 0.004s">
-<div class="time" style="width: 3.5398230088496%"></div>
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre>
 
       Definition equiv_O_pushout
@@ -5797,7 +5797,7 @@ Time: 0.004s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1103
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
 
       Definition equiv_O_pushout_to_O_pushl (b : B)
@@ -5835,7 +5835,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1111
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
 
       Definition equiv_O_pushout_to_O_pushr (c : C)
@@ -5872,8 +5872,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1119
-Time: 0.005s">
-<div class="time" style="width: 4.4247787610619%"></div>
+Time: 0.004s">
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre>
 
       Definition inverse_equiv_O_pushout_to_O_pushl (b : B)
@@ -5890,7 +5890,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1124
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
         apply moveR_equiv_V; symmetry; apply equiv_O_pushout_to_O_pushl.</pre>
 </div>
@@ -5904,7 +5904,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1126
 Time: 0.008s">
-<div class="time" style="width: 7.0796460176991%"></div>
+<div class="time" style="width: 7.5471698113208%"></div>
 <pre>
 
       Definition inverse_equiv_O_pushout_to_O_pushr (c : C)
@@ -5921,7 +5921,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1131
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
         apply moveR_equiv_V; symmetry; apply equiv_O_pushout_to_O_pushr.</pre>
 </div>
@@ -5942,8 +5942,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1135
-Time: 0.009s">
-<div class="time" style="width: 7.9646017699115%"></div>
+Time: 0.008s">
+<div class="time" style="width: 7.5471698113208%"></div>
 <pre>
 
   End Types.</pre>
@@ -6124,7 +6124,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1166
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
 
     Definition O_monad_mult_natural {A B} (f : A -&gt; B)
@@ -6175,7 +6175,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1175
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
     Qed.</pre>
 </div>
@@ -6242,7 +6242,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1188
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
       repeat rewrite O_rec_beta.</pre>
 </div>
@@ -6286,7 +6286,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1196
 Time: 0.003s">
-<div class="time" style="width: 2.6548672566372%"></div>
+<div class="time" style="width: 2.8301886792453%"></div>
 <pre>
       repeat rewrite O_rec_beta.</pre>
 </div>
@@ -6300,7 +6300,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1198
 Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
     Qed.</pre>
 </div>
@@ -6330,7 +6330,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1204
 Time: 0.014s">
-<div class="time" style="width: 12.389380530973%"></div>
+<div class="time" style="width: 13.207547169811%"></div>
 <pre>
 
     Definition O_monad_strength (A B : Type) : A * O B -&gt; O (A * B)
@@ -6339,7 +6339,7 @@ Time: 0.014s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1207
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
 
     Definition O_monad_strength_natural (A A' B B' : Type) (f : A -&gt; A') (g : B -&gt; B')
@@ -6374,8 +6374,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1213
-Time: 0.021s">
-<div class="time" style="width: 18.58407079646%"></div>
+Time: 0.02s">
+<div class="time" style="width: 18.867924528302%"></div>
 <pre>
       strip_reflections.</pre>
 </div>
@@ -6396,7 +6396,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1216
 Time: 0.004s">
-<div class="time" style="width: 3.5398230088496%"></div>
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre>
       repeat rewrite O_rec_beta.</pre>
 </div>
@@ -6410,7 +6410,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1218
 Time: 0.003s">
-<div class="time" style="width: 2.6548672566372%"></div>
+<div class="time" style="width: 2.8301886792453%"></div>
 <pre>
     Qed.</pre>
 </div>
@@ -6447,7 +6447,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1225
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre> strip_reflections.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
@@ -6480,7 +6480,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1228
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
     Qed.</pre>
 </div>
@@ -6544,7 +6544,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1238
 Time: 0.004s">
-<div class="time" style="width: 3.5398230088496%"></div>
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre>
 
     Definition O_monad_strength_assoc1 (A B C : Type)
@@ -6580,8 +6580,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1245
-Time: 0.084s">
-<div class="time" style="width: 74.336283185841%"></div>
+Time: 0.078s">
+<div class="time" style="width: 73.584905660377%"></div>
 <pre>
       strip_reflections.</pre>
 </div>
@@ -6613,8 +6613,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1248
-Time: 0.005s">
-<div class="time" style="width: 4.4247787610619%"></div>
+Time: 0.004s">
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre>
       repeat rewrite O_rec_beta.</pre>
 </div>
@@ -6628,14 +6628,14 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1250
 Time: 0.006s">
-<div class="time" style="width: 5.3097345132743%"></div>
+<div class="time" style="width: 5.6603773584906%"></div>
 <pre>
     Qed.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1251
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
 
     Definition O_monad_strength_assoc2 (A B : Type)
@@ -6664,8 +6664,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1257
-Time: 0.033s">
-<div class="time" style="width: 29.203539823009%"></div>
+Time: 0.032s">
+<div class="time" style="width: 30.188679245283%"></div>
 <pre>
       strip_reflections.</pre>
 </div>
@@ -6692,7 +6692,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1260
 Time: 0.007s">
-<div class="time" style="width: 6.1946902654867%"></div>
+<div class="time" style="width: 6.6037735849057%"></div>
 <pre>
       repeat (rewrite O_rec_beta; simpl).</pre>
 </div>
@@ -6705,8 +6705,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1262
-Time: 0.009s">
-<div class="time" style="width: 7.9646017699115%"></div>
+Time: 0.008s">
+<div class="time" style="width: 7.5471698113208%"></div>
 <pre>
     Qed.</pre>
 </div>
@@ -6720,8 +6720,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1265
-Time: 0.051s">
-<div class="time" style="width: 45.132743362832%"></div>
+Time: 0.049s">
+<div class="time" style="width: 46.22641509434%"></div>
 <pre>
 
 End Reflective_Subuniverse.</pre>
@@ -6809,8 +6809,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1288
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
     unfold IsConnected; exact _.</pre>
 </div>
@@ -6846,8 +6846,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1295
-Time: 0.008s">
-<div class="time" style="width: 7.0796460176991%"></div>
+Time: 0.01s">
+<div class="time" style="width: 9.4339622641509%"></div>
 <pre>
     intros ?; refine (contr_equiv (O A) (O_functor O f)).</pre>
 </div>
@@ -6893,7 +6893,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1305
 Time: 0.003s">
-<div class="time" style="width: 2.6548672566372%"></div>
+<div class="time" style="width: 2.8301886792453%"></div>
 <pre>
     rapply (Build_Subuniverse (IsConnected O)).</pre>
 </div>
@@ -6929,8 +6929,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1312
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>Definition isconnected_elim {A : Type} `{IsConnected O A} (C : Type) `{In O C} (f : A -&gt; C)
   : NullHomotopy f.</pre>
 </div>
@@ -6950,8 +6950,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1315
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
     exists (ff (center _)).</pre>
 </div>
@@ -6970,8 +6970,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1317
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
     refine (ap ff (contr (to O _ a)) @ _).</pre>
 </div>
@@ -7029,7 +7029,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1327
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
     rapply O_indpaths.</pre>
 </div>
@@ -7220,8 +7220,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1363
-Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
     apply (contr_equiv _ (to O A)^-1).</pre>
 </div>
@@ -7258,8 +7258,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1371
-Time: 0.007s">
-<div class="time" style="width: 6.1946902654867%"></div>
+Time: 0.006s">
+<div class="time" style="width: 5.6603773584906%"></div>
 <pre>
     exact _.</pre>
 </div>
@@ -7397,7 +7397,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1401
 Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
     refine (@isequiv_compose _ _ (fun c u =&gt; c) _ _ _
               (isequiv_ooextendable (fun _ =&gt; C) (@const A Unit tt)
@@ -7413,7 +7413,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1405
 Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
 
 End ConnectedTypes.</pre>
@@ -7467,7 +7467,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1416
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
     intros b; exact _.</pre>
 </div>
@@ -7514,7 +7514,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1427
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
     destruct (equiv_decidable_hprop (hfiber f b)) as [e|e].</pre>
 </div>
@@ -7528,7 +7528,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1429
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre> exact (inO_equiv_inO Unit e^-1).</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
@@ -7541,7 +7541,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1430
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre> exact (inO_equiv_inO Empty e^-1).</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
@@ -7578,7 +7578,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1437
 Time: 0.007s">
-<div class="time" style="width: 6.1946902654867%"></div>
+<div class="time" style="width: 6.6037735849057%"></div>
 <pre>
     intros b; exact _.</pre>
 </div>
@@ -7621,8 +7621,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1445
-Time: 0.074s">
-<div class="time" style="width: 65.486725663717%"></div>
+Time: 0.069s">
+<div class="time" style="width: 65.094339622642%"></div>
 <pre>
     refine (inO_equiv_inO _ (hfiber_hfiber_compose_map f g b)).</pre>
 </div>
@@ -7666,8 +7666,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1454
-Time: 0.011s">
-<div class="time" style="width: 9.7345132743363%"></div>
+Time: 0.01s">
+<div class="time" style="width: 9.4339622641509%"></div>
 <pre>
     refine (inO_equiv_inO _ (hfiber_pullback_along f g b)^-1).</pre>
 </div>
@@ -7704,8 +7704,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1462
-Time: 0.013s">
-<div class="time" style="width: 11.504424778761%"></div>
+Time: 0.014s">
+<div class="time" style="width: 13.207547169811%"></div>
 <pre>
     refine (inO_equiv_inO _ (hfiber_pullback_along' g f c)^-1).</pre>
 </div>
@@ -7757,7 +7757,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1472
 Time: 0.01s">
-<div class="time" style="width: 8.8495575221239%"></div>
+<div class="time" style="width: 9.4339622641509%"></div>
 <pre> refine (inO_equiv_inO _ (hfiber_functor_sum_l f g a)^-1).</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
@@ -7770,7 +7770,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1473
 Time: 0.01s">
-<div class="time" style="width: 8.8495575221239%"></div>
+<div class="time" style="width: 9.4339622641509%"></div>
 <pre> refine (inO_equiv_inO _ (hfiber_functor_sum_r f g b)^-1).</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
@@ -7816,8 +7816,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1484
-Time: 0.012s">
-<div class="time" style="width: 10.619469026549%"></div>
+Time: 0.011s">
+<div class="time" style="width: 10.377358490566%"></div>
 <pre>
     refine (inO_equiv_inO _ (hfiber_unfunctor_sum_l h Ha Hb a)^-1).</pre>
 </div>
@@ -7857,8 +7857,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1495
-Time: 0.012s">
-<div class="time" style="width: 10.619469026549%"></div>
+Time: 0.011s">
+<div class="time" style="width: 10.377358490566%"></div>
 <pre>
     refine (inO_equiv_inO _ (hfiber_unfunctor_sum_r h Ha Hb b)^-1).</pre>
 </div>
@@ -7872,7 +7872,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1497
 Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
 
 End ModalMaps.</pre>
@@ -7955,7 +7955,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1519
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
     intros b; exact _.</pre>
 </div>
@@ -7999,7 +7999,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1527
 Time: 0.004s">
-<div class="time" style="width: 3.5398230088496%"></div>
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre>
     exact (isconnected_equiv O (hfiber f b)
                              (equiv_hfiber_homotopic f g h b) _).</pre>
@@ -8045,7 +8045,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1537
 Time: 0.009s">
-<div class="time" style="width: 7.9646017699115%"></div>
+<div class="time" style="width: 8.4905660377358%"></div>
 <pre>
     refine (isconnected_equiv _ _ (hfiber_pullback_along f g b)^-1 _).</pre>
 </div>
@@ -8083,7 +8083,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1545
 Time: 0.005s">
-<div class="time" style="width: 4.4247787610619%"></div>
+<div class="time" style="width: 4.7169811320755%"></div>
 <pre>
     refine (isconnected_equiv _ _ (hfiber_pullback_along' g f c)^-1 _).</pre>
 </div>
@@ -8128,7 +8128,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1554
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
     refine (isconnected_equiv O (B a) (hfiber_fibration a B) _).</pre>
 </div>
@@ -8165,7 +8165,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1561
 Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
     apply istrunc_forall.</pre>
 </div>
@@ -8280,7 +8280,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1586
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
     destruct (isconnected_elim O (P (f a)) fibermap) as [x e].</pre>
 </div>
@@ -8344,8 +8344,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1597
-Time: 0.005s">
-<div class="time" style="width: 4.4247787610619%"></div>
+Time: 0.004s">
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre>
     apply (contr_trunc_conn O).</pre>
 </div>
@@ -8510,7 +8510,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1636
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
     refine (extension_conn_map_elim _ _ _).</pre>
 </div>
@@ -8570,7 +8570,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1648
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre> nrefine (@istrunc_equiv_istrunc {g : forall b, P b &amp; g oD f == d} _ _ _ _).</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
@@ -8635,7 +8635,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1653
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
       apply path_forall; intros x; apply conn_map_comp.</pre>
 </div>
@@ -8760,7 +8760,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1676
 Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>intros P Q; rapply (ooextendable_postcompose' (fun b =&gt; P b &lt;~&gt; Q b)).</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
@@ -8786,7 +8786,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1678
 Time: 0.005s">
-<div class="time" style="width: 4.4247787610619%"></div>
+<div class="time" style="width: 4.7169811320755%"></div>
 <pre> rapply ooextendable_conn_map_inO.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
@@ -8838,7 +8838,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1688
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
     assert (e := Hf (fun b =&gt; O (hfiber f b)) _ (fun a =&gt; to O _ (a;1))).</pre>
 </div>
@@ -8910,7 +8910,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1700
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
     exists (conn_map_elim g P (conn_map_elim f (P o g) d)); intros a.</pre>
 </div>
@@ -8961,8 +8961,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1710
-Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
     pattern b; refine (conn_map_elim f _ _ b); intros a.</pre>
 </div>
@@ -9034,8 +9034,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1723
-Time: 0.005s">
-<div class="time" style="width: 4.4247787610619%"></div>
+Time: 0.004s">
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre>
 
   Definition cancelR_equiv_conn_map {A B C : Type} (f : A -&gt; B) (g : B &lt;~&gt; C)
@@ -9070,7 +9070,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1734
 Time: 0.003s">
-<div class="time" style="width: 2.6548672566372%"></div>
+<div class="time" style="width: 2.8301886792453%"></div>
 <pre>
     refine (isconnected_equiv O (hfiber (@const A Unit tt) tt)
               (equiv_sigma_contr (fun a:A =&gt; const tt a = tt)) _).</pre>
@@ -9118,7 +9118,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1746
 Time: 0.003s">
-<div class="time" style="width: 2.6548672566372%"></div>
+<div class="time" style="width: 2.8301886792453%"></div>
 <pre>
     refine (isconnected_equiv O A
               (equiv_sigma_contr (fun a:A =&gt; const tt a = u))^-1 _).</pre>
@@ -9157,7 +9157,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1755
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
     refine (isequiv_adjointify _ (conn_map_elim f (fun _ =&gt; O A) (to O A)) _ _).</pre>
 </div>
@@ -9183,7 +9183,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1757
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
       refine (conn_map_elim f _ _ x); intros a.</pre>
 </div>
@@ -9226,7 +9226,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1764
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -9333,14 +9333,14 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1781
 Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
       apply equiv_sigma_contr; intros [a p]; simpl; exact _.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1782
-Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     Defined.</pre>
 </div>
@@ -9370,7 +9370,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1788
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
       refine (contr_equiv' _ (equiv_inverse (equiv_O_hfiber_functor_sigma b v))).</pre>
 </div>
@@ -9408,7 +9408,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1796
 Time: 0.005s">
-<div class="time" style="width: 4.4247787610619%"></div>
+<div class="time" style="width: 4.7169811320755%"></div>
 <pre>
       refine (contr_equiv _ (equiv_O_hfiber_functor_sigma b (inh b))).</pre>
 </div>
@@ -9462,7 +9462,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1808
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
     refine (isconnected_equiv' O (hfiber (functor_sigma idmap f) (a;q)) _ _).</pre>
 </div>
@@ -9514,7 +9514,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1818
 Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
     intros; rapply extendable_conn_map_inO.</pre>
 </div>
@@ -9537,7 +9537,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1823
 Time: 0.006s">
-<div class="time" style="width: 5.3097345132743%"></div>
+<div class="time" style="width: 5.6603773584906%"></div>
 <pre>Definition isequiv_conn_map_ino {A B : Type} (f : A -&gt; B)
          `{In O A} `{In O B} `{IsConnMap O _ _ f}
     : IsEquiv f
@@ -9575,8 +9575,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1832
-Time: 0.008s">
-<div class="time" style="width: 7.0796460176991%"></div>
+Time: 0.007s">
+<div class="time" style="width: 6.6037735849057%"></div>
 <pre>
     rapply conn_map_compose.</pre>
 </div>
@@ -9621,7 +9621,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1841
 Time: 0.007s">
-<div class="time" style="width: 6.1946902654867%"></div>
+<div class="time" style="width: 6.6037735849057%"></div>
 <pre>
     apply extension_functor_sum; rapply ooextendable_conn_map_inO.</pre>
 </div>
@@ -9643,8 +9643,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1846
-Time: 0.009s">
-<div class="time" style="width: 7.9646017699115%"></div>
+Time: 0.008s">
+<div class="time" style="width: 7.5471698113208%"></div>
 <pre>Definition conn_map_functor_coeq {B A B' A'}
              {f g : B -&gt; A} {f' g' : B' -&gt; A'}
              (h : B -&gt; B') (k : A -&gt; A')
@@ -9669,7 +9669,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1853
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
     apply extension_functor_coeq.</pre>
 </div>
@@ -9683,7 +9683,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1855
 Time: 0.004s">
-<div class="time" style="width: 3.5398230088496%"></div>
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre> rapply ooextendable_conn_map_inO.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
@@ -9695,8 +9695,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1856
-Time: 0.005s">
-<div class="time" style="width: 4.4247787610619%"></div>
+Time: 0.004s">
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre> intros; rapply ooextendable_conn_map_inO.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
@@ -9718,7 +9718,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1860
 Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>Definition conn_map_functor_pushout {A B C A' B' C'}
              (f : A -&gt; B) (g : A -&gt; C) {f' : A' -&gt; B'} {g' : A' -&gt; C'}
              (h : A -&gt; A') (k : B -&gt; B') (l : C -&gt; C')
@@ -9743,7 +9743,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1867
 Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
     apply extension_functor_coeq.</pre>
 </div>
@@ -9756,8 +9756,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1869
-Time: 0.01s">
-<div class="time" style="width: 8.8495575221239%"></div>
+Time: 0.009s">
+<div class="time" style="width: 8.4905660377358%"></div>
 <pre> apply extendable_functor_sum; rapply ooextendable_conn_map_inO.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
@@ -9770,20 +9770,20 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1870
 Time: 0.005s">
-<div class="time" style="width: 4.4247787610619%"></div>
+<div class="time" style="width: 4.7169811320755%"></div>
 <pre> intros; rapply ooextendable_conn_map_inO.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1870
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
   Defined.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1871
 Time: 0.009s">
-<div class="time" style="width: 7.9646017699115%"></div>
+<div class="time" style="width: 8.4905660377358%"></div>
 <pre>
 
 End ConnectedMaps.</pre>
@@ -9889,7 +9889,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1893
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
   rapply (@inO_leq O2 O3).</pre>
 </div>
@@ -9979,7 +9979,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1911
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
   apply (isconnected_elim O2); srapply inO_leq; exact _.</pre>
 </div>
@@ -10038,14 +10038,14 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1922
 Time: 0.003s">
-<div class="time" style="width: 2.6548672566372%"></div>
+<div class="time" style="width: 2.8301886792453%"></div>
 <pre>
   rapply (extension_conn_map_elim O2).</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1923
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
   intros b; rapply (inO_leq O1).</pre>
 </div>
@@ -10104,7 +10104,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1934
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
   apply (ooextendable_O_inverts O2); exact _.</pre>
 </div>
@@ -10129,7 +10129,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1941
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>Class O_eq@{i1 i2 j} (O1 : Subuniverse@{i1}) (O2 : Subuniverse@{i2}) :=
 {
   O_eq_l : O_leq@{i1 i2 j} O1 O2 ;
@@ -10155,7 +10155,7 @@ Infix "&lt;=&gt;" := O_eq : subuniverse_scope.</pre>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1949
 Time: 0.007s">
-<div class="time" style="width: 6.1946902654867%"></div>
+<div class="time" style="width: 6.6037735849057%"></div>
 <pre>
 
 Definition issig_O_eq O1 O2 : _ &lt;~&gt; O_eq O1 O2 := ltac:(issig).</pre>
@@ -10207,7 +10207,7 @@ Proof.</pre>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1959
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
   intros O1 O2 O3; split; refine (transitivity (y := O2) _ _).</pre>
 </div>
@@ -10249,8 +10249,8 @@ Defined.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1966
-Time: 0.021s">
-<div class="time" style="width: 18.58407079646%"></div>
+Time: 0.02s">
+<div class="time" style="width: 18.867924528302%"></div>
 <pre>
 
 Definition issig_subuniverse : _ &lt;~&gt; Subuniverse := ltac:(issig).</pre>
@@ -10294,15 +10294,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1975
-Time: 0.021s">
-<div class="time" style="width: 18.58407079646%"></div>
+Time: 0.02s">
+<div class="time" style="width: 18.867924528302%"></div>
 <pre>
   refine (equiv_path_sigma_hprop O1 O2 oE _).</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1976
-Time: 0.011s">
-<div class="time" style="width: 9.7345132743363%"></div>
+Time: 0.009s">
+<div class="time" style="width: 8.4905660377358%"></div>
 <pre>
   destruct O1 as [O1 [O1h ?]]; destruct O2 as [O2 [O2h ?]]; cbn.</pre>
 </div>
@@ -10315,8 +10315,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1978
-Time: 0.057s">
-<div class="time" style="width: 50.442477876106%"></div>
+Time: 0.055s">
+<div class="time" style="width: 51.88679245283%"></div>
 <pre>
   srapply (equiv_iff_hprop).</pre>
 </div>
@@ -10329,8 +10329,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1980
-Time: 0.03s">
-<div class="time" style="width: 26.548672566372%"></div>
+Time: 0.032s">
+<div class="time" style="width: 30.188679245283%"></div>
 <pre> srapply istrunc_sigma; unfold O_leq; exact _.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
@@ -10349,7 +10349,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1981
 Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+<div class="time" style="width: 0.94339622641509%"></div>
 <pre>
     apply path_universe_uncurried, equiv_iff_hprop; assumption.</pre>
 </div>
@@ -10390,7 +10390,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 1986
 Time: 0.005s">
-<div class="time" style="width: 4.4247787610619%"></div>
+<div class="time" style="width: 4.7169811320755%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -10573,7 +10573,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 2019
 Time: 0.006s">
-<div class="time" style="width: 5.3097345132743%"></div>
+<div class="time" style="width: 5.6603773584906%"></div>
 <pre> exact _.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
@@ -10625,7 +10625,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 2029
 Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>Definition OO_inverts_functor_coeq
            (O O' : ReflectiveSubuniverse) `{O' &lt;= Sep O}
            {B A : Type} (f g : B -&gt; A)
@@ -10673,7 +10673,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 2041
 Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre> nrapply (ooextendable_O_inverts O'); assumption.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
@@ -10692,7 +10692,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 2042
 Time: 0.004s">
-<div class="time" style="width: 3.5398230088496%"></div>
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre>
     intros u v; rapply (extendable_conn_map_inO O).</pre>
 </div>
@@ -10714,7 +10714,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 2046
 Time: 0.003s">
-<div class="time" style="width: 2.6548672566372%"></div>
+<div class="time" style="width: 2.8301886792453%"></div>
 <pre>Definition OO_inverts_functor_pushout
            (O O' : ReflectiveSubuniverse) `{O' &lt;= Sep O}
            {A B C A' B' C'}
@@ -10733,8 +10733,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 2054
-Time: 0.006s">
-<div class="time" style="width: 5.3097345132743%"></div>
+Time: 0.005s">
+<div class="time" style="width: 4.7169811320755%"></div>
 <pre>
   nrapply (OO_inverts_functor_coeq O O').</pre>
 </div>
@@ -10747,15 +10747,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 2056
-Time: 0.007s">
-<div class="time" style="width: 6.1946902654867%"></div>
+Time: 0.006s">
+<div class="time" style="width: 5.6603773584906%"></div>
 <pre>
   rapply O_inverts_functor_sum.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 2057
-Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -10770,7 +10770,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 2060
 Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>Definition OO_conn_map_functor_coeq
            (O O' : ReflectiveSubuniverse) `{O' &lt;= Sep O}
            {B A B' A'}
@@ -10796,8 +10796,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 2069
-Time: 0.001s">
-<div class="time" style="width: 0.88495575221239%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   apply extension_functor_coeq.</pre>
 </div>
@@ -10810,8 +10810,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 2071
-Time: 0.005s">
-<div class="time" style="width: 4.4247787610619%"></div>
+Time: 0.004s">
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre> rapply ooextendable_conn_map_inO.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
@@ -10823,8 +10823,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 2072
-Time: 0.006s">
-<div class="time" style="width: 5.3097345132743%"></div>
+Time: 0.005s">
+<div class="time" style="width: 4.7169811320755%"></div>
 <pre> pose (inO_leq O' (Sep O));
     intros; rapply (ooextendable_conn_map_inO O).</pre>
 </div>
@@ -10837,8 +10837,8 @@ Defined.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 2074
-Time: 0.006s">
-<div class="time" style="width: 5.3097345132743%"></div>
+Time: 0.005s">
+<div class="time" style="width: 4.7169811320755%"></div>
 <pre>
 
 Definition OO_conn_map_functor_pushout
@@ -10867,7 +10867,7 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 2085
 Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
   apply extension_functor_coeq.</pre>
 </div>
@@ -10880,8 +10880,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 2087
-Time: 0.012s">
-<div class="time" style="width: 10.619469026549%"></div>
+Time: 0.011s">
+<div class="time" style="width: 10.377358490566%"></div>
 <pre> apply extendable_functor_sum; rapply ooextendable_conn_map_inO.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
@@ -10894,14 +10894,14 @@ Time: 0s">
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 2088
 Time: 0.007s">
-<div class="time" style="width: 6.1946902654867%"></div>
+<div class="time" style="width: 6.6037735849057%"></div>
 <pre> pose (inO_leq O' (Sep O));
     intros; rapply ooextendable_conn_map_inO.</pre>
 </div>
 <div class="code" title="File: ReflectiveSubuniverse.v
 Line: 2089
 Time: 0.002s">
-<div class="time" style="width: 1.7699115044248%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
 Defined.</pre>
 </div>

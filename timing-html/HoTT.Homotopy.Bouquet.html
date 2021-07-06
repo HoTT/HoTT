@@ -30,21 +30,21 @@ pre {
 
 <div class="code" title="File: Bouquet.v
 Line: 1
-Time: 0.111s">
+Time: 0.104s">
 <div class="time" style="width: 100%"></div>
 <pre>Require Import Basics Types Pointed WildCat.</pre>
 </div>
 <div class="code" title="File: Bouquet.v
 Line: 1
-Time: 0.057s">
-<div class="time" style="width: 51.351351351351%"></div>
+Time: 0.054s">
+<div class="time" style="width: 51.923076923077%"></div>
 <pre>
 Require Import Algebra.Groups.</pre>
 </div>
 <div class="code" title="File: Bouquet.v
 Line: 2
 Time: 0.002s">
-<div class="time" style="width: 1.8018018018018%"></div>
+<div class="time" style="width: 1.9230769230769%"></div>
 <pre>
 Require Import Truncations.</pre>
 </div>
@@ -57,8 +57,8 @@ Require Import Homotopy.Suspension.</pre>
 </div>
 <div class="code" title="File: Bouquet.v
 Line: 4
-Time: 0.017s">
-<div class="time" style="width: 15.315315315315%"></div>
+Time: 0.016s">
+<div class="time" style="width: 15.384615384615%"></div>
 <pre>
 Require Import Homotopy.ClassifyingSpace.</pre>
 </div>
@@ -148,15 +148,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bouquet.v
 Line: 22
-Time: 0.021s">
-<div class="time" style="width: 18.918918918919%"></div>
+Time: 0.019s">
+<div class="time" style="width: 18.269230769231%"></div>
 <pre>
     rapply isconnected_susp.</pre>
 </div>
 <div class="code" title="File: Bouquet.v
 Line: 23
-Time: 0.012s">
-<div class="time" style="width: 10.810810810811%"></div>
+Time: 0.011s">
+<div class="time" style="width: 10.576923076923%"></div>
 <pre>
     rapply contr_inhabited_hprop.</pre>
 </div>
@@ -185,8 +185,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bouquet.v
 Line: 29
-Time: 0.01s">
-<div class="time" style="width: 9.009009009009%"></div>
+Time: 0.009s">
+<div class="time" style="width: 8.6538461538462%"></div>
 <pre>Lemma natequiv_pi1bouquet_rec (S : Type)
     : NatEquiv
         (opyon (Pi 1 (Bouquet S)))
@@ -210,13 +210,13 @@ Time: 0s">
 <div class="code" title="File: Bouquet.v
 Line: 35
 Time: 0.001s">
-<div class="time" style="width: 0.9009009009009%"></div>
+<div class="time" style="width: 0.96153846153846%"></div>
 <pre>nrefine (natequiv_compose _ _).</pre>
 </div>
 <div class="code" title="File: Bouquet.v
 Line: 35
 Time: 0.003s">
-<div class="time" style="width: 2.7027027027027%"></div>
+<div class="time" style="width: 2.8846153846154%"></div>
 <pre>
     1: refine (natequiv_prewhisker (natequiv_pointify_r S) ptype_group).</pre>
 </div>
@@ -230,14 +230,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bouquet.v
 Line: 38
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.96153846153846%"></div>
 <pre>nrefine (natequiv_compose _ _).</pre>
 </div>
 <div class="code" title="File: Bouquet.v
 Line: 38
-Time: 0.002s">
-<div class="time" style="width: 1.8018018018018%"></div>
+Time: 0.003s">
+<div class="time" style="width: 2.8846153846154%"></div>
 <pre>
 1: rapply (natequiv_postwhisker _ (natequiv_inverse _ _ natequiv_g_loops_bg)).</pre>
 </div>
@@ -257,8 +257,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bouquet.v
 Line: 41
-Time: 0.003s">
-<div class="time" style="width: 2.7027027027027%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.9230769230769%"></div>
 <pre>
     1: refine (natequiv_prewhisker
       (natequiv_loop_susp_adjoint_r (pointify S)) B).</pre>
@@ -274,13 +274,13 @@ Time: 0s">
 <div class="code" title="File: Bouquet.v
 Line: 45
 Time: 0.005s">
-<div class="time" style="width: 4.5045045045045%"></div>
+<div class="time" style="width: 4.8076923076923%"></div>
 <pre>rapply natequiv_bg_pi1_adjoint.</pre>
 </div>
 <div class="code" title="File: Bouquet.v
 Line: 45
 Time: 0.004s">
-<div class="time" style="width: 3.6036036036036%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -302,7 +302,7 @@ Time: 0s">
 <div class="code" title="File: Bouquet.v
 Line: 49
 Time: 0.001s">
-<div class="time" style="width: 0.9009009009009%"></div>
+<div class="time" style="width: 0.96153846153846%"></div>
 <pre>
 
   Theorem equiv_pi1bouquet_rec (S : Type) (G : Group)
@@ -318,21 +318,21 @@ Time: 0s">
 <div class="code" title="File: Bouquet.v
 Line: 53
 Time: 0.001s">
-<div class="time" style="width: 0.9009009009009%"></div>
+<div class="time" style="width: 0.96153846153846%"></div>
 <pre>
     apply natequiv_pi1bouquet_rec.</pre>
 </div>
 <div class="code" title="File: Bouquet.v
 Line: 54
-Time: 0.001s">
-<div class="time" style="width: 0.9009009009009%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   Defined.</pre>
 </div>
 <div class="code" title="File: Bouquet.v
 Line: 55
-Time: 0.012s">
-<div class="time" style="width: 10.810810810811%"></div>
+Time: 0.011s">
+<div class="time" style="width: 10.576923076923%"></div>
 <pre>
 
   Global Instance is1natural_equiv_pi1bouquet_rec (S : Type)
@@ -350,15 +350,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bouquet.v
 Line: 62
-Time: 0.002s">
-<div class="time" style="width: 1.8018018018018%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.96153846153846%"></div>
 <pre>
     rapply (is1natural_natequiv _ _ (natequiv_pi1bouquet_rec _)).</pre>
 </div>
 <div class="code" title="File: Bouquet.v
 Line: 63
 Time: 0.002s">
-<div class="time" style="width: 1.8018018018018%"></div>
+<div class="time" style="width: 1.9230769230769%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -387,8 +387,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bouquet.v
 Line: 69
-Time: 0.004s">
-<div class="time" style="width: 3.6036036036036%"></div>
+Time: 0.003s">
+<div class="time" style="width: 2.8846153846154%"></div>
 <pre>
     rapply equiv_pi1bouquet_rec.</pre>
 </div>
@@ -417,8 +417,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bouquet.v
 Line: 75
-Time: 0.003s">
-<div class="time" style="width: 2.7027027027027%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.9230769230769%"></div>
 <pre>Global Instance isfreegroupon_pi1bouquet (S : Type)
     : IsFreeGroupOn S (Pi 1 (Bouquet S)) (pi1bouquet_incl S).</pre>
 </div>
@@ -431,8 +431,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Bouquet.v
 Line: 77
-Time: 0.038s">
-<div class="time" style="width: 34.234234234234%"></div>
+Time: 0.034s">
+<div class="time" style="width: 32.692307692308%"></div>
 <pre>
     apply equiv_isfregroupon_isequiv_precomp.</pre>
 </div>
@@ -467,35 +467,35 @@ Time: 0s">
 <div class="code" title="File: Bouquet.v
 Line: 82
 Time: 0.001s">
-<div class="time" style="width: 0.9009009009009%"></div>
+<div class="time" style="width: 0.96153846153846%"></div>
 <pre>
     refine (_ @ @is1natural_equiv_pi1bouquet_rec S _ _ f grp_homo_id).</pre>
 </div>
 <div class="code" title="File: Bouquet.v
 Line: 83
-Time: 0.022s">
-<div class="time" style="width: 19.81981981982%"></div>
+Time: 0.018s">
+<div class="time" style="width: 17.307692307692%"></div>
 <pre>
     simpl; f_ap; symmetry.</pre>
 </div>
 <div class="code" title="File: Bouquet.v
 Line: 84
-Time: 0.047s">
-<div class="time" style="width: 42.342342342342%"></div>
+Time: 0.039s">
+<div class="time" style="width: 37.5%"></div>
 <pre>
     rapply (cat_idr_strong f).</pre>
 </div>
 <div class="code" title="File: Bouquet.v
 Line: 85
-Time: 0.054s">
-<div class="time" style="width: 48.648648648649%"></div>
+Time: 0.044s">
+<div class="time" style="width: 42.307692307692%"></div>
 <pre>
   Defined.</pre>
 </div>
 <div class="code" title="File: Bouquet.v
 Line: 86
-Time: 0.005s">
-<div class="time" style="width: 4.5045045045045%"></div>
+Time: 0.004s">
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
 
 End AssumeUnivalence.</pre>

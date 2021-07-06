@@ -30,28 +30,28 @@ pre {
 
 <div class="code" title="File: Z.v
 Line: 1
-Time: 0.044s">
-<div class="time" style="width: 27.16049382716%"></div>
+Time: 0.042s">
+<div class="time" style="width: 28.187919463087%"></div>
 <pre>Require Import Basics Types.</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 1
-Time: 0.119s">
-<div class="time" style="width: 73.456790123457%"></div>
+Time: 0.112s">
+<div class="time" style="width: 75.167785234899%"></div>
 <pre>
 Require Import Algebra.Groups.</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 2
-Time: 0.021s">
-<div class="time" style="width: 12.962962962963%"></div>
+Time: 0.02s">
+<div class="time" style="width: 13.422818791946%"></div>
 <pre>
 Require Import Algebra.AbGroups.</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 3
-Time: 0.019s">
-<div class="time" style="width: 11.728395061728%"></div>
+Time: 0.017s">
+<div class="time" style="width: 11.409395973154%"></div>
 <pre>
 Require Import Algebra.Rings.CRing.</pre>
 </div>
@@ -65,7 +65,7 @@ Require Import Spaces.Int Spaces.Pos.</pre>
 <div class="code" title="File: Z.v
 Line: 5
 Time: 0.002s">
-<div class="time" style="width: 1.2345679012346%"></div>
+<div class="time" style="width: 1.3422818791946%"></div>
 <pre>
 Require Import WildCat.</pre>
 </div>
@@ -94,7 +94,7 @@ Proof.</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 11
-Time: 0.162s">
+Time: 0.149s">
 <div class="time" style="width: 100%"></div>
 <pre>
   snrapply (Build_CRing abgroup_Z int_add int_mul 0%int 1%int); only 2: repeat split; try exact _.</pre>
@@ -167,7 +167,7 @@ Time: 0s">
 <div class="code" title="File: Z.v
 Line: 17
 Time: 0.001s">
-<div class="time" style="width: 0.61728395061728%"></div>
+<div class="time" style="width: 0.67114093959732%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -190,8 +190,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Z.v
 Line: 23
-Time: 0.003s">
-<div class="time" style="width: 1.8518518518519%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.3422818791946%"></div>
 <pre>Definition cring_catamorphism_fun (R : CRing) (z : cring_Z) : R
   := match z with
      | neg z =&gt; pos_peano_rec R (-1) (fun n nr =&gt; -1 + nr) z
@@ -252,8 +252,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Z.v
 Line: 37
-Time: 0.022s">
-<div class="time" style="width: 13.58024691358%"></div>
+Time: 0.019s">
+<div class="time" style="width: 12.751677852349%"></div>
 <pre>
   all: refine (associativity _ _ _ @ _ @ left_identity y).</pre>
 </div>
@@ -337,8 +337,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Z.v
 Line: 50
-Time: 0.022s">
-<div class="time" style="width: 13.58024691358%"></div>
+Time: 0.019s">
+<div class="time" style="width: 12.751677852349%"></div>
 <pre>
   all: refine ((associativity _ _ _)^ @ _ @ right_identity y).</pre>
 </div>
@@ -381,7 +381,7 @@ Time: 0s">
 <div class="code" title="File: Z.v
 Line: 57
 Time: 0.001s">
-<div class="time" style="width: 0.61728395061728%"></div>
+<div class="time" style="width: 0.67114093959732%"></div>
 <pre>Global Instance issemigrouppreserving_cring_catamorphism_fun_plus (R : CRing)
   : IsSemiGroupPreserving (Aop:=cring_plus) (Bop:=cring_plus)
       (cring_catamorphism_fun R : cring_Z -&gt; R).</pre>
@@ -409,8 +409,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Z.v
 Line: 62
-Time: 0.002s">
-<div class="time" style="width: 1.2345679012346%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.67114093959732%"></div>
 <pre> intros [x| |x] [y| |y].</pre>
 </div>
 <div class="code" title="File: Z.v
@@ -423,14 +423,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: Z.v
 Line: 64
-Time: 0.01s">
-<div class="time" style="width: 6.1728395061728%"></div>
+Time: 0.009s">
+<div class="time" style="width: 6.0402684563758%"></div>
 <pre>2,5,8: cbn; by rewrite right_identity.</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 64
-Time: 0.007s">
-<div class="time" style="width: 4.320987654321%"></div>
+Time: 0.006s">
+<div class="time" style="width: 4.0268456375839%"></div>
 <pre>
   3,4: symmetry; apply left_identity.</pre>
 </div>
@@ -452,7 +452,7 @@ Time: 0s">
 <div class="code" title="File: Z.v
 Line: 68
 Time: 0.002s">
-<div class="time" style="width: 1.2345679012346%"></div>
+<div class="time" style="width: 1.3422818791946%"></div>
 <pre> change (cring_catamorphism_fun R ((neg x) + (neg y))%int
       = (cring_catamorphism_fun R (neg x)) + (cring_catamorphism_fun R (neg y))).</pre>
 </div>
@@ -493,7 +493,7 @@ Time: 0s">
 <div class="code" title="File: Z.v
 Line: 73
 Time: 0.003s">
-<div class="time" style="width: 1.8518518518519%"></div>
+<div class="time" style="width: 2.0134228187919%"></div>
 <pre>
       apply commutativity.</pre>
 </div>
@@ -520,28 +520,28 @@ Time: 0s">
 <div class="code" title="File: Z.v
 Line: 76
 Time: 0.001s">
-<div class="time" style="width: 0.61728395061728%"></div>
+<div class="time" style="width: 0.67114093959732%"></div>
 <pre>
     rewrite 2 pos_peano_rec_beta_pos_succ.</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 77
-Time: 0.014s">
-<div class="time" style="width: 8.641975308642%"></div>
+Time: 0.012s">
+<div class="time" style="width: 8.0536912751678%"></div>
 <pre>
     rewrite simple_associativity.</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 78
-Time: 0.01s">
-<div class="time" style="width: 6.1728395061728%"></div>
+Time: 0.009s">
+<div class="time" style="width: 6.0402684563758%"></div>
 <pre>
     rewrite (commutativity _ (-1)).</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 79
-Time: 0.014s">
-<div class="time" style="width: 8.641975308642%"></div>
+Time: 0.012s">
+<div class="time" style="width: 8.0536912751678%"></div>
 <pre>
     rewrite &lt;- simple_associativity.</pre>
 </div>
@@ -615,7 +615,7 @@ Time: 0s">
 <div class="code" title="File: Z.v
 Line: 87
 Time: 0.002s">
-<div class="time" style="width: 1.2345679012346%"></div>
+<div class="time" style="width: 1.3422818791946%"></div>
 <pre>
       1: symmetry; cbn; apply left_inverse.</pre>
 </div>
@@ -635,8 +635,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Z.v
 Line: 90
-Time: 0.013s">
-<div class="time" style="width: 8.0246913580247%"></div>
+Time: 0.01s">
+<div class="time" style="width: 6.7114093959732%"></div>
 <pre>
       cbn; rewrite &lt;- simple_associativity.</pre>
 </div>
@@ -650,14 +650,14 @@ Time: 0s">
 <div class="code" title="File: Z.v
 Line: 92
 Time: 0.002s">
-<div class="time" style="width: 1.2345679012346%"></div>
+<div class="time" style="width: 1.3422818791946%"></div>
 <pre>
       cbn; rewrite involutive.</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 93
-Time: 0.005s">
-<div class="time" style="width: 3.0864197530864%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.6845637583893%"></div>
 <pre>
       apply commutativity.</pre>
 </div>
@@ -697,7 +697,7 @@ Time: 0s">
 <div class="code" title="File: Z.v
 Line: 97
 Time: 0.002s">
-<div class="time" style="width: 1.2345679012346%"></div>
+<div class="time" style="width: 1.3422818791946%"></div>
 <pre>
       cbn; rewrite involutive.</pre>
 </div>
@@ -731,42 +731,42 @@ Time: 0s">
 <div class="code" title="File: Z.v
 Line: 101
 Time: 0.001s">
-<div class="time" style="width: 0.61728395061728%"></div>
+<div class="time" style="width: 0.67114093959732%"></div>
 <pre>
     rewrite 2 pos_peano_rec_beta_pos_succ.</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 102
-Time: 0.009s">
-<div class="time" style="width: 5.5555555555556%"></div>
+Time: 0.007s">
+<div class="time" style="width: 4.6979865771812%"></div>
 <pre>
     rewrite (commutativity (-1)).</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 103
-Time: 0.024s">
-<div class="time" style="width: 14.814814814815%"></div>
+Time: 0.019s">
+<div class="time" style="width: 12.751677852349%"></div>
 <pre>
     rewrite simple_associativity.</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 104
-Time: 0.009s">
-<div class="time" style="width: 5.5555555555556%"></div>
+Time: 0.008s">
+<div class="time" style="width: 5.3691275167785%"></div>
 <pre>
     rewrite &lt;- (simple_associativity _ _ 1).</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 105
-Time: 0.005s">
-<div class="time" style="width: 3.0864197530864%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.6845637583893%"></div>
 <pre>
     rewrite left_inverse.</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 106
 Time: 0.003s">
-<div class="time" style="width: 1.8518518518519%"></div>
+<div class="time" style="width: 2.0134228187919%"></div>
 <pre>
     f_ap.</pre>
 </div>
@@ -779,8 +779,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Z.v
 Line: 108
-Time: 0.005s">
-<div class="time" style="width: 3.0864197530864%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.6845637583893%"></div>
 <pre>
     apply right_identity.</pre>
 </div>
@@ -833,7 +833,7 @@ Time: 0s">
 <div class="code" title="File: Z.v
 Line: 113
 Time: 0.002s">
-<div class="time" style="width: 1.2345679012346%"></div>
+<div class="time" style="width: 1.3422818791946%"></div>
 <pre>
       1: symmetry; cbn; apply right_inverse.</pre>
 </div>
@@ -846,15 +846,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Z.v
 Line: 115
-Time: 0.006s">
-<div class="time" style="width: 3.7037037037037%"></div>
+Time: 0.005s">
+<div class="time" style="width: 3.3557046979866%"></div>
 <pre>
       rewrite (commutativity 1).</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 116
-Time: 0.013s">
-<div class="time" style="width: 8.0246913580247%"></div>
+Time: 0.011s">
+<div class="time" style="width: 7.3825503355705%"></div>
 <pre>
       rewrite &lt;- simple_associativity.</pre>
 </div>
@@ -867,8 +867,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Z.v
 Line: 118
-Time: 0.008s">
-<div class="time" style="width: 4.9382716049383%"></div>
+Time: 0.007s">
+<div class="time" style="width: 4.6979865771812%"></div>
 <pre>
       cbn; by rewrite right_inverse, right_identity.</pre>
 </div>
@@ -907,8 +907,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Z.v
 Line: 122
-Time: 0.013s">
-<div class="time" style="width: 8.0246913580247%"></div>
+Time: 0.011s">
+<div class="time" style="width: 7.3825503355705%"></div>
 <pre>
       rewrite simple_associativity.</pre>
 </div>
@@ -921,8 +921,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Z.v
 Line: 124
-Time: 0.006s">
-<div class="time" style="width: 3.7037037037037%"></div>
+Time: 0.005s">
+<div class="time" style="width: 3.3557046979866%"></div>
 <pre>
       rewrite (right_inverse 1).</pre>
 </div>
@@ -935,8 +935,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Z.v
 Line: 126
-Time: 0.004s">
-<div class="time" style="width: 2.4691358024691%"></div>
+Time: 0.003s">
+<div class="time" style="width: 2.0134228187919%"></div>
 <pre>
       apply left_identity.</pre>
 </div>
@@ -963,49 +963,49 @@ Time: 0s">
 <div class="code" title="File: Z.v
 Line: 129
 Time: 0.001s">
-<div class="time" style="width: 0.61728395061728%"></div>
+<div class="time" style="width: 0.67114093959732%"></div>
 <pre>
     rewrite 2 pos_peano_rec_beta_pos_succ.</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 130
-Time: 0.008s">
-<div class="time" style="width: 4.9382716049383%"></div>
+Time: 0.007s">
+<div class="time" style="width: 4.6979865771812%"></div>
 <pre>
     rewrite (commutativity 1).</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 131
-Time: 0.017s">
-<div class="time" style="width: 10.493827160494%"></div>
+Time: 0.014s">
+<div class="time" style="width: 9.3959731543624%"></div>
 <pre>
     rewrite simple_associativity.</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 132
-Time: 0.01s">
-<div class="time" style="width: 6.1728395061728%"></div>
+Time: 0.008s">
+<div class="time" style="width: 5.3691275167785%"></div>
 <pre>
     rewrite &lt;- (simple_associativity _ _ (-1)).</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 133
 Time: 0.004s">
-<div class="time" style="width: 2.4691358024691%"></div>
+<div class="time" style="width: 2.6845637583893%"></div>
 <pre>
     rewrite (right_inverse 1).</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 134
 Time: 0.004s">
-<div class="time" style="width: 2.4691358024691%"></div>
+<div class="time" style="width: 2.6845637583893%"></div>
 <pre>
     f_ap; symmetry.</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 135
-Time: 0.005s">
-<div class="time" style="width: 3.0864197530864%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.6845637583893%"></div>
 <pre>
     apply right_identity.</pre>
 </div>
@@ -1058,8 +1058,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Z.v
 Line: 141
-Time: 0.004s">
-<div class="time" style="width: 2.4691358024691%"></div>
+Time: 0.003s">
+<div class="time" style="width: 2.0134228187919%"></div>
 <pre>
       apply commutativity.</pre>
 </div>
@@ -1079,14 +1079,14 @@ Time: 0s">
 <div class="code" title="File: Z.v
 Line: 143
 Time: 0.001s">
-<div class="time" style="width: 0.61728395061728%"></div>
+<div class="time" style="width: 0.67114093959732%"></div>
 <pre>
     rewrite 2 pos_peano_rec_beta_pos_succ.</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 144
-Time: 0.021s">
-<div class="time" style="width: 12.962962962963%"></div>
+Time: 0.019s">
+<div class="time" style="width: 12.751677852349%"></div>
 <pre>
     rewrite simple_associativity.</pre>
 </div>
@@ -1099,15 +1099,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Z.v
 Line: 146
-Time: 0.014s">
-<div class="time" style="width: 8.641975308642%"></div>
+Time: 0.011s">
+<div class="time" style="width: 7.3825503355705%"></div>
 <pre>
     rewrite simple_associativity.</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 147
-Time: 0.006s">
-<div class="time" style="width: 3.7037037037037%"></div>
+Time: 0.005s">
+<div class="time" style="width: 3.3557046979866%"></div>
 <pre>
     rewrite (commutativity 1).</pre>
 </div>
@@ -1120,15 +1120,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Z.v
 Line: 149
-Time: 0.036s">
-<div class="time" style="width: 22.222222222222%"></div>
+Time: 0.032s">
+<div class="time" style="width: 21.476510067114%"></div>
 <pre>
 Qed.</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 150
 Time: 0.001s">
-<div class="time" style="width: 0.61728395061728%"></div>
+<div class="time" style="width: 0.67114093959732%"></div>
 <pre>
 
 Lemma cring_catamorphism_fun_negate {R} x
@@ -1144,28 +1144,28 @@ Proof.</pre>
 <div class="code" title="File: Z.v
 Line: 154
 Time: 0.002s">
-<div class="time" style="width: 1.2345679012346%"></div>
+<div class="time" style="width: 1.3422818791946%"></div>
 <pre>
   snrapply (groups.preserves_negate _).</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 155
-Time: 0.004s">
-<div class="time" style="width: 2.4691358024691%"></div>
+Time: 0.003s">
+<div class="time" style="width: 2.0134228187919%"></div>
 <pre>
   1-6: exact _.</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 156
 Time: 0.001s">
-<div class="time" style="width: 0.61728395061728%"></div>
+<div class="time" style="width: 0.67114093959732%"></div>
 <pre>
   snrapply Build_IsMonoidPreserving.</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 157
-Time: 0.001s">
-<div class="time" style="width: 0.61728395061728%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   1: exact _.</pre>
 </div>
@@ -1178,15 +1178,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Z.v
 Line: 159
-Time: 0.043s">
-<div class="time" style="width: 26.543209876543%"></div>
+Time: 0.035s">
+<div class="time" style="width: 23.489932885906%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 160
 Time: 0.002s">
-<div class="time" style="width: 1.2345679012346%"></div>
+<div class="time" style="width: 1.3422818791946%"></div>
 <pre>
 
 Lemma cring_catamorphism_fun_pos_mult {R} x y
@@ -1230,7 +1230,7 @@ Time: 0s">
 <div class="code" title="File: Z.v
 Line: 168
 Time: 0.002s">
-<div class="time" style="width: 1.2345679012346%"></div>
+<div class="time" style="width: 1.3422818791946%"></div>
 <pre>
     apply left_identity.</pre>
 </div>
@@ -1243,7 +1243,7 @@ Time: 0s">
 <div class="code" title="File: Z.v
 Line: 169
 Time: 0.002s">
-<div class="time" style="width: 1.2345679012346%"></div>
+<div class="time" style="width: 1.3422818791946%"></div>
 <pre>
   change (cring_catamorphism_fun R (pos (pos_succ x * y)%pos)
     = cring_catamorphism_fun R (pos (pos_succ x)) * cring_catamorphism_fun R (pos y)).</pre>
@@ -1258,7 +1258,7 @@ Time: 0s">
 <div class="code" title="File: Z.v
 Line: 172
 Time: 0.001s">
-<div class="time" style="width: 0.61728395061728%"></div>
+<div class="time" style="width: 0.67114093959732%"></div>
 <pre>
   refine (issemigrouppreserving_cring_catamorphism_fun_plus
     R (pos (x * y)%pos) (pos y) @ _).</pre>
@@ -1266,21 +1266,21 @@ Time: 0.001s">
 <div class="code" title="File: Z.v
 Line: 174
 Time: 0.001s">
-<div class="time" style="width: 0.61728395061728%"></div>
+<div class="time" style="width: 0.67114093959732%"></div>
 <pre>
   rewrite IHx.</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 175
 Time: 0.002s">
-<div class="time" style="width: 1.2345679012346%"></div>
+<div class="time" style="width: 1.3422818791946%"></div>
 <pre>
   transitivity ((1 + cring_catamorphism_fun R (pos x)) * cring_catamorphism_fun R (pos y)).</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 176
 Time: 0.001s">
-<div class="time" style="width: 0.61728395061728%"></div>
+<div class="time" style="width: 0.67114093959732%"></div>
 <pre>
   2: simpl; by rewrite pos_peano_rec_beta_pos_succ.</pre>
 </div>
@@ -1300,15 +1300,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Z.v
 Line: 179
-Time: 0.006s">
-<div class="time" style="width: 3.7037037037037%"></div>
+Time: 0.005s">
+<div class="time" style="width: 3.3557046979866%"></div>
 <pre>
   apply commutativity.</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 180
-Time: 0.006s">
-<div class="time" style="width: 3.7037037037037%"></div>
+Time: 0.005s">
+<div class="time" style="width: 3.3557046979866%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -1323,7 +1323,7 @@ Time: 0s">
 <div class="code" title="File: Z.v
 Line: 183
 Time: 0.001s">
-<div class="time" style="width: 0.61728395061728%"></div>
+<div class="time" style="width: 0.67114093959732%"></div>
 <pre>Global Instance issemigrouppreserving_cring_catamorphism_fun_mult (R : CRing)
   : IsSemiGroupPreserving (Aop:=cring_mult) (Bop:=cring_mult)
       (cring_catamorphism_fun R : cring_Z -&gt; R).</pre>
@@ -1344,21 +1344,21 @@ Time: 0s">
 </div>
 <div class="code" title="File: Z.v
 Line: 187
-Time: 0.002s">
-<div class="time" style="width: 1.2345679012346%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.67114093959732%"></div>
 <pre> intros [x| |x] [y| |y].</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 187
 Time: 0.002s">
-<div class="time" style="width: 1.2345679012346%"></div>
+<div class="time" style="width: 1.3422818791946%"></div>
 <pre>
   2,5,8: symmetry; apply rng_mult_zero_r.</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 188
-Time: 0.007s">
-<div class="time" style="width: 4.320987654321%"></div>
+Time: 0.006s">
+<div class="time" style="width: 4.0268456375839%"></div>
 <pre>
   3,4: cbn; symmetry; rewrite (commutativity 0); apply rng_mult_zero_r.</pre>
 </div>
@@ -1372,15 +1372,15 @@ Time: 0s">
 <div class="code" title="File: Z.v
 Line: 190
 Time: 0.004s">
-<div class="time" style="width: 2.4691358024691%"></div>
+<div class="time" style="width: 2.6845637583893%"></div>
 <pre> change (cring_catamorphism_fun R (pos (x * y)%pos)
       = cring_catamorphism_fun R (- (pos x : cring_Z))
         * cring_catamorphism_fun R (- (pos y : cring_Z))).</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 192
-Time: 0.01s">
-<div class="time" style="width: 6.1728395061728%"></div>
+Time: 0.009s">
+<div class="time" style="width: 6.0402684563758%"></div>
 <pre>
     by rewrite 2 cring_catamorphism_fun_negate, cring_catamorphism_fun_pos_mult,
       rng_mult_negate_negate.</pre>
@@ -1400,16 +1400,16 @@ Time: 0s">
 </div>
 <div class="code" title="File: Z.v
 Line: 195
-Time: 0.005s">
-<div class="time" style="width: 3.0864197530864%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.6845637583893%"></div>
 <pre> change (cring_catamorphism_fun R (- (pos (x * y)%pos : cring_Z))
       = cring_catamorphism_fun R (- (pos x : cring_Z))
         * cring_catamorphism_fun R (pos y)).</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 197
-Time: 0.016s">
-<div class="time" style="width: 9.8765432098765%"></div>
+Time: 0.014s">
+<div class="time" style="width: 9.3959731543624%"></div>
 <pre>
     by rewrite 2 cring_catamorphism_fun_negate, cring_catamorphism_fun_pos_mult, rng_mult_negate_l.</pre>
 </div>
@@ -1428,16 +1428,16 @@ Time: 0s">
 </div>
 <div class="code" title="File: Z.v
 Line: 199
-Time: 0.005s">
-<div class="time" style="width: 3.0864197530864%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.6845637583893%"></div>
 <pre> change (cring_catamorphism_fun R (- (pos (x * y)%pos : cring_Z))
       = cring_catamorphism_fun R (pos x)
         * cring_catamorphism_fun R (- (pos y : cring_Z))).</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 201
-Time: 0.01s">
-<div class="time" style="width: 6.1728395061728%"></div>
+Time: 0.009s">
+<div class="time" style="width: 6.0402684563758%"></div>
 <pre>
     by rewrite 2 cring_catamorphism_fun_negate, cring_catamorphism_fun_pos_mult, rng_mult_negate_r.</pre>
 </div>
@@ -1449,15 +1449,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Z.v
 Line: 202
-Time: 0.002s">
-<div class="time" style="width: 1.2345679012346%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.67114093959732%"></div>
 <pre>
   apply cring_catamorphism_fun_pos_mult.</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 203
-Time: 0.011s">
-<div class="time" style="width: 6.7901234567901%"></div>
+Time: 0.009s">
+<div class="time" style="width: 6.0402684563758%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -1499,14 +1499,14 @@ Time: 0s">
 <div class="code" title="File: Z.v
 Line: 209
 Time: 0.003s">
-<div class="time" style="width: 1.8518518518519%"></div>
+<div class="time" style="width: 2.0134228187919%"></div>
 <pre>
   repeat split; exact _.</pre>
 </div>
 <div class="code" title="File: Z.v
 Line: 210
 Time: 0.001s">
-<div class="time" style="width: 0.61728395061728%"></div>
+<div class="time" style="width: 0.67114093959732%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -1521,7 +1521,7 @@ Time: 0s">
 <div class="code" title="File: Z.v
 Line: 213
 Time: 0.001s">
-<div class="time" style="width: 0.61728395061728%"></div>
+<div class="time" style="width: 0.67114093959732%"></div>
 <pre>Global Instance isinitial_cring_Z : IsInitial cring_Z.</pre>
 </div>
 <div class="code" title="File: Z.v
@@ -1547,8 +1547,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Z.v
 Line: 216
-Time: 0.001s">
-<div class="time" style="width: 0.61728395061728%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   exists (rng_homo_int R).</pre>
 </div>
@@ -1676,8 +1676,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Z.v
 Line: 231
-Time: 0.001s">
-<div class="time" style="width: 0.61728395061728%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> by rewrite 2 rng_homo_zero.</pre>
 </div>
 <div class="code" title="File: Z.v
@@ -1784,7 +1784,7 @@ Time: 0s">
 <div class="code" title="File: Z.v
 Line: 242
 Time: 0.008s">
-<div class="time" style="width: 4.9382716049383%"></div>
+<div class="time" style="width: 5.3691275167785%"></div>
 <pre>
 Defined.</pre>
 </div>

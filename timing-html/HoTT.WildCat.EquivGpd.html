@@ -38,21 +38,21 @@ Time: 0s">
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 2
-Time: 0.029s">
-<div class="time" style="width: 54.716981132075%"></div>
+Time: 0.026s">
+<div class="time" style="width: 54.166666666667%"></div>
 <pre>Require Import Basics.</pre>
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 2
 Time: 0.002s">
-<div class="time" style="width: 3.7735849056604%"></div>
+<div class="time" style="width: 4.1666666666667%"></div>
 <pre>
 Require Import WildCat.Core.</pre>
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 3
-Time: 0.004s">
-<div class="time" style="width: 7.5471698113208%"></div>
+Time: 0.003s">
+<div class="time" style="width: 6.25%"></div>
 <pre>
 Require Import WildCat.NatTrans.</pre>
 </div>
@@ -77,8 +77,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 10
-Time: 0.002s">
-<div class="time" style="width: 3.7735849056604%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>Class SplEssSurj {A B : Type} `{Is0Gpd A, Is0Gpd B}
       (F : A -&gt; B) `{!Is0Functor F} 
   := esssurj : forall b:B, { a:A &amp; F a $== b }.</pre>
@@ -101,8 +101,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 16
-Time: 0.005s">
-<div class="time" style="width: 9.4339622641509%"></div>
+Time: 0.004s">
+<div class="time" style="width: 8.3333333333333%"></div>
 <pre>Class IsEquiv0Gpd {A B : Type} `{Is0Gpd A, Is0Gpd B}
       (F : A -&gt; B) `{!Is0Functor F} :=
 {
@@ -128,7 +128,7 @@ Arguments essinj0 {A B _ _ _ _ _ _} F {_ _ x y} f.</pre>
 <div class="code" title="File: EquivGpd.v
 Line: 24
 Time: 0.002s">
-<div class="time" style="width: 3.7735849056604%"></div>
+<div class="time" style="width: 4.1666666666667%"></div>
 <pre>
 
 Definition equiv0gpd_inv {A B : Type} (F : A -&gt; B) `{IsEquiv0Gpd A B F} : B -&gt; A
@@ -147,7 +147,7 @@ Time: 0s">
 <div class="code" title="File: EquivGpd.v
 Line: 30
 Time: 0.002s">
-<div class="time" style="width: 3.7735849056604%"></div>
+<div class="time" style="width: 4.1666666666667%"></div>
 <pre>Global Instance is0functor_equiv0gpd_inv
        {A B : Type} (F : A -&gt; B) `{IsEquiv0Gpd A B F}
   : Is0Functor (equiv0gpd_inv F).</pre>
@@ -169,14 +169,14 @@ Time: 0s">
 <div class="code" title="File: EquivGpd.v
 Line: 34
 Time: 0.001s">
-<div class="time" style="width: 1.8867924528302%"></div>
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>
   pose (p := (esssurj F x).2).</pre>
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 35
 Time: 0.001s">
-<div class="time" style="width: 1.8867924528302%"></div>
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>
   pose (q := (esssurj F y).2).</pre>
 </div>
@@ -190,7 +190,7 @@ Time: 0s">
 <div class="code" title="File: EquivGpd.v
 Line: 37
 Time: 0.001s">
-<div class="time" style="width: 1.8867924528302%"></div>
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>
   pose (f' := p $@ f $@ q^$).</pre>
 </div>
@@ -203,8 +203,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 39
-Time: 0.001s">
-<div class="time" style="width: 1.8867924528302%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -220,8 +220,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 43
-Time: 0.001s">
-<div class="time" style="width: 1.8867924528302%"></div>
+Time: 0.002s">
+<div class="time" style="width: 4.1666666666667%"></div>
 <pre>Definition eisretr0gpd_inv {A B : Type} (F : A -&gt; B) `{IsEquiv0Gpd A B F}
   : F o equiv0gpd_inv F $=&gt; idmap.</pre>
 </div>
@@ -255,8 +255,8 @@ Defined.</pre>
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 48
-Time: 0.002s">
-<div class="time" style="width: 3.7735849056604%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>
 
 Definition eissect0gpd_inv {A B : Type} (F : A -&gt; B) `{IsEquiv0Gpd A B F}
@@ -278,8 +278,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 53
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>
   apply (essinj0 F).</pre>
 </div>
@@ -308,7 +308,7 @@ Time: 0s">
 <div class="code" title="File: EquivGpd.v
 Line: 58
 Time: 0.002s">
-<div class="time" style="width: 3.7735849056604%"></div>
+<div class="time" style="width: 4.1666666666667%"></div>
 <pre>Definition isesssurj_transf {A B : Type} {F : A -&gt; B} {G : A -&gt; B}
            `{SplEssSurj A B F} `{!Is0Functor G} (alpha : G $=&gt; F)
   : SplEssSurj G.</pre>
@@ -329,15 +329,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 62
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>
   exists ((esssurj F b).1).</pre>
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 63
 Time: 0.001s">
-<div class="time" style="width: 1.8867924528302%"></div>
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>
   refine (_ $@ (esssurj F b).2).</pre>
 </div>
@@ -357,8 +357,8 @@ Defined.</pre>
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 66
-Time: 0.001s">
-<div class="time" style="width: 1.8867924528302%"></div>
+Time: 0.002s">
+<div class="time" style="width: 4.1666666666667%"></div>
 <pre>
 
 Definition isequiv0gpd_transf {A B : Type} {F : A -&gt; B} {G : A -&gt; B}
@@ -388,8 +388,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 73
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre> apply (isesssurj_transf alpha).</pre>
 </div>
 <div class="code" title="File: EquivGpd.v
@@ -428,8 +428,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 77
-Time: 0.001s">
-<div class="time" style="width: 1.8867924528302%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> symmetry; apply alpha.</pre>
 </div>
 <div class="code" title="File: EquivGpd.v
@@ -471,7 +471,7 @@ Time: 0s">
 <div class="code" title="File: EquivGpd.v
 Line: 82
 Time: 0.001s">
-<div class="time" style="width: 1.8867924528302%"></div>
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>
   Context {A B C} `{Is0Gpd A, Is0Gpd B, Is0Gpd C}
        (G : B -&gt; C) (F : A -&gt; B) `{!Is0Functor G, !Is0Functor F}.</pre>
@@ -479,7 +479,7 @@ Time: 0.001s">
 <div class="code" title="File: EquivGpd.v
 Line: 84
 Time: 0.004s">
-<div class="time" style="width: 7.5471698113208%"></div>
+<div class="time" style="width: 8.3333333333333%"></div>
 <pre>
 
   Global Instance isesssurj_compose
@@ -503,21 +503,21 @@ Time: 0s">
 <div class="code" title="File: EquivGpd.v
 Line: 90
 Time: 0.002s">
-<div class="time" style="width: 3.7735849056604%"></div>
+<div class="time" style="width: 4.1666666666667%"></div>
 <pre>
     exists ((esssurj F (esssurj G c).1).1).</pre>
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 91
 Time: 0.001s">
-<div class="time" style="width: 1.8867924528302%"></div>
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>
     refine (_ $@ (esssurj G c).2).</pre>
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 92
-Time: 0.001s">
-<div class="time" style="width: 1.8867924528302%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     apply (fmap G).</pre>
 </div>
@@ -530,15 +530,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 94
-Time: 0.001s">
-<div class="time" style="width: 1.8867924528302%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   Defined.</pre>
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 95
 Time: 0.004s">
-<div class="time" style="width: 7.5471698113208%"></div>
+<div class="time" style="width: 8.3333333333333%"></div>
 <pre>
 
   Global Instance isequiv0gpd_compose
@@ -569,7 +569,7 @@ Time: 0s">
 <div class="code" title="File: EquivGpd.v
 Line: 102
 Time: 0.002s">
-<div class="time" style="width: 3.7735849056604%"></div>
+<div class="time" style="width: 4.1666666666667%"></div>
 <pre> exact _.</pre>
 </div>
 <div class="code" title="File: EquivGpd.v
@@ -594,8 +594,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 104
-Time: 0.001s">
-<div class="time" style="width: 1.8867924528302%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
       exact (essinj0 G f).</pre>
 </div>
@@ -608,8 +608,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 106
-Time: 0.004s">
-<div class="time" style="width: 7.5471698113208%"></div>
+Time: 0.003s">
+<div class="time" style="width: 6.25%"></div>
 <pre>
 
   Definition cancelL_isesssurj
@@ -632,22 +632,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 112
-Time: 0.003s">
-<div class="time" style="width: 5.6603773584906%"></div>
+Time: 0.002s">
+<div class="time" style="width: 4.1666666666667%"></div>
 <pre>
     exists ((esssurj (G o F) (G b)).1).</pre>
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 113
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>
     apply (essinj0 G).</pre>
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 114
-Time: 0.001s">
-<div class="time" style="width: 1.8867924528302%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     exact ((esssurj (G o F) (G b)).2).</pre>
 </div>
@@ -661,7 +661,7 @@ Time: 0s">
 <div class="code" title="File: EquivGpd.v
 Line: 116
 Time: 0.003s">
-<div class="time" style="width: 5.6603773584906%"></div>
+<div class="time" style="width: 6.25%"></div>
 <pre>
 
   Definition iffL_isesssurj `{!IsEquiv0Gpd G}
@@ -676,8 +676,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 120
-Time: 0.001s">
-<div class="time" style="width: 1.8867924528302%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     split; [ apply @cancelL_isesssurj | apply @isesssurj_compose ]; exact _.</pre>
 </div>
@@ -691,7 +691,7 @@ Time: 0s">
 <div class="code" title="File: EquivGpd.v
 Line: 122
 Time: 0.005s">
-<div class="time" style="width: 9.4339622641509%"></div>
+<div class="time" style="width: 10.416666666667%"></div>
 <pre>
 
   Definition cancelL_isequiv0gpd
@@ -721,8 +721,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 129
-Time: 0.001s">
-<div class="time" style="width: 1.8867924528302%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> apply cancelL_isesssurj.</pre>
 </div>
 <div class="code" title="File: EquivGpd.v
@@ -741,7 +741,7 @@ Time: 0s">
 <div class="code" title="File: EquivGpd.v
 Line: 130
 Time: 0.003s">
-<div class="time" style="width: 5.6603773584906%"></div>
+<div class="time" style="width: 6.25%"></div>
 <pre>
       exact (essinj0 (G o F) (fmap G f)).</pre>
 </div>
@@ -755,7 +755,7 @@ Time: 0s">
 <div class="code" title="File: EquivGpd.v
 Line: 132
 Time: 0.003s">
-<div class="time" style="width: 5.6603773584906%"></div>
+<div class="time" style="width: 6.25%"></div>
 <pre>
 
   Definition iffL_isequiv0gpd `{!IsEquiv0Gpd G}
@@ -770,8 +770,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 136
-Time: 0.001s">
-<div class="time" style="width: 1.8867924528302%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     split; [ apply @cancelL_isequiv0gpd | apply @isequiv0gpd_compose ]; exact _.</pre>
 </div>
@@ -784,8 +784,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 138
-Time: 0.003s">
-<div class="time" style="width: 5.6603773584906%"></div>
+Time: 0.002s">
+<div class="time" style="width: 4.1666666666667%"></div>
 <pre>
 
   Definition cancelR_isesssurj `{!SplEssSurj (G o F)}
@@ -808,14 +808,14 @@ Time: 0s">
 <div class="code" title="File: EquivGpd.v
 Line: 143
 Time: 0.003s">
-<div class="time" style="width: 5.6603773584906%"></div>
+<div class="time" style="width: 6.25%"></div>
 <pre>
     exists (F (esssurj (G o F) c).1).</pre>
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 144
-Time: 0.001s">
-<div class="time" style="width: 1.8867924528302%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     exact ((esssurj (G o F) c).2).</pre>
 </div>
@@ -828,8 +828,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 146
-Time: 0.004s">
-<div class="time" style="width: 7.5471698113208%"></div>
+Time: 0.003s">
+<div class="time" style="width: 6.25%"></div>
 <pre>
 
   Definition iffR_isesssurj `{!SplEssSurj F}
@@ -845,7 +845,7 @@ Time: 0s">
 <div class="code" title="File: EquivGpd.v
 Line: 150
 Time: 0.001s">
-<div class="time" style="width: 1.8867924528302%"></div>
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>
     split; [ apply @cancelR_isesssurj | intros; apply @isesssurj_compose ]; exact _.</pre>
 </div>
@@ -859,7 +859,7 @@ Time: 0s">
 <div class="code" title="File: EquivGpd.v
 Line: 152
 Time: 0.004s">
-<div class="time" style="width: 7.5471698113208%"></div>
+<div class="time" style="width: 8.3333333333333%"></div>
 <pre>
 
   Definition cancelR_isequiv0gpd
@@ -889,8 +889,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 159
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre> apply cancelR_isesssurj.</pre>
 </div>
 <div class="code" title="File: EquivGpd.v
@@ -908,15 +908,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 160
-Time: 0.002s">
-<div class="time" style="width: 3.7735849056604%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>
       pose (p := (esssurj F x).2).</pre>
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 161
 Time: 0.001s">
-<div class="time" style="width: 1.8867924528302%"></div>
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>
       pose (q := (esssurj F y).2).</pre>
 </div>
@@ -929,8 +929,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 163
-Time: 0.001s">
-<div class="time" style="width: 1.8867924528302%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
       refine (p^$ $@ _ $@ q).</pre>
 </div>
@@ -943,8 +943,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 165
-Time: 0.004s">
-<div class="time" style="width: 7.5471698113208%"></div>
+Time: 0.003s">
+<div class="time" style="width: 6.25%"></div>
 <pre>
       apply (essinj0 (G o F)).</pre>
 </div>
@@ -983,15 +983,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 169
-Time: 0.001s">
-<div class="time" style="width: 1.8867924528302%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   Defined.</pre>
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 170
-Time: 0.004s">
-<div class="time" style="width: 7.5471698113208%"></div>
+Time: 0.003s">
+<div class="time" style="width: 6.25%"></div>
 <pre>
 
   Definition iffR_isequiv0gpd `{!IsEquiv0Gpd F}
@@ -1006,8 +1006,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 174
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>
     split; [ apply @cancelR_isequiv0gpd | intros; apply @isequiv0gpd_compose ]; exact _.</pre>
 </div>
@@ -1021,7 +1021,7 @@ Time: 0s">
 <div class="code" title="File: EquivGpd.v
 Line: 176
 Time: 0.004s">
-<div class="time" style="width: 7.5471698113208%"></div>
+<div class="time" style="width: 8.3333333333333%"></div>
 <pre>
 
 End ComposeAndCancel.</pre>
@@ -1037,7 +1037,7 @@ Time: 0s">
 <div class="code" title="File: EquivGpd.v
 Line: 180
 Time: 0.007s">
-<div class="time" style="width: 13.207547169811%"></div>
+<div class="time" style="width: 14.583333333333%"></div>
 <pre>Definition isesssurj_iff_commsq {A B C D : Type}
            {F : A -&gt; B} {G : C -&gt; D} {H : A -&gt; C} {K : B -&gt; D}
            `{IsEquiv0Gpd A C H} `{IsEquiv0Gpd B D K}
@@ -1068,14 +1068,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 188
-Time: 0.053s">
+Time: 0.048s">
 <div class="time" style="width: 100%"></div>
 <pre> srapply (cancelR_isesssurj G H); try exact _.</pre>
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 188
-Time: 0.006s">
-<div class="time" style="width: 11.320754716981%"></div>
+Time: 0.005s">
+<div class="time" style="width: 10.416666666667%"></div>
 <pre>
     apply (isesssurj_transf (fun a =&gt; (p a)^$)).</pre>
 </div>
@@ -1088,28 +1088,28 @@ Time: 0s">
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 190
-Time: 0.037s">
-<div class="time" style="width: 69.811320754717%"></div>
+Time: 0.03s">
+<div class="time" style="width: 62.5%"></div>
 <pre> srapply (cancelL_isesssurj K F); try exact _.</pre>
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 190
-Time: 0.005s">
-<div class="time" style="width: 9.4339622641509%"></div>
+Time: 0.004s">
+<div class="time" style="width: 8.3333333333333%"></div>
 <pre>
     apply (isesssurj_transf p).</pre>
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 191
 Time: 0.001s">
-<div class="time" style="width: 1.8867924528302%"></div>
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 192
-Time: 0.005s">
-<div class="time" style="width: 9.4339622641509%"></div>
+Time: 0.004s">
+<div class="time" style="width: 8.3333333333333%"></div>
 <pre>
 
 Definition isequiv0gpd_iff_commsq {A B C D : Type}
@@ -1143,13 +1143,13 @@ Time: 0s">
 <div class="code" title="File: EquivGpd.v
 Line: 202
 Time: 0.013s">
-<div class="time" style="width: 24.528301886792%"></div>
+<div class="time" style="width: 27.083333333333%"></div>
 <pre> srapply (cancelR_isequiv0gpd G H); try exact _.</pre>
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 202
 Time: 0.003s">
-<div class="time" style="width: 5.6603773584906%"></div>
+<div class="time" style="width: 6.25%"></div>
 <pre>
     apply (isequiv0gpd_transf (fun a =&gt; (p a)^$)).</pre>
 </div>
@@ -1162,21 +1162,21 @@ Time: 0s">
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 204
-Time: 0.017s">
-<div class="time" style="width: 32.075471698113%"></div>
+Time: 0.014s">
+<div class="time" style="width: 29.166666666667%"></div>
 <pre> srapply (cancelL_isequiv0gpd K F); try exact _.</pre>
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 204
-Time: 0.003s">
-<div class="time" style="width: 5.6603773584906%"></div>
+Time: 0.002s">
+<div class="time" style="width: 4.1666666666667%"></div>
 <pre>
     apply (isequiv0gpd_transf p).</pre>
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 205
 Time: 0.001s">
-<div class="time" style="width: 1.8867924528302%"></div>
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -1192,8 +1192,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 209
-Time: 0.006s">
-<div class="time" style="width: 11.320754716981%"></div>
+Time: 0.005s">
+<div class="time" style="width: 10.416666666667%"></div>
 <pre>Definition isesssurj_iff_sigma {A : Type} (B C : A -&gt; Type)
  `{forall a, IsGraph (B a)} `{forall a, Is01Cat (B a)} `{forall a, Is0Gpd (B a)}
  `{forall a, IsGraph (C a)} `{forall a, Is01Cat (C a)} `{forall a, Is0Gpd (C a)}
@@ -1238,7 +1238,7 @@ Time: 0s">
 <div class="code" title="File: EquivGpd.v
 Line: 218
 Time: 0.001s">
-<div class="time" style="width: 1.8867924528302%"></div>
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>
     destruct s as [[a' b] [p q]]; cbn in *.</pre>
 </div>
@@ -1279,7 +1279,7 @@ Time: 0s">
 <div class="code" title="File: EquivGpd.v
 Line: 223
 Time: 0.001s">
-<div class="time" style="width: 1.8867924528302%"></div>
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>
     exists (a ; (esssurj (F a) c).1); cbn.</pre>
 </div>
@@ -1299,15 +1299,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 226
-Time: 0.002s">
-<div class="time" style="width: 3.7735849056604%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 227
-Time: 0.007s">
-<div class="time" style="width: 13.207547169811%"></div>
+Time: 0.006s">
+<div class="time" style="width: 12.5%"></div>
 <pre>
 
 Definition isequiv0gpd_sigma {A : Type} (B C : A -&gt; Type)
@@ -1341,7 +1341,7 @@ Time: 0s">
 <div class="code" title="File: EquivGpd.v
 Line: 237
 Time: 0.004s">
-<div class="time" style="width: 7.5471698113208%"></div>
+<div class="time" style="width: 8.3333333333333%"></div>
 <pre> apply isesssurj_iff_sigma; exact _.</pre>
 </div>
 <div class="code" title="File: EquivGpd.v
@@ -1354,7 +1354,7 @@ Time: 0s">
 <div class="code" title="File: EquivGpd.v
 Line: 238
 Time: 0.001s">
-<div class="time" style="width: 1.8867924528302%"></div>
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre> intros [a1 b1] [a2 b2] [p f]; cbn in *.</pre>
 </div>
 <div class="code" title="File: EquivGpd.v
@@ -1380,8 +1380,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: EquivGpd.v
 Line: 241
-Time: 0.001s">
-<div class="time" style="width: 1.8867924528302%"></div>
+Time: 0.002s">
+<div class="time" style="width: 4.1666666666667%"></div>
 <pre>
 Defined.</pre>
 </div>

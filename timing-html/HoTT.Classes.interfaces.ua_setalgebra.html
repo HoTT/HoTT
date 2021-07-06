@@ -39,7 +39,7 @@ Time: 0s">
 </div>
 <div class="code" title="File: ua_setalgebra.v
 Line: 3
-Time: 0.109s">
+Time: 0.103s">
 <div class="time" style="width: 100%"></div>
 <pre>Require Export HoTT.Classes.interfaces.ua_algebra.</pre>
 </div>
@@ -54,7 +54,7 @@ Require Import HoTT.Basics.Equivalences.</pre>
 <div class="code" title="File: ua_setalgebra.v
 Line: 5
 Time: 0.001s">
-<div class="time" style="width: 0.91743119266055%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
 
 Record SetAlgebra {σ : Signature} : Type := BuildSetAlgebra
@@ -114,8 +114,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: ua_setalgebra.v
 Line: 23
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
   destruct A as [A AH], B as [B BH].</pre>
 </div>
@@ -127,22 +127,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: ua_setalgebra.v
 Line: 24
-Time: 0.002s">
-<div class="time" style="width: 1.8348623853211%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
   transparent assert (a : (p#AH = BH)) by apply path_ishprop.</pre>
 </div>
 <div class="code" title="File: ua_setalgebra.v
 Line: 25
 Time: 0.001s">
-<div class="time" style="width: 0.91743119266055%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
   by path_induction.</pre>
 </div>
 <div class="code" title="File: ua_setalgebra.v
 Line: 26
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -173,7 +173,7 @@ Proof.</pre>
 <div class="code" title="File: ua_setalgebra.v
 Line: 32
 Time: 0.001s">
-<div class="time" style="width: 0.91743119266055%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
   transparent assert (p :
       (∀ I : IsHSetAlgebra A, path_ishprop I I = idpath)).</pre>
@@ -194,7 +194,7 @@ Time: 0s">
 <div class="code" title="File: ua_setalgebra.v
 Line: 35
 Time: 0.004s">
-<div class="time" style="width: 3.6697247706422%"></div>
+<div class="time" style="width: 3.8834951456311%"></div>
 <pre> apply path_ishprop.</pre>
 </div>
 <div class="code" title="File: ua_setalgebra.v
@@ -212,14 +212,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: ua_setalgebra.v
 Line: 36
-Time: 0.002s">
-<div class="time" style="width: 1.8348623853211%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre> by rewrite p.</pre>
 </div>
 <div class="code" title="File: ua_setalgebra.v
 Line: 36
 Time: 0.001s">
-<div class="time" style="width: 0.91743119266055%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -267,7 +267,7 @@ Time: 0s">
 <div class="code" title="File: ua_setalgebra.v
 Line: 47
 Time: 0.002s">
-<div class="time" style="width: 1.8348623853211%"></div>
+<div class="time" style="width: 1.9417475728155%"></div>
 <pre> abstract (intro p; induction p; by rewrite path_setalgebra_1).</pre>
 </div>
 <div class="code" title="File: ua_setalgebra.v
@@ -280,7 +280,7 @@ Time: 0s">
 <div class="code" title="File: ua_setalgebra.v
 Line: 48
 Time: 0.006s">
-<div class="time" style="width: 5.5045871559633%"></div>
+<div class="time" style="width: 5.8252427184466%"></div>
 <pre> abstract (
       intro e; destruct A as [A AH], B as [B BH];
       cbn in e; destruct e;
@@ -289,7 +289,7 @@ Time: 0.006s">
 <div class="code" title="File: ua_setalgebra.v
 Line: 51
 Time: 0.001s">
-<div class="time" style="width: 0.91743119266055%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
 Defined.</pre>
 </div>

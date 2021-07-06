@@ -30,14 +30,14 @@ pre {
 
 <div class="code" title="File: ObjectClassifier.v
 Line: 1
-Time: 0.11s">
-<div class="time" style="width: 63.583815028902%"></div>
+Time: 0.104s">
+<div class="time" style="width: 68.421052631579%"></div>
 <pre>Require Import HoTT.Basics HoTT.Types HFiber Pullback Pointed Truncations.</pre>
 </div>
 <div class="code" title="File: ObjectClassifier.v
 Line: 1
-Time: 0.001s">
-<div class="time" style="width: 0.57803468208092%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 Require Import Modalities.ReflectiveSubuniverse Modalities.Identity.</pre>
 </div>
@@ -143,8 +143,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ObjectClassifier.v
 Line: 24
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.65789473684211%"></div>
 <pre>
     srapply path_sigma; cbn.</pre>
 </div>
@@ -157,8 +157,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ObjectClassifier.v
 Line: 26
-Time: 0.002s">
-<div class="time" style="width: 1.1560693641618%"></div>
+Time: 0.003s">
+<div class="time" style="width: 1.9736842105263%"></div>
 <pre> exact (path_universe (equiv_fibration_replacement _)^-1%equiv).</pre>
 </div>
 <div class="code" title="File: ObjectClassifier.v
@@ -196,15 +196,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: ObjectClassifier.v
 Line: 29
-Time: 0.002s">
-<div class="time" style="width: 1.1560693641618%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.65789473684211%"></div>
 <pre>
     exact ((path_universe (@hfiber_fibration  _ y P))^).</pre>
 </div>
 <div class="code" title="File: ObjectClassifier.v
 Line: 30
 Time: 0.001s">
-<div class="time" style="width: 0.57803468208092%"></div>
+<div class="time" style="width: 0.65789473684211%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -218,8 +218,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ObjectClassifier.v
 Line: 33
-Time: 0.001s">
-<div class="time" style="width: 0.57803468208092%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>Definition equiv_sigma_fibration `{Univalence} {Y : Type@{u}}
   : (Y -&gt; Type@{u}) &lt;~&gt; { X : Type@{u} &amp; X -&gt; Y }
   := Build_Equiv _ _ _ isequiv_sigma_fibration.</pre>
@@ -252,7 +252,7 @@ Time: 0s">
 <div class="code" title="File: ObjectClassifier.v
 Line: 42
 Time: 0.001s">
-<div class="time" style="width: 0.57803468208092%"></div>
+<div class="time" style="width: 0.65789473684211%"></div>
 <pre>Definition objectclassifier_square {A : Type} (P : A -&gt; Type)
   : P o pr1 == pointed_type o (topmap P)
   := fun e : sig P =&gt; idpath (P e.1).</pre>
@@ -282,7 +282,7 @@ Proof.</pre>
 <div class="code" title="File: ObjectClassifier.v
 Line: 48
 Time: 0.001s">
-<div class="time" style="width: 0.57803468208092%"></div>
+<div class="time" style="width: 0.65789473684211%"></div>
 <pre>
   srapply isequiv_adjointify.</pre>
 </div>
@@ -315,8 +315,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ObjectClassifier.v
 Line: 52
-Time: 0.002s">
-<div class="time" style="width: 1.1560693641618%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.65789473684211%"></div>
 <pre> intros [a [[T t] p]]; cbn in p.</pre>
 </div>
 <div class="code" title="File: ObjectClassifier.v
@@ -329,7 +329,7 @@ Time: 0s">
 <div class="code" title="File: ObjectClassifier.v
 Line: 53
 Time: 0.001s">
-<div class="time" style="width: 0.57803468208092%"></div>
+<div class="time" style="width: 0.65789473684211%"></div>
 <pre>
     by induction p.</pre>
 </div>
@@ -342,14 +342,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: ObjectClassifier.v
 Line: 55
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.65789473684211%"></div>
 <pre> reflexivity.</pre>
 </div>
 <div class="code" title="File: ObjectClassifier.v
 Line: 55
 Time: 0.002s">
-<div class="time" style="width: 1.1560693641618%"></div>
+<div class="time" style="width: 1.3157894736842%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -380,7 +380,7 @@ Time: 0s">
 <div class="code" title="File: ObjectClassifier.v
 Line: 61
 Time: 0.001s">
-<div class="time" style="width: 0.57803468208092%"></div>
+<div class="time" style="width: 0.65789473684211%"></div>
 <pre>Proposition equiv_sigma_fibration_p@{u v +} `{Univalence} {Y : pType@{u}} {F : Type@{u}}
   : (Y -&gt;* (Type@{u}, F)) &lt;~&gt; { p : Slice@{u v} Y &amp; hfiber p.2 (point Y) &lt;~&gt; F }.</pre>
 </div>
@@ -400,8 +400,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ObjectClassifier.v
 Line: 64
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.65789473684211%"></div>
 <pre>
   srapply (equiv_functor_sigma' equiv_sigma_fibration); intro P; cbn.</pre>
 </div>
@@ -428,8 +428,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ObjectClassifier.v
 Line: 68
-Time: 0.001s">
-<div class="time" style="width: 0.57803468208092%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -444,7 +444,7 @@ Time: 0s">
 <div class="code" title="File: ObjectClassifier.v
 Line: 71
 Time: 0.001s">
-<div class="time" style="width: 0.57803468208092%"></div>
+<div class="time" style="width: 0.65789473684211%"></div>
 <pre>Lemma equiv_pfiber_fibration_pfibration@{u v} {Y F : pType@{u}}
   : { p : Slice@{u v} Y &amp; hfiber p.2 (point Y) &lt;~&gt; F}
       &lt;~&gt; { p : pSlice@{u v} Y &amp; pfiber p.2 &lt;~&gt;* F }.</pre>
@@ -459,7 +459,7 @@ Proof.</pre>
 <div class="code" title="File: ObjectClassifier.v
 Line: 74
 Time: 0.007s">
-<div class="time" style="width: 4.0462427745665%"></div>
+<div class="time" style="width: 4.6052631578947%"></div>
 <pre>
   equiv_via
     (sig@{v u} (fun X : Type@{u} =&gt;
@@ -492,7 +492,7 @@ Time: 0s">
 <div class="code" title="File: ObjectClassifier.v
 Line: 83
 Time: 0.004s">
-<div class="time" style="width: 2.3121387283237%"></div>
+<div class="time" style="width: 2.6315789473684%"></div>
 <pre> do 5 (rapply equiv_functor_sigma_id; intro).</pre>
 </div>
 <div class="code" title="File: ObjectClassifier.v
@@ -511,7 +511,7 @@ Time: 0s">
 </div>
 <div class="code" title="File: ObjectClassifier.v
 Line: 85
-Time: 0.173s">
+Time: 0.152s">
 <div class="time" style="width: 100%"></div>
 <pre> make_equiv_contr_basedpaths.</pre>
 </div>
@@ -537,8 +537,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ObjectClassifier.v
 Line: 87
-Time: 0.002s">
-<div class="time" style="width: 1.1560693641618%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.65789473684211%"></div>
 <pre> do 5 (rapply equiv_functor_sigma_id; intro).</pre>
 </div>
 <div class="code" title="File: ObjectClassifier.v
@@ -556,22 +556,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: ObjectClassifier.v
 Line: 88
-Time: 0.083s">
-<div class="time" style="width: 47.976878612717%"></div>
+Time: 0.073s">
+<div class="time" style="width: 48.026315789474%"></div>
 <pre>
     make_equiv.</pre>
 </div>
 <div class="code" title="File: ObjectClassifier.v
 Line: 89
-Time: 0.113s">
-<div class="time" style="width: 65.317919075145%"></div>
+Time: 0.098s">
+<div class="time" style="width: 64.473684210526%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: ObjectClassifier.v
 Line: 90
 Time: 0.001s">
-<div class="time" style="width: 0.57803468208092%"></div>
+<div class="time" style="width: 0.65789473684211%"></div>
 <pre>
 
 Definition equiv_sigma_pfibration@{u v +} `{Univalence} {Y F : pType@{u}}
@@ -645,7 +645,7 @@ Time: 0s">
 <div class="code" title="File: ObjectClassifier.v
 Line: 110
 Time: 0.001s">
-<div class="time" style="width: 0.57803468208092%"></div>
+<div class="time" style="width: 0.65789473684211%"></div>
 <pre>Proposition equiv_sigma_fibration_Op@{u v +} `{Univalence} {O : Subuniverse}
             {Y : pType@{u}} {F : Type@{u}} `{inO : In O F}
   : (Y -&gt;* (Type_ O, (F; inO)))
@@ -667,15 +667,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: ObjectClassifier.v
 Line: 115
-Time: 0.001s">
-<div class="time" style="width: 0.57803468208092%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   srapply (equiv_functor_sigma' equiv_sigma_fibration_O); intro P; cbn.</pre>
 </div>
 <div class="code" title="File: ObjectClassifier.v
 Line: 116
-Time: 0.003s">
-<div class="time" style="width: 1.7341040462428%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.3157894736842%"></div>
 <pre>
   refine (_ oE (equiv_path_sigma_hprop _ _)^-1%equiv); cbn.</pre>
 </div>
@@ -702,8 +702,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ObjectClassifier.v
 Line: 120
-Time: 0.002s">
-<div class="time" style="width: 1.1560693641618%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.65789473684211%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -718,7 +718,7 @@ Time: 0s">
 <div class="code" title="File: ObjectClassifier.v
 Line: 123
 Time: 0.001s">
-<div class="time" style="width: 0.57803468208092%"></div>
+<div class="time" style="width: 0.65789473684211%"></div>
 <pre>Proposition equiv_sigma_fibration_Op_connected@{u v +} `{Univalence} {O : Subuniverse}
             {Y : pType@{u}} `{IsConnected 0 Y} {F : Type@{u}} `{inO : In O F}
   : (Y -&gt;* (Type_ O, (F; inO)))
@@ -768,29 +768,29 @@ Time: 0s">
 </div>
 <div class="code" title="File: ObjectClassifier.v
 Line: 132
-Time: 0.004s">
-<div class="time" style="width: 2.3121387283237%"></div>
+Time: 0.003s">
+<div class="time" style="width: 1.9736842105263%"></div>
 <pre>
   rapply contr_inhabited_hprop.</pre>
 </div>
 <div class="code" title="File: ObjectClassifier.v
 Line: 133
-Time: 0.036s">
-<div class="time" style="width: 20.809248554913%"></div>
+Time: 0.031s">
+<div class="time" style="width: 20.394736842105%"></div>
 <pre>
   rapply conn_point_elim@{u v u u u u u u v}.</pre>
 </div>
 <div class="code" title="File: ObjectClassifier.v
 Line: 134
 Time: 0.001s">
-<div class="time" style="width: 0.57803468208092%"></div>
+<div class="time" style="width: 0.65789473684211%"></div>
 <pre>
   apply (inO_equiv_inO F e^-1).</pre>
 </div>
 <div class="code" title="File: ObjectClassifier.v
 Line: 135
-Time: 0.002s">
-<div class="time" style="width: 1.1560693641618%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.65789473684211%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -807,7 +807,7 @@ Time: 0s">
 <div class="code" title="File: ObjectClassifier.v
 Line: 140
 Time: 0.001s">
-<div class="time" style="width: 0.57803468208092%"></div>
+<div class="time" style="width: 0.65789473684211%"></div>
 <pre>Proposition equiv_sigma_pfibration_O `{Univalence} (O : Subuniverse)
             {Y F : pType} `{inO : In O F}
   : (Y -&gt;* (Type_ O, (pointed_type F; inO)))
@@ -829,29 +829,29 @@ Time: 0s">
 </div>
 <div class="code" title="File: ObjectClassifier.v
 Line: 145
-Time: 0.001s">
-<div class="time" style="width: 0.57803468208092%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   refine (_ oE equiv_sigma_symm' _ (fun q =&gt; hfiber q.2 (point Y) &lt;~&gt; F)).</pre>
 </div>
 <div class="code" title="File: ObjectClassifier.v
 Line: 146
-Time: 0.009s">
-<div class="time" style="width: 5.2023121387283%"></div>
+Time: 0.006s">
+<div class="time" style="width: 3.9473684210526%"></div>
 <pre>
   refine (equiv_sigma_symm' (fun q =&gt; pfiber q.2 &lt;~&gt;* F) _ oE _).</pre>
 </div>
 <div class="code" title="File: ObjectClassifier.v
 Line: 147
-Time: 0.003s">
-<div class="time" style="width: 1.7341040462428%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.3157894736842%"></div>
 <pre>
   by rapply (equiv_functor_sigma' equiv_pfiber_fibration_pfibration).</pre>
 </div>
 <div class="code" title="File: ObjectClassifier.v
 Line: 148
 Time: 0.003s">
-<div class="time" style="width: 1.7341040462428%"></div>
+<div class="time" style="width: 1.9736842105263%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -866,7 +866,7 @@ Time: 0s">
 <div class="code" title="File: ObjectClassifier.v
 Line: 151
 Time: 0.002s">
-<div class="time" style="width: 1.1560693641618%"></div>
+<div class="time" style="width: 1.3157894736842%"></div>
 <pre>Definition equiv_sigma_pfibration_O_connected@{u v +} `{Univalence} (O : Subuniverse)
           {Y F : pType@{u}} `{IsConnected 0 Y} `{inO : In O F}
   : (Y -&gt;* (Type_ O, (pointed_type F; inO)))
@@ -884,7 +884,7 @@ Time: 0s">
 <div class="code" title="File: ObjectClassifier.v
 Line: 157
 Time: 0.002s">
-<div class="time" style="width: 1.1560693641618%"></div>
+<div class="time" style="width: 1.3157894736842%"></div>
 <pre>Definition equiv_pmap_typeO_type_connected `{Univalence} {O : Subuniverse}
       {Y : pType@{u}} `{IsConnected 0 Y} {F : Type@{u}} `{inO : In O F}
   : (Y -&gt;* (Type_ O, (F; inO))) &lt;~&gt; (Y -&gt;* (Type@{u}, F))

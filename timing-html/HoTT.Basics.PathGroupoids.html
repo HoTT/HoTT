@@ -40,8 +40,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 4
-Time: 0.017s">
-<div class="time" style="width: 33.333333333333%"></div>
+Time: 0.016s">
+<div class="time" style="width: 37.209302325581%"></div>
 <pre>Require Import Basics.Overture Basics.Tactics.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
@@ -123,7 +123,7 @@ Time: 0s">
 <div class="code" title="File: PathGroupoids.v
 Line: 68
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>Definition concat_p1 {A : Type} {x y : A} (p : x = y) :
   p @ 1 = p
   :=
@@ -140,7 +140,7 @@ Time: 0s">
 <div class="code" title="File: PathGroupoids.v
 Line: 73
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>Definition concat_1p {A : Type} {x y : A} (p : x = y) :
   1 @ p = p
   :=
@@ -156,8 +156,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 78
-Time: 0.009s">
-<div class="time" style="width: 17.647058823529%"></div>
+Time: 0.008s">
+<div class="time" style="width: 18.604651162791%"></div>
 <pre>Definition concat_p_pp {A : Type} {x y z t : A} (p : x = y) (q : y = z) (r : z = t) :
   p @ (q @ r) = (p @ q) @ r :=
   match r with idpath =&gt;
@@ -167,8 +167,8 @@ Time: 0.009s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 83
-Time: 0.009s">
-<div class="time" style="width: 17.647058823529%"></div>
+Time: 0.008s">
+<div class="time" style="width: 18.604651162791%"></div>
 <pre>
 
 Definition concat_pp_p {A : Type} {x y z t : A} (p : x = y) (q : y = z) (r : z = t) :
@@ -189,7 +189,7 @@ Time: 0s">
 <div class="code" title="File: PathGroupoids.v
 Line: 92
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>Definition concat_pV {A : Type} {x y : A} (p : x = y) :
   p @ p^ = 1
   :=
@@ -206,7 +206,7 @@ Time: 0s">
 <div class="code" title="File: PathGroupoids.v
 Line: 97
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>Definition concat_Vp {A : Type} {x y : A} (p : x = y) :
   p^ @ p = 1
   :=
@@ -224,8 +224,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 103
-Time: 0.003s">
-<div class="time" style="width: 5.8823529411765%"></div>
+Time: 0.002s">
+<div class="time" style="width: 4.6511627906977%"></div>
 <pre>Definition concat_V_pp {A : Type} {x y z : A} (p : x = y) (q : y = z) :
   p^ @ (p @ q) = q
   :=
@@ -236,7 +236,7 @@ Time: 0.003s">
 <div class="code" title="File: PathGroupoids.v
 Line: 108
 Time: 0.002s">
-<div class="time" style="width: 3.921568627451%"></div>
+<div class="time" style="width: 4.6511627906977%"></div>
 <pre>
 
 Definition concat_p_Vp {A : Type} {x y z : A} (p : x = y) (q : x = z) :
@@ -249,7 +249,7 @@ Definition concat_p_Vp {A : Type} {x y z : A} (p : x = y) (q : x = z) :
 <div class="code" title="File: PathGroupoids.v
 Line: 115
 Time: 0.003s">
-<div class="time" style="width: 5.8823529411765%"></div>
+<div class="time" style="width: 6.9767441860465%"></div>
 <pre>
 
 Definition concat_pp_V {A : Type} {x y z : A} (p : x = y) (q : y = z) :
@@ -262,7 +262,7 @@ Definition concat_pp_V {A : Type} {x y z : A} (p : x = y) (q : y = z) :
 <div class="code" title="File: PathGroupoids.v
 Line: 122
 Time: 0.004s">
-<div class="time" style="width: 7.843137254902%"></div>
+<div class="time" style="width: 9.3023255813953%"></div>
 <pre>
 
 Definition concat_pV_p {A : Type} {x y z : A} (p : x = z) (q : y = z) :
@@ -284,8 +284,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 133
-Time: 0.004s">
-<div class="time" style="width: 7.843137254902%"></div>
+Time: 0.003s">
+<div class="time" style="width: 6.9767441860465%"></div>
 <pre>Definition inv_pp {A : Type} {x y z : A} (p : x = y) (q : y = z) :
   (p @ q)^ = q^ @ p^
   :=
@@ -296,7 +296,7 @@ Time: 0.004s">
 <div class="code" title="File: PathGroupoids.v
 Line: 138
 Time: 0.003s">
-<div class="time" style="width: 5.8823529411765%"></div>
+<div class="time" style="width: 6.9767441860465%"></div>
 <pre>
 
 Definition inv_Vp {A : Type} {x y z : A} (p : y = x) (q : y = z) :
@@ -401,7 +401,7 @@ Time: 0s">
 <div class="code" title="File: PathGroupoids.v
 Line: 159
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>Definition inv_V {A : Type} {x y : A} (p : x = y) :
   p^^ = p
   :=
@@ -934,8 +934,8 @@ Defined.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 248
-Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+Time: 0.002s">
+<div class="time" style="width: 4.6511627906977%"></div>
 <pre>
 
 Definition moveR_M1 {A : Type} {x y : A} (p q : x = y) :
@@ -1313,8 +1313,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 321
-Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>Definition moveR_transport_p_V {A : Type} (P : A -&gt; Type) {x y : A}
            (p : x = y) (u : P x) (v : P y) (q : u = p^ # v)
   : (moveR_transport_p P p u v q)^ = moveL_transport_p P p v u q^.</pre>
@@ -1328,8 +1328,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 324
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
   destruct p; reflexivity.</pre>
 </div>
@@ -1342,8 +1342,8 @@ Defined.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 326
-Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
 Definition moveR_transport_V_V {A : Type} (P : A -&gt; Type) {x y : A}
@@ -1373,8 +1373,8 @@ Defined.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 333
-Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
 Definition moveL_transport_V_V {A : Type} (P : A -&gt; Type) {x y : A}
@@ -1390,8 +1390,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 338
-Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   destruct p; reflexivity.</pre>
 </div>
@@ -1405,7 +1405,7 @@ Defined.</pre>
 <div class="code" title="File: PathGroupoids.v
 Line: 340
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
 
 Definition moveL_transport_p_V {A : Type} (P : A -&gt; Type) {x y : A}
@@ -1421,8 +1421,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 345
-Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   destruct p; reflexivity.</pre>
 </div>
@@ -1457,8 +1457,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 357
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
 
 Definition apD_1 {A B} (x : A) (f : forall x : A, B x) :
@@ -1477,7 +1477,7 @@ Time: 0s">
 <div class="code" title="File: PathGroupoids.v
 Line: 364
 Time: 0.004s">
-<div class="time" style="width: 7.843137254902%"></div>
+<div class="time" style="width: 9.3023255813953%"></div>
 <pre>Definition ap_pp {A B : Type} (f : A -&gt; B) {x y z : A} (p : x = y) (q : y = z) :
   ap f (p @ q) = (ap f p) @ (ap f q)
   :=
@@ -1488,8 +1488,8 @@ Time: 0.004s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 370
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
 
 Definition ap_p_pp {A B : Type} (f : A -&gt; B) {w : B} {x y z : A}
@@ -1505,8 +1505,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 375
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
   destruct p, q.</pre>
 </div>
@@ -1532,7 +1532,7 @@ Defined.</pre>
 <div class="code" title="File: PathGroupoids.v
 Line: 377
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
 
 Definition ap_pp_p {A B : Type} (f : A -&gt; B) {x y z : A} {w : B}
@@ -1549,7 +1549,7 @@ Proof.</pre>
 <div class="code" title="File: PathGroupoids.v
 Line: 382
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
   destruct p, q.</pre>
 </div>
@@ -1582,8 +1582,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 386
-Time: 0.002s">
-<div class="time" style="width: 3.921568627451%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>Definition inverse_ap {A B : Type} (f : A -&gt; B) {x y : A} (p : x = y) :
   (ap f p)^ = ap f (p^)
   :=
@@ -1592,7 +1592,7 @@ Time: 0.002s">
 <div class="code" title="File: PathGroupoids.v
 Line: 389
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
 
 Definition ap_V {A B : Type} (f : A -&gt; B) {x y : A} (p : x = y) :
@@ -1613,7 +1613,7 @@ Time: 0s">
 <div class="code" title="File: PathGroupoids.v
 Line: 397
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>Definition ap_idmap {A : Type} {x y : A} (p : x = y) :
   ap idmap p = p
   :=
@@ -1622,7 +1622,7 @@ Time: 0.001s">
 <div class="code" title="File: PathGroupoids.v
 Line: 400
 Time: 0.002s">
-<div class="time" style="width: 3.921568627451%"></div>
+<div class="time" style="width: 4.6511627906977%"></div>
 <pre>
 
 Definition ap_compose {A B C : Type} (f : A -&gt; B) (g : B -&gt; C) {x y : A} (p : x = y) :
@@ -1640,8 +1640,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 407
-Time: 0.002s">
-<div class="time" style="width: 3.921568627451%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>Definition ap_compose' {A B C : Type} (f : A -&gt; B) (g : B -&gt; C) {x y : A} (p : x = y) :
   ap (fun a =&gt; g (f a)) p = ap g (ap f p)
   :=
@@ -1657,8 +1657,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 412
-Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>Definition ap_const {A B : Type} {x y : A} (p : x = y) (z : B) :
   ap (fun _ =&gt; z) p = 1
   :=
@@ -1674,8 +1674,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 417
-Time: 0.004s">
-<div class="time" style="width: 7.843137254902%"></div>
+Time: 0.003s">
+<div class="time" style="width: 6.9767441860465%"></div>
 <pre>Definition concat_Ap {A B : Type} {f g : A -&gt; B} (p : forall x, f x = g x) {x y : A} (q : x = y) :
   (ap f q) @ (p y) = (p x) @ (ap g q)
   :=
@@ -1693,8 +1693,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 424
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>Definition ap_homotopic {A B : Type} {f g : A -&gt; B} (p : forall x, f x = g x) {x y : A} (q : x = y)
   : (ap f q) = (p x) @ (ap g q) @ (p y)^.</pre>
 </div>
@@ -1737,7 +1737,7 @@ Time: 0s">
 <div class="code" title="File: PathGroupoids.v
 Line: 431
 Time: 0.003s">
-<div class="time" style="width: 5.8823529411765%"></div>
+<div class="time" style="width: 6.9767441860465%"></div>
 <pre>Definition concat_A1p {A : Type} {f : A -&gt; A} (p : forall x, f x = x) {x y : A} (q : x = y) :
   (ap f q) @ (p y) = (p x) @ q
   :=
@@ -1791,7 +1791,7 @@ Defined.</pre>
 <div class="code" title="File: PathGroupoids.v
 Line: 443
 Time: 0.002s">
-<div class="time" style="width: 3.921568627451%"></div>
+<div class="time" style="width: 4.6511627906977%"></div>
 <pre>
 
 Definition concat_pA1 {A : Type} {f : A -&gt; A} (p : forall x, x = f x) {x y : A} (q : x = y) :
@@ -1812,7 +1812,7 @@ Time: 0s">
 <div class="code" title="File: PathGroupoids.v
 Line: 452
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>Definition concat_pA_pp {A B : Type} {f g : A -&gt; B} (p : forall x, f x = g x)
   {x y : A} (q : x = y)
   {w z : B} (r : w = f x) (s : g y = z)
@@ -1829,14 +1829,14 @@ Proof.</pre>
 <div class="code" title="File: PathGroupoids.v
 Line: 457
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
   destruct q, s; simpl.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 458
 Time: 0.003s">
-<div class="time" style="width: 5.8823529411765%"></div>
+<div class="time" style="width: 6.9767441860465%"></div>
 <pre>
   repeat rewrite concat_p1.</pre>
 </div>
@@ -1850,14 +1850,14 @@ Time: 0s">
 <div class="code" title="File: PathGroupoids.v
 Line: 460
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 461
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
 
 Definition concat_pA_p {A B : Type} {f g : A -&gt; B} (p : forall x, f x = g x)
@@ -1883,7 +1883,7 @@ Time: 0s">
 <div class="code" title="File: PathGroupoids.v
 Line: 469
 Time: 0.002s">
-<div class="time" style="width: 3.921568627451%"></div>
+<div class="time" style="width: 4.6511627906977%"></div>
 <pre>
   repeat rewrite concat_p1.</pre>
 </div>
@@ -1896,15 +1896,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 471
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 472
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
 
 Definition concat_A_pp {A B : Type} {f g : A -&gt; B} (p : forall x, f x = g x)
@@ -1923,14 +1923,14 @@ Proof.</pre>
 <div class="code" title="File: PathGroupoids.v
 Line: 479
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
   destruct q, s; cbn.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 480
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
   repeat rewrite concat_p1, concat_1p.</pre>
 </div>
@@ -1944,14 +1944,14 @@ Time: 0s">
 <div class="code" title="File: PathGroupoids.v
 Line: 482
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 483
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
 
 Definition concat_pA1_pp {A : Type} {f : A -&gt; A} (p : forall x, f x = x)
@@ -1970,14 +1970,14 @@ Proof.</pre>
 <div class="code" title="File: PathGroupoids.v
 Line: 490
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
   destruct q, s; simpl.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 491
-Time: 0.017s">
-<div class="time" style="width: 33.333333333333%"></div>
+Time: 0.015s">
+<div class="time" style="width: 34.883720930233%"></div>
 <pre>
   repeat rewrite concat_p1.</pre>
 </div>
@@ -2024,7 +2024,7 @@ Time: 0s">
 <div class="code" title="File: PathGroupoids.v
 Line: 502
 Time: 0.002s">
-<div class="time" style="width: 3.921568627451%"></div>
+<div class="time" style="width: 4.6511627906977%"></div>
 <pre>
   repeat rewrite concat_p1.</pre>
 </div>
@@ -2070,8 +2070,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 513
-Time: 0.002s">
-<div class="time" style="width: 3.921568627451%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
   repeat rewrite concat_p1.</pre>
 </div>
@@ -2117,8 +2117,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 524
-Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   repeat rewrite concat_p1, concat_1p.</pre>
 </div>
@@ -2165,7 +2165,7 @@ Time: 0s">
 <div class="code" title="File: PathGroupoids.v
 Line: 535
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
   repeat rewrite concat_p1.</pre>
 </div>
@@ -2211,8 +2211,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 546
-Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   repeat rewrite concat_p1, concat_1p.</pre>
 </div>
@@ -2377,8 +2377,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 578
-Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   case h, h'; reflexivity.</pre>
 </div>
@@ -2391,8 +2391,8 @@ Defined.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 580
-Time: 0.002s">
-<div class="time" style="width: 3.921568627451%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
 
 Definition apD10_V {A} {B:A-&gt;Type} {f g : forall x, B x} (h:f=g) (x:A)
@@ -2411,7 +2411,7 @@ Definition ap10_1 {A B} {f:A-&gt;B} (x:A) : ap10 (idpath f) x = 1
 <div class="code" title="File: PathGroupoids.v
 Line: 587
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
 
 Definition ap10_pp {A B} {f f' f'':A-&gt;B} (h:f=f') (h':f'=f'') (x:A)
@@ -2467,7 +2467,7 @@ Defined.</pre>
 <div class="code" title="File: PathGroupoids.v
 Line: 601
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
 
 Definition ap10_ap_precompose {A B C} (f : A -&gt; B) {g g' : B -&gt; C} (p : g = g') a
@@ -2507,7 +2507,7 @@ Defined.</pre>
 <div class="code" title="File: PathGroupoids.v
 Line: 611
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
 
 Definition ap10_ap_postcompose {A B C} (f : B -&gt; C) {g g' : A -&gt; B} (p : g = g') a
@@ -2534,8 +2534,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 620
-Time: 0.003s">
-<div class="time" style="width: 5.8823529411765%"></div>
+Time: 0.002s">
+<div class="time" style="width: 4.6511627906977%"></div>
 <pre>
 
 Definition transport_pp {A : Type} (P : A -&gt; Type) {x y z : A} (p : x = y) (q : y = z) (u : P x) :
@@ -2547,7 +2547,7 @@ Definition transport_pp {A : Type} (P : A -&gt; Type) {x y z : A} (p : x = y) (q
 <div class="code" title="File: PathGroupoids.v
 Line: 626
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
 
 Definition transport_pV {A : Type} (P : A -&gt; Type) {x y : A} (p : x = y) (z : P y)
@@ -2558,7 +2558,7 @@ Definition transport_pV {A : Type} (P : A -&gt; Type) {x y : A} (p : x = y) (z :
 <div class="code" title="File: PathGroupoids.v
 Line: 631
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
 
 Definition transport_Vp {A : Type} (P : A -&gt; Type) {x y : A} (p : x = y) (z : P x)
@@ -2578,7 +2578,7 @@ Time: 0s">
 <div class="code" title="File: PathGroupoids.v
 Line: 639
 Time: 0.003s">
-<div class="time" style="width: 5.8823529411765%"></div>
+<div class="time" style="width: 6.9767441860465%"></div>
 <pre>Definition transport_p_pp {A : Type} (P : A -&gt; Type)
   {x y z w : A} (p : x = y) (q : y = z) (r : z = w)
   (u : P x)
@@ -2596,8 +2596,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 646
-Time: 0.004s">
-<div class="time" style="width: 7.843137254902%"></div>
+Time: 0.003s">
+<div class="time" style="width: 6.9767441860465%"></div>
 <pre>
   destruct p, q, r.</pre>
 </div>
@@ -2615,8 +2615,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 647
-Time: 0.003s">
-<div class="time" style="width: 5.8823529411765%"></div>
+Time: 0.002s">
+<div class="time" style="width: 4.6511627906977%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -2709,7 +2709,7 @@ Proof.</pre>
 <div class="code" title="File: PathGroupoids.v
 Line: 668
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
     by destruct e, p.</pre>
 </div>
@@ -2891,8 +2891,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 711
-Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
 Definition transportD2 {A : Type} (B C : A -&gt; Type) (D : forall a:A, B a -&gt; C a -&gt; Type)
@@ -2958,8 +2958,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 728
-Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>Definition ap011D {A B C} (f : forall (a:A), B a -&gt; C)
            {x x'} (p : x = x') {y y'} (q : p # y = y')
 : f x y = f x' y'.</pre>
@@ -3018,8 +3018,8 @@ Defined.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 740
-Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
 Definition apD011 {A B C} (f : forall (a:A) (b:B a), C a b)
@@ -3059,8 +3059,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 750
-Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>Definition transport2 {A : Type} (P : A -&gt; Type) {x y : A} {p q : x = y}
   (r : p = q) (z : P x)
   : p # z = q # z
@@ -3077,7 +3077,7 @@ Time: 0s">
 <div class="code" title="File: PathGroupoids.v
 Line: 755
 Time: 0.002s">
-<div class="time" style="width: 3.921568627451%"></div>
+<div class="time" style="width: 4.6511627906977%"></div>
 <pre>Definition transport2_is_ap10 {A : Type} (Q : A -&gt; Type) {x y : A} {p q : x = y}
   (r : p = q) (z : Q x)
   : transport2 Q r z = ap10 (ap (transport Q) r) z
@@ -3085,8 +3085,8 @@ Time: 0.002s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 758
-Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
 Definition transport2_p2p {A : Type} (P : A -&gt; Type) {x y : A} {p1 p2 p3 : x = y}
@@ -3103,7 +3103,7 @@ Proof.</pre>
 <div class="code" title="File: PathGroupoids.v
 Line: 763
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
   destruct r1, r2; reflexivity.</pre>
 </div>
@@ -3117,7 +3117,7 @@ Defined.</pre>
 <div class="code" title="File: PathGroupoids.v
 Line: 765
 Time: 0.002s">
-<div class="time" style="width: 3.921568627451%"></div>
+<div class="time" style="width: 4.6511627906977%"></div>
 <pre>
 
 Definition transport2_V {A : Type} (Q : A -&gt; Type) {x y : A} {p q : x = y}
@@ -3127,8 +3127,8 @@ Definition transport2_V {A : Type} (Q : A -&gt; Type) {x y : A} {p q : x = y}
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 770
-Time: 0.005s">
-<div class="time" style="width: 9.8039215686275%"></div>
+Time: 0.004s">
+<div class="time" style="width: 9.3023255813953%"></div>
 <pre>
 
 Definition concat_AT {A : Type} (P : A -&gt; Type) {x y : A} {p q : x = y}
@@ -3209,8 +3209,8 @@ Defined.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 792
-Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
 Lemma ap_transportD2 {A : Type}
@@ -3252,7 +3252,7 @@ Time: 0s">
 <div class="code" title="File: PathGroupoids.v
 Line: 804
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>Lemma ap_transport_pV {X} (Y : X -&gt; Type) {x1 x2 : X} (p : x1 = x2)
       {y1 y2 : Y x2} (q : y1 = y2)
 : ap (transport Y p) (ap (transport Y p^) q) =
@@ -3267,15 +3267,15 @@ Proof.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 808
-Time: 0.002s">
-<div class="time" style="width: 3.921568627451%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
   destruct p, q; reflexivity.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 809
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -3289,8 +3289,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 812
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>Definition transport_pV_ap {X} (P : X -&gt; Type) (f : forall x, P x)
       {x1 x2 : X} (p : x1 = x2)
 : ap (transport P p) (apD f p^) @ apD f p = transport_pV P p (f x2).</pre>
@@ -3319,7 +3319,7 @@ Defined.</pre>
 <div class="code" title="File: PathGroupoids.v
 Line: 817
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
 
 Definition apD_pp {A} {P : A -&gt; Type} (f : forall x, P x)
@@ -3337,14 +3337,14 @@ Proof.</pre>
 <div class="code" title="File: PathGroupoids.v
 Line: 823
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
   destruct p, q; reflexivity.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 824
-Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -3429,7 +3429,7 @@ Defined.</pre>
 <div class="code" title="File: PathGroupoids.v
 Line: 843
 Time: 0.002s">
-<div class="time" style="width: 3.921568627451%"></div>
+<div class="time" style="width: 4.6511627906977%"></div>
 <pre>
 
 Definition transport2_const {A B : Type} {x1 x2 : A} {p q : x1 = x2}
@@ -3476,8 +3476,8 @@ Defined.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 855
-Time: 0.012s">
-<div class="time" style="width: 23.529411764706%"></div>
+Time: 0.01s">
+<div class="time" style="width: 23.255813953488%"></div>
 <pre>
 
 Lemma transportD_compose {A A'} B {x x' : A} (C : forall x : A', B x -&gt; Type) (f : A -&gt; A')
@@ -3547,7 +3547,7 @@ Defined.</pre>
 <div class="code" title="File: PathGroupoids.v
 Line: 871
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
 
 Lemma transport_precompose {A B C} (f : A -&gt; B) (g g' : B -&gt; C) (p : g = g')
@@ -3586,7 +3586,7 @@ Time: 0s">
 <div class="code" title="File: PathGroupoids.v
 Line: 880
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>Definition transport_idmap_ap A (P : A -&gt; Type) x y (p : x = y) (u : P x)
 : transport P p u = transport idmap (ap P p) u
   := match p with idpath =&gt; idpath end.</pre>
@@ -3693,7 +3693,7 @@ Defined.</pre>
 <div class="code" title="File: PathGroupoids.v
 Line: 909
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
 
 Definition apD_compose {A A' : Type} {B : A' -&gt; Type} (g : A -&gt; A')
@@ -3723,8 +3723,8 @@ Defined.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 916
-Time: 0.002s">
-<div class="time" style="width: 3.921568627451%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
 
 Definition apD_compose' {A A' : Type} {B : A' -&gt; Type} (g : A -&gt; A')
@@ -3765,7 +3765,7 @@ Time: 0s">
 <div class="code" title="File: PathGroupoids.v
 Line: 927
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>Definition concat2 {A} {x y z : A} {p p' : x = y} {q q' : y = z} (h : p = p') (h' : q = q')
   : p @ q = p' @ q'
 := match h, h' with idpath, idpath =&gt; 1 end.</pre>
@@ -3846,8 +3846,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 948
-Time: 0.002s">
-<div class="time" style="width: 3.921568627451%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>Lemma ap_pp_concat_pV {A B} (f : A -&gt; B) {x y : A} (p : x = y)
 : ap_pp f p p^ @ ((1 @@ ap_V f p) @ concat_pV (ap f p))
   = ap (ap f) (concat_pV p).</pre>
@@ -3862,21 +3862,21 @@ Proof.</pre>
 <div class="code" title="File: PathGroupoids.v
 Line: 951
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
   destruct p; reflexivity.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 952
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 953
-Time: 0.002s">
-<div class="time" style="width: 3.921568627451%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
 
 Lemma ap_pp_concat_Vp {A B} (f : A -&gt; B) {x y : A} (p : x = y)
@@ -3893,14 +3893,14 @@ Proof.</pre>
 <div class="code" title="File: PathGroupoids.v
 Line: 958
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
   destruct p; reflexivity.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 959
-Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -3923,7 +3923,7 @@ Proof.</pre>
 <div class="code" title="File: PathGroupoids.v
 Line: 964
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
   destruct r, p; reflexivity.</pre>
 </div>
@@ -3953,7 +3953,7 @@ Proof.</pre>
 <div class="code" title="File: PathGroupoids.v
 Line: 970
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
   destruct r, p; reflexivity.</pre>
 </div>
@@ -4005,7 +4005,7 @@ Time: 0s">
 <div class="code" title="File: PathGroupoids.v
 Line: 984
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>Definition cancelL {A} {x y z : A} (p : x = y) (q r : y = z)
 : (p @ q = p @ r) -&gt; (q = r)
 := fun h =&gt; (concat_V_pp p q)^ @ whiskerL p^ h @ (concat_V_pp p r).</pre>
@@ -4013,7 +4013,7 @@ Time: 0.001s">
 <div class="code" title="File: PathGroupoids.v
 Line: 986
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
 
 Definition cancelR {A} {x y z : A} (p q : x = y) (r : y = z)
@@ -4032,8 +4032,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 993
-Time: 0.008s">
-<div class="time" style="width: 15.686274509804%"></div>
+Time: 0.007s">
+<div class="time" style="width: 16.279069767442%"></div>
 <pre>Definition whiskerR_p1 {A : Type} {x y : A} {p q : x = y} (h : p = q) :
   (concat_p1 p) ^ @ whiskerR h 1 @ concat_p1 q = h
   :=
@@ -4045,7 +4045,7 @@ Time: 0.008s">
 <div class="code" title="File: PathGroupoids.v
 Line: 999
 Time: 0.002s">
-<div class="time" style="width: 3.921568627451%"></div>
+<div class="time" style="width: 4.6511627906977%"></div>
 <pre>
 
 Definition whiskerR_1p {A : Type} {x y z : A} (p : x = y) (q : y = z) :
@@ -4056,7 +4056,7 @@ Definition whiskerR_1p {A : Type} {x y z : A} (p : x = y) (q : y = z) :
 <div class="code" title="File: PathGroupoids.v
 Line: 1004
 Time: 0.002s">
-<div class="time" style="width: 3.921568627451%"></div>
+<div class="time" style="width: 4.6511627906977%"></div>
 <pre>
 
 Definition whiskerL_p1 {A : Type} {x y z : A} (p : x = y) (q : y = z) :
@@ -4066,8 +4066,8 @@ Definition whiskerL_p1 {A : Type} {x y z : A} (p : x = y) (q : y = z) :
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1009
-Time: 0.009s">
-<div class="time" style="width: 17.647058823529%"></div>
+Time: 0.008s">
+<div class="time" style="width: 18.604651162791%"></div>
 <pre>
 
 Definition whiskerL_1p {A : Type} {x y : A} {p q : x = y} (h : p = q) :
@@ -4110,8 +4110,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1023
-Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -4147,15 +4147,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1030
-Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1031
 Time: 0.002s">
-<div class="time" style="width: 3.921568627451%"></div>
+<div class="time" style="width: 4.6511627906977%"></div>
 <pre>
 
 Definition concat2_p1 {A : Type} {x y : A} {p q : x = y} (h : p = q) :
@@ -4166,7 +4166,7 @@ Definition concat2_p1 {A : Type} {x y : A} {p q : x = y} (h : p = q) :
 <div class="code" title="File: PathGroupoids.v
 Line: 1036
 Time: 0.002s">
-<div class="time" style="width: 3.921568627451%"></div>
+<div class="time" style="width: 4.6511627906977%"></div>
 <pre>
 
 Definition concat2_1p {A : Type} {x y : A} {p q : x = y} (h : p = q) :
@@ -4201,7 +4201,7 @@ Time: 0s">
 <div class="code" title="File: PathGroupoids.v
 Line: 1047
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre> induction g, p, q.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
@@ -4239,8 +4239,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1050
-Time: 0.002s">
-<div class="time" style="width: 3.921568627451%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -4271,7 +4271,7 @@ Time: 0s">
 <div class="code" title="File: PathGroupoids.v
 Line: 1057
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre> induction k, p, q.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
@@ -4309,8 +4309,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1060
-Time: 0.002s">
-<div class="time" style="width: 3.921568627451%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -4327,8 +4327,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1066
-Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>Definition whiskerL_pp {A} {x y z : A} (p : x = y) {q q' q'' : y = z}
            (r : q = q') (s : q' = q'')
 : whiskerL p (r @ s) = whiskerL p r @ whiskerL p s.</pre>
@@ -4342,22 +4342,22 @@ Proof.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1069
-Time: 0.002s">
-<div class="time" style="width: 3.921568627451%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
   destruct p, r, s; reflexivity.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1070
-Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1071
-Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
 Definition whiskerR_pp {A} {x y z : A} {p p' p'' : x = y} (q : y = z)
@@ -4374,7 +4374,7 @@ Proof.</pre>
 <div class="code" title="File: PathGroupoids.v
 Line: 1076
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
   destruct q, r, s; reflexivity.</pre>
 </div>
@@ -4396,7 +4396,7 @@ Time: 0s">
 <div class="code" title="File: PathGroupoids.v
 Line: 1080
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>Definition whiskerL_VpL {A} {x y z : A} (p : x = y)
            {q q' : y = z} (r : q = q')
 : (concat_V_pp p q)^ @ whiskerL p^ (whiskerL p r) @ concat_V_pp p q'
@@ -4412,7 +4412,7 @@ Proof.</pre>
 <div class="code" title="File: PathGroupoids.v
 Line: 1084
 Time: 0.002s">
-<div class="time" style="width: 3.921568627451%"></div>
+<div class="time" style="width: 4.6511627906977%"></div>
 <pre>
   destruct p, r, q.</pre>
 </div>
@@ -4424,15 +4424,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1085
-Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1086
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
 
 Definition whiskerL_pVL {A} {x y z : A} (p : y = x)
@@ -4449,8 +4449,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1092
-Time: 0.002s">
-<div class="time" style="width: 3.921568627451%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
   destruct p, r, q.</pre>
 </div>
@@ -4462,15 +4462,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1093
-Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1094
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
 
 Definition whiskerR_pVR {A} {x y z : A} {p p' : x = y}
@@ -4487,8 +4487,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1100
-Time: 0.002s">
-<div class="time" style="width: 3.921568627451%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
   destruct p, r, q.</pre>
 </div>
@@ -4501,14 +4501,14 @@ Time: 0s">
 <div class="code" title="File: PathGroupoids.v
 Line: 1101
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1102
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
 
 Definition whiskerR_VpR {A} {x y z : A} {p p' : x = y}
@@ -4526,7 +4526,7 @@ Proof.</pre>
 <div class="code" title="File: PathGroupoids.v
 Line: 1108
 Time: 0.002s">
-<div class="time" style="width: 3.921568627451%"></div>
+<div class="time" style="width: 4.6511627906977%"></div>
 <pre>
   destruct p, r, q.</pre>
 </div>
@@ -4539,7 +4539,7 @@ Time: 0s">
 <div class="code" title="File: PathGroupoids.v
 Line: 1109
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -4554,7 +4554,7 @@ Time: 0s">
 <div class="code" title="File: PathGroupoids.v
 Line: 1112
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>Definition concat_concat2 {A : Type} {x y z : A} {p p' p'' : x = y} {q q' q'' : y = z}
   (a : p = p') (b : p' = p'') (c : q = q') (d : q' = q'') :
   (a @@ c) @ (b @@ d) = (a @ b) @@ (c @ d).</pre>
@@ -4603,8 +4603,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1120
-Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -4618,8 +4618,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1123
-Time: 0.016s">
-<div class="time" style="width: 31.372549019608%"></div>
+Time: 0.014s">
+<div class="time" style="width: 32.558139534884%"></div>
 <pre>Definition concat_whisker {A} {x y z : A} (p p' : x = y) (q q' : y = z) (a : p = p') (b : q = q') :
   (whiskerR a q) @ (whiskerL p' b) = (whiskerL p b) @ (whiskerR a q')
   :=
@@ -4643,7 +4643,7 @@ Time: 0s">
 <div class="code" title="File: PathGroupoids.v
 Line: 1135
 Time: 0.002s">
-<div class="time" style="width: 3.921568627451%"></div>
+<div class="time" style="width: 4.6511627906977%"></div>
 <pre>Definition pentagon {A : Type} {v w x y z : A} (p : v = w) (q : w = x) (r : x = y) (s : y = z)
   : whiskerL p (concat_p_pp q r s)
       @ concat_p_pp p (q@r) s
@@ -4659,8 +4659,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1140
-Time: 0.005s">
-<div class="time" style="width: 9.8039215686275%"></div>
+Time: 0.004s">
+<div class="time" style="width: 9.3023255813953%"></div>
 <pre>
   case p, q, r, s.</pre>
 </div>
@@ -4672,8 +4672,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1141
-Time: 0.003s">
-<div class="time" style="width: 5.8823529411765%"></div>
+Time: 0.002s">
+<div class="time" style="width: 4.6511627906977%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -4687,8 +4687,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1144
-Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>Definition triangulator {A : Type} {x y z : A} (p : x = y) (q : y = z)
   : concat_p_pp p 1 q @ whiskerR (concat_p1 p) q
   = whiskerL p (concat_1p q).</pre>
@@ -4703,7 +4703,7 @@ Proof.</pre>
 <div class="code" title="File: PathGroupoids.v
 Line: 1147
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
   case p, q.</pre>
 </div>
@@ -4730,8 +4730,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1151
-Time: 0.021s">
-<div class="time" style="width: 41.176470588235%"></div>
+Time: 0.018s">
+<div class="time" style="width: 41.860465116279%"></div>
 <pre>Definition eckmann_hilton {A : Type} {x:A} (p q : 1 = 1 :&gt; (x = x)) : p @ q = q @ p :=
   (whiskerR_p1 p @@ whiskerL_1p q)^
   @ (concat_p1 _ @@ concat_p1 _)
@@ -4753,15 +4753,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1161
-Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>Definition ap02 {A B : Type} (f:A-&gt;B) {x y:A} {p q:x=y} (r:p=q) : ap f p = ap f q
   := match r with idpath =&gt; 1 end.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1162
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
 
 Definition ap02_pp {A B} (f:A-&gt;B) {x y:A} {p p' p'':x=y} (r:p=p') (r':p'=p'')
@@ -4777,7 +4777,7 @@ Proof.</pre>
 <div class="code" title="File: PathGroupoids.v
 Line: 1166
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
   case r, r'; reflexivity.</pre>
 </div>
@@ -4791,7 +4791,7 @@ Defined.</pre>
 <div class="code" title="File: PathGroupoids.v
 Line: 1168
 Time: 0.002s">
-<div class="time" style="width: 3.921568627451%"></div>
+<div class="time" style="width: 4.6511627906977%"></div>
 <pre>
 
 Definition ap02_p2p {A B} (f:A-&gt;B) {x y z:A} {p p':x=y} {q q':y=z} (r:p=p') (s:q=q')
@@ -4808,8 +4808,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1174
-Time: 0.004s">
-<div class="time" style="width: 7.843137254902%"></div>
+Time: 0.003s">
+<div class="time" style="width: 6.9767441860465%"></div>
 <pre>
   case r, s, p, q.</pre>
 </div>
@@ -4822,14 +4822,14 @@ Time: 0s">
 <div class="code" title="File: PathGroupoids.v
 Line: 1175
 Time: 0.002s">
-<div class="time" style="width: 3.921568627451%"></div>
+<div class="time" style="width: 4.6511627906977%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1176
 Time: 0.002s">
-<div class="time" style="width: 3.921568627451%"></div>
+<div class="time" style="width: 4.6511627906977%"></div>
 <pre>
 
 Definition apD02 {A : Type} {B : A -&gt; Type} {x y : A} {p q : x = y}
@@ -4839,7 +4839,7 @@ Definition apD02 {A : Type} {B : A -&gt; Type} {x y : A} {p q : x = y}
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1181
-Time: 0.051s">
+Time: 0.043s">
 <div class="time" style="width: 100%"></div>
 <pre>
 
@@ -4863,8 +4863,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1193
-Time: 0.005s">
-<div class="time" style="width: 9.8039215686275%"></div>
+Time: 0.004s">
+<div class="time" style="width: 9.3023255813953%"></div>
 <pre>Definition apD02_pp {A} (B : A -&gt; Type) (f : forall x:A, B x) {x y : A}
   {p1 p2 p3 : x = y} (r1 : p1 = p2) (r2 : p2 = p3)
   : apD02 f (r1 @ r2)
@@ -4882,27 +4882,27 @@ Proof.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1200
-Time: 0.008s">
-<div class="time" style="width: 15.686274509804%"></div>
+Time: 0.007s">
+<div class="time" style="width: 16.279069767442%"></div>
 <pre>
   destruct r1, r2.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1201
-Time: 0.003s">
-<div class="time" style="width: 5.8823529411765%"></div>
+Time: 0.002s">
+<div class="time" style="width: 4.6511627906977%"></div>
 <pre> destruct p1.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1201
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre> reflexivity.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1201
-Time: 0.007s">
-<div class="time" style="width: 13.725490196078%"></div>
+Time: 0.006s">
+<div class="time" style="width: 13.953488372093%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -4917,7 +4917,7 @@ Time: 0s">
 <div class="code" title="File: PathGroupoids.v
 Line: 1204
 Time: 0.002s">
-<div class="time" style="width: 3.921568627451%"></div>
+<div class="time" style="width: 4.6511627906977%"></div>
 <pre>Definition ap_transport_Vp_idmap {A B} (p q : A = B) (r : q = p) (z : A)
 : ap (transport idmap q^) (ap (fun s =&gt; transport idmap s z) r)
   @ ap (fun s =&gt; transport idmap s (p # z)) (inverse2 r)
@@ -4934,21 +4934,21 @@ Proof.</pre>
 <div class="code" title="File: PathGroupoids.v
 Line: 1209
 Time: 0.002s">
-<div class="time" style="width: 3.921568627451%"></div>
+<div class="time" style="width: 4.6511627906977%"></div>
 <pre>
   by path_induction.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1210
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1211
-Time: 0.003s">
-<div class="time" style="width: 5.8823529411765%"></div>
+Time: 0.002s">
+<div class="time" style="width: 4.6511627906977%"></div>
 <pre>
 
 Definition ap_transport_pV_idmap {A B} (p q : A = B) (r : q = p) (z : B)
@@ -4967,14 +4967,14 @@ Proof.</pre>
 <div class="code" title="File: PathGroupoids.v
 Line: 1218
 Time: 0.002s">
-<div class="time" style="width: 3.921568627451%"></div>
+<div class="time" style="width: 4.6511627906977%"></div>
 <pre>
   by path_induction.</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1219
 Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+<div class="time" style="width: 2.3255813953488%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -5017,8 +5017,8 @@ We want the RHS of the equation to become strictly simpler *)</pre>
 </div>
 <div class="code" title="File: PathGroupoids.v
 Line: 1233
-Time: 0.001s">
-<div class="time" style="width: 1.9607843137255%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>Hint Rewrite
 @concat_p1
 @concat_1p

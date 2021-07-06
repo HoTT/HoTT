@@ -30,21 +30,21 @@ pre {
 
 <div class="code" title="File: abstract_algebra.v
 Line: 1
-Time: 0.096s">
+Time: 0.085s">
 <div class="time" style="width: 100%"></div>
 <pre>Require Import Spaces.Nat.</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 1
-Time: 0.016s">
-<div class="time" style="width: 16.666666666667%"></div>
+Time: 0.015s">
+<div class="time" style="width: 17.647058823529%"></div>
 <pre>
 Require Export HoTT.Classes.interfaces.canonical_names.</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 2
 Time: 0.003s">
-<div class="time" style="width: 3.125%"></div>
+<div class="time" style="width: 3.5294117647059%"></div>
 <pre>
 Require Import HProp.</pre>
 </div>
@@ -85,8 +85,8 @@ Setoid_Morphism as a substructure, setoid rewriting will become horribly slow.
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 26
-Time: 0.005s">
-<div class="time" style="width: 5.2083333333333%"></div>
+Time: 0.004s">
+<div class="time" style="width: 4.7058823529412%"></div>
 <pre>Class IsApart A {Aap : Apart A} : Type :=
   { apart_set :&gt; IsHSet A
   ; apart_mere :&gt; is_mere_relation _ apart
@@ -181,8 +181,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 44
-Time: 0.001s">
-<div class="time" style="width: 1.0416666666667%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
   Class StrongExtensionality := strong_extensionality : forall x y, f x ≶ f y -&gt; x ≶ y.</pre>
@@ -227,8 +227,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 54
-Time: 0.001s">
-<div class="time" style="width: 1.0416666666667%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
   Class StrongBinaryExtensionality := strong_binary_extensionality
@@ -283,8 +283,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 68
-Time: 0.001s">
-<div class="time" style="width: 1.0416666666667%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
   Class IsSemiGroup {Aop: SgOp A} :=
@@ -294,7 +294,7 @@ Time: 0.001s">
 <div class="code" title="File: abstract_algebra.v
 Line: 72
 Time: 0.001s">
-<div class="time" style="width: 1.0416666666667%"></div>
+<div class="time" style="width: 1.1764705882353%"></div>
 <pre>
 
   Class IsCommutativeSemiGroup {Aop : SgOp A} :=
@@ -303,8 +303,8 @@ Time: 0.001s">
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 76
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.1764705882353%"></div>
 <pre>
 
   Class IsSemiLattice {Aop : SgOp A} :=
@@ -313,8 +313,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 80
-Time: 0.002s">
-<div class="time" style="width: 2.0833333333333%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.1764705882353%"></div>
 <pre>
 
   Class IsMonoid {Aop : SgOp A} {Aunit : MonUnit A} :=
@@ -324,8 +324,8 @@ Time: 0.002s">
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 85
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.1764705882353%"></div>
 <pre>
 
   Class IsCommutativeMonoid {Aop : SgOp A} {Aunit : MonUnit A} :=
@@ -335,7 +335,7 @@ Time: 0s">
 <div class="code" title="File: abstract_algebra.v
 Line: 89
 Time: 0.003s">
-<div class="time" style="width: 3.125%"></div>
+<div class="time" style="width: 3.5294117647059%"></div>
 <pre>
 
   Class IsGroup {Aop : SgOp A} {Aunit : MonUnit A} {Anegate : Negate A} :=
@@ -345,8 +345,8 @@ Time: 0.003s">
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 94
-Time: 0.001s">
-<div class="time" style="width: 1.0416666666667%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
   Class IsBoundedSemiLattice {Aop : SgOp A} {Aunit : MonUnit A} :=
@@ -356,7 +356,7 @@ Time: 0.001s">
 <div class="code" title="File: abstract_algebra.v
 Line: 98
 Time: 0.001s">
-<div class="time" style="width: 1.0416666666667%"></div>
+<div class="time" style="width: 1.1764705882353%"></div>
 <pre>
 
   Class IsAbGroup {Aop : SgOp A} {Aunit : MonUnit A} {Anegate : Negate A} :=
@@ -382,7 +382,7 @@ Time: 0s">
 <div class="code" title="File: abstract_algebra.v
 Line: 106
 Time: 0.002s">
-<div class="time" style="width: 2.0833333333333%"></div>
+<div class="time" style="width: 2.3529411764706%"></div>
 <pre>
 
   Class IsSemiRing :=
@@ -402,7 +402,7 @@ Time: 0s">
 <div class="code" title="File: abstract_algebra.v
 Line: 114
 Time: 0.001s">
-<div class="time" style="width: 1.0416666666667%"></div>
+<div class="time" style="width: 1.1764705882353%"></div>
 <pre>
 
   Class IsRing :=
@@ -424,7 +424,7 @@ Time: 0s">
 <div class="code" title="File: abstract_algebra.v
 Line: 124
 Time: 0.001s">
-<div class="time" style="width: 1.0416666666667%"></div>
+<div class="time" style="width: 1.1764705882353%"></div>
 <pre>Class IsIntegralDomain :=
     { intdom_ring : IsRing
     ; intdom_nontrivial : PropHolds (not (1 = 0))
@@ -443,7 +443,7 @@ Time: 0s">
 <div class="code" title="File: abstract_algebra.v
 Line: 131
 Time: 0.006s">
-<div class="time" style="width: 6.25%"></div>
+<div class="time" style="width: 7.0588235294118%"></div>
 <pre>Class IsField {Aap: Apart A} {Arecip: Recip A} :=
     { field_ring :&gt; IsRing
     ; field_apart :&gt; IsApart A
@@ -466,7 +466,7 @@ Time: 0s">
 <div class="code" title="File: abstract_algebra.v
 Line: 142
 Time: 0.003s">
-<div class="time" style="width: 3.125%"></div>
+<div class="time" style="width: 3.5294117647059%"></div>
 <pre>Class IsDecField {Adec_recip : DecRecip A} :=
     { decfield_ring :&gt; IsRing
     ; decfield_nontrivial : PropHolds (1 &lt;&gt; 0)
@@ -476,7 +476,7 @@ Time: 0.003s">
 <div class="code" title="File: abstract_algebra.v
 Line: 146
 Time: 0.001s">
-<div class="time" style="width: 1.0416666666667%"></div>
+<div class="time" style="width: 1.1764705882353%"></div>
 <pre>
 
   Class FieldCharacteristic@{j} {Aap : Apart@{i j} A} (k : nat) : Type@{j}
@@ -486,8 +486,8 @@ Time: 0.001s">
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 151
-Time: 0.019s">
-<div class="time" style="width: 19.791666666667%"></div>
+Time: 0.017s">
+<div class="time" style="width: 20%"></div>
 <pre>
 
 End upper_classes.</pre>
@@ -621,8 +621,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 190
-Time: 0.002s">
-<div class="time" style="width: 2.0833333333333%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.1764705882353%"></div>
 <pre>
 
   Class IsLattice := 
@@ -633,8 +633,8 @@ Time: 0.002s">
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 196
-Time: 0.002s">
-<div class="time" style="width: 2.0833333333333%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.1764705882353%"></div>
 <pre>
 
   Class IsBoundedLattice :=
@@ -645,8 +645,8 @@ Time: 0.002s">
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 202
-Time: 0.001s">
-<div class="time" style="width: 1.0416666666667%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
   Class IsDistributiveLattice := 
@@ -656,7 +656,7 @@ Time: 0.001s">
 <div class="code" title="File: abstract_algebra.v
 Line: 206
 Time: 0.004s">
-<div class="time" style="width: 4.1666666666667%"></div>
+<div class="time" style="width: 4.7058823529412%"></div>
 <pre>
 End lattice.</pre>
 </div>
@@ -694,8 +694,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 215
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.1764705882353%"></div>
 <pre>
 
   Class IsSemiGroupPreserving (f : A -&gt; B) :=
@@ -713,7 +713,7 @@ Time: 0s">
 <div class="code" title="File: abstract_algebra.v
 Line: 221
 Time: 0.001s">
-<div class="time" style="width: 1.0416666666667%"></div>
+<div class="time" style="width: 1.1764705882353%"></div>
 <pre>
 
   Class IsMonoidPreserving (f : A -&gt; B) :=
@@ -722,8 +722,8 @@ Time: 0.001s">
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 225
-Time: 0.001s">
-<div class="time" style="width: 1.0416666666667%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   End sgmorphism_classes.</pre>
 </div>
@@ -746,8 +746,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 231
-Time: 0.002s">
-<div class="time" style="width: 2.0833333333333%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.1764705882353%"></div>
 <pre>
 
   Class IsSemiRingPreserving (f : A -&gt; B) :=
@@ -766,8 +766,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 239
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.1764705882353%"></div>
 <pre>
   Class IsSemiRingStrongPreserving (f : A -&gt; B) :=
     { strong_semiringmor_sr_mor :&gt; IsSemiRingPreserving f
@@ -776,7 +776,7 @@ Time: 0s">
 <div class="code" title="File: abstract_algebra.v
 Line: 242
 Time: 0.002s">
-<div class="time" style="width: 2.0833333333333%"></div>
+<div class="time" style="width: 2.3529411764706%"></div>
 <pre>
   End ringmorphism_classes.</pre>
 </div>
@@ -798,8 +798,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 247
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.1764705882353%"></div>
 <pre>
 
   Class IsJoinPreserving (f : A -&gt; B) :=
@@ -807,8 +807,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 250
-Time: 0.001s">
-<div class="time" style="width: 1.0416666666667%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
   Class IsMeetPreserving (f : A -&gt; B) :=
@@ -824,8 +824,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 255
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.1764705882353%"></div>
 <pre>
   Class IsBoundedJoinPreserving (f : A -&gt; B) := bounded_join_slmor_monmor
       :&gt; @IsMonoidPreserving A B join_is_sg_op join_is_sg_op
@@ -844,14 +844,14 @@ Time: 0s">
 <div class="code" title="File: abstract_algebra.v
 Line: 262
 Time: 0.001s">
-<div class="time" style="width: 1.0416666666667%"></div>
+<div class="time" style="width: 1.1764705882353%"></div>
 <pre>
   End latticemorphism_classes.</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 263
 Time: 0.005s">
-<div class="time" style="width: 5.2083333333333%"></div>
+<div class="time" style="width: 5.8823529411765%"></div>
 <pre>
 End morphism_classes.</pre>
 </div>
@@ -972,7 +972,7 @@ Time: 0s">
 <div class="code" title="File: abstract_algebra.v
 Line: 288
 Time: 0.001s">
-<div class="time" style="width: 1.0416666666667%"></div>
+<div class="time" style="width: 1.1764705882353%"></div>
 <pre>
   Class IsStrongInjective :=
     { strong_injective : forall x y, x ≶ y -&gt; f x ≶ f y
@@ -996,7 +996,7 @@ Section extras.</pre>
 <div class="code" title="File: abstract_algebra.v
 Line: 294
 Time: 0.003s">
-<div class="time" style="width: 3.125%"></div>
+<div class="time" style="width: 3.5294117647059%"></div>
 <pre>
 
 Class CutMinusSpec A (cm : CutMinus A) `{Zero A} `{Plus A} `{Le A} := {
@@ -1024,7 +1024,7 @@ Proof.</pre>
 <div class="code" title="File: abstract_algebra.v
 Line: 304
 Time: 0.01s">
-<div class="time" style="width: 10.416666666667%"></div>
+<div class="time" style="width: 11.764705882353%"></div>
 <pre>
   unfold IsSemiGroupPreserving; exact _.</pre>
 </div>
@@ -1037,8 +1037,8 @@ Defined.</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 306
-Time: 0.025s">
-<div class="time" style="width: 26.041666666667%"></div>
+Time: 0.024s">
+<div class="time" style="width: 28.235294117647%"></div>
 <pre>
 
 Definition issig_IsSemiRingPreserving {A B : Type}
@@ -1047,8 +1047,8 @@ Definition issig_IsSemiRingPreserving {A B : Type}
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 310
-Time: 0.047s">
-<div class="time" style="width: 48.958333333333%"></div>
+Time: 0.044s">
+<div class="time" style="width: 51.764705882353%"></div>
 <pre>
 
 Definition issig_IsMonoidPreserving {A B : Type} `{SgOp A} `{SgOp B}
@@ -1074,22 +1074,22 @@ Proof.</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 319
-Time: 0.017s">
-<div class="time" style="width: 17.708333333333%"></div>
+Time: 0.015s">
+<div class="time" style="width: 17.647058823529%"></div>
 <pre>
   srapply (istrunc_equiv_istrunc _ issig_IsMonoidPreserving).</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 320
-Time: 0.018s">
-<div class="time" style="width: 18.75%"></div>
+Time: 0.015s">
+<div class="time" style="width: 17.647058823529%"></div>
 <pre>
   srapply (istrunc_equiv_istrunc _ (equiv_sigma_prod0 _ _)^-1).</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 321
-Time: 0.007s">
-<div class="time" style="width: 7.2916666666667%"></div>
+Time: 0.006s">
+<div class="time" style="width: 7.0588235294118%"></div>
 <pre>
   srapply istrunc_prod.</pre>
 </div>
@@ -1102,8 +1102,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 323
-Time: 0.002s">
-<div class="time" style="width: 2.0833333333333%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.1764705882353%"></div>
 <pre>
   exact _.</pre>
 </div>
@@ -1117,7 +1117,7 @@ Defined.</pre>
 <div class="code" title="File: abstract_algebra.v
 Line: 325
 Time: 0.001s">
-<div class="time" style="width: 1.0416666666667%"></div>
+<div class="time" style="width: 1.1764705882353%"></div>
 <pre>
 
 Global Instance ishprop_issemiringpreserving `{Funext} {A B : Type} `{IsHSet B}
@@ -1135,28 +1135,28 @@ Proof.</pre>
 <div class="code" title="File: abstract_algebra.v
 Line: 331
 Time: 0.001s">
-<div class="time" style="width: 1.0416666666667%"></div>
+<div class="time" style="width: 1.1764705882353%"></div>
 <pre>
   snrapply (istrunc_equiv_istrunc _ issig_IsSemiRingPreserving).</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 332
-Time: 0.009s">
-<div class="time" style="width: 9.375%"></div>
+Time: 0.008s">
+<div class="time" style="width: 9.4117647058824%"></div>
 <pre>
   exact _.</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 333
-Time: 0.001s">
-<div class="time" style="width: 1.0416666666667%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 334
-Time: 0.008s">
-<div class="time" style="width: 8.3333333333333%"></div>
+Time: 0.007s">
+<div class="time" style="width: 8.2352941176471%"></div>
 <pre>
 
 Definition issig_issemigroup x y : _ &lt;~&gt; @IsSemiGroup x y := ltac:(issig).</pre>
@@ -1187,14 +1187,14 @@ Time: 0s">
 <div class="code" title="File: abstract_algebra.v
 Line: 341
 Time: 0.001s">
-<div class="time" style="width: 1.0416666666667%"></div>
+<div class="time" style="width: 1.1764705882353%"></div>
 <pre>
   rewrite &lt;- (eisretr (issig_issemigroup x y) a).</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 342
 Time: 0.001s">
-<div class="time" style="width: 1.0416666666667%"></div>
+<div class="time" style="width: 1.1764705882353%"></div>
 <pre>
   rewrite &lt;- (eisretr (issig_issemigroup x y) b).</pre>
 </div>
@@ -1221,22 +1221,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 346
-Time: 0.04s">
-<div class="time" style="width: 41.666666666667%"></div>
+Time: 0.034s">
+<div class="time" style="width: 40%"></div>
 <pre>
   srapply (contr_equiv _ (ap (issig_issemigroup x y))).</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 347
-Time: 0.002s">
-<div class="time" style="width: 2.0833333333333%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.1764705882353%"></div>
 <pre>
   rewrite &lt;- (eissect (equiv_sigma_prod0 _ _) a').</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 348
-Time: 0.002s">
-<div class="time" style="width: 2.0833333333333%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.1764705882353%"></div>
 <pre>
   rewrite &lt;- (eissect (equiv_sigma_prod0 _ _) b').</pre>
 </div>
@@ -1263,58 +1263,58 @@ Time: 0s">
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 352
-Time: 0.048s">
-<div class="time" style="width: 50%"></div>
+Time: 0.041s">
+<div class="time" style="width: 48.235294117647%"></div>
 <pre>
   srapply (contr_equiv _ (ap (equiv_sigma_prod0 _ _)^-1)).</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 353
-Time: 0.02s">
-<div class="time" style="width: 20.833333333333%"></div>
+Time: 0.017s">
+<div class="time" style="width: 20%"></div>
 <pre>
   srapply (contr_equiv _ (equiv_path_prod _ _)).</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 354
-Time: 0.009s">
-<div class="time" style="width: 9.375%"></div>
+Time: 0.007s">
+<div class="time" style="width: 8.2352941176471%"></div>
 <pre>
   srapply contr_prod.</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 355
-Time: 0.003s">
-<div class="time" style="width: 3.125%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   destruct a as [a' a], b as [b' b].</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 356
-Time: 0.023s">
-<div class="time" style="width: 23.958333333333%"></div>
+Time: 0.005s">
+<div class="time" style="width: 5.8823529411765%"></div>
 <pre>
   do 3 (nrefine (contr_equiv' _ (@equiv_path_forall H _ _ _ _));
   nrefine (@contr_forall H _ _ _); intro).</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 358
-Time: 0.013s">
-<div class="time" style="width: 13.541666666667%"></div>
+Time: 0.003s">
+<div class="time" style="width: 3.5294117647059%"></div>
 <pre>
   exact _.</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 359
-Time: 0.008s">
-<div class="time" style="width: 8.3333333333333%"></div>
+Time: 0.006s">
+<div class="time" style="width: 7.0588235294118%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 360
-Time: 0.016s">
-<div class="time" style="width: 16.666666666667%"></div>
+Time: 0.013s">
+<div class="time" style="width: 15.294117647059%"></div>
 <pre>
 
 Definition issig_ismonoid x y z : _ &lt;~&gt; @IsMonoid x y z := ltac:(issig).</pre>
@@ -1344,14 +1344,14 @@ Time: 0s">
 <div class="code" title="File: abstract_algebra.v
 Line: 366
 Time: 0.001s">
-<div class="time" style="width: 1.0416666666667%"></div>
+<div class="time" style="width: 1.1764705882353%"></div>
 <pre>
   rewrite &lt;- (eisretr (issig_ismonoid x y z) a).</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 367
 Time: 0.001s">
-<div class="time" style="width: 1.0416666666667%"></div>
+<div class="time" style="width: 1.1764705882353%"></div>
 <pre>
   rewrite &lt;- (eisretr (issig_ismonoid x y z) b).</pre>
 </div>
@@ -1378,22 +1378,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 371
-Time: 0.065s">
-<div class="time" style="width: 67.708333333333%"></div>
+Time: 0.058s">
+<div class="time" style="width: 68.235294117647%"></div>
 <pre>
   srapply (contr_equiv _ (ap (issig_ismonoid x y z))).</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 372
 Time: 0.002s">
-<div class="time" style="width: 2.0833333333333%"></div>
+<div class="time" style="width: 2.3529411764706%"></div>
 <pre>
   rewrite &lt;- (eissect (equiv_sigma_prod0 _ _) a').</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 373
 Time: 0.002s">
-<div class="time" style="width: 2.0833333333333%"></div>
+<div class="time" style="width: 2.3529411764706%"></div>
 <pre>
   rewrite &lt;- (eissect (equiv_sigma_prod0 _ _) b').</pre>
 </div>
@@ -1420,43 +1420,43 @@ Time: 0s">
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 377
-Time: 0.08s">
-<div class="time" style="width: 83.333333333333%"></div>
+Time: 0.068s">
+<div class="time" style="width: 80%"></div>
 <pre>
   srapply (contr_equiv _ (ap (equiv_sigma_prod0 _ _)^-1)).</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 378
-Time: 0.049s">
-<div class="time" style="width: 51.041666666667%"></div>
+Time: 0.066s">
+<div class="time" style="width: 77.647058823529%"></div>
 <pre>
   srapply (contr_equiv _ (equiv_path_prod _ _)).</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 379
-Time: 0.021s">
-<div class="time" style="width: 21.875%"></div>
+Time: 0.018s">
+<div class="time" style="width: 21.176470588235%"></div>
 <pre>
   srapply contr_prod.</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 380
 Time: 0.001s">
-<div class="time" style="width: 1.0416666666667%"></div>
+<div class="time" style="width: 1.1764705882353%"></div>
 <pre>
   destruct a as [a' a], b as [b' b]; cbn.</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 381
 Time: 0.002s">
-<div class="time" style="width: 2.0833333333333%"></div>
+<div class="time" style="width: 2.3529411764706%"></div>
 <pre>
   rewrite &lt;- (eissect (equiv_sigma_prod0 _ _) a).</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 382
 Time: 0.002s">
-<div class="time" style="width: 2.0833333333333%"></div>
+<div class="time" style="width: 2.3529411764706%"></div>
 <pre>
   rewrite &lt;- (eissect (equiv_sigma_prod0 _ _) b).</pre>
 </div>
@@ -1483,64 +1483,64 @@ Time: 0s">
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 386
-Time: 0.056s">
-<div class="time" style="width: 58.333333333333%"></div>
+Time: 0.049s">
+<div class="time" style="width: 57.647058823529%"></div>
 <pre>
   srapply (contr_equiv _ (ap (equiv_sigma_prod0 _ _)^-1)).</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 387
-Time: 0.022s">
-<div class="time" style="width: 22.916666666667%"></div>
+Time: 0.019s">
+<div class="time" style="width: 22.352941176471%"></div>
 <pre>
   srapply (contr_equiv _ (equiv_path_prod _ _)).</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 388
 Time: 0.001s">
-<div class="time" style="width: 1.0416666666667%"></div>
+<div class="time" style="width: 1.1764705882353%"></div>
 <pre>
   destruct a'' as [a a''], b'' as [b b'']; cbn.</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 389
-Time: 0.047s">
-<div class="time" style="width: 48.958333333333%"></div>
+Time: 0.026s">
+<div class="time" style="width: 30.588235294118%"></div>
 <pre>
   srapply contr_prod.</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 390
-Time: 0.012s">
-<div class="time" style="width: 12.5%"></div>
+Time: 0.011s">
+<div class="time" style="width: 12.941176470588%"></div>
 <pre>
   all: srapply contr_paths_contr.</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 391
-Time: 0.036s">
-<div class="time" style="width: 37.5%"></div>
+Time: 0.031s">
+<div class="time" style="width: 36.470588235294%"></div>
 <pre>
   all: srapply contr_inhabited_hprop.</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 392
-Time: 0.021s">
-<div class="time" style="width: 21.875%"></div>
+Time: 0.017s">
+<div class="time" style="width: 20%"></div>
 <pre>
   all: srapply istrunc_forall.</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 393
-Time: 0.004s">
-<div class="time" style="width: 4.1666666666667%"></div>
+Time: 0.003s">
+<div class="time" style="width: 3.5294117647059%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 394
-Time: 0.019s">
-<div class="time" style="width: 19.791666666667%"></div>
+Time: 0.016s">
+<div class="time" style="width: 18.823529411765%"></div>
 <pre>
 
 Definition issig_isgroup w x y z : _ &lt;~&gt; @IsGroup w x y z := ltac:(issig).</pre>
@@ -1570,14 +1570,14 @@ Time: 0s">
 <div class="code" title="File: abstract_algebra.v
 Line: 400
 Time: 0.001s">
-<div class="time" style="width: 1.0416666666667%"></div>
+<div class="time" style="width: 1.1764705882353%"></div>
 <pre>
   rewrite &lt;- (eisretr (issig_isgroup w x y z) a).</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 401
 Time: 0.001s">
-<div class="time" style="width: 1.0416666666667%"></div>
+<div class="time" style="width: 1.1764705882353%"></div>
 <pre>
   rewrite &lt;- (eisretr (issig_isgroup w x y z) b).</pre>
 </div>
@@ -1604,22 +1604,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 405
-Time: 0.086s">
-<div class="time" style="width: 89.583333333333%"></div>
+Time: 0.07s">
+<div class="time" style="width: 82.352941176471%"></div>
 <pre>
   srapply (contr_equiv _ (ap (issig_isgroup w x y z))).</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 406
-Time: 0.003s">
-<div class="time" style="width: 3.125%"></div>
+Time: 0.002s">
+<div class="time" style="width: 2.3529411764706%"></div>
 <pre>
   rewrite &lt;- (eissect (equiv_sigma_prod0 _ _) a').</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 407
-Time: 0.003s">
-<div class="time" style="width: 3.125%"></div>
+Time: 0.002s">
+<div class="time" style="width: 2.3529411764706%"></div>
 <pre>
   rewrite &lt;- (eissect (equiv_sigma_prod0 _ _) b').</pre>
 </div>
@@ -1646,43 +1646,43 @@ Time: 0s">
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 411
-Time: 0.087s">
-<div class="time" style="width: 90.625%"></div>
+Time: 0.074s">
+<div class="time" style="width: 87.058823529412%"></div>
 <pre>
   srapply (contr_equiv _ (ap (equiv_sigma_prod0 _ _)^-1)).</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 412
-Time: 0.06s">
-<div class="time" style="width: 62.5%"></div>
+Time: 0.049s">
+<div class="time" style="width: 57.647058823529%"></div>
 <pre>
   srapply (contr_equiv _ (equiv_path_prod _ _)).</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 413
-Time: 0.025s">
-<div class="time" style="width: 26.041666666667%"></div>
+Time: 0.021s">
+<div class="time" style="width: 24.705882352941%"></div>
 <pre>
   srapply contr_prod.</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 414
-Time: 0.002s">
-<div class="time" style="width: 2.0833333333333%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.1764705882353%"></div>
 <pre>
   destruct a as [a' a], b as [b' b]; cbn.</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 415
 Time: 0.002s">
-<div class="time" style="width: 2.0833333333333%"></div>
+<div class="time" style="width: 2.3529411764706%"></div>
 <pre>
   rewrite &lt;- (eissect (equiv_sigma_prod0 _ _) a).</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 416
-Time: 0.003s">
-<div class="time" style="width: 3.125%"></div>
+Time: 0.002s">
+<div class="time" style="width: 2.3529411764706%"></div>
 <pre>
   rewrite &lt;- (eissect (equiv_sigma_prod0 _ _) b).</pre>
 </div>
@@ -1709,64 +1709,64 @@ Time: 0s">
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 420
-Time: 0.066s">
-<div class="time" style="width: 68.75%"></div>
+Time: 0.054s">
+<div class="time" style="width: 63.529411764706%"></div>
 <pre>
   srapply (contr_equiv _ (ap (equiv_sigma_prod0 _ _)^-1)).</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 421
-Time: 0.025s">
-<div class="time" style="width: 26.041666666667%"></div>
+Time: 0.022s">
+<div class="time" style="width: 25.882352941176%"></div>
 <pre>
   srapply (contr_equiv _ (equiv_path_prod _ _)).</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 422
 Time: 0.001s">
-<div class="time" style="width: 1.0416666666667%"></div>
+<div class="time" style="width: 1.1764705882353%"></div>
 <pre>
   destruct a'' as [a a''], b'' as [b b'']; cbn.</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 423
-Time: 0.025s">
-<div class="time" style="width: 26.041666666667%"></div>
+Time: 0.02s">
+<div class="time" style="width: 23.529411764706%"></div>
 <pre>
   srapply contr_prod.</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 424
-Time: 0.014s">
-<div class="time" style="width: 14.583333333333%"></div>
+Time: 0.012s">
+<div class="time" style="width: 14.117647058824%"></div>
 <pre>
   all: srapply contr_paths_contr.</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 425
-Time: 0.041s">
-<div class="time" style="width: 42.708333333333%"></div>
+Time: 0.035s">
+<div class="time" style="width: 41.176470588235%"></div>
 <pre>
   all: srapply contr_inhabited_hprop.</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 426
-Time: 0.025s">
-<div class="time" style="width: 26.041666666667%"></div>
+Time: 0.022s">
+<div class="time" style="width: 25.882352941176%"></div>
 <pre>
   all: srapply istrunc_forall.</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 427
-Time: 0.006s">
-<div class="time" style="width: 6.25%"></div>
+Time: 0.005s">
+<div class="time" style="width: 5.8823529411765%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: abstract_algebra.v
 Line: 428
-Time: 0.016s">
-<div class="time" style="width: 16.666666666667%"></div>
+Time: 0.012s">
+<div class="time" style="width: 14.117647058824%"></div>
 <pre>
 
 End extras.</pre>

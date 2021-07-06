@@ -38,28 +38,28 @@ Time: 0s">
 </div>
 <div class="code" title="File: Opposite.v
 Line: 2
-Time: 0.027s">
-<div class="time" style="width: 41.538461538462%"></div>
+Time: 0.029s">
+<div class="time" style="width: 42.647058823529%"></div>
 <pre>Require Import Basics.</pre>
 </div>
 <div class="code" title="File: Opposite.v
 Line: 2
 Time: 0.002s">
-<div class="time" style="width: 3.0769230769231%"></div>
+<div class="time" style="width: 2.9411764705882%"></div>
 <pre>
 Require Import WildCat.Core.</pre>
 </div>
 <div class="code" title="File: Opposite.v
 Line: 3
 Time: 0.002s">
-<div class="time" style="width: 3.0769230769231%"></div>
+<div class="time" style="width: 2.9411764705882%"></div>
 <pre>
 Require Import WildCat.Equiv.</pre>
 </div>
 <div class="code" title="File: Opposite.v
 Line: 4
 Time: 0.001s">
-<div class="time" style="width: 1.5384615384615%"></div>
+<div class="time" style="width: 1.4705882352941%"></div>
 <pre>
 Require Import WildCat.NatTrans.</pre>
 </div>
@@ -260,7 +260,7 @@ Time: 0s">
 </div>
 <div class="code" title="File: Opposite.v
 Line: 37
-Time: 0.065s">
+Time: 0.068s">
 <div class="time" style="width: 100%"></div>
 <pre>
     srapply Build_Is1Cat; unfold op in *; cbv in *.</pre>
@@ -320,8 +320,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Opposite.v
 Line: 43
-Time: 0.001s">
-<div class="time" style="width: 1.5384615384615%"></div>
+Time: 0.002s">
+<div class="time" style="width: 2.9411764705882%"></div>
 <pre>
       srapply Build_Is0Functor.</pre>
 </div>
@@ -361,8 +361,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Opposite.v
 Line: 48
-Time: 0.004s">
-<div class="time" style="width: 6.1538461538462%"></div>
+Time: 0.003s">
+<div class="time" style="width: 4.4117647058824%"></div>
 <pre>
       srapply Build_Is0Functor.</pre>
 </div>
@@ -428,15 +428,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Opposite.v
 Line: 55
-Time: 0.003s">
-<div class="time" style="width: 4.6153846153846%"></div>
+Time: 0.002s">
+<div class="time" style="width: 2.9411764705882%"></div>
 <pre>
    Defined.</pre>
 </div>
 <div class="code" title="File: Opposite.v
 Line: 56
-Time: 0.001s">
-<div class="time" style="width: 1.5384615384615%"></div>
+Time: 0.002s">
+<div class="time" style="width: 2.9411764705882%"></div>
 <pre>
 
 End Op.</pre>
@@ -444,7 +444,7 @@ End Op.</pre>
 <div class="code" title="File: Opposite.v
 Line: 58
 Time: 0.001s">
-<div class="time" style="width: 1.5384615384615%"></div>
+<div class="time" style="width: 1.4705882352941%"></div>
 <pre>
 
 Global Instance is1cat_strong_op A `{Is1Cat_Strong A}
@@ -459,8 +459,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: Opposite.v
 Line: 62
-Time: 0.054s">
-<div class="time" style="width: 83.076923076923%"></div>
+Time: 0.056s">
+<div class="time" style="width: 82.352941176471%"></div>
 <pre>
   srapply Build_Is1Cat_Strong; unfold op in *; cbn in *.</pre>
 </div>
@@ -520,7 +520,7 @@ Time: 0s">
 <div class="code" title="File: Opposite.v
 Line: 68
 Time: 0.001s">
-<div class="time" style="width: 1.5384615384615%"></div>
+<div class="time" style="width: 1.4705882352941%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -546,8 +546,8 @@ Definition test4 A `{x : Is1Cat A} : x = is1cat_op (A^op) := 1.
 </div>
 <div class="code" title="File: Opposite.v
 Line: 82
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.4705882352941%"></div>
 <pre>Global Instance is0gpd_op A `{Is0Gpd A} : Is0Gpd (A ^op).</pre>
 </div>
 <div class="code" title="File: Opposite.v
@@ -560,7 +560,7 @@ Proof.</pre>
 <div class="code" title="File: Opposite.v
 Line: 83
 Time: 0.001s">
-<div class="time" style="width: 1.5384615384615%"></div>
+<div class="time" style="width: 1.4705882352941%"></div>
 <pre>
   srapply Build_Is0Gpd; unfold op in *; cbn in *.</pre>
 </div>
@@ -588,7 +588,7 @@ Defined.</pre>
 <div class="code" title="File: Opposite.v
 Line: 87
 Time: 0.001s">
-<div class="time" style="width: 1.5384615384615%"></div>
+<div class="time" style="width: 1.4705882352941%"></div>
 <pre>
 
 Global Instance op0gpd_fun A `{Is0Gpd A} :
@@ -604,7 +604,7 @@ Proof.</pre>
 <div class="code" title="File: Opposite.v
 Line: 91
 Time: 0.001s">
-<div class="time" style="width: 1.5384615384615%"></div>
+<div class="time" style="width: 1.4705882352941%"></div>
 <pre>
   srapply Build_Is0Functor; unfold op in *; cbn.</pre>
 </div>
@@ -670,7 +670,7 @@ Defined.
 <div class="code" title="File: Opposite.v
 Line: 126
 Time: 0.001s">
-<div class="time" style="width: 1.5384615384615%"></div>
+<div class="time" style="width: 1.4705882352941%"></div>
 <pre>Global Instance is0functor_op  A `{Is01Cat A} B `{Is01Cat B}
        (F : A -&gt; B) `{x : !Is0Functor F}
   : Is0Functor (F : A ^op -&gt; B ^op).</pre>
@@ -733,8 +733,8 @@ Defined.</pre>
 </div>
 <div class="code" title="File: Opposite.v
 Line: 136
-Time: 0.008s">
-<div class="time" style="width: 12.307692307692%"></div>
+Time: 0.009s">
+<div class="time" style="width: 13.235294117647%"></div>
 <pre>
 
 Global Instance is1functor_op A B `{Is1Cat A} `{Is1Cat B}
@@ -751,7 +751,7 @@ Proof.</pre>
 <div class="code" title="File: Opposite.v
 Line: 141
 Time: 0.002s">
-<div class="time" style="width: 3.0769230769231%"></div>
+<div class="time" style="width: 2.9411764705882%"></div>
 <pre>
   apply Build_Is1Functor; unfold op in *; cbn in *.</pre>
 </div>
@@ -764,8 +764,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Opposite.v
 Line: 143
-Time: 0.022s">
-<div class="time" style="width: 33.846153846154%"></div>
+Time: 0.021s">
+<div class="time" style="width: 30.882352941176%"></div>
 <pre> intros a b; rapply fmap2; assumption.</pre>
 </div>
 <div class="code" title="File: Opposite.v
@@ -797,7 +797,7 @@ Time: 0s">
 <div class="code" title="File: Opposite.v
 Line: 145
 Time: 0.002s">
-<div class="time" style="width: 3.0769230769231%"></div>
+<div class="time" style="width: 2.9411764705882%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -864,8 +864,8 @@ Defined.</pre>
 </div>
 <div class="code" title="File: Opposite.v
 Line: 158
-Time: 0.007s">
-<div class="time" style="width: 10.769230769231%"></div>
+Time: 0.006s">
+<div class="time" style="width: 8.8235294117647%"></div>
 <pre>
 
 Global Instance is1nat_op A B `{Is01Cat A} `{Is1Cat B}
@@ -911,15 +911,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Opposite.v
 Line: 169
-Time: 0.016s">
-<div class="time" style="width: 24.615384615385%"></div>
+Time: 0.013s">
+<div class="time" style="width: 19.117647058824%"></div>
 <pre>
   srapply isnat_tr.</pre>
 </div>
 <div class="code" title="File: Opposite.v
 Line: 170
 Time: 0.001s">
-<div class="time" style="width: 1.5384615384615%"></div>
+<div class="time" style="width: 1.4705882352941%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -934,7 +934,7 @@ Time: 0s">
 <div class="code" title="File: Opposite.v
 Line: 173
 Time: 0.001s">
-<div class="time" style="width: 1.5384615384615%"></div>
+<div class="time" style="width: 1.4705882352941%"></div>
 <pre>Global Instance hasequivs_op {A} `{HasEquivs A} : HasEquivs A^op.</pre>
 </div>
 <div class="code" title="File: Opposite.v
@@ -946,8 +946,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: Opposite.v
 Line: 174
-Time: 0.007s">
-<div class="time" style="width: 10.769230769231%"></div>
+Time: 0.006s">
+<div class="time" style="width: 8.8235294117647%"></div>
 <pre>
   srapply Build_HasEquivs; intros a b; unfold op in *; cbn.</pre>
 </div>
@@ -1026,7 +1026,7 @@ Time: 0s">
 <div class="code" title="File: Opposite.v
 Line: 181
 Time: 0.001s">
-<div class="time" style="width: 1.5384615384615%"></div>
+<div class="time" style="width: 1.4705882352941%"></div>
 <pre> rapply cate_buildequiv_fun'.</pre>
 </div>
 <div class="code" title="File: Opposite.v
@@ -1052,7 +1052,7 @@ Time: 0s">
 <div class="code" title="File: Opposite.v
 Line: 183
 Time: 0.001s">
-<div class="time" style="width: 1.5384615384615%"></div>
+<div class="time" style="width: 1.4705882352941%"></div>
 <pre> rapply cate_isretr'.</pre>
 </div>
 <div class="code" title="File: Opposite.v
@@ -1065,7 +1065,7 @@ Time: 0s">
 <div class="code" title="File: Opposite.v
 Line: 184
 Time: 0.001s">
-<div class="time" style="width: 1.5384615384615%"></div>
+<div class="time" style="width: 1.4705882352941%"></div>
 <pre> rapply cate_issect'.</pre>
 </div>
 <div class="code" title="File: Opposite.v
@@ -1090,15 +1090,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Opposite.v
 Line: 186
-Time: 0.004s">
-<div class="time" style="width: 6.1538461538462%"></div>
+Time: 0.003s">
+<div class="time" style="width: 4.4117647058824%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: Opposite.v
 Line: 187
-Time: 0.003s">
-<div class="time" style="width: 4.6153846153846%"></div>
+Time: 0.002s">
+<div class="time" style="width: 2.9411764705882%"></div>
 <pre>
 
 Global Instance isequivs_op {A : Type} `{HasEquivs A}
@@ -1129,7 +1129,7 @@ Defined.</pre>
 <div class="code" title="File: Opposite.v
 Line: 194
 Time: 0.001s">
-<div class="time" style="width: 1.5384615384615%"></div>
+<div class="time" style="width: 1.4705882352941%"></div>
 <pre>
 
 Global Instance hasmorext_op {A : Type} `{H0 : HasMorExt A}
@@ -1145,7 +1145,7 @@ Proof.</pre>
 <div class="code" title="File: Opposite.v
 Line: 198
 Time: 0.001s">
-<div class="time" style="width: 1.5384615384615%"></div>
+<div class="time" style="width: 1.4705882352941%"></div>
 <pre>
   snrapply Build_HasMorExt.</pre>
 </div>

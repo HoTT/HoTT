@@ -37,7 +37,7 @@ Time: 0s">
 <div class="code" title="File: Circle.v
 Line: 1
 Time: 0.043s">
-<div class="time" style="width: 87.755102040816%"></div>
+<div class="time" style="width: 89.583333333333%"></div>
 <pre>Require Import Basics Types.</pre>
 </div>
 <div class="code" title="File: Circle.v
@@ -49,21 +49,21 @@ Require Import HProp HSet.</pre>
 </div>
 <div class="code" title="File: Circle.v
 Line: 2
-Time: 0.003s">
-<div class="time" style="width: 6.1224489795918%"></div>
+Time: 0.002s">
+<div class="time" style="width: 4.1666666666667%"></div>
 <pre>
 Require Import Spaces.Pos Spaces.Int.</pre>
 </div>
 <div class="code" title="File: Circle.v
 Line: 3
 Time: 0.002s">
-<div class="time" style="width: 4.0816326530612%"></div>
+<div class="time" style="width: 4.1666666666667%"></div>
 <pre>
 Require Import HIT.Coeq.</pre>
 </div>
 <div class="code" title="File: Circle.v
 Line: 4
-Time: 0.049s">
+Time: 0.048s">
 <div class="time" style="width: 100%"></div>
 <pre>
 Require Import Modalities.Modality Truncations.</pre>
@@ -214,14 +214,14 @@ Time: 0s">
 <div class="code" title="File: Circle.v
 Line: 39
 Time: 0.001s">
-<div class="time" style="width: 2.0408163265306%"></div>
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>
   intros []; exact l.</pre>
 </div>
 <div class="code" title="File: Circle.v
 Line: 40
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -236,7 +236,7 @@ Time: 0s">
 <div class="code" title="File: Circle.v
 Line: 43
 Time: 0.003s">
-<div class="time" style="width: 6.1224489795918%"></div>
+<div class="time" style="width: 6.25%"></div>
 <pre>Definition Circle_ind_beta_loop (P : Circle -&gt; Type)
   (b : P base) (l : loop # b = b)
   : apD (Circle_ind P b l) loop = l
@@ -331,8 +331,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Circle.v
 Line: 61
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>
   refine ((apD_const (Circle_ind (fun _ =&gt; P) b _) loop)^ @ _).</pre>
 </div>
@@ -345,8 +345,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Circle.v
 Line: 63
-Time: 0.003s">
-<div class="time" style="width: 6.1224489795918%"></div>
+Time: 0.002s">
+<div class="time" style="width: 4.1666666666667%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -405,8 +405,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Circle.v
 Line: 74
-Time: 0.001s">
-<div class="time" style="width: 2.0408163265306%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>Definition Circle_code : Circle -&gt; Type
     := Circle_rec Type Int (path_universe int_succ).</pre>
 </div>
@@ -442,8 +442,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Circle.v
 Line: 81
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>
     unfold Circle_code; rewrite Circle_rec_beta_loop.</pre>
 </div>
@@ -456,8 +456,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Circle.v
 Line: 83
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -493,22 +493,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: Circle.v
 Line: 90
-Time: 0.001s">
-<div class="time" style="width: 2.0408163265306%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     rewrite ap_V.</pre>
 </div>
 <div class="code" title="File: Circle.v
 Line: 91
 Time: 0.001s">
-<div class="time" style="width: 2.0408163265306%"></div>
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>
     unfold Circle_code; rewrite Circle_rec_beta_loop.</pre>
 </div>
 <div class="code" title="File: Circle.v
 Line: 92
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>
     rewrite &lt;- (path_universe_V int_succ).</pre>
 </div>
@@ -521,8 +521,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Circle.v
 Line: 94
-Time: 0.001s">
-<div class="time" style="width: 2.0408163265306%"></div>
+Time: 0.002s">
+<div class="time" style="width: 4.1666666666667%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -636,8 +636,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Circle.v
 Line: 113
-Time: 0.001s">
-<div class="time" style="width: 2.0408163265306%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
       rewrite pos_peano_ind_beta_pos_succ.</pre>
 </div>
@@ -721,7 +721,7 @@ Time: 0s">
 <div class="code" title="File: Circle.v
 Line: 125
 Time: 0.003s">
-<div class="time" style="width: 6.1224489795918%"></div>
+<div class="time" style="width: 6.25%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -764,8 +764,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Circle.v
 Line: 133
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre> induction n using pos_peano_ind; simpl in *.</pre>
 </div>
 <div class="code" title="File: Circle.v
@@ -783,8 +783,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Circle.v
 Line: 134
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>
         by symmetry; apply transport_Circle_code_loop.</pre>
 </div>
@@ -803,15 +803,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Circle.v
 Line: 136
-Time: 0.001s">
-<div class="time" style="width: 2.0408163265306%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
         rewrite pos_peano_ind_beta_pos_succ.</pre>
 </div>
 <div class="code" title="File: Circle.v
 Line: 137
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>
         rewrite transport_pp.</pre>
 </div>
@@ -824,8 +824,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Circle.v
 Line: 139
-Time: 0.002s">
-<div class="time" style="width: 4.0816326530612%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>
         refine (_ @ (transport_Circle_code_loop _)^).</pre>
 </div>
@@ -872,8 +872,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Circle.v
 Line: 145
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre> induction n using pos_peano_ind; simpl in *.</pre>
 </div>
 <div class="code" title="File: Circle.v
@@ -912,7 +912,7 @@ Time: 0s">
 <div class="code" title="File: Circle.v
 Line: 148
 Time: 0.001s">
-<div class="time" style="width: 2.0408163265306%"></div>
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>
         rewrite transport_pp.</pre>
 </div>
@@ -960,8 +960,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Circle.v
 Line: 155
-Time: 0.005s">
-<div class="time" style="width: 10.204081632653%"></div>
+Time: 0.004s">
+<div class="time" style="width: 8.3333333333333%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -1010,8 +1010,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Circle.v
 Line: 163
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre> refine (Circle_ind (fun x =&gt; (Circle_encode x) o (Circle_decode x) == idmap)
         Circle_encode_loopexp _ _).</pre>
 </div>
@@ -1025,8 +1025,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Circle.v
 Line: 166
-Time: 0.002s">
-<div class="time" style="width: 4.0816326530612%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>by apply path_forall; intros z; apply hset_path2.</pre>
 </div>
 <div class="code" title="File: Circle.v
@@ -1051,8 +1051,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Circle.v
 Line: 168
-Time: 0.002s">
-<div class="time" style="width: 4.0816326530612%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -1068,14 +1068,14 @@ Time: 0s">
 <div class="code" title="File: Circle.v
 Line: 172
 Time: 0.001s">
-<div class="time" style="width: 2.0408163265306%"></div>
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>Definition equiv_loopCircle_int : (base = base) &lt;~&gt; Int
     := Build_Equiv _ _ (Circle_encode base) (Circle_encode_isequiv base).</pre>
 </div>
 <div class="code" title="File: Circle.v
 Line: 173
 Time: 0.006s">
-<div class="time" style="width: 12.244897959184%"></div>
+<div class="time" style="width: 12.5%"></div>
 <pre>
 
 End EncodeDecode.</pre>
@@ -1173,13 +1173,13 @@ Time: 0s">
 <div class="code" title="File: Circle.v
 Line: 187
 Time: 0.004s">
-<div class="time" style="width: 8.1632653061224%"></div>
+<div class="time" style="width: 8.3333333333333%"></div>
 <pre> apply path_ishprop.</pre>
 </div>
 <div class="code" title="File: Circle.v
 Line: 187
 Time: 0.002s">
-<div class="time" style="width: 4.0816326530612%"></div>
+<div class="time" style="width: 4.1666666666667%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -1220,36 +1220,36 @@ Time: 0s">
 </div>
 <div class="code" title="File: Circle.v
 Line: 193
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>
   assert (q := merely_path_is0connected Circle base y).</pre>
 </div>
 <div class="code" title="File: Circle.v
 Line: 194
-Time: 0.034s">
-<div class="time" style="width: 69.387755102041%"></div>
+Time: 0.033s">
+<div class="time" style="width: 68.75%"></div>
 <pre>
   strip_truncations.</pre>
 </div>
 <div class="code" title="File: Circle.v
 Line: 195
-Time: 0.001s">
-<div class="time" style="width: 2.0408163265306%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   destruct p, q.</pre>
 </div>
 <div class="code" title="File: Circle.v
 Line: 196
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>
   refine (istrunc_equiv_istrunc (n := 0) Int equiv_loopCircle_int^-1).</pre>
 </div>
 <div class="code" title="File: Circle.v
 Line: 197
-Time: 0.003s">
-<div class="time" style="width: 6.1224489795918%"></div>
+Time: 0.002s">
+<div class="time" style="width: 4.1666666666667%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -1265,8 +1265,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Circle.v
 Line: 202
-Time: 0.004s">
-<div class="time" style="width: 8.1632653061224%"></div>
+Time: 0.003s">
+<div class="time" style="width: 6.25%"></div>
 <pre>Definition Circle_action_is_iter `{Univalence} X (f : X &lt;~&gt; X) (n : Int) (x : X)
 : transport (Circle_rec Type X (path_universe f)) (equiv_loopCircle_int^-1 n) x
   = int_iter f n x.</pre>
@@ -1294,29 +1294,29 @@ Time: 0s">
 </div>
 <div class="code" title="File: Circle.v
 Line: 207
-Time: 0.001s">
-<div class="time" style="width: 2.0408163265306%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   refine (ap (fun p =&gt; transport idmap p x) _).</pre>
 </div>
 <div class="code" title="File: Circle.v
 Line: 208
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>
   unfold equiv_loopCircle_int; cbn.</pre>
 </div>
 <div class="code" title="File: Circle.v
 Line: 209
-Time: 0.001s">
-<div class="time" style="width: 2.0408163265306%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   unfold Circle_decode; simpl.</pre>
 </div>
 <div class="code" title="File: Circle.v
 Line: 210
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.0833333333333%"></div>
 <pre>
   rewrite ap_loopexp.</pre>
 </div>
@@ -1337,7 +1337,7 @@ Time: 0s">
 <div class="code" title="File: Circle.v
 Line: 213
 Time: 0.009s">
-<div class="time" style="width: 18.367346938776%"></div>
+<div class="time" style="width: 18.75%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -1351,8 +1351,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Circle.v
 Line: 216
-Time: 0.028s">
-<div class="time" style="width: 57.142857142857%"></div>
+Time: 0.026s">
+<div class="time" style="width: 54.166666666667%"></div>
 <pre>Definition Circle_ind_dp (P : Circle -&gt; Type) (b : P base)
   (bl : DPath P loop b b) (x : Circle) : P x
   := Circle_ind P b (dp_path_transport^-1 bl) x.</pre>

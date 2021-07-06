@@ -753,12 +753,12 @@
           
 
             i = 147;
-            data = "";
+            data = "1 goal (ID 10)	  	  H : Funext	  U : HProp	  ============================	  forall Y X : Type,	  (fun X0 : Type => Build_HProp (X0 -> U)) Y ->	  IsEquiv	    (fun g : Y -> (fun X0 : Type => X0 * U) X => (fun X0 : Type => fst) X o g)	1 goal (ID 6565)	  	  H : Funext	  U : HProp	  Y : Type	  X : Type	  YU : Y -> U	  ============================	  IsEquiv (fun (g : Y -> X * U) (x : Y) => fst (g x))	2 goals (ID 6582)	  	  H : Funext	  U : HProp	  Y : Type	  X : Type	  YU : Y -> U	  ============================	  (fun (x : Y -> X) (x0 : Y) => x x0) == idmap		goal 2 (ID 6583) is:	 (fun (x : Y -> X * U) (y : Y) => (fst (x y), YU y)) == idmap	1 goal (ID 6582)	  	  H : Funext	  U : HProp	  Y : Type	  X : Type	  YU : Y -> U	  ============================	  (fun (x : Y -> X) (x0 : Y) => x x0) == idmap	<infomsg>	This subproof is complete, but there are some unfocused goals.	Focus next goal with bullet -.	</infomsg>	1 goal		goal 1 (ID 6583) is:	 (fun (x : Y -> X * U) (y : Y) => (fst (x y), YU y)) == idmap	1 goal (ID 6583)	  	  H : Funext	  U : HProp	  Y : Type	  X : Type	  YU : Y -> U	  ============================	  (fun (x : Y -> X * U) (y : Y) => (fst (x y), YU y)) == idmap	1 goal (ID 6600)	  	  H : Funext	  U : HProp	  Y : Type	  X : Type	  YU : Y -> U	  h : Y -> X * U	  y : Y	  ============================	  (fst (h y), YU y) = h y	";
             responses[i]=data;
           
 
             i = 148;
-            data = "1 goal (ID 10)	  	  H : Funext	  U : HProp	  ============================	  forall Y X : Type,	  (fun X0 : Type => Build_HProp (X0 -> U)) Y ->	  IsEquiv	    (fun g : Y -> (fun X0 : Type => X0 * U) X => (fun X0 : Type => fst) X o g)	1 goal (ID 6565)	  	  H : Funext	  U : HProp	  Y : Type	  X : Type	  YU : Y -> U	  ============================	  IsEquiv (fun (g : Y -> X * U) (x : Y) => fst (g x))	2 goals (ID 6582)	  	  H : Funext	  U : HProp	  Y : Type	  X : Type	  YU : Y -> U	  ============================	  (fun (x : Y -> X) (x0 : Y) => x x0) == idmap		goal 2 (ID 6583) is:	 (fun (x : Y -> X * U) (y : Y) => (fst (x y), YU y)) == idmap	1 goal (ID 6582)	  	  H : Funext	  U : HProp	  Y : Type	  X : Type	  YU : Y -> U	  ============================	  (fun (x : Y -> X) (x0 : Y) => x x0) == idmap	<infomsg>	This subproof is complete, but there are some unfocused goals.	Focus next goal with bullet -.	</infomsg>	1 goal		goal 1 (ID 6583) is:	 (fun (x : Y -> X * U) (y : Y) => (fst (x y), YU y)) == idmap	1 goal (ID 6583)	  	  H : Funext	  U : HProp	  Y : Type	  X : Type	  YU : Y -> U	  ============================	  (fun (x : Y -> X * U) (y : Y) => (fst (x y), YU y)) == idmap	1 goal (ID 6600)	  	  H : Funext	  U : HProp	  Y : Type	  X : Type	  YU : Y -> U	  h : Y -> X * U	  y : Y	  ============================	  (fst (h y), YU y) = h y	No more goals.	";
+            data = "No more goals.	";
             responses[i]=data;
           
 
@@ -1034,7 +1034,7 @@
 </div>
 <div class="goal" id="goal0_3_3"><pre><span></span></pre></div>
 <div class="doc" scenenumber="5">
-<a id="lab947"></a><h1 class="section">Coreflective subuniverses.</h1>
+<a id="lab957"></a><h1 class="section">Coreflective subuniverses.</h1>
 <div class="doc" scenenumber="4"> </div>
 
  In this file we study "coreflective subuniverses" that are defined dually to reflective subuniverses.  However, it turns out that there are many fewer examples of these.  The "internal" nature of such definitions, which in the reflective case makes the subuniverse automatically an exponential ideal, in the coreflective case has much stronger consequences: it forces the entire coreflection to be determined by the image of <span class="inlinecode"><a class="idref" href="HoTT.Basics.Overture.html#Unit"><span class="id" title="inductive">Unit</span></a></span>, which can be an arbitrary hprop.  Thus, this file is essentially just a no-go theorem: there are no coreflective subuniverses other than a certain class of fairly simple ones (which we call "co-open" since they are dual to open modalities).

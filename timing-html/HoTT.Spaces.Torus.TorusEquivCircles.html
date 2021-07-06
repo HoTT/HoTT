@@ -30,21 +30,21 @@ pre {
 
 <div class="code" title="File: TorusEquivCircles.v
 Line: 1
-Time: 0.045s">
-<div class="time" style="width: 3.0467163168585%"></div>
+Time: 0.042s">
+<div class="time" style="width: 3.0042918454936%"></div>
 <pre>Require Import Basics Types.</pre>
 </div>
 <div class="code" title="File: TorusEquivCircles.v
 Line: 1
 Time: 0.009s">
-<div class="time" style="width: 0.6093432633717%"></div>
+<div class="time" style="width: 0.64377682403433%"></div>
 <pre>
 Require Import Cubical.</pre>
 </div>
 <div class="code" title="File: TorusEquivCircles.v
 Line: 2
-Time: 0.045s">
-<div class="time" style="width: 3.0467163168585%"></div>
+Time: 0.043s">
+<div class="time" style="width: 3.0758226037196%"></div>
 <pre>
 Require Import Spaces.Circle Spaces.Torus.Torus.</pre>
 </div>
@@ -92,7 +92,7 @@ Time: 0s">
 <div class="code" title="File: TorusEquivCircles.v
 Line: 14
 Time: 0.004s">
-<div class="time" style="width: 0.2708192281652%"></div>
+<div class="time" style="width: 0.28612303290415%"></div>
 <pre>Definition c2t_square_and_cube
     : {s : PathSquare loop_a loop_a
         (ap (Circle_rec _ tbase loop_b) loop)
@@ -111,14 +111,14 @@ Time: 0s">
 <div class="code" title="File: TorusEquivCircles.v
 Line: 21
 Time: 0.001s">
-<div class="time" style="width: 0.0677048070413%"></div>
+<div class="time" style="width: 0.071530758226037%"></div>
 <pre>
     apply cu_fill_left.</pre>
 </div>
 <div class="code" title="File: TorusEquivCircles.v
 Line: 22
 Time: 0.001s">
-<div class="time" style="width: 0.0677048070413%"></div>
+<div class="time" style="width: 0.071530758226037%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -218,7 +218,7 @@ Time: 0s">
 <div class="code" title="File: TorusEquivCircles.v
 Line: 32
 Time: 0.001s">
-<div class="time" style="width: 0.0677048070413%"></div>
+<div class="time" style="width: 0.071530758226037%"></div>
 <pre> exact (sq_prod (hr, vr)).</pre>
 </div>
 <div class="code" title="File: TorusEquivCircles.v
@@ -342,8 +342,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: TorusEquivCircles.v
 Line: 43
-Time: 0.001s">
-<div class="time" style="width: 0.0677048070413%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>srapply Circle_ind_dp.</pre>
 </div>
 <div class="code" title="File: TorusEquivCircles.v
@@ -381,7 +381,7 @@ Time: 0s">
 <div class="code" title="File: TorusEquivCircles.v
 Line: 45
 Time: 0.003s">
-<div class="time" style="width: 0.2031144211239%"></div>
+<div class="time" style="width: 0.21459227467811%"></div>
 <pre> srapply sq_dp^-1.</pre>
 </div>
 <div class="code" title="File: TorusEquivCircles.v
@@ -458,7 +458,7 @@ Time: 0s">
 <div class="code" title="File: TorusEquivCircles.v
 Line: 56
 Time: 0.003s">
-<div class="time" style="width: 0.2031144211239%"></div>
+<div class="time" style="width: 0.21459227467811%"></div>
 <pre>Definition c2t'_beta :
     {bl1 : PathSquare (ap (fun y =&gt; c2t' base y) loop) loop_b 1 1 &amp;
     {bl2 : PathSquare (ap (fun x =&gt; c2t' x base) loop) loop_a 1 1 &amp;
@@ -496,7 +496,7 @@ Time: 0s">
 <div class="code" title="File: TorusEquivCircles.v
 Line: 64
 Time: 0.014s">
-<div class="time" style="width: 0.9478672985782%"></div>
+<div class="time" style="width: 1.0014306151645%"></div>
 <pre>refine (cu_concat_lr (cu_ds (dp_apD_nat
       (fun y =&gt; ap_compose _ (fun f =&gt; f y) _) _)) _
       (sji0:=?[X1]) (sji1:=?X1) (sj0i:=?[Y1]) (sj1i:=?Y1) (pj11:=1)).</pre>
@@ -511,8 +511,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: TorusEquivCircles.v
 Line: 68
-Time: 0.024s">
-<div class="time" style="width: 1.6249153689912%"></div>
+Time: 0.023s">
+<div class="time" style="width: 1.6452074391989%"></div>
 <pre>refine (cu_concat_lr (cu_ds (dp_apD_nat
       (fun x =&gt; ap_apply_l _ _ @ apD10 (ap _(Circle_rec_beta_loop _ _ _)) x) _)) _
       (sji0:=?[X2]) (sji1:=?X2) (sj0i:=?[Y2]) (sj1i:=?Y2) (pj11:=1)).</pre>
@@ -527,8 +527,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: TorusEquivCircles.v
 Line: 72
-Time: 0.013s">
-<div class="time" style="width: 0.8801624915369%"></div>
+Time: 0.012s">
+<div class="time" style="width: 0.85836909871245%"></div>
 <pre>refine (cu_concat_lr (cu_ds (dp_apD_nat (ap10_path_forall _ _ _) _)) _
       (sji0:=?[X3]) (sji1:=?X3) (sj0i:=?[Y3]) (sj1i:=?Y3) (pj11:=1)).</pre>
 </div>
@@ -543,7 +543,7 @@ Time: 0s">
 <div class="code" title="File: TorusEquivCircles.v
 Line: 75
 Time: 0.007s">
-<div class="time" style="width: 0.4739336492891%"></div>
+<div class="time" style="width: 0.50071530758226%"></div>
 <pre>refine (cu_concat_lr (cu_G11 (ap _ (Circle_ind_dp_beta_loop _ _ _))) _
       (sji0:=?[X4]) (sji1:=?X4) (sj0i:=?[Y4]) (sj1i:=?Y4) (pj11:=1)).</pre>
 </div>
@@ -558,7 +558,7 @@ Time: 0s">
 <div class="code" title="File: TorusEquivCircles.v
 Line: 78
 Time: 0.005s">
-<div class="time" style="width: 0.3385240352065%"></div>
+<div class="time" style="width: 0.35765379113019%"></div>
 <pre>refine (cu_concat_lr (cu_G11 (eisretr _ _)) _
       (sji0:=?[X5]) (sji1:=?X5) (sj0i:=?[Y5]) (sj1i:=?Y5) (pj11:=1)).</pre>
 </div>
@@ -573,13 +573,13 @@ Time: 0s">
 <div class="code" title="File: TorusEquivCircles.v
 Line: 81
 Time: 0.001s">
-<div class="time" style="width: 0.0677048070413%"></div>
+<div class="time" style="width: 0.071530758226037%"></div>
 <pre>apply c2t_square_and_cube.2.</pre>
 </div>
 <div class="code" title="File: TorusEquivCircles.v
 Line: 81
-Time: 0.683s">
-<div class="time" style="width: 46.242383209208%"></div>
+Time: 0.583s">
+<div class="time" style="width: 41.70243204578%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -644,8 +644,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: TorusEquivCircles.v
 Line: 93
-Time: 0.004s">
-<div class="time" style="width: 0.2708192281652%"></div>
+Time: 0.003s">
+<div class="time" style="width: 0.21459227467811%"></div>
 <pre>apply cu_ds^-1.</pre>
 </div>
 <div class="code" title="File: TorusEquivCircles.v
@@ -660,7 +660,7 @@ Time: 0s">
 <div class="code" title="File: TorusEquivCircles.v
 Line: 96
 Time: 0.003s">
-<div class="time" style="width: 0.2031144211239%"></div>
+<div class="time" style="width: 0.21459227467811%"></div>
 <pre>refine (cu_GGGGcc (eisretr _ _)^ (eisretr _ _)^
       (eisretr _ _)^ (eisretr _ _)^ _).</pre>
 </div>
@@ -675,7 +675,7 @@ Time: 0s">
 <div class="code" title="File: TorusEquivCircles.v
 Line: 99
 Time: 0.001s">
-<div class="time" style="width: 0.0677048070413%"></div>
+<div class="time" style="width: 0.071530758226037%"></div>
 <pre>apply cu_rot_tb_fb.</pre>
 </div>
 <div class="code" title="File: TorusEquivCircles.v
@@ -688,8 +688,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: TorusEquivCircles.v
 Line: 101
-Time: 0.004s">
-<div class="time" style="width: 0.2708192281652%"></div>
+Time: 0.003s">
+<div class="time" style="width: 0.21459227467811%"></div>
 <pre>refine (cu_ccGGGG (eisretr _ _)^ (eisretr _ _)^
       (eisretr _ _)^ (eisretr _ _)^ _).</pre>
 </div>
@@ -703,8 +703,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: TorusEquivCircles.v
 Line: 104
-Time: 0.055s">
-<div class="time" style="width: 3.7237643872715%"></div>
+Time: 0.042s">
+<div class="time" style="width: 3.0042918454936%"></div>
 <pre>refine ((sq_ap_compose t2c c2t surf)
       @lr (cu_ap c2t (Torus_rec_beta_surf _ _ _ _ _ ))
       @lr (sq_ap_uncurry _ _ _)
@@ -713,8 +713,8 @@ Time: 0.055s">
 </div>
 <div class="code" title="File: TorusEquivCircles.v
 Line: 108
-Time: 0.719s">
-<div class="time" style="width: 48.679756262695%"></div>
+Time: 0.62s">
+<div class="time" style="width: 44.349070100143%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -760,8 +760,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: TorusEquivCircles.v
 Line: 137
-Time: 0.004s">
-<div class="time" style="width: 0.2708192281652%"></div>
+Time: 0.003s">
+<div class="time" style="width: 0.21459227467811%"></div>
 <pre>
 
   Definition sq_ap011_compose {A B C D : Type} (f : A -&gt; B -&gt; C) (g : C -&gt; D)
@@ -778,15 +778,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: TorusEquivCircles.v
 Line: 143
-Time: 0.008s">
-<div class="time" style="width: 0.5416384563304%"></div>
+Time: 0.007s">
+<div class="time" style="width: 0.50071530758226%"></div>
 <pre>
     by destruct p, q.</pre>
 </div>
 <div class="code" title="File: TorusEquivCircles.v
 Line: 144
-Time: 0.002s">
-<div class="time" style="width: 0.1354096140826%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.071530758226037%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -844,7 +844,7 @@ Time: 0s">
 <div class="code" title="File: TorusEquivCircles.v
 Line: 154
 Time: 0.003s">
-<div class="time" style="width: 0.2031144211239%"></div>
+<div class="time" style="width: 0.21459227467811%"></div>
 <pre>1: apply sq_dp^-1, sq_tr^-1; shelve.</pre>
 </div>
 <div class="code" title="File: TorusEquivCircles.v
@@ -863,8 +863,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: TorusEquivCircles.v
 Line: 156
-Time: 0.021s">
-<div class="time" style="width: 1.4218009478673%"></div>
+Time: 0.032s">
+<div class="time" style="width: 2.2889842632332%"></div>
 <pre>
     intro x; apply sq_dp^-1; revert x.</pre>
 </div>
@@ -878,57 +878,57 @@ Time: 0s">
 <div class="code" title="File: TorusEquivCircles.v
 Line: 158
 Time: 0.007s">
-<div class="time" style="width: 0.4739336492891%"></div>
+<div class="time" style="width: 0.50071530758226%"></div>
 <pre>
     1: apply sq_tr^-1; shelve.</pre>
 </div>
 <div class="code" title="File: TorusEquivCircles.v
 Line: 159
-Time: 0.002s">
-<div class="time" style="width: 0.1354096140826%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.071530758226037%"></div>
 <pre>
     apply dp_cu.</pre>
 </div>
 <div class="code" title="File: TorusEquivCircles.v
 Line: 160
 Time: 0.003s">
-<div class="time" style="width: 0.2031144211239%"></div>
+<div class="time" style="width: 0.21459227467811%"></div>
 <pre>
     refine (cu_ccGGcc _ _ _).</pre>
 </div>
 <div class="code" title="File: TorusEquivCircles.v
 Line: 161
-Time: 0.009s">
-<div class="time" style="width: 0.6093432633717%"></div>
+Time: 0.008s">
+<div class="time" style="width: 0.5722460658083%"></div>
 <pre>
     1,2: refine (ap sq_dp (Circle_ind_dp_beta_loop _ _ _)
       @ eisretr _ _)^.</pre>
 </div>
 <div class="code" title="File: TorusEquivCircles.v
 Line: 163
-Time: 0.003s">
-<div class="time" style="width: 0.2031144211239%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.14306151645207%"></div>
 <pre>
     apply cu_rot_tb_fb.</pre>
 </div>
 <div class="code" title="File: TorusEquivCircles.v
 Line: 164
-Time: 0.004s">
-<div class="time" style="width: 0.2708192281652%"></div>
+Time: 0.003s">
+<div class="time" style="width: 0.21459227467811%"></div>
 <pre>
     refine (cu_ccGGGG _ _ _ _ _).</pre>
 </div>
 <div class="code" title="File: TorusEquivCircles.v
 Line: 165
-Time: 0.007s">
-<div class="time" style="width: 0.4739336492891%"></div>
+Time: 0.006s">
+<div class="time" style="width: 0.42918454935622%"></div>
 <pre>
     1,2,3,4: exact (eisretr _ _)^.</pre>
 </div>
 <div class="code" title="File: TorusEquivCircles.v
 Line: 166
-Time: 0.029s">
-<div class="time" style="width: 1.9634394041977%"></div>
+Time: 0.026s">
+<div class="time" style="width: 1.859799713877%"></div>
 <pre>
     refine((sq_ap011_compose c2t' t2c loop loop)
       @lr (cu_ap t2c (c2t'_beta.2.2))
@@ -938,8 +938,8 @@ Time: 0.029s">
 </div>
 <div class="code" title="File: TorusEquivCircles.v
 Line: 171
-Time: 1.473s">
-<div class="time" style="width: 99.729180771835%"></div>
+Time: 1.274s">
+<div class="time" style="width: 91.130185979971%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -970,7 +970,7 @@ Time: 0s">
 </div>
 <div class="code" title="File: TorusEquivCircles.v
 Line: 185
-Time: 1.477s">
+Time: 1.398s">
 <div class="time" style="width: 100%"></div>
 <pre>
 

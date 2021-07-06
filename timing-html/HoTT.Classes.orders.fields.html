@@ -30,13 +30,13 @@ pre {
 
 <div class="code" title="File: fields.v
 Line: 1
-Time: 0.018s">
-<div class="time" style="width: 18.367346938776%"></div>
+Time: 0.017s">
+<div class="time" style="width: 18.279569892473%"></div>
 <pre>Require Import HoTT.Basics.Decidable.</pre>
 </div>
 <div class="code" title="File: fields.v
 Line: 1
-Time: 0.098s">
+Time: 0.093s">
 <div class="time" style="width: 100%"></div>
 <pre>
 Require Import
@@ -48,7 +48,7 @@ Require Import
 <div class="code" title="File: fields.v
 Line: 6
 Time: 0.005s">
-<div class="time" style="width: 5.1020408163265%"></div>
+<div class="time" style="width: 5.3763440860215%"></div>
 <pre>
 Require Export
   HoTT.Classes.orders.rings.</pre>
@@ -72,14 +72,14 @@ Section contents.</pre>
 <div class="code" title="File: fields.v
 Line: 12
 Time: 0.001s">
-<div class="time" style="width: 1.0204081632653%"></div>
+<div class="time" style="width: 1.0752688172043%"></div>
 <pre>
 Context `{OrderedField F}.</pre>
 </div>
 <div class="code" title="File: fields.v
 Line: 13
 Time: 0.002s">
-<div class="time" style="width: 2.0408163265306%"></div>
+<div class="time" style="width: 2.1505376344086%"></div>
 <pre>
 
 Lemma pos_recip_compat (x : F) (Px : 0 &lt; x) : 0 &lt; //(x;positive_apart_zero x Px).</pre>
@@ -93,43 +93,43 @@ Proof.</pre>
 </div>
 <div class="code" title="File: fields.v
 Line: 16
-Time: 0.008s">
-<div class="time" style="width: 8.1632653061224%"></div>
+Time: 0.007s">
+<div class="time" style="width: 7.5268817204301%"></div>
 <pre>
 apply (strictly_order_reflecting (x *.)).</pre>
 </div>
 <div class="code" title="File: fields.v
 Line: 17
 Time: 0.004s">
-<div class="time" style="width: 4.0816326530612%"></div>
+<div class="time" style="width: 4.3010752688172%"></div>
 <pre>
 rewrite mult_0_r.</pre>
 </div>
 <div class="code" title="File: fields.v
 Line: 18
 Time: 0.001s">
-<div class="time" style="width: 1.0204081632653%"></div>
+<div class="time" style="width: 1.0752688172043%"></div>
 <pre>
 rewrite (recip_inverse' x).</pre>
 </div>
 <div class="code" title="File: fields.v
 Line: 19
-Time: 0.005s">
-<div class="time" style="width: 5.1020408163265%"></div>
+Time: 0.004s">
+<div class="time" style="width: 4.3010752688172%"></div>
 <pre>
 apply lt_0_1.</pre>
 </div>
 <div class="code" title="File: fields.v
 Line: 20
-Time: 0.001s">
-<div class="time" style="width: 1.0204081632653%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 Qed.</pre>
 </div>
 <div class="code" title="File: fields.v
 Line: 21
 Time: 0.004s">
-<div class="time" style="width: 4.0816326530612%"></div>
+<div class="time" style="width: 4.3010752688172%"></div>
 <pre>
 
 Lemma neg_recip_compat (x : F) (Px : x &lt; 0) : //(x;negative_apart_zero x Px) &lt; 0.</pre>
@@ -144,56 +144,56 @@ Proof.</pre>
 <div class="code" title="File: fields.v
 Line: 24
 Time: 0.004s">
-<div class="time" style="width: 4.0816326530612%"></div>
+<div class="time" style="width: 4.3010752688172%"></div>
 <pre>
   set (negxpos := fst (flip_neg_negate x) Px).</pre>
 </div>
 <div class="code" title="File: fields.v
 Line: 25
-Time: 0.01s">
-<div class="time" style="width: 10.204081632653%"></div>
+Time: 0.009s">
+<div class="time" style="width: 9.6774193548387%"></div>
 <pre>
   apply (strictly_order_reflecting ((-x) *.)).</pre>
 </div>
 <div class="code" title="File: fields.v
 Line: 26
 Time: 0.005s">
-<div class="time" style="width: 5.1020408163265%"></div>
+<div class="time" style="width: 5.3763440860215%"></div>
 <pre>
   rewrite mult_0_r.</pre>
 </div>
 <div class="code" title="File: fields.v
 Line: 27
 Time: 0.002s">
-<div class="time" style="width: 2.0408163265306%"></div>
+<div class="time" style="width: 2.1505376344086%"></div>
 <pre>
   rewrite &lt;- negate_mult_distr_l.</pre>
 </div>
 <div class="code" title="File: fields.v
 Line: 28
-Time: 0.001s">
-<div class="time" style="width: 1.0204081632653%"></div>
+Time: 0.002s">
+<div class="time" style="width: 2.1505376344086%"></div>
 <pre>
   rewrite (recip_inverse' x).</pre>
 </div>
 <div class="code" title="File: fields.v
 Line: 29
-Time: 0.01s">
-<div class="time" style="width: 10.204081632653%"></div>
+Time: 0.009s">
+<div class="time" style="width: 9.6774193548387%"></div>
 <pre>
   apply flip_pos_negate, lt_0_1.</pre>
 </div>
 <div class="code" title="File: fields.v
 Line: 30
 Time: 0.001s">
-<div class="time" style="width: 1.0204081632653%"></div>
+<div class="time" style="width: 1.0752688172043%"></div>
 <pre>
 Qed.</pre>
 </div>
 <div class="code" title="File: fields.v
 Line: 31
 Time: 0.009s">
-<div class="time" style="width: 9.1836734693878%"></div>
+<div class="time" style="width: 9.6774193548387%"></div>
 <pre>
 
 Lemma flip_lt_recip x y (Py : 0 &lt; y) (ltyx : y &lt; x) :
@@ -210,64 +210,64 @@ Proof.</pre>
 </div>
 <div class="code" title="File: fields.v
 Line: 37
-Time: 0.004s">
-<div class="time" style="width: 4.0816326530612%"></div>
+Time: 0.003s">
+<div class="time" style="width: 3.2258064516129%"></div>
 <pre>
   assert (0 &lt; x) by (transitivity y;trivial).</pre>
 </div>
 <div class="code" title="File: fields.v
 Line: 38
-Time: 0.01s">
-<div class="time" style="width: 10.204081632653%"></div>
+Time: 0.009s">
+<div class="time" style="width: 9.6774193548387%"></div>
 <pre>
   apply (strictly_order_reflecting (x *.)).</pre>
 </div>
 <div class="code" title="File: fields.v
 Line: 39
 Time: 0.002s">
-<div class="time" style="width: 2.0408163265306%"></div>
+<div class="time" style="width: 2.1505376344086%"></div>
 <pre>
   rewrite (recip_inverse' x ).</pre>
 </div>
 <div class="code" title="File: fields.v
 Line: 40
 Time: 0.005s">
-<div class="time" style="width: 5.1020408163265%"></div>
+<div class="time" style="width: 5.3763440860215%"></div>
 <pre>
   rewrite mult_comm.</pre>
 </div>
 <div class="code" title="File: fields.v
 Line: 41
 Time: 0.009s">
-<div class="time" style="width: 9.1836734693878%"></div>
+<div class="time" style="width: 9.6774193548387%"></div>
 <pre>
   apply (strictly_order_reflecting (y *.)).</pre>
 </div>
 <div class="code" title="File: fields.v
 Line: 42
-Time: 0.04s">
-<div class="time" style="width: 40.816326530612%"></div>
+Time: 0.036s">
+<div class="time" style="width: 38.709677419355%"></div>
 <pre>
   rewrite mult_assoc, mult_1_r.</pre>
 </div>
 <div class="code" title="File: fields.v
 Line: 43
-Time: 0.005s">
-<div class="time" style="width: 5.1020408163265%"></div>
+Time: 0.004s">
+<div class="time" style="width: 4.3010752688172%"></div>
 <pre>
   rewrite (recip_inverse' y), mult_1_l; assumption.</pre>
 </div>
 <div class="code" title="File: fields.v
 Line: 44
-Time: 0.002s">
-<div class="time" style="width: 2.0408163265306%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.0752688172043%"></div>
 <pre>
 Qed.</pre>
 </div>
 <div class="code" title="File: fields.v
 Line: 45
-Time: 0.006s">
-<div class="time" style="width: 6.1224489795918%"></div>
+Time: 0.005s">
+<div class="time" style="width: 5.3763440860215%"></div>
 <pre>
 
 Lemma flip_lt_recip_l x y (Py : 0 &lt; y) (ltyx : //(y;positive_apart_zero y Py) &lt; x) :
@@ -283,15 +283,15 @@ Proof.</pre>
 </div>
 <div class="code" title="File: fields.v
 Line: 50
-Time: 0.002s">
-<div class="time" style="width: 2.0408163265306%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.0752688172043%"></div>
 <pre>
   set (apy0 := positive_apart_zero y Py).</pre>
 </div>
 <div class="code" title="File: fields.v
 Line: 51
-Time: 0.003s">
-<div class="time" style="width: 3.0612244897959%"></div>
+Time: 0.002s">
+<div class="time" style="width: 2.1505376344086%"></div>
 <pre>
   set (eq := recip_involutive (y;apy0)).</pre>
 </div>
@@ -348,7 +348,7 @@ Time: 0s">
 <div class="code" title="File: fields.v
 Line: 60
 Time: 0.002s">
-<div class="time" style="width: 2.0408163265306%"></div>
+<div class="time" style="width: 2.1505376344086%"></div>
 <pre>
   rewrite (recip_irrelevant y (positive_apart_zero y Py) apy0) in ltyx2.</pre>
 </div>
@@ -368,8 +368,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: fields.v
 Line: 63
-Time: 0.009s">
-<div class="time" style="width: 9.1836734693878%"></div>
+Time: 0.008s">
+<div class="time" style="width: 8.6021505376344%"></div>
 <pre>
   rewrite (recip_irrelevant x _ (positive_apart_zero x (transitivity (pos_recip_compat y Py) ltyx))) in ltyx_recips.</pre>
 </div>
@@ -382,8 +382,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: fields.v
 Line: 65
-Time: 0.005s">
-<div class="time" style="width: 5.1020408163265%"></div>
+Time: 0.004s">
+<div class="time" style="width: 4.3010752688172%"></div>
 <pre>
   rewrite (recip_irrelevant (//(y;apy0)) _ (recip_apart y apy0)) in ltyx_recips.</pre>
 </div>
@@ -396,15 +396,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: fields.v
 Line: 67
-Time: 0.005s">
-<div class="time" style="width: 5.1020408163265%"></div>
+Time: 0.004s">
+<div class="time" style="width: 4.3010752688172%"></div>
 <pre>
 Qed.</pre>
 </div>
 <div class="code" title="File: fields.v
 Line: 68
 Time: 0.003s">
-<div class="time" style="width: 3.0612244897959%"></div>
+<div class="time" style="width: 3.2258064516129%"></div>
 <pre>
 Lemma flip_lt_recip_r (x y : F) (Px : 0 &lt; x) (Py : 0 &lt; y) (ltyx : y &lt; //(x;positive_apart_zero x Px)) :
   x &lt; //(y;positive_apart_zero y Py).</pre>
@@ -419,7 +419,7 @@ Proof.</pre>
 <div class="code" title="File: fields.v
 Line: 71
 Time: 0.001s">
-<div class="time" style="width: 1.0204081632653%"></div>
+<div class="time" style="width: 1.0752688172043%"></div>
 <pre>
   set (apx0 := positive_apart_zero x Px).</pre>
 </div>
@@ -439,8 +439,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: fields.v
 Line: 74
-Time: 0.002s">
-<div class="time" style="width: 2.0408163265306%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.0752688172043%"></div>
 <pre>
   rewrite &lt;- (recip_involutive (x;apx0)).</pre>
 </div>
@@ -461,7 +461,7 @@ Time: 0s">
 <div class="code" title="File: fields.v
 Line: 77
 Time: 0.002s">
-<div class="time" style="width: 2.0408163265306%"></div>
+<div class="time" style="width: 2.1505376344086%"></div>
 <pre>
   rewrite (recip_irrelevant y (positive_apart_zero y Py) apy0) in ltry.</pre>
 </div>
@@ -475,7 +475,7 @@ Time: 0s">
 <div class="code" title="File: fields.v
 Line: 79
 Time: 0.002s">
-<div class="time" style="width: 2.0408163265306%"></div>
+<div class="time" style="width: 2.1505376344086%"></div>
 <pre>
   rewrite &lt;- (recip_involutive (y;apy0)) in ltyx.</pre>
 </div>
@@ -488,8 +488,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: fields.v
 Line: 81
-Time: 0.005s">
-<div class="time" style="width: 5.1020408163265%"></div>
+Time: 0.004s">
+<div class="time" style="width: 4.3010752688172%"></div>
 <pre>
   rewrite (recip_irrelevant (//(y;apy0)) (recip_apart y apy0) (positive_apart_zero (// (y; apy0)) ltry)) in ltyx.</pre>
 </div>
@@ -509,8 +509,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: fields.v
 Line: 84
-Time: 0.008s">
-<div class="time" style="width: 8.1632653061224%"></div>
+Time: 0.007s">
+<div class="time" style="width: 7.5268817204301%"></div>
 <pre>
   rewrite (recip_irrelevant (//(x;apx0)) (positive_apart_zero (// (x; apx0)) (transitivity (pos_recip_compat (// (y; apy0)) ltry) ltyx)) (recip_apart x apx0)) in ltxy.</pre>
 </div>
@@ -524,14 +524,14 @@ Time: 0s">
 <div class="code" title="File: fields.v
 Line: 86
 Time: 0.004s">
-<div class="time" style="width: 4.0816326530612%"></div>
+<div class="time" style="width: 4.3010752688172%"></div>
 <pre>
 Qed.</pre>
 </div>
 <div class="code" title="File: fields.v
 Line: 87
-Time: 0.016s">
-<div class="time" style="width: 16.326530612245%"></div>
+Time: 0.014s">
+<div class="time" style="width: 15.05376344086%"></div>
 <pre>
 
 Lemma field_split2 (x : F) : (x * recip'  2 (positive_apart_zero 2 lt_0_2)) + (x * recip' 2 (positive_apart_zero 2 lt_0_2)) = x.</pre>
@@ -546,35 +546,35 @@ Proof.</pre>
 <div class="code" title="File: fields.v
 Line: 90
 Time: 0.003s">
-<div class="time" style="width: 3.0612244897959%"></div>
+<div class="time" style="width: 3.2258064516129%"></div>
 <pre>
   rewrite &lt;- plus_mult_distr_l.</pre>
 </div>
 <div class="code" title="File: fields.v
 Line: 91
 Time: 0.006s">
-<div class="time" style="width: 6.1224489795918%"></div>
+<div class="time" style="width: 6.4516129032258%"></div>
 <pre>
   rewrite &lt;- (mult_1_l (recip' 2 (positive_apart_zero 2 lt_0_2))).</pre>
 </div>
 <div class="code" title="File: fields.v
 Line: 92
 Time: 0.003s">
-<div class="time" style="width: 3.0612244897959%"></div>
+<div class="time" style="width: 3.2258064516129%"></div>
 <pre>
   rewrite &lt;- plus_mult_distr_r.</pre>
 </div>
 <div class="code" title="File: fields.v
 Line: 93
-Time: 0.006s">
-<div class="time" style="width: 6.1224489795918%"></div>
+Time: 0.005s">
+<div class="time" style="width: 5.3763440860215%"></div>
 <pre>
   rewrite (recip_inverse' 2 (positive_apart_zero 2 lt_0_2)).</pre>
 </div>
 <div class="code" title="File: fields.v
 Line: 94
-Time: 0.003s">
-<div class="time" style="width: 3.0612244897959%"></div>
+Time: 0.002s">
+<div class="time" style="width: 2.1505376344086%"></div>
 <pre>
   rewrite mult_1_r.</pre>
 </div>
@@ -588,14 +588,14 @@ Time: 0s">
 <div class="code" title="File: fields.v
 Line: 96
 Time: 0.002s">
-<div class="time" style="width: 2.0408163265306%"></div>
+<div class="time" style="width: 2.1505376344086%"></div>
 <pre>
 Qed.</pre>
 </div>
 <div class="code" title="File: fields.v
 Line: 97
-Time: 0.001s">
-<div class="time" style="width: 1.0204081632653%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 End contents.</pre>
 </div>

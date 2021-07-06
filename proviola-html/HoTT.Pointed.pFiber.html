@@ -343,12 +343,12 @@
           
 
             i = 65;
-            data = "";
+            data = "No more goals.	1 goal (ID 99)	  	  A : pType	  B : pType	  n : nat	  f : A ->* B	  ============================	  pfiber (fmap (iterated_loops n) f) <~>* iterated_loops n (pfiber f)	2 goals (ID 103)	  	  A : pType	  B : pType	  f : A ->* B	  ============================	  pfiber (fmap (iterated_loops 0) f) <~>* iterated_loops 0 (pfiber f)		goal 2 (ID 107) is:	 pfiber (fmap (iterated_loops n.+1) f) <~>* iterated_loops n.+1 (pfiber f)	1 goal (ID 107)	  	  A : pType	  B : pType	  n : nat	  f : A ->* B	  IHn : pfiber (fmap (iterated_loops n) f) <~>* iterated_loops n (pfiber f)	  ============================	  pfiber (fmap (iterated_loops n.+1) f) <~>* iterated_loops n.+1 (pfiber f)	1 goal (ID 122)	  	  A : pType	  B : pType	  n : nat	  f : A ->* B	  IHn : pfiber (fmap (iterated_loops n) f) <~>* iterated_loops n (pfiber f)	  ============================	  loops (pfiber (fmap (iterated_loops n) f)) <~>*	  iterated_loops n.+1 (pfiber f)	";
             responses[i]=data;
           
 
             i = 66;
-            data = "No more goals.	1 goal (ID 99)	  	  A : pType	  B : pType	  n : nat	  f : A ->* B	  ============================	  pfiber (fmap (iterated_loops n) f) <~>* iterated_loops n (pfiber f)	2 goals (ID 103)	  	  A : pType	  B : pType	  f : A ->* B	  ============================	  pfiber (fmap (iterated_loops 0) f) <~>* iterated_loops 0 (pfiber f)		goal 2 (ID 107) is:	 pfiber (fmap (iterated_loops n.+1) f) <~>* iterated_loops n.+1 (pfiber f)	1 goal (ID 107)	  	  A : pType	  B : pType	  n : nat	  f : A ->* B	  IHn : pfiber (fmap (iterated_loops n) f) <~>* iterated_loops n (pfiber f)	  ============================	  pfiber (fmap (iterated_loops n.+1) f) <~>* iterated_loops n.+1 (pfiber f)	1 goal (ID 122)	  	  A : pType	  B : pType	  n : nat	  f : A ->* B	  IHn : pfiber (fmap (iterated_loops n) f) <~>* iterated_loops n (pfiber f)	  ============================	  loops (pfiber (fmap (iterated_loops n) f)) <~>*	  iterated_loops n.+1 (pfiber f)	1 goal (ID 157)	  	  A : pType	  B : pType	  n : nat	  f : A ->* B	  IHn : pfiber (fmap (iterated_loops n) f) <~>* iterated_loops n (pfiber f)	  ============================	  pfiber (fmap (iterated_loops n) f) $<~>	  (fix iterated_loops (n0 : nat) (A0 : pType) {struct n0} : pType :=	     match n0 with	     | 0%nat => A0	     | (p.+1)%nat => loops (iterated_loops p A0)	     end) n (pfiber f)	";
+            data = "1 goal (ID 157)	  	  A : pType	  B : pType	  n : nat	  f : A ->* B	  IHn : pfiber (fmap (iterated_loops n) f) <~>* iterated_loops n (pfiber f)	  ============================	  pfiber (fmap (iterated_loops n) f) $<~>	  (fix iterated_loops (n0 : nat) (A0 : pType) {struct n0} : pType :=	     match n0 with	     | 0%nat => A0	     | (p.+1)%nat => loops (iterated_loops p A0)	     end) n (pfiber f)	";
             responses[i]=data;
           
 
@@ -739,7 +739,7 @@
 </div>
 <div class="goal" id="goal0_3_3"><pre><span></span></pre></div>
 <div class="doc" scenenumber="5">
-<a id="lab1038"></a><h2 class="section">Pointed fibers</h2>
+<a id="lab1048"></a><h2 class="section">Pointed fibers</h2>
 </div>
 <div scenenumber="7" class="code">
 <span class="command" onmouseout="

@@ -30,14 +30,14 @@ pre {
 
 <div class="code" title="File: DPathSquare.v
 Line: 1
-Time: 0.029s">
+Time: 0.026s">
 <div class="time" style="width: 100%"></div>
 <pre>Require Import Basics.</pre>
 </div>
 <div class="code" title="File: DPathSquare.v
 Line: 1
-Time: 0.015s">
-<div class="time" style="width: 51.724137931034%"></div>
+Time: 0.014s">
+<div class="time" style="width: 53.846153846154%"></div>
 <pre>
 Require Import Types.</pre>
 </div>
@@ -51,7 +51,7 @@ Require Import Cubical.DPath.</pre>
 <div class="code" title="File: DPathSquare.v
 Line: 3
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
 Require Import Cubical.PathSquare.</pre>
 </div>
@@ -91,7 +91,7 @@ Time: 0s">
 <div class="code" title="File: DPathSquare.v
 Line: 12
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>Definition DPathSquare {A} (P : A -&gt; Type) {a00 a10 a01 a11}
   {px0 : a00 = a10} {px1 : a01 = a11} {p0x p1x}
   (s : PathSquare px0 px1 p0x p1x) {b00 b10 b01 b11}
@@ -107,8 +107,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: DPathSquare.v
 Line: 17
-Time: 0.002s">
-<div class="time" style="width: 6.8965517241379%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
   destruct s.</pre>
 </div>
@@ -128,8 +128,8 @@ Defined.</pre>
 </div>
 <div class="code" title="File: DPathSquare.v
 Line: 20
-Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
 Definition ds_id {A} {P : A -&gt; Type} {a00 b00}
@@ -206,8 +206,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: DPathSquare.v
 Line: 38
-Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     destruct p.</pre>
 </div>
@@ -227,8 +227,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: DPathSquare.v
 Line: 41
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
 
   Definition ds_refl_v : DPathSquare P (sq_refl_v _) 1 1 dp dp.</pre>
@@ -243,7 +243,7 @@ Time: 0s">
 <div class="code" title="File: DPathSquare.v
 Line: 44
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
     destruct p.</pre>
 </div>
@@ -279,8 +279,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: DPathSquare.v
 Line: 51
-Time: 0.005s">
-<div class="time" style="width: 17.241379310345%"></div>
+Time: 0.004s">
+<div class="time" style="width: 15.384615384615%"></div>
 <pre>Definition equiv_ds_dpath {A} (P : A -&gt; Type) {a00 a10 a01 a11 : A}
   {px0 : a00 = a10} {px1 : a01 = a11}
   {p0x : a00 = a01} {p1x : a10 = a11}
@@ -300,14 +300,14 @@ Proof.</pre>
 <div class="code" title="File: DPathSquare.v
 Line: 59
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
   set (s' := sq_path s).</pre>
 </div>
 <div class="code" title="File: DPathSquare.v
 Line: 60
-Time: 0.009s">
-<div class="time" style="width: 31.034482758621%"></div>
+Time: 0.01s">
+<div class="time" style="width: 38.461538461538%"></div>
 <pre>
   rewrite &lt;- (eissect sq_path s : sq_path^-1 s' = s).</pre>
 </div>
@@ -320,8 +320,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: DPathSquare.v
 Line: 62
-Time: 0.003s">
-<div class="time" style="width: 10.344827586207%"></div>
+Time: 0.002s">
+<div class="time" style="width: 7.6923076923077%"></div>
 <pre>
   destruct s'; cbn.</pre>
 </div>
@@ -335,7 +335,7 @@ Time: 0s">
 <div class="code" title="File: DPathSquare.v
 Line: 64
 Time: 0.002s">
-<div class="time" style="width: 6.8965517241379%"></div>
+<div class="time" style="width: 7.6923076923077%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -358,7 +358,7 @@ Time: 0s">
 <div class="code" title="File: DPathSquare.v
 Line: 69
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>Definition ds_apD {A} {B : A -&gt; Type} (f : forall a, B a) {a00 a10 a01 a11 : A}
   {px0 : a00 = a10} {px1 : a01 = a11} {p0x p1x} (s : PathSquare px0 px1 p0x p1x)
   : DPathSquare B s (dp_apD f px0) (dp_apD f px1) (dp_apD f p0x) (dp_apD f p1x).</pre>
@@ -373,7 +373,7 @@ Proof.</pre>
 <div class="code" title="File: DPathSquare.v
 Line: 72
 Time: 0.005s">
-<div class="time" style="width: 17.241379310345%"></div>
+<div class="time" style="width: 19.230769230769%"></div>
 <pre>
   by destruct s.</pre>
 </div>
@@ -395,7 +395,7 @@ Time: 0s">
 <div class="code" title="File: DPathSquare.v
 Line: 76
 Time: 0.003s">
-<div class="time" style="width: 10.344827586207%"></div>
+<div class="time" style="width: 11.538461538462%"></div>
 <pre>Definition ds_const {A P : Type} {a00 a10 a01 a11 : A}
   {px0 : a00 = a10} {px1 : a01 = a11} {p0x : a00 = a01} {p1x : a10 = a11}
   {s : PathSquare px0 px1 p0x p1x} {b00 b10 b01 b11 : P}
@@ -412,15 +412,15 @@ Proof.</pre>
 </div>
 <div class="code" title="File: DPathSquare.v
 Line: 82
-Time: 0.003s">
-<div class="time" style="width: 10.344827586207%"></div>
+Time: 0.002s">
+<div class="time" style="width: 7.6923076923077%"></div>
 <pre>
   by destruct s.</pre>
 </div>
 <div class="code" title="File: DPathSquare.v
 Line: 83
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -437,8 +437,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: DPathSquare.v
 Line: 89
-Time: 0.021s">
-<div class="time" style="width: 72.413793103448%"></div>
+Time: 0.019s">
+<div class="time" style="width: 73.076923076923%"></div>
 <pre>Definition equiv_ds_const' {A P : Type} {a00 a10 a01 a11 : A}
   {px0 : a00 = a10} {px1 : a01 = a11} {p0x : a00 = a01} {p1x : a10 = a11}
   {s : PathSquare px0 px1 p0x p1x} {b00 b10 b01 b11 : P}
@@ -460,14 +460,14 @@ Proof.</pre>
 <div class="code" title="File: DPathSquare.v
 Line: 99
 Time: 0.003s">
-<div class="time" style="width: 10.344827586207%"></div>
+<div class="time" style="width: 11.538461538462%"></div>
 <pre>
   by destruct s.</pre>
 </div>
 <div class="code" title="File: DPathSquare.v
 Line: 100
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -490,7 +490,7 @@ Time: 0s">
 <div class="code" title="File: DPathSquare.v
 Line: 105
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>Definition dp_apD_nat {A} {P : A -&gt; Type} {f g : forall x, P x} {x y : A}
   (q : f == g) (p : x = y)
   : DPathSquare P (sq_refl_h _) (dp_apD f p) (dp_apD g p) (q x) (q y).</pre>
@@ -512,21 +512,21 @@ Time: 0s">
 <div class="code" title="File: DPathSquare.v
 Line: 109
 Time: 0.002s">
-<div class="time" style="width: 6.8965517241379%"></div>
+<div class="time" style="width: 7.6923076923077%"></div>
 <pre>
   by apply sq_1G.</pre>
 </div>
 <div class="code" title="File: DPathSquare.v
 Line: 110
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: DPathSquare.v
 Line: 111
 Time: 0.002s">
-<div class="time" style="width: 6.8965517241379%"></div>
+<div class="time" style="width: 7.6923076923077%"></div>
 <pre>
 
 Definition equiv_ds_G1 {A} (P : A -&gt; Type) {a00 a10 }
@@ -545,21 +545,21 @@ Proof.</pre>
 <div class="code" title="File: DPathSquare.v
 Line: 118
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
   destruct p, px0.</pre>
 </div>
 <div class="code" title="File: DPathSquare.v
 Line: 119
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
   apply sq_G1.</pre>
 </div>
 <div class="code" title="File: DPathSquare.v
 Line: 120
-Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -584,7 +584,7 @@ Time: 0s">
 <div class="code" title="File: DPathSquare.v
 Line: 126
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>Definition equiv_ds_dp {A : Type} {B : A -&gt; Type} (f g : forall a : A, B a)
   {x1 x2 : A} (p : x1 = x2) (q1 : f x1 = g x1) (q2 : f x2 = g x2)
   : DPath (fun x : A =&gt; f x = g x) p q1 q2
@@ -599,8 +599,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: DPathSquare.v
 Line: 130
-Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   destruct p.</pre>
 </div>
@@ -613,8 +613,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: DPathSquare.v
 Line: 132
-Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -656,7 +656,7 @@ Time: 0s">
 <div class="code" title="File: DPathSquare.v
 Line: 143
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
 
   Definition ds_fill_l (qx1 : DPath P px1 b01 b11)
@@ -672,8 +672,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: DPathSquare.v
 Line: 148
-Time: 0.003s">
-<div class="time" style="width: 10.344827586207%"></div>
+Time: 0.002s">
+<div class="time" style="width: 7.6923076923077%"></div>
 <pre>
     destruct s; apply sq_fill_l.</pre>
 </div>
@@ -686,8 +686,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: DPathSquare.v
 Line: 150
-Time: 0.002s">
-<div class="time" style="width: 6.8965517241379%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
 
   Definition ds_fill_l_uniq {qx1 : DPath P px1 b01 b11}
@@ -707,8 +707,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: DPathSquare.v
 Line: 159
-Time: 0.002s">
-<div class="time" style="width: 6.8965517241379%"></div>
+Time: 0.003s">
+<div class="time" style="width: 11.538461538462%"></div>
 <pre>
     destruct s.</pre>
 </div>
@@ -722,14 +722,14 @@ Time: 0s">
 <div class="code" title="File: DPathSquare.v
 Line: 161
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
   Defined.</pre>
 </div>
 <div class="code" title="File: DPathSquare.v
 Line: 162
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
 
   Definition ds_fill_r (qx0 : DPath P px0 b00 b10)
@@ -746,7 +746,7 @@ Time: 0s">
 <div class="code" title="File: DPathSquare.v
 Line: 167
 Time: 0.002s">
-<div class="time" style="width: 6.8965517241379%"></div>
+<div class="time" style="width: 7.6923076923077%"></div>
 <pre>
     destruct s; apply sq_fill_r.</pre>
 </div>
@@ -760,7 +760,7 @@ Time: 0s">
 <div class="code" title="File: DPathSquare.v
 Line: 169
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
 
   Definition ds_fill_r_uniq {qx0 : DPath P px0 b00 b10}
@@ -780,8 +780,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: DPathSquare.v
 Line: 178
-Time: 0.003s">
-<div class="time" style="width: 10.344827586207%"></div>
+Time: 0.002s">
+<div class="time" style="width: 7.6923076923077%"></div>
 <pre>
     destruct s.</pre>
 </div>
@@ -795,7 +795,7 @@ Time: 0s">
 <div class="code" title="File: DPathSquare.v
 Line: 180
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -819,7 +819,7 @@ Time: 0s">
 <div class="code" title="File: DPathSquare.v
 Line: 186
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
     srapply equiv_adjointify.</pre>
 </div>
@@ -900,8 +900,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: DPathSquare.v
 Line: 196
-Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
   Definition ds_fill_t (qx0 : DPath P px0 b00 b10)
@@ -917,8 +917,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: DPathSquare.v
 Line: 201
-Time: 0.002s">
-<div class="time" style="width: 6.8965517241379%"></div>
+Time: 0.003s">
+<div class="time" style="width: 11.538461538462%"></div>
 <pre>
     destruct s; apply sq_fill_t.</pre>
 </div>
@@ -932,7 +932,7 @@ Time: 0s">
 <div class="code" title="File: DPathSquare.v
 Line: 203
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
 
   Definition ds_fill_b (qx0 : DPath P px0 b00 b10)
@@ -948,8 +948,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: DPathSquare.v
 Line: 208
-Time: 0.002s">
-<div class="time" style="width: 6.8965517241379%"></div>
+Time: 0.003s">
+<div class="time" style="width: 11.538461538462%"></div>
 <pre>
     destruct s; apply sq_fill_b.</pre>
 </div>
@@ -962,8 +962,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: DPathSquare.v
 Line: 210
-Time: 0.003s">
-<div class="time" style="width: 10.344827586207%"></div>
+Time: 0.002s">
+<div class="time" style="width: 7.6923076923077%"></div>
 <pre>
 
 End Kan.</pre>
@@ -978,8 +978,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: DPathSquare.v
 Line: 214
-Time: 0.002s">
-<div class="time" style="width: 6.8965517241379%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>Definition equiv_ds_transport_dpath {A} {a0 a1 : A} {p : a0 = a1}
            {P : A -&gt; Type} {b00 b10 b01 b11}
            (qx0 : DPath P p b00 b10) (qx1 : DPath P p b01 b11)
@@ -999,7 +999,7 @@ Proof.</pre>
 <div class="code" title="File: DPathSquare.v
 Line: 222
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
   destruct p; cbn.</pre>
 </div>
@@ -1060,7 +1060,7 @@ Time: 0s">
 <div class="code" title="File: DPathSquare.v
 Line: 229
 Time: 0.002s">
-<div class="time" style="width: 6.8965517241379%"></div>
+<div class="time" style="width: 7.6923076923077%"></div>
 <pre>
 Defined.</pre>
 </div>

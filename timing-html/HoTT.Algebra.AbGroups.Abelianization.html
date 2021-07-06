@@ -30,14 +30,14 @@ pre {
 
 <div class="code" title="File: Abelianization.v
 Line: 1
-Time: 0.072s">
-<div class="time" style="width: 60.504201680672%"></div>
+Time: 0.067s">
+<div class="time" style="width: 67%"></div>
 <pre>Require Import Basics Types Cubical WildCat.</pre>
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 1
-Time: 0.027s">
-<div class="time" style="width: 22.689075630252%"></div>
+Time: 0.025s">
+<div class="time" style="width: 25%"></div>
 <pre>
 Require Import Truncations.</pre>
 </div>
@@ -50,15 +50,15 @@ Require Import HIT.Coeq.</pre>
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 3
-Time: 0.07s">
-<div class="time" style="width: 58.823529411765%"></div>
+Time: 0.065s">
+<div class="time" style="width: 65%"></div>
 <pre>
 Require Import Algebra.Groups.</pre>
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 4
-Time: 0.015s">
-<div class="time" style="width: 12.605042016807%"></div>
+Time: 0.016s">
+<div class="time" style="width: 16%"></div>
 <pre>
 Require Import Algebra.AbGroups.AbelianGroup.</pre>
 </div>
@@ -99,14 +99,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 15
-Time: 0.001s">
-<div class="time" style="width: 0.84033613445378%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>Definition group_precomp {a b} := @cat_precomp Group _ _ a b.</pre>
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 15
 Time: 0.003s">
-<div class="time" style="width: 2.5210084033613%"></div>
+<div class="time" style="width: 3%"></div>
 <pre>
 
 Class IsAbelianization {G : Group} (G_ab : AbGroup)
@@ -221,7 +221,7 @@ Time: 0s">
 <div class="code" title="File: Abelianization.v
 Line: 51
 Time: 0.002s">
-<div class="time" style="width: 1.6806722689076%"></div>
+<div class="time" style="width: 2%"></div>
 <pre>Definition Abel
     := Tr 0 (Coeq
       (uncurry2 (fun a b c : G =&gt; a * (b * c)))
@@ -281,8 +281,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 64
-Time: 0.001s">
-<div class="time" style="width: 0.84033613445378%"></div>
+Time: 0.002s">
+<div class="time" style="width: 2%"></div>
 <pre>Definition ab_comm a b c
     : ab (a * (b * c)) = ab (a * (c * b)).</pre>
 </div>
@@ -295,8 +295,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 66
-Time: 0.001s">
-<div class="time" style="width: 0.84033613445378%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     apply (ap tr).</pre>
 </div>
@@ -309,8 +309,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 68
-Time: 0.001s">
-<div class="time" style="width: 0.84033613445378%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -340,8 +340,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 75
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1%"></div>
 <pre>Definition Abel_ind (P : Abel -&gt; Type) `{forall x, IsHSet (P x)} 
     (a : forall x, P (ab x)) (c : forall x y z, DPath P (ab_comm x y z)
       (a (x * (y * z))) (a (x * (z * y))))
@@ -356,15 +356,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 79
-Time: 0.01s">
-<div class="time" style="width: 8.4033613445378%"></div>
+Time: 0.009s">
+<div class="time" style="width: 9%"></div>
 <pre>
     srapply Trunc_ind.</pre>
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 80
 Time: 0.001s">
-<div class="time" style="width: 0.84033613445378%"></div>
+<div class="time" style="width: 1%"></div>
 <pre>
     srapply Coeq_ind.</pre>
 </div>
@@ -377,36 +377,36 @@ Time: 0s">
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 82
-Time: 0.006s">
-<div class="time" style="width: 5.0420168067227%"></div>
+Time: 0.005s">
+<div class="time" style="width: 5%"></div>
 <pre>
     intros [[x y] z].</pre>
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 83
 Time: 0.001s">
-<div class="time" style="width: 0.84033613445378%"></div>
+<div class="time" style="width: 1%"></div>
 <pre>
     refine (transport_compose _ _ _ _ @ _).</pre>
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 84
-Time: 0.001s">
-<div class="time" style="width: 0.84033613445378%"></div>
+Time: 0.002s">
+<div class="time" style="width: 2%"></div>
 <pre>
     srapply dp_path_transport^-1%equiv.</pre>
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 85
 Time: 0.001s">
-<div class="time" style="width: 0.84033613445378%"></div>
+<div class="time" style="width: 1%"></div>
 <pre>
     apply c.</pre>
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 86
 Time: 0.008s">
-<div class="time" style="width: 6.7226890756303%"></div>
+<div class="time" style="width: 8%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -422,7 +422,7 @@ Time: 0s">
 <div class="code" title="File: Abelianization.v
 Line: 90
 Time: 0.002s">
-<div class="time" style="width: 1.6806722689076%"></div>
+<div class="time" style="width: 2%"></div>
 <pre>Definition Abel_ind_beta_ab_comm (P : Abel -&gt; Type)
     `{forall x, IsHSet (P x)}(a : forall x, P (ab x))
     (c : forall x y z, DPath P (ab_comm x y z)
@@ -445,28 +445,28 @@ Time: 0s">
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 96
-Time: 0.005s">
-<div class="time" style="width: 4.2016806722689%"></div>
+Time: 0.004s">
+<div class="time" style="width: 4%"></div>
 <pre>
     refine (apD_compose' tr _ _ @ _).</pre>
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 97
 Time: 0.011s">
-<div class="time" style="width: 9.2436974789916%"></div>
+<div class="time" style="width: 11%"></div>
 <pre>
     refine (ap _ (Coeq_ind_beta_cglue _ _ _ (x, y, z)) @ _).</pre>
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 98
-Time: 0.011s">
-<div class="time" style="width: 9.2436974789916%"></div>
+Time: 0.01s">
+<div class="time" style="width: 10%"></div>
 <pre>
     apply concat_V_pp.</pre>
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 99
-Time: 0.119s">
+Time: 0.1s">
 <div class="time" style="width: 100%"></div>
 <pre>
   Defined.</pre>
@@ -483,7 +483,7 @@ Time: 0s">
 <div class="code" title="File: Abelianization.v
 Line: 103
 Time: 0.001s">
-<div class="time" style="width: 0.84033613445378%"></div>
+<div class="time" style="width: 1%"></div>
 <pre>Definition Abel_rec (P : Type) `{IsHSet P} (a : G -&gt; P)
     (c : forall x y z, a (x * (y * z)) = a (x * (z * y)))
     : Abel -&gt; P.</pre>
@@ -498,7 +498,7 @@ Time: 0s">
 <div class="code" title="File: Abelianization.v
 Line: 106
 Time: 0.001s">
-<div class="time" style="width: 0.84033613445378%"></div>
+<div class="time" style="width: 1%"></div>
 <pre>
     apply (Abel_ind _ a).</pre>
 </div>
@@ -542,7 +542,7 @@ Time: 0s">
 <div class="code" title="File: Abelianization.v
 Line: 114
 Time: 0.002s">
-<div class="time" style="width: 1.6806722689076%"></div>
+<div class="time" style="width: 2%"></div>
 <pre>
     srapply (Abel_ind _ a).</pre>
 </div>
@@ -613,8 +613,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 126
-Time: 0.079s">
-<div class="time" style="width: 66.386554621849%"></div>
+Time: 0.071s">
+<div class="time" style="width: 71%"></div>
 <pre>
 
 End Abel.</pre>
@@ -712,7 +712,7 @@ Time: 0s">
 <div class="code" title="File: Abelianization.v
 Line: 145
 Time: 0.011s">
-<div class="time" style="width: 9.2436974789916%"></div>
+<div class="time" style="width: 11%"></div>
 <pre>
     srapply Abel_rec.</pre>
 </div>
@@ -739,7 +739,7 @@ Time: 0s">
 <div class="code" title="File: Abelianization.v
 Line: 148
 Time: 0.01s">
-<div class="time" style="width: 8.4033613445378%"></div>
+<div class="time" style="width: 10%"></div>
 <pre>
       srapply Abel_rec.</pre>
 </div>
@@ -786,8 +786,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 154
-Time: 0.005s">
-<div class="time" style="width: 4.2016806722689%"></div>
+Time: 0.004s">
+<div class="time" style="width: 4%"></div>
 <pre>refine (ap _ (associativity _ _ _)^ @ _).</pre>
 </div>
 <div class="code" title="File: Abelianization.v
@@ -800,7 +800,7 @@ Time: 0s">
 <div class="code" title="File: Abelianization.v
 Line: 155
 Time: 0.004s">
-<div class="time" style="width: 3.3613445378151%"></div>
+<div class="time" style="width: 4%"></div>
 <pre>
       refine (ap _ (associativity _ _ _) @ _).</pre>
 </div>
@@ -814,7 +814,7 @@ Time: 0s">
 <div class="code" title="File: Abelianization.v
 Line: 157
 Time: 0.004s">
-<div class="time" style="width: 3.3613445378151%"></div>
+<div class="time" style="width: 4%"></div>
 <pre>
       refine (ap _ (associativity _ _ _)^ @ _).</pre>
 </div>
@@ -827,8 +827,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 159
-Time: 0.004s">
-<div class="time" style="width: 3.3613445378151%"></div>
+Time: 0.003s">
+<div class="time" style="width: 3%"></div>
 <pre>
       refine (ap _ (associativity _ _ _)).</pre>
 </div>
@@ -854,15 +854,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 162
-Time: 0.073s">
-<div class="time" style="width: 61.344537815126%"></div>
+Time: 0.059s">
+<div class="time" style="width: 59%"></div>
 <pre>
     Abel_ind_hprop a; cbn.</pre>
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 163
-Time: 0.005s">
-<div class="time" style="width: 4.2016806722689%"></div>
+Time: 0.004s">
+<div class="time" style="width: 4%"></div>
 <pre>
     refine (ap _ (associativity _ _ _) @ _).</pre>
 </div>
@@ -875,15 +875,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 165
-Time: 0.006s">
-<div class="time" style="width: 5.0420168067227%"></div>
+Time: 0.005s">
+<div class="time" style="width: 5%"></div>
 <pre>
     refine (ap _ (associativity _ _ _)^).</pre>
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 166
-Time: 0.01s">
-<div class="time" style="width: 8.4033613445378%"></div>
+Time: 0.008s">
+<div class="time" style="width: 8%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -918,29 +918,29 @@ Time: 0s">
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 172
-Time: 0.006s">
-<div class="time" style="width: 5.0420168067227%"></div>
+Time: 0.005s">
+<div class="time" style="width: 5%"></div>
 <pre>
     Abel_ind_hprop z; revert y.</pre>
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 173
-Time: 0.006s">
-<div class="time" style="width: 5.0420168067227%"></div>
+Time: 0.005s">
+<div class="time" style="width: 5%"></div>
 <pre>
     Abel_ind_hprop y; revert x.</pre>
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 174
-Time: 0.015s">
-<div class="time" style="width: 12.605042016807%"></div>
+Time: 0.013s">
+<div class="time" style="width: 13%"></div>
 <pre>
     Abel_ind_hprop x; cbn.</pre>
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 175
 Time: 0.004s">
-<div class="time" style="width: 3.3613445378151%"></div>
+<div class="time" style="width: 4%"></div>
 <pre>
     apply ap, associativity.</pre>
 </div>
@@ -1006,14 +1006,14 @@ Time: 0s">
 <div class="code" title="File: Abelianization.v
 Line: 187
 Time: 0.005s">
-<div class="time" style="width: 4.2016806722689%"></div>
+<div class="time" style="width: 5%"></div>
 <pre>
     Abel_ind_hprop x.</pre>
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 188
-Time: 0.005s">
-<div class="time" style="width: 4.2016806722689%"></div>
+Time: 0.004s">
+<div class="time" style="width: 4%"></div>
 <pre>
     cbn; apply ap, left_identity.</pre>
 </div>
@@ -1042,14 +1042,14 @@ Time: 0s">
 <div class="code" title="File: Abelianization.v
 Line: 193
 Time: 0.005s">
-<div class="time" style="width: 4.2016806722689%"></div>
+<div class="time" style="width: 5%"></div>
 <pre>
     Abel_ind_hprop x.</pre>
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 194
-Time: 0.005s">
-<div class="time" style="width: 4.2016806722689%"></div>
+Time: 0.004s">
+<div class="time" style="width: 4%"></div>
 <pre>
     cbn; apply ap, right_identity.</pre>
 </div>
@@ -1106,8 +1106,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 204
-Time: 0.015s">
-<div class="time" style="width: 12.605042016807%"></div>
+Time: 0.012s">
+<div class="time" style="width: 12%"></div>
 <pre>
     Abel_ind_hprop y.</pre>
 </div>
@@ -1120,29 +1120,29 @@ Time: 0s">
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 206
-Time: 0.006s">
-<div class="time" style="width: 5.0420168067227%"></div>
+Time: 0.005s">
+<div class="time" style="width: 5%"></div>
 <pre>
     Abel_ind_hprop x.</pre>
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 207
 Time: 0.004s">
-<div class="time" style="width: 3.3613445378151%"></div>
+<div class="time" style="width: 4%"></div>
 <pre>
     cbn.</pre>
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 208
-Time: 0.003s">
-<div class="time" style="width: 2.5210084033613%"></div>
+Time: 0.002s">
+<div class="time" style="width: 2%"></div>
 <pre>
     refine ((ap ab (left_identity _))^ @ _).</pre>
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 209
-Time: 0.003s">
-<div class="time" style="width: 2.5210084033613%"></div>
+Time: 0.002s">
+<div class="time" style="width: 2%"></div>
 <pre>
     refine (_ @ (ap ab (left_identity _))).</pre>
 </div>
@@ -1188,8 +1188,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 220
-Time: 0.009s">
-<div class="time" style="width: 7.563025210084%"></div>
+Time: 0.008s">
+<div class="time" style="width: 8%"></div>
 <pre>
     srapply Abel_rec.</pre>
 </div>
@@ -1228,29 +1228,29 @@ Time: 0s">
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 224
-Time: 0.006s">
-<div class="time" style="width: 5.0420168067227%"></div>
+Time: 0.005s">
+<div class="time" style="width: 5%"></div>
 <pre>
     rewrite ?negate_sg_op.</pre>
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 225
 Time: 0.002s">
-<div class="time" style="width: 1.6806722689076%"></div>
+<div class="time" style="width: 2%"></div>
 <pre>
     change (ab(- z) * ab(- y) * ab (- x) = ab (- y) * ab (- z) * ab(- x)).</pre>
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 226
 Time: 0.001s">
-<div class="time" style="width: 0.84033613445378%"></div>
+<div class="time" style="width: 1%"></div>
 <pre>
     by rewrite (commutativity (ab (-z)) (ab (-y))).</pre>
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 227
 Time: 0.001s">
-<div class="time" style="width: 0.84033613445378%"></div>
+<div class="time" style="width: 1%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -1278,15 +1278,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 232
-Time: 0.006s">
-<div class="time" style="width: 5.0420168067227%"></div>
+Time: 0.005s">
+<div class="time" style="width: 5%"></div>
 <pre>
     Abel_ind_hprop x.</pre>
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 233
-Time: 0.004s">
-<div class="time" style="width: 3.3613445378151%"></div>
+Time: 0.003s">
+<div class="time" style="width: 3%"></div>
 <pre>
     cbn; apply ap; apply left_inverse.</pre>
 </div>
@@ -1314,15 +1314,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 238
-Time: 0.006s">
-<div class="time" style="width: 5.0420168067227%"></div>
+Time: 0.005s">
+<div class="time" style="width: 5%"></div>
 <pre>
     Abel_ind_hprop x.</pre>
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 239
-Time: 0.004s">
-<div class="time" style="width: 3.3613445378151%"></div>
+Time: 0.003s">
+<div class="time" style="width: 3%"></div>
 <pre>
     cbn; apply ap; apply right_inverse.</pre>
 </div>
@@ -1401,8 +1401,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 253
-Time: 0.061s">
-<div class="time" style="width: 51.260504201681%"></div>
+Time: 0.05s">
+<div class="time" style="width: 50%"></div>
 <pre>
 
 End AbelGroup.</pre>
@@ -1437,8 +1437,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 259
-Time: 0.005s">
-<div class="time" style="width: 4.2016806722689%"></div>
+Time: 0.004s">
+<div class="time" style="width: 4%"></div>
 <pre>
   Abel_ind_hprop x.</pre>
 </div>
@@ -1473,7 +1473,7 @@ Time: 0s">
 <div class="code" title="File: Abelianization.v
 Line: 264
 Time: 0.001s">
-<div class="time" style="width: 0.84033613445378%"></div>
+<div class="time" style="width: 1%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -1523,8 +1523,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 273
-Time: 0.001s">
-<div class="time" style="width: 0.84033613445378%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> srapply (Build_Group (Abel G)).</pre>
 </div>
 <div class="code" title="File: Abelianization.v
@@ -1685,8 +1685,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 291
-Time: 0.018s">
-<div class="time" style="width: 15.126050420168%"></div>
+Time: 0.015s">
+<div class="time" style="width: 15%"></div>
 <pre> srapply (Abel_rec _ _ h).</pre>
 </div>
 <div class="code" title="File: Abelianization.v
@@ -1739,22 +1739,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 297
-Time: 0.052s">
-<div class="time" style="width: 43.697478991597%"></div>
+Time: 0.046s">
+<div class="time" style="width: 46%"></div>
 <pre>
       Abel_ind_hprop x; revert y.</pre>
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 298
-Time: 0.068s">
-<div class="time" style="width: 57.142857142857%"></div>
+Time: 0.056s">
+<div class="time" style="width: 56%"></div>
 <pre>
       Abel_ind_hprop y.</pre>
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 299
-Time: 0.007s">
-<div class="time" style="width: 5.8823529411765%"></div>
+Time: 0.005s">
+<div class="time" style="width: 5%"></div>
 <pre>
       apply grp_homo_op.</pre>
 </div>
@@ -1766,8 +1766,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 300
-Time: 0.001s">
-<div class="time" style="width: 0.84033613445378%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     cbn.</pre>
 </div>
@@ -1792,8 +1792,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 302
-Time: 0.022s">
-<div class="time" style="width: 18.487394957983%"></div>
+Time: 0.018s">
+<div class="time" style="width: 18%"></div>
 <pre>
   Abel_ind_hprop x.</pre>
 </div>
@@ -1806,15 +1806,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 304
-Time: 0.035s">
-<div class="time" style="width: 29.411764705882%"></div>
+Time: 0.03s">
+<div class="time" style="width: 30%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 305
 Time: 0.001s">
-<div class="time" style="width: 0.84033613445378%"></div>
+<div class="time" style="width: 1%"></div>
 <pre>
 
 Theorem groupiso_isabelianization {G : Group}
@@ -1835,21 +1835,21 @@ Proof.</pre>
 <div class="code" title="File: Abelianization.v
 Line: 314
 Time: 0.003s">
-<div class="time" style="width: 2.5210084033613%"></div>
+<div class="time" style="width: 3%"></div>
 <pre>
   destruct (esssurj (group_precomp B eta1) eta2) as [a ac].</pre>
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 315
-Time: 0.006s">
-<div class="time" style="width: 5.0420168067227%"></div>
+Time: 0.005s">
+<div class="time" style="width: 5%"></div>
 <pre>
   destruct (esssurj (group_precomp A eta2) eta1) as [b bc].</pre>
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 316
-Time: 0.01s">
-<div class="time" style="width: 8.4033613445378%"></div>
+Time: 0.008s">
+<div class="time" style="width: 8%"></div>
 <pre>
   srapply (Build_GroupIsomorphism _ _ a).</pre>
 </div>
@@ -1869,8 +1869,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 319
-Time: 0.003s">
-<div class="time" style="width: 2.5210084033613%"></div>
+Time: 0.002s">
+<div class="time" style="width: 2%"></div>
 <pre> refine (essinj0 (group_precomp B eta2)
                     (x := a $o b) (y := Id (A := Group) B) _).</pre>
 </div>
@@ -1911,7 +1911,7 @@ Time: 0s">
 <div class="code" title="File: Abelianization.v
 Line: 324
 Time: 0.003s">
-<div class="time" style="width: 2.5210084033613%"></div>
+<div class="time" style="width: 3%"></div>
 <pre> refine (essinj0 (group_precomp A eta1)
                     (x := b $o a) (y := Id (A := Group) A) _).</pre>
 </div>
@@ -1944,15 +1944,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 328
-Time: 0.002s">
-<div class="time" style="width: 1.6806722689076%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 329
 Time: 0.001s">
-<div class="time" style="width: 0.84033613445378%"></div>
+<div class="time" style="width: 1%"></div>
 <pre>
 
 Theorem homotopic_isabelianization {G : Group} (A B : AbGroup)
@@ -1977,14 +1977,14 @@ Time: 0s">
 <div class="code" title="File: Abelianization.v
 Line: 336
 Time: 0.002s">
-<div class="time" style="width: 1.6806722689076%"></div>
+<div class="time" style="width: 2%"></div>
 <pre>
   exact (((esssurj (group_precomp B eta1) eta2).2 x)^).</pre>
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 337
-Time: 0.001s">
-<div class="time" style="width: 0.84033613445378%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -2027,8 +2027,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 345
-Time: 0.002s">
-<div class="time" style="width: 1.6806722689076%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1%"></div>
 <pre>
   refine (@cancelR_isequiv_conn_map _ _ _ _ _ _ _
     (conn_map_homotopic _ _ _ p _)).</pre>
@@ -2036,7 +2036,7 @@ Time: 0.002s">
 <div class="code" title="File: Abelianization.v
 Line: 347
 Time: 0.001s">
-<div class="time" style="width: 0.84033613445378%"></div>
+<div class="time" style="width: 1%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -2096,8 +2096,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 354
-Time: 0.001s">
-<div class="time" style="width: 0.84033613445378%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -2120,8 +2120,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 360
-Time: 0.014s">
-<div class="time" style="width: 11.764705882353%"></div>
+Time: 0.012s">
+<div class="time" style="width: 12%"></div>
 <pre>
   srapply isequiv_homotopic.</pre>
 </div>
@@ -2160,8 +2160,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Abelianization.v
 Line: 364
-Time: 0.002s">
-<div class="time" style="width: 1.6806722689076%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1%"></div>
 <pre> symmetry; apply homotopic_isabelianization.</pre>
 </div>
 <div class="code" title="File: Abelianization.v

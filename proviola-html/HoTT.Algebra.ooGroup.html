@@ -878,12 +878,12 @@
           
 
             i = 172;
-            data = "1 goal (ID 244)	  	  X : pType	  Y : pType	  Z : pType	  psi : Y ->* Z	  phi : X ->* Y	  g : group_loops X	  p := eisretr (loops_group X) g	   : (loops_group X o (loops_group X)^-1) g = idmap g	  ============================	  loops_group Z (fmap loops psi (fmap loops phi ((loops_group X)^-1 g))) =	  loops_group Z (fmap loops (psi o* phi) ((loops_group X)^-1 g))	1 goal (ID 252)	  	  X : pType	  Y : pType	  Z : pType	  psi : Y ->* Z	  phi : X ->* Y	  g : group_loops X	  p := eisretr (loops_group X) g	   : (loops_group X o (loops_group X)^-1) g = idmap g	  ============================	  fmap loops psi (fmap loops phi ((loops_group X)^-1 g)) =	  fmap loops (psi o* phi) ((loops_group X)^-1 g)	";
+            data = "1 goal (ID 244)	  	  X : pType	  Y : pType	  Z : pType	  psi : Y ->* Z	  phi : X ->* Y	  g : group_loops X	  p := eisretr (loops_group X) g	   : (loops_group X o (loops_group X)^-1) g = idmap g	  ============================	  loops_group Z (fmap loops psi (fmap loops phi ((loops_group X)^-1 g))) =	  loops_group Z (fmap loops (psi o* phi) ((loops_group X)^-1 g))	1 goal (ID 252)	  	  X : pType	  Y : pType	  Z : pType	  psi : Y ->* Z	  phi : X ->* Y	  g : group_loops X	  p := eisretr (loops_group X) g	   : (loops_group X o (loops_group X)^-1) g = idmap g	  ============================	  fmap loops psi (fmap loops phi ((loops_group X)^-1 g)) =	  fmap loops (psi o* phi) ((loops_group X)^-1 g)	No more goals.	<infomsg>grouphom_idmap is defined</infomsg>	";
             responses[i]=data;
           
 
             i = 173;
-            data = "No more goals.	<infomsg>grouphom_idmap is defined</infomsg>	1 goal (ID 170)	  	  X : pType	  ============================	  grouphom_idmap (group_loops X) == group_loops_functor (Id X)	";
+            data = "1 goal (ID 170)	  	  X : pType	  ============================	  grouphom_idmap (group_loops X) == group_loops_functor (Id X)	";
             responses[i]=data;
           
 
@@ -1702,12 +1702,12 @@ Keyed unification makes <span class="inlinecode"><span class="id" title="tactic"
 </div>
 <div class="goal" id="goal0_3_7"><pre><span></span></pre></div>
 <div class="doc" scenenumber="9">
-<a id="lab50"></a><h1 class="section">oo-Groups</h1>
+<a id="lab60"></a><h1 class="section">oo-Groups</h1>
 <div class="doc" scenenumber="4"> </div>
 
  We want a workable definition of "oo-group" (what a classical homotopy theorist would call a "grouplike Aoo-space"). The classical definitions using operads or Segal spaces involve infinitely much data, which we don't know how to handle in HoTT. But instead, we can invoke the theorem (which is a theorem in classical homotopy theory, and also in any oo-topos) that every oo-group is the loop space of some pointed connected object, and use it instead as a definition: we define an oo-group to be a pointed connected type (its classifying space or delooping). Then we make subsidiary definitions to allow us to treat such an object in the way we would expect, e.g. an oo-group homomorphism is a pointed map between classifying spaces. 
 <div class="doc" scenenumber="6"> </div>
-<a id="lab51"></a><h2 class="section">Definition</h2>
+<a id="lab61"></a><h2 class="section">Definition</h2>
 </div>
 <div scenenumber="11" class="code">
 <span class="command" onmouseout="
@@ -1903,9 +1903,9 @@ Unfortunately, the underlying type of that oo-group is not *definitionally* the 
 </div>
 <div class="goal" id="goal0_3_27"><pre><span></span></pre></div>
 <div class="doc" scenenumber="29">
-<a id="lab52"></a><h2 class="section">Homomorphisms</h2>
+<a id="lab62"></a><h2 class="section">Homomorphisms</h2>
 <div class="doc" scenenumber="4"> </div>
-<a id="lab53"></a><h3 class="section">Definition</h3>
+<a id="lab63"></a><h3 class="section">Definition</h3>
 </div>
 <div scenenumber="31" class="code">
 <span class="command" onmouseout="
@@ -2097,7 +2097,7 @@ And this functor "is" the same as the ordinary loop space functor.
 </div>
 <div class="goal" id="goal0_3_39"><pre><span></span></pre></div>
 <div class="doc" scenenumber="41">
-<a id="lab54"></a><h3 class="section">Functoriality</h3>
+<a id="lab64"></a><h3 class="section">Functoriality</h3>
 </div>
 <div scenenumber="43" class="code">
 <span class="command" onmouseout="
@@ -2233,7 +2233,7 @@ And this functor "is" the same as the ordinary loop space functor.
 </div>
 <div class="goal" id="goal0_3_43"><pre><span></span></pre></div>
 <div class="doc" scenenumber="45">
-<a id="lab55"></a><h3 class="section">Homomorphic properties</h3>
+<a id="lab65"></a><h3 class="section">Homomorphic properties</h3>
 <div class="doc" scenenumber="4"> </div>
 
  The following tactic often allows us to "pretend" that phi preserves basepoints strictly.  This is basically a simple extension of <span class="inlinecode"><span class="id" title="var">pointed_reduce_rewrite</span></span> (see Pointed.v). 
@@ -2423,7 +2423,7 @@ And this functor "is" the same as the ordinary loop space functor.
 </div>
 <div class="goal" id="goal0_3_47"><pre><span></span></pre></div>
 <div class="doc" scenenumber="49">
-<a id="lab56"></a><h2 class="section">Subgroups</h2>
+<a id="lab66"></a><h2 class="section">Subgroups</h2>
 </div>
 <div scenenumber="51" class="code">
 <span class="command" onmouseout="
@@ -2706,7 +2706,7 @@ The wild category of oo-groups is induced by the wild category of pTypes
 </div>
 <div class="goal" id="goal0_3_63"><pre><span></span></pre></div>
 <div class="doc" scenenumber="65">
-<a id="lab57"></a><h2 class="section">1-groups as oo-groups</h2>
+<a id="lab67"></a><h2 class="section">1-groups as oo-groups</h2>
 </div>
 <div scenenumber="67" class="code">
 <span class="command" onmouseout="

@@ -22,7 +22,7 @@
 </div>
 
 <div class="doc">
-<a id="lab453"></a><h1 class="section">Laws about composition of functors</h1>
+<a id="lab463"></a><h1 class="section">Laws about composition of functors</h1>
 
 </div>
 <div class="code">
@@ -53,7 +53,7 @@
 </div>
 
 <div class="doc">
-<a id="lab454"></a><h2 class="section">left identity : <span class="inlinecode">1</span> <span class="inlinecode">∘</span> <span class="inlinecode"><a class="idref" href="HoTT.Colimits.Sequential.html#F"><span class="id" title="definition">F</span></a></span> <span class="inlinecode">=</span> <span class="inlinecode"><a class="idref" href="HoTT.Colimits.Sequential.html#F"><span class="id" title="definition">F</span></a></span></h2>
+<a id="lab464"></a><h2 class="section">left identity : <span class="inlinecode">1</span> <span class="inlinecode">∘</span> <span class="inlinecode"><a class="idref" href="HoTT.Colimits.Sequential.html#F"><span class="id" title="definition">F</span></a></span> <span class="inlinecode">=</span> <span class="inlinecode"><a class="idref" href="HoTT.Colimits.Sequential.html#F"><span class="id" title="definition">F</span></a></span></h2>
  If we had that <span class="inlinecode"><span class="id" title="keyword">match</span></span> <span class="inlinecode">(<a class="idref" href="HoTT.Categories.LaxComma.CoreParts.html#LaxCommaCategoryParts.p"><span class="id" title="projection">p</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="HoTT.Categories.LaxComma.CoreParts.html#LaxCommaCategoryParts.a"><span class="id" title="projection">a</span></a></span> <span class="inlinecode">=</span> <span class="inlinecode"><a class="idref" href="HoTT.Categories.LaxComma.CoreParts.html#LaxCommaCategoryParts.b"><span class="id" title="projection">b</span></a>)</span> <span class="inlinecode"><span class="id" title="tactic">in</span></span> <span class="inlinecode">(<span class="id" title="var">_</span></span> <span class="inlinecode">=</span> <span class="inlinecode"><a class="idref" href="HoTT.Categories.Functor.Attributes.html#fully_faithful_helpers.y"><span class="id" title="variable">y</span></a>)</span> <span class="inlinecode"><span class="id" title="keyword">return</span></span> <span class="inlinecode">(<a class="idref" href="HoTT.Categories.LaxComma.CoreParts.html#LaxCommaCategoryParts.a"><span class="id" title="projection">a</span></a></span> <span class="inlinecode">=</span> <span class="inlinecode"><a class="idref" href="HoTT.Categories.Functor.Attributes.html#fully_faithful_helpers.y"><span class="id" title="variable">y</span></a>)</span> <span class="inlinecode"><span class="id" title="keyword">with</span></span> <span class="inlinecode"><a class="idref" href="HoTT.Basics.Overture.html#idpath"><span class="id" title="constructor">idpath</span></a></span> <span class="inlinecode">⇒</span> <span class="inlinecode"><a class="idref" href="HoTT.Basics.Overture.html#idpath"><span class="id" title="constructor">idpath</span></a></span> <span class="inlinecode"><span class="id" title="keyword">end</span></span> <span class="inlinecode">≡</span> <span class="inlinecode"><a class="idref" href="HoTT.Categories.LaxComma.CoreParts.html#LaxCommaCategoryParts.p"><span class="id" title="projection">p</span></a></span> (a form of eta for paths), this would be judgemental. 
 </div>
 <div class="code">
@@ -66,7 +66,7 @@
 </div>
 
 <div class="doc">
-<a id="lab455"></a><h2 class="section">right identity : <span class="inlinecode"><a class="idref" href="HoTT.Colimits.Sequential.html#F"><span class="id" title="definition">F</span></a></span> <span class="inlinecode">∘</span> <span class="inlinecode">1</span> <span class="inlinecode">=</span> <span class="inlinecode"><a class="idref" href="HoTT.Colimits.Sequential.html#F"><span class="id" title="definition">F</span></a></span></h2>
+<a id="lab465"></a><h2 class="section">right identity : <span class="inlinecode"><a class="idref" href="HoTT.Colimits.Sequential.html#F"><span class="id" title="definition">F</span></a></span> <span class="inlinecode">∘</span> <span class="inlinecode">1</span> <span class="inlinecode">=</span> <span class="inlinecode"><a class="idref" href="HoTT.Colimits.Sequential.html#F"><span class="id" title="definition">F</span></a></span></h2>
 
 </div>
 <div class="code">
@@ -79,7 +79,7 @@
 </div>
 
 <div class="doc">
-<a id="lab456"></a><h2 class="section">Action of left and right identity laws on objects</h2>
+<a id="lab466"></a><h2 class="section">Action of left and right identity laws on objects</h2>
 
 </div>
 <div class="code">
@@ -113,7 +113,7 @@
 </div>
 
 <div class="doc">
-<a id="lab457"></a><h2 class="section">associativity : <span class="inlinecode">(<a class="idref" href="HoTT.Modalities.Modality.html#ModalFact.TwoFactorizations.H"><span class="id" title="variable">H</span></a></span> <span class="inlinecode">∘</span> <span class="inlinecode"><a class="idref" href="HoTT.Colimits.Sequential.html#G"><span class="id" title="definition">G</span></a>)</span> <span class="inlinecode">∘</span> <span class="inlinecode"><a class="idref" href="HoTT.Colimits.Sequential.html#F"><span class="id" title="definition">F</span></a></span> <span class="inlinecode">=</span> <span class="inlinecode"><a class="idref" href="HoTT.Modalities.Modality.html#ModalFact.TwoFactorizations.H"><span class="id" title="variable">H</span></a></span> <span class="inlinecode">∘</span> <span class="inlinecode">(<a class="idref" href="HoTT.Colimits.Sequential.html#G"><span class="id" title="definition">G</span></a></span> <span class="inlinecode">∘</span> <span class="inlinecode"><a class="idref" href="HoTT.Colimits.Sequential.html#F"><span class="id" title="definition">F</span></a>)</span></h2>
+<a id="lab467"></a><h2 class="section">associativity : <span class="inlinecode">(<a class="idref" href="HoTT.Modalities.Modality.html#ModalFact.TwoFactorizations.H"><span class="id" title="variable">H</span></a></span> <span class="inlinecode">∘</span> <span class="inlinecode"><a class="idref" href="HoTT.Colimits.Sequential.html#G"><span class="id" title="definition">G</span></a>)</span> <span class="inlinecode">∘</span> <span class="inlinecode"><a class="idref" href="HoTT.Colimits.Sequential.html#F"><span class="id" title="definition">F</span></a></span> <span class="inlinecode">=</span> <span class="inlinecode"><a class="idref" href="HoTT.Modalities.Modality.html#ModalFact.TwoFactorizations.H"><span class="id" title="variable">H</span></a></span> <span class="inlinecode">∘</span> <span class="inlinecode">(<a class="idref" href="HoTT.Colimits.Sequential.html#G"><span class="id" title="definition">G</span></a></span> <span class="inlinecode">∘</span> <span class="inlinecode"><a class="idref" href="HoTT.Colimits.Sequential.html#F"><span class="id" title="definition">F</span></a>)</span></h2>
 
 </div>
 <div class="code">
@@ -128,7 +128,7 @@
 </div>
 
 <div class="doc">
-<a id="lab458"></a><h2 class="section">Action of associativity on objects</h2>
+<a id="lab468"></a><h2 class="section">Action of associativity on objects</h2>
 
 </div>
 <div class="code">
@@ -163,7 +163,7 @@
 </div>
 
 <div class="doc">
-<a id="lab459"></a><h2 class="section">coherence triangle</h2>
+<a id="lab469"></a><h2 class="section">coherence triangle</h2>
  The following triangle is coherent
 <pre>
       G ∘ (1 ∘ F) === (G ∘ 1) ∘ F
@@ -189,7 +189,7 @@
 </div>
 
 <div class="doc">
-<a id="lab460"></a><h2 class="section">coherence pentagon</h2>
+<a id="lab470"></a><h2 class="section">coherence pentagon</h2>
  The following pentagon is coherent
 <pre>
                   K ∘ (H ∘ (G ∘ F))

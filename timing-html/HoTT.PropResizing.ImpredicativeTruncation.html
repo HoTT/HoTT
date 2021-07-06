@@ -39,7 +39,7 @@ Time: 0s">
 </div>
 <div class="code" title="File: ImpredicativeTruncation.v
 Line: 3
-Time: 0.042s">
+Time: 0.045s">
 <div class="time" style="width: 100%"></div>
 <pre>Require Import HoTT.Basics HoTT.Types HProp.</pre>
 </div>
@@ -123,8 +123,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ImpredicativeTruncation.v
 Line: 20
-Time: 0.019s">
-<div class="time" style="width: 45.238095238095%"></div>
+Time: 0.02s">
+<div class="time" style="width: 44.444444444444%"></div>
 <pre>
     exact _.</pre>
 </div>
@@ -138,7 +138,7 @@ Time: 0s">
 <div class="code" title="File: ImpredicativeTruncation.v
 Line: 22
 Time: 0.002s">
-<div class="time" style="width: 4.7619047619048%"></div>
+<div class="time" style="width: 4.4444444444444%"></div>
 <pre>
 
   Definition merely_rec {A : Type@{i}} {P : Type@{j}} `{IsHProp P} (f : A -&gt; P)
@@ -164,8 +164,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ImpredicativeTruncation.v
 Line: 31
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.2222222222222%"></div>
 <pre>
     srefine (merely_rec (trm o f)).</pre>
 </div>
@@ -193,8 +193,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ImpredicativeTruncation.v
 Line: 36
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.2222222222222%"></div>
 <pre>
    
   Local Definition functor_merely_sameargs `{Funext} {A : Type} (f : typeofid A)
@@ -278,8 +278,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ImpredicativeTruncation.v
 Line: 54
-Time: 0.001s">
-<div class="time" style="width: 2.3809523809524%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   srefine (merely_rec_naive (trm o f)).</pre>
 </div>
@@ -300,8 +300,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ImpredicativeTruncation.v
 Line: 58
-Time: 0.001s">
-<div class="time" style="width: 2.3809523809524%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>Fail Local Definition functor_merely_weak_sameargs `{Funext} {A : Type} (f : typeofid A)
   : typeofid(merely A) := functor_merely_weak f.</pre>
 </div>

@@ -30,14 +30,14 @@ pre {
 
 <div class="code" title="File: BlakersMassey.v
 Line: 1
-Time: 0.045s">
-<div class="time" style="width: 22.842639593909%"></div>
+Time: 0.044s">
+<div class="time" style="width: 25%"></div>
 <pre>Require Import HoTT.Basics HoTT.Types HProp.</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 1
 Time: 0.004s">
-<div class="time" style="width: 2.0304568527919%"></div>
+<div class="time" style="width: 2.2727272727273%"></div>
 <pre>
 Require Import Colimits.Pushout.</pre>
 </div>
@@ -50,22 +50,22 @@ Require Import Colimits.SpanPushout.</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 3
-Time: 0.046s">
-<div class="time" style="width: 23.350253807107%"></div>
+Time: 0.044s">
+<div class="time" style="width: 25%"></div>
 <pre>
 Require Import Homotopy.Join.</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 4
-Time: 0.001s">
-<div class="time" style="width: 0.50761421319797%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 Require Import Modalities.ReflectiveSubuniverse.</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 5
-Time: 0.001s">
-<div class="time" style="width: 0.50761421319797%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
 Require Import Truncations.</pre>
 </div>
@@ -92,8 +92,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 14
-Time: 0.01s">
-<div class="time" style="width: 5.0761421319797%"></div>
+Time: 0.009s">
+<div class="time" style="width: 5.1136363636364%"></div>
 <pre>Definition transport_singleton `{Univalence}
            {A : Type} {x : A} (B : forall (y : A), (x = y) -&gt; Type)
            {y : A} (p : x = y) (u : B x idpath)
@@ -120,28 +120,28 @@ Proof.</pre>
 <div class="code" title="File: BlakersMassey.v
 Line: 29
 Time: 0.002s">
-<div class="time" style="width: 1.0152284263959%"></div>
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
   destruct p; cbn in *.</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 30
-Time: 0.001s">
-<div class="time" style="width: 0.50761421319797%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   apply (fun e =&gt; e @ concat_1p _) in ev.</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 31
-Time: 0.017s">
-<div class="time" style="width: 8.6294416243655%"></div>
+Time: 0.016s">
+<div class="time" style="width: 9.0909090909091%"></div>
 <pre>
   apply moveR_equiv_V in ev.</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 32
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
   apply (ap equiv_fun) in ev.</pre>
 </div>
@@ -175,8 +175,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 37
-Time: 0.009s">
-<div class="time" style="width: 4.5685279187817%"></div>
+Time: 0.008s">
+<div class="time" style="width: 4.5454545454545%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -221,7 +221,7 @@ Time: 0s">
 <div class="code" title="File: BlakersMassey.v
 Line: 45
 Time: 0.001s">
-<div class="time" style="width: 0.50761421319797%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
     Context
       (isconnected_cogap :
@@ -272,7 +272,7 @@ Time: 0s">
 <div class="code" title="File: BlakersMassey.v
 Line: 60
 Time: 0.004s">
-<div class="time" style="width: 2.0304568527919%"></div>
+<div class="time" style="width: 2.2727272727273%"></div>
 <pre>Local Definition frobnicate {x0 x1 : X} (r : left x0 = left x1)
           (s : x0 = x1) (y : Y) (q1 : Q x1 y)
       : {q0 : Q x0 y &amp;
@@ -297,7 +297,7 @@ Time: 0s">
 <div class="code" title="File: BlakersMassey.v
 Line: 67
 Time: 0.003s">
-<div class="time" style="width: 1.5228426395939%"></div>
+<div class="time" style="width: 1.7045454545455%"></div>
 <pre>
       refine (_ oE equiv_functor_sigma'
                 (Q := fun qt =&gt; glue qt.1 @ (glue q1)^ = r)
@@ -310,35 +310,35 @@ Time: 0.003s">
 <div class="code" title="File: BlakersMassey.v
 Line: 74
 Time: 0.005s">
-<div class="time" style="width: 2.5380710659898%"></div>
+<div class="time" style="width: 2.8409090909091%"></div>
 <pre>
       refine (_ oE equiv_contr_sigma _); cbn.</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 75
 Time: 0.002s">
-<div class="time" style="width: 1.0152284263959%"></div>
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
       rewrite (ap_transport s^ (fun x q =&gt; glue q) q1).</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 76
-Time: 0.001s">
-<div class="time" style="width: 0.50761421319797%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
       rewrite (transport_paths_FlFr s^ (glue q1)).</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 77
 Time: 0.006s">
-<div class="time" style="width: 3.0456852791878%"></div>
+<div class="time" style="width: 3.4090909090909%"></div>
 <pre>
       rewrite ap_V, inv_V, ap_const, concat_p1.</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 78
-Time: 0.001s">
-<div class="time" style="width: 0.50761421319797%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
       exact (equiv_concat_l (concat_pp_V _ _)^ _).</pre>
 </div>
@@ -352,8 +352,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 81
-Time: 0.009s">
-<div class="time" style="width: 4.5685279187817%"></div>
+Time: 0.008s">
+<div class="time" style="width: 4.5454545454545%"></div>
 <pre>Defined.</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
@@ -385,8 +385,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 90
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>Definition coderight {x0 : X} {y : Y} (r : left x0 = right y) : Type
       := O (hfiber glue r).</pre>
 </div>
@@ -427,16 +427,16 @@ Time: 0s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 102
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>Definition codeleft1 : Type
         := { s : x0 = x1 &amp;
           (* v : *) ap left s = r}.</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 104
-Time: 0.003s">
-<div class="time" style="width: 1.5228426395939%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
 
       Record codeleft2
@@ -448,7 +448,7 @@ Time: 0.003s">
 <div class="code" title="File: BlakersMassey.v
 Line: 110
 Time: 0.01s">
-<div class="time" style="width: 5.0761421319797%"></div>
+<div class="time" style="width: 5.6818181818182%"></div>
 <pre>
 
       Record codeleft0
@@ -496,7 +496,7 @@ Time: 0s">
 <div class="code" title="File: BlakersMassey.v
 Line: 128
 Time: 0.001s">
-<div class="time" style="width: 0.50761421319797%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
       Defined.</pre>
 </div>
@@ -532,7 +532,7 @@ Time: 0s">
 <div class="code" title="File: BlakersMassey.v
 Line: 134
 Time: 0.001s">
-<div class="time" style="width: 0.50761421319797%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
       Defined.</pre>
 </div>
@@ -580,8 +580,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 147
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>Definition codeleft2plus :=
           {yqqu : codeleft2 &amp;
                   Join ((x0; codeleft2_q00 yqqu) = (x1; codeleft2_q10 yqqu)
@@ -602,7 +602,7 @@ Time: 0s">
 <div class="code" title="File: BlakersMassey.v
 Line: 156
 Time: 0.003s">
-<div class="time" style="width: 1.5228426395939%"></div>
+<div class="time" style="width: 1.7045454545455%"></div>
 <pre>Record Ocodeleft2b
         := { Ocodeleft2b_s   : x0 = x1 ;
              Ocodeleft2b_y0  : Y ;
@@ -614,8 +614,8 @@ Time: 0.003s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 163
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 
         Definition Ocodeleft2c
@@ -625,7 +625,7 @@ Time: 0s">
 <div class="code" title="File: BlakersMassey.v
 Line: 167
 Time: 0.003s">
-<div class="time" style="width: 1.5228426395939%"></div>
+<div class="time" style="width: 1.7045454545455%"></div>
 <pre>
 
         Record Ocodeleft2a
@@ -701,8 +701,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 184
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
         Defined.</pre>
 </div>
@@ -731,15 +731,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 190
-Time: 0.001s">
-<div class="time" style="width: 0.50761421319797%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
           refine ((equiv_sigma_pushout _ _ _ _ _)^-1 oE _).</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 191
-Time: 0.001s">
-<div class="time" style="width: 0.50761421319797%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
           srefine (equiv_pushout _ _ _ _ _).</pre>
 </div>
@@ -758,15 +758,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 193
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
             2:intro; refine (equiv_functor_prod' _ _); apply equiv_path_sigma.</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 194
-Time: 0.139s">
-<div class="time" style="width: 70.558375634518%"></div>
+Time: 0.124s">
+<div class="time" style="width: 70.454545454545%"></div>
 <pre>
             make_equiv_contr_basedpaths.</pre>
 </div>
@@ -792,8 +792,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 197
-Time: 0.013s">
-<div class="time" style="width: 6.5989847715736%"></div>
+Time: 0.011s">
+<div class="time" style="width: 6.25%"></div>
 <pre>
             make_equiv.</pre>
 </div>
@@ -819,8 +819,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 200
-Time: 0.045s">
-<div class="time" style="width: 22.842639593909%"></div>
+Time: 0.04s">
+<div class="time" style="width: 22.727272727273%"></div>
 <pre>
             make_equiv_contr_basedpaths.</pre>
 </div>
@@ -833,8 +833,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 202
-Time: 0.038s">
-<div class="time" style="width: 19.289340101523%"></div>
+Time: 0.03s">
+<div class="time" style="width: 17.045454545455%"></div>
 <pre> intros; reflexivity.</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
@@ -846,14 +846,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 203
-Time: 0.037s">
-<div class="time" style="width: 18.781725888325%"></div>
+Time: 0.033s">
+<div class="time" style="width: 18.75%"></div>
 <pre> intros; reflexivity.</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 203
-Time: 0.102s">
-<div class="time" style="width: 51.776649746193%"></div>
+Time: 0.087s">
+<div class="time" style="width: 49.431818181818%"></div>
 <pre>
         Defined.</pre>
 </div>
@@ -883,7 +883,7 @@ Time: 0s">
 <div class="code" title="File: BlakersMassey.v
 Line: 209
 Time: 0.004s">
-<div class="time" style="width: 2.0304568527919%"></div>
+<div class="time" style="width: 2.2727272727273%"></div>
 <pre>
           refine ((equiv_O_functor O (equiv_sigma_contr
                   (fun yqqu : codeleft2 =&gt;
@@ -913,8 +913,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 216
-Time: 0.001s">
-<div class="time" style="width: 0.50761421319797%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
         Defined.</pre>
 </div>
@@ -943,15 +943,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 222
-Time: 0.016s">
-<div class="time" style="width: 8.1218274111675%"></div>
+Time: 0.014s">
+<div class="time" style="width: 7.9545454545455%"></div>
 <pre>
           make_equiv_contr_basedpaths.</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 223
-Time: 0.01s">
-<div class="time" style="width: 5.0761421319797%"></div>
+Time: 0.009s">
+<div class="time" style="width: 5.1136363636364%"></div>
 <pre>
         Defined.</pre>
 </div>
@@ -983,15 +983,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 232
-Time: 0.005s">
-<div class="time" style="width: 2.5380710659898%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.2727272727273%"></div>
 <pre>
           destruct c; reflexivity.</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 233
 Time: 0.003s">
-<div class="time" style="width: 1.5228426395939%"></div>
+<div class="time" style="width: 1.7045454545455%"></div>
 <pre>
         Qed.</pre>
 </div>
@@ -1022,7 +1022,7 @@ Time: 0s">
 <div class="code" title="File: BlakersMassey.v
 Line: 240
 Time: 0.002s">
-<div class="time" style="width: 1.0152284263959%"></div>
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
           destruct c.</pre>
 </div>
@@ -1043,21 +1043,21 @@ Time: 0s">
 <div class="code" title="File: BlakersMassey.v
 Line: 243
 Time: 0.001s">
-<div class="time" style="width: 0.50761421319797%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
           cbn.</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 244
 Time: 0.001s">
-<div class="time" style="width: 0.50761421319797%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
           refine (ap _ (ap _ (to_O_natural _ _ _)) @ _).</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 245
-Time: 0.001s">
-<div class="time" style="width: 0.50761421319797%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
           refine (ap _ (to_O_natural _ _ _) @ _).</pre>
 </div>
@@ -1103,8 +1103,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 256
-Time: 0.045s">
-<div class="time" style="width: 22.842639593909%"></div>
+Time: 0.037s">
+<div class="time" style="width: 21.022727272727%"></div>
 <pre>Qed.</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
@@ -1180,15 +1180,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 273
-Time: 0.02s">
-<div class="time" style="width: 10.152284263959%"></div>
+Time: 0.017s">
+<div class="time" style="width: 9.6590909090909%"></div>
 <pre>
           make_equiv.</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 274
-Time: 0.008s">
-<div class="time" style="width: 4.0609137055838%"></div>
+Time: 0.006s">
+<div class="time" style="width: 3.4090909090909%"></div>
 <pre>
         Defined.</pre>
 </div>
@@ -1204,7 +1204,7 @@ Time: 0s">
 <div class="code" title="File: BlakersMassey.v
 Line: 278
 Time: 0.001s">
-<div class="time" style="width: 0.50761421319797%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>Definition Ocodeleft2a1_through_2b0
           : Ocodeleft2a1 == codeleft01 o Ocodeleft02b^-1 o Ocodeleft2ab.</pre>
 </div>
@@ -1218,7 +1218,7 @@ Time: 0s">
 <div class="code" title="File: BlakersMassey.v
 Line: 280
 Time: 0.001s">
-<div class="time" style="width: 0.50761421319797%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
           intros; reflexivity.</pre>
 </div>
@@ -1251,7 +1251,7 @@ Time: 0s">
 <div class="code" title="File: BlakersMassey.v
 Line: 289
 Time: 0.003s">
-<div class="time" style="width: 1.5228426395939%"></div>
+<div class="time" style="width: 1.7045454545455%"></div>
 <pre>
 
         Definition codeglue1_pushl (s : x0 = x1) (v : ap left s = r)
@@ -1315,22 +1315,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 306
-Time: 0.003s">
-<div class="time" style="width: 1.5228426395939%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
             abstract (rewrite !to_O_natural; apply Ocodeleft02_02b).</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 307
 Time: 0.001s">
-<div class="time" style="width: 0.50761421319797%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
         Defined.</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 308
-Time: 0.006s">
-<div class="time" style="width: 3.0456852791878%"></div>
+Time: 0.005s">
+<div class="time" style="width: 2.8409090909091%"></div>
 <pre>
 
         Definition codeglue2_pushl (s : x0 = x1) (v : ap left s = r)
@@ -1340,8 +1340,8 @@ Time: 0.006s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 313
-Time: 0.003s">
-<div class="time" style="width: 1.5228426395939%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.2727272727273%"></div>
 <pre>
 
         Definition codeglue3
@@ -1352,7 +1352,7 @@ Time: 0.003s">
 <div class="code" title="File: BlakersMassey.v
 Line: 318
 Time: 0.003s">
-<div class="time" style="width: 1.5228426395939%"></div>
+<div class="time" style="width: 1.7045454545455%"></div>
 <pre>
 
         Definition codeglue3_pushl (s : x0 = x1) (v : ap left s = r)
@@ -1362,8 +1362,8 @@ Time: 0.003s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 323
-Time: 0.002s">
-<div class="time" style="width: 1.0152284263959%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 
         Definition codeglue4
@@ -1376,8 +1376,8 @@ Time: 0.002s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 331
-Time: 0.005s">
-<div class="time" style="width: 2.5380710659898%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.2727272727273%"></div>
 <pre>
 
         Definition codeglue4_pushl (s : x0 = x1) (v : ap left s = r)
@@ -1387,8 +1387,8 @@ Time: 0.005s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 336
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 
         Definition codeglue5
@@ -1424,8 +1424,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 349
-Time: 0.004s">
-<div class="time" style="width: 2.0304568527919%"></div>
+Time: 0.003s">
+<div class="time" style="width: 1.7045454545455%"></div>
 <pre> exact (Build_Equiv _ _ (pushl' codeleft01 Ocodeleft02b) _).</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
@@ -1478,14 +1478,14 @@ Time: 0s">
 <div class="code" title="File: BlakersMassey.v
 Line: 354
 Time: 0.001s">
-<div class="time" style="width: 0.50761421319797%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
         Defined.</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 355
 Time: 0.007s">
-<div class="time" style="width: 3.5532994923858%"></div>
+<div class="time" style="width: 3.9772727272727%"></div>
 <pre>
 
         Definition codeglue5_pushl (s : x0 = x1) (v : ap left s = r)
@@ -1495,8 +1495,8 @@ Time: 0.007s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 360
-Time: 0.006s">
-<div class="time" style="width: 3.0456852791878%"></div>
+Time: 0.005s">
+<div class="time" style="width: 2.8409090909091%"></div>
 <pre>
 
         Definition codeglue6
@@ -1507,8 +1507,8 @@ Time: 0.006s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 366
-Time: 0.011s">
-<div class="time" style="width: 5.5837563451777%"></div>
+Time: 0.009s">
+<div class="time" style="width: 5.1136363636364%"></div>
 <pre>
 
         Definition codeglue6_pushl (s : x0 = x1) (v : ap left s = r)
@@ -1570,8 +1570,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 381
-Time: 0.007s">
-<div class="time" style="width: 3.5532994923858%"></div>
+Time: 0.006s">
+<div class="time" style="width: 3.4090909090909%"></div>
 <pre>
 
         Definition codeglue7_to_O
@@ -1584,7 +1584,7 @@ Time: 0.007s">
 <div class="code" title="File: BlakersMassey.v
 Line: 388
 Time: 0.002s">
-<div class="time" style="width: 1.0152284263959%"></div>
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
 
         Definition codeglue
@@ -1599,16 +1599,16 @@ Time: 0.002s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 398
-Time: 0.012s">
-<div class="time" style="width: 6.0913705583756%"></div>
+Time: 0.011s">
+<div class="time" style="width: 6.25%"></div>
 <pre>
 
       End CodeGlue.</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 400
-Time: 0.031s">
-<div class="time" style="width: 15.736040609137%"></div>
+Time: 0.029s">
+<div class="time" style="width: 16.477272727273%"></div>
 <pre>
 
     End CodeLeft.</pre>
@@ -1648,8 +1648,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 411
-Time: 0.001s">
-<div class="time" style="width: 0.50761421319797%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>Definition ap_code_glue (x1 : X) (y1 : Y) (q11 : Q x1 y1)
       : transport (fun p : SPushout Q =&gt; left x0 = p -&gt; Type)
                   (glue q11) codeleft
@@ -1714,7 +1714,7 @@ Time: 0s">
 <div class="code" title="File: BlakersMassey.v
 Line: 422
 Time: 0.001s">
-<div class="time" style="width: 0.50761421319797%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
     Defined.</pre>
 </div>
@@ -1731,7 +1731,7 @@ Time: 0s">
 <div class="code" title="File: BlakersMassey.v
 Line: 427
 Time: 0.001s">
-<div class="time" style="width: 0.50761421319797%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>Definition code (p : P) (r : left x0 = p) : Type
         := SPushout_ind Q (fun p =&gt; left x0 = p -&gt; Type)
                         (@codeleft x0) (@coderight x0)
@@ -1748,8 +1748,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 433
-Time: 0.01s">
-<div class="time" style="width: 5.0761421319797%"></div>
+Time: 0.009s">
+<div class="time" style="width: 5.1136363636364%"></div>
 <pre>Definition code_beta_glue (x1 : X) (y1 : Y) (q11 : Q x1 y1)
                (r : left x0 = right y1)
       : ap10 (apD code (glue q11)) r
@@ -1771,8 +1771,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 444
-Time: 0.004s">
-<div class="time" style="width: 2.0304568527919%"></div>
+Time: 0.003s">
+<div class="time" style="width: 1.7045454545455%"></div>
 <pre>
       refine (ap (fun h =&gt; ap10 h r)
              (spushout_ind_beta_sglue Q (fun p =&gt; left x0 = p -&gt; Type)
@@ -1783,14 +1783,14 @@ Time: 0.004s">
 <div class="code" title="File: BlakersMassey.v
 Line: 449
 Time: 0.001s">
-<div class="time" style="width: 0.50761421319797%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
       refine (ap10_path_arrow _ _ _ _).</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 450
-Time: 0.009s">
-<div class="time" style="width: 4.5685279187817%"></div>
+Time: 0.007s">
+<div class="time" style="width: 3.9772727272727%"></div>
 <pre>
     Defined.</pre>
 </div>
@@ -1863,8 +1863,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 464
-Time: 0.015s">
-<div class="time" style="width: 7.6142131979695%"></div>
+Time: 0.014s">
+<div class="time" style="width: 7.9545454545455%"></div>
 <pre>
 
     Definition center_code (p : P) (r : left x0 = p) : code p r
@@ -1886,7 +1886,7 @@ Time: 0s">
 <div class="code" title="File: BlakersMassey.v
 Line: 474
 Time: 0.001s">
-<div class="time" style="width: 0.50761421319797%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>Definition contraction_code_right (y1 : Y) (r : left x0 = right y1)
                (c : code (right y1) r)
       : center_code (right y1) r = c.</pre>
@@ -1915,7 +1915,7 @@ Time: 0s">
 <div class="code" title="File: BlakersMassey.v
 Line: 479
 Time: 0.001s">
-<div class="time" style="width: 0.50761421319797%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
       revert c; refine (O_indpaths _ _ _); intros [q01 t].</pre>
 </div>
@@ -1937,7 +1937,7 @@ Time: 0s">
 <div class="code" title="File: BlakersMassey.v
 Line: 483
 Time: 0.003s">
-<div class="time" style="width: 1.5228426395939%"></div>
+<div class="time" style="width: 1.7045454545455%"></div>
 <pre>destruct t.</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
@@ -1950,8 +1950,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 485
-Time: 0.024s">
-<div class="time" style="width: 12.182741116751%"></div>
+Time: 0.02s">
+<div class="time" style="width: 11.363636363636%"></div>
 <pre>rewrite (transport_singleton
                  code (glue q01) _
                  (fun r =&gt; @codeglue x0 x0 r y1 q01)
@@ -1974,37 +1974,37 @@ Time: 0s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 491
-Time: 0.017s">
-<div class="time" style="width: 8.6294416243655%"></div>
+Time: 0.014s">
+<div class="time" style="width: 7.9545454545455%"></div>
 <pre>do 6 change_apply_equiv_compose.</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 491
-Time: 0.088s">
-<div class="time" style="width: 44.670050761421%"></div>
+Time: 0.076s">
+<div class="time" style="width: 43.181818181818%"></div>
 <pre>
       rewrite codeglue1_pushl, codeglue2_pushl, codeglue3_pushl,
       codeglue4_pushl, codeglue5_pushl, codeglue6_pushl, codeglue7_to_O.</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 493
-Time: 0.009s">
-<div class="time" style="width: 4.5685279187817%"></div>
+Time: 0.008s">
+<div class="time" style="width: 4.5454545454545%"></div>
 <pre>
       rewrite &lt;- (ap_transport (concat_1p (glue q01))
                                (fun r =&gt; to O (hfiber glue r)) _).</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 495
-Time: 0.008s">
-<div class="time" style="width: 4.0609137055838%"></div>
+Time: 0.007s">
+<div class="time" style="width: 3.9772727272727%"></div>
 <pre>
       apply ap; unfold hfiber; rewrite transport_sigma'.</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 496
-Time: 0.022s">
-<div class="time" style="width: 11.167512690355%"></div>
+Time: 0.02s">
+<div class="time" style="width: 11.363636363636%"></div>
 <pre>
       apply ap; rewrite transport_paths_r.</pre>
 </div>
@@ -2024,8 +2024,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 499
-Time: 0.055s">
-<div class="time" style="width: 27.918781725888%"></div>
+Time: 0.048s">
+<div class="time" style="width: 27.272727272727%"></div>
 <pre>
       cbn.</pre>
 </div>
@@ -2044,22 +2044,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 501
-Time: 0.011s">
-<div class="time" style="width: 5.5837563451777%"></div>
+Time: 0.01s">
+<div class="time" style="width: 5.6818181818182%"></div>
 <pre>
       rewrite (transport_compose (fun q =&gt; glue q @ (glue q01)^ = 1%path) pr1).</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 502
-Time: 0.025s">
-<div class="time" style="width: 12.690355329949%"></div>
+Time: 0.022s">
+<div class="time" style="width: 12.5%"></div>
 <pre>
       unfold path_sigma'; rewrite ap_V, ap_pr1_path_sigma, transport_1.</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 503
-Time: 0.01s">
-<div class="time" style="width: 5.0761421319797%"></div>
+Time: 0.008s">
+<div class="time" style="width: 4.5454545454545%"></div>
 <pre>
       destruct (glue q01); reflexivity.</pre>
 </div>
@@ -2095,7 +2095,7 @@ Time: 0s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 510
-Time: 0.197s">
+Time: 0.176s">
 <div class="time" style="width: 100%"></div>
 <pre>Qed.</pre>
 </div>
@@ -2112,7 +2112,7 @@ Time: 0s">
 <div class="code" title="File: BlakersMassey.v
 Line: 514
 Time: 0.001s">
-<div class="time" style="width: 0.50761421319797%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>Definition contraction_code {y0 : Y} (q00 : Q x0 y0)
                (pr : { p : P &amp; left x0 = p }) (c : code pr.1 pr.2)
       : center_code pr.1 pr.2 = c.</pre>
@@ -2133,8 +2133,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 518
-Time: 0.011s">
-<div class="time" style="width: 5.5837563451777%"></div>
+Time: 0.01s">
+<div class="time" style="width: 5.6818181818182%"></div>
 <pre>
       srefine (transport (fun pr' =&gt; forall c, center_code pr'.1 pr'.2 = c)
                          (path_contr (right y0 ; glue q00) pr) _).</pre>
@@ -2156,7 +2156,7 @@ Time: 0s">
 <div class="code" title="File: BlakersMassey.v
 Line: 522
 Time: 0.001s">
-<div class="time" style="width: 0.50761421319797%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
     Defined.</pre>
 </div>
@@ -2179,8 +2179,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 528
-Time: 0.017s">
-<div class="time" style="width: 8.6294416243655%"></div>
+Time: 0.015s">
+<div class="time" style="width: 8.5227272727273%"></div>
 <pre>
       strip_truncations.</pre>
 </div>
@@ -2217,8 +2217,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 535
-Time: 0.092s">
-<div class="time" style="width: 46.700507614213%"></div>
+Time: 0.086s">
+<div class="time" style="width: 48.863636363636%"></div>
 <pre>End GBM.</pre>
 </div>
 <div class="code" title="File: BlakersMassey.v
@@ -2258,8 +2258,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: BlakersMassey.v
 Line: 545
-Time: 0.14s">
-<div class="time" style="width: 71.065989847716%"></div>
+Time: 0.122s">
+<div class="time" style="width: 69.318181818182%"></div>
 <pre>
   srefine (contr_code_inhab Q (m +2+ n) _ x
                             (merely_isconnected n _) (spushr Q y) r).</pre>
@@ -2267,7 +2267,7 @@ Time: 0.14s">
 <div class="code" title="File: BlakersMassey.v
 Line: 547
 Time: 0.001s">
-<div class="time" style="width: 0.50761421319797%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 Defined.</pre>
 </div>

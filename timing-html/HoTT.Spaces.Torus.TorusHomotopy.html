@@ -30,28 +30,28 @@ pre {
 
 <div class="code" title="File: TorusHomotopy.v
 Line: 1
-Time: 0.111s">
-<div class="time" style="width: 95.689655172414%"></div>
+Time: 0.102s">
+<div class="time" style="width: 100%"></div>
 <pre>Require Import Basics Types Pointed WildCat.</pre>
 </div>
 <div class="code" title="File: TorusHomotopy.v
 Line: 1
-Time: 0.064s">
-<div class="time" style="width: 55.172413793103%"></div>
+Time: 0.06s">
+<div class="time" style="width: 58.823529411765%"></div>
 <pre>
 Require Import Algebra.AbGroups.</pre>
 </div>
 <div class="code" title="File: TorusHomotopy.v
 Line: 2
 Time: 0.009s">
-<div class="time" style="width: 7.7586206896552%"></div>
+<div class="time" style="width: 8.8235294117647%"></div>
 <pre>
 Require Import Homotopy.HomotopyGroup.</pre>
 </div>
 <div class="code" title="File: TorusHomotopy.v
 Line: 3
-Time: 0.007s">
-<div class="time" style="width: 6.0344827586207%"></div>
+Time: 0.008s">
+<div class="time" style="width: 7.843137254902%"></div>
 <pre>
 Require Import Homotopy.Pi1S1.</pre>
 </div>
@@ -64,8 +64,8 @@ Require Import Spaces.Int Spaces.Circle.</pre>
 </div>
 <div class="code" title="File: TorusHomotopy.v
 Line: 5
-Time: 0.001s">
-<div class="time" style="width: 0.86206896551724%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.9607843137255%"></div>
 <pre>
 Require Import Truncations.</pre>
 </div>
@@ -79,8 +79,8 @@ Require Import Spaces.Torus.Torus.</pre>
 </div>
 <div class="code" title="File: TorusHomotopy.v
 Line: 8
-Time: 0.011s">
-<div class="time" style="width: 9.4827586206897%"></div>
+Time: 0.01s">
+<div class="time" style="width: 9.8039215686275%"></div>
 <pre>
 Require Import Spaces.Torus.TorusEquivCircles.</pre>
 </div>
@@ -126,15 +126,15 @@ Proof.</pre>
 </div>
 <div class="code" title="File: TorusHomotopy.v
 Line: 18
-Time: 0.011s">
-<div class="time" style="width: 9.4827586206897%"></div>
+Time: 0.01s">
+<div class="time" style="width: 9.8039215686275%"></div>
 <pre>
   refine (istrunc_equiv_istrunc _ equiv_torus_prod_Circle^-1).</pre>
 </div>
 <div class="code" title="File: TorusHomotopy.v
 Line: 19
 Time: 0.001s">
-<div class="time" style="width: 0.86206896551724%"></div>
+<div class="time" style="width: 0.98039215686275%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -163,15 +163,15 @@ Proof.</pre>
 </div>
 <div class="code" title="File: TorusHomotopy.v
 Line: 24
-Time: 0.024s">
-<div class="time" style="width: 20.689655172414%"></div>
+Time: 0.022s">
+<div class="time" style="width: 21.56862745098%"></div>
 <pre>
   srapply (isconnected_equiv' _ _ equiv_torus_prod_Circle^-1).</pre>
 </div>
 <div class="code" title="File: TorusHomotopy.v
 Line: 25
 Time: 0.01s">
-<div class="time" style="width: 8.6206896551724%"></div>
+<div class="time" style="width: 9.8039215686275%"></div>
 <pre>
   srapply (isconnected_equiv' _ _ (equiv_sigma_prod0 _ _)).</pre>
 </div>
@@ -214,7 +214,7 @@ Time: 0s">
 <div class="code" title="File: TorusHomotopy.v
 Line: 32
 Time: 0.001s">
-<div class="time" style="width: 0.86206896551724%"></div>
+<div class="time" style="width: 0.98039215686275%"></div>
 <pre>Theorem loops_torus `{Univalence} : loops T &lt;~&gt;* Int * Int.</pre>
 </div>
 <div class="code" title="File: TorusHomotopy.v
@@ -234,14 +234,14 @@ Time: 0s">
 <div class="code" title="File: TorusHomotopy.v
 Line: 34
 Time: 0.001s">
-<div class="time" style="width: 0.86206896551724%"></div>
+<div class="time" style="width: 0.98039215686275%"></div>
 <pre>
   1: exact (loops (S1 * S1)).</pre>
 </div>
 <div class="code" title="File: TorusHomotopy.v
 Line: 35
 Time: 0.009s">
-<div class="time" style="width: 7.7586206896552%"></div>
+<div class="time" style="width: 8.8235294117647%"></div>
 <pre>
   1: rapply (emap loops).</pre>
 </div>
@@ -254,8 +254,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: TorusHomotopy.v
 Line: 37
-Time: 0.013s">
-<div class="time" style="width: 11.206896551724%"></div>
+Time: 0.012s">
+<div class="time" style="width: 11.764705882353%"></div>
 <pre> srapply Build_pEquiv.</pre>
 </div>
 <div class="code" title="File: TorusHomotopy.v
@@ -282,7 +282,7 @@ Time: 0s">
 <div class="code" title="File: TorusHomotopy.v
 Line: 40
 Time: 0.004s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.921568627451%"></div>
 <pre>
     exact _.</pre>
 </div>
@@ -302,7 +302,7 @@ Time: 0s">
 <div class="code" title="File: TorusHomotopy.v
 Line: 42
 Time: 0.003s">
-<div class="time" style="width: 2.5862068965517%"></div>
+<div class="time" style="width: 2.9411764705882%"></div>
 <pre>
   1: exact (loops S1 * loops S1).</pre>
 </div>
@@ -316,14 +316,14 @@ Time: 0s">
 <div class="code" title="File: TorusHomotopy.v
 Line: 44
 Time: 0.001s">
-<div class="time" style="width: 0.86206896551724%"></div>
+<div class="time" style="width: 0.98039215686275%"></div>
 <pre>
   snrapply Build_pEquiv.</pre>
 </div>
 <div class="code" title="File: TorusHomotopy.v
 Line: 45
-Time: 0.001s">
-<div class="time" style="width: 0.86206896551724%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   1: srapply Build_pMap.</pre>
 </div>
@@ -343,7 +343,7 @@ Time: 0s">
 <div class="code" title="File: TorusHomotopy.v
 Line: 47
 Time: 0.001s">
-<div class="time" style="width: 0.86206896551724%"></div>
+<div class="time" style="width: 0.98039215686275%"></div>
 <pre>
     1,2: apply equiv_loopCircle_int.</pre>
 </div>
@@ -362,22 +362,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: TorusHomotopy.v
 Line: 49
-Time: 0.116s">
-<div class="time" style="width: 100%"></div>
+Time: 0.1s">
+<div class="time" style="width: 98.039215686275%"></div>
 <pre>
   exact _.</pre>
 </div>
 <div class="code" title="File: TorusHomotopy.v
 Line: 50
-Time: 0.003s">
-<div class="time" style="width: 2.5862068965517%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.9607843137255%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: TorusHomotopy.v
 Line: 51
-Time: 0.001s">
-<div class="time" style="width: 0.86206896551724%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
 Lemma pequiv_torus_prod_circles `{Funext} : T  &lt;~&gt;* S1 * S1.</pre>
@@ -495,15 +495,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: TorusHomotopy.v
 Line: 68
-Time: 0.003s">
-<div class="time" style="width: 2.5862068965517%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.9607843137255%"></div>
 <pre>
   1,2: apply Pi1Circle.</pre>
 </div>
 <div class="code" title="File: TorusHomotopy.v
 Line: 69
-Time: 0.002s">
-<div class="time" style="width: 1.7241379310345%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.98039215686275%"></div>
 <pre>
 Defined.</pre>
 </div>

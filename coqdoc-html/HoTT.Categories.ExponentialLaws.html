@@ -22,10 +22,10 @@
 </div>
 
 <div class="doc">
-<a id="lab373"></a><h1 class="section">Exponential Laws</h1>
- We want to have the following as subdirectories/modules, not at top level.  Unfortunately, namespacing in Coq is kind-of broken (see, e.g., https://coq.inria.fr/bugs/show_bug.cgi?id=3676), so we don't get the ability to rename subfolders by <span class="inlinecode"><span class="id" title="var">Including</span></span> into other modules. <a id="lab374"></a><h2 class="section">Laws about the initial category</h2>
-<a id="lab375"></a><h3 class="section"><span class="inlinecode"><span class="id" title="var">x⁰</span></span> <span class="inlinecode">≅</span> <span class="inlinecode">1</span></h3>
-<a id="lab376"></a><h3 class="section"><span class="inlinecode">0ˣ</span> <span class="inlinecode">≅</span> <span class="inlinecode">0</span> if <span class="inlinecode"><a class="idref" href="HoTT.Categories.Grothendieck.ToSet.Core.html#x"><span class="id" title="projection">x</span></a></span> <span class="inlinecode">≠</span> <span class="inlinecode">0</span></h3>
+<a id="lab383"></a><h1 class="section">Exponential Laws</h1>
+ We want to have the following as subdirectories/modules, not at top level.  Unfortunately, namespacing in Coq is kind-of broken (see, e.g., https://coq.inria.fr/bugs/show_bug.cgi?id=3676), so we don't get the ability to rename subfolders by <span class="inlinecode"><span class="id" title="var">Including</span></span> into other modules. <a id="lab384"></a><h2 class="section">Laws about the initial category</h2>
+<a id="lab385"></a><h3 class="section"><span class="inlinecode"><span class="id" title="var">x⁰</span></span> <span class="inlinecode">≅</span> <span class="inlinecode">1</span></h3>
+<a id="lab386"></a><h3 class="section"><span class="inlinecode">0ˣ</span> <span class="inlinecode">≅</span> <span class="inlinecode">0</span> if <span class="inlinecode"><a class="idref" href="HoTT.Categories.Grothendieck.ToSet.Core.html#x"><span class="id" title="projection">x</span></a></span> <span class="inlinecode">≠</span> <span class="inlinecode">0</span></h3>
 
 </div>
 <div class="code">
@@ -35,9 +35,9 @@
 </div>
 
 <div class="doc">
-<a id="lab377"></a><h2 class="section">Laws about the terminal category</h2>
-<a id="lab378"></a><h3 class="section"><span class="inlinecode"><span class="id" title="var">x¹</span></span> <span class="inlinecode">≅</span> <span class="inlinecode"><a class="idref" href="HoTT.Categories.Grothendieck.ToSet.Core.html#x"><span class="id" title="projection">x</span></a></span></h3>
-<a id="lab379"></a><h3 class="section"><span class="inlinecode">1ˣ</span> <span class="inlinecode">≅</span> <span class="inlinecode">1</span></h3>
+<a id="lab387"></a><h2 class="section">Laws about the terminal category</h2>
+<a id="lab388"></a><h3 class="section"><span class="inlinecode"><span class="id" title="var">x¹</span></span> <span class="inlinecode">≅</span> <span class="inlinecode"><a class="idref" href="HoTT.Categories.Grothendieck.ToSet.Core.html#x"><span class="id" title="projection">x</span></a></span></h3>
+<a id="lab389"></a><h3 class="section"><span class="inlinecode">1ˣ</span> <span class="inlinecode">≅</span> <span class="inlinecode">1</span></h3>
 
 </div>
 <div class="code">
@@ -47,8 +47,8 @@
 </div>
 
 <div class="doc">
-<a id="lab380"></a><h2 class="section">The law that a sum in an exponent is a product</h2>
-<a id="lab381"></a><h3 class="section"><span class="inlinecode"><a class="idref" href="HoTT.Categories.Functor.Attributes.html#fully_faithful_helpers.y"><span class="id" title="variable">y</span></a>ⁿ<span class="id" title="var">⁺</span>ᵐ</span> <span class="inlinecode">≅</span> <span class="inlinecode"><a class="idref" href="HoTT.Categories.Functor.Attributes.html#fully_faithful_helpers.y"><span class="id" title="variable">y</span></a>ⁿ</span> <span class="inlinecode">×</span> <span class="inlinecode"><a class="idref" href="HoTT.Categories.Functor.Attributes.html#fully_faithful_helpers.y"><span class="id" title="variable">y</span></a>ᵐ</span></h3>
+<a id="lab390"></a><h2 class="section">The law that a sum in an exponent is a product</h2>
+<a id="lab391"></a><h3 class="section"><span class="inlinecode"><a class="idref" href="HoTT.Categories.Functor.Attributes.html#fully_faithful_helpers.y"><span class="id" title="variable">y</span></a>ⁿ<span class="id" title="var">⁺</span>ᵐ</span> <span class="inlinecode">≅</span> <span class="inlinecode"><a class="idref" href="HoTT.Categories.Functor.Attributes.html#fully_faithful_helpers.y"><span class="id" title="variable">y</span></a>ⁿ</span> <span class="inlinecode">×</span> <span class="inlinecode"><a class="idref" href="HoTT.Categories.Functor.Attributes.html#fully_faithful_helpers.y"><span class="id" title="variable">y</span></a>ᵐ</span></h3>
 
 </div>
 <div class="code">
@@ -58,8 +58,8 @@
 </div>
 
 <div class="doc">
-<a id="lab382"></a><h2 class="section">The law that exponentiation distributes over product</h2>
-<a id="lab383"></a><h3 class="section"><span class="inlinecode">(<a class="idref" href="HoTT.Categories.Functor.Attributes.html#fully_faithful_helpers.y"><span class="id" title="variable">y</span></a></span> <span class="inlinecode">×</span> <span class="inlinecode"><span class="id" title="var">z</span>)ⁿ</span> <span class="inlinecode">≅</span> <span class="inlinecode"><a class="idref" href="HoTT.Categories.Functor.Attributes.html#fully_faithful_helpers.y"><span class="id" title="variable">y</span></a>ⁿ</span> <span class="inlinecode">×</span> <span class="inlinecode"><span class="id" title="var">z</span>ⁿ</span></h3>
+<a id="lab392"></a><h2 class="section">The law that exponentiation distributes over product</h2>
+<a id="lab393"></a><h3 class="section"><span class="inlinecode">(<a class="idref" href="HoTT.Categories.Functor.Attributes.html#fully_faithful_helpers.y"><span class="id" title="variable">y</span></a></span> <span class="inlinecode">×</span> <span class="inlinecode"><span class="id" title="var">z</span>)ⁿ</span> <span class="inlinecode">≅</span> <span class="inlinecode"><a class="idref" href="HoTT.Categories.Functor.Attributes.html#fully_faithful_helpers.y"><span class="id" title="variable">y</span></a>ⁿ</span> <span class="inlinecode">×</span> <span class="inlinecode"><span class="id" title="var">z</span>ⁿ</span></h3>
 
 </div>
 <div class="code">
@@ -69,8 +69,8 @@
 </div>
 
 <div class="doc">
-<a id="lab384"></a><h2 class="section">Currying</h2>
-<a id="lab385"></a><h3 class="section"><span class="inlinecode">(<a class="idref" href="HoTT.Categories.Functor.Attributes.html#fully_faithful_helpers.y"><span class="id" title="variable">y</span></a>ⁿ)ᵐ</span> <span class="inlinecode">≅</span> <span class="inlinecode"><a class="idref" href="HoTT.Categories.Functor.Attributes.html#fully_faithful_helpers.y"><span class="id" title="variable">y</span></a>ⁿᵐ</span></h3>
+<a id="lab394"></a><h2 class="section">Currying</h2>
+<a id="lab395"></a><h3 class="section"><span class="inlinecode">(<a class="idref" href="HoTT.Categories.Functor.Attributes.html#fully_faithful_helpers.y"><span class="id" title="variable">y</span></a>ⁿ)ᵐ</span> <span class="inlinecode">≅</span> <span class="inlinecode"><a class="idref" href="HoTT.Categories.Functor.Attributes.html#fully_faithful_helpers.y"><span class="id" title="variable">y</span></a>ⁿᵐ</span></h3>
 
 </div>
 <div class="code">

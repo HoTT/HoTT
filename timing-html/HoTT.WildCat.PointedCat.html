@@ -30,21 +30,21 @@ pre {
 
 <div class="code" title="File: PointedCat.v
 Line: 1
-Time: 0.028s">
+Time: 0.029s">
 <div class="time" style="width: 100%"></div>
 <pre>Require Import Basics.</pre>
 </div>
 <div class="code" title="File: PointedCat.v
 Line: 1
 Time: 0.002s">
-<div class="time" style="width: 7.1428571428571%"></div>
+<div class="time" style="width: 6.8965517241379%"></div>
 <pre>
 Require Import WildCat.Core.</pre>
 </div>
 <div class="code" title="File: PointedCat.v
 Line: 2
-Time: 0.002s">
-<div class="time" style="width: 7.1428571428571%"></div>
+Time: 0.003s">
+<div class="time" style="width: 10.344827586207%"></div>
 <pre>
 Require Import WildCat.Equiv.</pre>
 </div>
@@ -58,8 +58,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: PointedCat.v
 Line: 5
-Time: 0.002s">
-<div class="time" style="width: 7.1428571428571%"></div>
+Time: 0.003s">
+<div class="time" style="width: 10.344827586207%"></div>
 <pre>Class IsPointedCat (A : Type) `{Is1Cat A} := {
   zero_object : A;
   isinitial_zero_object : IsInitial zero_object;
@@ -92,7 +92,7 @@ Time: 0s">
 <div class="code" title="File: PointedCat.v
 Line: 14
 Time: 0.002s">
-<div class="time" style="width: 7.1428571428571%"></div>
+<div class="time" style="width: 6.8965517241379%"></div>
 <pre>Definition zero_morphism {A : Type} `{IsPointedCat A} {a b : A} : a $-&gt; b
   := (mor_initial _ b) $o (mor_terminal a _).</pre>
 </div>
@@ -106,8 +106,8 @@ Section ZeroLaws.</pre>
 </div>
 <div class="code" title="File: PointedCat.v
 Line: 17
-Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
   Context {A : Type} `{IsPointedCat A} {a b c : A}
@@ -116,7 +116,7 @@ Time: 0.001s">
 <div class="code" title="File: PointedCat.v
 Line: 20
 Time: 0.007s">
-<div class="time" style="width: 25%"></div>
+<div class="time" style="width: 24.137931034483%"></div>
 <pre>
 
   Definition cat_zero_source (h : zero_object $-&gt; a) : h $== zero_morphism
@@ -125,7 +125,7 @@ Time: 0.007s">
 <div class="code" title="File: PointedCat.v
 Line: 23
 Time: 0.007s">
-<div class="time" style="width: 25%"></div>
+<div class="time" style="width: 24.137931034483%"></div>
 <pre>
 
   Definition cat_zero_target (h : a $-&gt; zero_object) : h $== zero_morphism
@@ -149,7 +149,7 @@ Time: 0s">
 <div class="code" title="File: PointedCat.v
 Line: 29
 Time: 0.002s">
-<div class="time" style="width: 7.1428571428571%"></div>
+<div class="time" style="width: 6.8965517241379%"></div>
 <pre>
 
   Definition cat_zero_l : zero_morphism b c $o f $== zero_morphism a c.</pre>
@@ -164,7 +164,7 @@ Time: 0s">
 <div class="code" title="File: PointedCat.v
 Line: 32
 Time: 0.003s">
-<div class="time" style="width: 10.714285714286%"></div>
+<div class="time" style="width: 10.344827586207%"></div>
 <pre>
     refine (cat_assoc _ _ _ $@ (_ $@L _^$)).</pre>
 </div>
@@ -185,7 +185,7 @@ Time: 0s">
 <div class="code" title="File: PointedCat.v
 Line: 35
 Time: 0.002s">
-<div class="time" style="width: 7.1428571428571%"></div>
+<div class="time" style="width: 6.8965517241379%"></div>
 <pre>
 
   Definition cat_zero_r : g $o zero_morphism a b $== zero_morphism a c.</pre>
@@ -200,7 +200,7 @@ Time: 0s">
 <div class="code" title="File: PointedCat.v
 Line: 38
 Time: 0.003s">
-<div class="time" style="width: 10.714285714286%"></div>
+<div class="time" style="width: 10.344827586207%"></div>
 <pre>
     refine ((_ $@R _) $@ cat_assoc _ _ _)^$.</pre>
 </div>
@@ -230,7 +230,7 @@ Time: 0s">
 <div class="code" title="File: PointedCat.v
 Line: 44
 Time: 0.003s">
-<div class="time" style="width: 10.714285714286%"></div>
+<div class="time" style="width: 10.344827586207%"></div>
 <pre>Definition cat_zero_m `{!HasEquivs A} (be : b $&lt;~&gt; zero_object)
     : g $o f $== zero_morphism a c.</pre>
 </div>
@@ -244,42 +244,42 @@ Time: 0s">
 <div class="code" title="File: PointedCat.v
 Line: 46
 Time: 0.002s">
-<div class="time" style="width: 7.1428571428571%"></div>
+<div class="time" style="width: 6.8965517241379%"></div>
 <pre>
     refine (_ $@L (compose_V_hh be f)^$ $@ _).</pre>
 </div>
 <div class="code" title="File: PointedCat.v
 Line: 47
-Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     refine (cat_assoc_opp _ _ _ $@ _).</pre>
 </div>
 <div class="code" title="File: PointedCat.v
 Line: 48
 Time: 0.003s">
-<div class="time" style="width: 10.714285714286%"></div>
+<div class="time" style="width: 10.344827586207%"></div>
 <pre>
     refine (_ $@L (mor_terminal_unique a _ _)^$ $@ _).</pre>
 </div>
 <div class="code" title="File: PointedCat.v
 Line: 49
 Time: 0.002s">
-<div class="time" style="width: 7.1428571428571%"></div>
+<div class="time" style="width: 6.8965517241379%"></div>
 <pre>
     exact ((mor_initial_unique _ _ _)^$ $@R _).</pre>
 </div>
 <div class="code" title="File: PointedCat.v
 Line: 50
-Time: 0.002s">
-<div class="time" style="width: 7.1428571428571%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.448275862069%"></div>
 <pre>
   Defined.</pre>
 </div>
 <div class="code" title="File: PointedCat.v
 Line: 51
 Time: 0.002s">
-<div class="time" style="width: 7.1428571428571%"></div>
+<div class="time" style="width: 6.8965517241379%"></div>
 <pre>
 
 End ZeroLaws.</pre>
@@ -309,7 +309,7 @@ Time: 0s">
 <div class="code" title="File: PointedCat.v
 Line: 57
 Time: 0.007s">
-<div class="time" style="width: 25%"></div>
+<div class="time" style="width: 24.137931034483%"></div>
 <pre>Class IsPointedFunctor {A B : Type} (F : A -&gt; B) `{Is1Functor A B F} :=
 {
   preservesinitial_pfunctor : PreservesInitial F ;
@@ -334,7 +334,7 @@ Time: 0s">
 <div class="code" title="File: PointedCat.v
 Line: 64
 Time: 0.007s">
-<div class="time" style="width: 25%"></div>
+<div class="time" style="width: 24.137931034483%"></div>
 <pre>Definition Build_IsPointedFunctor' {A B : Type} (F : A -&gt; B)
   `{Is1Cat A, Is1Cat B, !Is0Functor F, !Is1Functor F}
   `{!IsPointedCat A, !IsPointedCat B, !HasEquivs A, !HasEquivs B}
@@ -371,14 +371,14 @@ Time: 0s">
 <div class="code" title="File: PointedCat.v
 Line: 71
 Time: 0.007s">
-<div class="time" style="width: 25%"></div>
+<div class="time" style="width: 24.137931034483%"></div>
 <pre>
     rapply isinitial_cate.</pre>
 </div>
 <div class="code" title="File: PointedCat.v
 Line: 72
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.448275862069%"></div>
 <pre>
     symmetry.</pre>
 </div>
@@ -391,15 +391,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: PointedCat.v
 Line: 74
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.448275862069%"></div>
 <pre>
     rapply (emap F _).</pre>
 </div>
 <div class="code" title="File: PointedCat.v
 Line: 75
-Time: 0.009s">
-<div class="time" style="width: 32.142857142857%"></div>
+Time: 0.008s">
+<div class="time" style="width: 27.586206896552%"></div>
 <pre>
     rapply cate_isinitial.</pre>
 </div>
@@ -419,7 +419,7 @@ Time: 0s">
 <div class="code" title="File: PointedCat.v
 Line: 77
 Time: 0.007s">
-<div class="time" style="width: 25%"></div>
+<div class="time" style="width: 24.137931034483%"></div>
 <pre>
     rapply isterminal_cate.</pre>
 </div>
@@ -440,21 +440,21 @@ Time: 0s">
 <div class="code" title="File: PointedCat.v
 Line: 80
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.448275862069%"></div>
 <pre>
     rapply (emap F _).</pre>
 </div>
 <div class="code" title="File: PointedCat.v
 Line: 81
 Time: 0.007s">
-<div class="time" style="width: 25%"></div>
+<div class="time" style="width: 24.137931034483%"></div>
 <pre>
     rapply cate_isterminal.</pre>
 </div>
 <div class="code" title="File: PointedCat.v
 Line: 82
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.448275862069%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -469,7 +469,7 @@ Time: 0s">
 <div class="code" title="File: PointedCat.v
 Line: 85
 Time: 0.006s">
-<div class="time" style="width: 21.428571428571%"></div>
+<div class="time" style="width: 20.689655172414%"></div>
 <pre>Lemma pfunctor_zero {A B : Type} (F : A -&gt; B)
   `{IsPointedCat A, IsPointedCat B, !HasEquivs B,
     !Is0Functor F, !Is1Functor F, !IsPointedFunctor F}
@@ -484,8 +484,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: PointedCat.v
 Line: 89
-Time: 0.007s">
-<div class="time" style="width: 25%"></div>
+Time: 0.009s">
+<div class="time" style="width: 31.034482758621%"></div>
 <pre>
   rapply cate_isinitial.</pre>
 </div>
@@ -506,8 +506,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: PointedCat.v
 Line: 93
-Time: 0.008s">
-<div class="time" style="width: 28.571428571429%"></div>
+Time: 0.009s">
+<div class="time" style="width: 31.034482758621%"></div>
 <pre>Lemma fmap_zero_morphism {A B : Type} (F : A -&gt; B)
   `{IsPointedCat A, IsPointedCat B, !HasEquivs B,
     !Is0Functor F, !Is1Functor F, !IsPointedFunctor F} {a b : A}
@@ -523,56 +523,56 @@ Proof.</pre>
 <div class="code" title="File: PointedCat.v
 Line: 97
 Time: 0.001s">
-<div class="time" style="width: 3.5714285714286%"></div>
+<div class="time" style="width: 3.448275862069%"></div>
 <pre>
   refine (fmap_comp F _ _ $@ _).</pre>
 </div>
 <div class="code" title="File: PointedCat.v
 Line: 98
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.448275862069%"></div>
 <pre>
   refine (_ $@R _ $@ _).</pre>
 </div>
 <div class="code" title="File: PointedCat.v
 Line: 99
-Time: 0.009s">
-<div class="time" style="width: 32.142857142857%"></div>
+Time: 0.008s">
+<div class="time" style="width: 27.586206896552%"></div>
 <pre>
   1: nrapply fmap_initial; [exact _].</pre>
 </div>
 <div class="code" title="File: PointedCat.v
 Line: 100
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.448275862069%"></div>
 <pre>
   refine (_ $@L _ $@ _).</pre>
 </div>
 <div class="code" title="File: PointedCat.v
 Line: 101
-Time: 0.009s">
-<div class="time" style="width: 32.142857142857%"></div>
+Time: 0.008s">
+<div class="time" style="width: 27.586206896552%"></div>
 <pre>
   1: nrapply fmap_terminal; [exact _].</pre>
 </div>
 <div class="code" title="File: PointedCat.v
 Line: 102
 Time: 0.005s">
-<div class="time" style="width: 17.857142857143%"></div>
+<div class="time" style="width: 17.241379310345%"></div>
 <pre>
   rapply cat_zero_m.</pre>
 </div>
 <div class="code" title="File: PointedCat.v
 Line: 103
 Time: 0.016s">
-<div class="time" style="width: 57.142857142857%"></div>
+<div class="time" style="width: 55.172413793103%"></div>
 <pre>
   rapply pfunctor_zero.</pre>
 </div>
 <div class="code" title="File: PointedCat.v
 Line: 104
 Time: 0.002s">
-<div class="time" style="width: 7.1428571428571%"></div>
+<div class="time" style="width: 6.8965517241379%"></div>
 <pre>
 Defined.</pre>
 </div>

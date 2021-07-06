@@ -898,12 +898,12 @@
           
 
             i = 176;
-            data = "";
+            data = "<infomsg>loop_susp_counit is defined</infomsg>	1 goal (ID 164)	  	  X : pType	  Y : pType	  f : X ->* Y	  ============================	  f o* loop_susp_counit X ==* loop_susp_counit Y o* fmap psusp (fmap loops f)	1 goal (ID 199)	  	  X : Type	  point0 : IsPointed X	  Y : Type	  f : X -> Y	  ============================	  {| pointed_fun := f; dpoint_eq := 1 |}	  o* loop_susp_counit {| pointed_type := X; ispointed_type := point0 |} ==*	  loop_susp_counit {| pointed_type := Y; ispointed_type := f point0 |}	  o* Build_pMap	       (psusp (loops {| pointed_type := X; ispointed_type := point0 |}))	       (psusp (loops {| pointed_type := Y; ispointed_type := f point0 |}))	       (functor_susp (fun p : point0 = point0 => 1 @ (ap f p @ 1))) 1	";
             responses[i]=data;
           
 
             i = 177;
-            data = "<infomsg>loop_susp_counit is defined</infomsg>	1 goal (ID 164)	  	  X : pType	  Y : pType	  f : X ->* Y	  ============================	  f o* loop_susp_counit X ==* loop_susp_counit Y o* fmap psusp (fmap loops f)	1 goal (ID 199)	  	  X : Type	  point0 : IsPointed X	  Y : Type	  f : X -> Y	  ============================	  {| pointed_fun := f; dpoint_eq := 1 |}	  o* loop_susp_counit {| pointed_type := X; ispointed_type := point0 |} ==*	  loop_susp_counit {| pointed_type := Y; ispointed_type := f point0 |}	  o* Build_pMap	       (psusp (loops {| pointed_type := X; ispointed_type := point0 |}))	       (psusp (loops {| pointed_type := Y; ispointed_type := f point0 |}))	       (functor_susp (fun p : point0 = point0 => 1 @ (ap f p @ 1))) 1	2 goals (ID 208)	  	  X : Type	  point0 : IsPointed X	  Y : Type	  f : X -> Y	  ============================	  (fun x : Susp (point X = point X) =>	   f (Susp_rec (point X) (point X) idmap x)) ==	  (fun x : Susp (point X = point X) =>	   Susp_rec (point Y) (point Y) idmap	     (functor_susp (fun p : point0 = point0 => 1 @ (ap f p @ 1)) x))		goal 2 (ID 209) is:	 ?Goal (point (Susp (point X = point X))) = 1	";
+            data = "2 goals (ID 208)	  	  X : Type	  point0 : IsPointed X	  Y : Type	  f : X -> Y	  ============================	  (fun x : Susp (point X = point X) =>	   f (Susp_rec (point X) (point X) idmap x)) ==	  (fun x : Susp (point X = point X) =>	   Susp_rec (point Y) (point Y) idmap	     (functor_susp (fun p : point0 = point0 => 1 @ (ap f p @ 1)) x))		goal 2 (ID 209) is:	 ?Goal (point (Susp (point X = point X))) = 1	";
             responses[i]=data;
           
 
@@ -1565,7 +1565,7 @@
 </div>
 <div class="goal" id="goal0_3_3"><pre><span></span></pre></div>
 <div class="doc" scenenumber="5">
-<a id="lab1042"></a><h2 class="section">Pointedness of <span class="inlinecode"><a class="idref" href="HoTT.Homotopy.Suspension.html#Susp"><span class="id" title="definition">Susp</span></a></span> and path spaces thereof</h2>
+<a id="lab1052"></a><h2 class="section">Pointedness of <span class="inlinecode"><a class="idref" href="HoTT.Homotopy.Suspension.html#Susp"><span class="id" title="definition">Susp</span></a></span> and path spaces thereof</h2>
  We arbitrarily choose <span class="inlinecode"><a class="idref" href="HoTT.Homotopy.Suspension.html#North"><span class="id" title="definition">North</span></a></span> to be the point. 
 </div>
 <div scenenumber="7" class="code">
@@ -1606,7 +1606,7 @@
 </div>
 <div class="goal" id="goal0_3_7"><pre><span></span></pre></div>
 <div class="doc" scenenumber="9">
-<a id="lab1043"></a><h2 class="section">Suspension Functor</h2>
+<a id="lab1053"></a><h2 class="section">Suspension Functor</h2>
 <div class="doc" scenenumber="4"> </div>
 <span class="inlinecode"><a class="idref" href="HoTT.Pointed.pSusp.html#psusp"><span class="id" title="definition">psusp</span></a></span> has a functorial action.  TODO: make this a displayed functor 
 </div>
@@ -1821,7 +1821,7 @@ Preservation of composition.
 </div>
 <div class="goal" id="goal0_3_27"><pre><span></span></pre></div>
 <div class="doc" scenenumber="29">
-<a id="lab1044"></a><h2 class="section">Loop-Suspension Adjunction</h2>
+<a id="lab1054"></a><h2 class="section">Loop-Suspension Adjunction</h2>
 </div>
 <div scenenumber="31" class="code">
 <span class="command" onmouseout="

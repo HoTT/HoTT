@@ -30,7 +30,7 @@ pre {
 
 <div class="code" title="File: Functorish.v
 Line: 1
-Time: 0.042s">
+Time: 0.044s">
 <div class="time" style="width: 100%"></div>
 <pre>Require Import HoTT.Basics Types.Universe TruncType.</pre>
 </div>
@@ -67,7 +67,7 @@ Time: 0s">
 <div class="code" title="File: Functorish.v
 Line: 7
 Time: 0.001s">
-<div class="time" style="width: 2.3809523809524%"></div>
+<div class="time" style="width: 2.2727272727273%"></div>
 <pre>Class Functorish (F : Type -&gt; Type) := {
   fmap {A B} (f : A -&gt; B) : F A -&gt; F B ;
   fmap_idmap (A:Type) : fmap (idmap : A -&gt; A) = idmap
@@ -122,7 +122,7 @@ Proof.</pre>
 <div class="code" title="File: Functorish.v
 Line: 20
 Time: 0.001s">
-<div class="time" style="width: 2.3809523809524%"></div>
+<div class="time" style="width: 2.2727272727273%"></div>
 <pre>
   refine (equiv_induction (fun A' e =&gt; IsEquiv (fmap F e)) _ _ (Build_Equiv _ _ f _)).</pre>
 </div>
@@ -149,7 +149,7 @@ Time: 0s">
 <div class="code" title="File: Functorish.v
 Line: 23
 Time: 0.001s">
-<div class="time" style="width: 2.3809523809524%"></div>
+<div class="time" style="width: 2.2727272727273%"></div>
 <pre>
 
 Proposition fmap_agrees_with_univalence {A B} (f : A -&gt; B) `{IsEquiv _ _ f}
@@ -165,7 +165,7 @@ Proof.</pre>
 <div class="code" title="File: Functorish.v
 Line: 27
 Time: 0.003s">
-<div class="time" style="width: 7.1428571428571%"></div>
+<div class="time" style="width: 6.8181818181818%"></div>
 <pre>
   refine (equiv_induction
     (fun A' e =&gt; fmap F e = equiv_path _ _ (ap F (path_universe e)))
@@ -174,7 +174,7 @@ Time: 0.003s">
 <div class="code" title="File: Functorish.v
 Line: 30
 Time: 0.001s">
-<div class="time" style="width: 2.3809523809524%"></div>
+<div class="time" style="width: 2.2727272727273%"></div>
 <pre>
   transitivity (idmap : F A -&gt; F A).</pre>
 </div>
@@ -207,7 +207,7 @@ Time: 0s">
 <div class="code" title="File: Functorish.v
 Line: 33
 Time: 0.001s">
-<div class="time" style="width: 2.3809523809524%"></div>
+<div class="time" style="width: 2.2727272727273%"></div>
 <pre>
     rewrite (@eta_path_universe _ A A 1).</pre>
 </div>
@@ -220,7 +220,7 @@ Time: 0s">
 <div class="code" title="File: Functorish.v
 Line: 34
 Time: 0.001s">
-<div class="time" style="width: 2.3809523809524%"></div>
+<div class="time" style="width: 2.2727272727273%"></div>
 <pre>
 Defined.</pre>
 </div>

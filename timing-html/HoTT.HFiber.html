@@ -36,7 +36,7 @@ Time: 0s">
 </div>
 <div class="code" title="File: HFiber.v
 Line: 1
-Time: 0.043s">
+Time: 0.046s">
 <div class="time" style="width: 100%"></div>
 <pre>Require Import Basics Types Diagrams.CommutativeSquares.</pre>
 </div>
@@ -69,8 +69,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: HFiber.v
 Line: 10
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.1739130434783%"></div>
 <pre>Definition equiv_path_hfiber {A B : Type} {f : A -&gt; B} {y : B}
   (x1 x2 : hfiber f y)
   : { q : x1.1 = x2.1 &amp; x1.2 = ap f q @ x2.2 } &lt;~&gt; (x1 = x2).</pre>
@@ -120,14 +120,14 @@ Time: 0s">
 <div class="code" title="File: HFiber.v
 Line: 18
 Time: 0.001s">
-<div class="time" style="width: 2.3255813953488%"></div>
+<div class="time" style="width: 2.1739130434783%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: HFiber.v
 Line: 19
 Time: 0.001s">
-<div class="time" style="width: 2.3255813953488%"></div>
+<div class="time" style="width: 2.1739130434783%"></div>
 <pre>
 
 Definition path_hfiber_uncurried {A B : Type} {f : A -&gt; B} {y : B}
@@ -138,7 +138,7 @@ Definition path_hfiber_uncurried {A B : Type} {f : A -&gt; B} {y : B}
 <div class="code" title="File: HFiber.v
 Line: 24
 Time: 0.001s">
-<div class="time" style="width: 2.3255813953488%"></div>
+<div class="time" style="width: 2.1739130434783%"></div>
 <pre>
 
 Definition path_hfiber {A B : Type} {f : A -&gt; B} {y : B}
@@ -157,7 +157,7 @@ Time: 0s">
 <div class="code" title="File: HFiber.v
 Line: 31
 Time: 0.001s">
-<div class="time" style="width: 2.3255813953488%"></div>
+<div class="time" style="width: 2.1739130434783%"></div>
 <pre>Definition hfiber_ap {A B : Type} {f : A -&gt; B} {x1 x2 : A}
            (p : f x1 = f x2)
   : hfiber (ap f) p &lt;~&gt; ((x1 ; p) = (x2 ; 1) :&gt; hfiber f (f x2)).</pre>
@@ -172,7 +172,7 @@ Proof.</pre>
 <div class="code" title="File: HFiber.v
 Line: 34
 Time: 0.001s">
-<div class="time" style="width: 2.3255813953488%"></div>
+<div class="time" style="width: 2.1739130434783%"></div>
 <pre>
   refine (equiv_path_hfiber (x1;p) (x2;1%path) oE _).</pre>
 </div>
@@ -207,7 +207,7 @@ Time: 0s">
 <div class="code" title="File: HFiber.v
 Line: 39
 Time: 0.001s">
-<div class="time" style="width: 2.3255813953488%"></div>
+<div class="time" style="width: 2.1739130434783%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -237,14 +237,14 @@ Proof.</pre>
 <div class="code" title="File: HFiber.v
 Line: 45
 Time: 0.007s">
-<div class="time" style="width: 16.279069767442%"></div>
+<div class="time" style="width: 15.217391304348%"></div>
 <pre>
   refine (Build_Equiv _ _ (fun fx =&gt; (fx.1 ; (h fx.1)^ @ fx.2)) _).</pre>
 </div>
 <div class="code" title="File: HFiber.v
 Line: 46
 Time: 0.004s">
-<div class="time" style="width: 9.3023255813953%"></div>
+<div class="time" style="width: 8.695652173913%"></div>
 <pre>
   refine (isequiv_adjointify _ (fun gx =&gt; (gx.1 ; (h gx.1) @ gx.2)) _ _);
     intros [a p]; simpl; apply ap.</pre>
@@ -278,7 +278,7 @@ Time: 0s">
 <div class="code" title="File: HFiber.v
 Line: 50
 Time: 0.004s">
-<div class="time" style="width: 9.3023255813953%"></div>
+<div class="time" style="width: 8.695652173913%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -293,7 +293,7 @@ Time: 0s">
 <div class="code" title="File: HFiber.v
 Line: 53
 Time: 0.001s">
-<div class="time" style="width: 2.3255813953488%"></div>
+<div class="time" style="width: 2.1739130434783%"></div>
 <pre>Definition functor_hfiber {A B C D}
            {f : A -&gt; B} {g : C -&gt; D} {h : A -&gt; C} {k : B -&gt; D}
            (p : k o f == g o h) (b : B)
@@ -309,7 +309,7 @@ Proof.</pre>
 <div class="code" title="File: HFiber.v
 Line: 57
 Time: 0.001s">
-<div class="time" style="width: 2.3255813953488%"></div>
+<div class="time" style="width: 2.1739130434783%"></div>
 <pre>
   snrapply @functor_sigma.</pre>
 </div>
@@ -357,7 +357,7 @@ Time: 0s">
 <div class="code" title="File: HFiber.v
 Line: 63
 Time: 0.037s">
-<div class="time" style="width: 86.046511627907%"></div>
+<div class="time" style="width: 80.434782608696%"></div>
 <pre>Definition isequiv_functor_hfiber {A B C D}
            {f : A -&gt; B} {g : C -&gt; D} {h : A -&gt; C} {k : B -&gt; D}
            `{IsEquiv A C h} `{IsEquiv B D k}
@@ -366,8 +366,8 @@ Time: 0.037s">
 </div>
 <div class="code" title="File: HFiber.v
 Line: 67
-Time: 0.036s">
-<div class="time" style="width: 83.720930232558%"></div>
+Time: 0.038s">
+<div class="time" style="width: 82.608695652174%"></div>
 <pre>
 
 Definition equiv_functor_hfiber {A B C D}
@@ -387,7 +387,7 @@ Time: 0s">
 <div class="code" title="File: HFiber.v
 Line: 75
 Time: 0.001s">
-<div class="time" style="width: 2.3255813953488%"></div>
+<div class="time" style="width: 2.1739130434783%"></div>
 <pre>Definition functor_hfiber2 {A B C D}
            {f : A -&gt; B} {g : C -&gt; D} {h : A -&gt; C} {k : B -&gt; D}
            (p : k o f == g o h) {b : B} {b' : D} (q : k b = b')
@@ -402,8 +402,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: HFiber.v
 Line: 79
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.1739130434783%"></div>
 <pre>
   srapply functor_sigma.</pre>
 </div>
@@ -449,7 +449,7 @@ Defined.</pre>
 <div class="code" title="File: HFiber.v
 Line: 83
 Time: 0.002s">
-<div class="time" style="width: 4.6511627906977%"></div>
+<div class="time" style="width: 4.3478260869565%"></div>
 <pre>
 
 Global Instance isequiv_functor_hfiber2 {A B C D}
@@ -467,29 +467,29 @@ Proof.</pre>
 </div>
 <div class="code" title="File: HFiber.v
 Line: 90
-Time: 0.038s">
-<div class="time" style="width: 88.372093023256%"></div>
+Time: 0.039s">
+<div class="time" style="width: 84.782608695652%"></div>
 <pre>
   refine (isequiv_functor_sigma (f := h)); intros a.</pre>
 </div>
 <div class="code" title="File: HFiber.v
 Line: 91
-Time: 0.031s">
-<div class="time" style="width: 72.093023255814%"></div>
+Time: 0.03s">
+<div class="time" style="width: 65.217391304348%"></div>
 <pre>
   refine (isequiv_compose (f := fun e =&gt; (p a)^ @ ap k e) (g := fun e' =&gt; e' @ q)).</pre>
 </div>
 <div class="code" title="File: HFiber.v
 Line: 92
 Time: 0.001s">
-<div class="time" style="width: 2.3255813953488%"></div>
+<div class="time" style="width: 2.1739130434783%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: HFiber.v
 Line: 93
 Time: 0.008s">
-<div class="time" style="width: 18.604651162791%"></div>
+<div class="time" style="width: 17.391304347826%"></div>
 <pre>
 
 Definition equiv_functor_hfiber2 {A B C D}
@@ -501,7 +501,7 @@ Definition equiv_functor_hfiber2 {A B C D}
 <div class="code" title="File: HFiber.v
 Line: 99
 Time: 0.005s">
-<div class="time" style="width: 11.627906976744%"></div>
+<div class="time" style="width: 10.869565217391%"></div>
 <pre>
 
 Definition functor_hfiber_compose {A B C X Y Z : Type} {k : A -&gt; B} {l : B -&gt; C}
@@ -534,7 +534,7 @@ Time: 0s">
 <div class="code" title="File: HFiber.v
 Line: 108
 Time: 0.001s">
-<div class="time" style="width: 2.3255813953488%"></div>
+<div class="time" style="width: 2.1739130434783%"></div>
 <pre>
   apply (path_sigma' _ idpath).</pre>
 </div>
@@ -555,7 +555,7 @@ Time: 0s">
 <div class="code" title="File: HFiber.v
 Line: 111
 Time: 0.001s">
-<div class="time" style="width: 2.3255813953488%"></div>
+<div class="time" style="width: 2.1739130434783%"></div>
 <pre>
   refine ((ap_V _ _)^ @ ap _ _^).</pre>
 </div>
@@ -569,7 +569,7 @@ Time: 0s">
 <div class="code" title="File: HFiber.v
 Line: 113
 Time: 0.005s">
-<div class="time" style="width: 11.627906976744%"></div>
+<div class="time" style="width: 10.869565217391%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -584,7 +584,7 @@ Time: 0s">
 <div class="code" title="File: HFiber.v
 Line: 116
 Time: 0.002s">
-<div class="time" style="width: 4.6511627906977%"></div>
+<div class="time" style="width: 4.3478260869565%"></div>
 <pre>Definition hfiber_functor_hfiber {A B C D}
   {f : A -&gt; B} {g : C -&gt; D} {h : A -&gt; C} {k : B -&gt; D}
   (p : k o f == g o h) (b : B) (c : C) (q : g c = k b)
@@ -608,14 +608,14 @@ Time: 0s">
 <div class="code" title="File: HFiber.v
 Line: 122
 Time: 0.001s">
-<div class="time" style="width: 2.3255813953488%"></div>
+<div class="time" style="width: 2.1739130434783%"></div>
 <pre>
   1,3:intros; rapply equiv_path_sigma.</pre>
 </div>
 <div class="code" title="File: HFiber.v
 Line: 123
 Time: 0.001s">
-<div class="time" style="width: 2.3255813953488%"></div>
+<div class="time" style="width: 2.1739130434783%"></div>
 <pre>
   refine (equiv_sigma_assoc _ _ oE _ oE (equiv_sigma_assoc _ _)^-1).</pre>
 </div>
@@ -643,7 +643,7 @@ Time: 0s">
 <div class="code" title="File: HFiber.v
 Line: 127
 Time: 0.001s">
-<div class="time" style="width: 2.3255813953488%"></div>
+<div class="time" style="width: 2.1739130434783%"></div>
 <pre>
   refine ((equiv_ap inverse _ _)^-1 oE _).</pre>
 </div>
@@ -663,15 +663,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: HFiber.v
 Line: 130
-Time: 0.015s">
-<div class="time" style="width: 34.883720930233%"></div>
+Time: 0.014s">
+<div class="time" style="width: 30.434782608696%"></div>
 <pre>
   abstract (rewrite !transport_paths_Fl, !inv_pp, !inv_V, concat_pp_p; reflexivity).</pre>
 </div>
 <div class="code" title="File: HFiber.v
 Line: 131
 Time: 0.01s">
-<div class="time" style="width: 23.255813953488%"></div>
+<div class="time" style="width: 21.739130434783%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -700,7 +700,7 @@ Proof.</pre>
 <div class="code" title="File: HFiber.v
 Line: 136
 Time: 0.001s">
-<div class="time" style="width: 2.3255813953488%"></div>
+<div class="time" style="width: 2.1739130434783%"></div>
 <pre>
   snrefine (Build_Equiv _ _ _ (
     Build_IsEquiv C {y:B &amp; {x:C &amp; f x = y}}
@@ -720,7 +720,7 @@ Time: 0s">
 <div class="code" title="File: HFiber.v
 Line: 144
 Time: 0.001s">
-<div class="time" style="width: 2.3255813953488%"></div>
+<div class="time" style="width: 2.1739130434783%"></div>
 <pre> intros [? [? []]]; reflexivity.</pre>
 </div>
 <div class="code" title="File: HFiber.v
@@ -739,7 +739,7 @@ Time: 0s">
 <div class="code" title="File: HFiber.v
 Line: 145
 Time: 0.001s">
-<div class="time" style="width: 2.3255813953488%"></div>
+<div class="time" style="width: 2.1739130434783%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -762,7 +762,7 @@ Proof.</pre>
 <div class="code" title="File: HFiber.v
 Line: 150
 Time: 0.002s">
-<div class="time" style="width: 4.6511627906977%"></div>
+<div class="time" style="width: 4.3478260869565%"></div>
 <pre>
   snrefine (Build_Equiv _ _ _
     (Build_IsEquiv (P x) { z : sig P &amp; z.1 = x }
@@ -782,7 +782,7 @@ Time: 0s">
 <div class="code" title="File: HFiber.v
 Line: 158
 Time: 0.002s">
-<div class="time" style="width: 4.6511627906977%"></div>
+<div class="time" style="width: 4.3478260869565%"></div>
 <pre> intros [[] []]; reflexivity.</pre>
 </div>
 <div class="code" title="File: HFiber.v
@@ -800,8 +800,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: HFiber.v
 Line: 159
-Time: 0.002s">
-<div class="time" style="width: 4.6511627906977%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.1739130434783%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -871,20 +871,20 @@ Time: 0s">
 <div class="code" title="File: HFiber.v
 Line: 175
 Time: 0.001s">
-<div class="time" style="width: 2.3255813953488%"></div>
+<div class="time" style="width: 2.1739130434783%"></div>
 <pre>refine (_ oE equiv_functor_sigma_id (fun x =&gt; (equiv_path_sigma _ _ _)^-1)); cbn.</pre>
 </div>
 <div class="code" title="File: HFiber.v
 Line: 175
-Time: 0.024s">
-<div class="time" style="width: 55.813953488372%"></div>
+Time: 0.023s">
+<div class="time" style="width: 50%"></div>
 <pre>
     make_equiv_contr_basedpaths.</pre>
 </div>
 <div class="code" title="File: HFiber.v
 Line: 176
-Time: 0.008s">
-<div class="time" style="width: 18.604651162791%"></div>
+Time: 0.007s">
+<div class="time" style="width: 15.217391304348%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -907,14 +907,14 @@ Time: 0s">
 <div class="code" title="File: HFiber.v
 Line: 181
 Time: 0.015s">
-<div class="time" style="width: 34.883720930233%"></div>
+<div class="time" style="width: 32.608695652174%"></div>
 <pre>
     make_equiv_contr_basedpaths.</pre>
 </div>
 <div class="code" title="File: HFiber.v
 Line: 182
 Time: 0.002s">
-<div class="time" style="width: 4.6511627906977%"></div>
+<div class="time" style="width: 4.3478260869565%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -944,7 +944,7 @@ Time: 0s">
 <div class="code" title="File: HFiber.v
 Line: 188
 Time: 0.003s">
-<div class="time" style="width: 6.9767441860465%"></div>
+<div class="time" style="width: 6.5217391304348%"></div>
 <pre>
     exact (istrunc_isequiv_istrunc _ (hfiber_compose c)^-1).</pre>
 </div>
@@ -958,7 +958,7 @@ Time: 0s">
 <div class="code" title="File: HFiber.v
 Line: 190
 Time: 0.006s">
-<div class="time" style="width: 13.953488372093%"></div>
+<div class="time" style="width: 13.04347826087%"></div>
 <pre>
 
 End UnstableOctahedral.</pre>
@@ -982,7 +982,7 @@ Time: 0s">
 <div class="code" title="File: HFiber.v
 Line: 196
 Time: 0.001s">
-<div class="time" style="width: 2.3255813953488%"></div>
+<div class="time" style="width: 2.1739130434783%"></div>
 <pre>
 
 Global Instance istruncmap_const n {A B} `{!IsTrunc n A}
@@ -1001,7 +1001,7 @@ Time: 0s">
 <div class="code" title="File: HFiber.v
 Line: 203
 Time: 0.005s">
-<div class="time" style="width: 11.627906976744%"></div>
+<div class="time" style="width: 10.869565217391%"></div>
 <pre>Global Instance istruncmap_ap {A B} n (f:A -&gt; B) `{!IsTruncMap n.+1 f}
   : forall x y, IsTruncMap n (@ap _ _ f x y)
   := fun x x' y =&gt;
@@ -1026,7 +1026,7 @@ Proof.</pre>
 <div class="code" title="File: HFiber.v
 Line: 210
 Time: 0.001s">
-<div class="time" style="width: 2.3255813953488%"></div>
+<div class="time" style="width: 2.1739130434783%"></div>
 <pre>
   intros y [a p] [b q];
     destruct q;
@@ -1042,7 +1042,7 @@ Defined.</pre>
 <div class="code" title="File: HFiber.v
 Line: 214
 Time: 0.006s">
-<div class="time" style="width: 13.953488372093%"></div>
+<div class="time" style="width: 13.04347826087%"></div>
 <pre>
 
 Definition equiv_istruncmap_ap `{Funext} {A B} n (f:A -&gt; B)
@@ -1088,7 +1088,7 @@ Defined.</pre>
 <div class="code" title="File: HFiber.v
 Line: 224
 Time: 0.001s">
-<div class="time" style="width: 2.3255813953488%"></div>
+<div class="time" style="width: 2.1739130434783%"></div>
 <pre>
 
 Definition equiv_ap_isembedding {A B} (f : A -&gt; B) `{!IsEmbedding f} (x y : A)
@@ -1114,7 +1114,7 @@ Proof.</pre>
 <div class="code" title="File: HFiber.v
 Line: 232
 Time: 0.001s">
-<div class="time" style="width: 2.3255813953488%"></div>
+<div class="time" style="width: 2.1739130434783%"></div>
 <pre>
   rapply istruncmap_from_ap.</pre>
 </div>
@@ -1144,7 +1144,7 @@ Proof.</pre>
 <div class="code" title="File: HFiber.v
 Line: 238
 Time: 0.005s">
-<div class="time" style="width: 11.627906976744%"></div>
+<div class="time" style="width: 10.869565217391%"></div>
 <pre>
   exact (equiv_iff_hprop (@isequiv_ap_isembedding _ _ f) (@isembedding_isequiv_ap _ _ f)).</pre>
 </div>

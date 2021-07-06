@@ -30,7 +30,7 @@ pre {
 
 <div class="code" title="File: binary_naturals.v
 Line: 1
-Time: 0.09s">
+Time: 0.084s">
 <div class="time" style="width: 100%"></div>
 <pre>Require Import
         HoTT.Spaces.Nat.</pre>
@@ -38,7 +38,7 @@ Time: 0.09s">
 <div class="code" title="File: binary_naturals.v
 Line: 2
 Time: 0.002s">
-<div class="time" style="width: 2.2222222222222%"></div>
+<div class="time" style="width: 2.3809523809524%"></div>
 <pre>
 Require Import
         HoTT.Basics.Decidable
@@ -49,8 +49,8 @@ Require Import
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 8
-Time: 0.036s">
-<div class="time" style="width: 40%"></div>
+Time: 0.034s">
+<div class="time" style="width: 40.47619047619%"></div>
 <pre>
 Require Import
         HoTT.Classes.interfaces.abstract_algebra
@@ -163,8 +163,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 56
-Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
 End basics.</pre>
@@ -253,8 +253,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 74
-Time: 0.002s">
-<div class="time" style="width: 2.2222222222222%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> rewrite IHn.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
@@ -592,7 +592,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 112
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
 
 End binary_equiv.</pre>
@@ -666,7 +666,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 138
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
 
   Local Fixpoint binnat_mult' (m n : binnat) : binnat :=
@@ -732,7 +732,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 156
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
 
   Definition unarysucc : forall m, unary (Succ m) = S (unary m).</pre>
@@ -746,8 +746,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 159
-Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     equiv_intros binary n.</pre>
 </div>
@@ -767,8 +767,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 162
-Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     reflexivity.</pre>
 </div>
@@ -796,15 +796,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 167
-Time: 0.007s">
-<div class="time" style="width: 7.7777777777778%"></div>
+Time: 0.005s">
+<div class="time" style="width: 5.952380952381%"></div>
 <pre>
     induction m; induction n; try reflexivity; simpl; rewrite &lt;- IHm; done.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 168
-Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+Time: 0.002s">
+<div class="time" style="width: 2.3809523809524%"></div>
 <pre>
   Qed.</pre>
 </div>
@@ -826,7 +826,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 172
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
     induction m; induction n; try reflexivity.</pre>
 </div>
@@ -894,15 +894,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 175
-Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   Qed.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 176
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
 
   Definition unaryplus (m n : binnat) : unary m + unary n = unary (m + n).</pre>
@@ -930,8 +930,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 181
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre> apply ((eissect binary (unary m + unary n)) ^).</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
@@ -949,8 +949,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 182
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
       rewrite (eisretr binary m), (eisretr binary n).</pre>
 </div>
@@ -986,7 +986,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 188
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
     hnf; equiv_intros binary x y z.</pre>
 </div>
@@ -1000,7 +1000,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 190
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
     rewrite binaryplus, binaryplus, binaryplus, binaryplus.</pre>
 </div>
@@ -1014,14 +1014,14 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 192
 Time: 0.009s">
-<div class="time" style="width: 10%"></div>
+<div class="time" style="width: 10.714285714286%"></div>
 <pre>
     apply associativity.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 193
-Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   Qed.</pre>
 </div>
@@ -1071,14 +1071,14 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 201
 Time: 0.002s">
-<div class="time" style="width: 2.2222222222222%"></div>
+<div class="time" style="width: 2.3809523809524%"></div>
 <pre>
     apply plus_comm.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 202
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
   Qed.</pre>
 </div>
@@ -1152,7 +1152,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 210
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
       change (double2 m * n) with ((m * n) + (m * n) + n + n).</pre>
 </div>
@@ -1199,42 +1199,42 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 215
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
       rewrite (commutativity n (double2 m * n)).</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 216
-Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
       rewrite (commutativity n (m * n)).</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 217
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
       rewrite &lt;- (associativity (m * n) n (m * n + n)).</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 218
-Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
       rewrite (commutativity n (m * n + n)).</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 219
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
       rewrite (associativity (m * n) _ _).</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 220
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
       rewrite (associativity (m * n) (m * n) n).</pre>
 </div>
@@ -1248,7 +1248,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 222
 Time: 0.002s">
-<div class="time" style="width: 2.2222222222222%"></div>
+<div class="time" style="width: 2.3809523809524%"></div>
 <pre>
   Qed.</pre>
 </div>
@@ -1270,21 +1270,21 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 226
 Time: 0.004s">
-<div class="time" style="width: 4.4444444444444%"></div>
+<div class="time" style="width: 4.7619047619048%"></div>
 <pre>
     induction m; induction n; try reflexivity; rewrite binnatmultsucc, IHm, binaryplus; done.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 227
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
   Qed.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 228
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
 
   Definition unarymult (m n : binnat) : unary m * unary n = unary (m * n).</pre>
@@ -1298,8 +1298,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 231
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
     etransitivity (unary (binary (_^-1 m * _^-1 n))).</pre>
 </div>
@@ -1313,7 +1313,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 233
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre> apply ((eissect binary (unary m * unary n)) ^).</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
@@ -1332,7 +1332,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 234
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
       rewrite (eisretr binary m), (eisretr binary n).</pre>
 </div>
@@ -1367,22 +1367,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 240
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
     hnf; equiv_intros binary x y z.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 241
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
     change binnat_mult with mult.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 242
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
     rewrite binarymult, binarymult, binarymult, binarymult.</pre>
 </div>
@@ -1396,14 +1396,14 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 244
 Time: 0.006s">
-<div class="time" style="width: 6.6666666666667%"></div>
+<div class="time" style="width: 7.1428571428571%"></div>
 <pre>
     apply associativity.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 245
-Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   Qed.</pre>
 </div>
@@ -1424,8 +1424,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 249
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
     hnf; equiv_intros binary x y.</pre>
 </div>
@@ -1438,8 +1438,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 251
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
     rewrite binarymult, binarymult.</pre>
 </div>
@@ -1453,7 +1453,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 253
 Time: 0.006s">
-<div class="time" style="width: 6.6666666666667%"></div>
+<div class="time" style="width: 7.1428571428571%"></div>
 <pre>
     apply commutativity.</pre>
 </div>
@@ -1481,8 +1481,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 258
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
     hnf; equiv_intros binary x y z.</pre>
 </div>
@@ -1495,15 +1495,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 260
-Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     change binnat_mult with mult.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 261
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
     rewrite binaryplus, binarymult, binarymult, binarymult, binaryplus.</pre>
 </div>
@@ -1517,14 +1517,14 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 263
 Time: 0.002s">
-<div class="time" style="width: 2.2222222222222%"></div>
+<div class="time" style="width: 2.3809523809524%"></div>
 <pre>
     apply plus_mult_distr_l.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 264
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
   Qed.</pre>
 </div>
@@ -1567,7 +1567,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 271
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
     rewrite binaryplus, binarymult, binarymult, binarymult, binaryplus.</pre>
 </div>
@@ -1581,14 +1581,14 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 273
 Time: 0.002s">
-<div class="time" style="width: 2.2222222222222%"></div>
+<div class="time" style="width: 2.3809523809524%"></div>
 <pre>
     apply plus_mult_distr_r.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 274
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
   Qed.</pre>
 </div>
@@ -1639,7 +1639,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 283
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
     split; try split; try split; try split; hnf; intros.</pre>
 </div>
@@ -1653,35 +1653,35 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 285
 Time: 0.003s">
-<div class="time" style="width: 3.3333333333333%"></div>
+<div class="time" style="width: 3.5714285714286%"></div>
 <pre>
     all: apply (equiv_inj unary).</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 286
-Time: 0.01s">
-<div class="time" style="width: 11.111111111111%"></div>
+Time: 0.009s">
+<div class="time" style="width: 10.714285714286%"></div>
 <pre>
     1, 2, 3, 7: repeat rewrite &lt;- unaryplus.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 287
 Time: 0.003s">
-<div class="time" style="width: 3.3333333333333%"></div>
+<div class="time" style="width: 3.5714285714286%"></div>
 <pre>
     4, 5, 6, 7: rewrite &lt;- unarymult.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 288
 Time: 0.002s">
-<div class="time" style="width: 2.2222222222222%"></div>
+<div class="time" style="width: 2.3809523809524%"></div>
 <pre>
     4, 5, 7: rewrite &lt;- unarymult.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 289
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
     4, 5: rewrite &lt;- unarymult.</pre>
 </div>
@@ -1701,15 +1701,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 292
-Time: 0.032s">
-<div class="time" style="width: 35.555555555556%"></div>
+Time: 0.027s">
+<div class="time" style="width: 32.142857142857%"></div>
 <pre>
     all: apply nat_semiring.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 293
-Time: 0.007s">
-<div class="time" style="width: 7.7777777777778%"></div>
+Time: 0.006s">
+<div class="time" style="width: 7.1428571428571%"></div>
 <pre>
   Qed.</pre>
 </div>
@@ -1775,7 +1775,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 305
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
 
   Global Instance binnat_le : Le binnat := fun m n =&gt; unary m &lt;= unary n.</pre>
@@ -1783,14 +1783,14 @@ Time: 0.001s">
 <div class="code" title="File: binary_naturals.v
 Line: 307
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
   Global Instance binnat_lt : Lt binnat := fun m n =&gt; unary m &lt; unary n.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 308
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
   Global Instance binnat_apart : Apart binnat := fun m n =&gt; unary m ≶ unary n.</pre>
 </div>
@@ -1844,7 +1844,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 314
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre> apply nat_full.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
@@ -1862,8 +1862,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 315
-Time: 0.002s">
-<div class="time" style="width: 2.2222222222222%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre> apply nat_full.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
@@ -1881,8 +1881,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 316
-Time: 0.003s">
-<div class="time" style="width: 3.3333333333333%"></div>
+Time: 0.002s">
+<div class="time" style="width: 2.3809523809524%"></div>
 <pre> apply nat_full.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
@@ -1932,7 +1932,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 318
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre> apply nat_full.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
@@ -1956,8 +1956,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 319
-Time: 0.002s">
-<div class="time" style="width: 2.2222222222222%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre> apply nat_full.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
@@ -1968,8 +1968,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 319
-Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   Qed.</pre>
 </div>
@@ -2017,8 +2017,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 326
-Time: 0.022s">
-<div class="time" style="width: 24.444444444444%"></div>
+Time: 0.019s">
+<div class="time" style="width: 22.619047619048%"></div>
 <pre> split; try intros m n; try apply nat_full.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
@@ -2030,8 +2030,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 327
-Time: 0.019s">
-<div class="time" style="width: 21.111111111111%"></div>
+Time: 0.017s">
+<div class="time" style="width: 20.238095238095%"></div>
 <pre> split; try intros m n; try apply nat_full.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
@@ -2043,8 +2043,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 328
-Time: 0.018s">
-<div class="time" style="width: 20%"></div>
+Time: 0.016s">
+<div class="time" style="width: 19.047619047619%"></div>
 <pre> split; try intros m n; try apply nat_full.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
@@ -2056,8 +2056,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 329
-Time: 0.012s">
-<div class="time" style="width: 13.333333333333%"></div>
+Time: 0.01s">
+<div class="time" style="width: 11.904761904762%"></div>
 <pre> apply _.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
@@ -2096,13 +2096,13 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 332
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre> assert (X : unary m = unary n) by by apply tight_apart.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 332
 Time: 0.002s">
-<div class="time" style="width: 2.2222222222222%"></div>
+<div class="time" style="width: 2.3809523809524%"></div>
 <pre>
                 apply (((equiv_ap unary m n) ^-1) X).</pre>
 </div>
@@ -2122,7 +2122,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 334
 Time: 0.002s">
-<div class="time" style="width: 2.2222222222222%"></div>
+<div class="time" style="width: 2.3809523809524%"></div>
 <pre> apply nat_full.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
@@ -2146,8 +2146,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 335
-Time: 0.005s">
-<div class="time" style="width: 5.5555555555556%"></div>
+Time: 0.004s">
+<div class="time" style="width: 4.7619047619048%"></div>
 <pre> apply nat_full.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
@@ -2172,7 +2172,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 336
 Time: 0.003s">
-<div class="time" style="width: 3.3333333333333%"></div>
+<div class="time" style="width: 3.5714285714286%"></div>
 <pre>
         assert (H : exists w, (unary n) = (unary m) + w) by by apply nat_full.</pre>
 </div>
@@ -2193,7 +2193,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 339
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
         rewrite &lt;- (eisretr unary w), unaryplus in L.</pre>
 </div>
@@ -2239,13 +2239,13 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 343
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre> rewrite &lt;- unaryplus, &lt;- unaryplus.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 343
-Time: 0.004s">
-<div class="time" style="width: 4.4444444444444%"></div>
+Time: 0.003s">
+<div class="time" style="width: 3.5714285714286%"></div>
 <pre> apply nat_full.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
@@ -2264,13 +2264,13 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 344
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre> rewrite &lt;- unaryplus, &lt;- unaryplus in E.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 344
-Time: 0.003s">
-<div class="time" style="width: 3.3333333333333%"></div>
+Time: 0.002s">
+<div class="time" style="width: 2.3809523809524%"></div>
 <pre>
           apply (strictly_order_reflecting (plus (unary m))).</pre>
 </div>
@@ -2295,8 +2295,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 346
-Time: 0.012s">
-<div class="time" style="width: 13.333333333333%"></div>
+Time: 0.01s">
+<div class="time" style="width: 11.904761904762%"></div>
 <pre> apply nat_full.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
@@ -2309,7 +2309,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 347
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
         rewrite &lt;- (unarymult m n), &lt;- (unarymult k l) in E.</pre>
 </div>
@@ -2346,8 +2346,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 349
-Time: 0.009s">
-<div class="time" style="width: 10%"></div>
+Time: 0.007s">
+<div class="time" style="width: 8.3333333333333%"></div>
 <pre>
         apply nat_full; assumption.</pre>
 </div>
@@ -2366,21 +2366,21 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 351
-Time: 0.006s">
-<div class="time" style="width: 6.6666666666667%"></div>
+Time: 0.004s">
+<div class="time" style="width: 4.7619047619048%"></div>
 <pre> apply nat_full.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 351
-Time: 0.005s">
-<div class="time" style="width: 5.5555555555556%"></div>
+Time: 0.004s">
+<div class="time" style="width: 4.7619047619048%"></div>
 <pre>
   Qed.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 352
 Time: 0.002s">
-<div class="time" style="width: 2.2222222222222%"></div>
+<div class="time" style="width: 2.3809523809524%"></div>
 <pre>
 
   Global Instance binnat_naturals_to_semiring : NaturalsToSemiRing binnat:=
@@ -2513,7 +2513,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 383
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre> change (2 * (toR m) + 2 = 2 * (toR m) + 1 + 1).</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
@@ -2546,13 +2546,13 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 386
 Time: 0.002s">
-<div class="time" style="width: 2.2222222222222%"></div>
+<div class="time" style="width: 2.3809523809524%"></div>
 <pre> change (2 * (2 * 0 + 1) + 1 = 2 * 0 + 2 + 1).</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 386
-Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
           rewrite plus_mult_distr_l.</pre>
 </div>
@@ -2566,7 +2566,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 388
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
           rewrite mult_0_r, mult_0_r.</pre>
 </div>
@@ -2586,8 +2586,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 391
-Time: 0.003s">
-<div class="time" style="width: 3.3333333333333%"></div>
+Time: 0.002s">
+<div class="time" style="width: 2.3809523809524%"></div>
 <pre> change (2 * (2 * (toR m) + 2) + 1 = 2 * (2 * (toR m) + 1 ) + 2 + 1).</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
@@ -2599,8 +2599,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 392
-Time: 0.003s">
-<div class="time" style="width: 3.3333333333333%"></div>
+Time: 0.002s">
+<div class="time" style="width: 2.3809523809524%"></div>
 <pre>
           assert (L : 2 * toR m + 2 = 2 * toR m + 1 + 1) by by rewrite plus_assoc.</pre>
 </div>
@@ -2614,14 +2614,14 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 394
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
           rewrite plus_mult_distr_l.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 395
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
           rewrite mult_1_r.</pre>
 </div>
@@ -2647,8 +2647,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 398
-Time: 0.002s">
-<div class="time" style="width: 2.2222222222222%"></div>
+Time: 0.001s">
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
           change ((2 * (toR (double1 (Succ m))) + 1 = 2 * (toR (double2 m)) + 2 + 1)).</pre>
 </div>
@@ -2661,15 +2661,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 400
-Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
           rewrite plus_mult_distr_l.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 401
-Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
           rewrite mult_1_r.</pre>
 </div>
@@ -2683,14 +2683,14 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 403
 Time: 0.004s">
-<div class="time" style="width: 4.4444444444444%"></div>
+<div class="time" style="width: 4.7619047619048%"></div>
 <pre>
     Qed.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 404
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
 
     Definition f_nat : forall m : binnat, toR m = toR_vianat m.</pre>
@@ -2758,7 +2758,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 412
 Time: 0.002s">
-<div class="time" style="width: 2.2222222222222%"></div>
+<div class="time" style="width: 2.3809523809524%"></div>
 <pre>
           rewrite mult_0_r.</pre>
 </div>
@@ -2790,7 +2790,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 414
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
           assert (L : (toR_fromnat ∘ binary^-1) (binary n.+1) + 1
                       = toR_fromnat ((binary^-1 (binary n.+1)).+1)%nat).</pre>
@@ -2805,7 +2805,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 417
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
             simpl rewrite (plus_comm _ 1).</pre>
 </div>
@@ -2860,8 +2860,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 425
-Time: 0.003s">
-<div class="time" style="width: 3.3333333333333%"></div>
+Time: 0.002s">
+<div class="time" style="width: 2.3809523809524%"></div>
 <pre>
     Qed.</pre>
 </div>
@@ -2930,8 +2930,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 435
-Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
     Let f_preserves_plus (a a' : binnat) : toR (a + a') = toR a + toR a'.</pre>
@@ -2946,7 +2946,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 438
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
       rewrite f_nat, f_nat, f_nat.</pre>
 </div>
@@ -2981,7 +2981,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 443
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
 
     Let f_preserves_mult (a a' : binnat) : toR (a * a') = toR a * toR a'.</pre>
@@ -2996,7 +2996,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 446
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
       rewrite f_nat, f_nat, f_nat.</pre>
 </div>
@@ -3017,7 +3017,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 449
 Time: 0.003s">
-<div class="time" style="width: 3.3333333333333%"></div>
+<div class="time" style="width: 3.5714285714286%"></div>
 <pre>
       apply nat_to_sr_morphism.</pre>
 </div>
@@ -3031,7 +3031,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 451
 Time: 0.002s">
-<div class="time" style="width: 2.2222222222222%"></div>
+<div class="time" style="width: 2.3809523809524%"></div>
 <pre>
 
     Global Instance binnat_to_sr_morphism
@@ -3046,22 +3046,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 455
-Time: 0.025s">
-<div class="time" style="width: 27.777777777778%"></div>
+Time: 0.021s">
+<div class="time" style="width: 25%"></div>
 <pre>
       repeat (split;try apply _);trivial.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 456
-Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     Qed.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 457
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
 
     Lemma binnat_toR_unique (h : binnat -&gt; R) `{!IsSemiRingPreserving h} : forall x,
@@ -3098,7 +3098,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 464
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
       refine (toR_unique (h ∘ binary) n).</pre>
 </div>
@@ -3112,7 +3112,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 466
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
   End for_another_semiring.</pre>
 </div>
@@ -3210,15 +3210,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 475
-Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   Qed.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 476
-Time: 0.01s">
-<div class="time" style="width: 11.111111111111%"></div>
+Time: 0.009s">
+<div class="time" style="width: 10.714285714286%"></div>
 <pre>
 
 End naturals.</pre>
@@ -3493,8 +3493,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 524
-Time: 0.009s">
-<div class="time" style="width: 10%"></div>
+Time: 0.008s">
+<div class="time" style="width: 9.5238095238095%"></div>
 <pre>
     all:
       first
@@ -3525,7 +3525,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 543
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
 
 End decidable.</pre>
@@ -3577,21 +3577,21 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 553
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
   rewrite &lt;- unaryplus, &lt;- unaryplus in p.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 554
-Time: 0.003s">
-<div class="time" style="width: 3.3333333333333%"></div>
+Time: 0.002s">
+<div class="time" style="width: 2.3809523809524%"></div>
 <pre>
   exact (left_cancellation _ _ _ _ p).</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 555
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -3682,7 +3682,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 568
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
   rewrite &lt;- unarymult, &lt;- unarymult in p.</pre>
 </div>
@@ -3696,7 +3696,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 570
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -4328,7 +4328,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 680
 Time: 0.003s">
-<div class="time" style="width: 3.3333333333333%"></div>
+<div class="time" style="width: 3.5714285714286%"></div>
 <pre>
     revert n; induction m; intros n; induction n; try reflexivity.</pre>
 </div>
@@ -4559,8 +4559,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 708
-Time: 0.004s">
-<div class="time" style="width: 4.4444444444444%"></div>
+Time: 0.003s">
+<div class="time" style="width: 3.5714285714286%"></div>
 <pre>
     revert n; induction m; intros n; induction n; try reflexivity.</pre>
 </div>
@@ -4737,8 +4737,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 724
-Time: 0.029s">
-<div class="time" style="width: 32.222222222222%"></div>
+Time: 0.024s">
+<div class="time" style="width: 28.571428571429%"></div>
 <pre>
 
   Let binaryminus (x y : nat) : binary x ∸ binary y = binary (x ∸ y).</pre>
@@ -4753,7 +4753,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 727
 Time: 0.002s">
-<div class="time" style="width: 2.2222222222222%"></div>
+<div class="time" style="width: 2.3809523809524%"></div>
 <pre>
     revert y; induction x; intros y; induction y; try reflexivity.</pre>
 </div>
@@ -4825,7 +4825,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 733
 Time: 0.002s">
-<div class="time" style="width: 2.2222222222222%"></div>
+<div class="time" style="width: 2.3809523809524%"></div>
 <pre>
 
   Let unaryminus (m n : binnat) : unary m ∸ unary n = unary (m ∸ n).</pre>
@@ -4840,7 +4840,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 736
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
     etransitivity (unary (binary (_^-1 m ∸ _^-1 n))).</pre>
 </div>
@@ -4853,8 +4853,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 738
-Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> apply ((eissect binary (unary m ∸ unary n)) ^).</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
@@ -4894,7 +4894,7 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 742
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
 
   Global Instance binnat_cut_minus_spec : CutMinusSpec binnat binnat_cut_minus.</pre>
@@ -4968,8 +4968,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 751
-Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> apply (equiv_inj unary).</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
@@ -4996,14 +4996,14 @@ Time: 0s">
 <div class="code" title="File: binary_naturals.v
 Line: 754
 Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+<div class="time" style="width: 1.1904761904762%"></div>
 <pre>
   Qed.</pre>
 </div>
 <div class="code" title="File: binary_naturals.v
 Line: 755
-Time: 0.001s">
-<div class="time" style="width: 1.1111111111111%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
 End minus.</pre>

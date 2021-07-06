@@ -378,12 +378,12 @@
           
 
             i = 72;
-            data = "No more goals.	";
+            data = "";
             responses[i]=data;
           
 
             i = 73;
-            data = "";
+            data = "No more goals.	";
             responses[i]=data;
           
 
@@ -2263,12 +2263,12 @@
           
 
             i = 449;
-            data = "";
+            data = "6 goals (ID 1526)	  	  F : pType	  X : pType	  Y : pType	  i : F ->* X	  f : X ->* Y	  H : IsExact purely i f	  n : +N	  ============================	  iterated_loops n X ->* iterated_loops n Y		goal 2 (ID 1527) is:	 iterated_loops n F ->* iterated_loops n X	goal 3 (ID 1528) is:	 loops (iterated_loops n Y) ->* iterated_loops n F	goal 4 (ID 1529) is:	 IsExact purely ?Goal0 ?Goal	goal 5 (ID 1530) is:	 IsExact purely ?Goal1 ?Goal0	goal 6 (ID 1531) is:	 IsExact purely ?Goal@{n:=(n.+1)%nat} ?Goal1	";
             responses[i]=data;
           
 
             i = 450;
-            data = "6 goals (ID 1526)	  	  F : pType	  X : pType	  Y : pType	  i : F ->* X	  f : X ->* Y	  H : IsExact purely i f	  n : +N	  ============================	  iterated_loops n X ->* iterated_loops n Y		goal 2 (ID 1527) is:	 iterated_loops n F ->* iterated_loops n X	goal 3 (ID 1528) is:	 loops (iterated_loops n Y) ->* iterated_loops n F	goal 4 (ID 1529) is:	 IsExact purely ?Goal0 ?Goal	goal 5 (ID 1530) is:	 IsExact purely ?Goal1 ?Goal0	goal 6 (ID 1531) is:	 IsExact purely ?Goal@{n:=(n.+1)%nat} ?Goal1	1 goal (ID 1526)	  	  F : pType	  X : pType	  Y : pType	  i : F ->* X	  f : X ->* Y	  H : IsExact purely i f	  n : +N	  ============================	  iterated_loops n X ->* iterated_loops n Y	<infomsg>	This subproof is complete, but there are some unfocused goals.	Try unfocusing with \"}\".	</infomsg>	5 goals		goal 1 (ID 1527) is:	 iterated_loops n F ->* iterated_loops n X	goal 2 (ID 1528) is:	 loops (iterated_loops n Y) ->* iterated_loops n F	goal 3 (ID 1529) is:	 IsExact purely ?Goal (fmap (iterated_loops n) f)	goal 4 (ID 1530) is:	 IsExact purely ?Goal0 ?Goal	goal 5 (ID 1531) is:	 IsExact purely (fmap (iterated_loops n.+1) f) ?Goal0	";
+            data = "1 goal (ID 1526)	  	  F : pType	  X : pType	  Y : pType	  i : F ->* X	  f : X ->* Y	  H : IsExact purely i f	  n : +N	  ============================	  iterated_loops n X ->* iterated_loops n Y	<infomsg>	This subproof is complete, but there are some unfocused goals.	Try unfocusing with \"}\".	</infomsg>	5 goals		goal 1 (ID 1527) is:	 iterated_loops n F ->* iterated_loops n X	goal 2 (ID 1528) is:	 loops (iterated_loops n Y) ->* iterated_loops n F	goal 3 (ID 1529) is:	 IsExact purely ?Goal (fmap (iterated_loops n) f)	goal 4 (ID 1530) is:	 IsExact purely ?Goal0 ?Goal	goal 5 (ID 1531) is:	 IsExact purely (fmap (iterated_loops n.+1) f) ?Goal0	";
             responses[i]=data;
           
 
@@ -2559,9 +2559,9 @@
 </div>
 <div class="goal" id="goal0_3_3"><pre><span></span></pre></div>
 <div class="doc" scenenumber="5">
-<a id="lab893"></a><h1 class="section">Exact sequences</h1>
+<a id="lab903"></a><h1 class="section">Exact sequences</h1>
 <div class="doc" scenenumber="4"> </div>
-<a id="lab894"></a><h2 class="section">Very short complexes</h2>
+<a id="lab904"></a><h2 class="section">Very short complexes</h2>
 <div class="doc" scenenumber="9"> </div>
 
  A (very short) complex is a pair of pointed maps whose composite is the zero map. 
@@ -3015,7 +3015,7 @@ If Y is a set, then IsComplex is an HProp.
 </div>
 <div class="goal" id="goal0_3_39"><pre><span></span></pre></div>
 <div class="doc" scenenumber="41">
-<a id="lab895"></a><h2 class="section">Very short exact sequences and fiber sequences</h2>
+<a id="lab905"></a><h2 class="section">Very short exact sequences and fiber sequences</h2>
 <div class="doc" scenenumber="4"> </div>
 
  A complex is n-exact if the induced map <span class="inlinecode"><a class="idref" href="HoTT.Homotopy.ExactSequence.html#cxfib"><span class="id" title="definition">cxfib</span></a></span> is n-connected.  
@@ -3977,7 +3977,7 @@ In particular, (n.+1)-truncation takes fiber sequences to n-exact ones.
 </div>
 <div class="goal" id="goal0_3_91"><pre><span></span></pre></div>
 <div class="doc" scenenumber="93">
-<a id="lab896"></a><h2 class="section">Connecting maps</h2>
+<a id="lab906"></a><h2 class="section">Connecting maps</h2>
 <div class="doc" scenenumber="4"> </div>
 
  It's useful to see <span class="inlinecode"><a class="idref" href="HoTT.Homotopy.ExactSequence.html#pfib_cxfib"><span class="id" title="definition">pfib_cxfib</span></a></span> as a degenerate square. 
@@ -4131,7 +4131,7 @@ The connecting maps for the long exact sequence of loop spaces, defined as an ex
 </div>
 <div class="goal" id="goal0_3_99"><pre><span></span></pre></div>
 <div class="doc" scenenumber="101">
-<a id="lab897"></a><h2 class="section">Long exact sequences</h2>
+<a id="lab907"></a><h2 class="section">Long exact sequences</h2>
 </div>
 <div scenenumber="103" class="code">
 <span class="command" onmouseout="
@@ -4194,7 +4194,7 @@ Long exact sequences are preserved by truncation.
 </div>
 <div class="goal" id="goal0_3_107"><pre><span></span></pre></div>
 <div class="doc" scenenumber="109">
-<a id="lab898"></a><h2 class="section">LES of loop spaces and homotopy groups</h2>
+<a id="lab908"></a><h2 class="section">LES of loop spaces and homotopy groups</h2>
 </div>
 <div scenenumber="111" class="code">
 <span class="command" onmouseout="
@@ -4301,7 +4301,7 @@ And from that, a long exact sequence of homotopy groups (though for now it is ju
 </div>
 <div class="goal" id="goal0_3_119"><pre><span></span></pre></div>
 <div class="doc" scenenumber="121">
-<a id="lab899"></a><h1 class="section">Classifying fiber sequences</h1>
+<a id="lab909"></a><h1 class="section">Classifying fiber sequences</h1>
 <div class="doc" scenenumber="4"> </div>
 
  Fiber sequences correspond to pointed maps into the universe. 

@@ -30,21 +30,21 @@ pre {
 
 <div class="code" title="File: Colimit_Flattening.v
 Line: 1
-Time: 0.029s">
-<div class="time" style="width: 2.7332704995287%"></div>
+Time: 0.027s">
+<div class="time" style="width: 3.030303030303%"></div>
 <pre>Require Import Basics.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 1
-Time: 0.014s">
-<div class="time" style="width: 1.3195098963242%"></div>
+Time: 0.015s">
+<div class="time" style="width: 1.6835016835017%"></div>
 <pre>
 Require Import Types.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 2
 Time: 0.001s">
-<div class="time" style="width: 0.094250706880302%"></div>
+<div class="time" style="width: 0.11223344556678%"></div>
 <pre>
 Require Import Diagrams.Diagram.</pre>
 </div>
@@ -58,7 +58,7 @@ Require Import Diagrams.Graph.</pre>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 4
 Time: 0.001s">
-<div class="time" style="width: 0.094250706880302%"></div>
+<div class="time" style="width: 0.11223344556678%"></div>
 <pre>
 Require Import Diagrams.Cocone.</pre>
 </div>
@@ -72,7 +72,7 @@ Require Import Diagrams.DDiagram.</pre>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 6
 Time: 0.002s">
-<div class="time" style="width: 0.1885014137606%"></div>
+<div class="time" style="width: 0.22446689113356%"></div>
 <pre>
 Require Import Colimits.Colimit.</pre>
 </div>
@@ -123,7 +123,7 @@ Time: 0s">
 <div class="code" title="File: Colimit_Flattening.v
 Line: 20
 Time: 0.001s">
-<div class="time" style="width: 0.094250706880302%"></div>
+<div class="time" style="width: 0.11223344556678%"></div>
 <pre>
 
   Let E_f {i j : G} (g : G i j) (x : D i) : E (i; x) -&gt; E (j; (D _f g) x)
@@ -201,7 +201,7 @@ Time: 0s">
 <div class="code" title="File: Colimit_Flattening.v
 Line: 32
 Time: 0.005s">
-<div class="time" style="width: 0.47125353440151%"></div>
+<div class="time" style="width: 0.56116722783389%"></div>
 <pre>
       srapply (path_universe (E_f _ _)).</pre>
 </div>
@@ -225,7 +225,7 @@ Time: 0s">
 <div class="code" title="File: Colimit_Flattening.v
 Line: 38
 Time: 0.001s">
-<div class="time" style="width: 0.094250706880302%"></div>
+<div class="time" style="width: 0.11223344556678%"></div>
 <pre>Definition transport_E' {i j : G} (g : G i j)  (x : D i) (y : E (i; x))
     : transport E' (colimp i j g x) (E_f g x y) = y.</pre>
 </div>
@@ -253,7 +253,7 @@ Time: 0s">
 <div class="code" title="File: Colimit_Flattening.v
 Line: 42
 Time: 0.001s">
-<div class="time" style="width: 0.094250706880302%"></div>
+<div class="time" style="width: 0.11223344556678%"></div>
 <pre>
     2: apply Colimit_rec_beta_colimp; cbn.</pre>
 </div>
@@ -266,22 +266,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 44
-Time: 0.001s">
-<div class="time" style="width: 0.094250706880302%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.22446689113356%"></div>
 <pre>
     symmetry; apply transport_path_universe.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 45
 Time: 0.003s">
-<div class="time" style="width: 0.2827521206409%"></div>
+<div class="time" style="width: 0.33670033670034%"></div>
 <pre>
   Defined.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 46
 Time: 0.001s">
-<div class="time" style="width: 0.094250706880302%"></div>
+<div class="time" style="width: 0.11223344556678%"></div>
 <pre>
 
   Definition transport_E'_V {i j : G} (g : G i j)  (x : D i) (y : E (i; x))
@@ -304,7 +304,7 @@ Time: 0s">
 <div class="code" title="File: Colimit_Flattening.v
 Line: 51
 Time: 0.001s">
-<div class="time" style="width: 0.094250706880302%"></div>
+<div class="time" style="width: 0.11223344556678%"></div>
 <pre>
     symmetry.</pre>
 </div>
@@ -324,8 +324,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 54
-Time: 0.003s">
-<div class="time" style="width: 0.2827521206409%"></div>
+Time: 0.004s">
+<div class="time" style="width: 0.44893378226712%"></div>
 <pre>
 
   Definition transport_E'_V_E' {i j : G} (g : G i j)  (x : D i) (y : E (i; x))
@@ -343,21 +343,21 @@ Time: 0s">
 <div class="code" title="File: Colimit_Flattening.v
 Line: 60
 Time: 0.007s">
-<div class="time" style="width: 0.65975494816211%"></div>
+<div class="time" style="width: 0.78563411896745%"></div>
 <pre>
     rewrite moveR_transport_V_V, inv_V.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 61
-Time: 0.003s">
-<div class="time" style="width: 0.2827521206409%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.22446689113356%"></div>
 <pre>
     symmetry; apply ap_transport_transport_pV.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 62
 Time: 0.006s">
-<div class="time" style="width: 0.56550424128181%"></div>
+<div class="time" style="width: 0.67340067340067%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -388,8 +388,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 70
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.11223344556678%"></div>
 <pre>
     srapply Build_Cocone; cbn.</pre>
 </div>
@@ -436,7 +436,7 @@ Time: 0s">
 <div class="code" title="File: Colimit_Flattening.v
 Line: 75
 Time: 0.001s">
-<div class="time" style="width: 0.094250706880302%"></div>
+<div class="time" style="width: 0.11223344556678%"></div>
 <pre>
       srapply path_sigma'.</pre>
 </div>
@@ -469,7 +469,7 @@ Time: 0s">
 <div class="code" title="File: Colimit_Flattening.v
 Line: 78
 Time: 0.002s">
-<div class="time" style="width: 0.1885014137606%"></div>
+<div class="time" style="width: 0.22446689113356%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -506,15 +506,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 86
-Time: 0.019s">
-<div class="time" style="width: 1.7907634307257%"></div>
+Time: 0.017s">
+<div class="time" style="width: 1.9079685746352%"></div>
 <pre>
     srapply Build_UniversalCocone.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 87
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.11223344556678%"></div>
 <pre>
     intro Z; srapply isequiv_adjointify.</pre>
 </div>
@@ -527,8 +527,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 89
-Time: 0.001s">
-<div class="time" style="width: 0.094250706880302%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> intros [q qq]; cbn in *.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
@@ -541,7 +541,7 @@ Time: 0s">
 <div class="code" title="File: Colimit_Flattening.v
 Line: 90
 Time: 0.001s">
-<div class="time" style="width: 0.094250706880302%"></div>
+<div class="time" style="width: 0.11223344556678%"></div>
 <pre>
       srapply Colimit_ind; cbn.</pre>
 </div>
@@ -574,7 +574,7 @@ Time: 0s">
 <div class="code" title="File: Colimit_Flattening.v
 Line: 93
 Time: 0.001s">
-<div class="time" style="width: 0.094250706880302%"></div>
+<div class="time" style="width: 0.11223344556678%"></div>
 <pre>
         funext y.</pre>
 </div>
@@ -595,7 +595,7 @@ Time: 0s">
 <div class="code" title="File: Colimit_Flattening.v
 Line: 96
 Time: 0.001s">
-<div class="time" style="width: 0.094250706880302%"></div>
+<div class="time" style="width: 0.11223344556678%"></div>
 <pre>
         cbn; f_ap.</pre>
 </div>
@@ -608,8 +608,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 98
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.11223344556678%"></div>
 <pre>
         apply transport_E'_V.</pre>
 </div>
@@ -623,13 +623,13 @@ Time: 0s">
 <div class="code" title="File: Colimit_Flattening.v
 Line: 100
 Time: 0.007s">
-<div class="time" style="width: 0.65975494816211%"></div>
+<div class="time" style="width: 0.78563411896745%"></div>
 <pre> intros [q qq].</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 100
-Time: 0.01s">
-<div class="time" style="width: 0.94250706880302%"></div>
+Time: 0.009s">
+<div class="time" style="width: 1.010101010101%"></div>
 <pre>
       srapply path_cocone.</pre>
 </div>
@@ -643,7 +643,7 @@ Time: 0s">
 <div class="code" title="File: Colimit_Flattening.v
 Line: 102
 Time: 0.001s">
-<div class="time" style="width: 0.094250706880302%"></div>
+<div class="time" style="width: 0.11223344556678%"></div>
 <pre> intros i x; reflexivity.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
@@ -655,42 +655,42 @@ Time: 0s">
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 103
-Time: 0.048s">
-<div class="time" style="width: 4.5240339302545%"></div>
+Time: 0.043s">
+<div class="time" style="width: 4.8260381593715%"></div>
 <pre> intros i j g [x y].</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 103
-Time: 0.078s">
-<div class="time" style="width: 7.3515551366635%"></div>
+Time: 0.068s">
+<div class="time" style="width: 7.631874298541%"></div>
 <pre>
         rewrite concat_1p, concat_p1.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 104
-Time: 0.031s">
-<div class="time" style="width: 2.9217719132894%"></div>
+Time: 0.027s">
+<div class="time" style="width: 3.030303030303%"></div>
 <pre>
         cbn; rewrite ap_path_sigma.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 105
-Time: 0.022s">
-<div class="time" style="width: 2.0735155513666%"></div>
+Time: 0.018s">
+<div class="time" style="width: 2.020202020202%"></div>
 <pre>
         cbn; rewrite Colimit_ind_beta_colimp.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 106
-Time: 0.014s">
-<div class="time" style="width: 1.3195098963242%"></div>
+Time: 0.013s">
+<div class="time" style="width: 1.4590347923681%"></div>
 <pre>
         rewrite ap10_path_forall.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 107
-Time: 0.29s">
-<div class="time" style="width: 27.332704995287%"></div>
+Time: 0.25s">
+<div class="time" style="width: 28.058361391695%"></div>
 <pre>
         hott_simpl.</pre>
 </div>
@@ -703,15 +703,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 109
-Time: 0.001s">
-<div class="time" style="width: 0.094250706880302%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
         refine (_ @@ 1).</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 110
-Time: 0.003s">
-<div class="time" style="width: 0.2827521206409%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.22446689113356%"></div>
 <pre>
         match goal with |- ap _ ?X @ _ = _ =&gt; set X end.</pre>
 </div>
@@ -751,28 +751,28 @@ Time: 0s">
 <div class="code" title="File: Colimit_Flattening.v
 Line: 114
 Time: 0.004s">
-<div class="time" style="width: 0.37700282752121%"></div>
+<div class="time" style="width: 0.44893378226712%"></div>
 <pre>
         rewrite X.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 115
 Time: 0.003s">
-<div class="time" style="width: 0.2827521206409%"></div>
+<div class="time" style="width: 0.33670033670034%"></div>
 <pre>
         clearbody p; clear.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 116
-Time: 0.005s">
-<div class="time" style="width: 0.47125353440151%"></div>
+Time: 0.004s">
+<div class="time" style="width: 0.44893378226712%"></div>
 <pre>
         set (E_f g x y) in *.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 117
 Time: 0.004s">
-<div class="time" style="width: 0.37700282752121%"></div>
+<div class="time" style="width: 0.44893378226712%"></div>
 <pre>
         destruct p.</pre>
 </div>
@@ -798,22 +798,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 120
-Time: 0.008s">
-<div class="time" style="width: 0.75400565504241%"></div>
+Time: 0.006s">
+<div class="time" style="width: 0.67340067340067%"></div>
 <pre>
       funext [x y].</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 121
 Time: 0.002s">
-<div class="time" style="width: 0.1885014137606%"></div>
+<div class="time" style="width: 0.22446689113356%"></div>
 <pre>
       revert x y; cbn.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 122
-Time: 0.004s">
-<div class="time" style="width: 0.37700282752121%"></div>
+Time: 0.003s">
+<div class="time" style="width: 0.33670033670034%"></div>
 <pre>
       srapply Colimit_ind; cbn.</pre>
 </div>
@@ -840,41 +840,41 @@ Time: 0s">
 <div class="code" title="File: Colimit_Flattening.v
 Line: 125
 Time: 0.001s">
-<div class="time" style="width: 0.094250706880302%"></div>
+<div class="time" style="width: 0.11223344556678%"></div>
 <pre> intros i j g x; cbn.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 125
-Time: 0.002s">
-<div class="time" style="width: 0.1885014137606%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.11223344556678%"></div>
 <pre>
         funext y.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 126
-Time: 0.017s">
-<div class="time" style="width: 1.6022620169651%"></div>
+Time: 0.014s">
+<div class="time" style="width: 1.5712682379349%"></div>
 <pre>
         rewrite transport_forall; cbn.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 127
-Time: 0.007s">
-<div class="time" style="width: 0.65975494816211%"></div>
+Time: 0.006s">
+<div class="time" style="width: 0.67340067340067%"></div>
 <pre>
         rewrite transport_paths_FlFr.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 128
 Time: 0.002s">
-<div class="time" style="width: 0.1885014137606%"></div>
+<div class="time" style="width: 0.22446689113356%"></div>
 <pre>
         match goal with |- (_ @ ?pp) @ _ = _ =&gt; set pp end.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 129
 Time: 0.001s">
-<div class="time" style="width: 0.094250706880302%"></div>
+<div class="time" style="width: 0.11223344556678%"></div>
 <pre>
         cbn in p.</pre>
 </div>
@@ -901,148 +901,148 @@ Time: 0s">
 <div class="code" title="File: Colimit_Flattening.v
 Line: 132
 Time: 0.001s">
-<div class="time" style="width: 0.094250706880302%"></div>
+<div class="time" style="width: 0.11223344556678%"></div>
 <pre>
           match goal with |- transportD E' ?C _ _ _ = _ =&gt; set (C2:=C) end.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 133
-Time: 0.01s">
-<div class="time" style="width: 0.94250706880302%"></div>
+Time: 0.008s">
+<div class="time" style="width: 0.89786756453423%"></div>
 <pre>
           rewrite (transportD_is_transport _ (fun w =&gt; C2 w.1 w.2)).</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 134
 Time: 0.002s">
-<div class="time" style="width: 0.1885014137606%"></div>
+<div class="time" style="width: 0.22446689113356%"></div>
 <pre>
           subst C2; cbn.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 135
-Time: 0.024s">
-<div class="time" style="width: 2.2620169651272%"></div>
+Time: 0.02s">
+<div class="time" style="width: 2.2446689113356%"></div>
 <pre>
           rewrite transport_paths_FlFr.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 136
-Time: 0.05s">
-<div class="time" style="width: 4.7125353440151%"></div>
+Time: 0.043s">
+<div class="time" style="width: 4.8260381593715%"></div>
 <pre>
           rewrite concat_p1.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 137
 Time: 0.003s">
-<div class="time" style="width: 0.2827521206409%"></div>
+<div class="time" style="width: 0.33670033670034%"></div>
 <pre>
           apply moveR_Vp.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 138
-Time: 0.01s">
-<div class="time" style="width: 0.94250706880302%"></div>
+Time: 0.008s">
+<div class="time" style="width: 0.89786756453423%"></div>
 <pre>
           rewrite concat_p1.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 139
-Time: 0.04s">
-<div class="time" style="width: 3.7700282752121%"></div>
+Time: 0.035s">
+<div class="time" style="width: 3.9281705948373%"></div>
 <pre>
           rewrite ap_path_sigma.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 140
-Time: 0.006s">
-<div class="time" style="width: 0.56550424128181%"></div>
+Time: 0.005s">
+<div class="time" style="width: 0.56116722783389%"></div>
 <pre>
           cbn.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 141
-Time: 0.025s">
-<div class="time" style="width: 2.3562676720075%"></div>
+Time: 0.022s">
+<div class="time" style="width: 2.4691358024691%"></div>
 <pre>
           rewrite Colimit_ind_beta_colimp.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 142
-Time: 0.017s">
-<div class="time" style="width: 1.6022620169651%"></div>
+Time: 0.015s">
+<div class="time" style="width: 1.6835016835017%"></div>
 <pre>
           rewrite ap10_path_forall.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 143
-Time: 0.66s">
-<div class="time" style="width: 62.205466540999%"></div>
+Time: 0.567s">
+<div class="time" style="width: 63.636363636364%"></div>
 <pre>
           hott_simpl.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 144
-Time: 0.017s">
-<div class="time" style="width: 1.6022620169651%"></div>
+Time: 0.014s">
+<div class="time" style="width: 1.5712682379349%"></div>
 <pre>
           rewrite ap11_is_ap10_ap01.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 145
-Time: 0.006s">
-<div class="time" style="width: 0.56550424128181%"></div>
+Time: 0.004s">
+<div class="time" style="width: 0.44893378226712%"></div>
 <pre>
           cbn.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 146
-Time: 0.017s">
-<div class="time" style="width: 1.6022620169651%"></div>
+Time: 0.013s">
+<div class="time" style="width: 1.4590347923681%"></div>
 <pre>
           rewrite concat_1p.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 147
-Time: 0.014s">
-<div class="time" style="width: 1.3195098963242%"></div>
+Time: 0.012s">
+<div class="time" style="width: 1.3468013468013%"></div>
 <pre>
           rewrite (ap_compose (fun y =&gt; (colim j ((D _f g) x); y)) f).</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 148
-Time: 0.004s">
-<div class="time" style="width: 0.37700282752121%"></div>
+Time: 0.003s">
+<div class="time" style="width: 0.33670033670034%"></div>
 <pre>
           cbn.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 149
-Time: 0.018s">
-<div class="time" style="width: 1.6965127238454%"></div>
+Time: 0.016s">
+<div class="time" style="width: 1.7957351290685%"></div>
 <pre>
           rewrite (ap_compose (fun x0 : exists x0 : D j, E (j; x0)
             =&gt; (colim j (pr1 x0); pr2 x0)) f).</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 151
-Time: 0.037s">
-<div class="time" style="width: 3.4872761545712%"></div>
+Time: 0.031s">
+<div class="time" style="width: 3.4792368125701%"></div>
 <pre>
           rewrite &lt;- !ap_pp.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 152
 Time: 0.002s">
-<div class="time" style="width: 0.1885014137606%"></div>
+<div class="time" style="width: 0.22446689113356%"></div>
 <pre>
           apply (ap (ap f)).</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 153
-Time: 0.011s">
-<div class="time" style="width: 1.0367577756833%"></div>
+Time: 0.007s">
+<div class="time" style="width: 0.78563411896745%"></div>
 <pre>
           match goal with |- _ = (ap ?ff ?pp1 @ ?pp2) @ ?pp3
             =&gt; set (p1 := pp1) end.</pre>
@@ -1050,7 +1050,7 @@ Time: 0.011s">
 <div class="code" title="File: Colimit_Flattening.v
 Line: 155
 Time: 0.001s">
-<div class="time" style="width: 0.094250706880302%"></div>
+<div class="time" style="width: 0.11223344556678%"></div>
 <pre>
           assert (p1 = ap (transport E' (colimp i j g x)^)
             (transport_pV E' (colimp i j g x) y)^).</pre>
@@ -1071,21 +1071,21 @@ Time: 0s">
 <div class="code" title="File: Colimit_Flattening.v
 Line: 158
 Time: 0.002s">
-<div class="time" style="width: 0.1885014137606%"></div>
+<div class="time" style="width: 0.22446689113356%"></div>
 <pre>
             etransitivity.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 159
 Time: 0.001s">
-<div class="time" style="width: 0.094250706880302%"></div>
+<div class="time" style="width: 0.11223344556678%"></div>
 <pre>
             1: srapply moveL_transport_V_1.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 160
 Time: 0.002s">
-<div class="time" style="width: 0.1885014137606%"></div>
+<div class="time" style="width: 0.22446689113356%"></div>
 <pre>
             etransitivity.</pre>
 </div>
@@ -1105,7 +1105,7 @@ Time: 0s">
 <div class="code" title="File: Colimit_Flattening.v
 Line: 162
 Time: 0.001s">
-<div class="time" style="width: 0.094250706880302%"></div>
+<div class="time" style="width: 0.11223344556678%"></div>
 <pre>
               2: srapply transport_VpV.</pre>
 </div>
@@ -1118,7 +1118,7 @@ Time: 0s">
 <div class="code" title="File: Colimit_Flattening.v
 Line: 163
 Time: 0.003s">
-<div class="time" style="width: 0.2827521206409%"></div>
+<div class="time" style="width: 0.33670033670034%"></div>
 <pre>
             symmetry; apply ap_V.</pre>
 </div>
@@ -1130,44 +1130,44 @@ Time: 0s">
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 164
-Time: 0.011s">
-<div class="time" style="width: 1.0367577756833%"></div>
+Time: 0.01s">
+<div class="time" style="width: 1.1223344556678%"></div>
 <pre>
           rewrite X; clear X p1.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 165
-Time: 0.019s">
-<div class="time" style="width: 1.7907634307257%"></div>
+Time: 0.017s">
+<div class="time" style="width: 1.9079685746352%"></div>
 <pre>
           rewrite &lt;- ap_compose; cbn.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 166
-Time: 0.02s">
-<div class="time" style="width: 1.885014137606%"></div>
+Time: 0.017s">
+<div class="time" style="width: 1.9079685746352%"></div>
 <pre>
           rewrite (ap_path_sigma (fun x =&gt; E (j; x))
             (fun x y =&gt; (colim j x; y))).</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 168
-Time: 0.052s">
-<div class="time" style="width: 4.9010367577757%"></div>
+Time: 0.043s">
+<div class="time" style="width: 4.8260381593715%"></div>
 <pre>
           cbn; rewrite !concat_p1, concat_pp_p, ap_V.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 169
-Time: 0.002s">
-<div class="time" style="width: 0.1885014137606%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.11223344556678%"></div>
 <pre>
           apply moveL_Vp.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 170
-Time: 0.014s">
-<div class="time" style="width: 1.3195098963242%"></div>
+Time: 0.011s">
+<div class="time" style="width: 1.2345679012346%"></div>
 <pre>
           match goal with |- ?pp1 @ _ = ?pp2 @ _
             =&gt; set (p1 := pp1); set (p2 := pp2) end; cbn in *.</pre>
@@ -1175,7 +1175,7 @@ Time: 0.014s">
 <div class="code" title="File: Colimit_Flattening.v
 Line: 172
 Time: 0.001s">
-<div class="time" style="width: 0.094250706880302%"></div>
+<div class="time" style="width: 0.11223344556678%"></div>
 <pre>
           assert (p1 = path_sigma' E' 1 (transport_Vp _ _ _)).</pre>
 </div>
@@ -1195,36 +1195,36 @@ Time: 0s">
 <div class="code" title="File: Colimit_Flattening.v
 Line: 174
 Time: 0.004s">
-<div class="time" style="width: 0.37700282752121%"></div>
+<div class="time" style="width: 0.44893378226712%"></div>
 <pre>
             rewrite &lt;- ap_exist.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 175
-Time: 0.007s">
-<div class="time" style="width: 0.65975494816211%"></div>
+Time: 0.006s">
+<div class="time" style="width: 0.67340067340067%"></div>
 <pre>
             rewrite (ap_compose (transport E' (colimp i j g x)^)
               (fun v =&gt; (colim j ((D _f g) x); v))).</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 177
-Time: 0.004s">
-<div class="time" style="width: 0.37700282752121%"></div>
+Time: 0.003s">
+<div class="time" style="width: 0.33670033670034%"></div>
 <pre>
             f_ap; set (colimp i j g x).</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 178
-Time: 0.006s">
-<div class="time" style="width: 0.56550424128181%"></div>
+Time: 0.005s">
+<div class="time" style="width: 0.56116722783389%"></div>
 <pre>
             clear; symmetry.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 179
 Time: 0.001s">
-<div class="time" style="width: 0.094250706880302%"></div>
+<div class="time" style="width: 0.11223344556678%"></div>
 <pre>
             apply transport_VpV.</pre>
 </div>
@@ -1236,58 +1236,58 @@ Time: 0s">
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 180
-Time: 0.008s">
-<div class="time" style="width: 0.75400565504241%"></div>
+Time: 0.007s">
+<div class="time" style="width: 0.78563411896745%"></div>
 <pre>
           rewrite X; clear p1 X.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 181
 Time: 0.002s">
-<div class="time" style="width: 0.1885014137606%"></div>
+<div class="time" style="width: 0.22446689113356%"></div>
 <pre>
           assert (p2 = path_sigma' E' 1 (transport_E'_V _ _ _))
             by reflexivity.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 183
-Time: 0.01s">
-<div class="time" style="width: 0.94250706880302%"></div>
+Time: 0.009s">
+<div class="time" style="width: 1.010101010101%"></div>
 <pre>
           rewrite X; clear p2 X.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 184
-Time: 0.045s">
-<div class="time" style="width: 4.2412818096136%"></div>
+Time: 0.039s">
+<div class="time" style="width: 4.3771043771044%"></div>
 <pre>
           rewrite &lt;- !path_sigma_pp_pp'; f_ap.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 185
-Time: 0.026s">
-<div class="time" style="width: 2.4505183788878%"></div>
+Time: 0.023s">
+<div class="time" style="width: 2.5813692480359%"></div>
 <pre>
           rewrite concat_p1, concat_pp_p.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 186
 Time: 0.001s">
-<div class="time" style="width: 0.094250706880302%"></div>
+<div class="time" style="width: 0.11223344556678%"></div>
 <pre>
           refine (1 @@ _).</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 187
-Time: 0.002s">
-<div class="time" style="width: 0.1885014137606%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.11223344556678%"></div>
 <pre>
           apply moveL_Mp.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 188
-Time: 0.021s">
-<div class="time" style="width: 1.9792648444863%"></div>
+Time: 0.018s">
+<div class="time" style="width: 2.020202020202%"></div>
 <pre>
           rewrite &lt;- ap_V, &lt;- ap_pp.</pre>
 </div>
@@ -1313,8 +1313,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 191
-Time: 0.001s">
-<div class="time" style="width: 0.094250706880302%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
             refine ((transport_E'_V _ _ _)^ @ _).</pre>
 </div>
@@ -1334,21 +1334,21 @@ Time: 0s">
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 194
-Time: 0.004s">
-<div class="time" style="width: 0.37700282752121%"></div>
+Time: 0.003s">
+<div class="time" style="width: 0.33670033670034%"></div>
 <pre> f_ap.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 194
 Time: 0.001s">
-<div class="time" style="width: 0.094250706880302%"></div>
+<div class="time" style="width: 0.11223344556678%"></div>
 <pre>
             refine (1 @@ _).</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 195
 Time: 0.001s">
-<div class="time" style="width: 0.094250706880302%"></div>
+<div class="time" style="width: 0.11223344556678%"></div>
 <pre>
             apply transport_VpV.</pre>
 </div>
@@ -1361,22 +1361,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 197
-Time: 0.003s">
-<div class="time" style="width: 0.2827521206409%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.22446689113356%"></div>
 <pre> set (transport E' (colimp i j g x)
               (transport E' (colimp i j g x)^ y)).</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 198
-Time: 0.009s">
-<div class="time" style="width: 0.84825636192271%"></div>
+Time: 0.007s">
+<div class="time" style="width: 0.78563411896745%"></div>
 <pre>
             rewrite ap_pp, &lt;- ap_compose.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 199
-Time: 0.002s">
-<div class="time" style="width: 0.1885014137606%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.11223344556678%"></div>
 <pre>
             refine (_ @ (transport_E'_V_E' _ _ _)^).</pre>
 </div>
@@ -1397,28 +1397,28 @@ Time: 0s">
 <div class="code" title="File: Colimit_Flattening.v
 Line: 202
 Time: 0.001s">
-<div class="time" style="width: 0.094250706880302%"></div>
+<div class="time" style="width: 0.11223344556678%"></div>
 <pre>
             refine (_ @ (transport_pVp _ _ _)^).</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 203
-Time: 0.005s">
-<div class="time" style="width: 0.47125353440151%"></div>
+Time: 0.004s">
+<div class="time" style="width: 0.44893378226712%"></div>
 <pre>
             rewrite ap_compose.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 204
-Time: 0.005s">
-<div class="time" style="width: 0.47125353440151%"></div>
+Time: 0.004s">
+<div class="time" style="width: 0.44893378226712%"></div>
 <pre>
             f_ap; symmetry.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 205
 Time: 0.001s">
-<div class="time" style="width: 0.094250706880302%"></div>
+<div class="time" style="width: 0.11223344556678%"></div>
 <pre>
             apply transport_VpV.</pre>
 </div>
@@ -1430,14 +1430,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 206
-Time: 0.169s">
-<div class="time" style="width: 15.928369462771%"></div>
+Time: 0.139s">
+<div class="time" style="width: 15.600448933782%"></div>
 <pre>
         rewrite X; hott_simpl.</pre>
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 207
-Time: 1.061s">
+Time: 0.891s">
 <div class="time" style="width: 100%"></div>
 <pre>
   Defined.</pre>
@@ -1467,8 +1467,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 213
-Time: 0.003s">
-<div class="time" style="width: 0.2827521206409%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.22446689113356%"></div>
 <pre>
     srapply colimit_unicity.</pre>
 </div>
@@ -1481,8 +1481,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 215
-Time: 0.002s">
-<div class="time" style="width: 0.1885014137606%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.11223344556678%"></div>
 <pre>
     rapply Build_IsColimit.</pre>
 </div>
@@ -1502,8 +1502,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Colimit_Flattening.v
 Line: 218
-Time: 0.566s">
-<div class="time" style="width: 53.345900094251%"></div>
+Time: 0.511s">
+<div class="time" style="width: 57.351290684624%"></div>
 <pre>
 
 End Flattening.</pre>

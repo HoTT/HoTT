@@ -38,7 +38,7 @@ Time: 0s">
 </div>
 <div class="code" title="File: Relational.v
 Line: 2
-Time: 0.039s">
+Time: 0.041s">
 <div class="time" style="width: 100%"></div>
 <pre>Require Import HoTT.Basics HoTT.Types.</pre>
 </div>
@@ -80,7 +80,7 @@ Time: 0s">
 <div class="code" title="File: Relational.v
 Line: 12
 Time: 0.002s">
-<div class="time" style="width: 5.1282051282051%"></div>
+<div class="time" style="width: 4.8780487804878%"></div>
 <pre>Record RelEquiv A B :=
   { equiv_rel : A -&gt; B -&gt; Type;
     relequiv_contr_f : forall a, Contr { b : B &amp; equiv_rel a b };
@@ -110,8 +110,8 @@ Global Existing Instance relequiv_contr_g.</pre>
 </div>
 <div class="code" title="File: Relational.v
 Line: 19
-Time: 0.001s">
-<div class="time" style="width: 2.5641025641026%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
 Definition issig_relequiv {A B}
@@ -129,15 +129,15 @@ Proof.</pre>
 </div>
 <div class="code" title="File: Relational.v
 Line: 26
-Time: 0.019s">
-<div class="time" style="width: 48.717948717949%"></div>
+Time: 0.021s">
+<div class="time" style="width: 51.219512195122%"></div>
 <pre>
   issig.</pre>
 </div>
 <div class="code" title="File: Relational.v
 Line: 27
 Time: 0.003s">
-<div class="time" style="width: 7.6923076923077%"></div>
+<div class="time" style="width: 7.3170731707317%"></div>
 <pre>
 Defined.</pre>
 </div>
@@ -159,7 +159,7 @@ Proof.</pre>
 <div class="code" title="File: Relational.v
 Line: 31
 Time: 0.004s">
-<div class="time" style="width: 10.25641025641%"></div>
+<div class="time" style="width: 9.7560975609756%"></div>
 <pre>
   refine {| equiv_rel a b := e a = b |}.</pre>
 </div>
@@ -194,7 +194,7 @@ Proof.</pre>
 <div class="code" title="File: Relational.v
 Line: 36
 Time: 0.001s">
-<div class="time" style="width: 2.5641025641026%"></div>
+<div class="time" style="width: 2.4390243902439%"></div>
 <pre>
   refine (equiv_adjointify
             (fun a =&gt; (center { b : B &amp; equiv_rel e a b}).1)
@@ -211,8 +211,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Relational.v
 Line: 42
-Time: 0.001s">
-<div class="time" style="width: 2.5641025641026%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> refine (ap pr1 (contr _) : _.1 = (x; _).1).</pre>
 </div>
 <div class="code" title="File: Relational.v
@@ -237,8 +237,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Relational.v
 Line: 44
-Time: 0.001s">
-<div class="time" style="width: 2.5641025641026%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> refine (ap pr1 (contr _) : _.1 = (x; _).1).</pre>
 </div>
 <div class="code" title="File: Relational.v
@@ -256,15 +256,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Relational.v
 Line: 45
-Time: 0.001s">
-<div class="time" style="width: 2.5641025641026%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: Relational.v
 Line: 46
 Time: 0.001s">
-<div class="time" style="width: 2.5641025641026%"></div>
+<div class="time" style="width: 2.4390243902439%"></div>
 <pre>
 
 Definition RelIsEquiv {A B} (f : A -&gt; B)
@@ -282,15 +282,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Relational.v
 Line: 53
-Time: 0.002s">
-<div class="time" style="width: 5.1282051282051%"></div>
+Time: 0.003s">
+<div class="time" style="width: 7.3170731707317%"></div>
 <pre>Definition inverse_relequiv {A B} (e : RelEquiv A B) : RelEquiv B A
   := {| equiv_rel a b := equiv_rel e b a |}.</pre>
 </div>
 <div class="code" title="File: Relational.v
 Line: 54
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 2.4390243902439%"></div>
 <pre>
 
 Definition reinv_V {A B} (e : RelEquiv A B)
@@ -308,7 +308,7 @@ Time: 0s">
 <div class="code" title="File: Relational.v
 Line: 60
 Time: 0.004s">
-<div class="time" style="width: 10.25641025641%"></div>
+<div class="time" style="width: 9.7560975609756%"></div>
 <pre>Definition relequiv_idmap A : RelEquiv A A
   := {| equiv_rel a b := a = b |}.</pre>
 </div>

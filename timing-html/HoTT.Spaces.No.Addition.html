@@ -36,14 +36,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: Addition.v
 Line: 1
-Time: 0.039s">
-<div class="time" style="width: 4.653937947494%"></div>
+Time: 0.038s">
+<div class="time" style="width: 5.2054794520548%"></div>
 <pre>Require Import HoTT.Basics HoTT.Types.</pre>
 </div>
 <div class="code" title="File: Addition.v
 Line: 1
-Time: 0.055s">
-<div class="time" style="width: 6.563245823389%"></div>
+Time: 0.053s">
+<div class="time" style="width: 7.2602739726027%"></div>
 <pre>
 Require Import HoTT.Spaces.No.Core HoTT.Spaces.No.Negation.</pre>
 </div>
@@ -75,7 +75,7 @@ Time: 0s">
 <div class="code" title="File: Addition.v
 Line: 9
 Time: 0.001s">
-<div class="time" style="width: 0.11933174224344%"></div>
+<div class="time" style="width: 0.13698630136986%"></div>
 <pre>Class HasAddition (S : OptionSort) :=
   { empty_options : InSort S Empty Empty
     ; sum_options : forall L R L' R',
@@ -161,7 +161,7 @@ Time: 0s">
 <div class="code" title="File: Addition.v
 Line: 29
 Time: 0.003s">
-<div class="time" style="width: 0.35799522673031%"></div>
+<div class="time" style="width: 0.41095890410959%"></div>
 <pre> intros L R L' R' [? ?] [? ?]; split; exact _.</pre>
 </div>
 <div class="code" title="File: Addition.v
@@ -241,7 +241,7 @@ Time: 0s">
 <div class="code" title="File: Addition.v
 Line: 49
 Time: 0.001s">
-<div class="time" style="width: 0.11933174224344%"></div>
+<div class="time" style="width: 0.13698630136986%"></div>
 <pre>
 
     Definition plus_inner
@@ -261,8 +261,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Addition.v
 Line: 58
-Time: 0.026s">
-<div class="time" style="width: 3.1026252983294%"></div>
+Time: 0.025s">
+<div class="time" style="width: 3.4246575342466%"></div>
 <pre>
       simple refine (No_ind_package
                 (fun y =&gt; { x_plus_y : No &amp;
@@ -310,8 +310,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Addition.v
 Line: 71
-Time: 0.001s">
-<div class="time" style="width: 0.11933174224344%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
         pose (zR := sum_ind (fun _ =&gt; No)
                             (fun r =&gt; (xR_plus r).1 {{ yL | yR // ycut }})
@@ -334,8 +334,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Addition.v
 Line: 77
-Time: 0.015s">
-<div class="time" style="width: 1.7899761336516%"></div>
+Time: 0.014s">
+<div class="time" style="width: 1.9178082191781%"></div>
 <pre> abstract (
           intros [l|l] [r|r]; cbn;
           [ apply xL_lt_xR_plus
@@ -355,15 +355,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Addition.v
 Line: 86
-Time: 0.001s">
-<div class="time" style="width: 0.11933174224344%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
         assert (InSort S L'' R'') by (apply sum_options; exact _).</pre>
 </div>
 <div class="code" title="File: Addition.v
 Line: 87
 Time: 0.001s">
-<div class="time" style="width: 0.11933174224344%"></div>
+<div class="time" style="width: 0.13698630136986%"></div>
 <pre>
         exists ({{ zL | zR // zcut }}); split.</pre>
 </div>
@@ -382,8 +382,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Addition.v
 Line: 89
-Time: 0.001s">
-<div class="time" style="width: 0.11933174224344%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.27397260273973%"></div>
 <pre>
           refine (lt_lopt zL zR zcut (inl l)).</pre>
 </div>
@@ -403,7 +403,7 @@ Time: 0s">
 <div class="code" title="File: Addition.v
 Line: 91
 Time: 0.001s">
-<div class="time" style="width: 0.11933174224344%"></div>
+<div class="time" style="width: 0.13698630136986%"></div>
 <pre>
           refine (lt_ropt zL zR zcut (inl r)).</pre>
 </div>
@@ -416,8 +416,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Addition.v
 Line: 93
-Time: 0.036s">
-<div class="time" style="width: 4.2959427207637%"></div>
+Time: 0.033s">
+<div class="time" style="width: 4.5205479452055%"></div>
 <pre> abstract (
         intros x y [a ?] [b ?] p q r s;
         rewrite transport_sigma; cbn in *;
@@ -433,8 +433,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Addition.v
 Line: 98
-Time: 0.032s">
-<div class="time" style="width: 3.81861575179%"></div>
+Time: 0.03s">
+<div class="time" style="width: 4.1095890410959%"></div>
 <pre> abstract (
         intros L' R' ? yL yR ycut x_plus_yL x_plus_yR x_plus_yL_lt_yR
                L'' R'' ? zL zR zcut x_plus_zL x_plus_zR x_plus_zL_lt_zR
@@ -460,8 +460,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Addition.v
 Line: 113
-Time: 0.035s">
-<div class="time" style="width: 4.1766109785203%"></div>
+Time: 0.032s">
+<div class="time" style="width: 4.3835616438356%"></div>
 <pre> abstract (
         intros L' R' ? yL yR ycut x_plus_yL x_plus_yR x_plus_yL_lt_yR
                L'' R'' ? zL zR zcut x_plus_zL x_plus_zR x_plus_zL_lt_zR
@@ -478,8 +478,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Addition.v
 Line: 119
-Time: 0.009s">
-<div class="time" style="width: 1.0739856801909%"></div>
+Time: 0.008s">
+<div class="time" style="width: 1.0958904109589%"></div>
 <pre> abstract (
         intros L' R' ? yL yR ycut x_plus_yL x_plus_yR x_plus_yL_lt_yR
                L'' R'' ? zL zR zcut x_plus_zL x_plus_zR x_plus_zL_lt_zR
@@ -489,8 +489,8 @@ Time: 0.009s">
 </div>
 <div class="code" title="File: Addition.v
 Line: 124
-Time: 0.008s">
-<div class="time" style="width: 0.95465393794749%"></div>
+Time: 0.007s">
+<div class="time" style="width: 0.95890410958904%"></div>
 <pre>
     Defined.</pre>
 </div>
@@ -505,8 +505,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Addition.v
 Line: 128
-Time: 0.007s">
-<div class="time" style="width: 0.83532219570406%"></div>
+Time: 0.006s">
+<div class="time" style="width: 0.82191780821918%"></div>
 <pre>Definition plus_inner_cut
                {L' R' : Type@{i} } {Sy : InSort@{i} S L' R'}
                (yL : L' -&gt; No) (yR : R' -&gt; No)
@@ -556,27 +556,27 @@ Time: 0s">
 </div>
 <div class="code" title="File: Addition.v
 Line: 149
-Time: 0.006s">
-<div class="time" style="width: 0.71599045346062%"></div>
+Time: 0.005s">
+<div class="time" style="width: 0.68493150684932%"></div>
 <pre>rel_hnf.</pre>
 </div>
 <div class="code" title="File: Addition.v
 Line: 149
-Time: 0.01s">
-<div class="time" style="width: 1.1933174224344%"></div>
+Time: 0.009s">
+<div class="time" style="width: 1.2328767123288%"></div>
 <pre> reflexivity.</pre>
 </div>
 <div class="code" title="File: Addition.v
 Line: 149
-Time: 0.026s">
-<div class="time" style="width: 3.1026252983294%"></div>
+Time: 0.022s">
+<div class="time" style="width: 3.013698630137%"></div>
 <pre>
     Qed.</pre>
 </div>
 <div class="code" title="File: Addition.v
 Line: 150
 Time: 0.002s">
-<div class="time" style="width: 0.23866348448687%"></div>
+<div class="time" style="width: 0.27397260273973%"></div>
 <pre>
 
   End Inner.</pre>
@@ -584,7 +584,7 @@ Time: 0.002s">
 <div class="code" title="File: Addition.v
 Line: 152
 Time: 0.001s">
-<div class="time" style="width: 0.11933174224344%"></div>
+<div class="time" style="width: 0.13698630136986%"></div>
 <pre>
 
   Definition plus_outer
@@ -603,8 +603,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Addition.v
 Line: 160
-Time: 0.019s">
-<div class="time" style="width: 2.2673031026253%"></div>
+Time: 0.016s">
+<div class="time" style="width: 2.1917808219178%"></div>
 <pre>
     refine (No_rec_package
               {g : No -&gt; No &amp;
@@ -626,8 +626,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Addition.v
 Line: 171
-Time: 0.028s">
-<div class="time" style="width: 3.3412887828162%"></div>
+Time: 0.023s">
+<div class="time" style="width: 3.1506849315068%"></div>
 <pre> abstract (
       intros [g ?] [h ?] p q;
       apply path_sigma_hprop; cbn in *;
@@ -643,8 +643,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Addition.v
 Line: 176
-Time: 0.087s">
-<div class="time" style="width: 10.381861575179%"></div>
+Time: 0.076s">
+<div class="time" style="width: 10.41095890411%"></div>
 <pre> abstract (
       intros L R ? xL xR xcut xL_plus xR_plus xL_lt_xR_plus
            L' R' ? yL yR ycut yL_plus yR_plus yL_lt_yR_plus;
@@ -681,8 +681,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Addition.v
 Line: 202
-Time: 0.075s">
-<div class="time" style="width: 8.9498806682578%"></div>
+Time: 0.065s">
+<div class="time" style="width: 8.9041095890411%"></div>
 <pre> abstract (
       intros L R ? xL xR xcut xL_plus xR_plus xL_lt_xR_plus
              L' R' ? yL yR ycut yL_plus yR_plus yL_lt_yR_plus;
@@ -706,8 +706,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Addition.v
 Line: 215
-Time: 0.073s">
-<div class="time" style="width: 8.7112171837709%"></div>
+Time: 0.064s">
+<div class="time" style="width: 8.7671232876712%"></div>
 <pre> abstract (
       intros L R ? xL xR xcut xL_plus xR_plus xL_lt_xR_plus
              L' R' ? yL yR ycut yL_plus yR_plus yL_lt_yR_plus;
@@ -724,15 +724,15 @@ Time: 0.073s">
 </div>
 <div class="code" title="File: Addition.v
 Line: 227
-Time: 0.012s">
-<div class="time" style="width: 1.4319809069212%"></div>
+Time: 0.009s">
+<div class="time" style="width: 1.2328767123288%"></div>
 <pre>
   Defined.</pre>
 </div>
 <div class="code" title="File: Addition.v
 Line: 228
-Time: 0.002s">
-<div class="time" style="width: 0.23866348448687%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.13698630136986%"></div>
 <pre>
 
   Definition plus (x y : No) : No
@@ -748,8 +748,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Addition.v
 Line: 233
-Time: 0.006s">
-<div class="time" style="width: 0.71599045346062%"></div>
+Time: 0.005s">
+<div class="time" style="width: 0.68493150684932%"></div>
 <pre>
 
   Definition plus_le_l (x x' y : No) (p : x &lt;= x')
@@ -758,8 +758,8 @@ Time: 0.006s">
 </div>
 <div class="code" title="File: Addition.v
 Line: 237
-Time: 0.011s">
-<div class="time" style="width: 1.3126491646778%"></div>
+Time: 0.009s">
+<div class="time" style="width: 1.2328767123288%"></div>
 <pre>
 
   Definition plus_lt_l (x x' y : No) (p : x &lt; x')
@@ -768,8 +768,8 @@ Time: 0.011s">
 </div>
 <div class="code" title="File: Addition.v
 Line: 241
-Time: 0.006s">
-<div class="time" style="width: 0.71599045346062%"></div>
+Time: 0.005s">
+<div class="time" style="width: 0.68493150684932%"></div>
 <pre>
 
   Definition plus_le_r (x y y' : No) (p : y &lt;= y')
@@ -778,8 +778,8 @@ Time: 0.006s">
 </div>
 <div class="code" title="File: Addition.v
 Line: 245
-Time: 0.006s">
-<div class="time" style="width: 0.71599045346062%"></div>
+Time: 0.005s">
+<div class="time" style="width: 0.68493150684932%"></div>
 <pre>
 
   Definition plus_lt_r (x y y' : No) (p : y &lt; y')
@@ -797,8 +797,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Addition.v
 Line: 252
-Time: 0.102s">
-<div class="time" style="width: 12.171837708831%"></div>
+Time: 0.087s">
+<div class="time" style="width: 11.917808219178%"></div>
 <pre>Definition plus_cut
              {L R : Type@{i} } {Sx : InSort@{i} S L R}
              (xL : L -&gt; No) (xR : R -&gt; No)
@@ -935,7 +935,7 @@ Time: 0s">
 <div class="code" title="File: Addition.v
 Line: 329
 Time: 0.002s">
-<div class="time" style="width: 0.23866348448687%"></div>
+<div class="time" style="width: 0.27397260273973%"></div>
 <pre>Theorem plus_comm (x y : No) : x + y = y + x.</pre>
 </div>
 <div class="code" title="File: Addition.v
@@ -947,22 +947,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: Addition.v
 Line: 330
-Time: 0.072s">
-<div class="time" style="width: 8.5918854415274%"></div>
+Time: 0.064s">
+<div class="time" style="width: 8.7671232876712%"></div>
 <pre>
     one_line_proof (equiv_sum_symm _ _) (equiv_sum_symm _ _).</pre>
 </div>
 <div class="code" title="File: Addition.v
 Line: 331
-Time: 0.017s">
-<div class="time" style="width: 2.0286396181384%"></div>
+Time: 0.016s">
+<div class="time" style="width: 2.1917808219178%"></div>
 <pre>
   Defined.</pre>
 </div>
 <div class="code" title="File: Addition.v
 Line: 332
-Time: 0.006s">
-<div class="time" style="width: 0.71599045346062%"></div>
+Time: 0.004s">
+<div class="time" style="width: 0.54794520547945%"></div>
 <pre>
 
   Theorem plus_assoc (x y z : No) : (x + y) + z = x + (y + z).</pre>
@@ -976,7 +976,7 @@ Time: 0s">
 </div>
 <div class="code" title="File: Addition.v
 Line: 335
-Time: 0.838s">
+Time: 0.73s">
 <div class="time" style="width: 100%"></div>
 <pre>
     one_line_proof (equiv_sum_assoc _ _ _) (equiv_sum_assoc _ _ _);
@@ -984,15 +984,15 @@ Time: 0.838s">
 </div>
 <div class="code" title="File: Addition.v
 Line: 337
-Time: 0.151s">
-<div class="time" style="width: 18.019093078759%"></div>
+Time: 0.131s">
+<div class="time" style="width: 17.945205479452%"></div>
 <pre>
   Defined.</pre>
 </div>
 <div class="code" title="File: Addition.v
 Line: 338
 Time: 0.001s">
-<div class="time" style="width: 0.11933174224344%"></div>
+<div class="time" style="width: 0.13698630136986%"></div>
 <pre>
 
   Theorem plus_zero (x : No) : x + zero = x.</pre>
@@ -1013,22 +1013,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: Addition.v
 Line: 342
-Time: 0.021s">
-<div class="time" style="width: 2.5059665871122%"></div>
+Time: 0.019s">
+<div class="time" style="width: 2.6027397260274%"></div>
 <pre>
     one_line_proof (sum_empty_r _) (sum_empty_r _).</pre>
 </div>
 <div class="code" title="File: Addition.v
 Line: 343
-Time: 0.008s">
-<div class="time" style="width: 0.95465393794749%"></div>
+Time: 0.007s">
+<div class="time" style="width: 0.95890410958904%"></div>
 <pre>
   Defined.</pre>
 </div>
 <div class="code" title="File: Addition.v
 Line: 344
 Time: 0.001s">
-<div class="time" style="width: 0.11933174224344%"></div>
+<div class="time" style="width: 0.13698630136986%"></div>
 <pre>
 
   Theorem zero_plus (x : No) : zero + x = x.</pre>
@@ -1049,15 +1049,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Addition.v
 Line: 348
-Time: 0.021s">
-<div class="time" style="width: 2.5059665871122%"></div>
+Time: 0.018s">
+<div class="time" style="width: 2.4657534246575%"></div>
 <pre>
     one_line_proof (sum_empty_l _) (sum_empty_l _).</pre>
 </div>
 <div class="code" title="File: Addition.v
 Line: 349
-Time: 0.017s">
-<div class="time" style="width: 2.0286396181384%"></div>
+Time: 0.014s">
+<div class="time" style="width: 1.9178082191781%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -1079,7 +1079,7 @@ Time: 0s">
 <div class="code" title="File: Addition.v
 Line: 353
 Time: 0.001s">
-<div class="time" style="width: 0.11933174224344%"></div>
+<div class="time" style="width: 0.13698630136986%"></div>
 <pre>
 
   Definition plus_negate (x : No) : x + negate x = zero.</pre>
@@ -1093,8 +1093,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Addition.v
 Line: 356
-Time: 0.016s">
-<div class="time" style="width: 1.909307875895%"></div>
+Time: 0.013s">
+<div class="time" style="width: 1.7808219178082%"></div>
 <pre>
     unfold No in *;
     repeat_No_ind_hprop;
@@ -1119,7 +1119,7 @@ Time: 0s">
 <div class="code" title="File: Addition.v
 Line: 363
 Time: 0.002s">
-<div class="time" style="width: 0.23866348448687%"></div>
+<div class="time" style="width: 0.27397260273973%"></div>
 <pre> apply le_lr; [ intros [l|r]; cbn [sum_ind] | intros [] ].</pre>
 </div>
 <div class="code" title="File: Addition.v
@@ -1131,21 +1131,21 @@ Time: 0s">
 </div>
 <div class="code" title="File: Addition.v
 Line: 364
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.13698630136986%"></div>
 <pre> unfold zero in IHL; rewrite &lt;- (IHL l); clear IHL.</pre>
 </div>
 <div class="code" title="File: Addition.v
 Line: 364
 Time: 0.001s">
-<div class="time" style="width: 0.11933174224344%"></div>
+<div class="time" style="width: 0.13698630136986%"></div>
 <pre>
         apply plus_lt_r.</pre>
 </div>
 <div class="code" title="File: Addition.v
 Line: 365
 Time: 0.001s">
-<div class="time" style="width: 0.11933174224344%"></div>
+<div class="time" style="width: 0.13698630136986%"></div>
 <pre>
         refine (lt_ropt _ _ _ l).</pre>
 </div>
@@ -1165,14 +1165,14 @@ Time: 0s">
 <div class="code" title="File: Addition.v
 Line: 367
 Time: 0.001s">
-<div class="time" style="width: 0.11933174224344%"></div>
+<div class="time" style="width: 0.13698630136986%"></div>
 <pre>
         apply plus_lt_l.</pre>
 </div>
 <div class="code" title="File: Addition.v
 Line: 368
-Time: 0.001s">
-<div class="time" style="width: 0.11933174224344%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
         refine (lt_ropt _ _ _ r).</pre>
 </div>
@@ -1186,7 +1186,7 @@ Time: 0s">
 <div class="code" title="File: Addition.v
 Line: 370
 Time: 0.002s">
-<div class="time" style="width: 0.23866348448687%"></div>
+<div class="time" style="width: 0.27397260273973%"></div>
 <pre> apply le_lr; [ intros [] | intros [r|l] ]; cbn [sum_ind].</pre>
 </div>
 <div class="code" title="File: Addition.v
@@ -1198,21 +1198,21 @@ Time: 0s">
 </div>
 <div class="code" title="File: Addition.v
 Line: 371
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.13698630136986%"></div>
 <pre> unfold zero in IHR; rewrite &lt;- (IHR r); clear IHR.</pre>
 </div>
 <div class="code" title="File: Addition.v
 Line: 371
 Time: 0.001s">
-<div class="time" style="width: 0.11933174224344%"></div>
+<div class="time" style="width: 0.13698630136986%"></div>
 <pre>
         apply plus_lt_r.</pre>
 </div>
 <div class="code" title="File: Addition.v
 Line: 372
 Time: 0.005s">
-<div class="time" style="width: 0.59665871121718%"></div>
+<div class="time" style="width: 0.68493150684932%"></div>
 <pre>
         refine (lt_lopt _ _ _ r).</pre>
 </div>
@@ -1232,28 +1232,28 @@ Time: 0s">
 <div class="code" title="File: Addition.v
 Line: 374
 Time: 0.001s">
-<div class="time" style="width: 0.11933174224344%"></div>
+<div class="time" style="width: 0.13698630136986%"></div>
 <pre>
         apply plus_lt_l.</pre>
 </div>
 <div class="code" title="File: Addition.v
 Line: 375
-Time: 0.001s">
-<div class="time" style="width: 0.11933174224344%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
         refine (lt_lopt _ _ _ l).</pre>
 </div>
 <div class="code" title="File: Addition.v
 Line: 376
-Time: 0.013s">
-<div class="time" style="width: 1.5513126491647%"></div>
+Time: 0.011s">
+<div class="time" style="width: 1.5068493150685%"></div>
 <pre>
   Defined.</pre>
 </div>
 <div class="code" title="File: Addition.v
 Line: 377
-Time: 0.002s">
-<div class="time" style="width: 0.23866348448687%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.13698630136986%"></div>
 <pre>
 
   Definition sub (x y : No) : No := x + (negate y).</pre>
@@ -1268,8 +1268,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Addition.v
 Line: 381
-Time: 0.135s">
-<div class="time" style="width: 16.109785202864%"></div>
+Time: 0.124s">
+<div class="time" style="width: 16.986301369863%"></div>
 <pre>
 
 End Addition.</pre>

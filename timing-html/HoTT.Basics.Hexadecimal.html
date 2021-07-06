@@ -50,7 +50,7 @@ Time: 0s">
 </div>
 <div class="code" title="File: Hexadecimal.v
 Line: 14
-Time: 0.015s">
+Time: 0.014s">
 <div class="time" style="width: 100%"></div>
 <pre>Require Import Basics.Overture Basics.Decimal.</pre>
 </div>
@@ -76,7 +76,7 @@ Time: 0s">
 <div class="code" title="File: Hexadecimal.v
 Line: 26
 Time: 0.003s">
-<div class="time" style="width: 20%"></div>
+<div class="time" style="width: 21.428571428571%"></div>
 <pre>Inductive uint :=
  | Nil
  | D0 (_:uint)
@@ -145,8 +145,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Hexadecimal.v
 Line: 57
-Time: 0.001s">
-<div class="time" style="width: 6.6666666666667%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>Variant hexadecimal :=
  | Hexadecimal (i:int) (f:uint)
  | HexadecimalExp (i:int) (f:uint) (e:Decimal.int).</pre>
@@ -220,7 +220,7 @@ Register hexadecimal as num.hexadecimal.type.</pre>
 <div class="code" title="File: Hexadecimal.v
 Line: 71
 Time: 0.001s">
-<div class="time" style="width: 6.6666666666667%"></div>
+<div class="time" style="width: 7.1428571428571%"></div>
 <pre>
 
 Fixpoint nb_digits d :=
@@ -289,7 +289,7 @@ Time: 0s">
 <div class="code" title="File: Hexadecimal.v
 Line: 101
 Time: 0.001s">
-<div class="time" style="width: 6.6666666666667%"></div>
+<div class="time" style="width: 7.1428571428571%"></div>
 <pre>Definition norm d :=
   match d with
   | Pos d =&gt; Pos (unorm d)
@@ -335,7 +335,7 @@ Time: 0s">
 <div class="code" title="File: Hexadecimal.v
 Line: 121
 Time: 0.001s">
-<div class="time" style="width: 6.6666666666667%"></div>
+<div class="time" style="width: 7.1428571428571%"></div>
 <pre>Fixpoint revapp (d d' : uint) :=
   match d with
   | Nil =&gt; d'
@@ -396,7 +396,7 @@ Time: 0s">
 <div class="code" title="File: Hexadecimal.v
 Line: 151
 Time: 0.001s">
-<div class="time" style="width: 6.6666666666667%"></div>
+<div class="time" style="width: 7.1428571428571%"></div>
 <pre>Definition nztail d :=
   let fix aux d_rev :=
     match d_rev with
@@ -408,7 +408,7 @@ Time: 0.001s">
 <div class="code" title="File: Hexadecimal.v
 Line: 157
 Time: 0.001s">
-<div class="time" style="width: 6.6666666666667%"></div>
+<div class="time" style="width: 7.1428571428571%"></div>
 <pre>
 
 Definition nztail_int d :=
@@ -437,8 +437,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Hexadecimal.v
 Line: 168
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 7.1428571428571%"></div>
 <pre>Fixpoint succ d :=
   match d with
   | Nil =&gt; D1 Nil
@@ -472,8 +472,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Hexadecimal.v
 Line: 190
-Time: 0.002s">
-<div class="time" style="width: 13.333333333333%"></div>
+Time: 0.003s">
+<div class="time" style="width: 21.428571428571%"></div>
 <pre>Fixpoint double d :=
   match d with
   | Nil =&gt; Nil

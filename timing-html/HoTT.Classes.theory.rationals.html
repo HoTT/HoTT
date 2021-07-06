@@ -30,8 +30,8 @@ pre {
 
 <div class="code" title="File: rationals.v
 Line: 1
-Time: 0.145s">
-<div class="time" style="width: 97.972972972973%"></div>
+Time: 0.139s">
+<div class="time" style="width: 100%"></div>
 <pre>Require Import
   HoTT.Types.Universe
   HoTT.Basics.Decidable
@@ -100,7 +100,7 @@ Universe UQ.</pre>
 <div class="code" title="File: rationals.v
 Line: 28
 Time: 0.003s">
-<div class="time" style="width: 2.027027027027%"></div>
+<div class="time" style="width: 2.158273381295%"></div>
 <pre>
 Context {Q : Type@{UQ} } {Qap : Apart@{UQ UQ} Q}
   {Qplus : Plus Q} {Qmult : Mult Q}
@@ -137,14 +137,14 @@ red.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 42
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre> apply trivial_apart.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 42
-Time: 0.027s">
-<div class="time" style="width: 18.243243243243%"></div>
+Time: 0.024s">
+<div class="time" style="width: 17.26618705036%"></div>
 <pre> solve_propholds.</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -156,8 +156,8 @@ Qed.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 43
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
 
 Record Qpos@{} : Type@{UQ} := mkQpos { pos : Q; is_pos : 0 &lt; pos }.</pre>
@@ -187,7 +187,7 @@ Arguments Qpos_Q /.</pre>
 <div class="code" title="File: rationals.v
 Line: 49
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
 
 Lemma Qpos_plus_pr@{} : forall a b : Qpos, 0 &lt; 'a + 'b.</pre>
@@ -208,8 +208,8 @@ intros.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 53
-Time: 0.006s">
-<div class="time" style="width: 4.0540540540541%"></div>
+Time: 0.005s">
+<div class="time" style="width: 3.5971223021583%"></div>
 <pre>
 apply semirings.pos_plus_compat;apply is_pos.</pre>
 </div>
@@ -268,8 +268,8 @@ change (a = b) in E.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 65
-Time: 0.014s">
-<div class="time" style="width: 9.4594594594595%"></div>
+Time: 0.013s">
+<div class="time" style="width: 9.3525179856115%"></div>
 <pre>
 destruct E;apply ap;apply path_ishprop.</pre>
 </div>
@@ -297,8 +297,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 70
-Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 apply (@HSet.ishset_hrel_subpaths _ (fun e d =&gt; ' e = ' d)).</pre>
 </div>
@@ -324,8 +324,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 73
-Time: 0.098s">
-<div class="time" style="width: 66.216216216216%"></div>
+Time: 0.09s">
+<div class="time" style="width: 64.748201438849%"></div>
 <pre> apply _.</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -373,7 +373,7 @@ exists 1.</pre>
 <div class="code" title="File: rationals.v
 Line: 79
 Time: 0.003s">
-<div class="time" style="width: 2.027027027027%"></div>
+<div class="time" style="width: 2.158273381295%"></div>
 <pre> apply lt_0_1.</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -408,7 +408,7 @@ intros a b;exists (' a * ' b).</pre>
 <div class="code" title="File: rationals.v
 Line: 84
 Time: 0.003s">
-<div class="time" style="width: 2.027027027027%"></div>
+<div class="time" style="width: 2.158273381295%"></div>
 <pre>
 solve_propholds.</pre>
 </div>
@@ -456,14 +456,14 @@ apply pos_eq.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 91
-Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre> change (' x + ' y = ' y + ' x).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 91
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
 apply plus_comm.</pre>
 </div>
@@ -491,8 +491,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 96
-Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
 hnf;intros;apply pos_eq,mult_comm.</pre>
 </div>
@@ -533,8 +533,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 102
-Time: 0.003s">
-<div class="time" style="width: 2.027027027027%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.4388489208633%"></div>
 <pre>
 apply pos_dec_recip_compat.</pre>
 </div>
@@ -589,8 +589,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 110
-Time: 0.004s">
-<div class="time" style="width: 2.7027027027027%"></div>
+Time: 0.003s">
+<div class="time" style="width: 2.158273381295%"></div>
 <pre> exists 1;apply lt_0_1.</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -602,8 +602,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 111
-Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre> exists (naturals_to_semiring nat Q (S k)).</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -629,7 +629,7 @@ Time: 0s">
 <div class="code" title="File: rationals.v
 Line: 113
 Time: 0.003s">
-<div class="time" style="width: 2.027027027027%"></div>
+<div class="time" style="width: 2.158273381295%"></div>
 <pre> apply lt_0_1.</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -642,20 +642,20 @@ Time: 0s">
 <div class="code" title="File: rationals.v
 Line: 114
 Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+<div class="time" style="width: 1.4388489208633%"></div>
 <pre> change (0 &lt; 1 + naturals_to_semiring nat Q (S k)).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 114
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
     set (K := naturals_to_semiring nat Q (S k)) in *;clearbody K.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 115
 Time: 0.004s">
-<div class="time" style="width: 2.7027027027027%"></div>
+<div class="time" style="width: 2.8776978417266%"></div>
 <pre>
     apply pos_plus_compat.</pre>
 </div>
@@ -668,8 +668,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 117
-Time: 0.004s">
-<div class="time" style="width: 2.7027027027027%"></div>
+Time: 0.003s">
+<div class="time" style="width: 2.158273381295%"></div>
 <pre> apply lt_0_1.</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -724,20 +724,20 @@ unfold dec_recip,cast,pos_recip;simpl.</pre>
 <div class="code" title="File: rationals.v
 Line: 124
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
 change (' e / ' e = 1).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 125
-Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> apply dec_recip_inverse.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 125
-Time: 0.003s">
-<div class="time" style="width: 2.027027027027%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.4388489208633%"></div>
 <pre>
 apply lt_ne_flip.</pre>
 </div>
@@ -825,8 +825,8 @@ intros;apply pos_eq.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 136
-Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.4388489208633%"></div>
 <pre> apply mult_1_r.</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -839,7 +839,7 @@ Qed.</pre>
 <div class="code" title="File: rationals.v
 Line: 137
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
 
 Lemma pos_split2@{} : forall e : Q+, e = e / 2 + e / 2.</pre>
@@ -861,7 +861,7 @@ intros.</pre>
 <div class="code" title="File: rationals.v
 Line: 141
 Time: 0.003s">
-<div class="time" style="width: 2.027027027027%"></div>
+<div class="time" style="width: 2.158273381295%"></div>
 <pre>
 path_via (e * (2 / 2)).</pre>
 </div>
@@ -893,28 +893,28 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 144
-Time: 0.007s">
-<div class="time" style="width: 4.7297297297297%"></div>
+Time: 0.005s">
+<div class="time" style="width: 3.5971223021583%"></div>
 <pre> change (' e * (2 / 2) = ' e / 2 + ' e / 2).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 144
-Time: 0.079s">
-<div class="time" style="width: 53.378378378378%"></div>
+Time: 0.066s">
+<div class="time" style="width: 47.482014388489%"></div>
 <pre>
   ring_tac.ring_with_nat.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 145
-Time: 0.016s">
-<div class="time" style="width: 10.810810810811%"></div>
+Time: 0.015s">
+<div class="time" style="width: 10.791366906475%"></div>
 <pre>
 Qed.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 146
 Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+<div class="time" style="width: 1.4388489208633%"></div>
 <pre>
 
 Lemma pos_split3@{} : forall e : Q+, e = e / 3 + e / 3 + e / 3.</pre>
@@ -935,8 +935,8 @@ intros.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 150
-Time: 0.004s">
-<div class="time" style="width: 2.7027027027027%"></div>
+Time: 0.003s">
+<div class="time" style="width: 2.158273381295%"></div>
 <pre>
 path_via (e * (3 / 3)).</pre>
 </div>
@@ -968,21 +968,21 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 153
-Time: 0.014s">
-<div class="time" style="width: 9.4594594594595%"></div>
+Time: 0.013s">
+<div class="time" style="width: 9.3525179856115%"></div>
 <pre> change (' e * (3 / 3) = ' e / 3 + ' e / 3 + ' e / 3).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 153
-Time: 0.114s">
-<div class="time" style="width: 77.027027027027%"></div>
+Time: 0.098s">
+<div class="time" style="width: 70.503597122302%"></div>
 <pre>
   ring_tac.ring_with_nat.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 154
-Time: 0.032s">
-<div class="time" style="width: 21.621621621622%"></div>
+Time: 0.028s">
+<div class="time" style="width: 20.143884892086%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -1018,7 +1018,7 @@ intros;apply pos_eq.</pre>
 <div class="code" title="File: rationals.v
 Line: 160
 Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+<div class="time" style="width: 1.4388489208633%"></div>
 <pre>
 apply mult_assoc.</pre>
 </div>
@@ -1061,7 +1061,7 @@ intros;apply pos_eq.</pre>
 <div class="code" title="File: rationals.v
 Line: 167
 Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+<div class="time" style="width: 1.4388489208633%"></div>
 <pre>
 apply plus_assoc.</pre>
 </div>
@@ -1090,7 +1090,7 @@ Proof.</pre>
 <div class="code" title="File: rationals.v
 Line: 172
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
 hnf;intros;apply pos_eq;apply mult_1_l.</pre>
 </div>
@@ -1119,7 +1119,7 @@ Proof.</pre>
 <div class="code" title="File: rationals.v
 Line: 177
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
 hnf;intros;apply pos_eq;apply mult_1_r.</pre>
 </div>
@@ -1155,8 +1155,8 @@ intros.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 184
-Time: 0.01s">
-<div class="time" style="width: 6.7567567567568%"></div>
+Time: 0.008s">
+<div class="time" style="width: 5.7553956834532%"></div>
 <pre> path_via ((a + b) * (c / c)).</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -1169,7 +1169,7 @@ Time: 0s">
 <div class="code" title="File: rationals.v
 Line: 185
 Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+<div class="time" style="width: 1.4388489208633%"></div>
 <pre> rewrite pos_recip_r;apply pos_eq,symmetry,mult_1_r.</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -1181,14 +1181,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 186
-Time: 0.132s">
-<div class="time" style="width: 89.189189189189%"></div>
+Time: 0.111s">
+<div class="time" style="width: 79.856115107914%"></div>
 <pre> apply pos_eq;ring_tac.ring_with_nat.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 186
-Time: 0.028s">
-<div class="time" style="width: 18.918918918919%"></div>
+Time: 0.026s">
+<div class="time" style="width: 18.705035971223%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -1216,8 +1216,8 @@ intros.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 191
-Time: 0.003s">
-<div class="time" style="width: 2.027027027027%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.4388489208633%"></div>
 <pre> path_via (a / a * b).</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -1229,8 +1229,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 192
-Time: 0.062s">
-<div class="time" style="width: 41.891891891892%"></div>
+Time: 0.052s">
+<div class="time" style="width: 37.410071942446%"></div>
 <pre> apply pos_eq;ring_tac.ring_with_nat.</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -1248,8 +1248,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 193
-Time: 0.012s">
-<div class="time" style="width: 8.1081081081081%"></div>
+Time: 0.01s">
+<div class="time" style="width: 7.1942446043165%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -1277,8 +1277,8 @@ apply pos_eq.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 198
-Time: 0.032s">
-<div class="time" style="width: 21.621621621622%"></div>
+Time: 0.026s">
+<div class="time" style="width: 18.705035971223%"></div>
 <pre> exact dec_recip_1.</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -1313,7 +1313,7 @@ hnf.</pre>
 <div class="code" title="File: rationals.v
 Line: 203
 Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+<div class="time" style="width: 1.4388489208633%"></div>
 <pre> intros;apply pos_eq,plus_mult_distr_l.</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -1354,7 +1354,7 @@ Time: 0s">
 <div class="code" title="File: rationals.v
 Line: 208
 Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+<div class="time" style="width: 1.4388489208633%"></div>
 <pre>
 apply not_le_lt_flip.</pre>
 </div>
@@ -1366,8 +1366,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 209
-Time: 0.011s">
-<div class="time" style="width: 7.4324324324324%"></div>
+Time: 0.01s">
+<div class="time" style="width: 7.1942446043165%"></div>
 <pre>
 destruct (total_meet_either (' a) (' b)) as [E1|E1];
 rewrite E1 in E;(eapply le_iff_not_lt_flip;[exact E|]);
@@ -1411,7 +1411,7 @@ Time: 0s">
 <div class="code" title="File: rationals.v
 Line: 217
 Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+<div class="time" style="width: 1.4388489208633%"></div>
 <pre>
 apply not_le_lt_flip.</pre>
 </div>
@@ -1423,8 +1423,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 218
-Time: 0.011s">
-<div class="time" style="width: 7.4324324324324%"></div>
+Time: 0.009s">
+<div class="time" style="width: 6.4748201438849%"></div>
 <pre>
 destruct (total_join_either (' a) (' b)) as [E1|E1];
 rewrite E1 in E;(eapply le_iff_not_lt_flip;[exact E|]);
@@ -1439,8 +1439,8 @@ Defined.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 222
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
 
 Lemma Q_sum_eq_join_meet@{} : forall a b c d : Q, a + b = c + d -&gt;
@@ -1463,7 +1463,7 @@ intros ???? E.</pre>
 <div class="code" title="File: rationals.v
 Line: 227
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
 destruct (total le a c) as [E1|E1].</pre>
 </div>
@@ -1476,20 +1476,20 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 229
-Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> rewrite (join_r _ _ E1).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 229
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre> rewrite meet_r;trivial.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 229
-Time: 0.011s">
-<div class="time" style="width: 7.4324324324324%"></div>
+Time: 0.009s">
+<div class="time" style="width: 6.4748201438849%"></div>
 <pre>
   apply (order_preserving (+ b)) in E1.</pre>
 </div>
@@ -1502,8 +1502,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 231
-Time: 0.006s">
-<div class="time" style="width: 4.0540540540541%"></div>
+Time: 0.005s">
+<div class="time" style="width: 3.5971223021583%"></div>
 <pre> apply (order_reflecting (c +)).</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -1522,20 +1522,20 @@ Time: 0s">
 <div class="code" title="File: rationals.v
 Line: 232
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre> rewrite (join_l _ _ E1).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 232
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
   rewrite meet_l;trivial.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 233
-Time: 0.006s">
-<div class="time" style="width: 4.0540540540541%"></div>
+Time: 0.005s">
+<div class="time" style="width: 3.5971223021583%"></div>
 <pre>
   apply (order_reflecting (a +)).</pre>
 </div>
@@ -1547,8 +1547,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 234
-Time: 0.011s">
-<div class="time" style="width: 7.4324324324324%"></div>
+Time: 0.009s">
+<div class="time" style="width: 6.4748201438849%"></div>
 <pre> apply (order_preserving (+ d)).</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -1561,7 +1561,7 @@ Time: 0s">
 <div class="code" title="File: rationals.v
 Line: 235
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -1618,7 +1618,7 @@ Qed.</pre>
 <div class="code" title="File: rationals.v
 Line: 244
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
 
 Lemma Qpos_le_lt_min : forall a b : Q+, ' a &lt;= ' b -&gt;
@@ -1641,7 +1641,7 @@ intros a b E.</pre>
 <div class="code" title="File: rationals.v
 Line: 249
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre> exists (a/2),(a/2).</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -1660,14 +1660,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 251
-Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre> exists (' (a / 2) + (' b - ' a)).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 251
-Time: 0.003s">
-<div class="time" style="width: 2.027027027027%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.8776978417266%"></div>
 <pre>
   apply nonneg_plus_lt_compat_r.</pre>
 </div>
@@ -1680,8 +1680,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 253
-Time: 0.005s">
-<div class="time" style="width: 3.3783783783784%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.8776978417266%"></div>
 <pre> apply (snd (flip_nonneg_minus _ _)).</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -1758,21 +1758,21 @@ Time: 0s">
 <div class="code" title="File: rationals.v
 Line: 258
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
     set (a':=a/2);rewrite (pos_split2 a);unfold a';clear a'.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 259
-Time: 0.138s">
-<div class="time" style="width: 93.243243243243%"></div>
+Time: 0.115s">
+<div class="time" style="width: 82.73381294964%"></div>
 <pre>
     ring_tac.ring_with_integers (NatPair.Z nat).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 260
-Time: 0.049s">
-<div class="time" style="width: 33.108108108108%"></div>
+Time: 0.043s">
+<div class="time" style="width: 30.935251798561%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -1802,7 +1802,7 @@ intros.</pre>
 <div class="code" title="File: rationals.v
 Line: 266
 Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+<div class="time" style="width: 1.4388489208633%"></div>
 <pre>
 destruct (total le (' a) (' b)) as [E|E].</pre>
 </div>
@@ -1835,7 +1835,7 @@ Time: 0s">
 <div class="code" title="File: rationals.v
 Line: 269
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre> destruct E as [c [cb [ca [E1 E2]]]].</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -1847,8 +1847,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 270
-Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -1876,8 +1876,8 @@ intros q r E;exists (r-q).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 275
-Time: 0.004s">
-<div class="time" style="width: 2.7027027027027%"></div>
+Time: 0.003s">
+<div class="time" style="width: 2.158273381295%"></div>
 <pre>
 apply (snd (flip_pos_minus _ _) E).</pre>
 </div>
@@ -1918,15 +1918,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 281
-Time: 0.068s">
-<div class="time" style="width: 45.945945945946%"></div>
+Time: 0.057s">
+<div class="time" style="width: 41.007194244604%"></div>
 <pre>
 abstract ring_tac.ring_with_integers (NatPair.Z nat).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 282
-Time: 0.005s">
-<div class="time" style="width: 3.3783783783784%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.8776978417266%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -1956,7 +1956,7 @@ intros.</pre>
 <div class="code" title="File: rationals.v
 Line: 288
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre> destruct (total le b c) as [E|E].</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -1968,8 +1968,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 289
-Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> rewrite (meet_l _ _ E).</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -1980,8 +1980,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 289
-Time: 0.009s">
-<div class="time" style="width: 6.0810810810811%"></div>
+Time: 0.007s">
+<div class="time" style="width: 5.0359712230216%"></div>
 <pre>
   apply (order_preserving (a +)),E.</pre>
 </div>
@@ -1994,8 +1994,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 291
-Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> rewrite (meet_r _ _ E).</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -2006,8 +2006,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 291
-Time: 0.008s">
-<div class="time" style="width: 5.4054054054054%"></div>
+Time: 0.007s">
+<div class="time" style="width: 5.0359712230216%"></div>
 <pre>
   apply (order_preserving (a +)),E.</pre>
 </div>
@@ -2035,8 +2035,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 296
-Time: 0.003s">
-<div class="time" style="width: 2.027027027027%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.4388489208633%"></div>
 <pre>
 intros q;destruct (total_abs_either q) as [E|E];destruct E as [E1 E2];rewrite E2.</pre>
 </div>
@@ -2062,14 +2062,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 299
-Time: 0.006s">
-<div class="time" style="width: 4.0540540540541%"></div>
+Time: 0.005s">
+<div class="time" style="width: 3.5971223021583%"></div>
 <pre> apply flip_nonneg_negate.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 299
-Time: 0.004s">
-<div class="time" style="width: 2.7027027027027%"></div>
+Time: 0.003s">
+<div class="time" style="width: 2.158273381295%"></div>
 <pre>
  rewrite involutive;trivial.</pre>
 </div>
@@ -2104,14 +2104,14 @@ intros q E.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 305
-Time: 0.004s">
-<div class="time" style="width: 2.7027027027027%"></div>
+Time: 0.003s">
+<div class="time" style="width: 2.158273381295%"></div>
 <pre> pose proof (antisymmetry le _ _ E (Qabs_nonneg _)) as E1.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 305
-Time: 0.003s">
-<div class="time" style="width: 2.027027027027%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.4388489208633%"></div>
 <pre>
 destruct (total_abs_either q) as [[E2 E3]|[E2 E3]];rewrite E3 in E1.</pre>
 </div>
@@ -2138,13 +2138,13 @@ Time: 0s">
 <div class="code" title="File: rationals.v
 Line: 308
 Time: 0.003s">
-<div class="time" style="width: 2.027027027027%"></div>
+<div class="time" style="width: 2.158273381295%"></div>
 <pre> apply (injective (-)).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 308
-Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre> rewrite negate_0.</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -2184,8 +2184,8 @@ intros q.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 313
-Time: 0.005s">
-<div class="time" style="width: 3.3783783783784%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.8776978417266%"></div>
 <pre> destruct (le_or_lt (abs q) 0) as [E|E].</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -2285,8 +2285,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 324
-Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 intro;apply ((abs_sig _).2).</pre>
 </div>
@@ -2315,7 +2315,7 @@ Proof.</pre>
 <div class="code" title="File: rationals.v
 Line: 329
 Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+<div class="time" style="width: 1.4388489208633%"></div>
 <pre>
 intros x;destruct (total_abs_either x) as [[E1 E2]|[E1 E2]].</pre>
 </div>
@@ -2328,8 +2328,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 331
-Time: 0.005s">
-<div class="time" style="width: 3.3783783783784%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.8776978417266%"></div>
 <pre> rewrite E2;reflexivity.</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -2341,8 +2341,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 332
-Time: 0.022s">
-<div class="time" style="width: 14.864864864865%"></div>
+Time: 0.019s">
+<div class="time" style="width: 13.669064748201%"></div>
 <pre> transitivity (0:Q);trivial.</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -2354,8 +2354,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 333
-Time: 0.005s">
-<div class="time" style="width: 3.3783783783784%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.8776978417266%"></div>
 <pre> apply flip_nonpos_negate.</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -2395,8 +2395,8 @@ intros x.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 338
-Time: 0.004s">
-<div class="time" style="width: 2.7027027027027%"></div>
+Time: 0.003s">
+<div class="time" style="width: 2.158273381295%"></div>
 <pre> destruct (total_abs_either x) as [[E1 E2]|[E1 E2]].</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -2414,21 +2414,21 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 339
-Time: 0.006s">
-<div class="time" style="width: 4.0540540540541%"></div>
+Time: 0.005s">
+<div class="time" style="width: 3.5971223021583%"></div>
 <pre> path_via (- - x);[|rewrite involutive;trivial].</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 339
-Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   apply ((abs_sig (- x)).2).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 340
-Time: 0.006s">
-<div class="time" style="width: 4.0540540540541%"></div>
+Time: 0.005s">
+<div class="time" style="width: 3.5971223021583%"></div>
 <pre> apply flip_nonneg_negate;trivial.</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -2452,14 +2452,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 341
-Time: 0.006s">
-<div class="time" style="width: 4.0540540540541%"></div>
+Time: 0.005s">
+<div class="time" style="width: 3.5971223021583%"></div>
 <pre> apply flip_nonpos_negate;trivial.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 341
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -2554,20 +2554,20 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 353
-Time: 0.005s">
-<div class="time" style="width: 3.3783783783784%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.8776978417266%"></div>
 <pre> apply flip_le_negate.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 353
-Time: 0.003s">
-<div class="time" style="width: 2.027027027027%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.4388489208633%"></div>
 <pre> rewrite involutive.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 353
-Time: 0.025s">
-<div class="time" style="width: 16.891891891892%"></div>
+Time: 0.019s">
+<div class="time" style="width: 13.669064748201%"></div>
 <pre> transitivity (abs x);trivial.</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -2586,8 +2586,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 355
-Time: 0.025s">
-<div class="time" style="width: 16.891891891892%"></div>
+Time: 0.02s">
+<div class="time" style="width: 14.388489208633%"></div>
 <pre> transitivity (abs x);trivial.</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -2612,8 +2612,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 357
-Time: 0.003s">
-<div class="time" style="width: 2.027027027027%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.4388489208633%"></div>
 <pre>
   destruct (total_abs_either x) as [[E3 E4]|[E3 E4]];rewrite E4.</pre>
 </div>
@@ -2639,14 +2639,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 360
-Time: 0.01s">
-<div class="time" style="width: 6.7567567567568%"></div>
+Time: 0.009s">
+<div class="time" style="width: 6.4748201438849%"></div>
 <pre> apply flip_le_negate;rewrite involutive;trivial.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 360
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -2681,7 +2681,7 @@ Time: 0s">
 <div class="code" title="File: rationals.v
 Line: 365
 Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+<div class="time" style="width: 1.4388489208633%"></div>
 <pre>
 destruct (total_abs_either q) as [[E1 E2]|[E1 E2]];rewrite E2.</pre>
 </div>
@@ -2700,14 +2700,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 367
-Time: 0.023s">
-<div class="time" style="width: 15.540540540541%"></div>
+Time: 0.019s">
+<div class="time" style="width: 13.669064748201%"></div>
 <pre> transitivity (0:Q);trivial.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 367
-Time: 0.006s">
-<div class="time" style="width: 4.0540540540541%"></div>
+Time: 0.005s">
+<div class="time" style="width: 3.5971223021583%"></div>
 <pre>
   apply flip_nonneg_negate;trivial.</pre>
 </div>
@@ -2721,26 +2721,26 @@ Time: 0s">
 <div class="code" title="File: rationals.v
 Line: 369
 Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+<div class="time" style="width: 1.4388489208633%"></div>
 <pre> apply join_l.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 369
-Time: 0.022s">
-<div class="time" style="width: 14.864864864865%"></div>
+Time: 0.019s">
+<div class="time" style="width: 13.669064748201%"></div>
 <pre> transitivity (0:Q);trivial.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 369
-Time: 0.006s">
-<div class="time" style="width: 4.0540540540541%"></div>
+Time: 0.005s">
+<div class="time" style="width: 3.5971223021583%"></div>
 <pre>
   apply flip_nonpos_negate;trivial.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 370
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -2769,8 +2769,8 @@ intros a b c E1 E2.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 376
-Time: 0.005s">
-<div class="time" style="width: 3.3783783783784%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.8776978417266%"></div>
 <pre>
 destruct (total le a b) as [E3|E3];rewrite ?(join_r _ _ E3),?(join_l _ _ E3);
 trivial.</pre>
@@ -2785,7 +2785,7 @@ Qed.</pre>
 <div class="code" title="File: rationals.v
 Line: 379
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
 
 Lemma Q_average_between@{} : forall q r : Q, q &lt; r -&gt; q &lt; (q + r) / 2 &lt; r.</pre>
@@ -2821,13 +2821,13 @@ Time: 0s">
 <div class="code" title="File: rationals.v
 Line: 385
 Time: 0.004s">
-<div class="time" style="width: 2.7027027027027%"></div>
+<div class="time" style="width: 2.8776978417266%"></div>
 <pre> apply flip_pos_minus.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 385
-Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
   assert (Hrw : (q + r) / 2 - q = (r - q) / 2);[|rewrite Hrw;clear Hrw].</pre>
 </div>
@@ -2840,8 +2840,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 387
-Time: 0.012s">
-<div class="time" style="width: 8.1081081081081%"></div>
+Time: 0.01s">
+<div class="time" style="width: 7.1942446043165%"></div>
 <pre> path_via ((q + r) / 2 - 2 / 2 * q).</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -2853,14 +2853,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 388
-Time: 0.012s">
-<div class="time" style="width: 8.1081081081081%"></div>
+Time: 0.011s">
+<div class="time" style="width: 7.9136690647482%"></div>
 <pre> rewrite dec_recip_inverse;[|solve_propholds].</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 388
-Time: 0.004s">
-<div class="time" style="width: 2.7027027027027%"></div>
+Time: 0.003s">
+<div class="time" style="width: 2.158273381295%"></div>
 <pre>
       rewrite mult_1_l;trivial.</pre>
 </div>
@@ -2873,8 +2873,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 390
-Time: 0.124s">
-<div class="time" style="width: 83.783783783784%"></div>
+Time: 0.1s">
+<div class="time" style="width: 71.942446043165%"></div>
 <pre>
     ring_tac.ring_with_integers (NatPair.Z nat).</pre>
 </div>
@@ -2887,8 +2887,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 392
-Time: 0.013s">
-<div class="time" style="width: 8.7837837837838%"></div>
+Time: 0.011s">
+<div class="time" style="width: 7.9136690647482%"></div>
 <pre>
   apply pos_mult_compat;[|apply _].</pre>
 </div>
@@ -2902,7 +2902,7 @@ Time: 0s">
 <div class="code" title="File: rationals.v
 Line: 394
 Time: 0.004s">
-<div class="time" style="width: 2.7027027027027%"></div>
+<div class="time" style="width: 2.8776978417266%"></div>
 <pre> apply (snd (flip_pos_minus _ _)).</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -2921,13 +2921,13 @@ Time: 0s">
 <div class="code" title="File: rationals.v
 Line: 395
 Time: 0.004s">
-<div class="time" style="width: 2.7027027027027%"></div>
+<div class="time" style="width: 2.8776978417266%"></div>
 <pre> apply flip_pos_minus.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 395
 Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+<div class="time" style="width: 1.4388489208633%"></div>
 <pre>
   assert (Hrw : r - (q + r) / 2 = (r - q) / 2);[|rewrite Hrw;clear Hrw].</pre>
 </div>
@@ -2941,7 +2941,7 @@ Time: 0s">
 <div class="code" title="File: rationals.v
 Line: 397
 Time: 0.005s">
-<div class="time" style="width: 3.3783783783784%"></div>
+<div class="time" style="width: 3.5971223021583%"></div>
 <pre> path_via (2 / 2 * r - (q + r) / 2).</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -2953,14 +2953,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 398
-Time: 0.01s">
-<div class="time" style="width: 6.7567567567568%"></div>
+Time: 0.009s">
+<div class="time" style="width: 6.4748201438849%"></div>
 <pre> rewrite dec_recip_inverse;[|solve_propholds].</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 398
-Time: 0.004s">
-<div class="time" style="width: 2.7027027027027%"></div>
+Time: 0.003s">
+<div class="time" style="width: 2.158273381295%"></div>
 <pre>
       rewrite mult_1_l;trivial.</pre>
 </div>
@@ -2973,8 +2973,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 400
-Time: 0.124s">
-<div class="time" style="width: 83.783783783784%"></div>
+Time: 0.105s">
+<div class="time" style="width: 75.539568345324%"></div>
 <pre>
     ring_tac.ring_with_integers (NatPair.Z nat).</pre>
 </div>
@@ -2987,8 +2987,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 402
-Time: 0.012s">
-<div class="time" style="width: 8.1081081081081%"></div>
+Time: 0.01s">
+<div class="time" style="width: 7.1942446043165%"></div>
 <pre>
   apply pos_mult_compat;[|apply _].</pre>
 </div>
@@ -3002,7 +3002,7 @@ Time: 0s">
 <div class="code" title="File: rationals.v
 Line: 404
 Time: 0.004s">
-<div class="time" style="width: 2.7027027027027%"></div>
+<div class="time" style="width: 2.8776978417266%"></div>
 <pre> apply (snd (flip_pos_minus _ _)).</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -3013,15 +3013,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 404
-Time: 0.056s">
-<div class="time" style="width: 37.837837837838%"></div>
+Time: 0.049s">
+<div class="time" style="width: 35.251798561151%"></div>
 <pre>
 Qed.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 405
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
 
 Lemma path_avg_split_diff_l (q r : Q) : q + ((r - q) / 2) = (r + q) / 2.</pre>
@@ -3042,8 +3042,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 409
-Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
   rewrite &lt;- (mult_1_r q).</pre>
 </div>
@@ -3056,71 +3056,71 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 411
-Time: 0.011s">
-<div class="time" style="width: 7.4324324324324%"></div>
+Time: 0.009s">
+<div class="time" style="width: 6.4748201438849%"></div>
 <pre>
   rewrite &lt;- (dec_recip_inverse 2) by solve_propholds.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 412
-Time: 0.011s">
-<div class="time" style="width: 7.4324324324324%"></div>
+Time: 0.01s">
+<div class="time" style="width: 7.1942446043165%"></div>
 <pre>
   rewrite (associativity q 2 (/2)).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 413
 Time: 0.005s">
-<div class="time" style="width: 3.3783783783784%"></div>
+<div class="time" style="width: 3.5971223021583%"></div>
 <pre>
   rewrite &lt;- (distribute_r (q*2) (r-q) (/2)).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 414
-Time: 0.004s">
-<div class="time" style="width: 2.7027027027027%"></div>
+Time: 0.003s">
+<div class="time" style="width: 2.158273381295%"></div>
 <pre>
   rewrite (distribute_l q 1 1).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 415
-Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
   rewrite (mult_1_r q).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 416
-Time: 0.017s">
-<div class="time" style="width: 11.486486486486%"></div>
+Time: 0.014s">
+<div class="time" style="width: 10.071942446043%"></div>
 <pre>
   rewrite (commutativity (q+q) (r-q)).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 417
-Time: 0.017s">
-<div class="time" style="width: 11.486486486486%"></div>
+Time: 0.014s">
+<div class="time" style="width: 10.071942446043%"></div>
 <pre>
   rewrite &lt;- (associativity r (-q) (q+q)).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 418
-Time: 0.017s">
-<div class="time" style="width: 11.486486486486%"></div>
+Time: 0.014s">
+<div class="time" style="width: 10.071942446043%"></div>
 <pre>
   rewrite (associativity (-q) q q).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 419
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
   rewrite (plus_negate_l q).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 420
-Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
   rewrite (plus_0_l q).</pre>
 </div>
@@ -3134,14 +3134,14 @@ Time: 0s">
 <div class="code" title="File: rationals.v
 Line: 422
 Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+<div class="time" style="width: 1.4388489208633%"></div>
 <pre>
 Qed.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 423
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
 
 Lemma path_avg_split_diff_r (q r : Q) : r - ((r - q) / 2) = (r + q) / 2.</pre>
@@ -3162,8 +3162,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 427
-Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
   rewrite &lt;- (mult_1_r r).</pre>
 </div>
@@ -3176,92 +3176,92 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 429
-Time: 0.013s">
-<div class="time" style="width: 8.7837837837838%"></div>
+Time: 0.011s">
+<div class="time" style="width: 7.9136690647482%"></div>
 <pre>
   rewrite &lt;- (dec_recip_inverse 2) by solve_propholds.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 430
-Time: 0.011s">
-<div class="time" style="width: 7.4324324324324%"></div>
+Time: 0.01s">
+<div class="time" style="width: 7.1942446043165%"></div>
 <pre>
   rewrite (associativity r 2 (/2)).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 431
-Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
   rewrite negate_mult_distr_l.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 432
 Time: 0.005s">
-<div class="time" style="width: 3.3783783783784%"></div>
+<div class="time" style="width: 3.5971223021583%"></div>
 <pre>
   rewrite &lt;- (distribute_r (r*2) (-(r-q)) (/2)).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 433
-Time: 0.004s">
-<div class="time" style="width: 2.7027027027027%"></div>
+Time: 0.005s">
+<div class="time" style="width: 3.5971223021583%"></div>
 <pre>
   rewrite (distribute_l r 1 1).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 434
 Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+<div class="time" style="width: 1.4388489208633%"></div>
 <pre>
   rewrite (mult_1_r r).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 435
-Time: 0.016s">
-<div class="time" style="width: 10.810810810811%"></div>
+Time: 0.014s">
+<div class="time" style="width: 10.071942446043%"></div>
 <pre>
   rewrite (commutativity (r+r) (-(r-q))).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 436
-Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
   rewrite &lt;- negate_swap_r.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 437
-Time: 0.017s">
-<div class="time" style="width: 11.486486486486%"></div>
+Time: 0.015s">
+<div class="time" style="width: 10.791366906475%"></div>
 <pre>
   rewrite &lt;- (associativity q (-r) (r+r)).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 438
-Time: 0.018s">
-<div class="time" style="width: 12.162162162162%"></div>
+Time: 0.015s">
+<div class="time" style="width: 10.791366906475%"></div>
 <pre>
   rewrite (associativity (-r) r r).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 439
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
   rewrite (plus_negate_l r).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 440
-Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
   rewrite (plus_0_l r).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 441
-Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
   rewrite (plus_comm q r).</pre>
 </div>
@@ -3274,15 +3274,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 443
-Time: 0.003s">
-<div class="time" style="width: 2.027027027027%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.4388489208633%"></div>
 <pre>
 Qed.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 444
-Time: 0.003s">
-<div class="time" style="width: 2.027027027027%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.4388489208633%"></div>
 <pre>
 
 Lemma pos_gt_both : forall a b : Q, forall e, a &lt; ' e -&gt; b &lt; ' e -&gt;
@@ -3297,8 +3297,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 448
-Time: 0.003s">
-<div class="time" style="width: 2.027027027027%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.4388489208633%"></div>
 <pre>
 assert (Haux : forall a b : Q, a &lt;= b -&gt; forall e, a &lt; ' e -&gt; b &lt; ' e -&gt;
   exists d d', a &lt; ' d /\ b &lt; ' d /\ e = d + d').</pre>
@@ -3318,15 +3318,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 451
-Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   pose proof (Q_average_between _ _ (Qlt_join _ 0 _ E2 prop_holds)) as [E3 E4].</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 452
-Time: 0.006s">
-<div class="time" style="width: 4.0540540540541%"></div>
+Time: 0.005s">
+<div class="time" style="width: 3.5971223021583%"></div>
 <pre>
   exists (mkQpos _ (le_lt_trans _ _ _ (join_ub_r _ _) E3)).</pre>
 </div>
@@ -3360,14 +3360,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 457
-Time: 0.005s">
-<div class="time" style="width: 3.3783783783784%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.8776978417266%"></div>
 <pre> apply le_lt_trans with b;trivial.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 457
-Time: 0.005s">
-<div class="time" style="width: 3.3783783783784%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.8776978417266%"></div>
 <pre>
     apply le_lt_trans with (join b 0);trivial.</pre>
 </div>
@@ -3387,8 +3387,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 460
-Time: 0.005s">
-<div class="time" style="width: 3.3783783783784%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.8776978417266%"></div>
 <pre> apply le_lt_trans with (join b 0);trivial.</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -3431,8 +3431,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 462
-Time: 0.148s">
-<div class="time" style="width: 100%"></div>
+Time: 0.126s">
+<div class="time" style="width: 90.647482014388%"></div>
 <pre>
     abstract ring_tac.ring_with_integers (NatPair.Z nat).</pre>
 </div>
@@ -3452,35 +3452,35 @@ intros a b e E1 E2.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 465
-Time: 0.011s">
-<div class="time" style="width: 7.4324324324324%"></div>
+Time: 0.009s">
+<div class="time" style="width: 6.4748201438849%"></div>
 <pre> destruct (total le a b) as [E|E];auto.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 465
 Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+<div class="time" style="width: 1.4388489208633%"></div>
 <pre>
 destruct (Haux _ _ E e) as [d [d' [E3 [E4 E5]]]];trivial.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 466
-Time: 0.005s">
-<div class="time" style="width: 3.3783783783784%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.8776978417266%"></div>
 <pre>
 eauto.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 467
-Time: 0.027s">
-<div class="time" style="width: 18.243243243243%"></div>
+Time: 0.024s">
+<div class="time" style="width: 17.26618705036%"></div>
 <pre>
 Qed.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 468
-Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
 
 Lemma two_fourth_is_one_half@{} : 2/4 =  1/2 :&gt; Q+.</pre>
@@ -3494,8 +3494,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 471
-Time: 0.055s">
-<div class="time" style="width: 37.162162162162%"></div>
+Time: 0.043s">
+<div class="time" style="width: 30.935251798561%"></div>
 <pre>
 assert (Hrw : 4 = 2 * 2 :&gt; Q) by ring_tac.ring_with_nat.</pre>
 </div>
@@ -3521,22 +3521,22 @@ rewrite Hrw;clear Hrw.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 474
-Time: 0.019s">
-<div class="time" style="width: 12.837837837838%"></div>
+Time: 0.016s">
+<div class="time" style="width: 11.510791366906%"></div>
 <pre>
 rewrite dec_recip_distr.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 475
-Time: 0.004s">
-<div class="time" style="width: 2.7027027027027%"></div>
+Time: 0.003s">
+<div class="time" style="width: 2.158273381295%"></div>
 <pre>
 rewrite mult_assoc.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 476
-Time: 0.009s">
-<div class="time" style="width: 6.0810810810811%"></div>
+Time: 0.008s">
+<div class="time" style="width: 5.7553956834532%"></div>
 <pre> rewrite dec_recip_inverse;[|solve_propholds].</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -3567,14 +3567,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 478
-Time: 0.015s">
-<div class="time" style="width: 10.135135135135%"></div>
+Time: 0.012s">
+<div class="time" style="width: 8.6330935251799%"></div>
 <pre>Qed.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 478
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
 
 Lemma Q_triangle_le : forall q r : Q, abs (q + r) &lt;= abs q + abs r.</pre>
@@ -3616,13 +3616,13 @@ Time: 0s">
 <div class="code" title="File: rationals.v
 Line: 484
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre> rewrite negate_plus_distr.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 484
-Time: 0.005s">
-<div class="time" style="width: 3.3783783783784%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.8776978417266%"></div>
 <pre>
   apply plus_le_compat;apply Qabs_le_neg_raw.</pre>
 </div>
@@ -3635,8 +3635,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 486
-Time: 0.005s">
-<div class="time" style="width: 3.3783783783784%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.8776978417266%"></div>
 <pre> apply plus_le_compat;apply Qabs_le_raw.</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -3649,7 +3649,7 @@ Qed.</pre>
 <div class="code" title="File: rationals.v
 Line: 487
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
 
 Lemma Qabs_triangle_alt_aux : forall x y : Q, abs x - abs y &lt;= abs (x - y).</pre>
@@ -3670,15 +3670,15 @@ intros q r.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 491
-Time: 0.007s">
-<div class="time" style="width: 4.7297297297297%"></div>
+Time: 0.006s">
+<div class="time" style="width: 4.3165467625899%"></div>
 <pre>
 apply (order_reflecting (+ (abs r))).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 492
-Time: 0.068s">
-<div class="time" style="width: 45.945945945946%"></div>
+Time: 0.063s">
+<div class="time" style="width: 45.323741007194%"></div>
 <pre>
 assert (Hrw : abs q - abs r + abs r = abs q)
   by ring_tac.ring_with_integers (NatPair.Z nat);
@@ -3686,15 +3686,15 @@ rewrite Hrw;clear Hrw.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 495
-Time: 0.021s">
-<div class="time" style="width: 14.189189189189%"></div>
+Time: 0.018s">
+<div class="time" style="width: 12.94964028777%"></div>
 <pre>
 etransitivity;[|apply Q_triangle_le].</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 496
-Time: 0.068s">
-<div class="time" style="width: 45.945945945946%"></div>
+Time: 0.057s">
+<div class="time" style="width: 41.007194244604%"></div>
 <pre>
 assert (Hrw : q - r + r = q)
   by ring_tac.ring_with_integers (NatPair.Z nat);
@@ -3702,22 +3702,22 @@ rewrite Hrw;clear Hrw.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 499
-Time: 0.005s">
-<div class="time" style="width: 3.3783783783784%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.8776978417266%"></div>
 <pre>
 reflexivity.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 500
-Time: 0.013s">
-<div class="time" style="width: 8.7837837837838%"></div>
+Time: 0.011s">
+<div class="time" style="width: 7.9136690647482%"></div>
 <pre>
 Qed.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 501
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
 
 Lemma Qabs_triangle_alt : forall x y : Q, abs (abs x - abs y) &lt;= abs (x - y).</pre>
@@ -3739,7 +3739,7 @@ intros q r.</pre>
 <div class="code" title="File: rationals.v
 Line: 505
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
 rewrite (Qabs_is_join (abs q - abs r)).</pre>
 </div>
@@ -3759,8 +3759,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 508
-Time: 0.005s">
-<div class="time" style="width: 3.3783783783784%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.8776978417266%"></div>
 <pre> rewrite &lt;-(Qabs_neg (q - r)),&lt;-!negate_swap_r.</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -3786,7 +3786,7 @@ Time: 0s">
 <div class="code" title="File: rationals.v
 Line: 510
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -3821,8 +3821,8 @@ Qed.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 516
-Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
 Lemma Qabs_neg_flip@{} : forall a b : Q, abs (a - b) = abs (b - a).</pre>
@@ -3850,8 +3850,8 @@ rewrite &lt;-Qabs_neg.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 521
-Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre> rewrite &lt;-negate_swap_r.</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -3869,8 +3869,8 @@ Qed.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 522
-Time: 0.017s">
-<div class="time" style="width: 11.486486486486%"></div>
+Time: 0.014s">
+<div class="time" style="width: 10.071942446043%"></div>
 <pre>
 
 Definition pos_of_Q : Q -&gt; Q+
@@ -3905,7 +3905,7 @@ intros.</pre>
 <div class="code" title="File: rationals.v
 Line: 533
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre> change (- (abs q + 1) ≤ q ≤ (abs q + 1)).</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -3923,20 +3923,20 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 534
-Time: 0.005s">
-<div class="time" style="width: 3.3783783783784%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.8776978417266%"></div>
 <pre> apply flip_le_negate.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 534
 Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+<div class="time" style="width: 1.4388489208633%"></div>
 <pre> rewrite involutive.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 534
-Time: 0.02s">
-<div class="time" style="width: 13.513513513514%"></div>
+Time: 0.017s">
+<div class="time" style="width: 12.230215827338%"></div>
 <pre>
   transitivity (abs q).</pre>
 </div>
@@ -3962,14 +3962,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 537
-Time: 0.005s">
-<div class="time" style="width: 3.3783783783784%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.8776978417266%"></div>
 <pre> apply nonneg_plus_le_compat_r.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 537
-Time: 0.004s">
-<div class="time" style="width: 2.7027027027027%"></div>
+Time: 0.003s">
+<div class="time" style="width: 2.158273381295%"></div>
 <pre> solve_propholds.</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -3981,8 +3981,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 538
-Time: 0.022s">
-<div class="time" style="width: 14.864864864865%"></div>
+Time: 0.019s">
+<div class="time" style="width: 13.669064748201%"></div>
 <pre> transitivity (abs q).</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -4007,27 +4007,27 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 540
-Time: 0.005s">
-<div class="time" style="width: 3.3783783783784%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.8776978417266%"></div>
 <pre> apply nonneg_plus_le_compat_r.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 540
-Time: 0.004s">
-<div class="time" style="width: 2.7027027027027%"></div>
+Time: 0.003s">
+<div class="time" style="width: 2.158273381295%"></div>
 <pre> solve_propholds.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 540
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
 Qed.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 541
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
 
 Lemma Qabs_mult@{} : forall a b : Q, abs (a * b) = abs a * abs b.</pre>
@@ -4048,8 +4048,8 @@ intros a b.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 545
-Time: 0.012s">
-<div class="time" style="width: 8.1081081081081%"></div>
+Time: 0.01s">
+<div class="time" style="width: 7.1942446043165%"></div>
 <pre>
 destruct (total_abs_either a) as [Ea|Ea];destruct Ea as [Ea1 Ea2];rewrite Ea2;
 destruct (total_abs_either b) as [Eb|Eb];destruct Eb as [Eb1 Eb2];rewrite Eb2.</pre>
@@ -4069,8 +4069,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 548
-Time: 0.005s">
-<div class="time" style="width: 3.3783783783784%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.8776978417266%"></div>
 <pre> apply nonneg_mult_compat;trivial.</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -4083,20 +4083,20 @@ Time: 0s">
 <div class="code" title="File: rationals.v
 Line: 549
 Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+<div class="time" style="width: 1.4388489208633%"></div>
 <pre> rewrite &lt;-negate_mult_distr_r.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 549
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
   apply ((abs_sig (a*b)).2).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 550
-Time: 0.007s">
-<div class="time" style="width: 4.7297297297297%"></div>
+Time: 0.006s">
+<div class="time" style="width: 4.3165467625899%"></div>
 <pre> apply nonneg_nonpos_mult;trivial.</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -4109,20 +4109,20 @@ Time: 0s">
 <div class="code" title="File: rationals.v
 Line: 551
 Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+<div class="time" style="width: 1.4388489208633%"></div>
 <pre> rewrite &lt;-negate_mult_distr_l.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 551
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
   apply ((abs_sig (a*b)).2).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 552
-Time: 0.008s">
-<div class="time" style="width: 5.4054054054054%"></div>
+Time: 0.006s">
+<div class="time" style="width: 4.3165467625899%"></div>
 <pre> apply nonpos_nonneg_mult;trivial.</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -4135,7 +4135,7 @@ Time: 0s">
 <div class="code" title="File: rationals.v
 Line: 553
 Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+<div class="time" style="width: 1.4388489208633%"></div>
 <pre> rewrite negate_mult_negate.</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -4146,15 +4146,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 553
-Time: 0.007s">
-<div class="time" style="width: 4.7297297297297%"></div>
+Time: 0.006s">
+<div class="time" style="width: 4.3165467625899%"></div>
 <pre>
   apply nonpos_mult;trivial.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 554
 Time: 0.002s">
-<div class="time" style="width: 1.3513513513514%"></div>
+<div class="time" style="width: 1.4388489208633%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -4175,8 +4175,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 558
-Time: 0.008s">
-<div class="time" style="width: 5.4054054054054%"></div>
+Time: 0.007s">
+<div class="time" style="width: 5.0359712230216%"></div>
 <pre>
 intros a;apply between_nonneg;solve_propholds.</pre>
 </div>
@@ -4253,8 +4253,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 570
-Time: 0.004s">
-<div class="time" style="width: 2.7027027027027%"></div>
+Time: 0.003s">
+<div class="time" style="width: 2.158273381295%"></div>
 <pre>
 intros q r;destruct (le_or_lt q r).</pre>
 </div>
@@ -4286,14 +4286,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 573
-Time: 0.004s">
-<div class="time" style="width: 2.7027027027027%"></div>
+Time: 0.003s">
+<div class="time" style="width: 2.158273381295%"></div>
 <pre> apply (irreflexivity lt q).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 573
 Time: 0.003s">
-<div class="time" style="width: 2.027027027027%"></div>
+<div class="time" style="width: 2.158273381295%"></div>
 <pre>
   apply le_lt_trans with r;trivial.</pre>
 </div>
@@ -4321,8 +4321,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 578
-Time: 0.004s">
-<div class="time" style="width: 2.7027027027027%"></div>
+Time: 0.003s">
+<div class="time" style="width: 2.158273381295%"></div>
 <pre>
 intros q r;destruct (le_or_lt r q).</pre>
 </div>
@@ -4341,14 +4341,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: rationals.v
 Line: 580
-Time: 0.004s">
-<div class="time" style="width: 2.7027027027027%"></div>
+Time: 0.003s">
+<div class="time" style="width: 2.158273381295%"></div>
 <pre> apply (irreflexivity lt q).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 580
 Time: 0.003s">
-<div class="time" style="width: 2.027027027027%"></div>
+<div class="time" style="width: 2.158273381295%"></div>
 <pre>
   apply lt_le_trans with r;trivial.</pre>
 </div>
@@ -4411,8 +4411,8 @@ intros n.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 590
-Time: 0.004s">
-<div class="time" style="width: 2.7027027027027%"></div>
+Time: 0.003s">
+<div class="time" style="width: 2.158273381295%"></div>
 <pre>
 destruct (le_or_lt (enumerator Q n) 0) as [E|E].</pre>
 </div>
@@ -4488,8 +4488,8 @@ intros e;generalize (@center _ (enumerator_issurj Q (' e))).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 601
-Time: 0.007s">
-<div class="time" style="width: 4.7297297297297%"></div>
+Time: 0.006s">
+<div class="time" style="width: 4.3165467625899%"></div>
 <pre> apply (Trunc_ind _).</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -4515,7 +4515,7 @@ unfold Qpos_enumerator.</pre>
 <div class="code" title="File: rationals.v
 Line: 603
 Time: 0.004s">
-<div class="time" style="width: 2.7027027027027%"></div>
+<div class="time" style="width: 2.8776978417266%"></div>
 <pre> destruct (le_or_lt (enumerator Q n) 0) as [E1|E1].</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -4528,13 +4528,13 @@ Time: 0s">
 <div class="code" title="File: rationals.v
 Line: 604
 Time: 0.005s">
-<div class="time" style="width: 3.3783783783784%"></div>
+<div class="time" style="width: 3.5971223021583%"></div>
 <pre> destruct (irreflexivity lt 0).</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 604
-Time: 0.004s">
-<div class="time" style="width: 2.7027027027027%"></div>
+Time: 0.003s">
+<div class="time" style="width: 2.158273381295%"></div>
 <pre> apply lt_le_trans with (enumerator Q n);trivial.</pre>
 </div>
 <div class="code" title="File: rationals.v
@@ -4560,7 +4560,7 @@ Time: 0s">
 <div class="code" title="File: rationals.v
 Line: 606
 Time: 0.001s">
-<div class="time" style="width: 0.67567567567568%"></div>
+<div class="time" style="width: 0.71942446043165%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -4611,8 +4611,8 @@ End enumerable.</pre>
 </div>
 <div class="code" title="File: rationals.v
 Line: 616
-Time: 0.012s">
-<div class="time" style="width: 8.1081081081081%"></div>
+Time: 0.01s">
+<div class="time" style="width: 7.1942446043165%"></div>
 <pre>
 
 End contents.</pre>

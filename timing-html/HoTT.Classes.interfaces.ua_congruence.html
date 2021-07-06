@@ -30,7 +30,7 @@ pre {
 
 <div class="code" title="File: ua_congruence.v
 Line: 1
-Time: 0.116s">
+Time: 0.112s">
 <div class="time" style="width: 100%"></div>
 <pre>Require Import
   HoTT.Basics.Equivalences
@@ -88,7 +88,7 @@ Time: 0s">
 <div class="code" title="File: ua_congruence.v
 Line: 28
 Time: 0.001s">
-<div class="time" style="width: 0.86206896551724%"></div>
+<div class="time" style="width: 0.89285714285714%"></div>
 <pre>Definition OpCompatible {w : SymbolType σ} (f : Operation A w)
     : Type
     := ∀ (a b : FamilyProd A (dom_symboltype w)),
@@ -97,8 +97,8 @@ Time: 0.001s">
 </div>
 <div class="code" title="File: ua_congruence.v
 Line: 32
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.89285714285714%"></div>
 <pre>
 
   Class OpsCompatible : Type
@@ -123,15 +123,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: ua_congruence.v
 Line: 40
-Time: 0.007s">
-<div class="time" style="width: 6.0344827586207%"></div>
+Time: 0.006s">
+<div class="time" style="width: 5.3571428571429%"></div>
 <pre>
     apply istrunc_forall.</pre>
 </div>
 <div class="code" title="File: ua_congruence.v
 Line: 41
 Time: 0.001s">
-<div class="time" style="width: 0.86206896551724%"></div>
+<div class="time" style="width: 0.89285714285714%"></div>
 <pre>
   Qed.</pre>
 </div>
@@ -148,8 +148,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ua_congruence.v
 Line: 47
-Time: 0.002s">
-<div class="time" style="width: 1.7241379310345%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.89285714285714%"></div>
 <pre>Class IsCongruence : Type := BuildIsCongruence
    { is_mere_relation_cong : ∀ (s : Sort σ), is_mere_relation (A s) (Φ s)
    ; equiv_rel_cong : ∀ (s : Sort σ), EquivRel (Φ s)
@@ -206,8 +206,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ua_congruence.v
 Line: 63
-Time: 0.001s">
-<div class="time" style="width: 0.86206896551724%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.7857142857143%"></div>
 <pre>
     apply (equiv_hprop_allpath _)^-1.</pre>
 </div>
@@ -220,8 +220,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: ua_congruence.v
 Line: 65
-Time: 0.032s">
-<div class="time" style="width: 27.586206896552%"></div>
+Time: 0.031s">
+<div class="time" style="width: 27.678571428571%"></div>
 <pre>
     by destruct (path_ishprop C1 D1),
                 (path_ishprop C2 D2),
@@ -237,7 +237,7 @@ Time: 0s">
 <div class="code" title="File: ua_congruence.v
 Line: 69
 Time: 0.003s">
-<div class="time" style="width: 2.5862068965517%"></div>
+<div class="time" style="width: 2.6785714285714%"></div>
 <pre>
 
 End congruence.</pre>
@@ -257,7 +257,7 @@ Time: 0s">
 <div class="code" title="File: ua_congruence.v
 Line: 76
 Time: 0.001s">
-<div class="time" style="width: 0.86206896551724%"></div>
+<div class="time" style="width: 0.89285714285714%"></div>
 <pre>Lemma op_compatible_cons {σ : Signature} {A : Algebra σ}
   (Φ : ∀ s, Relation (A s)) `{!IsCongruence A Φ}
   (s : Sort σ) (w : SymbolType σ) (f : Operation A (s ::: w))
@@ -281,14 +281,14 @@ Time: 0s">
 <div class="code" title="File: ua_congruence.v
 Line: 82
 Time: 0.001s">
-<div class="time" style="width: 0.86206896551724%"></div>
+<div class="time" style="width: 0.89285714285714%"></div>
 <pre>
   exact (P (x,a) (x,b) (EquivRel_Reflexive x, R)).</pre>
 </div>
 <div class="code" title="File: ua_congruence.v
 Line: 83
 Time: 0.001s">
-<div class="time" style="width: 0.86206896551724%"></div>
+<div class="time" style="width: 0.89285714285714%"></div>
 <pre>
 Defined.</pre>
 </div>

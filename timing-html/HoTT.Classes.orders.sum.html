@@ -30,7 +30,7 @@ pre {
 
 <div class="code" title="File: sum.v
 Line: 1
-Time: 0.114s">
+Time: 0.108s">
 <div class="time" style="width: 100%"></div>
 <pre>Require Import
   HoTT.Classes.interfaces.canonical_names
@@ -126,8 +126,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: sum.v
 Line: 19
-Time: 0.001s">
-<div class="time" style="width: 0.87719298245614%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 intros [] [];auto.</pre>
 </div>
@@ -156,8 +156,8 @@ Context `{Alt : Lt@{Set Set} A} `{Blt : Lt@{Set Set} B}.</pre>
 </div>
 <div class="code" title="File: sum.v
 Line: 25
-Time: 0.001s">
-<div class="time" style="width: 0.87719298245614%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
 Global Instance sum_lt : Lt@{Set Set} (A |_| B) | 2
@@ -194,8 +194,8 @@ hnf.</pre>
 </div>
 <div class="code" title="File: sum.v
 Line: 39
-Time: 0.001s">
-<div class="time" style="width: 0.87719298245614%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> intros [a1|b1] [a2|b2];simpl.</pre>
 </div>
 <div class="code" title="File: sum.v
@@ -207,8 +207,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: sum.v
 Line: 40
-Time: 0.004s">
-<div class="time" style="width: 3.5087719298246%"></div>
+Time: 0.003s">
+<div class="time" style="width: 2.7777777777778%"></div>
 <pre> destruct (trichotomy _ a1 a2) as [?|[?|?]];auto.</pre>
 </div>
 <div class="code" title="File: sum.v
@@ -247,20 +247,20 @@ Time: 0s">
 <div class="code" title="File: sum.v
 Line: 43
 Time: 0.003s">
-<div class="time" style="width: 2.6315789473684%"></div>
+<div class="time" style="width: 2.7777777777778%"></div>
 <pre> destruct (trichotomy _ b1 b2) as [?|[?|?]];auto.</pre>
 </div>
 <div class="code" title="File: sum.v
 Line: 43
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.92592592592593%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: sum.v
 Line: 44
-Time: 0.001s">
-<div class="time" style="width: 0.87719298245614%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
 End contents.</pre>

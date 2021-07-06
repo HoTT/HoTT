@@ -30,7 +30,7 @@ pre {
 
 <div class="code" title="File: SpanPushout.v
 Line: 1
-Time: 0.045s">
+Time: 0.047s">
 <div class="time" style="width: 100%"></div>
 <pre>Require Import HoTT.Basics HoTT.Types HoTT.Colimits.Pushout.</pre>
 </div>
@@ -60,7 +60,7 @@ Time: 0s">
 <div class="code" title="File: SpanPushout.v
 Line: 5
 Time: 0.002s">
-<div class="time" style="width: 4.4444444444444%"></div>
+<div class="time" style="width: 4.2553191489362%"></div>
 <pre>
 
   Definition SPushout := @Pushout {xy:X * Y &amp; Q (fst xy) (snd xy)} X Y
@@ -83,7 +83,7 @@ Time: 0s">
 <div class="code" title="File: SpanPushout.v
 Line: 10
 Time: 0.001s">
-<div class="time" style="width: 2.2222222222222%"></div>
+<div class="time" style="width: 2.1276595744681%"></div>
 <pre>
   Definition spglue {x:X} {y:Y} : Q x y -&gt; spushl x = spushr y
     := fun q =&gt; pglue ((x,y) ; q).</pre>
@@ -109,7 +109,7 @@ Time: 0s">
 <div class="code" title="File: SpanPushout.v
 Line: 18
 Time: 0.004s">
-<div class="time" style="width: 8.8888888888889%"></div>
+<div class="time" style="width: 8.5106382978723%"></div>
 <pre>
     srapply (@Pushout_rec {xy:X * Y &amp; Q (fst xy) (snd xy)} X Y
                           (fst o pr1) (snd o pr1) R spushl' spushr').</pre>
@@ -117,7 +117,7 @@ Time: 0.004s">
 <div class="code" title="File: SpanPushout.v
 Line: 20
 Time: 0.001s">
-<div class="time" style="width: 2.2222222222222%"></div>
+<div class="time" style="width: 2.1276595744681%"></div>
 <pre>
     intros [[x y] q]; cbn in *.</pre>
 </div>
@@ -137,8 +137,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: SpanPushout.v
 Line: 23
-Time: 0.001s">
-<div class="time" style="width: 2.2222222222222%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
   Definition SPushout_ind (R : SPushout -&gt; Type)
@@ -157,8 +157,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: SpanPushout.v
 Line: 31
-Time: 0.006s">
-<div class="time" style="width: 13.333333333333%"></div>
+Time: 0.007s">
+<div class="time" style="width: 14.893617021277%"></div>
 <pre>
     srapply (@Pushout_ind {xy:X * Y &amp; Q (fst xy) (snd xy)} X Y
                           (fst o pr1) (snd o pr1) R spushl' spushr').</pre>
@@ -166,28 +166,28 @@ Time: 0.006s">
 <div class="code" title="File: SpanPushout.v
 Line: 33
 Time: 0.009s">
-<div class="time" style="width: 20%"></div>
+<div class="time" style="width: 19.148936170213%"></div>
 <pre>
     intros [[x y] q]; cbn in *.</pre>
 </div>
 <div class="code" title="File: SpanPushout.v
 Line: 34
-Time: 0.001s">
-<div class="time" style="width: 2.2222222222222%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     apply sglue'; assumption.</pre>
 </div>
 <div class="code" title="File: SpanPushout.v
 Line: 35
 Time: 0.002s">
-<div class="time" style="width: 4.4444444444444%"></div>
+<div class="time" style="width: 4.2553191489362%"></div>
 <pre>
   Defined.</pre>
 </div>
 <div class="code" title="File: SpanPushout.v
 Line: 36
 Time: 0.01s">
-<div class="time" style="width: 22.222222222222%"></div>
+<div class="time" style="width: 21.276595744681%"></div>
 <pre>
 
   Definition spushout_ind_beta_sglue (R : SPushout -&gt; Type)
@@ -202,7 +202,7 @@ Time: 0.01s">
 <div class="code" title="File: SpanPushout.v
 Line: 45
 Time: 0.002s">
-<div class="time" style="width: 4.4444444444444%"></div>
+<div class="time" style="width: 4.2553191489362%"></div>
 <pre>
 
 End SpanPushout.</pre>

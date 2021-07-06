@@ -30,21 +30,21 @@ pre {
 
 <div class="code" title="File: FreeGroup.v
 Line: 1
-Time: 0.044s">
-<div class="time" style="width: 38.260869565217%"></div>
+Time: 0.043s">
+<div class="time" style="width: 41.747572815534%"></div>
 <pre>Require Import Basics Types.</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 1
-Time: 0.084s">
-<div class="time" style="width: 73.04347826087%"></div>
+Time: 0.078s">
+<div class="time" style="width: 75.728155339806%"></div>
 <pre>
 Require Import Groups.Group.</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 2
-Time: 0.001s">
-<div class="time" style="width: 0.8695652173913%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.9417475728155%"></div>
 <pre>
 Require Import Truncations.</pre>
 </div>
@@ -57,8 +57,8 @@ Require Import HIT.Coeq.</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 4
-Time: 0.002s">
-<div class="time" style="width: 1.7391304347826%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
 Require Import WildCat.</pre>
 </div>
@@ -129,8 +129,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 21
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>Local Definition change_sign : A + A -&gt; A + A
     := fun x =&gt; match x with
                 | inl a =&gt; inr a
@@ -292,8 +292,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 52
-Time: 0.003s">
-<div class="time" style="width: 2.6086956521739%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.9417475728155%"></div>
 <pre> f_ap; symmetry.</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
@@ -318,8 +318,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 54
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
     induction x; trivial.</pre>
 </div>
@@ -332,8 +332,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 56
-Time: 0.001s">
-<div class="time" style="width: 0.8695652173913%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     simpl; f_ap.</pre>
 </div>
@@ -346,8 +346,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 58
-Time: 0.001s">
-<div class="time" style="width: 0.8695652173913%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -386,7 +386,7 @@ Time: 0s">
 <div class="code" title="File: FreeGroup.v
 Line: 67
 Time: 0.001s">
-<div class="time" style="width: 0.8695652173913%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>Inductive Red : Words -&gt; Type :=
     | red_zero : Red nil
     | red_step (y z : Words) (a : A + A)
@@ -506,7 +506,7 @@ Time: 0s">
 <div class="code" title="File: FreeGroup.v
 Line: 97
 Time: 0.001s">
-<div class="time" style="width: 0.8695652173913%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>Definition freegroup_eta : Words -&gt; freegroup_type := tr o coeq.</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
@@ -584,8 +584,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 110
-Time: 0.027s">
-<div class="time" style="width: 23.478260869565%"></div>
+Time: 0.026s">
+<div class="time" style="width: 25.242718446602%"></div>
 <pre>
     strip_truncations.</pre>
 </div>
@@ -599,8 +599,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 113
-Time: 0.001s">
-<div class="time" style="width: 0.8695652173913%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>revert x; snrapply Coeq_rec.</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
@@ -619,7 +619,7 @@ Time: 0s">
 <div class="code" title="File: FreeGroup.v
 Line: 114
 Time: 0.001s">
-<div class="time" style="width: 0.8695652173913%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
       snrapply Coeq_rec.</pre>
 </div>
@@ -652,7 +652,7 @@ Time: 0s">
 <div class="code" title="File: FreeGroup.v
 Line: 117
 Time: 0.001s">
-<div class="time" style="width: 0.8695652173913%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
       intros [[y a] z]; cbn.</pre>
 </div>
@@ -739,15 +739,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 127
-Time: 0.015s">
-<div class="time" style="width: 13.04347826087%"></div>
+Time: 0.014s">
+<div class="time" style="width: 13.592233009709%"></div>
 <pre>
     intros [[c b] d].</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 128
-Time: 0.051s">
-<div class="time" style="width: 44.347826086957%"></div>
+Time: 0.046s">
+<div class="time" style="width: 44.660194174757%"></div>
 <pre>
     simpl.</pre>
 </div>
@@ -760,8 +760,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 130
-Time: 0.048s">
-<div class="time" style="width: 41.739130434783%"></div>
+Time: 0.042s">
+<div class="time" style="width: 40.776699029126%"></div>
 <pre>
     snrapply Coeq_ind.</pre>
 </div>
@@ -787,8 +787,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 133
-Time: 0.001s">
-<div class="time" style="width: 0.8695652173913%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
       rewrite &lt;- word_concat_w_ww.</pre>
 </div>
@@ -814,15 +814,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 136
-Time: 0.042s">
-<div class="time" style="width: 36.521739130435%"></div>
+Time: 0.036s">
+<div class="time" style="width: 34.95145631068%"></div>
 <pre>
     intro; rapply path_ishprop.</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 137
-Time: 0.021s">
-<div class="time" style="width: 18.260869565217%"></div>
+Time: 0.017s">
+<div class="time" style="width: 16.504854368932%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -991,8 +991,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 163
-Time: 0.002s">
-<div class="time" style="width: 1.7391304347826%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
     f_ap.</pre>
 </div>
@@ -1055,8 +1055,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 173
-Time: 0.002s">
-<div class="time" style="width: 1.7391304347826%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
     cbn; f_ap.</pre>
 </div>
@@ -1261,8 +1261,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 205
-Time: 0.006s">
-<div class="time" style="width: 5.2173913043478%"></div>
+Time: 0.005s">
+<div class="time" style="width: 4.8543689320388%"></div>
 <pre>
     strip_truncations.</pre>
 </div>
@@ -1411,15 +1411,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 223
-Time: 0.002s">
-<div class="time" style="width: 1.7391304347826%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
     refine (concat (word_concat_w_ww _ _ _) _); f_ap.</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 224
 Time: 0.002s">
-<div class="time" style="width: 1.7391304347826%"></div>
+<div class="time" style="width: 1.9417475728155%"></div>
 <pre>
     refine (concat (word_concat_w_ww _ _ _) _); f_ap.</pre>
 </div>
@@ -1440,7 +1440,7 @@ Time: 0s">
 <div class="code" title="File: FreeGroup.v
 Line: 227
 Time: 0.001s">
-<div class="time" style="width: 0.8695652173913%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -1477,36 +1477,36 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 235
-Time: 0.047s">
-<div class="time" style="width: 40.869565217391%"></div>
+Time: 0.041s">
+<div class="time" style="width: 39.805825242718%"></div>
 <pre>
     strip_truncations.</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 236
-Time: 0.006s">
-<div class="time" style="width: 5.2173913043478%"></div>
+Time: 0.005s">
+<div class="time" style="width: 4.8543689320388%"></div>
 <pre>
     revert x; snrapply Coeq_ind; intro x; [ | apply path_ishprop].</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 237
-Time: 0.007s">
-<div class="time" style="width: 6.0869565217391%"></div>
+Time: 0.006s">
+<div class="time" style="width: 5.8252427184466%"></div>
 <pre>
     revert y; snrapply Coeq_ind; intro y; [ | apply path_ishprop].</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 238
 Time: 0.006s">
-<div class="time" style="width: 5.2173913043478%"></div>
+<div class="time" style="width: 5.8252427184466%"></div>
 <pre>
     revert z; snrapply Coeq_ind; intro z; [ | apply path_ishprop].</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 239
 Time: 0.009s">
-<div class="time" style="width: 7.8260869565217%"></div>
+<div class="time" style="width: 8.7378640776699%"></div>
 <pre>
     cbn; apply ap.</pre>
 </div>
@@ -1519,8 +1519,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 241
-Time: 0.053s">
-<div class="time" style="width: 46.086956521739%"></div>
+Time: 0.045s">
+<div class="time" style="width: 43.68932038835%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -1548,15 +1548,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 246
-Time: 0.009s">
-<div class="time" style="width: 7.8260869565217%"></div>
+Time: 0.008s">
+<div class="time" style="width: 7.7669902912621%"></div>
 <pre>
     rapply Trunc_ind.</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 247
 Time: 0.003s">
-<div class="time" style="width: 2.6086956521739%"></div>
+<div class="time" style="width: 2.9126213592233%"></div>
 <pre>
     srapply Coeq_ind; intro x; [ | apply path_ishprop].</pre>
 </div>
@@ -1570,7 +1570,7 @@ Time: 0s">
 <div class="code" title="File: FreeGroup.v
 Line: 249
 Time: 0.002s">
-<div class="time" style="width: 1.7391304347826%"></div>
+<div class="time" style="width: 1.9417475728155%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -1598,22 +1598,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 254
-Time: 0.01s">
-<div class="time" style="width: 8.695652173913%"></div>
+Time: 0.009s">
+<div class="time" style="width: 8.7378640776699%"></div>
 <pre>
     rapply Trunc_ind.</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 255
 Time: 0.003s">
-<div class="time" style="width: 2.6086956521739%"></div>
+<div class="time" style="width: 2.9126213592233%"></div>
 <pre>
     srapply Coeq_ind; intro x; [ | apply path_ishprop].</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 256
-Time: 0.02s">
-<div class="time" style="width: 17.391304347826%"></div>
+Time: 0.018s">
+<div class="time" style="width: 17.47572815534%"></div>
 <pre>
     apply (ap tr), ap.</pre>
 </div>
@@ -1627,7 +1627,7 @@ Time: 0s">
 <div class="code" title="File: FreeGroup.v
 Line: 258
 Time: 0.002s">
-<div class="time" style="width: 1.7391304347826%"></div>
+<div class="time" style="width: 1.9417475728155%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -1655,29 +1655,29 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 263
-Time: 0.009s">
-<div class="time" style="width: 7.8260869565217%"></div>
+Time: 0.008s">
+<div class="time" style="width: 7.7669902912621%"></div>
 <pre>
     rapply Trunc_ind.</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 264
-Time: 0.004s">
-<div class="time" style="width: 3.4782608695652%"></div>
+Time: 0.003s">
+<div class="time" style="width: 2.9126213592233%"></div>
 <pre>
     srapply Coeq_ind; intro x; [ | apply path_ishprop].</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 265
-Time: 0.011s">
-<div class="time" style="width: 9.5652173913043%"></div>
+Time: 0.007s">
+<div class="time" style="width: 6.7961165048544%"></div>
 <pre>
     apply word_concat_Vw.</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 266
-Time: 0.003s">
-<div class="time" style="width: 2.6086956521739%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.9417475728155%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -1705,29 +1705,29 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 271
-Time: 0.01s">
-<div class="time" style="width: 8.695652173913%"></div>
+Time: 0.008s">
+<div class="time" style="width: 7.7669902912621%"></div>
 <pre>
     rapply Trunc_ind.</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 272
 Time: 0.003s">
-<div class="time" style="width: 2.6086956521739%"></div>
+<div class="time" style="width: 2.9126213592233%"></div>
 <pre>
     srapply Coeq_ind; intro x; [ | apply path_ishprop].</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 273
-Time: 0.007s">
-<div class="time" style="width: 6.0869565217391%"></div>
+Time: 0.006s">
+<div class="time" style="width: 5.8252427184466%"></div>
 <pre>
     apply word_concat_wV.</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 274
 Time: 0.002s">
-<div class="time" style="width: 1.7391304347826%"></div>
+<div class="time" style="width: 1.9417475728155%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -1755,15 +1755,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 279
-Time: 0.004s">
-<div class="time" style="width: 3.4782608695652%"></div>
+Time: 0.003s">
+<div class="time" style="width: 2.9126213592233%"></div>
 <pre>
     snrapply (Build_Group freegroup_type); repeat split; exact _.</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 280
-Time: 0.001s">
-<div class="time" style="width: 0.8695652173913%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -1863,15 +1863,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 297
-Time: 0.003s">
-<div class="time" style="width: 2.6086956521739%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.9417475728155%"></div>
 <pre>
     1: symmetry; apply left_identity.</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 298
-Time: 0.017s">
-<div class="time" style="width: 14.782608695652%"></div>
+Time: 0.014s">
+<div class="time" style="width: 13.592233009709%"></div>
 <pre>
     cbn; rewrite &lt;- simple_associativity.</pre>
 </div>
@@ -1885,7 +1885,7 @@ Time: 0s">
 <div class="code" title="File: FreeGroup.v
 Line: 300
 Time: 0.001s">
-<div class="time" style="width: 0.8695652173913%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -1922,14 +1922,14 @@ Time: 0s">
 <div class="code" title="File: FreeGroup.v
 Line: 307
 Time: 0.002s">
-<div class="time" style="width: 1.7391304347826%"></div>
+<div class="time" style="width: 1.9417475728155%"></div>
 <pre>
     refine (concat (words_rec_pp G s _ _) _); f_ap.</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 308
-Time: 0.003s">
-<div class="time" style="width: 2.6086956521739%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.9417475728155%"></div>
 <pre>
     refine (concat _ (right_identity _)).</pre>
 </div>
@@ -1949,15 +1949,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 311
-Time: 0.007s">
-<div class="time" style="width: 6.0869565217391%"></div>
+Time: 0.006s">
+<div class="time" style="width: 5.8252427184466%"></div>
 <pre>
     refine (concat (concat (simple_associativity _ _ _) _) (left_identity mon_unit)).</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 312
-Time: 0.005s">
-<div class="time" style="width: 4.3478260869565%"></div>
+Time: 0.004s">
+<div class="time" style="width: 3.8834951456311%"></div>
 <pre>
     destruct a; simpl; f_ap.</pre>
 </div>
@@ -1989,8 +1989,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 315
-Time: 0.002s">
-<div class="time" style="width: 1.7391304347826%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -2033,8 +2033,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 323
-Time: 0.01s">
-<div class="time" style="width: 8.695652173913%"></div>
+Time: 0.008s">
+<div class="time" style="width: 7.7669902912621%"></div>
 <pre> rapply Trunc_rec.</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
@@ -2073,29 +2073,29 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 327
-Time: 0.095s">
-<div class="time" style="width: 82.608695652174%"></div>
+Time: 0.082s">
+<div class="time" style="width: 79.611650485437%"></div>
 <pre>
     intros x y; strip_truncations.</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 328
-Time: 0.016s">
-<div class="time" style="width: 13.913043478261%"></div>
+Time: 0.014s">
+<div class="time" style="width: 13.592233009709%"></div>
 <pre>
     revert x; snrapply Coeq_ind; hnf; intro x; [ | apply path_ishprop ].</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 329
-Time: 0.019s">
-<div class="time" style="width: 16.521739130435%"></div>
+Time: 0.016s">
+<div class="time" style="width: 15.533980582524%"></div>
 <pre>
     revert y; snrapply Coeq_ind; hnf; intro y; [ | apply path_ishprop ].</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 330
 Time: 0.002s">
-<div class="time" style="width: 1.7391304347826%"></div>
+<div class="time" style="width: 1.9417475728155%"></div>
 <pre>
     simpl.</pre>
 </div>
@@ -2108,8 +2108,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 332
-Time: 0.063s">
-<div class="time" style="width: 54.782608695652%"></div>
+Time: 0.053s">
+<div class="time" style="width: 51.456310679612%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -2146,8 +2146,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 340
-Time: 0.001s">
-<div class="time" style="width: 0.8695652173913%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     snrapply Build_Contr.</pre>
 </div>
@@ -2174,14 +2174,14 @@ Time: 0s">
 <div class="code" title="File: FreeGroup.v
 Line: 343
 Time: 0.001s">
-<div class="time" style="width: 0.8695652173913%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
       intro x; simpl.</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 344
 Time: 0.002s">
-<div class="time" style="width: 1.7391304347826%"></div>
+<div class="time" style="width: 1.9417475728155%"></div>
 <pre>
       apply right_identity.</pre>
 </div>
@@ -2194,14 +2194,14 @@ Time: 0s">
 <div class="code" title="File: FreeGroup.v
 Line: 345
 Time: 0.001s">
-<div class="time" style="width: 0.8695652173913%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
     intros [g h].</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 346
-Time: 0.018s">
-<div class="time" style="width: 15.652173913043%"></div>
+Time: 0.015s">
+<div class="time" style="width: 14.563106796117%"></div>
 <pre>
     nrapply path_sigma_hprop; [ exact _ |].</pre>
 </div>
@@ -2235,15 +2235,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 351
-Time: 0.041s">
-<div class="time" style="width: 35.652173913043%"></div>
+Time: 0.038s">
+<div class="time" style="width: 36.893203883495%"></div>
 <pre>
     strip_truncations; revert x.</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 352
 Time: 0.014s">
-<div class="time" style="width: 12.173913043478%"></div>
+<div class="time" style="width: 13.592233009709%"></div>
 <pre>
     snrapply Coeq_ind; intro x; [|apply path_ishprop].</pre>
 </div>
@@ -2278,14 +2278,14 @@ Time: 0s">
 <div class="code" title="File: FreeGroup.v
 Line: 357
 Time: 0.001s">
-<div class="time" style="width: 0.8695652173913%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
     simpl.</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 358
 Time: 0.006s">
-<div class="time" style="width: 5.2173913043478%"></div>
+<div class="time" style="width: 5.8252427184466%"></div>
 <pre>
     f_ap.</pre>
 </div>
@@ -2312,8 +2312,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 362
-Time: 0.016s">
-<div class="time" style="width: 13.913043478261%"></div>
+Time: 0.018s">
+<div class="time" style="width: 17.47572815534%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -2334,7 +2334,7 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 366
-Time: 0.115s">
+Time: 0.103s">
 <div class="time" style="width: 100%"></div>
 <pre>
 
@@ -2422,8 +2422,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 382
-Time: 0.001s">
-<div class="time" style="width: 0.8695652173913%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   snrapply contr_equiv'.</pre>
 </div>
@@ -2505,8 +2505,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 393
-Time: 0.001s">
-<div class="time" style="width: 0.8695652173913%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   rapply equiv_isfreegroup_rec.</pre>
 </div>
@@ -2543,7 +2543,7 @@ Time: 0s">
 <div class="code" title="File: FreeGroup.v
 Line: 400
 Time: 0.004s">
-<div class="time" style="width: 3.4782608695652%"></div>
+<div class="time" style="width: 3.8834951456311%"></div>
 <pre>
   apply istrunc_forall.</pre>
 </div>
@@ -2578,8 +2578,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 406
-Time: 0.09s">
-<div class="time" style="width: 78.260869565217%"></div>
+Time: 0.077s">
+<div class="time" style="width: 74.757281553398%"></div>
 <pre>
   srapply equiv_iff_hprop.</pre>
 </div>
@@ -2607,7 +2607,7 @@ Time: 0s">
 <div class="code" title="File: FreeGroup.v
 Line: 410
 Time: 0.001s">
-<div class="time" style="width: 0.8695652173913%"></div>
+<div class="time" style="width: 0.97087378640777%"></div>
 <pre>
   snrapply contr_equiv'.</pre>
 </div>
@@ -2654,14 +2654,14 @@ Time: 0s">
 <div class="code" title="File: FreeGroup.v
 Line: 415
 Time: 0.002s">
-<div class="time" style="width: 1.7391304347826%"></div>
+<div class="time" style="width: 1.9417475728155%"></div>
 <pre>
   exact _.</pre>
 </div>
 <div class="code" title="File: FreeGroup.v
 Line: 416
-Time: 0.001s">
-<div class="time" style="width: 0.8695652173913%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 Defined.</pre>
 </div>

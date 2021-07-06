@@ -30,35 +30,35 @@ pre {
 
 <div class="code" title="File: Colimit_Pushout.v
 Line: 1
-Time: 0.028s">
-<div class="time" style="width: 9.6885813148789%"></div>
+Time: 0.027s">
+<div class="time" style="width: 11.111111111111%"></div>
 <pre>Require Import Basics.</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 1
-Time: 0.015s">
-<div class="time" style="width: 5.1903114186851%"></div>
+Time: 0.014s">
+<div class="time" style="width: 5.761316872428%"></div>
 <pre>
 Require Import Types.</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 2
 Time: 0.001s">
-<div class="time" style="width: 0.34602076124567%"></div>
+<div class="time" style="width: 0.41152263374486%"></div>
 <pre>
 Require Import Diagrams.Span.</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 3
 Time: 0.001s">
-<div class="time" style="width: 0.34602076124567%"></div>
+<div class="time" style="width: 0.41152263374486%"></div>
 <pre>
 Require Import Diagrams.Cocone.</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 4
 Time: 0.002s">
-<div class="time" style="width: 0.69204152249135%"></div>
+<div class="time" style="width: 0.82304526748971%"></div>
 <pre>
 Require Import Colimits.Colimit.</pre>
 </div>
@@ -73,7 +73,7 @@ Time: 0s">
 <div class="code" title="File: Colimit_Pushout.v
 Line: 7
 Time: 0.004s">
-<div class="time" style="width: 1.3840830449827%"></div>
+<div class="time" style="width: 1.6460905349794%"></div>
 <pre>Require Colimits.Pushout.</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
@@ -146,7 +146,7 @@ Time: 0s">
 <div class="code" title="File: Colimit_Pushout.v
 Line: 26
 Time: 0.001s">
-<div class="time" style="width: 0.34602076124567%"></div>
+<div class="time" style="width: 0.41152263374486%"></div>
 <pre> intros [|[]]; [ exact (inr' o g) | exact inl' | exact inr' ].</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
@@ -159,7 +159,7 @@ Time: 0s">
 <div class="code" title="File: Colimit_Pushout.v
 Line: 27
 Time: 0.005s">
-<div class="time" style="width: 1.7301038062284%"></div>
+<div class="time" style="width: 2.0576131687243%"></div>
 <pre> intros [] [] []; cbn.</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
@@ -190,14 +190,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 29
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.41152263374486%"></div>
 <pre> reflexivity.</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 29
 Time: 0.003s">
-<div class="time" style="width: 1.038062283737%"></div>
+<div class="time" style="width: 1.2345679012346%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -215,7 +215,7 @@ Time: 0s">
 <div class="code" title="File: Colimit_Pushout.v
 Line: 35
 Time: 0.001s">
-<div class="time" style="width: 0.34602076124567%"></div>
+<div class="time" style="width: 0.41152263374486%"></div>
 <pre>
   Definition por' {f : A -&gt; B} {g : A -&gt; C} {Z} (Co : Cocone (span f g) Z)
     : C -&gt; Z
@@ -223,8 +223,8 @@ Time: 0.001s">
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 38
-Time: 0.003s">
-<div class="time" style="width: 1.038062283737%"></div>
+Time: 0.004s">
+<div class="time" style="width: 1.6460905349794%"></div>
 <pre>
   Definition popp' {f : A -&gt; B} {g : A -&gt; C} {Z} (Co : Cocone (span f g) Z)
     : pol' Co o f == por' Co o g
@@ -272,7 +272,7 @@ Time: 0s">
 <div class="code" title="File: Colimit_Pushout.v
 Line: 50
 Time: 0.003s">
-<div class="time" style="width: 1.038062283737%"></div>
+<div class="time" style="width: 1.2345679012346%"></div>
 <pre>
 
   Definition popp (a : A) : pol (f a) = por (g a)
@@ -291,7 +291,7 @@ Time: 0s">
 <div class="code" title="File: Colimit_Pushout.v
 Line: 57
 Time: 0.001s">
-<div class="time" style="width: 0.34602076124567%"></div>
+<div class="time" style="width: 0.41152263374486%"></div>
 <pre>Definition PO_ind (P : PO f g -&gt; Type) (l' : forall b, P (pol b))
     (r' : forall c, P (por c)) (pp' : forall a, popp a # l' (f a) = r' (g a))
     : forall w, P w.</pre>
@@ -306,7 +306,7 @@ Time: 0s">
 <div class="code" title="File: Colimit_Pushout.v
 Line: 60
 Time: 0.001s">
-<div class="time" style="width: 0.34602076124567%"></div>
+<div class="time" style="width: 0.41152263374486%"></div>
 <pre>
     srapply Colimit_ind.</pre>
 </div>
@@ -319,8 +319,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 62
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.41152263374486%"></div>
 <pre> intros [[]|[]] x; cbn.</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
@@ -332,8 +332,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 63
-Time: 0.001s">
-<div class="time" style="width: 0.34602076124567%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> exact (@colimp _ (span f g) (inl tt) (inr true) tt x # l' (f x)).</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
@@ -371,14 +371,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 66
-Time: 0.018s">
-<div class="time" style="width: 6.2283737024221%"></div>
+Time: 0.016s">
+<div class="time" style="width: 6.5843621399177%"></div>
 <pre> intros [] [] []; cbn.</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 66
 Time: 0.004s">
-<div class="time" style="width: 1.3840830449827%"></div>
+<div class="time" style="width: 1.6460905349794%"></div>
 <pre>
       destruct u, b; cbn.</pre>
 </div>
@@ -412,28 +412,28 @@ Time: 0s">
 <div class="code" title="File: Colimit_Pushout.v
 Line: 70
 Time: 0.001s">
-<div class="time" style="width: 0.34602076124567%"></div>
+<div class="time" style="width: 0.41152263374486%"></div>
 <pre>
       etransitivity; [|apply transport_pp].</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 71
 Time: 0.001s">
-<div class="time" style="width: 0.34602076124567%"></div>
+<div class="time" style="width: 0.41152263374486%"></div>
 <pre>
       symmetry; apply pp'.</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 72
-Time: 0.019s">
-<div class="time" style="width: 6.5743944636678%"></div>
+Time: 0.018s">
+<div class="time" style="width: 7.4074074074074%"></div>
 <pre>
   Defined.</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 73
 Time: 0.002s">
-<div class="time" style="width: 0.69204152249135%"></div>
+<div class="time" style="width: 0.82304526748971%"></div>
 <pre>
 
   Definition PO_ind_beta_pp (P : PO f g -&gt; Type) (l' : forall b, P (pol b))
@@ -457,21 +457,21 @@ Time: 0s">
 <div class="code" title="File: Colimit_Pushout.v
 Line: 79
 Time: 0.003s">
-<div class="time" style="width: 1.038062283737%"></div>
+<div class="time" style="width: 1.2345679012346%"></div>
 <pre>
     etransitivity.</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 80
-Time: 0.003s">
-<div class="time" style="width: 1.038062283737%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.82304526748971%"></div>
 <pre>
     1: eapply apD_pp.</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 81
 Time: 0.001s">
-<div class="time" style="width: 0.34602076124567%"></div>
+<div class="time" style="width: 0.41152263374486%"></div>
 <pre>
     assert (apD (PO_ind P l' r' pp')
       (@colimp _ (span f g) (inl tt) (inr true) tt x) = 1).</pre>
@@ -486,13 +486,13 @@ Time: 0s">
 <div class="code" title="File: Colimit_Pushout.v
 Line: 84
 Time: 0.002s">
-<div class="time" style="width: 0.69204152249135%"></div>
+<div class="time" style="width: 0.82304526748971%"></div>
 <pre> unfold PO_ind.</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 84
-Time: 0.009s">
-<div class="time" style="width: 3.1141868512111%"></div>
+Time: 0.01s">
+<div class="time" style="width: 4.1152263374486%"></div>
 <pre>
       match goal with
       | |- apD (Colimit_ind P ?qq1 ?qq2) _ = _ =&gt;
@@ -507,29 +507,29 @@ Time: 0s">
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 88
-Time: 0.027s">
-<div class="time" style="width: 9.3425605536332%"></div>
+Time: 0.024s">
+<div class="time" style="width: 9.8765432098765%"></div>
 <pre>
     rewrite X; clear X; cbn.</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 89
-Time: 0.019s">
-<div class="time" style="width: 6.5743944636678%"></div>
+Time: 0.017s">
+<div class="time" style="width: 6.9958847736626%"></div>
 <pre>
     rewrite concat_p1, apD_V.</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 90
-Time: 0.003s">
-<div class="time" style="width: 1.038062283737%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.82304526748971%"></div>
 <pre>
     unfold PO_ind.</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 91
-Time: 0.255s">
-<div class="time" style="width: 88.235294117647%"></div>
+Time: 0.222s">
+<div class="time" style="width: 91.358024691358%"></div>
 <pre>
     match goal with
     | |- _ @ moveR_transport_V
@@ -539,8 +539,8 @@ Time: 0.255s">
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 96
-Time: 0.008s">
-<div class="time" style="width: 2.7681660899654%"></div>
+Time: 0.006s">
+<div class="time" style="width: 2.4691358024691%"></div>
 <pre>
     match goal with
     | |- ?pp @ moveR_transport_V P _ _ _ (moveR_transport_p P _ _ _ ?qq)^ = _
@@ -549,8 +549,8 @@ Time: 0.008s">
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 100
-Time: 0.011s">
-<div class="time" style="width: 3.8062283737024%"></div>
+Time: 0.009s">
+<div class="time" style="width: 3.7037037037037%"></div>
 <pre>
     rewrite moveR_transport_p_V, moveR_moveL_transport_p.</pre>
 </div>
@@ -563,21 +563,21 @@ Time: 0s">
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 102
-Time: 0.007s">
-<div class="time" style="width: 2.4221453287197%"></div>
+Time: 0.006s">
+<div class="time" style="width: 2.4691358024691%"></div>
 <pre>
     rewrite inv_pp.</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 103
-Time: 0.139s">
-<div class="time" style="width: 48.096885813149%"></div>
+Time: 0.118s">
+<div class="time" style="width: 48.559670781893%"></div>
 <pre>
     hott_simpl.</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 104
-Time: 0.289s">
+Time: 0.243s">
 <div class="time" style="width: 100%"></div>
 <pre>
   Defined.</pre>
@@ -585,7 +585,7 @@ Time: 0.289s">
 <div class="code" title="File: Colimit_Pushout.v
 Line: 105
 Time: 0.001s">
-<div class="time" style="width: 0.34602076124567%"></div>
+<div class="time" style="width: 0.41152263374486%"></div>
 <pre>
 
   Definition PO_rec (P: Type) (l': B -&gt; P) (r': C -&gt; P)
@@ -595,7 +595,7 @@ Time: 0.001s">
 <div class="code" title="File: Colimit_Pushout.v
 Line: 109
 Time: 0.001s">
-<div class="time" style="width: 0.34602076124567%"></div>
+<div class="time" style="width: 0.41152263374486%"></div>
 <pre>
 
   Definition PO_rec_beta_pp (P: Type) (l': B -&gt; P)
@@ -635,14 +635,14 @@ Time: 0s">
 <div class="code" title="File: Colimit_Pushout.v
 Line: 119
 Time: 0.002s">
-<div class="time" style="width: 0.69204152249135%"></div>
+<div class="time" style="width: 0.82304526748971%"></div>
 <pre>
     unfold popp; cbn in *.</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 120
 Time: 0.001s">
-<div class="time" style="width: 0.34602076124567%"></div>
+<div class="time" style="width: 0.41152263374486%"></div>
 <pre>
     refine (ap_pp _ _ _ @ _ @ concat_p1 _).</pre>
 </div>
@@ -662,15 +662,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 123
-Time: 0.001s">
-<div class="time" style="width: 0.34602076124567%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     exact (ap_V _ _).</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 124
-Time: 0.007s">
-<div class="time" style="width: 2.4221453287197%"></div>
+Time: 0.006s">
+<div class="time" style="width: 2.4691358024691%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -773,7 +773,7 @@ Time: 0s">
 <div class="code" title="File: Colimit_Pushout.v
 Line: 137
 Time: 0.001s">
-<div class="time" style="width: 0.34602076124567%"></div>
+<div class="time" style="width: 0.41152263374486%"></div>
 <pre> srapply PO_ind; cbn.</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
@@ -831,36 +831,36 @@ Time: 0s">
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 142
-Time: 0.004s">
-<div class="time" style="width: 1.3840830449827%"></div>
+Time: 0.003s">
+<div class="time" style="width: 1.2345679012346%"></div>
 <pre>
         rewrite transport_paths_FlFr, ap_idmap.</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 143
-Time: 0.005s">
-<div class="time" style="width: 1.7301038062284%"></div>
+Time: 0.004s">
+<div class="time" style="width: 1.6460905349794%"></div>
 <pre>
         rewrite ap_compose, PO_rec_beta_pp.</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 144
-Time: 0.002s">
-<div class="time" style="width: 0.69204152249135%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.41152263374486%"></div>
 <pre>
         rewrite eisadj.</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 145
-Time: 0.016s">
-<div class="time" style="width: 5.5363321799308%"></div>
+Time: 0.014s">
+<div class="time" style="width: 5.761316872428%"></div>
 <pre>
         destruct (eissect f a); cbn.</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 146
-Time: 0.002s">
-<div class="time" style="width: 0.69204152249135%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.41152263374486%"></div>
 <pre>
         rewrite concat_1p, concat_p1.</pre>
 </div>
@@ -886,15 +886,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 149
-Time: 0.01s">
-<div class="time" style="width: 3.4602076124567%"></div>
+Time: 0.008s">
+<div class="time" style="width: 3.2921810699588%"></div>
 <pre>
   Defined.</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 150
-Time: 0.122s">
-<div class="time" style="width: 42.214532871972%"></div>
+Time: 0.109s">
+<div class="time" style="width: 44.855967078189%"></div>
 <pre>
 
 End PO.</pre>
@@ -950,7 +950,7 @@ Time: 0s">
 <div class="code" title="File: Colimit_Pushout.v
 Line: 163
 Time: 0.001s">
-<div class="time" style="width: 0.34602076124567%"></div>
+<div class="time" style="width: 0.41152263374486%"></div>
 <pre>
     srapply Build_IsColimit.</pre>
 </div>
@@ -1015,8 +1015,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 169
-Time: 0.024s">
-<div class="time" style="width: 8.3044982698962%"></div>
+Time: 0.021s">
+<div class="time" style="width: 8.641975308642%"></div>
 <pre> srapply Build_UniversalCocone.</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
@@ -1100,8 +1100,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 176
-Time: 0.008s">
-<div class="time" style="width: 2.7681660899654%"></div>
+Time: 0.007s">
+<div class="time" style="width: 2.880658436214%"></div>
 <pre>
         srapply path_cocone; cbn.</pre>
 </div>
@@ -1114,8 +1114,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 178
-Time: 0.002s">
-<div class="time" style="width: 0.69204152249135%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.41152263374486%"></div>
 <pre> intros [[]|[]] x; simpl.</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
@@ -1141,8 +1141,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 181
-Time: 0.097s">
-<div class="time" style="width: 33.56401384083%"></div>
+Time: 0.083s">
+<div class="time" style="width: 34.156378600823%"></div>
 <pre> intros [[]|[]] [[]|[]] [] x; simpl.</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
@@ -1162,14 +1162,14 @@ Time: 0s">
 <div class="code" title="File: Colimit_Pushout.v
 Line: 183
 Time: 0.004s">
-<div class="time" style="width: 1.3840830449827%"></div>
+<div class="time" style="width: 1.6460905349794%"></div>
 <pre>
           rewrite Pushout_rec_beta_pglue.</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 184
-Time: 0.052s">
-<div class="time" style="width: 17.993079584775%"></div>
+Time: 0.045s">
+<div class="time" style="width: 18.518518518519%"></div>
 <pre>
           hott_simpl.</pre>
 </div>
@@ -1195,8 +1195,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 187
-Time: 0.003s">
-<div class="time" style="width: 1.038062283737%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.82304526748971%"></div>
 <pre>
         srapply Pushout_ind; cbn.</pre>
 </div>
@@ -1216,15 +1216,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 190
-Time: 0.009s">
-<div class="time" style="width: 3.1141868512111%"></div>
+Time: 0.008s">
+<div class="time" style="width: 3.2921810699588%"></div>
 <pre>
         rewrite transport_paths_FlFr, concat_p1.</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 191
-Time: 0.006s">
-<div class="time" style="width: 2.076124567474%"></div>
+Time: 0.005s">
+<div class="time" style="width: 2.0576131687243%"></div>
 <pre>
         rewrite Pushout_rec_beta_pglue.</pre>
 </div>
@@ -1244,15 +1244,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 194
-Time: 0.009s">
-<div class="time" style="width: 3.1141868512111%"></div>
+Time: 0.008s">
+<div class="time" style="width: 3.2921810699588%"></div>
 <pre>
         by rewrite 2 concat_p1.</pre>
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 195
-Time: 0.112s">
-<div class="time" style="width: 38.754325259516%"></div>
+Time: 0.093s">
+<div class="time" style="width: 38.271604938272%"></div>
 <pre>
   Defined.</pre>
 </div>
@@ -1274,7 +1274,7 @@ Time: 0s">
 <div class="code" title="File: Colimit_Pushout.v
 Line: 199
 Time: 0.001s">
-<div class="time" style="width: 0.34602076124567%"></div>
+<div class="time" style="width: 0.41152263374486%"></div>
 <pre>
     srapply colimit_unicity.</pre>
 </div>
@@ -1301,8 +1301,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Colimit_Pushout.v
 Line: 203
-Time: 0.043s">
-<div class="time" style="width: 14.878892733564%"></div>
+Time: 0.036s">
+<div class="time" style="width: 14.814814814815%"></div>
 <pre>
 
 End is_PO_pushout.</pre>

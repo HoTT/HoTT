@@ -30,8 +30,8 @@ pre {
 
 <div class="code" title="File: Locator.v
 Line: 1
-Time: 0.106s">
-<div class="time" style="width: 33.438485804416%"></div>
+Time: 0.098s">
+<div class="time" style="width: 36.981132075472%"></div>
 <pre>Require Import
         HoTT.Basics
         HoTT.DProp
@@ -44,8 +44,8 @@ Time: 0.106s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 9
-Time: 0.06s">
-<div class="time" style="width: 18.927444794953%"></div>
+Time: 0.057s">
+<div class="time" style="width: 21.509433962264%"></div>
 <pre>
 
 Require Import
@@ -79,8 +79,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 32
-Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>Require Import
         HoTT.Classes.orders.fields
         HoTT.Classes.theory.fields
@@ -111,8 +111,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 40
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
   Context `{Qrats : Rationals Q}.</pre>
 </div>
@@ -147,7 +147,7 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 45
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
   Context `{Forderedfield : OrderedField F}.</pre>
 </div>
@@ -160,22 +160,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 47
-Time: 0.018s">
-<div class="time" style="width: 5.6782334384858%"></div>
+Time: 0.017s">
+<div class="time" style="width: 6.4150943396226%"></div>
 <pre>
   Context {Farchimedean : ArchimedeanProperty Q F}.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 48
 Time: 0.002s">
-<div class="time" style="width: 0.63091482649842%"></div>
+<div class="time" style="width: 0.75471698113208%"></div>
 <pre>
   Context {Fcomplete : IsComplete Q F}.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 49
-Time: 0.009s">
-<div class="time" style="width: 2.8391167192429%"></div>
+Time: 0.008s">
+<div class="time" style="width: 3.0188679245283%"></div>
 <pre>
   Context {Qroundup : RoundUpStrict Q}.</pre>
 </div>
@@ -211,8 +211,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 56
-Time: 0.025s">
-<div class="time" style="width: 7.8864353312303%"></div>
+Time: 0.023s">
+<div class="time" style="width: 8.6792452830189%"></div>
 <pre>
 
   Instance qinc : Cast Q F := rationals_to_field Q F.</pre>
@@ -227,8 +227,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 60
-Time: 0.002s">
-<div class="time" style="width: 0.63091482649842%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>Context (cast_pres_ordering : StrictlyOrderPreserving qinc)
           (qinc_strong_presving : IsSemiRingStrongPreserving qinc).</pre>
 </div>
@@ -258,7 +258,7 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 66
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>Definition locator (x : F) := forall q r : Q, q &lt; r -&gt; (' q &lt; x) + (x &lt; ' r).</pre>
 </div>
 <div class="code" title="File: Locator.v
@@ -272,8 +272,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 69
-Time: 0.005s">
-<div class="time" style="width: 1.5772870662461%"></div>
+Time: 0.004s">
+<div class="time" style="width: 1.5094339622642%"></div>
 <pre>Record locator' (x : F) :=
     { locates_right : forall q r : Q, q &lt; r -&gt; DHProp
     ; locates_right_true : forall q r : Q, forall nu : q &lt; r, locates_right q r nu -&gt; ' q &lt; x
@@ -304,8 +304,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 77
-Time: 0.144s">
-<div class="time" style="width: 45.425867507886%"></div>
+Time: 0.125s">
+<div class="time" style="width: 47.169811320755%"></div>
 <pre>
 
   Definition locates_left {x : F} (l : locator' x) {q r : Q} : q &lt; r -&gt; DHProp :=
@@ -351,7 +351,7 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 87
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
       case (LEM (' q &lt; x)).</pre>
 </div>
@@ -364,8 +364,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 89
-Time: 0.014s">
-<div class="time" style="width: 4.416403785489%"></div>
+Time: 0.01s">
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre> apply _.</pre>
 </div>
 <div class="code" title="File: Locator.v
@@ -403,16 +403,16 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 92
-Time: 0.002s">
-<div class="time" style="width: 0.63091482649842%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
         assert (ltqr' : ' q &lt; ' r)
           by auto.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 94
-Time: 0.011s">
-<div class="time" style="width: 3.4700315457413%"></div>
+Time: 0.008s">
+<div class="time" style="width: 3.0188679245283%"></div>
 <pre>
         exact (nlt_lt_trans notlt ltqr').</pre>
 </div>
@@ -471,7 +471,7 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 105
 Time: 0.004s">
-<div class="time" style="width: 1.2618296529968%"></div>
+<div class="time" style="width: 1.5094339622642%"></div>
 <pre>
       destruct (trichotomy _ q s) as [ltqs|[eqqs|ltsq]].</pre>
 </div>
@@ -522,14 +522,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 109
-Time: 0.01s">
-<div class="time" style="width: 3.1545741324921%"></div>
+Time: 0.008s">
+<div class="time" style="width: 3.0188679245283%"></div>
 <pre> apply inr, (strictly_order_preserving _), (transitivity ltsq ltqr); assumption.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 109
-Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     Qed.</pre>
 </div>
@@ -557,8 +557,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 114
-Time: 0.004s">
-<div class="time" style="width: 1.2618296529968%"></div>
+Time: 0.003s">
+<div class="time" style="width: 1.1320754716981%"></div>
 <pre>
       destruct (trichotomy _ s r) as [ltsr|[eqsr|ltrs]].</pre>
 </div>
@@ -603,14 +603,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 118
-Time: 0.012s">
-<div class="time" style="width: 3.7854889589905%"></div>
+Time: 0.009s">
+<div class="time" style="width: 3.3962264150943%"></div>
 <pre> apply inl, (strictly_order_preserving _), (transitivity ltqr ltrs).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 118
-Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     Qed.</pre>
 </div>
@@ -662,8 +662,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 129
-Time: 0.004s">
-<div class="time" style="width: 1.2618296529968%"></div>
+Time: 0.003s">
+<div class="time" style="width: 1.1320754716981%"></div>
 <pre>
       refine (Build_locator' x (fun q r nu =&gt; Build_DHProp (Build_HProp (is_inl (l q r nu))) _) _ _).</pre>
 </div>
@@ -714,7 +714,7 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 132
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre> destruct (l q r nu) as [ltqx|].</pre>
 </div>
 <div class="code" title="File: Locator.v
@@ -726,8 +726,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 133
-Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> simpl; intros f; destruct (f tt).</pre>
 </div>
 <div class="code" title="File: Locator.v
@@ -774,8 +774,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 139
-Time: 0.005s">
-<div class="time" style="width: 1.5772870662461%"></div>
+Time: 0.004s">
+<div class="time" style="width: 1.5094339622642%"></div>
 <pre>
       destruct (dec (locates_right l' nu)) as [yes|no].</pre>
 </div>
@@ -906,22 +906,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 157
-Time: 0.004s">
-<div class="time" style="width: 1.2618296529968%"></div>
+Time: 0.003s">
+<div class="time" style="width: 1.1320754716981%"></div>
 <pre>
       destruct (l q r nu); auto.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 158
-Time: 0.006s">
-<div class="time" style="width: 1.8927444794953%"></div>
+Time: 0.005s">
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
     Qed.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 159
-Time: 0.043s">
-<div class="time" style="width: 13.564668769716%"></div>
+Time: 0.036s">
+<div class="time" style="width: 13.584905660377%"></div>
 <pre>
 
     Local Definition locsig : _ &lt;~&gt; locator' x := ltac:(issig).</pre>
@@ -944,8 +944,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 165
-Time: 0.005s">
-<div class="time" style="width: 1.5772870662461%"></div>
+Time: 0.004s">
+<div class="time" style="width: 1.5094339622642%"></div>
 <pre>
       enough (p : locsig ^-1 (locator_locator' (locator'_locator l')) = locsig ^-1 l').</pre>
 </div>
@@ -959,7 +959,7 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 167
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre> refine (equiv_inj (locsig ^-1) p).</pre>
 </div>
 <div class="code" title="File: Locator.v
@@ -972,27 +972,27 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 168
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre> unfold locsig; simpl.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 168
-Time: 0.004s">
-<div class="time" style="width: 1.2618296529968%"></div>
+Time: 0.003s">
+<div class="time" style="width: 1.1320754716981%"></div>
 <pre>
         destruct l'; unfold locator'_locator, locator_locator'; simpl.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 169
-Time: 0.14s">
-<div class="time" style="width: 44.16403785489%"></div>
+Time: 0.122s">
+<div class="time" style="width: 46.037735849057%"></div>
 <pre>
         apply path_sigma_hprop; simpl.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 170
 Time: 0.002s">
-<div class="time" style="width: 0.63091482649842%"></div>
+<div class="time" style="width: 0.75471698113208%"></div>
 <pre>
         apply path_forall; intro q;
           apply path_forall; intro r;
@@ -1007,29 +1007,29 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 174
-Time: 0.005s">
-<div class="time" style="width: 1.5772870662461%"></div>
+Time: 0.004s">
+<div class="time" style="width: 1.5094339622642%"></div>
 <pre>
         rewrite (path_dec (locates_right0 q r nu)).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 175
-Time: 0.007s">
-<div class="time" style="width: 2.2082018927445%"></div>
+Time: 0.006s">
+<div class="time" style="width: 2.2641509433962%"></div>
 <pre>
         destruct (dec (locates_right0 q r nu)); auto.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 176
-Time: 0.03s">
-<div class="time" style="width: 9.4637223974763%"></div>
+Time: 0.028s">
+<div class="time" style="width: 10.566037735849%"></div>
 <pre>
     Qed.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 177
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
 
     Definition equiv_locator_locator' : locator x &lt;~&gt; locator' x
@@ -1042,7 +1042,7 @@ Time: 0.001s">
 <div class="code" title="File: Locator.v
 Line: 184
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
 
     Lemma nltqx_locates_left {q r : Q} (l' : locator' x) (ltqr : q &lt; r)
@@ -1079,7 +1079,7 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 191
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
 
     Lemma ltxq_locates_left {q r : Q} (l' : locator' x) (ltqr : q &lt; r)
@@ -1107,8 +1107,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 196
-Time: 0.013s">
-<div class="time" style="width: 4.1009463722397%"></div>
+Time: 0.046s">
+<div class="time" style="width: 17.358490566038%"></div>
 <pre>
       apply lt_flip; assumption.</pre>
 </div>
@@ -1145,7 +1145,7 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 203
 Time: 0.002s">
-<div class="time" style="width: 0.63091482649842%"></div>
+<div class="time" style="width: 0.75471698113208%"></div>
 <pre>
       apply stable.</pre>
 </div>
@@ -1172,8 +1172,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 207
-Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
     Lemma ltrx_locates_right {q r : Q} (l' : locator' x) (ltqr : q &lt; r)
@@ -1201,8 +1201,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 212
-Time: 0.011s">
-<div class="time" style="width: 3.4700315457413%"></div>
+Time: 0.008s">
+<div class="time" style="width: 3.0188679245283%"></div>
 <pre>
       apply lt_flip; assumption.</pre>
 </div>
@@ -1224,7 +1224,7 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 216
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
 
   Local Definition ltQnegQ (q : Q) (eps : Qpos Q) : q - 'eps &lt; q.</pre>
@@ -1238,8 +1238,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 219
-Time: 0.009s">
-<div class="time" style="width: 2.8391167192429%"></div>
+Time: 0.007s">
+<div class="time" style="width: 2.6415094339623%"></div>
 <pre>
     apply (pos_minus_lt_compat_r q ('eps)), eps.</pre>
 </div>
@@ -1275,8 +1275,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 226
-Time: 0.01s">
-<div class="time" style="width: 3.1545741324921%"></div>
+Time: 0.008s">
+<div class="time" style="width: 3.0188679245283%"></div>
 <pre>
     apply (pos_plus_lt_compat_r q ('eps)), eps.</pre>
 </div>
@@ -1312,8 +1312,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 233
-Time: 0.003s">
-<div class="time" style="width: 0.94637223974763%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.75471698113208%"></div>
 <pre>
 
     Local Definition ltN1 (q : Q) : q - 1 &lt; q := ltQnegQ q 1.</pre>
@@ -1344,7 +1344,7 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 240
 Time: 0.002s">
-<div class="time" style="width: 0.63091482649842%"></div>
+<div class="time" style="width: 0.75471698113208%"></div>
 <pre>
       apply _.</pre>
 </div>
@@ -1357,8 +1357,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 242
-Time: 0.041s">
-<div class="time" style="width: 12.933753943218%"></div>
+Time: 0.032s">
+<div class="time" style="width: 12.075471698113%"></div>
 <pre>
 
     Local Definition ltxN1 : x - 1 &lt; x := (fst (pos_minus_lt_compat_r x 1) lt_0_1).</pre>
@@ -1380,8 +1380,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 247
-Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
       assert (hqlt : hexists (fun q =&gt; ' q &lt; x)).</pre>
 </div>
@@ -1394,15 +1394,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 249
-Time: 0.023s">
-<div class="time" style="width: 7.2555205047319%"></div>
+Time: 0.016s">
+<div class="time" style="width: 6.0377358490566%"></div>
 <pre>
         assert (hex := archimedean_property Q F (x-1) x ltxN1).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 250
-Time: 0.003s">
-<div class="time" style="width: 0.94637223974763%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.75471698113208%"></div>
 <pre>
         refine (Trunc_rec _ hex); intros hex'.</pre>
 </div>
@@ -1416,7 +1416,7 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 252
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
         destruct hex' as [q [ltx1q ltqx]]; exists q; assumption.</pre>
 </div>
@@ -1430,7 +1430,7 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 254
 Time: 0.002s">
-<div class="time" style="width: 0.63091482649842%"></div>
+<div class="time" style="width: 0.75471698113208%"></div>
 <pre>
       refine (Trunc_rec _ hqlt); intros hqlt'.</pre>
 </div>
@@ -1471,8 +1471,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 260
-Time: 0.003s">
-<div class="time" style="width: 0.94637223974763%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.75471698113208%"></div>
 <pre>
     Qed.</pre>
 </div>
@@ -1493,8 +1493,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 264
-Time: 0.042s">
-<div class="time" style="width: 13.249211356467%"></div>
+Time: 0.018s">
+<div class="time" style="width: 6.7924528301887%"></div>
 <pre>
       assert (qP_lower : {q : Q | P_lower q})
         by refine (minimal_n_alt_type Q Q_eq P_lower _ P_lower_inhab).</pre>
@@ -1536,22 +1536,22 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 270
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
     Qed.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 271
 Time: 0.002s">
-<div class="time" style="width: 0.63091482649842%"></div>
+<div class="time" style="width: 0.75471698113208%"></div>
 <pre>
 
     Local Definition lt1N (r : Q) : r &lt; r + 1 := ltQposQ r 1.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 273
-Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
     Local Definition P_upper (r : Q) : DHProp := locates_left l (lt1N r).</pre>
@@ -1574,7 +1574,7 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 278
 Time: 0.002s">
-<div class="time" style="width: 0.63091482649842%"></div>
+<div class="time" style="width: 0.75471698113208%"></div>
 <pre>
       apply _.</pre>
 </div>
@@ -1587,8 +1587,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 280
-Time: 0.036s">
-<div class="time" style="width: 11.356466876972%"></div>
+Time: 0.03s">
+<div class="time" style="width: 11.320754716981%"></div>
 <pre>
 
     Local Definition ltx1N : x &lt; x + 1 := (fst (pos_plus_lt_compat_r x 1) lt_0_1).</pre>
@@ -1624,15 +1624,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 287
-Time: 0.022s">
-<div class="time" style="width: 6.9400630914826%"></div>
+Time: 0.018s">
+<div class="time" style="width: 6.7924528301887%"></div>
 <pre>
         assert (hex := archimedean_property Q F x (x+1) ltx1N).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 288
 Time: 0.002s">
-<div class="time" style="width: 0.63091482649842%"></div>
+<div class="time" style="width: 0.75471698113208%"></div>
 <pre>
         refine (Trunc_rec _ hex); intros hex'.</pre>
 </div>
@@ -1646,7 +1646,7 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 290
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
         destruct hex' as [r [ltxr ltrx1]]; exists r; assumption.</pre>
 </div>
@@ -1660,7 +1660,7 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 292
 Time: 0.002s">
-<div class="time" style="width: 0.63091482649842%"></div>
+<div class="time" style="width: 0.75471698113208%"></div>
 <pre>
       refine (Trunc_rec _ hqlt); intros hqlt'.</pre>
 </div>
@@ -1701,8 +1701,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 298
-Time: 0.003s">
-<div class="time" style="width: 0.94637223974763%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.75471698113208%"></div>
 <pre>
     Qed.</pre>
 </div>
@@ -1723,8 +1723,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 302
-Time: 0.014s">
-<div class="time" style="width: 4.416403785489%"></div>
+Time: 0.012s">
+<div class="time" style="width: 4.5283018867925%"></div>
 <pre>
       assert (rP_upper : {r : Q | P_upper r})
         by refine (minimal_n_alt_type Q Q_eq P_upper _ P_upper_inhab).</pre>
@@ -1759,7 +1759,7 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 307
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
       destruct (l r (r + 1) (lt1N r)).</pre>
 </div>
@@ -1778,8 +1778,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 309
-Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> destruct (Pr tt).</pre>
 </div>
 <div class="code" title="File: Locator.v
@@ -1797,15 +1797,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 310
-Time: 0.002s">
-<div class="time" style="width: 0.63091482649842%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
     Qed.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 311
-Time: 0.004s">
-<div class="time" style="width: 1.2618296529968%"></div>
+Time: 0.003s">
+<div class="time" style="width: 1.1320754716981%"></div>
 <pre>
 
     Instance inc_N_Q : Cast nat Q := naturals_to_semiring nat Q.</pre>
@@ -1820,8 +1820,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 315
-Time: 0.002s">
-<div class="time" style="width: 0.63091482649842%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
 
     Lemma tight_bound (epsilon : Qpos Q) : {u : Q | ' u &lt; x &lt; ' (u + ' epsilon)}.</pre>
@@ -1835,8 +1835,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 318
-Time: 0.033s">
-<div class="time" style="width: 10.410094637224%"></div>
+Time: 0.025s">
+<div class="time" style="width: 9.4339622641509%"></div>
 <pre>
       destruct
         lower_bound as [q ltqx]
@@ -1845,8 +1845,8 @@ Time: 0.033s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 322
-Time: 0.026s">
-<div class="time" style="width: 8.2018927444795%"></div>
+Time: 0.015s">
+<div class="time" style="width: 5.6603773584906%"></div>
 <pre>
       assert (lt0 : 0 &lt; 'epsilon / 3).</pre>
 </div>
@@ -1859,8 +1859,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 324
-Time: 0.012s">
-<div class="time" style="width: 3.7854889589905%"></div>
+Time: 0.01s">
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre>
         apply pos_mult.</pre>
 </div>
@@ -1886,8 +1886,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 327
-Time: 0.026s">
-<div class="time" style="width: 8.2018927444795%"></div>
+Time: 0.022s">
+<div class="time" style="width: 8.3018867924528%"></div>
 <pre> apply pos_dec_recip_compat, lt_0_3.</pre>
 </div>
 <div class="code" title="File: Locator.v
@@ -1899,8 +1899,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 328
-Time: 0.008s">
-<div class="time" style="width: 2.5236593059937%"></div>
+Time: 0.007s">
+<div class="time" style="width: 2.6415094339623%"></div>
 <pre>
       assert (lt0' : 0 &lt; 3 / ' epsilon).</pre>
 </div>
@@ -1913,8 +1913,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 330
-Time: 0.013s">
-<div class="time" style="width: 4.1009463722397%"></div>
+Time: 0.011s">
+<div class="time" style="width: 4.1509433962264%"></div>
 <pre>
         apply pos_mult.</pre>
 </div>
@@ -1927,8 +1927,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 332
-Time: 0.021s">
-<div class="time" style="width: 6.6246056782334%"></div>
+Time: 0.018s">
+<div class="time" style="width: 6.7924528301887%"></div>
 <pre> apply lt_0_3.</pre>
 </div>
 <div class="code" title="File: Locator.v
@@ -1940,8 +1940,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 333
-Time: 0.008s">
-<div class="time" style="width: 2.5236593059937%"></div>
+Time: 0.007s">
+<div class="time" style="width: 2.6415094339623%"></div>
 <pre> apply pos_dec_recip_compat, epsilon.</pre>
 </div>
 <div class="code" title="File: Locator.v
@@ -1953,8 +1953,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 334
-Time: 0.032s">
-<div class="time" style="width: 10.094637223975%"></div>
+Time: 0.027s">
+<div class="time" style="width: 10.188679245283%"></div>
 <pre>
       assert (ap30 : (3 : Q) &lt;&gt; 0)
         by apply lt_ne_flip, lt_0_3.</pre>
@@ -1968,8 +1968,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 337
-Time: 0.003s">
-<div class="time" style="width: 0.94637223974763%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.75471698113208%"></div>
 <pre>
       assert (ltn3eps : r &lt; q + ' n * ' epsilon / 3).</pre>
 </div>
@@ -1982,85 +1982,85 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 339
-Time: 0.056s">
-<div class="time" style="width: 17.665615141956%"></div>
+Time: 0.038s">
+<div class="time" style="width: 14.339622641509%"></div>
 <pre>
         rewrite (commutativity q (' n * ' epsilon / 3)).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 340
-Time: 0.011s">
-<div class="time" style="width: 3.4700315457413%"></div>
+Time: 0.008s">
+<div class="time" style="width: 3.0188679245283%"></div>
 <pre>
         apply flip_lt_minus_l.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 341
-Time: 0.01s">
-<div class="time" style="width: 3.1545741324921%"></div>
+Time: 0.008s">
+<div class="time" style="width: 3.0188679245283%"></div>
 <pre>
         apply (pos_mult_reflect_r (3 / ' epsilon) lt0').</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 342
-Time: 0.024s">
-<div class="time" style="width: 7.5709779179811%"></div>
+Time: 0.02s">
+<div class="time" style="width: 7.5471698113208%"></div>
 <pre>
         rewrite (commutativity (r-q) (3 / ' epsilon)).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 343
-Time: 0.029s">
-<div class="time" style="width: 9.1482649842271%"></div>
+Time: 0.025s">
+<div class="time" style="width: 9.4339622641509%"></div>
 <pre>
         rewrite &lt;- (associativity ('n) ('epsilon) (/3)).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 344
-Time: 0.037s">
-<div class="time" style="width: 11.671924290221%"></div>
+Time: 0.036s">
+<div class="time" style="width: 13.584905660377%"></div>
 <pre>
         rewrite &lt;- (associativity ('n) (' epsilon / 3) (3 / ' epsilon)).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 345
-Time: 0.036s">
-<div class="time" style="width: 11.356466876972%"></div>
+Time: 0.03s">
+<div class="time" style="width: 11.320754716981%"></div>
 <pre>
         rewrite &lt;- (associativity ('epsilon) (/3) (3/'epsilon)).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 346
-Time: 0.037s">
-<div class="time" style="width: 11.671924290221%"></div>
+Time: 0.034s">
+<div class="time" style="width: 12.830188679245%"></div>
 <pre>
         rewrite (associativity (/3) 3 (/'epsilon)).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 347
-Time: 0.029s">
-<div class="time" style="width: 9.1482649842271%"></div>
+Time: 0.025s">
+<div class="time" style="width: 9.4339622641509%"></div>
 <pre>
         rewrite (commutativity (/3) 3).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 348
-Time: 0.004s">
-<div class="time" style="width: 1.2618296529968%"></div>
+Time: 0.003s">
+<div class="time" style="width: 1.1320754716981%"></div>
 <pre>
         rewrite (dec_recip_inverse 3 ap30).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 349
-Time: 0.01s">
-<div class="time" style="width: 3.1545741324921%"></div>
+Time: 0.007s">
+<div class="time" style="width: 2.6415094339623%"></div>
 <pre>
         rewrite mult_1_l.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 350
-Time: 0.01s">
-<div class="time" style="width: 3.1545741324921%"></div>
+Time: 0.008s">
+<div class="time" style="width: 3.0188679245283%"></div>
 <pre>
         assert (apepsilon0 : 'epsilon &lt;&gt; 0)
           by apply lt_ne_flip, epsilon.</pre>
@@ -2068,14 +2068,14 @@ Time: 0.01s">
 <div class="code" title="File: Locator.v
 Line: 352
 Time: 0.003s">
-<div class="time" style="width: 0.94637223974763%"></div>
+<div class="time" style="width: 1.1320754716981%"></div>
 <pre>
         rewrite (dec_recip_inverse ('epsilon) apepsilon0).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 353
-Time: 0.01s">
-<div class="time" style="width: 3.1545741324921%"></div>
+Time: 0.007s">
+<div class="time" style="width: 2.6415094339623%"></div>
 <pre>
         rewrite mult_1_r.</pre>
 </div>
@@ -2095,8 +2095,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 356
-Time: 0.005s">
-<div class="time" style="width: 1.5772870662461%"></div>
+Time: 0.004s">
+<div class="time" style="width: 1.5094339622642%"></div>
 <pre>
       set (grid (k : Fin n.+3) := q + (' (' k) - 1)*('epsilon/3) : Q).</pre>
 </div>
@@ -2130,7 +2130,7 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 360
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
         change (' fin_incl k) with (fin_to_nat (fin_incl k));
           rewrite path_nat_fin_incl.</pre>
@@ -2138,15 +2138,15 @@ Time: 0.001s">
 <div class="code" title="File: Locator.v
 Line: 362
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
         change (' fsucc k) with (fin_to_nat (fsucc k));
           rewrite path_nat_fsucc.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 364
-Time: 0.004s">
-<div class="time" style="width: 1.2618296529968%"></div>
+Time: 0.003s">
+<div class="time" style="width: 1.1320754716981%"></div>
 <pre>
         assert (' (S (' k)) = (' (' k) + 1)) as -&gt;.</pre>
 </div>
@@ -2166,15 +2166,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 367
-Time: 0.005s">
-<div class="time" style="width: 1.5772870662461%"></div>
+Time: 0.004s">
+<div class="time" style="width: 1.5094339622642%"></div>
 <pre>
           rewrite (preserves_plus (' k) 1).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 368
 Time: 0.002s">
-<div class="time" style="width: 0.63091482649842%"></div>
+<div class="time" style="width: 0.75471698113208%"></div>
 <pre>
           rewrite preserves_1.</pre>
 </div>
@@ -2194,8 +2194,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 371
-Time: 0.015s">
-<div class="time" style="width: 4.7318611987382%"></div>
+Time: 0.014s">
+<div class="time" style="width: 5.2830188679245%"></div>
 <pre>
         assert (' (' k) + 1 - 1 = ' (' k) - 1 + 1) as -&gt;.</pre>
 </div>
@@ -2208,22 +2208,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 373
-Time: 0.057s">
-<div class="time" style="width: 17.981072555205%"></div>
+Time: 0.049s">
+<div class="time" style="width: 18.490566037736%"></div>
 <pre>
           rewrite &lt;- (associativity _ 1 (-1)).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 374
-Time: 0.051s">
-<div class="time" style="width: 16.08832807571%"></div>
+Time: 0.043s">
+<div class="time" style="width: 16.22641509434%"></div>
 <pre>
           rewrite (commutativity 1 (-1)).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 375
-Time: 0.057s">
-<div class="time" style="width: 17.981072555205%"></div>
+Time: 0.048s">
+<div class="time" style="width: 18.11320754717%"></div>
 <pre>
           rewrite (associativity _ (-1) 1).</pre>
 </div>
@@ -2243,16 +2243,16 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 378
-Time: 0.044s">
-<div class="time" style="width: 13.880126182965%"></div>
+Time: 0.038s">
+<div class="time" style="width: 14.339622641509%"></div>
 <pre>
         assert (lt1 : ' (' k) - 1 &lt; ' (' k) - 1 + 1)
           by apply pos_plus_lt_compat_r, lt_0_1.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 380
-Time: 0.031s">
-<div class="time" style="width: 9.7791798107256%"></div>
+Time: 0.027s">
+<div class="time" style="width: 10.188679245283%"></div>
 <pre>
         assert (lt2 : (' (' k) - 1) * (' epsilon / 3) &lt; (' (' k) - 1 + 1) * (' epsilon / 3)).</pre>
 </div>
@@ -2265,8 +2265,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 382
-Time: 0.058s">
-<div class="time" style="width: 18.296529968454%"></div>
+Time: 0.051s">
+<div class="time" style="width: 19.245283018868%"></div>
 <pre>
           nrefine (pos_mult_lt_r ('epsilon/3) _ (' (' k) - 1) (' (' k) - 1 + 1) _); try apply _.</pre>
 </div>
@@ -2286,8 +2286,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 385
-Time: 0.008s">
-<div class="time" style="width: 2.5236593059937%"></div>
+Time: 0.006s">
+<div class="time" style="width: 2.2641509433962%"></div>
 <pre>
         apply pseudo_srorder_plus.</pre>
 </div>
@@ -2350,35 +2350,35 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 394
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
         rewrite path_nat_fsucc, path_nat_fin_zero.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 395
-Time: 0.004s">
-<div class="time" style="width: 1.2618296529968%"></div>
+Time: 0.003s">
+<div class="time" style="width: 1.1320754716981%"></div>
 <pre>
         rewrite (@preserves_1 nat Q _ _ _ _ _ _ _ _ _ _).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 396
 Time: 0.004s">
-<div class="time" style="width: 1.2618296529968%"></div>
+<div class="time" style="width: 1.5094339622642%"></div>
 <pre>
         rewrite plus_negate_r.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 397
-Time: 0.01s">
-<div class="time" style="width: 3.1545741324921%"></div>
+Time: 0.009s">
+<div class="time" style="width: 3.3962264150943%"></div>
 <pre>
         rewrite mult_0_l.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 398
-Time: 0.013s">
-<div class="time" style="width: 4.1009463722397%"></div>
+Time: 0.011s">
+<div class="time" style="width: 4.1509433962264%"></div>
 <pre>
         rewrite plus_0_r.</pre>
 </div>
@@ -2434,7 +2434,7 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 406
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
         rewrite path_nat_fin_incl, path_nat_fin_last.</pre>
 </div>
@@ -2447,50 +2447,50 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 408
-Time: 0.003s">
-<div class="time" style="width: 0.94637223974763%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.75471698113208%"></div>
 <pre>
         rewrite (preserves_plus n 1).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 409
 Time: 0.002s">
-<div class="time" style="width: 0.63091482649842%"></div>
+<div class="time" style="width: 0.75471698113208%"></div>
 <pre>
         rewrite (@preserves_1 nat Q _ _ _ _ _ _ _ _ _ _).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 410
-Time: 0.067s">
-<div class="time" style="width: 21.135646687697%"></div>
+Time: 0.06s">
+<div class="time" style="width: 22.641509433962%"></div>
 <pre>
         rewrite &lt;- (associativity (' n) 1 (-1)).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 411
-Time: 0.005s">
-<div class="time" style="width: 1.5772870662461%"></div>
+Time: 0.004s">
+<div class="time" style="width: 1.5094339622642%"></div>
 <pre>
         rewrite plus_negate_r.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 412
-Time: 0.011s">
-<div class="time" style="width: 3.4700315457413%"></div>
+Time: 0.009s">
+<div class="time" style="width: 3.3962264150943%"></div>
 <pre>
         rewrite plus_0_r.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 413
-Time: 0.041s">
-<div class="time" style="width: 12.933753943218%"></div>
+Time: 0.035s">
+<div class="time" style="width: 13.207547169811%"></div>
 <pre>
         rewrite (associativity ('n) ('epsilon) (/3)).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 414
-Time: 0.016s">
-<div class="time" style="width: 5.0473186119874%"></div>
+Time: 0.014s">
+<div class="time" style="width: 5.2830188679245%"></div>
 <pre>
         transitivity ('r).</pre>
 </div>
@@ -2517,7 +2517,7 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 417
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre> apply strictly_order_preserving; try trivial.</pre>
 </div>
 <div class="code" title="File: Locator.v
@@ -2530,7 +2530,7 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 418
 Time: 0.002s">
-<div class="time" style="width: 0.63091482649842%"></div>
+<div class="time" style="width: 0.75471698113208%"></div>
 <pre>
       destruct (sperners_lemma_1d P left_true right_false) as [u [Pltux Pltxueps]].</pre>
 </div>
@@ -2605,7 +2605,7 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 427
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
         rewrite path_nat_fin_incl, path_nat_fin_incl.</pre>
 </div>
@@ -2619,7 +2619,7 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 429
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
         rewrite path_nat_fsucc, path_nat_fsucc in ltxbla.</pre>
 </div>
@@ -2633,133 +2633,133 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 431
 Time: 0.003s">
-<div class="time" style="width: 0.94637223974763%"></div>
+<div class="time" style="width: 1.1320754716981%"></div>
 <pre>
         rewrite (preserves_plus (fin_to_nat u + 1) 1) in ltxbla.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 432
-Time: 0.003s">
-<div class="time" style="width: 0.94637223974763%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.75471698113208%"></div>
 <pre>
         rewrite (preserves_plus (fin_to_nat u) 1) in ltxbla.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 433
 Time: 0.002s">
-<div class="time" style="width: 0.63091482649842%"></div>
+<div class="time" style="width: 0.75471698113208%"></div>
 <pre>
         rewrite preserves_1 in ltxbla.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 434
-Time: 0.056s">
-<div class="time" style="width: 17.665615141956%"></div>
+Time: 0.048s">
+<div class="time" style="width: 18.11320754717%"></div>
 <pre>
         rewrite &lt;- (associativity (' fin_to_nat u) 1 1) in ltxbla.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 435
-Time: 0.063s">
-<div class="time" style="width: 19.8738170347%"></div>
+Time: 0.053s">
+<div class="time" style="width: 20%"></div>
 <pre>
         rewrite &lt;- (associativity (' fin_to_nat u) 2 (-1)) in ltxbla.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 436
-Time: 0.053s">
-<div class="time" style="width: 16.719242902208%"></div>
+Time: 0.045s">
+<div class="time" style="width: 16.981132075472%"></div>
 <pre>
         rewrite (commutativity 2 (-1)) in ltxbla.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 437
-Time: 0.059s">
-<div class="time" style="width: 18.611987381703%"></div>
+Time: 0.051s">
+<div class="time" style="width: 19.245283018868%"></div>
 <pre>
         rewrite (associativity (' fin_to_nat u) (-1) 2) in ltxbla.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 438
-Time: 0.01s">
-<div class="time" style="width: 3.1545741324921%"></div>
+Time: 0.008s">
+<div class="time" style="width: 3.0188679245283%"></div>
 <pre>
         rewrite plus_mult_distr_r in ltxbla.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 439
-Time: 0.076s">
-<div class="time" style="width: 23.97476340694%"></div>
+Time: 0.065s">
+<div class="time" style="width: 24.528301886792%"></div>
 <pre>
         rewrite (associativity q ((' fin_to_nat u - 1) * (' epsilon / 3)) (2 * (' epsilon / 3))) in ltxbla.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 440
-Time: 0.012s">
-<div class="time" style="width: 3.7854889589905%"></div>
+Time: 0.011s">
+<div class="time" style="width: 4.1509433962264%"></div>
 <pre>
         refine (transitivity ltxbla _).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 441
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
         apply strictly_order_preserving; try apply _.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 442
-Time: 0.008s">
-<div class="time" style="width: 2.5236593059937%"></div>
+Time: 0.006s">
+<div class="time" style="width: 2.2641509433962%"></div>
 <pre>
         apply pseudo_srorder_plus.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 443
-Time: 0.036s">
-<div class="time" style="width: 11.356466876972%"></div>
+Time: 0.031s">
+<div class="time" style="width: 11.698113207547%"></div>
 <pre>
         rewrite (associativity 2 ('epsilon) (/3)).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 444
-Time: 0.027s">
-<div class="time" style="width: 8.5173501577287%"></div>
+Time: 0.023s">
+<div class="time" style="width: 8.6792452830189%"></div>
 <pre>
         rewrite (commutativity 2 ('epsilon)).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 445
-Time: 0.008s">
-<div class="time" style="width: 2.5236593059937%"></div>
+Time: 0.007s">
+<div class="time" style="width: 2.6415094339623%"></div>
 <pre>
         rewrite &lt;- (mult_1_r ('epsilon)).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 446
-Time: 0.032s">
-<div class="time" style="width: 10.094637223975%"></div>
+Time: 0.028s">
+<div class="time" style="width: 10.566037735849%"></div>
 <pre>
         rewrite &lt;- (associativity ('epsilon) 1 2).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 447
-Time: 0.008s">
-<div class="time" style="width: 2.5236593059937%"></div>
+Time: 0.006s">
+<div class="time" style="width: 2.2641509433962%"></div>
 <pre>
         rewrite (mult_1_l 2).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 448
-Time: 0.037s">
-<div class="time" style="width: 11.671924290221%"></div>
+Time: 0.032s">
+<div class="time" style="width: 12.075471698113%"></div>
 <pre>
         rewrite &lt;- (associativity ('epsilon) 2 (/3)).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 449
-Time: 0.012s">
-<div class="time" style="width: 3.7854889589905%"></div>
+Time: 0.01s">
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre>
         apply pos_mult_lt_l.</pre>
 </div>
@@ -2785,56 +2785,56 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 452
-Time: 0.035s">
-<div class="time" style="width: 11.041009463722%"></div>
+Time: 0.031s">
+<div class="time" style="width: 11.698113207547%"></div>
 <pre> nrefine (pos_mult_reflect_r (3 : Q) lt_0_3 _ _ _); try apply _.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 452
-Time: 0.042s">
-<div class="time" style="width: 13.249211356467%"></div>
+Time: 0.036s">
+<div class="time" style="width: 13.584905660377%"></div>
 <pre>
           rewrite &lt;- (associativity 2 (/3) 3).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 453
-Time: 0.033s">
-<div class="time" style="width: 10.410094637224%"></div>
+Time: 0.028s">
+<div class="time" style="width: 10.566037735849%"></div>
 <pre>
           rewrite (commutativity (/3) 3).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 454
-Time: 0.004s">
-<div class="time" style="width: 1.2618296529968%"></div>
+Time: 0.003s">
+<div class="time" style="width: 1.1320754716981%"></div>
 <pre>
           rewrite (dec_recip_inverse (3 : Q) ap30).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 455
-Time: 0.007s">
-<div class="time" style="width: 2.2082018927445%"></div>
+Time: 0.006s">
+<div class="time" style="width: 2.2641509433962%"></div>
 <pre>
           rewrite (mult_1_r 2).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 456
-Time: 0.009s">
-<div class="time" style="width: 2.8391167192429%"></div>
+Time: 0.008s">
+<div class="time" style="width: 3.0188679245283%"></div>
 <pre>
           rewrite (mult_1_l 3).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 457
-Time: 0.018s">
-<div class="time" style="width: 5.6782334384858%"></div>
+Time: 0.016s">
+<div class="time" style="width: 6.0377358490566%"></div>
 <pre>
           exact lt_2_3.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 458
-Time: 0.027s">
-<div class="time" style="width: 8.5173501577287%"></div>
+Time: 0.025s">
+<div class="time" style="width: 9.4339622641509%"></div>
 <pre>
     Qed.</pre>
 </div>
@@ -2867,8 +2867,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 468
-Time: 0.002s">
-<div class="time" style="width: 0.63091482649842%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
 
     Local Definition P (qeps' : Q * Qpos Q) : Type :=
@@ -2903,15 +2903,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 480
-Time: 0.006s">
-<div class="time" style="width: 1.8927444794953%"></div>
+Time: 0.005s">
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
       apply istrunc_prod.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 481
-Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     Qed.</pre>
 </div>
@@ -2946,7 +2946,7 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 487
-Time: 0.317s">
+Time: 0.265s">
 <div class="time" style="width: 100%"></div>
 <pre>
       apply _.</pre>
@@ -2954,7 +2954,7 @@ Time: 0.317s">
 <div class="code" title="File: Locator.v
 Line: 488
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
     Qed.</pre>
 </div>
@@ -2975,36 +2975,36 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 492
-Time: 0.021s">
-<div class="time" style="width: 6.6246056782334%"></div>
+Time: 0.018s">
+<div class="time" style="width: 6.7924528301887%"></div>
 <pre>
       assert (hs := (archimedean_property Q F x y ltxy)).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 493
-Time: 0.012s">
-<div class="time" style="width: 3.7854889589905%"></div>
+Time: 0.01s">
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre>
       refine (Trunc_ind _ _ hs); intros [s [ltxs ltsy]].</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 494
-Time: 0.027s">
-<div class="time" style="width: 8.5173501577287%"></div>
+Time: 0.023s">
+<div class="time" style="width: 8.6792452830189%"></div>
 <pre>
       assert (ht := (archimedean_property Q F ('s) y ltsy)).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 495
-Time: 0.015s">
-<div class="time" style="width: 4.7318611987382%"></div>
+Time: 0.013s">
+<div class="time" style="width: 4.9056603773585%"></div>
 <pre>
       refine (Trunc_ind _ _ ht); intros [t [ltst' ltty]].</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 496
 Time: 0.002s">
-<div class="time" style="width: 0.63091482649842%"></div>
+<div class="time" style="width: 0.75471698113208%"></div>
 <pre>
       set (q := (t + s) / 2).</pre>
 </div>
@@ -3031,8 +3031,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 500
-Time: 0.057s">
-<div class="time" style="width: 17.981072555205%"></div>
+Time: 0.049s">
+<div class="time" style="width: 18.490566037736%"></div>
 <pre>
         refine (strictly_order_reflecting _ _ _ ltst').</pre>
 </div>
@@ -3045,8 +3045,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 502
-Time: 0.017s">
-<div class="time" style="width: 5.3627760252366%"></div>
+Time: 0.014s">
+<div class="time" style="width: 5.2830188679245%"></div>
 <pre>
       set (epsilon := (Qpos_diff s t ltst) / 2).</pre>
 </div>
@@ -3087,7 +3087,7 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 507
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
         assert (q - ' epsilon = s) as -&gt;.</pre>
 </div>
@@ -3108,28 +3108,28 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 510
 Time: 0.004s">
-<div class="time" style="width: 1.2618296529968%"></div>
+<div class="time" style="width: 1.5094339622642%"></div>
 <pre>
           rewrite &lt;- path_avg_split_diff_l.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 511
-Time: 0.013s">
-<div class="time" style="width: 4.1009463722397%"></div>
+Time: 0.01s">
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre>
           rewrite &lt;- (plus_assoc s ((t-s)/2) (-((t-s)/2))).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 512
-Time: 0.006s">
-<div class="time" style="width: 1.8927444794953%"></div>
+Time: 0.005s">
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
           rewrite plus_negate_r.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 513
-Time: 0.015s">
-<div class="time" style="width: 4.7318611987382%"></div>
+Time: 0.013s">
+<div class="time" style="width: 4.9056603773585%"></div>
 <pre>
           rewrite plus_0_r.</pre>
 </div>
@@ -3170,7 +3170,7 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 518
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
         assert (q + ' epsilon = t) as -&gt;.</pre>
 </div>
@@ -3190,29 +3190,29 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 521
-Time: 0.005s">
-<div class="time" style="width: 1.5772870662461%"></div>
+Time: 0.004s">
+<div class="time" style="width: 1.5094339622642%"></div>
 <pre>
           rewrite &lt;- path_avg_split_diff_r.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 522
-Time: 0.012s">
-<div class="time" style="width: 3.7854889589905%"></div>
+Time: 0.01s">
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre>
           rewrite &lt;- (plus_assoc t (-((t-s)/2)) ((t-s)/2)).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 523
-Time: 0.006s">
-<div class="time" style="width: 1.8927444794953%"></div>
+Time: 0.005s">
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
           rewrite plus_negate_l.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 524
-Time: 0.017s">
-<div class="time" style="width: 5.3627760252366%"></div>
+Time: 0.014s">
+<div class="time" style="width: 5.2830188679245%"></div>
 <pre>
           rewrite plus_0_r.</pre>
 </div>
@@ -3280,8 +3280,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 557
-Time: 0.01s">
-<div class="time" style="width: 3.1545741324921%"></div>
+Time: 0.009s">
+<div class="time" style="width: 3.3962264150943%"></div>
 <pre>Qed.</pre>
 </div>
 <div class="code" title="File: Locator.v
@@ -3389,7 +3389,7 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 569
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
       destruct R as [[q eps] [lleft mright]].</pre>
 </div>
@@ -3429,7 +3429,7 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 573
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
     Qed.</pre>
 </div>
@@ -3482,15 +3482,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 585
-Time: 0.01s">
-<div class="time" style="width: 3.1545741324921%"></div>
+Time: 0.009s">
+<div class="time" style="width: 3.3962264150943%"></div>
 <pre>
       assert (ltnrnq := snd (flip_lt_negate q r) ltqr : -r &lt; -q).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 586
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
       destruct (l _ _ ltnrnq) as [ltnrx|ltxnq].</pre>
 </div>
@@ -3510,13 +3510,13 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 588
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre> apply char_minus_left.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 588
-Time: 0.015s">
-<div class="time" style="width: 4.7318611987382%"></div>
+Time: 0.013s">
+<div class="time" style="width: 4.9056603773585%"></div>
 <pre> rewrite &lt;- preserves_negate.</pre>
 </div>
 <div class="code" title="File: Locator.v
@@ -3541,13 +3541,13 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 589
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre> apply char_minus_right.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 589
-Time: 0.016s">
-<div class="time" style="width: 5.0473186119874%"></div>
+Time: 0.013s">
+<div class="time" style="width: 4.9056603773585%"></div>
 <pre> rewrite &lt;- preserves_negate.</pre>
 </div>
 <div class="code" title="File: Locator.v
@@ -3559,7 +3559,7 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 589
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
     Qed.</pre>
 </div>
@@ -3580,8 +3580,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 593
-Time: 0.005s">
-<div class="time" style="width: 1.5772870662461%"></div>
+Time: 0.004s">
+<div class="time" style="width: 1.5094339622642%"></div>
 <pre>
 
       Local Definition recip_nu := positive_apart_zero x xpos.</pre>
@@ -3604,7 +3604,7 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 598
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
         assert (recippos : 0 &lt; // (x ; recip_nu))
           by apply pos_recip_compat.</pre>
@@ -3618,8 +3618,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 601
-Time: 0.006s">
-<div class="time" style="width: 1.8927444794953%"></div>
+Time: 0.005s">
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre> destruct (trichotomy _ q 0) as [qneg|[qzero|qpos]].</pre>
 </div>
 <div class="code" title="File: Locator.v
@@ -3637,8 +3637,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 602
-Time: 0.013s">
-<div class="time" style="width: 4.1009463722397%"></div>
+Time: 0.01s">
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre> refine (transitivity _ _).</pre>
 </div>
 <div class="code" title="File: Locator.v
@@ -3669,8 +3669,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 604
-Time: 0.004s">
-<div class="time" style="width: 1.2618296529968%"></div>
+Time: 0.003s">
+<div class="time" style="width: 1.1320754716981%"></div>
 <pre> rewrite preserves_0; assumption.</pre>
 </div>
 <div class="code" title="File: Locator.v
@@ -3688,8 +3688,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 605
-Time: 0.004s">
-<div class="time" style="width: 1.2618296529968%"></div>
+Time: 0.003s">
+<div class="time" style="width: 1.1320754716981%"></div>
 <pre> rewrite qzero, preserves_0; assumption.</pre>
 </div>
 <div class="code" title="File: Locator.v
@@ -3701,8 +3701,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 606
-Time: 0.01s">
-<div class="time" style="width: 3.1545741324921%"></div>
+Time: 0.007s">
+<div class="time" style="width: 2.6415094339623%"></div>
 <pre> assert (qap0 : q ≶ 0)
             by apply (pseudo_order_lt_apart_flip _ _ qpos).</pre>
 </div>
@@ -3722,15 +3722,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 609
-Time: 0.009s">
-<div class="time" style="width: 2.8391167192429%"></div>
+Time: 0.007s">
+<div class="time" style="width: 2.6415094339623%"></div>
 <pre>
             refine (pseudo_order_lt_apart_flip _ _ _).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 610
-Time: 0.013s">
-<div class="time" style="width: 4.1009463722397%"></div>
+Time: 0.011s">
+<div class="time" style="width: 4.1509433962264%"></div>
 <pre>
             apply (transitivity qpos ltqr).</pre>
 </div>
@@ -3743,16 +3743,16 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 612
-Time: 0.008s">
-<div class="time" style="width: 2.5236593059937%"></div>
+Time: 0.007s">
+<div class="time" style="width: 2.6415094339623%"></div>
 <pre>
           assert (ltrrrq : / r &lt; / q)
             by (apply flip_lt_dec_recip; assumption).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 614
-Time: 0.002s">
-<div class="time" style="width: 0.63091482649842%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
           destruct (l (/r) (/q) ltrrrq) as [ltrrx|ltxrq].</pre>
 </div>
@@ -3771,8 +3771,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 616
-Time: 0.012s">
-<div class="time" style="width: 3.7854889589905%"></div>
+Time: 0.01s">
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre>
             assert (rpos : 0 &lt; r)
               by (transitivity q; assumption).</pre>
@@ -3780,7 +3780,7 @@ Time: 0.012s">
 <div class="code" title="File: Locator.v
 Line: 618
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
             assert (rpos' : 0 &lt; ' r).</pre>
 </div>
@@ -3793,8 +3793,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 620
-Time: 0.003s">
-<div class="time" style="width: 0.94637223974763%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.75471698113208%"></div>
 <pre>
               rewrite &lt;- (@preserves_0 Q F _ _ _ _ _ _ _ _ _ _).</pre>
 </div>
@@ -3814,15 +3814,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 623
-Time: 0.022s">
-<div class="time" style="width: 6.9400630914826%"></div>
+Time: 0.016s">
+<div class="time" style="width: 6.0377358490566%"></div>
 <pre>
             rewrite (dec_recip_to_recip r (positive_apart_zero ('r) rpos')) in ltrrx.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 624
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
             assert (ltxrr := flip_lt_recip_l x ('r) rpos' ltrrx).</pre>
 </div>
@@ -3835,8 +3835,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 626
-Time: 0.01s">
-<div class="time" style="width: 3.1545741324921%"></div>
+Time: 0.008s">
+<div class="time" style="width: 3.0188679245283%"></div>
 <pre>
             rewrite
               (recip_irrelevant
@@ -3868,7 +3868,7 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 634
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
             assert (qpos' : 0 &lt; ' q).</pre>
 </div>
@@ -3881,15 +3881,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 636
-Time: 0.004s">
-<div class="time" style="width: 1.2618296529968%"></div>
+Time: 0.003s">
+<div class="time" style="width: 1.1320754716981%"></div>
 <pre>
               rewrite &lt;- (@preserves_0 Q F _ _ _ _ _ _ _ _ _ _).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 637
-Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
               apply strictly_order_preserving; try apply _; assumption.</pre>
 </div>
@@ -3902,22 +3902,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 639
-Time: 0.022s">
-<div class="time" style="width: 6.9400630914826%"></div>
+Time: 0.016s">
+<div class="time" style="width: 6.0377358490566%"></div>
 <pre>
             rewrite (dec_recip_to_recip q (positive_apart_zero ('q) qpos')) in ltxrq.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 640
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
             assert (ltrqx := flip_lt_recip_r ('q) x qpos' xpos ltxrq).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 641
 Time: 0.005s">
-<div class="time" style="width: 1.5772870662461%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
             rewrite (recip_irrelevant x (positive_apart_zero x xpos) recip_nu) in ltrqx.</pre>
 </div>
@@ -3930,8 +3930,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 643
-Time: 0.005s">
-<div class="time" style="width: 1.5772870662461%"></div>
+Time: 0.004s">
+<div class="time" style="width: 1.5094339622642%"></div>
 <pre>
       Qed.</pre>
 </div>
@@ -3970,7 +3970,7 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 652
 Time: 0.005s">
-<div class="time" style="width: 1.5772870662461%"></div>
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
 
     Local Definition recip_neg_nu := negative_apart_zero x xneg.</pre>
@@ -3992,8 +3992,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 657
-Time: 0.016s">
-<div class="time" style="width: 5.0473186119874%"></div>
+Time: 0.013s">
+<div class="time" style="width: 4.9056603773585%"></div>
 <pre>
       assert (negxpos : 0 &lt; (-x))
         by (apply flip_neg_negate; assumption).</pre>
@@ -4008,7 +4008,7 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 660
 Time: 0.003s">
-<div class="time" style="width: 0.94637223974763%"></div>
+<div class="time" style="width: 1.1320754716981%"></div>
 <pre>
       rewrite (recip_negate (-x)) in l'.</pre>
 </div>
@@ -4021,8 +4021,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 662
-Time: 0.01s">
-<div class="time" style="width: 3.1545741324921%"></div>
+Time: 0.008s">
+<div class="time" style="width: 3.0188679245283%"></div>
 <pre>
       rewrite
         (recip_proper_alt
@@ -4053,14 +4053,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 670
-Time: 0.011s">
-<div class="time" style="width: 3.4700315457413%"></div>
+Time: 0.009s">
+<div class="time" style="width: 3.3962264150943%"></div>
 <pre> apply negate_involutive.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 670
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
     Qed.</pre>
 </div>
@@ -4107,8 +4107,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 682
-Time: 0.012s">
-<div class="time" style="width: 3.7854889589905%"></div>
+Time: 0.01s">
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre>
       destruct (fst (apart_iff_total_lt x 0) nu) as [xneg|xpos].</pre>
 </div>
@@ -4127,8 +4127,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 684
-Time: 0.006s">
-<div class="time" style="width: 1.8927444794953%"></div>
+Time: 0.005s">
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
         rewrite (recip_proper_alt x x (negative_apart_zero x xneg) nu) in l';
           try reflexivity; exact l'.</pre>
@@ -4148,8 +4148,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 687
-Time: 0.006s">
-<div class="time" style="width: 1.8927444794953%"></div>
+Time: 0.005s">
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
         rewrite (recip_proper_alt x x (positive_apart_zero x xpos) nu) in l';
           try reflexivity; exact l'.</pre>
@@ -4157,7 +4157,7 @@ Time: 0.006s">
 <div class="code" title="File: Locator.v
 Line: 689
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
     Qed.</pre>
 </div>
@@ -4198,8 +4198,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 701
-Time: 0.004s">
-<div class="time" style="width: 1.2618296529968%"></div>
+Time: 0.003s">
+<div class="time" style="width: 1.1320754716981%"></div>
 <pre>Context (char_plus_left : forall (q : Q) (x y : F),
                 ' q &lt; x + y &lt;-&gt; hexists (fun s : Q =&gt; (' s &lt; x) /\ (' (q - s) &lt; y)))
             (char_plus_right : forall (r : Q) (x y : F),
@@ -4229,15 +4229,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 708
-Time: 0.013s">
-<div class="time" style="width: 4.1009463722397%"></div>
+Time: 0.011s">
+<div class="time" style="width: 4.1509433962264%"></div>
 <pre>
       set (epsilon := (Qpos_diff q r ltqr) / 2).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 709
-Time: 0.011s">
-<div class="time" style="width: 3.4700315457413%"></div>
+Time: 0.009s">
+<div class="time" style="width: 3.3962264150943%"></div>
 <pre>
       assert (q+'epsilon=r-'epsilon)
         by (rewrite path_avg_split_diff_l, path_avg_split_diff_r; reflexivity).</pre>
@@ -4245,21 +4245,21 @@ Time: 0.011s">
 <div class="code" title="File: Locator.v
 Line: 711
 Time: 0.002s">
-<div class="time" style="width: 0.63091482649842%"></div>
+<div class="time" style="width: 0.75471698113208%"></div>
 <pre>
       destruct (tight_bound m epsilon) as [u [ltuy ltyuepsilon]].</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 712
-Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
       set (s := q-u).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 713
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
       assert (qsltx : 'q-'s&lt;y).</pre>
 </div>
@@ -4279,50 +4279,50 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 716
-Time: 0.005s">
-<div class="time" style="width: 1.5772870662461%"></div>
+Time: 0.004s">
+<div class="time" style="width: 1.5094339622642%"></div>
 <pre>
         rewrite (preserves_plus q (-u)).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 717
-Time: 0.014s">
-<div class="time" style="width: 4.416403785489%"></div>
+Time: 0.011s">
+<div class="time" style="width: 4.1509433962264%"></div>
 <pre>
         rewrite negate_plus_distr.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 718
-Time: 0.097s">
-<div class="time" style="width: 30.599369085174%"></div>
+Time: 0.081s">
+<div class="time" style="width: 30.566037735849%"></div>
 <pre>
         rewrite (associativity ('q) (-'q) (-'(-u))).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 719
-Time: 0.013s">
-<div class="time" style="width: 4.1009463722397%"></div>
+Time: 0.011s">
+<div class="time" style="width: 4.1509433962264%"></div>
 <pre>
         rewrite plus_negate_r.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 720
-Time: 0.031s">
-<div class="time" style="width: 9.7791798107256%"></div>
+Time: 0.026s">
+<div class="time" style="width: 9.811320754717%"></div>
 <pre>
         rewrite plus_0_l.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 721
-Time: 0.021s">
-<div class="time" style="width: 6.6246056782334%"></div>
+Time: 0.017s">
+<div class="time" style="width: 6.4150943396226%"></div>
 <pre>
         rewrite (preserves_negate u).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 722
-Time: 0.013s">
-<div class="time" style="width: 4.1009463722397%"></div>
+Time: 0.011s">
+<div class="time" style="width: 4.1509433962264%"></div>
 <pre>
         rewrite negate_involutive.</pre>
 </div>
@@ -4342,8 +4342,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 725
-Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
       assert (sltseps : s&lt;s+' epsilon)
         by apply ltQposQ.</pre>
@@ -4351,7 +4351,7 @@ Time: 0.001s">
 <div class="code" title="File: Locator.v
 Line: 727
 Time: 0.002s">
-<div class="time" style="width: 0.63091482649842%"></div>
+<div class="time" style="width: 0.75471698113208%"></div>
 <pre>
       destruct (l s (s+' epsilon) sltseps) as [ltsx|ltxseps].</pre>
 </div>
@@ -4382,8 +4382,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 729
-Time: 0.028s">
-<div class="time" style="width: 8.8328075709779%"></div>
+Time: 0.022s">
+<div class="time" style="width: 8.3018867924528%"></div>
 <pre>
         rewrite preserves_minus; assumption.</pre>
 </div>
@@ -4415,7 +4415,7 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 731
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
         set (t := s + ' epsilon); exists t.</pre>
 </div>
@@ -4428,8 +4428,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 733
-Time: 0.003s">
-<div class="time" style="width: 0.94637223974763%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.75471698113208%"></div>
 <pre>
         assert (r-(q-u+(r-q)/2)=u+'epsilon) as -&gt;.</pre>
 </div>
@@ -4443,112 +4443,112 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 735
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
           change ((r - q) / 2) with ('epsilon).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 736
-Time: 0.006s">
-<div class="time" style="width: 1.8927444794953%"></div>
+Time: 0.005s">
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
           rewrite negate_plus_distr.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 737
-Time: 0.006s">
-<div class="time" style="width: 1.8927444794953%"></div>
+Time: 0.005s">
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
           rewrite &lt;- negate_swap_l.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 738
-Time: 0.008s">
-<div class="time" style="width: 2.5236593059937%"></div>
+Time: 0.007s">
+<div class="time" style="width: 2.6415094339623%"></div>
 <pre>
           rewrite (plus_comm (-q) u).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 739
-Time: 0.009s">
-<div class="time" style="width: 2.8391167192429%"></div>
+Time: 0.008s">
+<div class="time" style="width: 3.0188679245283%"></div>
 <pre>
           rewrite (plus_assoc r (u-q) (-'epsilon)).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 740
-Time: 0.009s">
-<div class="time" style="width: 2.8391167192429%"></div>
+Time: 0.007s">
+<div class="time" style="width: 2.6415094339623%"></div>
 <pre>
           rewrite (plus_assoc r u (-q)).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 741
-Time: 0.008s">
-<div class="time" style="width: 2.5236593059937%"></div>
+Time: 0.007s">
+<div class="time" style="width: 2.6415094339623%"></div>
 <pre>
           rewrite (plus_comm r u).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 742
-Time: 0.008s">
-<div class="time" style="width: 2.5236593059937%"></div>
+Time: 0.007s">
+<div class="time" style="width: 2.6415094339623%"></div>
 <pre>
           rewrite &lt;- (plus_assoc u r (-q)).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 743
-Time: 0.009s">
-<div class="time" style="width: 2.8391167192429%"></div>
+Time: 0.008s">
+<div class="time" style="width: 3.0188679245283%"></div>
 <pre>
           rewrite &lt;- (plus_assoc u (r-q) (-'epsilon)).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 744
-Time: 0.008s">
-<div class="time" style="width: 2.5236593059937%"></div>
+Time: 0.007s">
+<div class="time" style="width: 2.6415094339623%"></div>
 <pre>
           rewrite (plus_comm r (-q)).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 745
-Time: 0.009s">
-<div class="time" style="width: 2.8391167192429%"></div>
+Time: 0.007s">
+<div class="time" style="width: 2.6415094339623%"></div>
 <pre>
           rewrite &lt;- (plus_assoc (-q) r (-'epsilon)).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 746
-Time: 0.006s">
-<div class="time" style="width: 1.8927444794953%"></div>
+Time: 0.005s">
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
           rewrite path_avg_split_diff_r.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 747
 Time: 0.004s">
-<div class="time" style="width: 1.2618296529968%"></div>
+<div class="time" style="width: 1.5094339622642%"></div>
 <pre>
           rewrite &lt;- path_avg_split_diff_l.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 748
-Time: 0.01s">
-<div class="time" style="width: 3.1545741324921%"></div>
+Time: 0.009s">
+<div class="time" style="width: 3.3962264150943%"></div>
 <pre>
           rewrite (plus_assoc (-q) q ((r-q)/2)).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 749
-Time: 0.008s">
-<div class="time" style="width: 2.5236593059937%"></div>
+Time: 0.006s">
+<div class="time" style="width: 2.2641509433962%"></div>
 <pre>
           rewrite (plus_negate_l q).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 750
-Time: 0.008s">
-<div class="time" style="width: 2.5236593059937%"></div>
+Time: 0.007s">
+<div class="time" style="width: 2.6415094339623%"></div>
 <pre>
           rewrite (plus_0_l _).</pre>
 </div>
@@ -4575,8 +4575,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 754
-Time: 0.007s">
-<div class="time" style="width: 2.2082018927445%"></div>
+Time: 0.006s">
+<div class="time" style="width: 2.2641509433962%"></div>
 <pre>
     Qed.</pre>
 </div>
@@ -4632,8 +4632,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 763
-Time: 0.003s">
-<div class="time" style="width: 0.94637223974763%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.75471698113208%"></div>
 <pre>
       destruct (l q r ltqr, m q r ltqr) as [[ltqx|ltxr] [ltqy|ltyr]].</pre>
 </div>
@@ -4646,8 +4646,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 765
-Time: 0.012s">
-<div class="time" style="width: 3.7854889589905%"></div>
+Time: 0.01s">
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre> apply inl, meet_lt_l; assumption.</pre>
 </div>
 <div class="code" title="File: Locator.v
@@ -4659,8 +4659,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 766
-Time: 0.012s">
-<div class="time" style="width: 3.7854889589905%"></div>
+Time: 0.01s">
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre> apply inr, meet_lt_r_r; assumption.</pre>
 </div>
 <div class="code" title="File: Locator.v
@@ -4672,8 +4672,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 767
-Time: 0.012s">
-<div class="time" style="width: 3.7854889589905%"></div>
+Time: 0.01s">
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre> apply inr, meet_lt_r_l; assumption.</pre>
 </div>
 <div class="code" title="File: Locator.v
@@ -4685,14 +4685,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 768
-Time: 0.013s">
-<div class="time" style="width: 4.1009463722397%"></div>
+Time: 0.01s">
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre> apply inr, meet_lt_r_r; assumption.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 768
-Time: 0.002s">
-<div class="time" style="width: 0.63091482649842%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
     Qed.</pre>
 </div>
@@ -4720,8 +4720,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 773
-Time: 0.003s">
-<div class="time" style="width: 0.94637223974763%"></div>
+Time: 0.002s">
+<div class="time" style="width: 0.75471698113208%"></div>
 <pre>
       destruct (l q r ltqr, m q r ltqr) as [[ltqx|ltxr] [ltqy|ltyr]].</pre>
 </div>
@@ -4734,8 +4734,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 775
-Time: 0.013s">
-<div class="time" style="width: 4.1009463722397%"></div>
+Time: 0.01s">
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre> apply inl, join_lt_l_l; assumption.</pre>
 </div>
 <div class="code" title="File: Locator.v
@@ -4747,8 +4747,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 776
-Time: 0.012s">
-<div class="time" style="width: 3.7854889589905%"></div>
+Time: 0.01s">
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre> apply inl, join_lt_l_l; assumption.</pre>
 </div>
 <div class="code" title="File: Locator.v
@@ -4760,8 +4760,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 777
-Time: 0.012s">
-<div class="time" style="width: 3.7854889589905%"></div>
+Time: 0.01s">
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre> apply inl, join_lt_l_r; assumption.</pre>
 </div>
 <div class="code" title="File: Locator.v
@@ -4773,14 +4773,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 778
-Time: 0.012s">
-<div class="time" style="width: 3.7854889589905%"></div>
+Time: 0.01s">
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre> apply inr, join_lt_r; assumption.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 778
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>
     Qed.</pre>
 </div>
@@ -4811,7 +4811,7 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 785
 Time: 0.002s">
-<div class="time" style="width: 0.63091482649842%"></div>
+<div class="time" style="width: 0.75471698113208%"></div>
 <pre>
     Context {M} {M_ismod : CauchyModulus Q F xs M}.</pre>
 </div>
@@ -4825,7 +4825,7 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 787
 Time: 0.003s">
-<div class="time" style="width: 0.94637223974763%"></div>
+<div class="time" style="width: 1.1320754716981%"></div>
 <pre>
 
     Lemma locator_limit {l} : IsLimit _ _ xs l -&gt; locator l.</pre>
@@ -4853,8 +4853,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 792
-Time: 0.017s">
-<div class="time" style="width: 5.3627760252366%"></div>
+Time: 0.015s">
+<div class="time" style="width: 5.6603773584906%"></div>
 <pre>
       set (epsilon := (Qpos_diff q r ltqr) / 3).</pre>
 </div>
@@ -4869,7 +4869,7 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 795
 Time: 0.001s">
-<div class="time" style="width: 0.31545741324921%"></div>
+<div class="time" style="width: 0.37735849056604%"></div>
 <pre>assert (ltqepsreps : q + ' epsilon &lt; r - ' epsilon).</pre>
 </div>
 <div class="code" title="File: Locator.v
@@ -4881,78 +4881,78 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 796
-Time: 0.019s">
-<div class="time" style="width: 5.993690851735%"></div>
+Time: 0.016s">
+<div class="time" style="width: 6.0377358490566%"></div>
 <pre>
         apply (strictly_order_reflecting (+'epsilon)).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 797
-Time: 0.007s">
-<div class="time" style="width: 2.2082018927445%"></div>
+Time: 0.006s">
+<div class="time" style="width: 2.2641509433962%"></div>
 <pre>
         rewrite &lt;- (plus_assoc r (-'epsilon) ('epsilon)).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 798
-Time: 0.005s">
-<div class="time" style="width: 1.5772870662461%"></div>
+Time: 0.004s">
+<div class="time" style="width: 1.5094339622642%"></div>
 <pre>
         rewrite plus_negate_l.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 799
-Time: 0.014s">
-<div class="time" style="width: 4.416403785489%"></div>
+Time: 0.01s">
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre>
         rewrite plus_0_r.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 800
-Time: 0.007s">
-<div class="time" style="width: 2.2082018927445%"></div>
+Time: 0.005s">
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
         rewrite &lt;- (plus_assoc q ('epsilon) ('epsilon)).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 801
-Time: 0.012s">
-<div class="time" style="width: 3.7854889589905%"></div>
+Time: 0.01s">
+<div class="time" style="width: 3.7735849056604%"></div>
 <pre>
         apply (strictly_order_reflecting ((-q)+)).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 802
-Time: 0.006s">
-<div class="time" style="width: 1.8927444794953%"></div>
+Time: 0.005s">
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
         rewrite (plus_assoc (-q) q _).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 803
-Time: 0.016s">
-<div class="time" style="width: 5.0473186119874%"></div>
+Time: 0.014s">
+<div class="time" style="width: 5.2830188679245%"></div>
 <pre>
         rewrite plus_negate_l, plus_0_l.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 804
-Time: 0.006s">
-<div class="time" style="width: 1.8927444794953%"></div>
+Time: 0.005s">
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
         rewrite (plus_comm (-q) r).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 805
-Time: 0.007s">
-<div class="time" style="width: 2.2082018927445%"></div>
+Time: 0.006s">
+<div class="time" style="width: 2.2641509433962%"></div>
 <pre>
         rewrite &lt;- (mult_1_r ('epsilon)).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 806
-Time: 0.015s">
-<div class="time" style="width: 4.7318611987382%"></div>
+Time: 0.012s">
+<div class="time" style="width: 4.5283018867925%"></div>
 <pre>
         rewrite &lt;- plus_mult_distr_l.</pre>
 </div>
@@ -4965,8 +4965,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 808
-Time: 0.009s">
-<div class="time" style="width: 2.8391167192429%"></div>
+Time: 0.008s">
+<div class="time" style="width: 3.0188679245283%"></div>
 <pre>
         rewrite &lt;- (mult_assoc (r-q) (/3) 2).</pre>
 </div>
@@ -4979,43 +4979,43 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 810
-Time: 0.006s">
-<div class="time" style="width: 1.8927444794953%"></div>
+Time: 0.005s">
+<div class="time" style="width: 1.8867924528302%"></div>
 <pre>
         rewrite &lt;- (mult_1_r (r-q)).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 811
 Time: 0.002s">
-<div class="time" style="width: 0.63091482649842%"></div>
+<div class="time" style="width: 0.75471698113208%"></div>
 <pre>
         assert (rqpos : 0 &lt; r-q) by apply (Qpos_diff q r ltqr).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 812
-Time: 0.043s">
-<div class="time" style="width: 13.564668769716%"></div>
+Time: 0.036s">
+<div class="time" style="width: 13.584905660377%"></div>
 <pre>
         apply (strictly_order_preserving ((r-q)*.)).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 813
-Time: 0.074s">
-<div class="time" style="width: 23.343848580442%"></div>
+Time: 0.059s">
+<div class="time" style="width: 22.264150943396%"></div>
 <pre>
         apply (strictly_order_reflecting (3*.)).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 814
-Time: 0.024s">
-<div class="time" style="width: 7.5709779179811%"></div>
+Time: 0.021s">
+<div class="time" style="width: 7.9245283018868%"></div>
 <pre>
         rewrite (mult_assoc 3 (/3) 2).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 815
-Time: 0.012s">
-<div class="time" style="width: 3.7854889589905%"></div>
+Time: 0.011s">
+<div class="time" style="width: 4.1509433962264%"></div>
 <pre>
         rewrite (dec_recip_inverse 3).</pre>
 </div>
@@ -5028,14 +5028,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 817
-Time: 0.024s">
-<div class="time" style="width: 7.5709779179811%"></div>
+Time: 0.02s">
+<div class="time" style="width: 7.5471698113208%"></div>
 <pre> rewrite mult_1_r, mult_1_l.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 817
-Time: 0.022s">
-<div class="time" style="width: 6.9400630914826%"></div>
+Time: 0.017s">
+<div class="time" style="width: 6.4150943396226%"></div>
 <pre> exact lt_2_3.</pre>
 </div>
 <div class="code" title="File: Locator.v
@@ -5047,8 +5047,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 818
-Time: 0.031s">
-<div class="time" style="width: 9.7791798107256%"></div>
+Time: 0.026s">
+<div class="time" style="width: 9.811320754717%"></div>
 <pre> apply apart_ne, positive_apart_zero, lt_0_3.</pre>
 </div>
 <div class="code" title="File: Locator.v
@@ -5060,8 +5060,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 819
-Time: 0.025s">
-<div class="time" style="width: 7.8864353312303%"></div>
+Time: 0.021s">
+<div class="time" style="width: 7.9245283018868%"></div>
 <pre>
       destruct (ls (M (epsilon / 2)) (q + ' epsilon) (r - ' epsilon) ltqepsreps)
         as [ltqepsxs|ltxsreps].</pre>
@@ -5082,29 +5082,29 @@ Time: 0s">
 <div class="code" title="File: Locator.v
 Line: 822
 Time: 0.004s">
-<div class="time" style="width: 1.2618296529968%"></div>
+<div class="time" style="width: 1.5094339622642%"></div>
 <pre>
         rewrite preserves_plus in ltqepsxs.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 823
-Time: 0.043s">
-<div class="time" style="width: 13.564668769716%"></div>
+Time: 0.036s">
+<div class="time" style="width: 13.584905660377%"></div>
 <pre>
         assert (ltqxseps : ' q &lt; xs (M (epsilon / 2)) - ' (' epsilon))
           by (apply flip_lt_minus_r; assumption).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 825
-Time: 0.017s">
-<div class="time" style="width: 5.3627760252366%"></div>
+Time: 0.015s">
+<div class="time" style="width: 5.6603773584906%"></div>
 <pre>
         refine (transitivity ltqxseps _).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 826
-Time: 0.014s">
-<div class="time" style="width: 4.416403785489%"></div>
+Time: 0.013s">
+<div class="time" style="width: 4.9056603773585%"></div>
 <pre>
         apply (modulus_close_limit _ _ _ _ _).</pre>
 </div>
@@ -5123,44 +5123,44 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 828
-Time: 0.007s">
-<div class="time" style="width: 2.2082018927445%"></div>
+Time: 0.006s">
+<div class="time" style="width: 2.2641509433962%"></div>
 <pre>
         rewrite (preserves_plus r (-'epsilon)) in ltxsreps.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 829
-Time: 0.024s">
-<div class="time" style="width: 7.5709779179811%"></div>
+Time: 0.023s">
+<div class="time" style="width: 8.6792452830189%"></div>
 <pre>
         rewrite (preserves_negate ('epsilon)) in ltxsreps.</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 830
-Time: 0.04s">
-<div class="time" style="width: 12.618296529968%"></div>
+Time: 0.034s">
+<div class="time" style="width: 12.830188679245%"></div>
 <pre>
         assert (ltxsepsr : xs (M (epsilon / 2)) + ' (' epsilon) &lt; ' r)
           by (apply flip_lt_minus_r; assumption).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 832
-Time: 0.02s">
-<div class="time" style="width: 6.3091482649842%"></div>
+Time: 0.019s">
+<div class="time" style="width: 7.1698113207547%"></div>
 <pre>
         refine (transitivity _ ltxsepsr).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 833
-Time: 0.018s">
-<div class="time" style="width: 5.6782334384858%"></div>
+Time: 0.015s">
+<div class="time" style="width: 5.6603773584906%"></div>
 <pre>
         apply (modulus_close_limit _ _ _ _ _).</pre>
 </div>
 <div class="code" title="File: Locator.v
 Line: 834
-Time: 0.012s">
-<div class="time" style="width: 3.7854889589905%"></div>
+Time: 0.011s">
+<div class="time" style="width: 4.1509433962264%"></div>
 <pre>
     Qed.</pre>
 </div>
@@ -5174,8 +5174,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: Locator.v
 Line: 837
-Time: 0.032s">
-<div class="time" style="width: 10.094637223975%"></div>
+Time: 0.029s">
+<div class="time" style="width: 10.943396226415%"></div>
 <pre>
 
 End locator.</pre>

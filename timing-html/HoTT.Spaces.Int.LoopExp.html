@@ -30,14 +30,14 @@ pre {
 
 <div class="code" title="File: LoopExp.v
 Line: 1
-Time: 0.029s">
+Time: 0.026s">
 <div class="time" style="width: 100%"></div>
 <pre>Require Import Basics.</pre>
 </div>
 <div class="code" title="File: LoopExp.v
 Line: 1
 Time: 0.009s">
-<div class="time" style="width: 31.034482758621%"></div>
+<div class="time" style="width: 34.615384615385%"></div>
 <pre>
 Require Import Types.Universe.</pre>
 </div>
@@ -51,7 +51,7 @@ Require Import Spaces.Pos.</pre>
 <div class="code" title="File: LoopExp.v
 Line: 3
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
 Require Import Spaces.Int.Core.</pre>
 </div>
@@ -164,7 +164,7 @@ Defined.</pre>
 <div class="code" title="File: LoopExp.v
 Line: 19
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
 
 Definition loopexp {A : Type} {x : A} (p : x = x) (z : Int) : (x = x)
@@ -200,7 +200,7 @@ Time: 0s">
 <div class="code" title="File: LoopExp.v
 Line: 31
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
   srapply pos_peano_ind; cbn; trivial.</pre>
 </div>
@@ -220,8 +220,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: LoopExp.v
 Line: 34
-Time: 0.002s">
-<div class="time" style="width: 6.8965517241379%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
   rewrite 2 pos_peano_ind_beta_pos_succ, q.</pre>
 </div>
@@ -256,7 +256,7 @@ Time: 0s">
 <div class="code" title="File: LoopExp.v
 Line: 39
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
   srapply pos_peano_ind; cbn; trivial.</pre>
 </div>
@@ -270,14 +270,14 @@ Time: 0s">
 <div class="code" title="File: LoopExp.v
 Line: 41
 Time: 0.002s">
-<div class="time" style="width: 6.8965517241379%"></div>
+<div class="time" style="width: 7.6923076923077%"></div>
 <pre>
   by rewrite pos_peano_ind_beta_pos_succ, concat_p_pp, q.</pre>
 </div>
 <div class="code" title="File: LoopExp.v
 Line: 42
 Time: 0.003s">
-<div class="time" style="width: 10.344827586207%"></div>
+<div class="time" style="width: 11.538461538462%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -307,7 +307,7 @@ Time: 0s">
 <div class="code" title="File: LoopExp.v
 Line: 48
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
   srapply pos_peano_ind; cbn; trivial.</pre>
 </div>
@@ -328,21 +328,21 @@ Time: 0s">
 <div class="code" title="File: LoopExp.v
 Line: 51
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
   rewrite 2 pos_peano_ind_beta_pos_succ.</pre>
 </div>
 <div class="code" title="File: LoopExp.v
 Line: 52
 Time: 0.002s">
-<div class="time" style="width: 6.8965517241379%"></div>
+<div class="time" style="width: 7.6923076923077%"></div>
 <pre>
   by rewrite ap_pp, q.</pre>
 </div>
 <div class="code" title="File: LoopExp.v
 Line: 53
 Time: 0.002s">
-<div class="time" style="width: 6.8965517241379%"></div>
+<div class="time" style="width: 7.6923076923077%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -364,8 +364,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: LoopExp.v
 Line: 58
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
   destruct z as [n| |n]; trivial.</pre>
 </div>
@@ -385,7 +385,7 @@ Time: 0s">
 <div class="code" title="File: LoopExp.v
 Line: 60
 Time: 0.002s">
-<div class="time" style="width: 6.8965517241379%"></div>
+<div class="time" style="width: 7.6923076923077%"></div>
 <pre>
     rewrite loopexp_pos_inv, ap_V, loopexp_pos_inv.</pre>
 </div>
@@ -418,8 +418,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: LoopExp.v
 Line: 64
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -441,7 +441,7 @@ Proof.</pre>
 <div class="code" title="File: LoopExp.v
 Line: 68
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
   rewrite &lt;- int_add_assoc, (int_add_comm 1 b).</pre>
 </div>
@@ -600,14 +600,14 @@ Time: 0s">
 <div class="code" title="File: LoopExp.v
 Line: 95
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
   by rewrite concat_p_pp, aH.</pre>
 </div>
 <div class="code" title="File: LoopExp.v
 Line: 96
-Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -637,7 +637,7 @@ Time: 0s">
 <div class="code" title="File: LoopExp.v
 Line: 102
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
   induction a as [|a aH] using pos_peano_ind;
   induction b as [|b bH] using pos_peano_ind;
@@ -653,7 +653,7 @@ Time: 0s">
 <div class="code" title="File: LoopExp.v
 Line: 106
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre> rewrite pos_add_1_l in *.</pre>
 </div>
 <div class="code" title="File: LoopExp.v
@@ -681,14 +681,14 @@ Time: 0s">
 <div class="code" title="File: LoopExp.v
 Line: 110
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
     rewrite bH; cbn.</pre>
 </div>
 <div class="code" title="File: LoopExp.v
 Line: 111
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
     by rewrite concat_pp_p, loopexp_pos_concat.</pre>
 </div>
@@ -701,8 +701,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: LoopExp.v
 Line: 113
-Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> rewrite pos_add_1_r in *.</pre>
 </div>
 <div class="code" title="File: LoopExp.v
@@ -742,7 +742,7 @@ Time: 0s">
 <div class="code" title="File: LoopExp.v
 Line: 117
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
     rewrite 2 pos_peano_ind_beta_pos_succ.</pre>
 </div>
@@ -757,14 +757,14 @@ Time: 0s">
 <div class="code" title="File: LoopExp.v
 Line: 120
 Time: 0.003s">
-<div class="time" style="width: 10.344827586207%"></div>
+<div class="time" style="width: 11.538461538462%"></div>
 <pre>
     by rewrite aH, 2 concat_pp_p, loopexp_pos_concat.</pre>
 </div>
 <div class="code" title="File: LoopExp.v
 Line: 121
 Time: 0.004s">
-<div class="time" style="width: 13.793103448276%"></div>
+<div class="time" style="width: 15.384615384615%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -801,8 +801,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: LoopExp.v
 Line: 129
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
   induction a as [|a aH] using pos_peano_ind;
   induction b as [|b bH] using pos_peano_ind.</pre>
@@ -850,7 +850,7 @@ Time: 0s">
 <div class="code" title="File: LoopExp.v
 Line: 135
 Time: 0.002s">
-<div class="time" style="width: 6.8965517241379%"></div>
+<div class="time" style="width: 7.6923076923077%"></div>
 <pre>
     by rewrite concat_pp_p, concat_Vp, concat_p1.</pre>
 </div>
@@ -863,8 +863,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: LoopExp.v
 Line: 137
-Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> rewrite int_pos_sub_succ_l; cbn.</pre>
 </div>
 <div class="code" title="File: LoopExp.v
@@ -883,15 +883,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: LoopExp.v
 Line: 139
-Time: 0.002s">
-<div class="time" style="width: 6.8965517241379%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
     rewrite loopexp_pos_concat.</pre>
 </div>
 <div class="code" title="File: LoopExp.v
 Line: 140
 Time: 0.004s">
-<div class="time" style="width: 13.793103448276%"></div>
+<div class="time" style="width: 15.384615384615%"></div>
 <pre>
     by rewrite concat_p_pp, concat_Vp, concat_1p.</pre>
 </div>
@@ -918,7 +918,7 @@ Time: 0s">
 <div class="code" title="File: LoopExp.v
 Line: 143
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
     rewrite 2 pos_peano_ind_beta_pos_succ.</pre>
 </div>
@@ -933,21 +933,21 @@ Time: 0s">
 <div class="code" title="File: LoopExp.v
 Line: 146
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
     rewrite (loopexp_pos_concat p).</pre>
 </div>
 <div class="code" title="File: LoopExp.v
 Line: 147
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
     rewrite concat_pp_p, (concat_p_pp p^ p).</pre>
 </div>
 <div class="code" title="File: LoopExp.v
 Line: 148
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
     rewrite concat_Vp, concat_1p.</pre>
 </div>
@@ -961,7 +961,7 @@ Time: 0s">
 <div class="code" title="File: LoopExp.v
 Line: 150
 Time: 0.005s">
-<div class="time" style="width: 17.241379310345%"></div>
+<div class="time" style="width: 19.230769230769%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -997,8 +997,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: LoopExp.v
 Line: 157
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
   induction a as [|a aH] using pos_peano_ind;
   induction b as [|b bH] using pos_peano_ind.</pre>
@@ -1052,15 +1052,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: LoopExp.v
 Line: 164
-Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     rewrite loopexp_pos_concat.</pre>
 </div>
 <div class="code" title="File: LoopExp.v
 Line: 165
 Time: 0.002s">
-<div class="time" style="width: 6.8965517241379%"></div>
+<div class="time" style="width: 7.6923076923077%"></div>
 <pre>
     by rewrite concat_p_pp, concat_pV, concat_1p.</pre>
 </div>
@@ -1100,8 +1100,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: LoopExp.v
 Line: 170
-Time: 0.002s">
-<div class="time" style="width: 6.8965517241379%"></div>
+Time: 0.001s">
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
     by rewrite concat_pp_p, concat_pV, concat_p1.</pre>
 </div>
@@ -1127,8 +1127,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: LoopExp.v
 Line: 173
-Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     rewrite 2 pos_peano_ind_beta_pos_succ.</pre>
 </div>
@@ -1143,21 +1143,21 @@ Time: 0s">
 <div class="code" title="File: LoopExp.v
 Line: 176
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
     rewrite (loopexp_pos_concat p^).</pre>
 </div>
 <div class="code" title="File: LoopExp.v
 Line: 177
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
     rewrite concat_pp_p, (concat_p_pp p p^).</pre>
 </div>
 <div class="code" title="File: LoopExp.v
 Line: 178
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
     rewrite concat_pV, concat_1p.</pre>
 </div>
@@ -1171,7 +1171,7 @@ Time: 0s">
 <div class="code" title="File: LoopExp.v
 Line: 180
 Time: 0.004s">
-<div class="time" style="width: 13.793103448276%"></div>
+<div class="time" style="width: 15.384615384615%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -1194,7 +1194,7 @@ Proof.</pre>
 <div class="code" title="File: LoopExp.v
 Line: 185
 Time: 0.007s">
-<div class="time" style="width: 24.137931034483%"></div>
+<div class="time" style="width: 26.923076923077%"></div>
 <pre>
   destruct a as [a| |a], b as [b| |b]; trivial;
   try apply loopexp_pos_add; cbn.</pre>
@@ -1202,7 +1202,7 @@ Time: 0.007s">
 <div class="code" title="File: LoopExp.v
 Line: 187
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
   1,6: symmetry; apply concat_p1.</pre>
 </div>
@@ -1230,7 +1230,7 @@ Time: 0s">
 <div class="code" title="File: LoopExp.v
 Line: 191
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -1247,7 +1247,7 @@ Time: 0s">
 <div class="code" title="File: LoopExp.v
 Line: 195
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>Definition equiv_path_loopexp `{Univalence}
            {A : Type} (p : A = A) (z : Int) (a : A)
   : equiv_path A A (loopexp p z) a = int_iter (equiv_path A A p) z a.</pre>
@@ -1269,7 +1269,7 @@ Time: 0s">
 <div class="code" title="File: LoopExp.v
 Line: 199
 Time: 0.002s">
-<div class="time" style="width: 6.8965517241379%"></div>
+<div class="time" style="width: 7.6923076923077%"></div>
 <pre>
   all: induction n as [|n IH]
     using pos_peano_ind; try reflexivity; cbn in *.</pre>
@@ -1277,35 +1277,35 @@ Time: 0.002s">
 <div class="code" title="File: LoopExp.v
 Line: 201
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
   all: unfold loopexp_pos; rewrite pos_peano_ind_beta_pos_succ.</pre>
 </div>
 <div class="code" title="File: LoopExp.v
 Line: 202
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
   all: unfold pos_iter; rewrite pos_peano_ind_beta_pos_succ.</pre>
 </div>
 <div class="code" title="File: LoopExp.v
 Line: 203
 Time: 0.001s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.8461538461538%"></div>
 <pre>
   all: refine (transport_pp _ _ _ _ @ _); cbn; apply ap, IH.</pre>
 </div>
 <div class="code" title="File: LoopExp.v
 Line: 204
-Time: 0.005s">
-<div class="time" style="width: 17.241379310345%"></div>
+Time: 0.004s">
+<div class="time" style="width: 15.384615384615%"></div>
 <pre>
 Defined.</pre>
 </div>
 <div class="code" title="File: LoopExp.v
 Line: 205
 Time: 0.002s">
-<div class="time" style="width: 6.8965517241379%"></div>
+<div class="time" style="width: 7.6923076923077%"></div>
 <pre>
 
 Definition loopexp_path_universe `{Univalence}

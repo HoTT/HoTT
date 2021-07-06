@@ -30,8 +30,8 @@ pre {
 
 <div class="code" title="File: premetric.v
 Line: 1
-Time: 0.147s">
-<div class="time" style="width: 72.413793103448%"></div>
+Time: 0.138s">
+<div class="time" style="width: 78.409090909091%"></div>
 <pre>Require Import
   HoTT.Types.Universe
   HoTT.Basics.Decidable
@@ -87,8 +87,8 @@ Local Set Universe Minimization ToSet.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 28
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 
 
@@ -96,16 +96,16 @@ Class Closeness@{i} (A : Type@{i}) := close : Q+ -&gt; Relation@{i i} A.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 31
-Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 
 Global Instance Q_close@{} : Closeness Q := fun e q r =&gt; - ' e &lt; q - r &lt; ' e.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 33
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 
 Class Separated A `{Closeness A}
@@ -114,7 +114,7 @@ Class Separated A `{Closeness A}
 <div class="code" title="File: premetric.v
 Line: 36
 Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
 
 Class Triangular A `{Closeness A}
@@ -123,8 +123,8 @@ Class Triangular A `{Closeness A}
 </div>
 <div class="code" title="File: premetric.v
 Line: 40
-Time: 0.003s">
-<div class="time" style="width: 1.4778325123153%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
 
 Class Rounded@{i j} (A:Type@{i}) `{Closeness A}
@@ -135,7 +135,7 @@ Class Rounded@{i j} (A:Type@{i}) `{Closeness A}
 <div class="code" title="File: premetric.v
 Line: 45
 Time: 0.004s">
-<div class="time" style="width: 1.9704433497537%"></div>
+<div class="time" style="width: 2.2727272727273%"></div>
 <pre>
 
 Class PreMetric@{i j} (A:Type@{i}) {Aclose : Closeness A} :=
@@ -178,8 +178,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 59
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre> intros x;reflexivity.</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -191,8 +191,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 60
-Time: 0.016s">
-<div class="time" style="width: 7.8817733990148%"></div>
+Time: 0.015s">
+<div class="time" style="width: 8.5227272727273%"></div>
 <pre> apply _.</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -218,7 +218,7 @@ Qed.</pre>
 <div class="code" title="File: premetric.v
 Line: 62
 Time: 0.003s">
-<div class="time" style="width: 1.4778325123153%"></div>
+<div class="time" style="width: 1.7045454545455%"></div>
 <pre>
 
 Record Approximation@{i} (A:Type@{i}) {Aclose : Closeness A} :=
@@ -227,8 +227,8 @@ Record Approximation@{i} (A:Type@{i}) {Aclose : Closeness A} :=
 </div>
 <div class="code" title="File: premetric.v
 Line: 66
-Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
 Lemma approx_eq `{Funext} `{Closeness A} `{forall e x y, IsHProp (close e x y)}
@@ -251,8 +251,8 @@ intros [x Ex] [y Ey];simpl;intros E.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 72
-Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 destruct E.</pre>
 </div>
@@ -264,21 +264,21 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 73
-Time: 0.018s">
-<div class="time" style="width: 8.8669950738916%"></div>
+Time: 0.016s">
+<div class="time" style="width: 9.0909090909091%"></div>
 <pre> apply path_ishprop.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 73
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 Qed.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 74
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 
 
@@ -288,16 +288,16 @@ Definition IsLimit@{i} {A:Type@{i} } {Aclose : Closeness A}
 </div>
 <div class="code" title="File: premetric.v
 Line: 79
-Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
 Class Lim@{i} (A:Type@{i}) {Aclose : Closeness A} := lim : Approximation A -&gt; A.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 81
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 
 Class CauchyComplete@{i} (A:Type@{i}) {Aclose : Closeness A} {Alim : Lim A}
@@ -321,7 +321,7 @@ Context {funext : Funext} {univalence : Univalence}.</pre>
 <div class="code" title="File: premetric.v
 Line: 87
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 
 Lemma rounded_plus `{Rounded A} : forall d d' u v, close d u v -&gt;
@@ -337,28 +337,28 @@ Proof.</pre>
 <div class="code" title="File: premetric.v
 Line: 91
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 intros d d' u v xi;apply rounded.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 92
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 apply tr;exists d,d';auto.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 93
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 Qed.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 94
-Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 
 Lemma rounded_le' `{Rounded A}
@@ -381,15 +381,15 @@ intros e u v xi d E.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 100
-Time: 0.02s">
-<div class="time" style="width: 9.8522167487685%"></div>
+Time: 0.019s">
+<div class="time" style="width: 10.795454545455%"></div>
 <pre>
 apply le_equiv_lt in E.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 101
-Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> destruct E as [E|E].</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -401,8 +401,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 102
-Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre> apply pos_eq in E.</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -420,8 +420,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 103
-Time: 0.007s">
-<div class="time" style="width: 3.448275862069%"></div>
+Time: 0.006s">
+<div class="time" style="width: 3.4090909090909%"></div>
 <pre> pose proof (pos_eq _ (_ + _) (Qpos_diff_pr _ _ E)) as E'.</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -446,7 +446,7 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 104
 Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -490,8 +490,8 @@ Universe UA UB i.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 113
-Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 Context (A:Type@{UA}) (B:Type@{UB}) `{Closeness A} `{Closeness B}
   `{forall e, is_mere_relation A (close e)}
@@ -499,8 +499,8 @@ Context (A:Type@{UA}) (B:Type@{UB}) `{Closeness A} `{Closeness B}
 </div>
 <div class="code" title="File: premetric.v
 Line: 116
-Time: 0s">
-<div class="time" style="width: 0%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 
 Global Instance close_prod@{} : Closeness@{i} (A /\ B)
@@ -508,8 +508,8 @@ Global Instance close_prod@{} : Closeness@{i} (A /\ B)
 </div>
 <div class="code" title="File: premetric.v
 Line: 119
-Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
 Global Instance close_prod_refl@{}
@@ -526,22 +526,22 @@ Proof.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 125
-Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 intros e;split;reflexivity.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 126
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 Qed.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 127
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 
 Global Instance close_prod_symm@{}
@@ -559,7 +559,7 @@ Proof.</pre>
 <div class="code" title="File: premetric.v
 Line: 133
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 intros e u v xi;split;symmetry;apply xi.</pre>
 </div>
@@ -598,7 +598,7 @@ intros x y E.</pre>
 <div class="code" title="File: premetric.v
 Line: 142
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 apply Prod.path_prod;apply separated;intros;apply E.</pre>
 </div>
@@ -630,7 +630,7 @@ Proof.</pre>
 <div class="code" title="File: premetric.v
 Line: 150
 Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
 intros u v w e d E1 E2;split;(eapply triangular;[apply E1|apply E2]).</pre>
 </div>
@@ -681,28 +681,28 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 160
-Time: 0.039s">
-<div class="time" style="width: 19.211822660099%"></div>
+Time: 0.035s">
+<div class="time" style="width: 19.886363636364%"></div>
 <pre> intros [E0 E0'];apply rounded in E0;apply rounded in E0'.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 160
-Time: 0.009s">
-<div class="time" style="width: 4.4334975369458%"></div>
+Time: 0.007s">
+<div class="time" style="width: 3.9772727272727%"></div>
 <pre>
   revert E0;apply (Trunc_ind _);intros [d1 [d1' [E1 E2]]].</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 161
-Time: 0.009s">
-<div class="time" style="width: 4.4334975369458%"></div>
+Time: 0.007s">
+<div class="time" style="width: 3.9772727272727%"></div>
 <pre>
   revert E0';apply (Trunc_ind _);intros [d2 [d2' [E3 E4]]].</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 162
-Time: 0.005s">
-<div class="time" style="width: 2.4630541871921%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.2727272727273%"></div>
 <pre>
   apply tr;exists (join d1 d2), (meet d1' d2');split.</pre>
 </div>
@@ -722,7 +722,7 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 164
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre> apply Qpos_sum_eq_join_meet.</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -759,8 +759,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 166
-Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
       apply join_ub_l.</pre>
 </div>
@@ -779,8 +779,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 168
-Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
       apply join_ub_r.</pre>
 </div>
@@ -793,21 +793,21 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 170
-Time: 0.05s">
-<div class="time" style="width: 24.630541871921%"></div>
+Time: 0.044s">
+<div class="time" style="width: 25%"></div>
 <pre> apply (Trunc_ind _);intros [d [d' [E1 E2]]].</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 170
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
   rewrite E1;split;apply rounded_plus,E2.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 171
-Time: 0.007s">
-<div class="time" style="width: 3.448275862069%"></div>
+Time: 0.006s">
+<div class="time" style="width: 3.4090909090909%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -859,8 +859,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 182
-Time: 0.065s">
-<div class="time" style="width: 32.019704433498%"></div>
+Time: 0.055s">
+<div class="time" style="width: 31.25%"></div>
 <pre>
 split;try apply _.</pre>
 </div>
@@ -910,8 +910,8 @@ intros xy.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 191
-Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre> split;apply lim;
 [exists (fun e =&gt; fst (xy e))|exists (fun e =&gt; snd (xy e))];intros;apply xy.</pre>
 </div>
@@ -976,14 +976,14 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 202
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 Qed.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 203
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 
 End close_prod.</pre>
@@ -1014,7 +1014,7 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 210
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>Global Instance close_arrow : Closeness (A -&gt; B)
   := fun e f g =&gt; merely (exists d d', e = d + d' /\ forall x, close d (f x) (g x)).</pre>
 </div>
@@ -1036,8 +1036,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 215
-Time: 0.007s">
-<div class="time" style="width: 3.448275862069%"></div>
+Time: 0.006s">
+<div class="time" style="width: 3.4090909090909%"></div>
 <pre>
 intros e f g E x;revert E;apply (Trunc_ind _);intros [d [d' [E1 E2]]].</pre>
 </div>
@@ -1051,7 +1051,7 @@ rewrite E1;apply rounded_plus;trivial.</pre>
 <div class="code" title="File: premetric.v
 Line: 217
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -1086,8 +1086,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 223
-Time: 0.007s">
-<div class="time" style="width: 3.448275862069%"></div>
+Time: 0.006s">
+<div class="time" style="width: 3.4090909090909%"></div>
 <pre> apply _.</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -1099,8 +1099,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 224
-Time: 0.007s">
-<div class="time" style="width: 3.448275862069%"></div>
+Time: 0.006s">
+<div class="time" style="width: 3.4090909090909%"></div>
 <pre> intros e f;apply tr; exists (e/2), (e/2);split.</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -1126,7 +1126,7 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 226
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre> intros x;reflexivity.</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -1139,7 +1139,7 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 227
 Time: 0.007s">
-<div class="time" style="width: 3.448275862069%"></div>
+<div class="time" style="width: 3.9772727272727%"></div>
 <pre> intros e f g;apply (Trunc_ind _);intros [d [d' [E1 E2]]].</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -1191,14 +1191,14 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 231
 Time: 0.003s">
-<div class="time" style="width: 1.4778325123153%"></div>
+<div class="time" style="width: 1.7045454545455%"></div>
 <pre>
   apply (merely_destruct (E e)).</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 232
-Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> intros [d [d' [E1 E2]]].</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -1236,21 +1236,21 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 234
 Time: 0.004s">
-<div class="time" style="width: 1.9704433497537%"></div>
+<div class="time" style="width: 2.2727272727273%"></div>
 <pre>
   apply (merely_destruct E1);intros [d1 [d1' [E3 E4]]].</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 235
-Time: 0.011s">
-<div class="time" style="width: 5.4187192118227%"></div>
+Time: 0.009s">
+<div class="time" style="width: 5.1136363636364%"></div>
 <pre>
   apply (merely_destruct E2);intros [d2 [d2' [E5 E6]]].</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 236
-Time: 0.003s">
-<div class="time" style="width: 1.4778325123153%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
   apply tr;exists (d1+d2),(d1'+d2').</pre>
 </div>
@@ -1275,8 +1275,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 238
-Time: 0.114s">
-<div class="time" style="width: 56.15763546798%"></div>
+Time: 0.096s">
+<div class="time" style="width: 54.545454545455%"></div>
 <pre>
    abstract (apply pos_eq; ring_tac.ring_with_nat).</pre>
 </div>
@@ -1296,7 +1296,7 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 240
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre> apply triangular with (g x);trivial.</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -1328,19 +1328,19 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 242
 Time: 0.006s">
-<div class="time" style="width: 2.9556650246305%"></div>
+<div class="time" style="width: 3.4090909090909%"></div>
 <pre> apply (Trunc_ind _).</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 242
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre> intros [d [d' [E1 E2]]].</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 242
-Time: 0.01s">
-<div class="time" style="width: 4.9261083743842%"></div>
+Time: 0.009s">
+<div class="time" style="width: 5.1136363636364%"></div>
 <pre>
     apply tr;exists (d+d'/2),(d'/2).</pre>
 </div>
@@ -1360,7 +1360,7 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 244
 Time: 0.013s">
-<div class="time" style="width: 6.4039408866995%"></div>
+<div class="time" style="width: 7.3863636363636%"></div>
 <pre> rewrite &lt;-Qpos_plus_assoc,&lt;-pos_split2.</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -1384,8 +1384,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 245
-Time: 0.005s">
-<div class="time" style="width: 2.4630541871921%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.2727272727273%"></div>
 <pre> exists d, (d'/2);split;trivial.</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -1397,14 +1397,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 246
-Time: 0.007s">
-<div class="time" style="width: 3.448275862069%"></div>
+Time: 0.006s">
+<div class="time" style="width: 3.4090909090909%"></div>
 <pre> apply (Trunc_ind _);intros [d [d' [E1 E2]]].</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 246
-Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     apply tr;exists d,d';split;trivial.</pre>
 </div>
@@ -1423,8 +1423,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 248
-Time: 0.052s">
-<div class="time" style="width: 25.615763546798%"></div>
+Time: 0.048s">
+<div class="time" style="width: 27.272727272727%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -1548,8 +1548,8 @@ apply tr.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 265
-Time: 0.01s">
-<div class="time" style="width: 4.9261083743842%"></div>
+Time: 0.039s">
+<div class="time" style="width: 22.159090909091%"></div>
 <pre> exists (e/2 + d), (e/2).</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -1567,8 +1567,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 266
-Time: 0.203s">
-<div class="time" style="width: 100%"></div>
+Time: 0.161s">
+<div class="time" style="width: 91.477272727273%"></div>
 <pre> abstract (set (e' := e/2);rewrite (pos_split2 e);unfold e';
   apply pos_eq;ring_tac.ring_with_nat).</pre>
 </div>
@@ -1588,7 +1588,7 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 268
 Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
   set (S := {| approximate := fun e0 : Q+ =&gt; (f e0) x
             ;  approx_equiv := _ |}).</pre>
@@ -1609,8 +1609,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 272
-Time: 0.12s">
-<div class="time" style="width: 59.113300492611%"></div>
+Time: 0.11s">
+<div class="time" style="width: 62.5%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -1625,7 +1625,7 @@ End close_arrow.</pre>
 <div class="code" title="File: premetric.v
 Line: 275
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 
 Class NonExpanding `{Closeness A} `{Closeness B} (f : A -&gt; B)
@@ -1640,8 +1640,8 @@ Arguments non_expanding {A _ B _} f {_ e x y} _.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 279
-Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 
 Class Lipschitz `{Closeness A} `{Closeness B} (f : A -&gt; B) (L : Q+)
@@ -1657,7 +1657,7 @@ Arguments lipschitz {A _ B _} f L {_ e x y} _.</pre>
 <div class="code" title="File: premetric.v
 Line: 283
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 
 Class Uniform `{Closeness A} `{Closeness B} (f : A -&gt; B) (mu : Q+ -&gt; Q+)
@@ -1673,7 +1673,7 @@ Arguments uniform {A _ B _} f mu {_} _ _ _ _.</pre>
 <div class="code" title="File: premetric.v
 Line: 287
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 
 Class Continuous@{UA UB}
@@ -1811,8 +1811,8 @@ Context {B:Type@{UB} } `{Closeness B} (f : A -&gt; B).</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 318
-Time: 0.017s">
-<div class="time" style="width: 8.3743842364532%"></div>
+Time: 0.006s">
+<div class="time" style="width: 3.4090909090909%"></div>
 <pre>
 
 Lemma nonexpanding_lipschitz' `{!NonExpanding f}
@@ -1835,7 +1835,7 @@ red.</pre>
 <div class="code" title="File: premetric.v
 Line: 323
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre> intro;rewrite left_identity;apply non_expanding,_.</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -1848,7 +1848,7 @@ Qed.</pre>
 <div class="code" title="File: premetric.v
 Line: 324
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 
 Definition nonexpanding_lipschitz@{} `{!NonExpanding f}
@@ -1865,8 +1865,8 @@ Global Existing Instance nonexpanding_lipschitz.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 330
-Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
 
@@ -1889,7 +1889,7 @@ red.</pre>
 <div class="code" title="File: premetric.v
 Line: 335
 Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre> intros e x y E;rewrite &lt;-(left_identity e).</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -1986,8 +1986,8 @@ Qed.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 349
-Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 
 Global Instance lipschitz_uniform@{} (L:Q+) `{!Lipschitz f L}
@@ -2009,8 +2009,8 @@ intros e u v xi.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 354
-Time: 0.005s">
-<div class="time" style="width: 2.4630541871921%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.2727272727273%"></div>
 <pre>
 rewrite &lt;-(pos_unconjugate L e),&lt;-Qpos_mult_assoc.</pre>
 </div>
@@ -2024,7 +2024,7 @@ apply (lipschitz f L),xi.</pre>
 <div class="code" title="File: premetric.v
 Line: 356
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -2081,7 +2081,7 @@ Global Existing Instance uniform_continuous | 5.</pre>
 <div class="code" title="File: premetric.v
 Line: 365
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 
 Definition lipschitz_continuous@{} (L:Q+) `{!Lipschitz f L} : Continuous f
@@ -2090,7 +2090,7 @@ Definition lipschitz_continuous@{} (L:Q+) `{!Lipschitz f L} : Continuous f
 <div class="code" title="File: premetric.v
 Line: 368
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 
 Definition nonexpanding_continuous@{} `{!NonExpanding f} : Continuous f
@@ -2194,7 +2194,7 @@ Qed.</pre>
 <div class="code" title="File: premetric.v
 Line: 388
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 
 Global Instance lipschitz_compose@{}
@@ -2224,8 +2224,8 @@ unfold Compose;apply Ef,Eg in He.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 395
-Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 pattern (Lg * Lf * e).</pre>
 </div>
@@ -2239,14 +2239,14 @@ eapply transport;[|exact He].</pre>
 <div class="code" title="File: premetric.v
 Line: 397
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 apply associativity.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 398
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -2270,7 +2270,7 @@ Proof.</pre>
 <div class="code" title="File: premetric.v
 Line: 404
 Time: 0.003s">
-<div class="time" style="width: 1.4778325123153%"></div>
+<div class="time" style="width: 1.7045454545455%"></div>
 <pre>
 rewrite &lt;-(left_identity L),commutativity.</pre>
 </div>
@@ -2283,14 +2283,14 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 405
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 Qed.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 406
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 
 Global Instance lipschitz_compose_nonexpanding_r@{}
@@ -2319,14 +2319,14 @@ Proof.</pre>
 <div class="code" title="File: premetric.v
 Line: 417
 Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
 rewrite &lt;-(left_identity L).</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 418
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre> apply _.</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -2339,7 +2339,7 @@ Qed.</pre>
 <div class="code" title="File: premetric.v
 Line: 419
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 
 Global Instance lipschitz_compose_nonexpanding_l@{}
@@ -2350,8 +2350,8 @@ Global Instance lipschitz_compose_nonexpanding_l@{}
 </div>
 <div class="code" title="File: premetric.v
 Line: 425
-Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 
 Lemma uniform_compose@{} mu {Eg : Uniform g mu} mu' {Ef : Uniform f mu'}
@@ -2424,7 +2424,7 @@ intros u e.</pre>
 <div class="code" title="File: premetric.v
 Line: 438
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 apply (merely_destruct (continuous g (f u) e)).</pre>
 </div>
@@ -2438,7 +2438,7 @@ intros [d E].</pre>
 <div class="code" title="File: premetric.v
 Line: 440
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 apply (merely_destruct (continuous f u d)).</pre>
 </div>
@@ -2466,7 +2466,7 @@ apply E,E',xi.</pre>
 <div class="code" title="File: premetric.v
 Line: 444
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -2531,7 +2531,7 @@ Context {C:Type@{UC} } `{Closeness C} `{!Triangular C}.</pre>
 <div class="code" title="File: premetric.v
 Line: 455
 Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
 
 Global Instance uncurry_lipschitz (f : A -&gt; B -&gt; C) L1 L2
@@ -2549,7 +2549,7 @@ Proof.</pre>
 <div class="code" title="File: premetric.v
 Line: 461
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 intros e [u1 u2] [v1 v2] [xi1 xi2].</pre>
 </div>
@@ -2568,8 +2568,8 @@ unfold uncurry;simpl.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 463
-Time: 0.103s">
-<div class="time" style="width: 50.738916256158%"></div>
+Time: 0.083s">
+<div class="time" style="width: 47.159090909091%"></div>
 <pre>
 assert (Hrw : (L1 + L2) * e = L1 * e + L2 * e)
 by abstract (apply pos_eq;ring_tac.ring_with_nat);
@@ -2622,15 +2622,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 469
-Time: 0.025s">
-<div class="time" style="width: 12.315270935961%"></div>
+Time: 0.02s">
+<div class="time" style="width: 11.363636363636%"></div>
 <pre>
 Qed.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 470
-Time: 0.015s">
-<div class="time" style="width: 7.3891625615764%"></div>
+Time: 0.013s">
+<div class="time" style="width: 7.3863636363636%"></div>
 <pre>
 
 Lemma uncurry_uniform
@@ -2649,7 +2649,7 @@ Proof.</pre>
 <div class="code" title="File: premetric.v
 Line: 477
 Time: 0.003s">
-<div class="time" style="width: 1.4778325123153%"></div>
+<div class="time" style="width: 1.7045454545455%"></div>
 <pre>
 intros e [u1 u2] [v1 v2] [xi1 xi2].</pre>
 </div>
@@ -2662,8 +2662,8 @@ simpl in *.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 479
-Time: 0.01s">
-<div class="time" style="width: 4.9261083743842%"></div>
+Time: 0.009s">
+<div class="time" style="width: 5.1136363636364%"></div>
 <pre>
 rewrite (pos_split2 e).</pre>
 </div>
@@ -2717,7 +2717,7 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 485
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre> apply meet_lb_l.</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -2763,13 +2763,13 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 489
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre> apply meet_lb_r.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 489
-Time: 0.009s">
-<div class="time" style="width: 4.4334975369458%"></div>
+Time: 0.007s">
+<div class="time" style="width: 3.9772727272727%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -3062,8 +3062,8 @@ Qed.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 537
-Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 
 Global Instance equiv_prod_symm_inv_nonexpanding
@@ -3108,7 +3108,7 @@ Context {C:Type@{UC} } `{Closeness C}.</pre>
 <div class="code" title="File: premetric.v
 Line: 546
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 
 Global Instance equiv_prod_assoc_nonexpanding
@@ -3124,7 +3124,7 @@ Proof.</pre>
 <div class="code" title="File: premetric.v
 Line: 550
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 intros e u v xi;repeat split;apply xi.</pre>
 </div>
@@ -3138,7 +3138,7 @@ Qed.</pre>
 <div class="code" title="File: premetric.v
 Line: 552
 Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
 
 Global Instance equiv_prod_assoc_inc_nonexpanding
@@ -3154,7 +3154,7 @@ Proof.</pre>
 <div class="code" title="File: premetric.v
 Line: 556
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 intros e u v xi;repeat split;apply xi.</pre>
 </div>
@@ -3247,7 +3247,7 @@ Variables (f : A -&gt; C) (g : B -&gt; D).</pre>
 <div class="code" title="File: premetric.v
 Line: 571
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 
 Lemma map2_nonexpanding'
@@ -3264,7 +3264,7 @@ Proof.</pre>
 <div class="code" title="File: premetric.v
 Line: 576
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 intros e u v xi;split;simpl; apply (non_expanding _),xi.</pre>
 </div>
@@ -3300,7 +3300,7 @@ Global Existing Instance map2_nonexpanding.</pre>
 <div class="code" title="File: premetric.v
 Line: 582
 Time: 0.003s">
-<div class="time" style="width: 1.4778325123153%"></div>
+<div class="time" style="width: 1.7045454545455%"></div>
 <pre>
 
 Lemma map2_lipschitz' `{!Rounded C} `{!Rounded D} Lf Lg
@@ -3337,7 +3337,7 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 589
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre> apply rounded_le with (Lf * e).</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -3362,14 +3362,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 591
-Time: 0.019s">
-<div class="time" style="width: 9.35960591133%"></div>
+Time: 0.016s">
+<div class="time" style="width: 9.0909090909091%"></div>
 <pre> apply (order_preserving (.* ' e)).</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 591
-Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     apply join_ub_l.</pre>
 </div>
@@ -3383,7 +3383,7 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 593
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre> apply rounded_le with (Lg * e).</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -3409,20 +3409,20 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 595
 Time: 0.019s">
-<div class="time" style="width: 9.35960591133%"></div>
+<div class="time" style="width: 10.795454545455%"></div>
 <pre> apply (order_preserving (.* ' e)).</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 595
-Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
     apply join_ub_r.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 596
-Time: 0.003s">
-<div class="time" style="width: 1.4778325123153%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -3457,7 +3457,7 @@ Global Existing Instance map2_lipschitz.</pre>
 <div class="code" title="File: premetric.v
 Line: 601
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 
 Lemma map2_continuous' `{!Rounded A} `{!Rounded B}
@@ -3480,22 +3480,22 @@ intros u e.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 607
-Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 apply (merely_destruct (continuous f (fst u) e));intros [d1 E1].</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 608
-Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 apply (merely_destruct (continuous g (snd u) e));intros [d2 E2].</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 609
 Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
 apply tr;exists (meet d1 d2).</pre>
 </div>
@@ -3528,7 +3528,7 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 612
 Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre> apply rounded_le with (meet d1 d2).</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -3554,7 +3554,7 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 614
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre> apply meet_lb_l.</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -3572,8 +3572,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 615
-Time: 0.003s">
-<div class="time" style="width: 1.4778325123153%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre> apply rounded_le with (meet d1 d2).</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -3599,13 +3599,13 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 617
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre> apply meet_lb_r.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 617
 Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -3819,8 +3819,8 @@ unfold Interval_restrict.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 652
-Time: 0.079s">
-<div class="time" style="width: 38.916256157635%"></div>
+Time: 0.068s">
+<div class="time" style="width: 38.636363636364%"></div>
 <pre>
 apply Sigma.path_sigma_hprop.</pre>
 </div>
@@ -3834,7 +3834,7 @@ simpl.</pre>
 <div class="code" title="File: premetric.v
 Line: 654
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre> rewrite meet_l;[apply join_r|];apply E'.</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -3912,8 +3912,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 667
-Time: 0.008s">
-<div class="time" style="width: 3.9408866995074%"></div>
+Time: 0.006s">
+<div class="time" style="width: 3.4090909090909%"></div>
 <pre> apply _.</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -3969,8 +3969,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 670
-Time: 0.089s">
-<div class="time" style="width: 43.84236453202%"></div>
+Time: 0.074s">
+<div class="time" style="width: 42.045454545455%"></div>
 <pre>
   apply Sigma.path_sigma_hprop.</pre>
 </div>
@@ -4117,8 +4117,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 680
-Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -4158,7 +4158,7 @@ Section rationals.</pre>
 <div class="code" title="File: premetric.v
 Line: 690
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 
 Lemma Qclose_alt : forall e (q r : Q), close e q r &lt;-&gt; abs (q - r) &lt; ' e.</pre>
@@ -4193,7 +4193,7 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 695
 Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
   destruct (total le 0 (q - r)) as [E|E].</pre>
 </div>
@@ -4232,15 +4232,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 699
-Time: 0.003s">
-<div class="time" style="width: 1.4778325123153%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
     apply flip_lt_negate.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 700
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre> rewrite involutive.</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -4264,8 +4264,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 701
-Time: 0.01s">
-<div class="time" style="width: 4.9261083743842%"></div>
+Time: 0.009s">
+<div class="time" style="width: 5.1136363636364%"></div>
 <pre> split;[apply flip_lt_negate;rewrite involutive|];
   apply le_lt_trans with (abs (q - r));trivial.</pre>
 </div>
@@ -4279,7 +4279,7 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 703
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre> apply Qabs_le_neg_raw.</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -4292,13 +4292,13 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 704
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre> apply Qabs_le_raw.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 704
 Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -4320,7 +4320,7 @@ Proof.</pre>
 <div class="code" title="File: premetric.v
 Line: 708
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 intros e x y;split;intros E;apply Qclose_alt in E;apply Qclose_alt.</pre>
 </div>
@@ -4334,7 +4334,7 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 710
 Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre> rewrite &lt;-(negate_plus_distr),Qabs_neg.</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -4353,7 +4353,7 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 711
 Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre> rewrite &lt;-(negate_plus_distr),Qabs_neg in E.</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -4365,7 +4365,7 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 711
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -4407,14 +4407,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 718
-Time: 0.003s">
-<div class="time" style="width: 1.4778325123153%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre> apply flip_lt_negate.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 718
-Time: 0.003s">
-<div class="time" style="width: 1.4778325123153%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre> rewrite &lt;-negate_swap_r,involutive.</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -4433,14 +4433,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 720
-Time: 0.003s">
-<div class="time" style="width: 1.4778325123153%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre> apply flip_lt_negate.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 720
-Time: 0.003s">
-<div class="time" style="width: 1.4778325123153%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
   rewrite negate_swap_r,involutive.</pre>
 </div>
@@ -4453,7 +4453,7 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 721
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -4505,41 +4505,41 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 732
-Time: 0.005s">
-<div class="time" style="width: 2.4630541871921%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.2727272727273%"></div>
 <pre> apply flip_lt_negate.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 732
-Time: 0.007s">
-<div class="time" style="width: 3.448275862069%"></div>
+Time: 0.006s">
+<div class="time" style="width: 3.4090909090909%"></div>
 <pre> rewrite negate_swap_r,!involutive.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 732
 Time: 0.004s">
-<div class="time" style="width: 1.9704433497537%"></div>
+<div class="time" style="width: 2.2727272727273%"></div>
 <pre>
   apply flip_lt_negate in E2.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 733
-Time: 0.007s">
-<div class="time" style="width: 3.448275862069%"></div>
+Time: 0.005s">
+<div class="time" style="width: 2.8409090909091%"></div>
 <pre>
   rewrite negate_swap_r,!involutive in E2.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 734
-Time: 0.004s">
-<div class="time" style="width: 1.9704433497537%"></div>
+Time: 0.003s">
+<div class="time" style="width: 1.7045454545455%"></div>
 <pre>
   pose proof (plus_lt_compat _ _ _ _ E1' E2) as E.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 735
-Time: 0.073s">
-<div class="time" style="width: 35.960591133005%"></div>
+Time: 0.063s">
+<div class="time" style="width: 35.795454545455%"></div>
 <pre>
   assert (Hrw : s - r = q - r + (s - q))
     by abstract ring_tac.ring_with_integers (NatPair.Z nat).</pre>
@@ -4561,27 +4561,27 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 739
 Time: 0.004s">
-<div class="time" style="width: 1.9704433497537%"></div>
+<div class="time" style="width: 2.2727272727273%"></div>
 <pre> apply flip_lt_negate in E1.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 739
-Time: 0.007s">
-<div class="time" style="width: 3.448275862069%"></div>
+Time: 0.006s">
+<div class="time" style="width: 3.4090909090909%"></div>
 <pre>
   rewrite negate_swap_r,!involutive in E1.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 740
 Time: 0.003s">
-<div class="time" style="width: 1.4778325123153%"></div>
+<div class="time" style="width: 1.7045454545455%"></div>
 <pre>
   pose proof (plus_lt_compat _ _ _ _ E1 E2') as E.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 741
-Time: 0.074s">
-<div class="time" style="width: 36.453201970443%"></div>
+Time: 0.069s">
+<div class="time" style="width: 39.204545454545%"></div>
 <pre>
   assert (Hrw : r - s = r - q + (q - s))
     by abstract ring_tac.ring_with_integers (NatPair.Z nat).</pre>
@@ -4595,8 +4595,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 744
-Time: 0.027s">
-<div class="time" style="width: 13.300492610837%"></div>
+Time: 0.024s">
+<div class="time" style="width: 13.636363636364%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -4715,28 +4715,28 @@ unfold cast in E3;simpl in E3.</pre>
 <div class="code" title="File: premetric.v
 Line: 761
 Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
 apply (irreflexivity lt (r - q)).</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 762
-Time: 0.004s">
-<div class="time" style="width: 1.9704433497537%"></div>
+Time: 0.003s">
+<div class="time" style="width: 1.7045454545455%"></div>
 <pre>
 apply le_lt_trans with (abs (r - q));trivial.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 763
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 apply Qabs_le_raw.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 764
-Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -4771,7 +4771,7 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 769
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 apply tight_apart.</pre>
 </div>
@@ -4783,8 +4783,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 770
-Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 apply apart_iff_total_lt in E2.</pre>
 </div>
@@ -4871,15 +4871,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 780
-Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
   pose proof (Q_average_between _ _ E) as [E1 E2].</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 781
-Time: 0.003s">
-<div class="time" style="width: 1.4778325123153%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
   apply tr;simple refine (exist _ (mkQpos ((abs (q - r) + ' e) / 2) _) _).</pre>
 </div>
@@ -4892,8 +4892,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 783
-Time: 0.012s">
-<div class="time" style="width: 5.9113300492611%"></div>
+Time: 0.01s">
+<div class="time" style="width: 5.6818181818182%"></div>
 <pre> apply pos_mult_compat;[|solve_propholds].</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -4905,8 +4905,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 784
-Time: 0.005s">
-<div class="time" style="width: 2.4630541871921%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.2727272727273%"></div>
 <pre> apply pos_plus_le_lt_compat_r;[solve_propholds|apply Qabs_nonneg].</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -4926,7 +4926,7 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 786
 Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre> exists (Qpos_diff _ _ E2).</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -4946,7 +4946,7 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 788
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre> apply pos_eq.</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -4983,8 +4983,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 790
-Time: 0.055s">
-<div class="time" style="width: 27.093596059113%"></div>
+Time: 0.047s">
+<div class="time" style="width: 26.704545454545%"></div>
 <pre> apply (Trunc_ind _).</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -5010,27 +5010,27 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 792
 Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
   apply lt_le_trans with (' d);trivial.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 793
-Time: 0.004s">
-<div class="time" style="width: 1.9704433497537%"></div>
+Time: 0.003s">
+<div class="time" style="width: 1.7045454545455%"></div>
 <pre>
   apply nonneg_plus_le_compat_r.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 794
-Time: 0.003s">
-<div class="time" style="width: 1.4778325123153%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre> solve_propholds.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 794
-Time: 0.012s">
-<div class="time" style="width: 5.9113300492611%"></div>
+Time: 0.01s">
+<div class="time" style="width: 5.6818181818182%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -5051,8 +5051,8 @@ Proof.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 798
-Time: 0.059s">
-<div class="time" style="width: 29.064039408867%"></div>
+Time: 0.051s">
+<div class="time" style="width: 28.977272727273%"></div>
 <pre>
 split;try apply _.</pre>
 </div>
@@ -5066,7 +5066,7 @@ intros e u;apply Qclose_alt.</pre>
 <div class="code" title="File: premetric.v
 Line: 800
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre> rewrite plus_negate_r.</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -5079,7 +5079,7 @@ unfold abs.</pre>
 <div class="code" title="File: premetric.v
 Line: 801
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre> rewrite (fst (abs_sig 0).2).</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -5105,13 +5105,13 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 803
 Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre> reflexivity.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 803
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -5188,8 +5188,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 815
-Time: 0.057s">
-<div class="time" style="width: 28.07881773399%"></div>
+Time: 0.047s">
+<div class="time" style="width: 26.704545454545%"></div>
 <pre>
 assert (Hrw : q + s - (r + s) = q - r)
   by abstract ring_tac.ring_with_integers (NatPair.Z nat).</pre>
@@ -5203,8 +5203,8 @@ rewrite Hrw;trivial.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 818
-Time: 0.011s">
-<div class="time" style="width: 5.4187192118227%"></div>
+Time: 0.01s">
+<div class="time" style="width: 5.6818181818182%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -5238,8 +5238,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 823
-Time: 0.056s">
-<div class="time" style="width: 27.586206896552%"></div>
+Time: 0.048s">
+<div class="time" style="width: 27.272727272727%"></div>
 <pre>
 assert (Hrw : s + q - (s + r) = q - r)
   by abstract ring_tac.ring_with_integers (NatPair.Z nat).</pre>
@@ -5253,8 +5253,8 @@ rewrite Hrw;trivial.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 826
-Time: 0.011s">
-<div class="time" style="width: 5.4187192118227%"></div>
+Time: 0.01s">
+<div class="time" style="width: 5.6818181818182%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -5290,14 +5290,14 @@ apply Qclose_alt in xi;apply Qclose_alt.</pre>
 <div class="code" title="File: premetric.v
 Line: 832
 Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
 apply le_lt_trans with (abs (q - r));trivial.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 833
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 apply Qabs_triangle_alt.</pre>
 </div>
@@ -5340,7 +5340,7 @@ apply Qclose_alt;apply Qclose_alt in xi.</pre>
 <div class="code" title="File: premetric.v
 Line: 840
 Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
 apply le_lt_trans with (abs (q - r));trivial.</pre>
 </div>
@@ -5352,8 +5352,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 841
-Time: 0.015s">
-<div class="time" style="width: 7.3891625615764%"></div>
+Time: 0.012s">
+<div class="time" style="width: 6.8181818181818%"></div>
 <pre>
 destruct (total le q s) as [E1|E1], (total le r s) as [E2|E2];
 rewrite ?(meet_l _ _ E1), ?(meet_r _ _ E1), ?(meet_l _ _ E2), ?(meet_r _ _ E2).</pre>
@@ -5368,7 +5368,7 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 844
 Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre> reflexivity.</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -5380,36 +5380,36 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 845
-Time: 0.017s">
-<div class="time" style="width: 8.3743842364532%"></div>
+Time: 0.014s">
+<div class="time" style="width: 7.9545454545455%"></div>
 <pre> rewrite (Qabs_of_nonpos (q - r))
   by (apply (snd (flip_nonpos_minus _ _)); transitivity s;trivial).</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 846
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
   rewrite &lt;-negate_swap_r.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 847
-Time: 0.004s">
-<div class="time" style="width: 1.9704433497537%"></div>
+Time: 0.003s">
+<div class="time" style="width: 1.7045454545455%"></div>
 <pre>
   rewrite (Qabs_of_nonpos _ (snd (flip_nonpos_minus _ _) E1)).</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 848
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
   rewrite &lt;-negate_swap_r.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 849
-Time: 0.005s">
-<div class="time" style="width: 2.4630541871921%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.2727272727273%"></div>
 <pre>
   apply (order_preserving (+ (- q))).</pre>
 </div>
@@ -5429,22 +5429,22 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 852
-Time: 0.016s">
-<div class="time" style="width: 7.8817733990148%"></div>
+Time: 0.013s">
+<div class="time" style="width: 7.3863636363636%"></div>
 <pre> rewrite (Qabs_of_nonneg (q - r))
   by (apply (snd (flip_nonneg_minus _ _)); transitivity s;trivial).</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 853
-Time: 0.004s">
-<div class="time" style="width: 1.9704433497537%"></div>
+Time: 0.003s">
+<div class="time" style="width: 1.7045454545455%"></div>
 <pre>
   rewrite (Qabs_of_nonneg _ (snd (flip_nonneg_minus _ _) E2)).</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 854
-Time: 0.006s">
-<div class="time" style="width: 2.9556650246305%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.2727272727273%"></div>
 <pre>
   apply (order_preserving (+ (- r))).</pre>
 </div>
@@ -5464,20 +5464,20 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 856
 Time: 0.004s">
-<div class="time" style="width: 1.9704433497537%"></div>
+<div class="time" style="width: 2.2727272727273%"></div>
 <pre> rewrite plus_negate_r,Qabs_of_nonneg by reflexivity.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 856
-Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   apply Qabs_nonneg.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 857
 Time: 0.004s">
-<div class="time" style="width: 1.9704433497537%"></div>
+<div class="time" style="width: 2.2727272727273%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -5513,7 +5513,7 @@ pose proof meet_sl_order_meet_sl.</pre>
 <div class="code" title="File: premetric.v
 Line: 863
 Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
 rewrite !(commutativity s).</pre>
 </div>
@@ -5569,7 +5569,7 @@ apply Qclose_alt;apply Qclose_alt in xi.</pre>
 <div class="code" title="File: premetric.v
 Line: 871
 Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
 apply le_lt_trans with (abs (q - r));trivial.</pre>
 </div>
@@ -5581,8 +5581,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 872
-Time: 0.017s">
-<div class="time" style="width: 8.3743842364532%"></div>
+Time: 0.015s">
+<div class="time" style="width: 8.5227272727273%"></div>
 <pre>
 destruct (total le q s) as [E1|E1], (total le r s) as [E2|E2];
 rewrite ?(join_l _ _ E1), ?(join_r _ _ E1), ?(join_l _ _ E2), ?(join_r _ _ E2).</pre>
@@ -5597,13 +5597,13 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 875
 Time: 0.004s">
-<div class="time" style="width: 1.9704433497537%"></div>
+<div class="time" style="width: 2.2727272727273%"></div>
 <pre> rewrite plus_negate_r,Qabs_of_nonneg by reflexivity.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 875
-Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre>
   apply Qabs_nonneg.</pre>
 </div>
@@ -5616,43 +5616,43 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 877
-Time: 0.015s">
-<div class="time" style="width: 7.3891625615764%"></div>
+Time: 0.013s">
+<div class="time" style="width: 7.3863636363636%"></div>
 <pre> rewrite (Qabs_of_nonpos (q - r))
   by (apply (snd (flip_nonpos_minus _ _)); transitivity s;trivial).</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 878
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
   rewrite &lt;-negate_swap_r.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 879
-Time: 0.004s">
-<div class="time" style="width: 1.9704433497537%"></div>
+Time: 0.003s">
+<div class="time" style="width: 1.7045454545455%"></div>
 <pre>
   rewrite (Qabs_of_nonpos _ (snd (flip_nonpos_minus _ _) E2)).</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 880
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
   rewrite &lt;-negate_swap_r.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 881
 Time: 0.004s">
-<div class="time" style="width: 1.9704433497537%"></div>
+<div class="time" style="width: 2.2727272727273%"></div>
 <pre>
   apply (order_preserving (r +)).</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 882
 Time: 0.003s">
-<div class="time" style="width: 1.4778325123153%"></div>
+<div class="time" style="width: 1.7045454545455%"></div>
 <pre>
   apply (snd (flip_le_negate _ _)).</pre>
 </div>
@@ -5671,29 +5671,29 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 884
-Time: 0.016s">
-<div class="time" style="width: 7.8817733990148%"></div>
+Time: 0.014s">
+<div class="time" style="width: 7.9545454545455%"></div>
 <pre> rewrite (Qabs_of_nonneg (q - r))
   by (apply (snd (flip_nonneg_minus _ _)); transitivity s;trivial).</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 885
-Time: 0.004s">
-<div class="time" style="width: 1.9704433497537%"></div>
+Time: 0.003s">
+<div class="time" style="width: 1.7045454545455%"></div>
 <pre>
   rewrite (Qabs_of_nonneg _ (snd (flip_nonneg_minus _ _) E1)).</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 886
-Time: 0.005s">
-<div class="time" style="width: 2.4630541871921%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.2727272727273%"></div>
 <pre>
   apply (order_preserving (q +)).</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 887
 Time: 0.003s">
-<div class="time" style="width: 1.4778325123153%"></div>
+<div class="time" style="width: 1.7045454545455%"></div>
 <pre>
   apply (snd (flip_le_negate _ _)).</pre>
 </div>
@@ -5712,14 +5712,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 889
-Time: 0.003s">
-<div class="time" style="width: 1.4778325123153%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre> reflexivity.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 889
 Time: 0.004s">
-<div class="time" style="width: 1.9704433497537%"></div>
+<div class="time" style="width: 2.2727272727273%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -5754,8 +5754,8 @@ pose proof join_sl_order_join_sl.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 895
-Time: 0.003s">
-<div class="time" style="width: 1.4778325123153%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
 rewrite !(commutativity s).</pre>
 </div>
@@ -5782,7 +5782,7 @@ Qed.</pre>
 <div class="code" title="File: premetric.v
 Line: 898
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 
 Global Instance Qmult_lipschitz@{} : forall q : Q, Lipschitz (q *.) (pos_of_Q q).</pre>
@@ -5810,15 +5810,15 @@ apply Qclose_alt.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 903
-Time: 0.005s">
-<div class="time" style="width: 2.4630541871921%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.2727272727273%"></div>
 <pre>
 rewrite negate_mult_distr_r,&lt;-plus_mult_distr_l,Qabs_mult.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 904
 Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
 apply pos_mult_le_lt_compat;try split.</pre>
 </div>
@@ -5831,8 +5831,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 906
-Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> apply Qabs_nonneg.</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -5845,7 +5845,7 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 907
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre> rewrite Qabs_is_join.</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -5864,7 +5864,7 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 908
 Time: 0.005s">
-<div class="time" style="width: 2.4630541871921%"></div>
+<div class="time" style="width: 2.8409090909091%"></div>
 <pre> apply flip_le_negate;rewrite involutive; apply Q_abs_plus_1_bounds.</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -5902,8 +5902,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 911
-Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> apply Qabs_nonneg.</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -5922,7 +5922,7 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 912
 Time: 0.003s">
-<div class="time" style="width: 1.4778325123153%"></div>
+<div class="time" style="width: 1.7045454545455%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -5944,8 +5944,8 @@ Arguments Qpos_upper_close _ _ _ _ /.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 917
-Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 
 Global Instance Q_recip_lipschitz (e : Q+)
@@ -5981,93 +5981,93 @@ Time: 0s">
 <div class="code" title="File: premetric.v
 Line: 923
 Time: 0.003s">
-<div class="time" style="width: 1.4778325123153%"></div>
+<div class="time" style="width: 1.7045454545455%"></div>
 <pre>
 assert (PropHolds (0 &lt; join q (' e))) as E
   by (apply lt_le_trans with (' e);[solve_propholds|apply join_ub_r]).</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 925
-Time: 0.008s">
-<div class="time" style="width: 3.9408866995074%"></div>
+Time: 0.006s">
+<div class="time" style="width: 3.4090909090909%"></div>
 <pre>
 apply (strictly_order_reflecting ((join q (' e)) *.)).</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 926
-Time: 0.004s">
-<div class="time" style="width: 1.9704433497537%"></div>
+Time: 0.003s">
+<div class="time" style="width: 1.7045454545455%"></div>
 <pre>
 assert (PropHolds (0 &lt; join r (' e))) as E'
   by (apply lt_le_trans with (' e);[solve_propholds|apply join_ub_r]).</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 928
-Time: 0.011s">
-<div class="time" style="width: 5.4187192118227%"></div>
+Time: 0.009s">
+<div class="time" style="width: 5.1136363636364%"></div>
 <pre>
 apply (strictly_order_reflecting ((join r (' e)) *.)).</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 929
-Time: 0.003s">
-<div class="time" style="width: 1.4778325123153%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
 set (X := join r (' e)) at 2 3.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 930
-Time: 0.005s">
-<div class="time" style="width: 2.4630541871921%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.2727272727273%"></div>
 <pre>
 rewrite &lt;-(Qabs_of_nonneg (join r _)) by solve_propholds.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 931
 Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
 set (Y := join q (' e)) at 2 3.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 932
-Time: 0.005s">
-<div class="time" style="width: 2.4630541871921%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.2727272727273%"></div>
 <pre>
 rewrite &lt;-(Qabs_of_nonneg (join q _)) by solve_propholds.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 933
-Time: 0.006s">
-<div class="time" style="width: 2.9556650246305%"></div>
+Time: 0.005s">
+<div class="time" style="width: 2.8409090909091%"></div>
 <pre>
 rewrite &lt;-!Qabs_mult.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 934
-Time: 0.009s">
-<div class="time" style="width: 4.4334975369458%"></div>
+Time: 0.008s">
+<div class="time" style="width: 4.5454545454545%"></div>
 <pre>
 rewrite !(plus_mult_distr_l (Aplus:=Qplus)).</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 935
-Time: 0.005s">
-<div class="time" style="width: 2.4630541871921%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.2727272727273%"></div>
 <pre>
 rewrite dec_recip_inverse by (apply irrefl_neq,symmetric_neq in E;trivial).</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 936
 Time: 0.003s">
-<div class="time" style="width: 1.4778325123153%"></div>
+<div class="time" style="width: 1.7045454545455%"></div>
 <pre>
 rewrite mult_1_r.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 937
-Time: 0.068s">
-<div class="time" style="width: 33.497536945813%"></div>
+Time: 0.059s">
+<div class="time" style="width: 33.522727272727%"></div>
 <pre>
 assert (Hrw :  (r ⊔ ' e) * ((q ⊔ ' e) * - / (r ⊔ ' e)) = - Y * (X / X))
   by ring_tac.ring_with_integers (NatPair.Z nat).</pre>
@@ -6081,15 +6081,15 @@ rewrite Hrw;clear Hrw.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 940
-Time: 0.008s">
-<div class="time" style="width: 3.9408866995074%"></div>
+Time: 0.004s">
+<div class="time" style="width: 2.2727272727273%"></div>
 <pre>
 rewrite dec_recip_inverse by (apply irrefl_neq,symmetric_neq in E';trivial).</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 941
-Time: 0.004s">
-<div class="time" style="width: 1.9704433497537%"></div>
+Time: 0.003s">
+<div class="time" style="width: 1.7045454545455%"></div>
 <pre>
 rewrite mult_1_r.</pre>
 </div>
@@ -6101,8 +6101,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 942
-Time: 0.004s">
-<div class="time" style="width: 1.9704433497537%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
 eapply lt_le_trans.</pre>
 </div>
@@ -6121,8 +6121,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 944
-Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> eapply (non_expanding (⊔ ' e)).</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -6146,8 +6146,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 945
-Time: 0.026s">
-<div class="time" style="width: 12.807881773399%"></div>
+Time: 0.02s">
+<div class="time" style="width: 11.363636363636%"></div>
 <pre> transitivity (' (((e * e) / (e * e)) * n)).</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -6159,8 +6159,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 946
-Time: 0.007s">
-<div class="time" style="width: 3.448275862069%"></div>
+Time: 0.006s">
+<div class="time" style="width: 3.4090909090909%"></div>
 <pre> rewrite pos_recip_r,Qpos_mult_1_l;reflexivity.</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -6172,42 +6172,42 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 947
-Time: 0.011s">
-<div class="time" style="width: 5.4187192118227%"></div>
+Time: 0.01s">
+<div class="time" style="width: 5.6818181818182%"></div>
 <pre> rewrite &lt;-!Qpos_mult_assoc.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 947
-Time: 0.004s">
-<div class="time" style="width: 1.9704433497537%"></div>
+Time: 0.003s">
+<div class="time" style="width: 1.7045454545455%"></div>
 <pre>
     change (' (e * (e * (/ (e * e) * n)))) with (' e * (' e * ' (/ (e * e) * n))).</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 948
-Time: 0.044s">
-<div class="time" style="width: 21.674876847291%"></div>
+Time: 0.038s">
+<div class="time" style="width: 21.590909090909%"></div>
 <pre>
     apply mult_le_compat;try solve_propholds;[apply join_ub_r|].</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 949
-Time: 0.051s">
-<div class="time" style="width: 25.12315270936%"></div>
+Time: 0.045s">
+<div class="time" style="width: 25.568181818182%"></div>
 <pre>
     apply mult_le_compat;try solve_propholds;[apply join_ub_r|].</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 950
-Time: 0.004s">
-<div class="time" style="width: 1.9704433497537%"></div>
+Time: 0.003s">
+<div class="time" style="width: 1.7045454545455%"></div>
 <pre>
     reflexivity.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 951
-Time: 0.041s">
-<div class="time" style="width: 20.197044334975%"></div>
+Time: 0.036s">
+<div class="time" style="width: 20.454545454545%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -6286,28 +6286,28 @@ intros e.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 965
-Time: 0.008s">
-<div class="time" style="width: 3.9408866995074%"></div>
+Time: 0.007s">
+<div class="time" style="width: 3.9772727272727%"></div>
 <pre> rewrite (pos_split2 e),(pos_split2 (e/2)).</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 965
 Time: 0.01s">
-<div class="time" style="width: 4.9261083743842%"></div>
+<div class="time" style="width: 5.6818181818182%"></div>
 <pre>
 apply triangular with (x (e / 2 / 2));[symmetry;apply E1|apply E2].</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 966
-Time: 0.009s">
-<div class="time" style="width: 4.4334975369458%"></div>
+Time: 0.008s">
+<div class="time" style="width: 4.5454545454545%"></div>
 <pre>
 Qed.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 967
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 
 Lemma equiv_through_approx0 : forall (y : Approximation A) ly, IsLimit y ly -&gt;
@@ -6330,14 +6330,14 @@ intros y ly E1 u e d xi.</pre>
 <div class="code" title="File: premetric.v
 Line: 972
 Time: 0.003s">
-<div class="time" style="width: 1.4778325123153%"></div>
+<div class="time" style="width: 1.7045454545455%"></div>
 <pre>
 apply (merely_destruct ((fst (rounded _ _ _) xi))).</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 973
 Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 intros [d0 [d' [He E2]]].</pre>
 </div>
@@ -6350,8 +6350,8 @@ pose proof (triangular _ _ _ _ _ E2 (E1 d' _)) as E3.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 975
-Time: 0.003s">
-<div class="time" style="width: 1.4778325123153%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
 assert (Hrw : e + d = d0 + (d' + d));[|rewrite Hrw;trivial].</pre>
 </div>
@@ -6370,14 +6370,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 977
-Time: 0.001s">
-<div class="time" style="width: 0.49261083743842%"></div>
+Time: 0s">
+<div class="time" style="width: 0%"></div>
 <pre> apply Qpos_plus_assoc.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 977
-Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -6391,8 +6391,8 @@ Context {Alim : Lim A} `{!CauchyComplete A}.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 980
-Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+Time: 0.001s">
+<div class="time" style="width: 0.56818181818182%"></div>
 <pre>
 
 Lemma equiv_through_approx : forall u (y : Approximation A) e d,
@@ -6427,8 +6427,8 @@ Qed.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 986
-Time: 0.003s">
-<div class="time" style="width: 1.4778325123153%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
 
 Lemma equiv_lim_lim (x y : Approximation A) (e d n e' : Q+)
@@ -6457,8 +6457,8 @@ rewrite He.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 992
-Time: 0.055s">
-<div class="time" style="width: 27.093596059113%"></div>
+Time: 0.046s">
+<div class="time" style="width: 26.136363636364%"></div>
 <pre>
 assert (Hrw : d + n + e' = e' + d + n) by (apply pos_eq;ring_tac.ring_with_nat);
 rewrite Hrw;clear Hrw.</pre>
@@ -6491,15 +6491,15 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 996
-Time: 0.019s">
-<div class="time" style="width: 9.35960591133%"></div>
+Time: 0.016s">
+<div class="time" style="width: 9.0909090909091%"></div>
 <pre>
 Qed.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 997
 Time: 0.002s">
-<div class="time" style="width: 0.98522167487685%"></div>
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
 
 Lemma lim_same_distance@{} : forall (x y : Approximation A) e,
@@ -6522,15 +6522,15 @@ intros x y e E d.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 1003
-Time: 0.02s">
-<div class="time" style="width: 9.8522167487685%"></div>
+Time: 0.017s">
+<div class="time" style="width: 9.6590909090909%"></div>
 <pre>
 apply equiv_lim_lim with (d/3) (d/3) (e + d/3);[|apply E].</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 1004
-Time: 0.023s">
-<div class="time" style="width: 11.330049261084%"></div>
+Time: 0.02s">
+<div class="time" style="width: 11.363636363636%"></div>
 <pre>
 path_via (e + 3 / 3 * d).</pre>
 </div>
@@ -6543,8 +6543,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 1006
-Time: 0.004s">
-<div class="time" style="width: 1.9704433497537%"></div>
+Time: 0.003s">
+<div class="time" style="width: 1.7045454545455%"></div>
 <pre> rewrite pos_recip_r,Qpos_mult_1_l;trivial.</pre>
 </div>
 <div class="code" title="File: premetric.v
@@ -6556,14 +6556,14 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 1007
-Time: 0.137s">
-<div class="time" style="width: 67.487684729064%"></div>
+Time: 0.12s">
+<div class="time" style="width: 68.181818181818%"></div>
 <pre> apply pos_eq;ring_tac.ring_with_nat.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 1007
-Time: 0.183s">
-<div class="time" style="width: 90.147783251232%"></div>
+Time: 0.176s">
+<div class="time" style="width: 100%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -6594,8 +6594,8 @@ Context {A:Type} {Aclose : Closeness A} `{!PreMetric A}
 </div>
 <div class="code" title="File: premetric.v
 Line: 1015
-Time: 0.003s">
-<div class="time" style="width: 1.4778325123153%"></div>
+Time: 0.002s">
+<div class="time" style="width: 1.1363636363636%"></div>
 <pre>
 
 Global Instance lipschitz_lim_lipschitz (s : Approximation (A -&gt; B)) L
@@ -6617,15 +6617,15 @@ intros e x y xi.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 1020
-Time: 0.01s">
-<div class="time" style="width: 4.9261083743842%"></div>
+Time: 0.009s">
+<div class="time" style="width: 5.1136363636364%"></div>
 <pre>
 apply rounded in xi;revert xi;apply (Trunc_ind _);intros [d [d' [E xi]]].</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 1021
 Time: 0.003s">
-<div class="time" style="width: 1.4778325123153%"></div>
+<div class="time" style="width: 1.7045454545455%"></div>
 <pre>
 rewrite E,Qpos_plus_mult_distr_l.</pre>
 </div>
@@ -6678,8 +6678,8 @@ Time: 0s">
 </div>
 <div class="code" title="File: premetric.v
 Line: 1027
-Time: 0.004s">
-<div class="time" style="width: 1.9704433497537%"></div>
+Time: 0.003s">
+<div class="time" style="width: 1.7045454545455%"></div>
 <pre>
 Qed.</pre>
 </div>
@@ -6693,8 +6693,8 @@ End lipschitz_lim.</pre>
 </div>
 <div class="code" title="File: premetric.v
 Line: 1030
-Time: 0.012s">
-<div class="time" style="width: 5.9113300492611%"></div>
+Time: 0.011s">
+<div class="time" style="width: 6.25%"></div>
 <pre>
 
 End contents.</pre>
